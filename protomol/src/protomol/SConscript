@@ -1,0 +1,15 @@
+import glob
+import os
+Import('*')
+
+# Import subdir build files
+allsrc = []
+for d in glob.glob('*'):
+    if os.path.isdir(d) and os.path.exists(d + '/SConscript'):
+      src = SConscript(d + '/SConscript')
+      for s in src:
+        allsrc.append(d + '/' + s)
+
+allsrc.append('ProtoMolApp.cpp')
+
+Return('allsrc')

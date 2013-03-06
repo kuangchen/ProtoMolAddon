@@ -1,0 +1,41 @@
+PSF
+
+       1 !NTITLE
+ REMARKS original generated structure x-plor psf file
+ REMARKS no Coulomb Charges
+ REMARKS masses from Izaguirre and Hampton 2004
+
+       4 !NATOM
+       1 BUTA 1    BUTA C1   CH3    0.000000       15.0350           0
+       2 BUTA 1    BUTA C2   CH2    0.000000       14.0270           0
+       3 BUTA 1    BUTA C3   CH2    0.000000       14.0270           0
+       4 BUTA 1    BUTA C4   CH3    0.000000       15.0350           0
+
+       3 !NBOND: bonds
+       1       2
+       2       3
+       3       4
+
+       2 !NTHETA: angles
+       1       2       3
+       2       3       4
+
+       1 !NPHI: dihedrals
+       1       2       3       4
+
+       0 !NIMPHI: impropers
+
+
+       0 !NDON: donors
+
+
+       0 !NACC: acceptors
+
+
+       0 !NNB
+
+       0       0       0       0       0       0       0       0
+       0       0       0       0       0       0
+
+       1       0 !NGRP
+       0       0       0

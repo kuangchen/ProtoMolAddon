@@ -1,0 +1,119 @@
+10
+
+dir
+2024
+https://protomol.svn.sourceforge.net/svnroot/protomol/trunk/mdl/data
+https://protomol.svn.sourceforge.net/svnroot/protomol
+
+
+
+2011-04-17T20:13:36.682574Z
+1872
+tcickovs
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ce46b6ef-3445-0410-911d-c47028e6f9df
+
+alanDipeptideSol
+dir
+
+alanine_gromacs
+dir
+
+water_648
+dir
+
+water_1002
+dir
+
+calmodulin
+dir
+
+argon_400
+dir
+
+1qcf
+dir
+
+coulomb_309
+dir
+
+alanDipeptideVac
+dir
+
+WW
+dir
+
+decalanine_66
+dir
+
+bpti_water_14281
+dir
+
+argon_280
+dir
+
+polyAT_vac
+dir
+
+wwd
+dir
+
+bpti_water_1101
+dir
+
+UA_butane
+dir
+
+water_216
+dir
+
+params.agb
+file
+
+
+
+
+2012-03-06T18:17:15.704565Z
+a23e6fdf68fda7b13464b8dc3565a6c2
+2009-06-25T01:14:40.760513Z
+1606
+tcickovs
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+9437
+
+alanDipeptideBlock
+dir
+

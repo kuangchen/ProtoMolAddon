@@ -1,0 +1,331 @@
+*>>>> CHARMM22 Parameter File for Ionic Liquids <<<<<<<<<<<<<<<<
+*>>>>>>>>>>>>>>>>>>>>>>> June 2001 <<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+*>>>>>>>>>>>>>> Prepared by T. I. Morrow <<<<<<<<<<<<<<<<<<<<<<<
+
+! REMARKS
+! Revision 5 -- September 2002 -- All atom forcefield
+! Revision 6 -- August 2003 -- Urey-Bradley angles removed
+! Revision 7 -- February 2004 -- New [bmim+] forcefield
+!
+! This forcefield can be used for the following ions:
+! [bmim+] [PF6-] [BF4-][pyr+] [choline+] [Cl-]
+!
+! And the following gases:
+! CO2 SPCE (water)
+!
+BONDS
+!
+!V(bond) = Kb(b - b0)**2
+!
+!Kb: kcal/mole/A**2
+!b0: A
+!
+!atom type Kb          b0
+!
+!-- Imidazole ring bonds
+CME  NIMD   220.000     1.4762  ! From crystal nucleosides A/G (NF)
+CAL1 NIMD   220.000     1.4762  ! From crystal nucleosides A/G (NF)
+NIMD CIM1   400.000     1.3819  ! From imidazole (NF)
+NIMD CIA1   400.000     1.3366  ! From imidazole (NF)
+CIM1 CIM1   410.000     1.3610  ! From imidazole (NF)
+HA   CIA1   340.000     1.0779  ! From imidazole (NF)
+HIM1 CIM1   365.000     1.0775  ! From imidazole (NF)
+!-- Pyridine ring bonds
+NIMD CP1    483.000     1.3365  ! From OPLS-AA
+CP1  CP2    469.000     1.3942  ! From OPLS-AA
+CP2  CP3    469.000     1.3922  ! From OPLS-AA
+CP1  HP1    367.000     1.0873  ! From OPLS-AA
+CP2  HP2    367.000     1.0848  ! From OPLS-AA
+CP3  HP3    367.000     1.0854  ! From OPLS-AA
+!-- Choline bonds 
+COH  HCO    309.000     1.096   ! carbon next to -OH, for alkanes
+COH  OAL    428.000     1.4174  ! C-OH, from methanol (CT2)
+COH  CMY    222.500     1.5200  ! for alkanes
+OAL  HAL    545.000     0.9650  ! OH group, from methanol
+CMY  HMY    309.000     1.0910  ! for alkanes
+CMY  NQT    261.000     1.5324  ! 
+CME  NQT    261.000     1.5100  !
+!-- Alkyl chain bonds
+CME  HME    309.000     1.0899  ! methyl C-H bonds
+CAL1 HAL1   309.0       1.0899  ! From CN8  HN7 (NF)
+CAL2 CAL2   222.50      1.5314  !Alkanes, sacred
+CAL2 CTRM   222.50      1.5301  !Alkanes, sacred
+CAL1 CAL2   200.0       1.5308  ! From exp 
+CAL2 HAL2   309.0       1.0954  !Alkanes, sacred
+CTRM HTRM   322.0       1.0935  !alkanes
+!-- Additional Bonds for [Bmmim+]
+CIA1 C2ME   229.630     1.4873
+C2ME H2ME   322.000     1.0915
+!-- Anion bonds
+!-- Fluorinated anions
+P    FP1    280.0       1.6458  ! From DFT Gaussian98 calculations - gas phase B3LYP/6-311+G*
+P    FP2    280.0       1.6458  ! From DFT Gaussian98 calculations - gas phase B3LYP/6-311+G*
+P    FP3    280.0       1.6458  ! From DFT Gaussian98 calculations - gas phase B3LYP/6-311+G*
+B    FB     315.6       1.417   ! From DFT Gaussian98 calculations - gas phase B3LYP/6-311+G*
+!-- Triflate and bistriflamide
+CFME FME    936.4       1.350   ! for triflate and bistriflamide (J. Phys. Chem.  Vol. 98 #1 p.107)
+CFME S      483.3       1.780   ! for triflate and bistriflamide (J. Phys. Chem.  Vol. 98 #1 p.107)
+S    OTRF   1547.7      1.470   ! for triflate and bistriflamide (J. Phys. Chem.  Vol. 98 #1 p.107)
+!S    NTRF
+!-- Gases
+O2CC O2CO  1030.00      1.160   ! From Gaussian98
+!-- Water models
+SPCH SPCO   545.00      1.000   ! SPC/E rigid water
+!SPCH SPCH     0.00      1.630   !
+
+ANGLES
+!
+!V(angle) = Ktheta(Theta - Theta0)**2
+!
+!V(Urey-Bradley) = Kub(S - S0)**2
+!
+!Ktheta: kcal/mole/rad**2
+!Theta0: degrees
+!Kub: kcal/mole/A**2 (Urey-Bradley)
+!S0: A
+!
+!atom types     Ktheta    Theta0   Kub     S0
+!
+!-- For imidazole, from imidazole alone:
+CAL2 CAL1 NIMD    140.0    112.34  ! k guessed, theta taken from Gaussian98 results (TIM)
+CME  NIMD CIA1    130.0    125.78  ! k guessed, theta based on Gaussian98 results (TIM)
+CAL1 NIMD CIA1    130.0    125.78  ! k guessed, theta based on Gaussian98 results (TIM)
+CME  NIMD CIM1    130.0    125.67  ! k guessed, theta based on Gaussian98 results (TIM)
+CAL1 NIMD CIM1    130.0    125.67  ! k guessed, theta based on Gaussian98 results (TIM)
+HME  CME  NIMD     30.0    109.41  ! k guessed, theta based on G98 (TIM)
+HAL1 CAL1 NIMD     30.0    109.41  ! k guessed, theta based on G98 (TIM)
+CIA1 NIMD CIM1    130.0    108.25  ! From imidazole (NF), modified to match G98 results (TIM)
+NIMD CIM1 CIM1    130.0    107.28  ! From imidazole (NF), modified to match G98 (TIM)
+NIMD CIA1 NIMD    130.0    109.11  ! From imidazole, modified to match G98 (TIM)
+NIMD CIA1 HA       25.0    125.44  ! From imidazole (NF)
+HIM1 CIM1 CIM1     25.0    130.74  ! From imidazole (NF)
+NIMD CIM1 HIM1     25.0    122.04  ! From imidazole (NF)
+!-- For pyridine:
+CP1  NIMD CP1      70.0    117.29  ! from OPLS-AA
+NIMD CP1  CP2      70.0    123.64  ! from OPLS-AA
+NIMD CP1  HP1      35.0    115.96  ! from OPLS-AA
+CP1  CP2  CP3      63.0    118.45  ! from OPLS-AA
+CP1  CP2  HP2      35.0    120.26  ! from OPLS-AA
+HP1  CP1  CP2      35.0    120.40  ! from OPLS-AA
+CP2  CP3  CP2      63.0    118.54  ! from OPLS-AA
+CP2  CP3  HP3      35.0    120.73  ! from OPLS-AA
+CP3  CP2  HP2      35.0    121.29  ! from OPLS-AA
+!-- For choline:
+HCO  COH  HCO      35.5    107.22  !
+HCO  COH  OAL      45.9    111.81  ! from methanol
+HCO  COH  CMY      35.5    105.75  ! 
+OAL  COH  CMY      75.7    109.39  ! from methanol
+COH  OAL  HAL      57.5    111.86  ! from methanol
+COH  CMY  HMY      26.5    110.64  ! 
+COH  CMY  NQT      80.0    116.57  !
+HMY  CMY  HMY      35.5    108.42  !
+HMY  CMY  NQT      51.5    106.18  !
+CMY  NQT  CME      50.0    110.69  !
+CME  NQT  CME      50.0    108.85  !
+NQT  CME  HME      48.0    109.00  !
+!-- Alkyl chain bond angles
+HME  CME  HME      35.5    108.44  !
+HAL1 CAL1 HAL1     35.5    108.44  ! 
+HAL1 CAL1 CAL2     33.4    111.68  ! from alkanes
+CAL1 CAL2 HAL2     33.4    109.13  ! Theta matched to G98 (TIM)
+CAL1 CAL2 CAL2     58.35   111.50  ! Theta adjusted (TIM)
+HAL2 CAL2 HAL2     35.5    106.13  ! Theta matched to G98 (TIM)
+HAL2 CAL2 CAL2     26.50   108.43  ! 
+HAL2 CAL2 CTRM     34.6    109.47  ! Alkanes, sacred, Theta adjusted (TIM)
+CAL2 CAL2 CTRM     58.00   112.34  ! ALLOW   ALI
+CAL2 CTRM HTRM     34.60   111.62  ! Alkanes, sacred, Theta adjusted (TIM)
+HTRM CTRM HTRM     35.50   107.24  !alkane update, adm jr. 3/2/92, adjusted theta (TIM)
+!-- Additional Angles for [Bmmim+]
+C2ME CIA1 NIMD   45.80    126.23
+CIA1 C2ME H2ME   33.43    111.08
+H2ME C2ME H2ME   35.50    107.81
+!-- Anion bond angles
+FP1  P    FP1       25.0    180.00 !k and theta from G98 (TIM)
+FP2  P    FP2       25.0    180.00 !k and theta from G98 (TIM)
+FP3  P    FP3       25.0    180.00 !k and theta from G98 (TIM)
+FP1  P    FP2      100.0     90.00 !k and theta from G98 (TIM)
+FP1  P    FP3      100.0     90.00 !k and theta from G98 (TIM)
+FP2  P    FP3      100.0     90.00 !k and theta from G98 (TIM)
+FB   B    FB       145.5    109.47 !k and theta from G98 (TIM)***
+!-- Triflate and bistriflamide
+FME  CFME FME      194.86   109.4712 ! for triflate and bistriflamide (J. Phys. Chem.  Vol. 98 #1 p.107)
+OTRF S    OTRF     208.25   109.4712 ! for triflate and bistriflamide (J. Phys. Chem.  Vol. 98 #1 p.107)
+FME  CFME S        262.68   109.4712 ! for triflate and bistriflamide (J. Phys. Chem.  Vol. 98 #1 p.107)
+OTRF S    CFME	   210.76   109.4712 ! for triflate and bistriflamide (J. Phys. Chem.  Vol. 98 #1 p.107)
+!-- Gases
+O2CO O2CC O2CO      56.00   180.00 !from EPM2 model
+!-- Water models
+SPCH SPCO SPCH      55.0    109.47 ! SPC/E rigid water
+
+DIHEDRALS
+!
+!V(dihedral) = Kchi(1 + cos(n(chi) - delta))
+!
+!Kchi: kcal/mole
+!n: multiplicity
+!delta: degrees
+!
+!atom types             Kchi    n   delta
+!
+!-- For imidazole, transferred from imidazole alone:
+CIA1 NIMD CIM1 CIM1    14.0000  2   180.00 ! From imidazole (NF)
+NIMD CIM1 CIM1 NIMD    14.0000  2   180.00 ! From imidazole (NF)
+NIMD CIA1 NIMD CIM1    14.0000  2   180.00 ! From imidazole (NF)
+HA   CIA1 NIMD CIM1     3.0000  2   180.00 ! From imidazole (NF)
+HIM1 CIM1 CIM1 HIM1     2.0000  2   180.00 ! From imidazole (NF)
+HIM1 CIM1 NIMD CIA1     3.0000  2   180.00 ! From imidazole (NF)
+NIMD CIM1 CIM1 HIM1     3.0000  2   180.00 ! From imidazole (NF)
+NIMD CIA1 NIMD CME      0.0     2   180.00 !
+NIMD CIA1 NIMD CAL1     0.0     2   180.00 !
+HA   CIA1 NIMD CME      0.0     2   180.00 !
+HA   CIA1 NIMD CAL1     0.0     2   180.00 !
+HIM1 CIM1 NIMD CME      0.0     2   180.00 !NF
+HIM1 CIM1 NIMD CAL1     0.0     2   180.00 !NF
+CIM1 CIM1 NIMD CME      0.0     1     0.00 !
+CIM1 CIM1 NIMD CAL1     0.0     1     0.00 !
+CIA1 NIMD CME  HME      0.195   2   180.00 !
+CIA1 NIMD CAL1 HAL1     0.195   2   180.00 !
+CIM1 NIMD CME  HME      0.0     3     0.00 !
+CIM1 NIMD CAL1 HAL1     0.0     3     0.00 !
+CIA1 NIMD CAL1 CAL2     0.1     3   180.00 !
+CIM1 NIMD CAL1 CAL2     0.2     4     0.00 ! 
+NIMD CAL1 CAL2 CAL2     0.0     3     0.00 !
+NIMD CAL1 CAL2 HAL2     0.0     3     0.00 !
+!-- For pyridine:
+NIMD CP1  CP2  CP3      2.0000  2     0.00 ! adenine
+NIMD CP1  CP2  HP2      0.5000  2   180.00 ! adenineidazole (NF)
+CP1  CP2  CP3  CP2      3.1000  2     0.00 ! benzene
+CP1  CP2  CP3  HP3      4.2000  2   180.00 ! benzene
+CP2  CP3  CP2  HP2      4.2000  2   180.00 ! benzene
+CP3  CP2  CP1  HP1      4.2000  2   180.00 ! benzene
+HP1  CP1  CP2  HP2      2.4000  2     0.00 ! From imidazole (NF)
+HP2  CP2  CP3  HP3      2.4000  2     0.00 ! benzene
+CP2  CP1  NIMD CP1     10.0000  2     0.00 ! adenine
+HP1  CP1  NIMD CP1      8.5000  2   180.00 ! adenine
+!-- For Choline:
+HCO  COH  OAL  HAL      0.3000  2     0.00 ! from ethanol
+CMY  COH  OAL  HAL      1.3000  1     0.00 ! from ethanol
+HCO  COH  CMY  HMY      2.5000  2   180.00 !
+HCO  COH  CMY  NQT      0.6000  2     0.00 !
+OAL  COH  CMY  HMY      0.0000  2   180.00 !                  
+OAL  COH  CMY  NQT      0.0000  1     0.00 !
+COH  CMY  NQT  CME      2.5000  3   180.00 !
+HMY  CMY  NQT  CME      0.0800  3     0.00 !
+CMY  NQT  CME  HME      0.0800  3     0.00 !
+CME  NQT  CME  HME      0.0800  3     0.00 !
+! -- Alkyl chain dihedral angles
+HAL1 CAL1 CAL2 CAL2     0.195   3     0.00 ! Alkanes
+HAL1 CAL1 CAL2 HAL2     0.195   3     0.00 !H-C1'-C2'-H 
+HAL2 CAL2 CAL2 HAL2     0.195   3     0.00 !H-C1'-C2'-H 
+CAL1 CAL2 CAL2 HAL2     0.195   3     0.00 ! Alkanes
+CAL1 CAL2 CAL2 CTRM     0.15    1     0.00 !Butane gauche term (TIM)
+HAL2 CAL2 CAL2 CTRM     0.195   3     0.00 ! Alkanes
+CAL2 CAL2 CTRM HTRM     0.160   3     0.00 ! Alkanes
+HAL2 CAL2 CTRM HTRM     0.160   3     0.00 ! Alkanes
+!-- Additional Dihedrals for [Bmmim+]
+C2ME CIA1 NIMD CIM1     3.0000  2   180.00
+C2ME CIA1 NIMD CME      0.0000  2   180.00
+C2ME CIA1 NIMD CAL1     0.0000  2   180.00
+NIMD CIA1 C2ME H2ME     0.1950  2   180.00
+!
+!
+!-- Anion dihedrals
+!-- triflate and bistriflamide
+FME  CFME  S    OTRF    0.280   3     0.00 ! from CHARMM22 H-C-S-C
+
+IMPROPER
+!
+!V(improper) = Kpsi(psi - psi0)**2
+!
+!Kpsi: kcal/mole/rad**2
+!psi0: degrees
+!note that the second column of numbers (0) is ignored
+!
+!atom types           Kpsi                   psi0
+!
+!----------------------- Added for imidazole --------------------
+HA   NIMD NIMD CIA1    0.50         0      0.00 ! From imidazole (NF)
+HIM1 CIM1 NIMD CIM1    0.50         0      0.00 ! From imidazole (NF)
+HIM1 NIMD CIM1 CIM1    0.50         0      0.00 ! From imidazole (NF)
+NIMD CIM1 CIA1 CAL1    0.60         0      0.00 ! From imidazole (NF), k increased
+NIMD CIM1 CIA1 CME     0.60         0      0.00 ! From imidazole (NF), k increased
+!-- Additional Impropers for [Bmmim+]
+CIA1 NIMD NIMD C2ME    0.50         0      0.00 !
+
+NONBONDED nbxmod  5 atom cdiel shift vatom vdistance vswitch - cutnb 14.0 ctofnb 12.0 ctonnb 10.0 eps 1.0 e14fac 1.0 wmin 1.5 
+                !adm jr., 5/08/91, suggested cutoff scheme
+!
+!V(Lennard-Jones) = Eps,i,j[(Rmin,i,j/ri,j)**12 - 2(Rmin,i,j/ri,j)**6]
+!
+!epsilon: kcal/mole, Eps,i,j = sqrt(eps,i * eps,j)
+!Rmin/2: A, Rmin,i,j = Rmin/2,i + Rmin/2,j
+!
+!atom  ignored    epsilon      Rmin/2   ignored   eps,1-4       Rmin/2,1-4
+!
+!-------------- for imidazole --------------
+CIA1   0.000000  -0.050000     1.800000 ! From imidazole (NF)
+CIM1   0.000000  -0.050000     1.800000 ! From imidazole (NF)
+NIMD   0.000000  -0.200000     1.850000 ! From imidazole (NF)
+HIM1   0.000000  -0.007800     1.468000 ! From imidazole (NF)
+HA     0.000000  -0.046000     0.900000 ! From imidazole (NF)
+!--For pyridine ----------------------------
+CP1    0.000000  -0.0700       1.992400 ! from OPLS-AA
+CP2    0.000000  -0.0700       1.992400 ! from OPLS-AA
+CP3    0.000000  -0.0700       1.992400 ! from OPLS-AA
+NPYR   0.000000  -0.1700       1.824000 ! from OPLS-AA
+HP1    0.000000  -0.0300       1.358000 ! from OPLS-AA
+HP2    0.0       -0.0300       1.35800  ! from OPLS-AA
+HP3    0.0       -0.0300       1.35800  ! from OPLS-AA
+!--For Choline
+COH    0.0       -0.055000     2.17500  ! propane
+HCO    0.0       -0.000000     1.0000   !
+OAL    0.0       -0.152100     1.7700   ! from methanol
+HAL    0.0       -0.046000     0.2245   ! from TIP3P
+CMY    0.0       -0.055000     2.17500  ! propane
+HMY    0.0       -0.022000     1.32000  ! methane/ethane
+NQT    0.0       -0.200000     1.85000  !CHARMM27 nitrogen (amine)
+! -- Alkyl chain atoms
+CME    0.0       -0.0200       2.275  ! methane/ethane
+HME    0.0       -0.0220       1.320  ! methane/ethane
+HAL1   0.0       -0.0220       1.320 !
+HAL2   0.0       -0.0220       1.320  !
+HTRM   0.0       -0.0220       1.320  !
+CAL1   0.0       -0.0200       2.275  !
+CAL2   0.0       -0.0550       2.175  !
+CTRM   0.0       -0.0550       2.175  !
+!-- Additional Non Bonded for [Bmmim+]
+C2ME   0.000000  -0.0780       2.040  !
+H2ME   0.000000  -0.0240       1.340  !
+!-- Anion atoms
+P      0.0       -0.5850       2.150 ! from CHARMM27
+B      0.0       -0.0000       1.000 ! from JPCA Vol. 102, #7, p.1055-1061
+FP1    0.0       -0.0900       1.700 ! from CHARMM27, similar to Potter, S.C. value
+FP2    0.0       -0.0900       1.700 ! from CHARMM27, similar to Potter, S.C. value
+FP3    0.0       -0.0900       1.700 ! from CHARMM27, similar to Potter, S.C. value
+FB     0.0       -0.0680       1.684 ! from JPCA Vol. 102, #7, p.1055-1061
+CL     0.0       -0.1500       2.270 ! chloride from CHARMM27
+!-- Triflate and bistriflamide
+S      0.0       -0.45000      2.000 ! CHARMM27 sulfur (methanethiol)
+NTRF   0.0       -0.20000      1.850 ! CHARMM27 nitrogen (amine)
+OTRF   0.0       -0.12000      1.700 ! CHARMM27 acetic acid carbonyl oxygen
+CFME   0.0       -0.10843      1.768 ! from Potter, S.C., Mol. Phys., v. 92, #5, 825-833, 1997.
+FME    0.0       -0.07943      1.670 ! from Potter, S.C., Mol. Phys., v. 92, #5, 825-833, 1997.
+!-- Gases
+O2CC   0.0       -0.05300      1.571 ! from TraPPE model
+O2CO   0.0       -0.15700      1.712 ! from TraPPE model
+!ARG    0.0       -0.23457      1.964 ! from Prausnitz's book p.144
+!KRY    0.0       -0.32316      2.158 ! from Prausnitz's book p.144
+ARG    0.0       -0.23333      1.903 ! from Panagiotopoulos (1989) 
+KRY    0.0       -0.31980      2.024 ! from Panagiotopoulos (1989)
+CH4    0.0       -0.28375      2.251 ! from Prausnitz's book p.144
+!-- Water
+SPCO   0.0       -0.15525      1.774 ! SPC/E Oxygen
+SPCH   0.0       -0.00000      1.000 ! SPC/E Hydrogen
+!-- LJ Atom Tests
+LJ1    0.0       -0.23837      1.911 !
+
+HBOND CUTHB 0.5  ! If you want to do hbond analysis (only), then use
+                 ! READ PARAM APPEND CARD
+                 ! to append hbond parameters from the file: par_hbond.inp
+
+END

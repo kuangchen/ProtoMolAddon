@@ -1,0 +1,51 @@
+firststep   0
+numsteps    20
+outputfreq  20
+
+# Constraints
+angularMomentum 0
+comMotion 0
+exclude scaled1-4
+
+seed 1234
+
+# Inputs
+gromacstprfile	data/ww_structure_22_vac_4.0.7.sim.tpr
+temperature 	300
+
+# Outputs
+dcdfile 		output/www-fip35_FFAMBER-TPR_VACUUM_LL.dcd
+XYZForceFile	output/www-fip35_FFAMBER-TPR_VACUUM_LL.forces
+finXYZPosFile   output/www-fip35_FFAMBER-TPR_VACUUM_LL.pos
+finXYZVelFile   output/www-fip35_FFAMBER-TPR_VACUUM_LL.vel
+allenergiesfile output/www-fip35_FFAMBER-TPR_VACUUM_LL.energy
+
+boundaryConditions vacuum
+
+cellManager Cubic
+cellsize 6
+
+Integrator {
+
+  level 0 LangevinLeapfrog {
+
+    timestep 1
+    temperature 300
+    gamma 80
+    seed 1234
+
+    force Bond
+    force Angle
+    force RBDihedral
+    force Dihedral
+
+    force LennardJones
+            -algorithm NonbondedSimpleFull
+
+    force Coulomb
+                -algorithm NonbondedSimpleFull
+
+
+ }
+}
+

@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svnroot/protomol/!svn/ver/1482/trunk/mdl/data/alanDipeptideSol
+END
+alan.lang.conf
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svnroot/protomol/!svn/ver/1482/trunk/mdl/data/alanDipeptideSol/alan.lang.conf
+END
+alan.pme.lang.conf
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svnroot/protomol/!svn/ver/1482/trunk/mdl/data/alanDipeptideSol/alan.pme.lang.conf
+END
+alan_wb5.psf
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svnroot/protomol/!svn/ver/1482/trunk/mdl/data/alanDipeptideSol/alan_wb5.psf
+END
+alan_wb10_mineq.pdb
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svnroot/protomol/!svn/ver/1482/trunk/mdl/data/alanDipeptideSol/alan_wb10_mineq.pdb
+END
+solvate.pdb
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svnroot/protomol/!svn/ver/1482/trunk/mdl/data/alanDipeptideSol/solvate.pdb
+END
+solvate.psf
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svnroot/protomol/!svn/ver/1482/trunk/mdl/data/alanDipeptideSol/solvate.psf
+END
+solvate_eq.pdb
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svnroot/protomol/!svn/ver/1482/trunk/mdl/data/alanDipeptideSol/solvate_eq.pdb
+END
+alan_wb10.psf
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svnroot/protomol/!svn/ver/1482/trunk/mdl/data/alanDipeptideSol/alan_wb10.psf
+END
+par_all27_prot_lipid.inp
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svnroot/protomol/!svn/ver/1482/trunk/mdl/data/alanDipeptideSol/par_all27_prot_lipid.inp
+END
+alanC7equat_wb5_min_eq.pdb
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svnroot/protomol/!svn/ver/1482/trunk/mdl/data/alanDipeptideSol/alanC7equat_wb5_min_eq.pdb
+END

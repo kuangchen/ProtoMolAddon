@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svnroot/protomol/!svn/ver/1896/trunk/mdl/interface
+END
+ProtoMolApp.i
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svnroot/protomol/!svn/ver/1845/trunk/mdl/interface/ProtoMolApp.i
+END
+SConstruct
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svnroot/protomol/!svn/ver/1805/trunk/mdl/interface/SConstruct
+END
+pyWrap.py
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svnroot/protomol/!svn/ver/1805/trunk/mdl/interface/pyWrap.py
+END

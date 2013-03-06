@@ -1,0 +1,12 @@
+import glob
+
+src = []
+
+Import('env')
+for item in env.get('CPPDEFINES'):
+	if 'HAVE_OPENMM' in item:
+		src.append( "OpenMMIntegrator.cpp" )
+	if 'HAVE_OPENMM_LTMD' in item:
+		src.append( "NormalModeOpenMM.cpp" )
+
+Return('src')

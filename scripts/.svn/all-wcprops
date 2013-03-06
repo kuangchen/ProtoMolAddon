@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svnroot/protomol/!svn/ver/1325/trunk/scripts
+END
+build-protomol-core.bat
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svnroot/protomol/!svn/ver/1325/trunk/scripts/build-protomol-core.bat
+END
+clean-protomol-core.bat
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svnroot/protomol/!svn/ver/1308/trunk/scripts/clean-protomol-core.bat
+END
+build-protomol-core
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svnroot/protomol/!svn/ver/1004/trunk/scripts/build-protomol-core
+END

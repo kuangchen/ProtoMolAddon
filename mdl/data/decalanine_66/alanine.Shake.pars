@@ -1,0 +1,39 @@
+firststep 0
+numsteps  10
+
+seed 0
+
+posfile alanine.pdb
+psffile alanine.psf
+parfile alanine.par
+temperature 300 
+
+
+outputfreq      1
+allenergiesfile alanine.shake.energies
+
+boundaryConditions Normal
+
+cellManager Cubic
+cellsize    6.5
+
+# switch on SHAKE
+shake 	on
+
+Integrator {
+  level 0 Leapfrog {
+	timestep 0.5
+    force Improper 
+    force Dihedral 
+    force Bond 
+    force Angle 
+    force LennardJones Coulomb
+          -algorithm NonbondedCutoff
+          -switchingFunction C2
+          -switchingFunction Shift
+          -cutoff 6.5
+          -cutoff 6.5
+	  -switchon 0.1
+  }
+}
+

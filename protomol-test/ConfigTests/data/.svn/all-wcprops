@@ -1,0 +1,989 @@
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svnroot/protomol/!svn/ver/1320/trunk/protomol-test/ConfigTests/data
+END
+CoulombForceCutoffTest.stderr.expect
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svnroot/protomol/!svn/ver/1019/trunk/protomol-test/ConfigTests/data/CoulombForceCutoffTest.stderr.expect
+END
+LJForceSFTest.return.expect
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svnroot/protomol/!svn/ver/1019/trunk/protomol-test/ConfigTests/data/LJForceSFTest.return.expect
+END
+ShakeTest.xyz.orig
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svnroot/protomol/!svn/ver/1046/trunk/protomol-test/ConfigTests/data/ShakeTest.xyz.orig
+END
+CGMinimizerTest.stdout.expect
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svnroot/protomol/!svn/ver/1048/trunk/protomol-test/ConfigTests/data/CGMinimizerTest.stdout.expect
+END
+BornForceTest.stdout.expect
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svnroot/protomol/!svn/ver/1072/trunk/protomol-test/ConfigTests/data/BornForceTest.stdout.expect
+END
+VelacTest.veldcd.orig
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svnroot/protomol/!svn/ver/1072/trunk/protomol-test/ConfigTests/data/VelacTest.veldcd.orig
+END
+NMMTest.return.expect
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svnroot/protomol/!svn/ver/1075/trunk/protomol-test/ConfigTests/data/NMMTest.return.expect
+END
+CoulombForceCutoffTest.stdout.expect
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svnroot/protomol/!svn/ver/1048/trunk/protomol-test/ConfigTests/data/CoulombForceCutoffTest.stdout.expect
+END
+EnergiesTest.energies.orig
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svnroot/protomol/!svn/ver/1046/trunk/protomol-test/ConfigTests/data/EnergiesTest.energies.orig
+END
+ShakeTest.return.expect
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svnroot/protomol/!svn/ver/1027/trunk/protomol-test/ConfigTests/data/ShakeTest.return.expect
+END
+CGMinimizerTest.xyz.orig
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svnroot/protomol/!svn/ver/1046/trunk/protomol-test/ConfigTests/data/CGMinimizerTest.xyz.orig
+END
+C2Test.return.expect
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svnroot/protomol/!svn/ver/1023/trunk/protomol-test/ConfigTests/data/C2Test.return.expect
+END
+NMLTest.conf
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svnroot/protomol/!svn/ver/1267/trunk/protomol-test/ConfigTests/data/NMLTest.conf
+END
+CoulombForceSFTest.return.expect
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svnroot/protomol/!svn/ver/1019/trunk/protomol-test/ConfigTests/data/CoulombForceSFTest.return.expect
+END
+HessianTest.eval.orig
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svnroot/protomol/!svn/ver/1320/trunk/protomol-test/ConfigTests/data/HessianTest.eval.orig
+END
+DielecForceSFTest.conf
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svnroot/protomol/!svn/ver/1019/trunk/protomol-test/ConfigTests/data/DielecForceSFTest.conf
+END
+SCPISMForceTest.return.expect
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svnroot/protomol/!svn/ver/1019/trunk/protomol-test/ConfigTests/data/SCPISMForceTest.return.expect
+END
+RattleTest.xyz.orig
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svnroot/protomol/!svn/ver/1046/trunk/protomol-test/ConfigTests/data/RattleTest.xyz.orig
+END
+LeapfrogTruncatedShadowTest.return.expect
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svnroot/protomol/!svn/ver/1023/trunk/protomol-test/ConfigTests/data/LeapfrogTruncatedShadowTest.return.expect
+END
+DihedralForceTest.stderr.expect
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svnroot/protomol/!svn/ver/1019/trunk/protomol-test/ConfigTests/data/DihedralForceTest.stderr.expect
+END
+EnergiesTest.conf
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svnroot/protomol/!svn/ver/1014/trunk/protomol-test/ConfigTests/data/EnergiesTest.conf
+END
+LeapfrogTest.xyz.orig
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svnroot/protomol/!svn/ver/1046/trunk/protomol-test/ConfigTests/data/LeapfrogTest.xyz.orig
+END
+CnTest.xyz.orig
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svnroot/protomol/!svn/ver/1061/trunk/protomol-test/ConfigTests/data/CnTest.xyz.orig
+END
+HessianIntTest.conf
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svnroot/protomol/!svn/ver/1320/trunk/protomol-test/ConfigTests/data/HessianIntTest.conf
+END
+BondForceTest.stderr.expect
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svnroot/protomol/!svn/ver/1019/trunk/protomol-test/ConfigTests/data/BondForceTest.stderr.expect
+END
+LangevinTest.xyz.orig
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svnroot/protomol/!svn/ver/1046/trunk/protomol-test/ConfigTests/data/LangevinTest.xyz.orig
+END
+PDBTest.psf
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svnroot/protomol/!svn/ver/1014/trunk/protomol-test/ConfigTests/data/PDBTest.psf
+END
+CoulombForceSFTest.conf
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svnroot/protomol/!svn/ver/1019/trunk/protomol-test/ConfigTests/data/CoulombForceSFTest.conf
+END
+RattleTest.return.expect
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svnroot/protomol/!svn/ver/1027/trunk/protomol-test/ConfigTests/data/RattleTest.return.expect
+END
+ImproperForceTest.conf
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svnroot/protomol/!svn/ver/1019/trunk/protomol-test/ConfigTests/data/ImproperForceTest.conf
+END
+DihedralForceTest.stdout.expect
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svnroot/protomol/!svn/ver/1048/trunk/protomol-test/ConfigTests/data/DihedralForceTest.stdout.expect
+END
+AngularMomentumTest.xyz.orig
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svnroot/protomol/!svn/ver/1046/trunk/protomol-test/ConfigTests/data/AngularMomentumTest.xyz.orig
+END
+ImproperForceTest.stderr.expect
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svnroot/protomol/!svn/ver/1019/trunk/protomol-test/ConfigTests/data/ImproperForceTest.stderr.expect
+END
+LangevinTest.return.expect
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svnroot/protomol/!svn/ver/1066/trunk/protomol-test/ConfigTests/data/LangevinTest.return.expect
+END
+BondForceTest.stdout.expect
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svnroot/protomol/!svn/ver/1048/trunk/protomol-test/ConfigTests/data/BondForceTest.stdout.expect
+END
+AngleForceTest.return.expect
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svnroot/protomol/!svn/ver/1019/trunk/protomol-test/ConfigTests/data/AngleForceTest.return.expect
+END
+NMMTest.conf
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svnroot/protomol/!svn/ver/1075/trunk/protomol-test/ConfigTests/data/NMMTest.conf
+END
+DihedralForceTest.conf
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svnroot/protomol/!svn/ver/1019/trunk/protomol-test/ConfigTests/data/DihedralForceTest.conf
+END
+AngularMomentumTest.return.expect
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svnroot/protomol/!svn/ver/1027/trunk/protomol-test/ConfigTests/data/AngularMomentumTest.return.expect
+END
+VelacTest.xyz.orig
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svnroot/protomol/!svn/ver/1046/trunk/protomol-test/ConfigTests/data/VelacTest.xyz.orig
+END
+HessianTest.stderr.expect
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svnroot/protomol/!svn/ver/1320/trunk/protomol-test/ConfigTests/data/HessianTest.stderr.expect
+END
+COMTest.return.expect
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svnroot/protomol/!svn/ver/1027/trunk/protomol-test/ConfigTests/data/COMTest.return.expect
+END
+VelacTest.stderr.expect
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svnroot/protomol/!svn/ver/1068/trunk/protomol-test/ConfigTests/data/VelacTest.stderr.expect
+END
+ImproperForceTest.stdout.expect
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svnroot/protomol/!svn/ver/1048/trunk/protomol-test/ConfigTests/data/ImproperForceTest.stdout.expect
+END
+DielecForceSFTest.stderr.expect
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svnroot/protomol/!svn/ver/1019/trunk/protomol-test/ConfigTests/data/DielecForceSFTest.stderr.expect
+END
+LeapfrogTest.stderr.expect
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svnroot/protomol/!svn/ver/1259/trunk/protomol-test/ConfigTests/data/LeapfrogTest.stderr.expect
+END
+PDBTest.conf
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svnroot/protomol/!svn/ver/1014/trunk/protomol-test/ConfigTests/data/PDBTest.conf
+END
+HessianIntTest.stderr.expect
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svnroot/protomol/!svn/ver/1320/trunk/protomol-test/ConfigTests/data/HessianIntTest.stderr.expect
+END
+HessianTest.stdout.expect
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svnroot/protomol/!svn/ver/1320/trunk/protomol-test/ConfigTests/data/HessianTest.stdout.expect
+END
+VelacTest.stdout.expect
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svnroot/protomol/!svn/ver/1068/trunk/protomol-test/ConfigTests/data/VelacTest.stdout.expect
+END
+LeapfrogTruncatedShadowTest.conf
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svnroot/protomol/!svn/ver/1022/trunk/protomol-test/ConfigTests/data/LeapfrogTruncatedShadowTest.conf
+END
+CnTest.return.expect
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svnroot/protomol/!svn/ver/1061/trunk/protomol-test/ConfigTests/data/CnTest.return.expect
+END
+DielecForceSFTest.stdout.expect
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svnroot/protomol/!svn/ver/1048/trunk/protomol-test/ConfigTests/data/DielecForceSFTest.stdout.expect
+END
+COMTest.xyz.orig
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svnroot/protomol/!svn/ver/1046/trunk/protomol-test/ConfigTests/data/COMTest.xyz.orig
+END
+LeapfrogTest.stdout.expect
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svnroot/protomol/!svn/ver/1048/trunk/protomol-test/ConfigTests/data/LeapfrogTest.stdout.expect
+END
+HessianIntTest.stdout.expect
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svnroot/protomol/!svn/ver/1320/trunk/protomol-test/ConfigTests/data/HessianIntTest.stdout.expect
+END
+NMLTest.stderr.expect
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svnroot/protomol/!svn/ver/1268/trunk/protomol-test/ConfigTests/data/NMLTest.stderr.expect
+END
+CGMinimizerTest.return.expect
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svnroot/protomol/!svn/ver/1023/trunk/protomol-test/ConfigTests/data/CGMinimizerTest.return.expect
+END
+LJForceCutoffTest.stderr.expect
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svnroot/protomol/!svn/ver/1019/trunk/protomol-test/ConfigTests/data/LJForceCutoffTest.stderr.expect
+END
+BornForceTest.return.expect
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svnroot/protomol/!svn/ver/1066/trunk/protomol-test/ConfigTests/data/BornForceTest.return.expect
+END
+CnTest.conf
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svnroot/protomol/!svn/ver/1060/trunk/protomol-test/ConfigTests/data/CnTest.conf
+END
+DielecForceSFTest.xyz.orig
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svnroot/protomol/!svn/ver/1046/trunk/protomol-test/ConfigTests/data/DielecForceSFTest.xyz.orig
+END
+CoulombForceCutoffTest.return.expect
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svnroot/protomol/!svn/ver/1019/trunk/protomol-test/ConfigTests/data/CoulombForceCutoffTest.return.expect
+END
+C2Test.xyz.orig
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svnroot/protomol/!svn/ver/1046/trunk/protomol-test/ConfigTests/data/C2Test.xyz.orig
+END
+C1Test.stderr.expect
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svnroot/protomol/!svn/ver/1023/trunk/protomol-test/ConfigTests/data/C1Test.stderr.expect
+END
+HessianIntTest.xyz.orig
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svnroot/protomol/!svn/ver/1046/trunk/protomol-test/ConfigTests/data/HessianIntTest.xyz.orig
+END
+PDBTest.stderr.expect
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svnroot/protomol/!svn/ver/1062/trunk/protomol-test/ConfigTests/data/PDBTest.stderr.expect
+END
+NMLTest.stdout.expect
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svnroot/protomol/!svn/ver/1070/trunk/protomol-test/ConfigTests/data/NMLTest.stdout.expect
+END
+LJForceSFTest.conf
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svnroot/protomol/!svn/ver/1019/trunk/protomol-test/ConfigTests/data/LJForceSFTest.conf
+END
+UniversalTest.stderr.expect
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svnroot/protomol/!svn/ver/1059/trunk/protomol-test/ConfigTests/data/UniversalTest.stderr.expect
+END
+LJForceCutoffTest.stdout.expect
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svnroot/protomol/!svn/ver/1048/trunk/protomol-test/ConfigTests/data/LJForceCutoffTest.stdout.expect
+END
+HessianTest.evec.orig
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svnroot/protomol/!svn/ver/1320/trunk/protomol-test/ConfigTests/data/HessianTest.evec.orig
+END
+C1Test.stdout.expect
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svnroot/protomol/!svn/ver/1048/trunk/protomol-test/ConfigTests/data/C1Test.stdout.expect
+END
+VelacTest.par
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svnroot/protomol/!svn/ver/1000/trunk/protomol-test/ConfigTests/data/VelacTest.par
+END
+PDBTest.stdout.expect
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svnroot/protomol/!svn/ver/1062/trunk/protomol-test/ConfigTests/data/PDBTest.stdout.expect
+END
+HessianTest.conf
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svnroot/protomol/!svn/ver/1320/trunk/protomol-test/ConfigTests/data/HessianTest.conf
+END
+CoulombForceCutoffTest.xyz.orig
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svnroot/protomol/!svn/ver/1046/trunk/protomol-test/ConfigTests/data/CoulombForceCutoffTest.xyz.orig
+END
+VelacTest.conf
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svnroot/protomol/!svn/ver/1072/trunk/protomol-test/ConfigTests/data/VelacTest.conf
+END
+LJForceCutoffTest.conf
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svnroot/protomol/!svn/ver/1019/trunk/protomol-test/ConfigTests/data/LJForceCutoffTest.conf
+END
+VelacTest.vel
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svnroot/protomol/!svn/ver/1000/trunk/protomol-test/ConfigTests/data/VelacTest.vel
+END
+UniversalTest.stdout.expect
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svnroot/protomol/!svn/ver/1059/trunk/protomol-test/ConfigTests/data/UniversalTest.stdout.expect
+END
+XYZTest.xyz.orig
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svnroot/protomol/!svn/ver/1064/trunk/protomol-test/ConfigTests/data/XYZTest.xyz.orig
+END
+DihedralForceTest.xyz.orig
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svnroot/protomol/!svn/ver/1046/trunk/protomol-test/ConfigTests/data/DihedralForceTest.xyz.orig
+END
+XYZTest.stderr.expect
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svnroot/protomol/!svn/ver/1064/trunk/protomol-test/ConfigTests/data/XYZTest.stderr.expect
+END
+BondForceTest.conf
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svnroot/protomol/!svn/ver/1019/trunk/protomol-test/ConfigTests/data/BondForceTest.conf
+END
+C1Test.conf
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svnroot/protomol/!svn/ver/1029/trunk/protomol-test/ConfigTests/data/C1Test.conf
+END
+DihedralForceTest.return.expect
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svnroot/protomol/!svn/ver/1019/trunk/protomol-test/ConfigTests/data/DihedralForceTest.return.expect
+END
+SCPISMForceTest.conf
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svnroot/protomol/!svn/ver/1019/trunk/protomol-test/ConfigTests/data/SCPISMForceTest.conf
+END
+COMTest.conf
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svnroot/protomol/!svn/ver/1027/trunk/protomol-test/ConfigTests/data/COMTest.conf
+END
+XYZTest.stdout.expect
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svnroot/protomol/!svn/ver/1064/trunk/protomol-test/ConfigTests/data/XYZTest.stdout.expect
+END
+BornForceTest.conf
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svnroot/protomol/!svn/ver/1072/trunk/protomol-test/ConfigTests/data/BornForceTest.conf
+END
+LJForceSFTest.stderr.expect
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svnroot/protomol/!svn/ver/1019/trunk/protomol-test/ConfigTests/data/LJForceSFTest.stderr.expect
+END
+BondForceTest.return.expect
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svnroot/protomol/!svn/ver/1019/trunk/protomol-test/ConfigTests/data/BondForceTest.return.expect
+END
+LeapfrogTruncatedShadowTest.xyz.orig
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svnroot/protomol/!svn/ver/1046/trunk/protomol-test/ConfigTests/data/LeapfrogTruncatedShadowTest.xyz.orig
+END
+PDBTest.pdb.orig
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svnroot/protomol/!svn/ver/1046/trunk/protomol-test/ConfigTests/data/PDBTest.pdb.orig
+END
+PDBTest.in.pdb
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svnroot/protomol/!svn/ver/1014/trunk/protomol-test/ConfigTests/data/PDBTest.in.pdb
+END
+NMMTest.stderr.expect
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svnroot/protomol/!svn/ver/1075/trunk/protomol-test/ConfigTests/data/NMMTest.stderr.expect
+END
+ImproperForceTest.return.expect
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svnroot/protomol/!svn/ver/1019/trunk/protomol-test/ConfigTests/data/ImproperForceTest.return.expect
+END
+ShakeTest.stderr.expect
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svnroot/protomol/!svn/ver/1027/trunk/protomol-test/ConfigTests/data/ShakeTest.stderr.expect
+END
+LJForceSFTest.stdout.expect
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svnroot/protomol/!svn/ver/1048/trunk/protomol-test/ConfigTests/data/LJForceSFTest.stdout.expect
+END
+C2Test.conf
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svnroot/protomol/!svn/ver/1029/trunk/protomol-test/ConfigTests/data/C2Test.conf
+END
+alanine.par
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svnroot/protomol/!svn/ver/1020/trunk/protomol-test/ConfigTests/data/alanine.par
+END
+AngleForceTest.conf
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svnroot/protomol/!svn/ver/1019/trunk/protomol-test/ConfigTests/data/AngleForceTest.conf
+END
+VelacTest.coor
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svnroot/protomol/!svn/ver/1000/trunk/protomol-test/ConfigTests/data/VelacTest.coor
+END
+C2Test.stderr.expect
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svnroot/protomol/!svn/ver/1023/trunk/protomol-test/ConfigTests/data/C2Test.stderr.expect
+END
+NMMTest.stdout.expect
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svnroot/protomol/!svn/ver/1075/trunk/protomol-test/ConfigTests/data/NMMTest.stdout.expect
+END
+HessianTest.return.expect
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svnroot/protomol/!svn/ver/1320/trunk/protomol-test/ConfigTests/data/HessianTest.return.expect
+END
+VelacTest.return.expect
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svnroot/protomol/!svn/ver/1068/trunk/protomol-test/ConfigTests/data/VelacTest.return.expect
+END
+UniversalTest.xyz.orig
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svnroot/protomol/!svn/ver/1059/trunk/protomol-test/ConfigTests/data/UniversalTest.xyz.orig
+END
+CoulombForceSFTest.stderr.expect
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svnroot/protomol/!svn/ver/1019/trunk/protomol-test/ConfigTests/data/CoulombForceSFTest.stderr.expect
+END
+DielecForceSFTest.return.expect
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svnroot/protomol/!svn/ver/1019/trunk/protomol-test/ConfigTests/data/DielecForceSFTest.return.expect
+END
+ShakeTest.stdout.expect
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svnroot/protomol/!svn/ver/1048/trunk/protomol-test/ConfigTests/data/ShakeTest.stdout.expect
+END
+LeapfrogTest.return.expect
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svnroot/protomol/!svn/ver/1023/trunk/protomol-test/ConfigTests/data/LeapfrogTest.return.expect
+END
+LJForceSFTest.xyz.orig
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svnroot/protomol/!svn/ver/1046/trunk/protomol-test/ConfigTests/data/LJForceSFTest.xyz.orig
+END
+SCPISMForceTest.stderr.expect
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svnroot/protomol/!svn/ver/1019/trunk/protomol-test/ConfigTests/data/SCPISMForceTest.stderr.expect
+END
+LeapfrogTruncatedShadowTest.stderr.expect
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svnroot/protomol/!svn/ver/1023/trunk/protomol-test/ConfigTests/data/LeapfrogTruncatedShadowTest.stderr.expect
+END
+HessianIntTest.return.expect
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svnroot/protomol/!svn/ver/1027/trunk/protomol-test/ConfigTests/data/HessianIntTest.return.expect
+END
+CoulombForceCutoffTest.conf
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svnroot/protomol/!svn/ver/1019/trunk/protomol-test/ConfigTests/data/CoulombForceCutoffTest.conf
+END
+C2Test.stdout.expect
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svnroot/protomol/!svn/ver/1048/trunk/protomol-test/ConfigTests/data/C2Test.stdout.expect
+END
+XYZTest.conf
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svnroot/protomol/!svn/ver/1072/trunk/protomol-test/ConfigTests/data/XYZTest.conf
+END
+ShakeTest.conf
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svnroot/protomol/!svn/ver/1029/trunk/protomol-test/ConfigTests/data/ShakeTest.conf
+END
+CoulombForceSFTest.stdout.expect
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svnroot/protomol/!svn/ver/1048/trunk/protomol-test/ConfigTests/data/CoulombForceSFTest.stdout.expect
+END
+VelacTest.psf
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svnroot/protomol/!svn/ver/1000/trunk/protomol-test/ConfigTests/data/VelacTest.psf
+END
+LJForceCutoffTest.xyz.orig
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svnroot/protomol/!svn/ver/1046/trunk/protomol-test/ConfigTests/data/LJForceCutoffTest.xyz.orig
+END
+RattleTest.stderr.expect
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svnroot/protomol/!svn/ver/1027/trunk/protomol-test/ConfigTests/data/RattleTest.stderr.expect
+END
+SCPISMForceTest.stdout.expect
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svnroot/protomol/!svn/ver/1048/trunk/protomol-test/ConfigTests/data/SCPISMForceTest.stdout.expect
+END
+LeapfrogTruncatedShadowTest.stdout.expect
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svnroot/protomol/!svn/ver/1048/trunk/protomol-test/ConfigTests/data/LeapfrogTruncatedShadowTest.stdout.expect
+END
+BondForceTest.xyz.orig
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svnroot/protomol/!svn/ver/1046/trunk/protomol-test/ConfigTests/data/BondForceTest.xyz.orig
+END
+NMLTest.return.expect
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svnroot/protomol/!svn/ver/1066/trunk/protomol-test/ConfigTests/data/NMLTest.return.expect
+END
+C1Test.xyz.orig
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svnroot/protomol/!svn/ver/1046/trunk/protomol-test/ConfigTests/data/C1Test.xyz.orig
+END
+LangevinTest.stderr.expect
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svnroot/protomol/!svn/ver/1066/trunk/protomol-test/ConfigTests/data/LangevinTest.stderr.expect
+END
+AngleForceTest.stderr.expect
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svnroot/protomol/!svn/ver/1019/trunk/protomol-test/ConfigTests/data/AngleForceTest.stderr.expect
+END
+LJForceCutoffTest.return.expect
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svnroot/protomol/!svn/ver/1019/trunk/protomol-test/ConfigTests/data/LJForceCutoffTest.return.expect
+END
+CGMinimizerTest.conf
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svnroot/protomol/!svn/ver/1022/trunk/protomol-test/ConfigTests/data/CGMinimizerTest.conf
+END
+RattleTest.stdout.expect
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svnroot/protomol/!svn/ver/1048/trunk/protomol-test/ConfigTests/data/RattleTest.stdout.expect
+END
+AngularMomentumTest.stderr.expect
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svnroot/protomol/!svn/ver/1027/trunk/protomol-test/ConfigTests/data/AngularMomentumTest.stderr.expect
+END
+SCPISMForceTest.xyz.orig
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svnroot/protomol/!svn/ver/1046/trunk/protomol-test/ConfigTests/data/SCPISMForceTest.xyz.orig
+END
+BornForceTest.xyz.orig
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svnroot/protomol/!svn/ver/1046/trunk/protomol-test/ConfigTests/data/BornForceTest.xyz.orig
+END
+COMTest.stderr.expect
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svnroot/protomol/!svn/ver/1027/trunk/protomol-test/ConfigTests/data/COMTest.stderr.expect
+END
+C1Test.return.expect
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svnroot/protomol/!svn/ver/1023/trunk/protomol-test/ConfigTests/data/C1Test.return.expect
+END
+PDBTest.return.expect
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svnroot/protomol/!svn/ver/1062/trunk/protomol-test/ConfigTests/data/PDBTest.return.expect
+END
+LangevinTest.stdout.expect
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svnroot/protomol/!svn/ver/1066/trunk/protomol-test/ConfigTests/data/LangevinTest.stdout.expect
+END
+AngleForceTest.stdout.expect
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svnroot/protomol/!svn/ver/1048/trunk/protomol-test/ConfigTests/data/AngleForceTest.stdout.expect
+END
+UniversalTest.return.expect
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svnroot/protomol/!svn/ver/1059/trunk/protomol-test/ConfigTests/data/UniversalTest.return.expect
+END
+NMLTest.xyz.orig
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svnroot/protomol/!svn/ver/1072/trunk/protomol-test/ConfigTests/data/NMLTest.xyz.orig
+END
+RattleTest.conf
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svnroot/protomol/!svn/ver/1027/trunk/protomol-test/ConfigTests/data/RattleTest.conf
+END
+LeapfrogTest.conf
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svnroot/protomol/!svn/ver/1022/trunk/protomol-test/ConfigTests/data/LeapfrogTest.conf
+END
+AngularMomentumTest.stdout.expect
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svnroot/protomol/!svn/ver/1048/trunk/protomol-test/ConfigTests/data/AngularMomentumTest.stdout.expect
+END
+PDBTest.par
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svnroot/protomol/!svn/ver/1014/trunk/protomol-test/ConfigTests/data/PDBTest.par
+END
+COMTest.stdout.expect
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svnroot/protomol/!svn/ver/1048/trunk/protomol-test/ConfigTests/data/COMTest.stdout.expect
+END
+LangevinTest.conf
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svnroot/protomol/!svn/ver/1022/trunk/protomol-test/ConfigTests/data/LangevinTest.conf
+END
+CnTest.stderr.expect
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svnroot/protomol/!svn/ver/1061/trunk/protomol-test/ConfigTests/data/CnTest.stderr.expect
+END
+UniversalTest.conf
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svnroot/protomol/!svn/ver/1058/trunk/protomol-test/ConfigTests/data/UniversalTest.conf
+END
+AngleForceTest.xyz.orig
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svnroot/protomol/!svn/ver/1046/trunk/protomol-test/ConfigTests/data/AngleForceTest.xyz.orig
+END
+alanine.psf
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svnroot/protomol/!svn/ver/1020/trunk/protomol-test/ConfigTests/data/alanine.psf
+END
+AngularMomentumTest.conf
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svnroot/protomol/!svn/ver/1027/trunk/protomol-test/ConfigTests/data/AngularMomentumTest.conf
+END
+XYZTest.return.expect
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svnroot/protomol/!svn/ver/1064/trunk/protomol-test/ConfigTests/data/XYZTest.return.expect
+END
+CoulombForceSFTest.xyz.orig
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svnroot/protomol/!svn/ver/1046/trunk/protomol-test/ConfigTests/data/CoulombForceSFTest.xyz.orig
+END
+ImproperForceTest.xyz.orig
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svnroot/protomol/!svn/ver/1046/trunk/protomol-test/ConfigTests/data/ImproperForceTest.xyz.orig
+END
+CGMinimizerTest.stderr.expect
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svnroot/protomol/!svn/ver/1023/trunk/protomol-test/ConfigTests/data/CGMinimizerTest.stderr.expect
+END
+BornForceTest.stderr.expect
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svnroot/protomol/!svn/ver/1066/trunk/protomol-test/ConfigTests/data/BornForceTest.stderr.expect
+END
+CnTest.stdout.expect
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svnroot/protomol/!svn/ver/1061/trunk/protomol-test/ConfigTests/data/CnTest.stdout.expect
+END
+DebugTest.conf
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svnroot/protomol/!svn/ver/1264/trunk/protomol-test/ConfigTests/data/DebugTest.conf
+END
+alanine.pdb
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svnroot/protomol/!svn/ver/1020/trunk/protomol-test/ConfigTests/data/alanine.pdb
+END

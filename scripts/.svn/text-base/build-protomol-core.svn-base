@@ -1,0 +1,109 @@
+#!/bin/bash
+
+ROOT="$1"
+REPO="https://cauldrondevelopment.com/svn/fah/trunk"
+SCONSOPTS="debug=0 optimize=1"
+
+check_for_code() {
+    DIRS="cores/protomol libbzip2 libfah protomol-3.0"
+    ERROR=0
+    for i in $DIRS; do
+        if [ ! -e "$ROOT/$i" ]; then
+            if [ "$1" != "quiet" ]; then
+                echo "ERROR: cannot find \"$ROOT/$i\"."
+            fi
+            ERROR=1
+        fi   
+    done
+
+    return $ERROR
+}
+
+SVN=$(which svn)
+
+if [ ! -x "$SVN" ]; then
+    echo "ERROR: Please first install subversion."
+    exit 1
+fi
+
+SCONS=$(which scons)
+
+if [ ! -x "$SCONS" ]; then
+    echo "ERROR: Please first install scons."
+    exit 1
+fi
+
+if [ "$ROOT" == "" ]; then
+    ROOT="$PWD"
+    check_for_code quiet
+    if [ $? -ne 0 ]; then
+        ROOT="$PWD/trunk"
+    fi
+
+    echo "Assuming ROOT=\"$ROOT\""
+else
+    ROOT=$(dirname "$PWD/$ROOT/.")
+    echo "ROOT=\"$ROOT\""
+fi
+
+echo
+
+# Check out code
+check_for_code quiet
+if [ $? -ne 0 ]; then
+    svn co "$REPO" "$ROOT"
+fi
+
+check_for_code
+if [ $? -ne 0 ]; then
+    exit 1
+fi
+
+echo
+
+
+export LIBBZ2_HOME="$ROOT/libbzip2"
+export LIBFAH_HOME="$ROOT/libfah"
+export PROTOMOL_HOME="$ROOT/protomol-3.0"
+
+check_done() {
+  if [ -e "$ROOT/${1}.done" ]; then
+      return 1
+  else
+      return 0
+  fi
+}
+
+mark_done() {
+    touch "$ROOT/${1}.done"
+}
+
+build() {
+    NAME="$1"
+    HOME="$2"
+    shift 2
+
+    check_done "$NAME"
+    if [ $? -eq 0 ]; then
+        echo "Building $NAME"
+
+        cd "$HOME" &&\
+        $SCONS $SCONSOPTS "$@" &&\
+        cd -
+
+        if [ $? -ne 0 ]; then
+            echo "ERROR building $NAME"
+            exit 1
+        fi
+
+        mark_done "$NAME"
+    fi
+
+    echo "$NAME Done"
+}
+
+build libbzip2 "$LIBBZ2_HOME"
+build libfah "$LIBFAH_HOME"
+build libprotomol-fah "$PROTOMOL_HOME" fah=1
+build protomol-core "$ROOT/cores/protomol/"
+

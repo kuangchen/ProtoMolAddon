@@ -1,0 +1,98 @@
+import os, sys
+sys.path.append(os.environ.get('CONFIG_SCRIPTS_HOME', './config-scripts'))
+import config # Configure system in ./config
+
+# Version
+version = '3.2.0'
+major, minor, revision = version.split('.')
+
+# Setup
+env = config.make_env(['compiler', 'libprotomol', 'dist', 'build_info'])
+
+# Configure
+conf = Configure(env)
+config.configure('build_info', conf, namespace = 'FAH::BuildInfo')
+config.configure('dist', conf, version = version)
+
+# Do configuration
+if not env.GetOption('clean'):
+    # Configure compiler
+    config.configure('compiler', conf)
+
+    # Dependencies
+    lib = config.load_conf_module('libprotomol', '.')
+    lib.configure_deps(conf)
+
+    # Mostly static libraries
+    if env.get('mostly_static', 0): config.compiler.mostly_static_libs(env)
+
+    # libprotomol path
+    env.Append(CPPPATH = ['#/src'])
+
+conf.Finish()
+
+
+# package.h
+execfile('package_h.py')
+
+# libfah
+use_fah = int(env.get('fah', 0))
+
+# Build info
+if use_fah:
+    info = env.BuildInfo('build_info.cpp', [])
+    AlwaysBuild(info)
+else: info = []
+
+# ProtoMol Library
+libname = 'protomol'
+if use_fah: libname = libname + '-fah'
+libsrc = []
+
+# Import subdir build files
+for s in SConscript('src/protomol/SConscript'):
+    libsrc.append('#/src/protomol/' + s)
+
+if use_fah:
+    libsrc.append('#/src/protomol/modules.cpp')
+
+lib = env.Library(libname, libsrc)
+
+
+# Build Application
+src = ['src/protomol/main.cpp', 'src/protomol/modules.cpp']
+name = 'ProtoMol'
+protomol = env.Program(name, src + [lib] + info)
+Default(protomol)
+
+# Dist
+distfiles = [name + env['PROGSUFFIX']]
+if env['PLATFORM'] == 'win32': distfiles.append(name + '.exe.pdb')
+tar = env.TarBZ2Dist(name, distfiles)
+Alias('dist', tar)
+AlwaysBuild(tar)
+
+
+# Build Visual Studio Project
+if env['PLATFORM'] == 'win32':
+    src = []
+
+    def add_hdrs(arg, dir, files):
+        global src
+        for file in files:
+            if file.endswith(arg):
+                src += [dir + os.sep + file]
+
+    os.path.walk('src/protomol', add_hdrs, '.h')
+    inc = src
+    src = []
+    os.path.walk('src/protomol', add_hdrs, '.cpp')
+
+    if env.get('debug'): variant = 'Debug'
+    else: variant = 'Release'
+
+    env.MSVSProject(target = 'ProtoMol' + env['MSVSPROJECTSUFFIX'],
+                    srcs = src, incs = inc,
+                    auto_build_solution = 0,
+                    variant = ['Debug', 'Release'],
+                    buildtarget = ['debug=1', 'debug=0'])

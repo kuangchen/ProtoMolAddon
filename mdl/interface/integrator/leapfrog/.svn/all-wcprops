@@ -1,0 +1,101 @@
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svnroot/protomol/!svn/ver/1533/trunk/mdl/interface/integrator/leapfrog
+END
+ModifierNPTShake.h
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svnroot/protomol/!svn/ver/1533/trunk/mdl/interface/integrator/leapfrog/ModifierNPTShake.h
+END
+ModifierNPTRattle.h
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svnroot/protomol/!svn/ver/1533/trunk/mdl/interface/integrator/leapfrog/ModifierNPTRattle.h
+END
+ModifierPostForceThermostat.h
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svnroot/protomol/!svn/ver/1533/trunk/mdl/interface/integrator/leapfrog/ModifierPostForceThermostat.h
+END
+ModifierPreForceThermostat.h
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svnroot/protomol/!svn/ver/1533/trunk/mdl/interface/integrator/leapfrog/ModifierPreForceThermostat.h
+END
+LeapfrogIntegrator.i
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svnroot/protomol/!svn/ver/1482/trunk/mdl/interface/integrator/leapfrog/LeapfrogIntegrator.i
+END
+NoseNVTLeapfrogIntegrator.i
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svnroot/protomol/!svn/ver/1482/trunk/mdl/interface/integrator/leapfrog/NoseNVTLeapfrogIntegrator.i
+END
+NPTVerletIntegrator.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svnroot/protomol/!svn/ver/1533/trunk/mdl/interface/integrator/leapfrog/NPTVerletIntegrator.cpp
+END
+PLeapfrogIntegrator.i
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svnroot/protomol/!svn/ver/1482/trunk/mdl/interface/integrator/leapfrog/PLeapfrogIntegrator.i
+END
+LeapfrogTruncatedShadow.i
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svnroot/protomol/!svn/ver/1482/trunk/mdl/interface/integrator/leapfrog/LeapfrogTruncatedShadow.i
+END
+NPTVerletIntegrator.h
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svnroot/protomol/!svn/ver/1533/trunk/mdl/interface/integrator/leapfrog/NPTVerletIntegrator.h
+END
+NPTVerletIntegrator.i
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svnroot/protomol/!svn/ver/1533/trunk/mdl/interface/integrator/leapfrog/NPTVerletIntegrator.i
+END
+ModifierPostForceBarostat.h
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svnroot/protomol/!svn/ver/1533/trunk/mdl/interface/integrator/leapfrog/ModifierPostForceBarostat.h
+END
+ModifierPreForceBarostat.h
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svnroot/protomol/!svn/ver/1533/trunk/mdl/interface/integrator/leapfrog/ModifierPreForceBarostat.h
+END
+DMDLeapfrogIntegrator.i
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svnroot/protomol/!svn/ver/1482/trunk/mdl/interface/integrator/leapfrog/DMDLeapfrogIntegrator.i
+END
+ModifierNPTShake.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svnroot/protomol/!svn/ver/1533/trunk/mdl/interface/integrator/leapfrog/ModifierNPTShake.cpp
+END
+ModifierNPTRattle.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svnroot/protomol/!svn/ver/1533/trunk/mdl/interface/integrator/leapfrog/ModifierNPTRattle.cpp
+END

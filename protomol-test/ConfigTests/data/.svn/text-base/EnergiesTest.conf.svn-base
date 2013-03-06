@@ -1,0 +1,49 @@
+#
+# Npantane for protomol
+#
+firststep 0
+numsteps 30
+outputfreq 10
+
+# Constraints
+angularMomentum 0
+comMotion 0
+exclude 1-4
+shake false
+
+seed 1234
+
+posfile VelacTest.coor
+velfile VelacTest.vel
+psffile VelacTest.psf
+parfile VelacTest.par 
+temperature 300
+
+allenergiesfile EnergiesTest.energies
+
+boundaryConditions periodic
+# Periodic Boundary Conditions
+cellBasisVector1    23.    0.   0.
+cellBasisVector2     0.   23.   0.
+cellBasisVector3     0.    0   23.
+cellOrigin          6.8   7.3  8.2
+
+cellManager Cubic
+cellsize 5
+
+Integrator {
+ level 0 LangevinImpulse {
+        timestep    1.0
+	temperature 300
+	gamma 5
+
+    force Dihedral 
+    force Bond 
+    force Angle 
+    force LennardJones
+         -algorithm NonbondedCutoff
+         -switchingFunction C2
+         -switchon 8.0
+         -cutoff 9.0
+  }
+}

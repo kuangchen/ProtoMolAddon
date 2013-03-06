@@ -1,0 +1,201 @@
+import os
+import sys
+
+
+mdlmodules = {'integrator/leapfrog':['LeapfrogIntegrator', 'LeapfrogTruncatedShadow', 'PLeapfrogIntegrator', 'DMDLeapfrogIntegrator', 'NoseNVTLeapfrogIntegrator'],
+              'integrator/':['PySTSIntegrator', 'PyMTSIntegrator'],
+	      'integrator/base':['LangevinImpulseIntegrator', 'CGMinimizerIntegrator', 'NumericalDifferentiation', 'LangevinLeapfrogIntegrator'],
+              'type':['Vector3DBlock', 'ScalarStructure'],
+	      'integrator/normal':['NormalModeBrownian', 'NormalModeDiagonalize', 'NormalModeMinimizer', 'NormalModeLangevin', 'NormalModeUtilities', 'NormalModeMori', 'NormalModeRelax'],
+              'integrator/hessian':['HessianInt'],
+              'io':['DCDTrajectoryReader', 'EigenvectorReader', 'EigenvectorTextReader', 'PARReader', 'PDBReader', 'PDBWriter', 'PSFReader', 'XYZBinReader', 'XYZReader', 'XYZTrajectoryReader', 'XYZTrajectoryWriter', 'XYZWriter'],
+              'output':['OutputCache', 'OutputDCDTrajectory', 'OutputDCDTrajectoryVel', 'OutputEnergies', 'OutputFAHGUI', 'OutputFinalPDBPos', 'OutputFinalXYZPos', 'OutputFinalXYZVel', 'OutputScreen', 'OutputXYZTrajectoryForce', 'OutputXYZTrajectoryPos', 'OutputXYZTrajectoryVel'],
+              'modifier':['ModifierShake'],
+              'base':['MathUtilities'],
+	      'topology':['TopologyUtilities', 'GenericTopology'],
+	      'force/bonded':['BondForce','AngleForce','DihedralForce','HarmDihedralForce','ImproperForce'],
+              'force/nonbonded':['SimpleFullForce', 'CutoffForce'],
+              'force/system':['PySystemForce'],
+              'force':['ForceGroup'],
+              './':['ProtoMolApp']
+	     }
+
+
+def pyWrap(env, pmhome):
+  import distutils.sysconfig
+  env.Append(SWIGFLAGS=['-c++', '-python', '-w312', '-w314', '-w315', '-w317', '-w361', '-w362', '-w389', '-w401', '-w454', '-w503', '-w509', '-I'+pmhome],
+                     CPPPATH=[distutils.sysconfig.get_python_inc()],
+                     SHLIBPREFIX="",
+                     ENV={'PATH':os.environ['PATH']})
+
+  pyvers = "python%d.%d" % sys.version_info[:2]
+  numpypath = sys.exec_prefix+"/lib/"+pyvers+"/site-packages/numpy/core/include/numpy/"
+
+  env['ARFLAGS'] = "rcS"
+  env.Append(CPPPATH = '#')
+  env.Append(LINKFLAGS=' -Wl,-E')
+  env.Append(CXXFLAGS=' -fPIC')
+  env.Append(CXXFLAGs='-I'+pmhome)
+  env.Append(SHCXXFLAGS=' -I'+numpypath)
+  env.Append(SHCXXFLAGS='-I'+pmhome)
+  env.Append(SHLINKFLAGS=' -Wl,-E')
+  env.Append(_LIBDIRFLAGS="-L.")
+
+  if (str(env['CCFLAGS']).find('HAVE_GUI') != -1):
+    env.Append(SWIGFLAGS='-DHAVE_GUI')
+  for dir in mdlmodules.iterkeys():
+    modulelist = mdlmodules[dir]
+    for i in range(0, len(modulelist)):
+       module = modulelist[i]
+       env.SharedLibrary(target='interface/'+dir+'/_'+module+'.so', source=['interface/'+dir+'/'+module+'.i'], SHLIBPREFIX="")
+
+
+
+
+pwd = os.getenv('PWD')
+if (os.environ.has_key('PROTOMOL_HOME')):
+   pmhome=os.getenv('PROTOMOL_HOME')
+else:
+   pmhome=pwd+'../'
+execfile(pmhome+'/compiler.py')
+
+
+# Command Line Options
+opts = Options(pmhome+'/options.py')
+Export('opts')
+
+opts.AddOptions(
+    BoolOption('fah', 'Set to 1 to build library for Folding@Home', 0),
+    BoolOption('lapack', 'Use LAPACK', 1),
+    BoolOption('simtk_lapack', 'Use SimTK LAPACK', 0),
+    )
+
+
+
+compiler_add_opts()
+
+# Create environment and import external PATH
+env = Environment(options = opts, ENV = os.environ)
+
+Export('env')
+
+ 
+# Configure
+conf = Configure(env)
+Export('conf')
+
+
+# Import subdir build files
+subsrc = SConscript(pmhome+'/protomol/SConscript')
+
+# Get options
+fah = int(env.get('fah', 0))
+
+use_lapack = int(env.get('lapack', 0))
+use_simtk_lapack = int(env.get('simtk_lapack', 0))
+
+
+# Configure compiler
+compiler_configure()
+
+
+# Include protomol
+env.Append(CPPPATH = '#')
+
+
+# Generate Help
+Help(opts.GenerateHelpText(env))
+
+
+# libprotomol
+libname = 'protomol'
+if fah: libname = libname + '-fah'
+libsrc = []
+libs = []
+libs.append(libname)
+
+
+if not env.GetOption('clean'):
+    os.chdir(pmhome)
+    execfile(pmhome+'/package_h.py')
+    execfile(pmhome+'/config.py')
+
+    if (have_bzip2 and have_boost_iostreams and have_libfah):
+      env.Append(CPPDEFINES = ['HAVE_LIBFAH'])
+      have_libfah=1
+
+
+    # Folding@Home library version
+    if fah:
+      if not (have_libfah and have_bzip2 and have_boost_iostreams):
+        print 'Need libfah, boost iostreams and libbzip2 for Folding@Home build'
+        Exit(1)
+
+      env.Append(CPPDEFINES = ['BUILD_FOR_FAH'])
+
+
+    env = conf.Finish()
+
+
+if fah:
+    libsrc.append(pmhome+'/protomol/modules.cpp')
+
+
+# Get source
+for s in subsrc:
+    libsrc.append('#/protomol/' + s)
+
+src = [pmhome+'protomol/main.cpp', pmhome+'protomol/modules.cpp']
+
+
+
+# Build Protomol
+env.Append(LIBPATH = ['.'])
+
+
+libsrc2 = []
+for s in subsrc:
+     # I am removing this file from the shared object
+     # compilation - it's only used if HAVE_MPI is true, which
+     # will never be true for MDL.
+     if (s != 'parallel/FFTComplex.cpp'):
+        libsrc2.append(pmhome+'/protomol/'+s)
+libname2 = 'mdl'
+env.Prepend(LIBS = [libname2])
+env.SharedLibrary(libname2, libsrc2)
+os.chdir(pwd)
+pyWrap(env, pmhome)
+Default('.')
+
+
+if env['PLATFORM'] == 'win32':
+  if debug: variant = 'Debug'
+  else: variant = 'Release'
+
+  src = []
+  def add_hdrs(arg, dir, files):
+    global src
+    for file in files:
+      if file.endswith(arg):
+        src += [dir + os.sep + file]
+
+  os.path.walk('protomol', add_hdrs, '.h')
+  inc = src
+  src = []
+  os.path.walk('protomol', add_hdrs, '.cpp')
+
+  env.MSVSProject(target = 'ProtoMol' + env['MSVSPROJECTSUFFIX'],
+                  srcs = src, incs = inc,
+                  auto_build_solution = 0,
+                  variant = ['Debug', 'Release'],
+                  buildtarget = ['debug=1', 'debug=0'])
+
+
+# Tidy
+env.Command('tidy', '', 'rm -f config.log $$(find . -name \*~ -o -name \#*)')
+
+
+
+
+
+

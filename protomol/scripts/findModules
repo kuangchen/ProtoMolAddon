@@ -1,0 +1,6 @@
+#!/bin/sh
+
+MODS=$(find $PROTOMOL_ROOT/protomol/ -name \*Module.h -exec basename {} \; | sed 's/Module\.h//')
+for i in $MODS; do
+  echo ${i}Module
+done

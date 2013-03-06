@@ -1,0 +1,458 @@
+\documentclass[11pt]{article}
+\usepackage{fullpage}
+\usepackage{graphicx}
+%\usepackage{longtable}
+%\usepackage{multirow}
+%\usepackage{psfig}
+\usepackage{amsmath}
+%\usepackage{amsthm}
+%\usepackage{amsfonts}
+%\usepackage{amssymb}
+\usepackage{times} 
+\usepackage{url}
+
+\newcommand{\comment}[1]{\textit{\small {#1}}}
+\newcommand{\cpp}{C\texttt{++}\ }
+\newcommand{\tcl}{\textsc{Tcl\ }}
+\newcommand{\ProtoMol}{\textsc{ProtoMol }}
+\newcommand{\ProtoMolNS}{\textsc{ProtoMol}}
+\newcommand{\MDL}{\textsc{MDL\ }}
+\newcommand{\MOLLY}{\textsc{MOLLY\ }}
+
+\newcommand{\tempstart}{\texttt{<}}
+\newcommand{\tempend}{\texttt{>}}
+\newcommand{\rij}{\mbox{r$_{ij}$}}
+\newcommand{\rik}{\mbox{r$_{ik}$}}
+\newcommand{\vrij}{\mbox{$\vec{r}_{ij}$}}
+\newcommand{\Si}[1]{\mbox{Si$_{#1}$}}
+\newcommand{\Vr}[1]{\mbox{$\vec{r}_{#1}$}}
+\newcommand{\Vx}[1]{\mbox{$\vec{x}_{#1}$}}
+\newcommand{\Vv}[1]{\mbox{$\vec{v}_{#1}$}}
+\newcommand{\hatr}[1]{\mbox{$\hat{{r}_{#1}}$}}
+\newcommand{\hatv}[1]{\mbox{$\hat{{v}_{#1}}$}}
+\newcommand{\AbsVr}[1]{\mbox{$\left| \vec{r}_{#1} \right| $}}
+\newcommand{\AbsVv}[1]{\mbox{$\left| \vec{v}_{#1} \right| $}}
+\providecommand{\textinmath}[1]{\mbox{#1}}
+\providecommand{\ttsmall}[1]{\texttt{\small\mbox{#1}}}
+
+\renewcommand{\labelenumiii}{\arabic{enumiii}.}
+
+\title{Using the ProtoMol/MDL 3.0 TestSuite}
+\author{Trevor Cickovski, Joseph Coffland, Chris Sweet and Jes\'us A. Izaguirre \\ Laboratory for Computational Life Sciences, University of Notre Dame}
+
+\begin{document}
+\maketitle
+
+\section{Obtaining the TestSuite}
+
+The testsuite for ProtoMol/MDL 3.0 is obtainable by checking
+out the most recent version of the software from the 
+\texttt{sourceforge.net} server, using Subversion.  You
+may checkout the software anonymously using the following command:
+
+\begin{verbatim}
+svn co https://protomol.svn.sourceforge.net/svnroot/protomol protomol
+\end{verbatim}
+
+Upon executing this command, a \texttt{protomol/} subdirectory
+will be produced in your working space.  Change to this directory
+and you will find a subdirectory \texttt{protomol-test} which contains
+all regression tests for both \ProtoMol and \MDL, along with Python
+scripts to execute the tests.  Thus before using the testsuite,
+you must minimally have version 2.5 of Python installed (MDL
+requires this version anyway).
+
+\section{Running Tests}
+
+The testsuite expects two things to be contained in your executable
+\texttt{PATH}: the Python interpreter and the ProtoMol executable.
+Thus you must compile ProtoMol before running the testsuite, and must
+provide its containing directory in the \texttt{PATH} environment variable.
+Then to run the entire testsuite, from the \texttt{protomol-test} directory
+you can just run:
+
+\begin{verbatim}
+python testHarness
+\end{verbatim}
+
+which will produce output similar to the following:
+
+\begin{verbatim}
+********** 2008-25-07 17:46:14 UTC-4 ************
+Test Name: [file...]                       Result
+************** Test Suite: Config ***************
+LeapfrogTest:                              [PASS]
+NMLTest:                                   [PASS]
+BornForceTest:                             [PASS]
+LeapfrogTruncatedShadowTest:               [PASS]
+CoulombForceCutoffTest:                    [PASS]
+VelacTest:                                 [PASS]
+....
+*************** Test Suite: MDL *****************
+LeapfrogTest:                              [PASS]
+NMLTest:                                   [PASS]
+BornForceTest:                             [PASS]
+....
+\end{verbatim}
+
+The testsuite contains tests for both \ProtoMol (the \texttt{Config}
+testsuite) and \MDL (the \texttt{MDL} testsuite).  Each
+of their listings contains a set of tests which are each designed
+individually to test one feature of the software.  For example,
+\texttt{LeapfrogTest} tests the Leapfrog propagator, \texttt{NML}
+tests Normal Mode Langevin dynamics, \texttt{BornForceTest} tests
+computation of the Born radii for implicit solvent simulations.
+Assuming you checked out a fresh version of the software and did
+not make any source code modifications, all \ProtoMol and \MDL
+tests should initially pass.
+
+\subsection{Options}
+
+Running the \texttt{testHarness} script with the \texttt{-h} option
+will provide help:
+
+\begin{verbatim}
+> python testHarness -h
+Usage: testHarness [options] [command]
+ 
+Command:
+  enable <test>      enable a previously disabled a test
+  disable <test>     disable a test
+  init <test>        initialize a test
+  reset <test>       reset a test by removing its .expect files
+  run <test>         run a specific test
+  try <test>         run a test and view its results (implies -I)
+  view <test>        view a test's files
+ 
+  If no command is given all tests will be run.
+ 
+Options:
+  -h, --help           show this help message and exit
+  -I, --interactive    run tests in interactive mode
+  -V, --valgrind       run tests under valgrind
+  -v                   increase verbosity
+  -C, --disable-color  disable color output
+\end{verbatim}
+
+Thus the \texttt{testHarness} script accepts both flags or
+special actions to take for certain tests.  As the help output
+states, if no command is given then all tests will be run,
+which we have already seen.  We can enable or disable certain
+tests, i.e.:
+
+\begin{verbatim}
+> python testHarness disable ConfigTests/LeapfrogTest
+\end{verbatim}
+
+It is important to note that disabling or enabling a test has
+effect until rerunning \texttt{enable} or \texttt{disable}, even
+after the test harness stops executing.
+Initializing a test must be performed when adding a new test
+to the testsuite.  Alternatively, assuming correct file placement
+the new test will run automatically but an \texttt{UNINITIALIZED}
+message will be displayed when the test harness is executed, prompting
+for initialization.  We outline this in Chapter 2.  Resetting a test
+is appropriate if at some point the results produced by a test 
+in the suite are discovered to be incorrect, this will remove
+all {\it benchmark} output which is being compared, and require
+the test to be reinitialized.  By using the \texttt{run} command,
+we can just run one test, i.e.:
+
+\begin{verbatim}
+> python testHarness run ConfigTests/NMLTest
+\end{verbatim}
+
+which is useful if one test is being debugged, to avoid rerunning
+all tests upon every modification.  The \texttt{try} command is
+similar, but provides interactivity if the test fails, which we
+outline below.  Benchmark files for a specific test can
+be viewed using the \texttt{view} command.
+
+The flags are fairly self explanatory; we have already seen \texttt{-h}
+for the help screen, \texttt{-v} provides more helpful output upon
+a test failure, \texttt{-C} removes color and \texttt{-V} will also
+profile execution using ValGrind (\texttt{valgrind.org})
+assuming it is installed.  A particularly helpful flag is the \texttt{-I}
+flag, which runs tests interactively.  Individual tests can be run
+interactively with the \texttt{try} command as outlined above.
+Interactivity provides the ability for a user to choose the action to
+take upon a test failure.  When a test fails, output similar to the
+following is produced:
+
+\begin{verbatim}
+***************** 2008-31-07 11:42:39 UTC-4 ************************
+Test Name: [file...]                                          Result
+***************** Test Suite: Config *******************************
+LeapfrogTest: std                                             [FAIL]
+(a)bort (c)ontinue (D)isable (d)iff (i)nitialize (l)og (r)eset 
+(t)est (q)uit (v)iew? 
+\end{verbatim}
+
+There are several actions that can subsequently be taken.  The \texttt{<a>}
+key will abort the test harness script, and \texttt{<c>} and \texttt{<q>}
+take identical action by continuing the harness without taking any action.
+The failed test can be disabled (\texttt{<D>}), reset (\texttt{<r>}) to 
+use the output currently generated as the new benchmark, or 
+initialized (\texttt{<i>}).  Benchmark output can be viewed by pressing
+the \texttt{<v>} key.  Pressing the lowercase \texttt{<d>} will run
+the \texttt{diff} command to generate a description of differences between
+currently generated and benchmark output.  The \texttt{<l>} key displays
+any logged output from the testsuite, and \texttt{<t>} will rerun the
+test (useful if the test has been initialized or reset).  Note the current
+test remains active until \texttt{<a>}, \texttt{<c>} or \texttt{<q>} is
+pressed.
+
+\section{Creating New Tests}
+
+\subsection{Test Architecture}
+
+In order to define new \ProtoMol and \MDL tests, you must understand
+the testsuite structure and components.  Within \texttt{protomol-test},
+you will find two subdirectories \texttt{ConfigTests} and \texttt{MDLTests}.
+Each of these subdirectories contains a set of small Python scripts,
+one per test.  A requirement enforced by the testsuite is that each
+of these scripts end in \texttt{Test}.  To show an example, let's look 
+at \texttt{AngleForceTest}:
+
+\begin{verbatim}
+#!/usr/bin/python                                                             
+import os 
+
+os.system('python ProtoMolCheck AngleForce xyz') 
+\end{verbatim} 
+
+Note that the last line of the script is a system call to
+the Python interpreter, passing as arguments a script
+\texttt{ProtoMolCheck}, the current test name (without 
+the \texttt{Test} suffix), and a set
+of one or more file suffixes.  In general, the tests
+for \ProtoMol will run the \texttt{ProtoMolCheck} Python
+ script and the \MDL tests will run the \texttt{MDLCheck}
+script.  These are also contained within their respective
+testsuite subdirectories.
+
+\texttt{ProtoMolCheck} takes as arguments the test name
+and file suffixes.  All data files are contained within
+the \texttt{data/} subdirectory of \texttt{ConfigTests}.
+\texttt{ProtoMolCheck} will execute \ProtoMol on a configuration
+file with the same name as the test name, concatenated
+with a \texttt{.conf} suffix.  By default, \texttt{ProtoMolCheck}
+checks three types of output: standard output, standard error,
+and the return code (which should always be zero upon a successful
+execution).  These outputs are compared to files in the \texttt{data}
+directory with the \texttt{.expect} suffix -- for example,
+\texttt{AngleForceTest.return.expect}, \texttt{AngleForceTest.stdout.expect},
+etc.  If file suffixes are provided as arguments to \texttt{ProtoMolCheck},
+the \texttt{DataComparator} script is run to compare numerical values between
+a \texttt{.orig} file and an output file generated at runtime consisting
+of the test name concatenated with the appropriate suffix
+(for example, the above case would compare \texttt{AngleForceTest.xyz}
+and \texttt{AngleForceTest.xyz.orig}).  Thus it is mandatory that
+in each test configuration file output file names which should be compared
+are named properly.  Once compared, the generated output files
+are removed from the \texttt{data/} directory.
+
+The \texttt{DataComparator} source code is contained
+within a subdirectory of the \texttt{protomol-test} root, called
+\texttt{src/}.  When the \texttt{protomol-test} scons
+script is run, the \texttt{DataComparator} executable is 
+produced in the \texttt{protomol-test} root directory.
+For any test which check file output as well as defaults,
+the \texttt{DataComparator} is run.  The \texttt{DataComparator}
+accepts a command line argument for tolerance when comparing
+values, which in the \texttt{ProtoMolCheck} script is set to 0.0000001.
+When a \ProtoMolNS-generated output file is compared to a \texttt{.orig},
+each numerical value is compared to ensure the absolute value of 
+the difference falls within this tolerance.  If it does not,
+a \texttt{Files do not match} message is sent to standard output and
+the test fails.  The \texttt{DataComparator} can recognize
+XYZ trajectory and snapshot files, as well as PDB files and DCD
+trajectories, and energy files.
+
+\MDL tests work very similar to those for \ProtoMolNS, with the differences
+ being (1) that they are contained within a subdirectory \texttt{MDLTests}
+instead of \texttt{ConfigTests}, (2) that scripts with the test name 
+concatenated with the \texttt{.py} extension are executed as opposed to 
+running the \ProtoMol executable on a \texttt{.conf} file, and (3)
+the driver script is named \texttt{MDLCheck} instead of \texttt{ProtoMolCheck}.
+Everything else works the same.
+
+\subsection{Creating a \ProtoMol Test}
+
+Now suppose we wanted to create our own test for \ProtoMolNS,
+for a new integrator \texttt{FooBar}.  For the sake
+of simplicity, we'll assume that the integrator is single
+timestepping (STS) and its only necessary parameter
+is a timestep.  Suppose we wanted to test the integrator
+on alanine dipeptide in vacuum.  An appropriate name for our new
+test would be \texttt{FooBarTest}, so our \ProtoMol configuration file
+must be named \texttt{FooBarTest.conf} and might look something
+like this:
+
+\begin{verbatim}
+firststep 0
+numsteps 1
+
+# Constraints
+angularMomentum 0
+comMotion 0
+exclude scaled1-4
+
+posfile alanine.pdb # from solvated simulation with same name
+psffile alanine.psf
+parfile alanine.par
+temperature 310
+
+boundaryConditions vacuum
+
+cellManager Cubic
+
+Integrator {
+ level 0 FooBar {
+        timestep 0.5
+    force Bond
+    force Angle
+    force Dihedral
+    force Improper
+    force LennardJones Coulomb
+       -algorithm NonbondedSimpleFull
+  }
+}
+
+finpdbposfile FooBarTest.pdb
+allenergiesfile FooBarTest.energies
+\end{verbatim}
+
+Note that we generated two types of output: positions
+in a PDB snapshot (most appropriate to test when
+dealing with integrators) and an energies file, and that
+we named them using the test name concatenated with the
+appropriate suffix.  We place this file in the
+directory \texttt{ConfigTests/data}.  
+Now, we must create a \texttt{FooBarTest} script within the 
+\texttt{ConfigTests/} directory one level up in the hierarchy.
+We must call \texttt{ProtoMolCheck} through a system call
+to the Python interpreter, passing the test name and 
+appropriate suffixes which are in this case 
+\texttt{pdb} and \texttt{energies}:
+
+\begin{verbatim}
+import os
+
+os.system('python ProtoMolCheck FooBar pdb energies')
+\end{verbatim}
+
+The test has now been created, because the \texttt{testHarness}
+automatically executes all Python test scripts within the
+\texttt{ConfigTests} and \texttt{MDLTests} subdirectories
+of the root.  When the \texttt{testHarness} script is executed,
+you'll see the following output:
+
+\begin{verbatim}
+FooBarTest:                                    [UNINITIALZED]
+\end{verbatim}
+
+If a test is \texttt{UNINITIALIZED}, that means that the
+\texttt{.expect} and \texttt{.orig} files have not been created yet.
+To initialize and create these files, you'll want to run the
+\texttt{testHarness} with the \texttt{-I} option, which pauses
+on any test that does not pass and provides you with choices:
+
+\begin{verbatim}
+python testHarness -I
+\end{verbatim}
+
+which will stop after detecting an uninitialized test:
+
+\begin{verbatim}
+FooBarTest:                                    [UNINITIALZED]
+(a)bort (c)ontinue (D)isable (d)iff (i)nitialize (l)og (r)eset 
+(t)est (q)uit (v)iew? 
+\end{verbatim}
+
+Now you will want to press the \texttt{<I>} key to initialize
+this test.  Once initialized, the \texttt{testHarness} script
+will continue.  If you run the script a second time, the
+test should pass:
+
+\begin{verbatim}
+FooBarTest:                                            [PASS]
+\end{verbatim}
+
+\subsection{Creating an \MDL Test}
+
+Once the new \texttt{FooBar} integrator has been wrapped
+for \MDL, we can also develop an analogous MDL test for
+the integrator.  The Python script \texttt{FooBarTest.py}
+for running the same simulation
+protocol as the configuration file for the \ProtoMol test,
+would look like this:
+
+\begin{verbatim}
+from MDL import *
+
+phys = Physical()
+io = IO()
+io.readPDBPos(phys, "data/alanine.pdb")
+io.readPSF(phys, "data/alanine.psf")
+io.readPAR(phys, "data/alanine.par")
+phys.bc = "Vacuum"
+phys.temperature = 310
+
+forces = Forces()
+ff = forces.makeForceField(phys, "charmm")
+
+io.files = {'energies':('data/FooBarTest.energies', 1)}
+
+prop = Propagator(phys, forces, io)
+prop.propagate("FooBar", steps=1, dt=0.5, forcefield=ff)
+io.writePDBPos(phys, 'data/FooBarTest.pdb')
+\end{verbatim}
+
+This file is placed in the \texttt{MDLTests/data} directory,
+and we next must create a \texttt{FooBarTest} script one level
+higher in the directory hierarchy, which runs \texttt{MDLCheck}:
+
+\begin{verbatim}
+import os
+os.system('python MDLCheck FooBar pdb energies')
+\end{verbatim}
+
+That's it!  Rules with respect to initialization also apply to \MDL tests.
+
+\section{Regression Testing Rules}
+
+As a rule of thumb, the regression testsuite should be
+executed upon any change of \ProtoMol or \MDL source code viewed
+as a permanent change.  This of course has different meanings
+for developers and users; for developers the testsuite should
+be executed before committing updated source code to the
+centralized repository, for users the testsuite should be executed
+to ensure the software still runs properly after any local
+source code modifications.
+
+Note that changing \ProtoMol source code can affect the 
+precompiled binaries of \MDL, and so both sets of regression
+tests should be run upon changes to \ProtoMol.  Changes
+to pure Python libraries of \MDL only require the \MDL tests
+to be run to ensure validity.  This is an implication of the
+multi-tiered design of the problem solving environment: higher
+level layers (i.e. a domain-specific language like \MDL) only
+depend on levels lower in the hierarchy (i.e. the \ProtoMol
+computational back end).
+
+\section{Contact Info}
+
+If you have questions or comments, please direct them to:\\ \\
+\noindent Laboratory For Computational Life Sciences\\
+University of Notre Dame\\
+325 Cushing Hall\\
+Notre Dame, IN 46556\\ 
+\\Or e-mail:
+\begin{enumerate}
+\item LCLS: {\it lcls@nd.edu}
+\item Trevor Cickovski: {\it cickovtm@eckerd.edu}
+\item Jes\'us A. Izaguirre: {\it izaguirr@nd.edu}
+\end{enumerate}
+
+\end{document}

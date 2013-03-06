@@ -1,0 +1,47 @@
+import os
+
+opts = Options('options.py')
+opts.AddOptions( BoolOption('simtk_lapack', 'Use SimTK LAPACK', 0) )
+
+env = Environment(options = opts, ENV = os.environ)
+conf = Configure(env)
+
+if env['CC'] == 'cl':
+  env.Append(CCFLAGS = '/TP /EHsc /Zp') # C++ mode
+
+if env['CC'] == 'gcc':
+  env.Append(CCFLAGS = '-Wall -Werror -g')
+  env.Append(CPPDEFINES = ['DEBUG'])
+
+if not env.GetOption('clean'):
+  # ProtoMol
+  if not os.environ.has_key('PROTOMOL_HOME'):
+    print 'PROTOMOL_HOME not set'
+    Exit(1)
+
+  PROTOMOL_HOME = os.environ['PROTOMOL_HOME']
+  env.Append(CPPPATH = [PROTOMOL_HOME])
+  env.Append(LIBPATH = [PROTOMOL_HOME])
+
+  if not conf.CheckLib('libprotomol'):
+    print 'Need protomol >= 3.0 please set PROTOMOL_HOME';
+    Exit(1)
+  if not conf.CheckLib('lapack'):
+    print 'Need Lapack';
+    Exit(1)
+  if not conf.CheckLib('blas'):
+    print 'Need Blas';
+    Exit(1)
+  if not conf.CheckLib('g2c'):
+    print 'Need G1C';
+    
+  use_simtk_lapack = int(env.get('simtk_lapack', 0))
+
+  execfile(PROTOMOL_HOME + os.sep + 'config.py')
+
+src = ['dcd-reader.cpp','modules.cpp']
+
+if env['PLATFORM'] == 'win32':
+  env.Append(PROGSUFFIX = '.exe')
+
+env.Program('dcd-reader', src)

@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svnroot/protomol/!svn/ver/1816/trunk/applications/protocell/integrator
+END
+LangevinFlowCoupledIntegrator.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svnroot/protomol/!svn/ver/1816/trunk/applications/protocell/integrator/LangevinFlowCoupledIntegrator.cpp
+END
+SConscript
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svnroot/protomol/!svn/ver/1771/trunk/applications/protocell/integrator/SConscript
+END
+LangevinFlowCoupledIntegrator.h
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svnroot/protomol/!svn/ver/1816/trunk/applications/protocell/integrator/LangevinFlowCoupledIntegrator.h
+END

@@ -1,0 +1,48 @@
+firststep 0
+numsteps 2000
+
+# seed 1234
+
+posfile examples/argon_400/argon.pdb
+velfile examples/argon_400/argon.vel.pdb
+psffile examples/argon_400/argon.psf
+parfile examples/argon_400/argon.par
+# temperature 300.0 
+
+usecharmm28parfile yes
+
+#outputfreq 1
+#allenergiesfile argon.out.energies.lf
+
+boundaryConditions Periodic
+
+cellManager Cubic
+cellsize 6.5
+
+#Integrator {
+
+#  level 0 Leapfrog {
+
+#        timestep 1
+
+    # force Improper,
+    #       Dihedral,
+    #       Bond,
+    #       Angle 
+
+#    force LennardJones
+#            -algorithm NonbondedSimpleFull
+    #       -algorithm NonbondedCutoff
+    #       -switchingFunction C2
+    #       -switchon 0.1
+    #       -cutoff 6.5
+
+    # force Coulomb
+    #       -algorithm NonbondedCutoff
+    #       -switchingFunction C1
+    #       -cutoff 6.5
+
+#  }
+
+#}
+

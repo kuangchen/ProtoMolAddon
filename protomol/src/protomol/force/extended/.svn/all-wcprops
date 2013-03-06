@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svnroot/protomol/!svn/ver/1829/trunk/protomol/src/protomol/force/extended
+END
+ExtendedTimeForce.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svnroot/protomol/!svn/ver/1829/trunk/protomol/src/protomol/force/extended/ExtendedTimeForce.cpp
+END
+ExtendedForce.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svnroot/protomol/!svn/ver/1829/trunk/protomol/src/protomol/force/extended/ExtendedForce.cpp
+END
+ExtendedTimeForce.h
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svnroot/protomol/!svn/ver/1829/trunk/protomol/src/protomol/force/extended/ExtendedTimeForce.h
+END
+ExtendedForce.h
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svnroot/protomol/!svn/ver/1829/trunk/protomol/src/protomol/force/extended/ExtendedForce.h
+END
+ExtendedCompareForce.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svnroot/protomol/!svn/ver/1829/trunk/protomol/src/protomol/force/extended/ExtendedCompareForce.cpp
+END
+SConscript
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svnroot/protomol/!svn/ver/1829/trunk/protomol/src/protomol/force/extended/SConscript
+END
+ExtendedCompareForce.h
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svnroot/protomol/!svn/ver/1829/trunk/protomol/src/protomol/force/extended/ExtendedCompareForce.h
+END

@@ -1,0 +1,57 @@
+debug 2
+numsteps 10500
+firststep 0
+
+# seed 29062783
+# seed 1269547
+seed 7536031
+
+posfile bpti.pdb
+psffile bpti.psf
+parfile bpti.par
+temperature 300
+
+outputfreq 1
+
+allenergiesfile bpti.out.energies.hmc
+
+boundaryConditions Periodic
+# cellBasisVector1 64.32 0 0
+# cellBasisVector2 0 51.167 0
+# cellBasisVector3 0 0 51.272
+
+cellManager Cubic
+cellsize 4
+
+# shadowEnergy true
+# removeLinearMomentum  1
+# removeAngularMomentum 1
+
+Integrator {
+
+    level 1 HybridMC {
+
+        temperature 300
+        cyclelength 50
+
+    }
+
+    level 0 Leapfrog {
+
+        timestep 0.5
+
+        force Improper 
+        force Dihedral 
+        force Bond 
+        force Angle 
+
+        force Coulomb
+             -algorithm NonbondedSimpleFull
+
+        force LennardJones
+             -algorithm NonbondedSimpleFull
+
+    }
+
+}
+

@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svnroot/protomol/!svn/ver/1801/trunk/mdl/src/forces
+END
+HDForce.py
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svnroot/protomol/!svn/ver/1801/trunk/mdl/src/forces/HDForce.py
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svnroot/protomol/!svn/ver/1482/trunk/mdl/src/forces/__init__.py
+END
+HDForce_smart.py
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svnroot/protomol/!svn/ver/1482/trunk/mdl/src/forces/HDForce_smart.py
+END
+ElectrostaticForce.py
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svnroot/protomol/!svn/ver/1482/trunk/mdl/src/forces/ElectrostaticForce.py
+END

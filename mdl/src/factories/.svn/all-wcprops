@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svnroot/protomol/!svn/ver/1876/trunk/mdl/src/factories
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svnroot/protomol/!svn/ver/1482/trunk/mdl/src/factories/__init__.py
+END
+ForceFactory.py
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svnroot/protomol/!svn/ver/1699/trunk/mdl/src/factories/ForceFactory.py
+END
+PropagatorFactory.py
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svnroot/protomol/!svn/ver/1876/trunk/mdl/src/factories/PropagatorFactory.py
+END

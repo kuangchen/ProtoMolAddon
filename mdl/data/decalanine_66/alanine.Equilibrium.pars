@@ -1,0 +1,55 @@
+firststep 0
+numsteps  10
+
+seed 1234
+
+posfile alanine.pdb
+psffile alanine.psf
+parfile alanine.par
+temperature 300 
+
+outputfreq 2
+allenergiesfile alanine.equilibrium.energies
+
+boundaryConditions periodic
+
+cellManager Cubic
+cellsize    6.5
+
+Integrator {
+
+  level 1 EquilibriumMOLLY {
+        cyclelength 6
+    force Coulomb -algorithm FullEwald -reciprocal
+# using cutoff:
+#    force Coulomb
+#          -algorithm NonbondedSimpleFull
+#	  -switchingFunction ComplementC1
+#          -cutoff 6.5
+  }
+
+  level 0 Leapfrog {
+        timestep 1
+    force Improper 
+    force Dihedral 
+    force Bond 
+    force Angle 
+
+    force Coulomb -algorithm FullEwald  -real -correction
+    force LennardJones
+          -algorithm NonbondedCutoff
+          -switchingFunction C2
+          -cutoff 6.5
+          -cutoff 6.5
+	  -switchon 0.1
+# using cutoff:
+#    force LennardJones Coulomb
+#          -algorithm NonbondedCutoff
+#          -switchingFunction C2
+#          -switchingFunction Shift
+#          -cutoff 6.5
+#          -cutoff 6.5
+#	  -switchon 0.1
+  }
+}
+

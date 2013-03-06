@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svnroot/protomol/!svn/ver/1503/trunk/protomol-test
+END
+testHarness
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svnroot/protomol/!svn/ver/1261/trunk/protomol-test/testHarness
+END
+SConstruct
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svnroot/protomol/!svn/ver/1323/trunk/protomol-test/SConstruct
+END

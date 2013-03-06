@@ -1,0 +1,77 @@
+10
+
+dir
+2024
+https://protomol.svn.sourceforge.net/svnroot/protomol/trunk/mdl/src
+https://protomol.svn.sourceforge.net/svnroot/protomol
+
+
+
+2011-08-12T19:14:55.251167Z
+1917
+tcickovs
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ce46b6ef-3445-0410-911d-c47028e6f9df
+
+factories
+dir
+
+forces
+dir
+
+modifiers
+dir
+
+propagators
+dir
+
+__init__.py
+file
+
+
+
+
+2012-03-06T18:17:07.256565Z
+d41d8cd98f00b204e9800998ecf8427e
+2009-03-18T15:11:23.066415Z
+1482
+tcickovs
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+0
+
+toplevel
+dir
+

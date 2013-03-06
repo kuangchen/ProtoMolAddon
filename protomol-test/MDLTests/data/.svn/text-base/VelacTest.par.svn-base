@@ -1,0 +1,18 @@
+* From Parameter File PARAM6.INP
+*
+
+BONDS
+C2 C2   225.0       1.53
+C2 C3   225.0       1.53
+
+ANGLES
+C2 C2 C3    45.0     111.0
+C2 C2 C2    45.0     111.0
+
+DIHEDRALS
+X    C2 C2 X        1.6       3       0.0
+X    C2 C2 X        0.3       1       0.0
+
+NONBONDED
+C2     1.7700    -0.1142       2.235 1.77 -0.1 1.9
+C3     2.1700    -0.1811       2.165 1.77 -0.1 1.9

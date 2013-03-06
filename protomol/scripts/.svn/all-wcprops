@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svnroot/protomol/!svn/ver/1004/trunk/protomol/scripts
+END
+ForceTemplateModule.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svnroot/protomol/!svn/ver/1002/trunk/protomol/scripts/ForceTemplateModule.cpp
+END
+TemplateModule.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svnroot/protomol/!svn/ver/1002/trunk/protomol/scripts/TemplateModule.cpp
+END
+makeModule
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svnroot/protomol/!svn/ver/1002/trunk/protomol/scripts/makeModule
+END
+ForceTemplateModule.h
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svnroot/protomol/!svn/ver/1002/trunk/protomol/scripts/ForceTemplateModule.h
+END
+TemplateModule.h
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svnroot/protomol/!svn/ver/1002/trunk/protomol/scripts/TemplateModule.h
+END
+findModules
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svnroot/protomol/!svn/ver/1002/trunk/protomol/scripts/findModules
+END

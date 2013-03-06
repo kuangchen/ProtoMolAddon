@@ -1,0 +1,65 @@
+firststep 0
+numsteps  10
+
+seed 1234
+
+posfile alanine.pdb
+psffile alanine.psf
+parfile alanine.par
+temperature 300 
+
+outputfreq      2
+allenergiesfile alanine.bspline.energies
+
+boundaryConditions periodic
+
+cellManager Cubic
+cellsize    6.5
+
+Integrator {
+  level 1 HBondMOLLY {
+        cyclelength 5
+	BSplineType long
+	mollyStepsize 2
+
+    # MOLLY
+    force MollyBond 
+    force MollyAngle 
+    force MollyLennardJonesCoulomb
+          -cutoff 6.5
+          -switchon 0.1
+          -r0 1.5
+          -r1 4.5
+
+    # Regular
+    force Coulomb -algorithm FullEwald -reciprocal
+#    force Coulomb
+#          -algorithm NonbondedSimpleFull
+#	  -switchingFunction ComplementC1
+#          -cutoff 6.5
+  }
+
+  level 0 Leapfrog {
+        timestep 1
+    force Improper 
+    force Dihedral 
+    force Bond 
+    force Angle 
+
+    force Coulomb -algorithm FullEwald  -real -correction
+    force LennardJones
+          -algorithm NonbondedCutoff
+          -switchingFunction C2
+          -cutoff 6.5
+          -cutoff 6.5
+	  -switchon 0.1
+#    force LennardJones Coulomb
+#          -algorithm NonbondedCutoff
+#          -switchingFunction C2
+#          -switchingFunction Shift
+#          -cutoff 6.5
+#          -cutoff 6.5
+#	  -switchon 0.1
+  }
+}
+

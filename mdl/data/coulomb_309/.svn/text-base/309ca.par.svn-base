@@ -1,0 +1,40 @@
+ REMARKS Charmm parameter set for water and ions v22 b4
+ REMARKS FILENAME="309ca.par"
+
+ SET ECHO=FALSE END
+
+ {>>>>>>>>>> Developmental Parameter File for Proteins <<<<<<<<<<
+  >>>>>>>>>>>>>>>>> Using All Hydrogens (ALLH) <<<<<<<<<<<<<<<<<<
+  >>>>>>>>>>>>>>>>>>>>>>> Jan 1993 <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+  >>>>>>> Direct comments to Alexander D. MacKerell Jr. <<<<<<<<<
+  >>>>>> 410-706-7442 or bitnet: alex,tammy.harvard.edu <<<<<<<<<
+  These files are a beta release; additional parameter development
+  and testing may lead to alteration of the contents.}
+
+!-----------------------------------------------------------------------------------------------
+!	VARIOUS BOND PARAMETERS:  Force Constant, Equilibrium Radius
+!-----------------------------------------------------------------------------------------------
+
+!------------------------------------------------------------------------------------------------------
+!	VARIOUS ANGLE PARAMETERS:  Force Constant, Equilibrium Angle, Urie-Bradley Force Const., 
+!									U.-B. equilibrium  (if any)
+!------------------------------------------------------------------------------------------------------
+
+!-------------------------------------------------------------------------------------------------
+!	VAN-DER-VAALS PARAMETERS: Energy Well Depth, Distance of Minimum(div. by 2**1/6)
+!   for "atoms itself", i.e. for X-X interactions; for X-Y interactions the parameters
+!   values are taken as arithmetic mean of appropriate "atomic" parameters.
+!   "(1:4)" values refer to special intramolecular interactions between atoms connected through 
+!   three bonds. These interactions are taken into consideration only when NBXMOD switch is set
+!   to 5 in NBONDS...END statement, which is taken for default (see 10 lines above).	
+!-------------------------------------------------------------------------------------------------
+
+ NONBONDED  CA       .0       .0       .0       .0    !
+
+
+
+!---------------------------------------------------------------------------------------------
+!---------------------------------------------------------------------------------------------
+ 
+ SET ECHO=TRUE END
+

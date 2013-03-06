@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svnroot/protomol/!svn/ver/1563/trunk/mdl/src/propagators/classes
+END
+STS.py
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svnroot/protomol/!svn/ver/1482/trunk/mdl/src/propagators/classes/STS.py
+END
+BBKMDL.py
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svnroot/protomol/!svn/ver/1563/trunk/mdl/src/propagators/classes/BBKMDL.py
+END
+ImpulseMDL.py
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svnroot/protomol/!svn/ver/1563/trunk/mdl/src/propagators/classes/ImpulseMDL.py
+END
+LeapfrogMDL.py
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svnroot/protomol/!svn/ver/1482/trunk/mdl/src/propagators/classes/LeapfrogMDL.py
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svnroot/protomol/!svn/ver/1482/trunk/mdl/src/propagators/classes/__init__.py
+END
+NosePoincGL.py
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svnroot/protomol/!svn/ver/1482/trunk/mdl/src/propagators/classes/NosePoincGL.py
+END
+RMT.py
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svnroot/protomol/!svn/ver/1482/trunk/mdl/src/propagators/classes/RMT.py
+END
+MTS.py
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svnroot/protomol/!svn/ver/1482/trunk/mdl/src/propagators/classes/MTS.py
+END
+HMC.py
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svnroot/protomol/!svn/ver/1482/trunk/mdl/src/propagators/classes/HMC.py
+END

@@ -1,0 +1,71 @@
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svnroot/protomol/!svn/ver/1807/trunk/mdl/interface/integrator/normal
+END
+NormalModeRelax.i
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svnroot/protomol/!svn/ver/1482/trunk/mdl/interface/integrator/normal/NormalModeRelax.i
+END
+NormalModeUtilities.i
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svnroot/protomol/!svn/ver/1482/trunk/mdl/interface/integrator/normal/NormalModeUtilities.i
+END
+BBKIntegrator.h
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svnroot/protomol/!svn/ver/1568/trunk/mdl/interface/integrator/normal/BBKIntegrator.h
+END
+BBKIntegrator.i
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svnroot/protomol/!svn/ver/1555/trunk/mdl/interface/integrator/normal/BBKIntegrator.i
+END
+NormalModeBrownian.i
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svnroot/protomol/!svn/ver/1482/trunk/mdl/interface/integrator/normal/NormalModeBrownian.i
+END
+NormalModeLangLf.i
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svnroot/protomol/!svn/ver/1807/trunk/mdl/interface/integrator/normal/NormalModeLangLf.i
+END
+NormalModeLangevin.i
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svnroot/protomol/!svn/ver/1482/trunk/mdl/interface/integrator/normal/NormalModeLangevin.i
+END
+NormalModeMinimizer.i
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svnroot/protomol/!svn/ver/1482/trunk/mdl/interface/integrator/normal/NormalModeMinimizer.i
+END
+NormalModeDiagonalize.i
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svnroot/protomol/!svn/ver/1482/trunk/mdl/interface/integrator/normal/NormalModeDiagonalize.i
+END
+NormalModeMori.i
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svnroot/protomol/!svn/ver/1482/trunk/mdl/interface/integrator/normal/NormalModeMori.i
+END
+BBKIntegrator.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svnroot/protomol/!svn/ver/1568/trunk/mdl/interface/integrator/normal/BBKIntegrator.cpp
+END

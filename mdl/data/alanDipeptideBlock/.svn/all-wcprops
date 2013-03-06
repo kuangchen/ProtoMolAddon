@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svnroot/protomol/!svn/ver/1482/trunk/mdl/data/alanDipeptideBlock
+END
+alanC5axial.pdb
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svnroot/protomol/!svn/ver/1482/trunk/mdl/data/alanDipeptideBlock/alanC5axial.pdb
+END
+blockdialanine.psf
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svnroot/protomol/!svn/ver/1482/trunk/mdl/data/alanDipeptideBlock/blockdialanine.psf
+END
+alanC7axial.pdb
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svnroot/protomol/!svn/ver/1482/trunk/mdl/data/alanDipeptideBlock/alanC7axial.pdb
+END
+blockdialanine_eq.pdb
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svnroot/protomol/!svn/ver/1482/trunk/mdl/data/alanDipeptideBlock/blockdialanine_eq.pdb
+END
+diAlanine.conf
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svnroot/protomol/!svn/ver/1482/trunk/mdl/data/alanDipeptideBlock/diAlanine.conf
+END
+qsubScript.sh
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svnroot/protomol/!svn/ver/1482/trunk/mdl/data/alanDipeptideBlock/qsubScript.sh
+END
+dihedralsSet.txt
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svnroot/protomol/!svn/ver/1482/trunk/mdl/data/alanDipeptideBlock/dihedralsSet.txt
+END
+diAlanine.PBC.conf
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svnroot/protomol/!svn/ver/1482/trunk/mdl/data/alanDipeptideBlock/diAlanine.PBC.conf
+END
+par_all27_prot_lipid.inp
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svnroot/protomol/!svn/ver/1482/trunk/mdl/data/alanDipeptideBlock/par_all27_prot_lipid.inp
+END

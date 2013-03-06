@@ -1,0 +1,44 @@
+firststep 0
+numsteps 10
+
+seed 1234
+
+posfile examples/bpti_water_14281/bpti.pdb
+psffile examples/bpti_water_14281/bpti.psf
+parfile examples/bpti_water_14281/bpti.par
+temperature 0
+usecharmm28parfile no
+#outputfreq 10
+#allenergiesfile bpti.out.energy
+
+boundaryConditions Vacuum
+cellBasisVector1     63.0 0.0 0.0
+cellBasisVector2     0.0 50.0 0.0
+cellBasisVector3     0.0 0.0 50.0
+cellOrigin           0.0 0.0 0.0
+
+cellManager Cubic
+cellsize 5
+
+#Integrator {
+#  level 0 Leapfrog {
+#        timestep 1
+#    force Improper 
+#    force Dihedral 
+#    force Bond 
+#    force Angle 
+#    force LennardJones  
+#	-switchingFunction C2 
+#	-algorithm NonbondedCutoff
+#	-switchon 0.1
+#        -cutoff 10.0
+#    force compare time Coulomb -algorithm MultiGrid -interpolation Hermite -kernel C3
+#            -levels 2
+#            -s 10
+#            -order 6
+#            -ratio 2
+#            -h 3 3 3
+#            -origin 0 0 0
+#    force compare time Coulomb -algorithm NonbondedSimpleFull
+#  }
+#}

@@ -1,0 +1,72 @@
+#
+# Optimized LennardJones and Coulomb
+# by combining LennardJones and direct
+# part of multi grid.
+#
+
+firststep 0
+numsteps 1000
+
+exclude scaled1-4
+
+seed 1234
+
+posfile alan_wb10_mineq.pdb
+psffile alan_wb10.psf
+parfile par_all27_prot_lipid.inp
+temperature 310
+
+boundaryConditions periodic
+cellBasisVector1     25.1        0.0         0.0
+cellBasisVector2     0.0          24.5       0.0
+cellBasisVector3     0.0          0.0         23.0
+cellOrigin           -0.342      -0.137     -0.288
+
+cellManager Cubic
+cellsize 5
+
+Integrator {
+  level 0 LangevinImpulse {
+        timestep 1
+        temperature 310
+        gamma 91
+    force Improper 
+    force Dihedral 
+    force Bond 
+    force Angle 
+    Force LennardJones CoulombEwaldReal
+      -switchingFunction Cn    # For LJ
+      -switchingFunction Cutoff # For CoulombEwaldReal
+      -algorithm NonbondedCutoff # For both forces
+
+      -switchon 8.0            # Cn swf switch on
+      -switchoff 10.0           # Cn swf switch off
+      -n 2                     # swf order
+      -cutoff 10  # Cn swf cutoff
+
+      -alpha 0.275106390571206 # Ewald Splitting
+      -cutoff 10  # cutoff swf cutoff
+
+      -cutoff 10  # algorithm cutoff
+
+    force Coulomb 
+         -algorithm PMEwald
+         -reciprocal 
+         -correction 
+         -interpolation BSpline
+         -gridsize   16 18 16
+         -cutoff  10
+  }
+}
+
+# OUTPUTS
+
+outputfreq 100
+
+allenergiesfile alanine.out.energy
+
+finXYZPosFile alanine.out.fin.pos.xyz
+finXYZVelFile alanine.out.fin.vel.xyz
+finPDBPosFile alanine.out.fin.pdb
+
+dcdfile alanine.out.dcd

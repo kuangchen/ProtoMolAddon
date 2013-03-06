@@ -1,0 +1,6 @@
+#ifndef CONFIG_CYGWIN_H
+#define CONFIG_UNIX_H
+
+#define HAVE_DEBUGGER
+
+#endif // CONFIG_CYGWIN_H

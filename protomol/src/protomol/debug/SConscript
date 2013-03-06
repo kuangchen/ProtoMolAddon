@@ -1,0 +1,9 @@
+import glob
+
+Import('*')
+
+src = []
+if env['PLATFORM'] != 'win32':
+  src = glob.glob('*.cpp')
+
+Return('src')

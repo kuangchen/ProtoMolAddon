@@ -1,0 +1,59 @@
+import glob
+import os
+
+opts = Options('options.py')
+
+# Command Line Options
+Export('opts')
+
+#get config routines
+execfile('config.py')
+
+#add boolean options
+add_config_options()
+
+env = Environment(options = opts, ENV = os.environ)
+conf = Configure(env)
+
+if env['CC'] == 'cl':
+  env.Append(CCFLAGS = '/TP /EHsc /Zp') # C++ mode
+
+if env['CC'] == 'gcc':
+  env.Append(CCFLAGS = '-Wall -g')
+  env.Append(CPPDEFINES = ['DEBUG'])
+
+if not env.GetOption('clean'):
+  # ProtoMol
+  if not os.environ.has_key('PROTOMOL_HOME'):
+    print 'PROTOMOL_HOME not set'
+    Exit(1)
+
+  PROTOMOL_HOME = os.environ['PROTOMOL_HOME']
+  env.Append(CPPPATH = [PROTOMOL_HOME])
+  env.Append(LIBPATH = [PROTOMOL_HOME])
+
+  if not conf.CheckLib('libprotomol'):
+    print 'Need protomol >= 3.0 please set PROTOMOL_HOME';
+    Exit(1)
+
+  use_simtk_lapack = int(env.get('simtk_lapack', 0))
+
+  config_configure()
+
+# Import subdir build files
+src = []
+for d in glob.glob('*'):
+    if os.path.isdir(d) and os.path.exists(d + '/SConscript'):
+      dirsrc = SConscript(d + '/SConscript')
+      for s in dirsrc:
+        src.append(d + '/' + s)
+
+src.append('protocell.cpp')
+src.append('modules.cpp')
+
+#src = ['protocell.cpp','modules.cpp']
+
+if env['PLATFORM'] == 'win32':
+  env.Append(PROGSUFFIX = '.exe')
+
+env.Program('protocell', src)

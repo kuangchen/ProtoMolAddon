@@ -1,0 +1,4 @@
+import glob
+
+src = glob.glob('*.cpp')
+Return('src')

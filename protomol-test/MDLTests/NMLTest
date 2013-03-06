@@ -1,0 +1,8 @@
+#!/usr/bin/python
+import os
+import sys
+
+dir = os.path.dirname(sys.argv[0])
+
+os.system('python MDLCheck HessianInt xyz')
+os.system('python MDLCheck NML xyz')

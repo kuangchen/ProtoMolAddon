@@ -1,0 +1,284 @@
+\documentclass[12pt]{article}
+
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{geometry}
+\usepackage{fullpage}
+\usepackage{graphicx}
+
+\newcommand{\veccmd}[2]{\genfrac{[}{]}{Opt}{}{#1}{#2}}
+
+\title{Generalized Born : Energies, Forces and Hessian}
+\author{Santanu Chatterjee}
+\date{}
+
+\begin{document}
+\maketitle
+
+\section{Energy and Force Equations}
+
+Effective Born radii for atom $i$ is given by
+\begin{equation}
+R_{i}^{-1} = \tilde{{\rho}_i}^{-1} - {\rho}_{i}^{-1}\tanh({\alpha}{\Psi_{i}}-{\beta}{\Psi_{i}}^{2} + {\gamma}{\Psi_{i}}^{3}).
+\end{equation}
+or
+\begin{equation}
+R_{i} = \frac{\tilde{\rho}_{i}{\rho}_{i}}{{\rho}_{i} - \tilde{\rho}_{i}\tanh({\alpha}{\Psi_{i}}-{\beta}{\Psi_{i}}^{2} + {\gamma}{\Psi_{i}}^{3})}.
+\end{equation}
+where 
+\begin{equation}
+\label{psiequation}
+{\Psi}_{i} = I_{i}\tilde{{\rho}_i}.
+\end{equation}
+Note that, 
+\begin{equation}
+\tilde{{\rho}_i} = {\rho}_{i} - p.
+\end{equation}
+where $p$ is dielectric offset and $p=0.09{\,}\AA$ and ${\rho}_{i}$ is the
+radius of atom $i$.
+$I_{i}$ for atom $i$ is given by (according to HCT paper) 
+\begin{equation}
+\label{burialterm}
+I_{i} = \frac{1}{2}\displaystyle\sum_{j\ne i}\left(\left[\frac{1}{L_{ij}} - \frac{1}{U_{ij}} + \frac{r_{ij}}{4}\left(
+  \frac{1}{U_{ij}^{2}} - \frac{1}{L_{ij}^{2}}\right) + \frac{1}{2r_{ij}}\log{\frac{L_{ij}}{U_{ij}}} + 
+   %\frac{S_{ij}^{2}{\tilde{{\rho}_{j}^{2}}}{4r_{ij}}\left(\frac{1}{L_{ij}^{2}} - \frac{1}{U_{ij}^{2}}\right)\right] + C_{i},
+   \frac{S_{j}^{2}\tilde{{\rho}_{j}}^{2}}{4r_{ij}}\left(\frac{1}{L_{ij}^{2}} - \frac{1}{U_{ij}^{2}}\right)\right] + C_{ij}\right),
+\end{equation}
+where
+\begin{eqnarray}
+\label{Lijeqn}
+%$$
+L_{ij}& = &\left\{ \begin{array}{rl}
+    1 &\mbox{, $\tilde{\rho}_{i} {\geq} r_{ij} + S_{j}\tilde{\rho}_{j}$} \\
+    \tilde{\rho}_{i} &\mbox{, $r_{ij} + S_{j}\tilde{\rho}_{j} {\geq} \tilde{\rho}_{i} {\geq} r_{ij} - S_{j}\tilde{\rho}_{j}$} \\
+    r_{ij} - S_{j}\tilde{\rho}_{j} &\mbox{, $r_{ij} - S_{j}\tilde{\rho}_{j} {\geq} \tilde{\rho}_{i}$ } \\
+        \end{array} \right.,\\ \nonumber \\
+%\end{equation}
+%\begin{equation}
+\label{Uijeqn}
+U_{ij} &=& \left\{ \begin{array}{rl}
+      1 &\mbox{, $\tilde{\rho}_{i} {\geq} r_{ij} + S_{j}\tilde{\rho}_{j}$} \\
+      r_{ij} + S_{j}\tilde{\rho}_{j} &\mbox {, $\tilde{\rho}_{i} < r_{ij} + S_{j}\tilde{\rho}_{j}$} \\
+          \end{array} \right.      ,\\ \nonumber \\
+%\end{eqnarray}
+%\begin{equation}
+\label{Cijeqn}
+C_{ij} &=& \left\{ \begin{array}{rl}
+   2(\frac{1}{\tilde{\rho}_{i}} - \frac{1}{L_{ij}}) &\mbox{, $\tilde{{\rho}_{i}} < ( \tilde{{\rho}_{j}}S_{j} - r_{ij})$} \\
+   0 &\mbox{otherwise} \\
+           \end{array} \right.,
+\end{eqnarray}
+and $S_j$ are given constants.
+
+Derivative of Born Radius $R_{i}$ w.r.t. $r_{ij}$ is given by
+(note that $\frac{\partial \tanh(x)}{\partial x} = (1-\tanh^{2}(x))$)
+\begin{equation}
+\label{bornradiiderivative}
+\frac{\partial R_{i}}{\partial r_{ij}} = R_{i}^{2}\left(1 - {\tanh}^{2}\left({{\alpha}{\Psi_{i}} - {\beta}{\Psi_{i}}^{2} + {\gamma}
+     {\Psi_{i}}^{3}}\right)\right)\left({\alpha} - 2{\beta}{\Psi_{i}} + 3{\gamma}{\Psi_{i}}^{2}\right)
+     \frac{\tilde{\rho_{i}}}{\rho_{i}}\frac{\partial {I_{i}}}{\partial r_{ij}}
+     .
+\end{equation}
+Derivative of the burial term in Equation (\ref{burialterm}) is given by
+\begin{eqnarray}
+\frac{\partial I_{i}}{\partial r_{ij}} & = & -\frac{1}{2}\frac{\partial L_{ij}}{\partial r_{ij}}\frac{1}{L_{ij}(r_{ij})^2} + 
+  \frac{1}{2}\frac{\partial U_{ij}}{\partial r_{ij}}\frac{1}{U_{ij}(r_{ij})^2} + \left(\frac{1}{8 U_{ij}^2}-\frac{1}{8 L_{ij}^2}\right) \\ \nonumber
+  & & + \frac{1}{8}r_{ij}
+  %\left(\frac{-2\frac{\partial U_{ij}}{\partial r_{ij}}}{U_{ij}^3}
+  \left(\frac{-2}{U_{ij}^{3}}\frac{\partial U_{ij}}{\partial r_{ij}}
+  %+\frac{2\frac{\partial L_{ij}}{\partial r_{ij}}}{L_{ij}^3}\right) 
+  + \frac{2}{L_{ij}^{3}}\frac{\partial L_{ij}}{\partial r_{ij}}\right)
+  %-\frac{1}{4}\frac{\log\left({\frac{L_{ij}}{U_{ij}}}\right)}{r_{ij}^2} +
+  -\frac{1}{4}\frac{1}{r_{ij}^{2}}\log\left({\frac{L_{ij}}{U_{ij}}}\right) +
+  %\frac{1}{4}\frac{\left( \frac{\frac{\partial L_{ij}}{r_{ij}}}{U_{ij}} - \frac{L_{ij}}{U_{ij}^2}\frac{\partial U_{ij}}{\partial r_{ij} }\right)U_{ij}}{r_{ij}L_{ij}} \\ \nonumber
+  \frac{U_{ij}}{4r_{ij}L_{ij}}\left(\frac{1}{U_{ij}}\frac{\partial L_{ij}}{r_{ij}} - \frac{L_{ij}}{U_{ij}^2}\frac{\partial U_{ij}}{\partial r_{ij} } \right) \\ \nonumber
+  & & -\frac{1}{8}
+  %\frac{S_{j}^{2}{\rho_j}^{2}\left(\frac{1}{L_{ij}^{2}} - \frac{1}{U_{ij}^{2}} \right)}{r_{ij}^{2}} + 
+  \frac{S_{j}^{2} {\tilde\rho}_{j}^{2}}{r_{ij}^{2}}\left(\frac{1}{L_{ij}^{2}} - \frac{1}{U_{ij}^{2}} \right) +
+  %\frac{1}{4}\frac{S_{j}^{2}{\rho_j}^{2}\frac{\partial U_{ij}}{\partial r_{ij}}}{r_{ij}U_{ij}^{3}} + 
+  \frac{1}{4}\frac{S_{j}^{2}{\tilde\rho}_{j}^{2}}{r_{ij}U_{ij}^{3}}\frac{\partial U_{ij}}{\partial r_{ij}} 
+  - \frac{1}{4}\frac{S_{j}^{2}{\tilde\rho}_{j}^{2}}{r_{ij}L_{ij}^{3}}\frac{\partial L_{ij}}{\partial r_{ij}}
+  + \frac{\partial C_{ij}}{\partial r_{ij}}
+  %(1/8)*Sj^2*`&rho;j`^2*(1/Lij(Uij)^2-1/Uij(rij)^2)/rij^2+(1/4)*Sj^2*`&rho;j`^2*(diff(Uij(rij), rij))/(rij*Uij(rij)^3)
+  %\right]
+\end{eqnarray}  
+Derivative of $L_{ij}$ (Equation (\ref{Lijeqn})) w.~r.~t.~ $r_{ij}$ is given by
+\begin{equation}
+\frac{\partial L_{ij}}{\partial r_{ij}} = \left\{ \begin{array}{rl}
+    1 &\mbox{, $r_{ij} - S_{j}\tilde{\rho}_{j} {\geq} \tilde{\rho}_{i}$ } \\
+    0 &\mbox{, otherwise} 
+    \end{array} \right..
+\end{equation}
+Derivative of $U_{ij}$ (Equation (\ref{Uijeqn})) w.~r.~t.~ $r_{ij}$ is given by
+\begin{equation}
+\frac{\partial U_{ij}}{\partial r_{ij}} = \left\{ \begin{array}{rl}
+    1 &\mbox{, $\tilde{\rho}_{i} < r_{ij} + S_{j}\tilde{\rho}_{j}$} \\
+    0 &\mbox{, otherwise}
+    \end{array} \right..
+\end{equation}
+Derivative of $C_{ij}$ (Equation (\ref{Cijeqn})) w.~r.~t.~ $r_{ij}$ is given by
+\begin{equation}
+\frac{\partial C_{ij}}{\partial r_{ij}} = \left\{ \begin{array}{rl}
+  2\frac{1}{L_{ij}^{2}}\frac{\partial L_{ij}}{\partial r_{ij}} &\mbox{, $\tilde{{\rho}_{i}} < ( \tilde{{\rho}_{j}}S_{j}) - r_{ij}$} \\
+  0 &\mbox{, otherwise}
+  \end{array} \right..
+\end{equation}
+Question: Does $\partial C_{ij}/\partial r_{ij}=0$?
+
+\paragraph{ACE Solvation term}
+The nonpolar ACE solvation energy is given by
+\begin{equation}
+\label{ACEsolvation}
+G^{np}(\mathbf{r}) = \displaystyle\sum_{i}G_{i}^{np}(\mathbf{r}) = 4{\pi}{\sigma}\displaystyle\sum_{i}({\rho}_{i} + {\rho}_{s})^{2}\left(\frac{{\rho}_{i}}{R_{i}}\right)^{6},
+\end{equation}
+where ${\rho}_{s}$ is the radius of water probe sphere.
+Derivative of $G^{np}$ is given by
+\begin{equation}
+\frac{\partial G^{np}}{\partial r_{ij}} = -24{\pi}{\sigma}\left( (\rho_{i} + \rho_{s})^{2}\frac{{\rho}_{i}^{6}}{R_{i}^{7}}\frac{\partial R_{i}}{\partial r_{ij}} + (\rho_{j} + \rho_{s})^{2}\frac{{\rho}_{j}^{6}}{R_{j}^{7}}\frac{\partial R_{j}}{\partial r_{ij}} \right).
+\end{equation}
+\paragraph{Generalized Born potential}
+The Generalized-Born potential energy function in OpenMM is given by
+\begin{equation}
+\label{GBPotential_OpenMM}
+E_{GB} = -\frac{1}{2}\left(
+\frac{1}{{\epsilon}_{S}} - \frac{1}{{\epsilon}_{w}}\right)\displaystyle\sum_{i}\displaystyle\sum_{j\ne i}\frac{q_{i}q_{j}}{f_{ij}^{GB}(r_{ij},R_{i},R_{j})}.
+\end{equation}
+In Equation (\ref{GBPotential_OpenMM}), ${\epsilon}_{S}$ is the solute dielectric,
+$R_{i}$ and $R_{j}$ are effective Born radii of atoms $i$ and $j$ respectively.
+Note we have not calculated the `self' term as OpenMM assumes the derivative of the `self' term is zero.
+The function
+$f_{ij}^{GB}$ is given by,
+\begin{equation}
+\label{fGBEq}
+f_{ij}^{GB} =\left(r_{ij}^{2} + R_{i}R_{j}\exp\left(-\frac{r_{ij}^{2}}{4R_{i}R_{j}}\right)\right)^{\frac{1}{2}}.
+\end{equation}
+%Note that in Equation (\ref{GBPotential_OpenMM}), the self terms are given by
+%\begin{equation}
+%\label{eq:fGBself}
+%f_{ii}^{GB} = \sqrt{r_{ii}^{2} + R_{i}R_{i}\exp^{-\frac{r_{ii}^{2}}{4R_{i}R_{i}}}} = R_{i}.
+%\end{equation}
+The pairwise force term can be obtained by taking the negative of the derivative of $E_{GB}$ w.~r.~t.~$r_{ij}$.
+\begin{equation}
+\label{eq:EGBderv1}
+\frac{\partial E_{GB}}{\partial r_{ij}} = \left(\frac{1}{{\epsilon}_{S}} - \frac{1}{{\epsilon}_{w}}\right)
+\left(\displaystyle\sum_{k\ne i, j}\frac{q_{i}q_{k}}{\left(f_{ik}^{GB}\right)^2}\frac{\partial f_{ik}^{GB}}{\partial r_{ij}}+
+\displaystyle\sum_{l\ne i,j}\frac{q_{j}q_{l}}{\left(f_{jl}^{GB}\right)^2}\frac{\partial f_{jl}^{GB}}{\partial r_{ij}}+
+\frac{q_{i}q_{j}}{\left(f_{ij}^{GB}\right)^2}\frac{\partial f_{ij}^{GB}}{\partial r_{ij}}\right).
+\end{equation}
+%where $k=i,j$ and $l{\neq}j$ if $k=i$ and $l{\neq}i$ if $k=j$.
+%Derivative of  $E_{GB}$ w.~r.~t.~$r_{ij}$ is given by
+%\begin{equation}
+%\label{eq:dervEGB}
+%\frac{\partial E_{GB}}{\partial r_{ij}} = -\frac{1}{2}q_{i}q_{j}(\frac{1}{\epsilon_{s}} - \frac{1}{\epsilon_{w}})\left[ - \frac{1}{{f_{ij}^{GB}}^{2}}\frac{\partial f_{ij}^{GB}}{\partial r_{ij}} - \frac{1}{{f_{ji}^{GB}}^{2}}\frac{\partial f_{ji}^{GB}}{\partial r_{ij}} \right] -\frac{1}{2}(\frac{1}{\epsilon_{s}} - \frac{1}{\epsilon_{w}})\left[- \frac{q_{i}^{2}}{R_{i}^{2}}\frac{\partial R_{i}}{\partial r_{ij}} - \frac{q_{j}^{2}}{R_{j}^{2}}\frac{\partial R_{j}}{\partial r_{ij}}\right]
+%\end{equation}
+%or
+%\begin{equation}
+%\label{eq:dervEGB1}
+%\frac{\partial E_{GB}}{\partial r_{ij}} = \frac{1}{2}(\frac{1}{\epsilon_{s}} - \frac{1}{\epsilon_{w}})\left( q_{i}q_{j}\left[ \frac{1}{{f_{ij}^{GB}}^{2}}\frac{\partial f_{ij}^{GB}}{\partial r_{ij}} + \frac{1}{{f_{ji}^{GB}}^{2}}\frac{\partial f_{ji}^{GB}}{\partial r_{ij}}  \right] + \left[ \frac{q_{i}^{2}}{R_{i}^{2}}\frac{\partial R_{i}}{\partial r_{ij}} + \frac{q_{j}^{2}}{R_{j}^{2}}\frac{\partial R_{j}}{\partial r_{ij}}\right] \right).
+%\end{equation}
+Derivative of $f_{ij}^{GB}$ (Equation (\ref{fGBEq})) w.~r.~t.~ $r_{ij}$ can be written as
+\begin{eqnarray}
+\label{eq:fijGBderv1}
+\frac{\partial f_{ij}^{GB}}{\partial r_{ij}} & = & \frac{1}{2f_{ij}^{GB}}\left[2r_{ij} + \frac{\partial R_{i}}{\partial r_{ij}}R_{j}\exp\left(-\frac{r_{ij}^{2}}{4R_{i}R_{j}}\right)
+ + R_{i} \frac{\partial R_{j}}{\partial r_{ij}}\exp\left(-\frac{r_{ij}^{2}}{4R_{i}R_{j}}\right) \right. \nonumber\\
+&& \left. \quad + R_{i}R_{j}\exp\left(-\frac{r_{ij}^{2}}{4R_{i}R_{j}}\right)\left( -\frac{r_{ij}}{2R_{i}R_{j}} + \frac{1}{4}\frac{r_{ij}^{2}}{R_{i}^{2}R_{j}}\frac{\partial R_{i}}{\partial r_{ij}} + \frac{1}{4}\frac{r_{ij}^{2}}{R_{i}R_{j}^{2}}\frac{\partial R_{j}}{\partial r_{ij}}\right)\right].
+\end{eqnarray}
+%The off-diagonal terms in the force equation are given by
+%\begin{equation}
+%\label{eq:fGBderv1}
+%\frac{\partial}{\partial r_{ij}}\left(\frac{1}{f_{ij}^{GB}} \right) = -\frac{1}{{f_{ij}^{GB}}^{2}} \frac{\partial f_{ij}^{GB}}{\partial r_{ij}}.
+%\end{equation}
+%\begin{equation}
+%\label{eq:fGBderv1}
+%\frac{\partial}{\partial r_{ij}}\left(\frac{1}{f_{kl}^{GB}} \right) = -\frac{1}{{f_{kl}^{GB}}^{2}} \frac{\partial f_{kl}^{GB}}{\partial r_{ij}}.
+%\end{equation}
+%Derivative $\frac{\partial f_{ij}^{GB}}{\partial r_{ij}}$ in Equation (\ref{eq:fGBderv1}) can be obtained from 
+%Equation (\ref{eq:fijGBderv1}).
+%$\frac{\partial f_{kl}^{GB}}{\partial r_{ij}}$ for $k=i$ is given by
+%\begin{equation}
+%\label{eq:fklGBderv1}
+%\frac{\partial f_{il}^{GB}}{\partial r_{ij}} = \frac{1}{f_{il}^{GB}} \left[\frac{\partial R_{i}}{\partial r_{ij}}R_{l}\exp^{-\frac{r_{il}^{2}}{4R_{i}R_{l}}} - R_{i}R_{l}\exp^{-\frac{r_{il}^{2}}{4R_{i}R_{l}}}(-\frac{r_{il}^{2}}{4R_{i}^{2}R_{l}}\frac{\partial R_{i}}{\partial r_{ij}})\right],
+%\end{equation}
+Derivative of $f_{ik}^{GB}$  w.~r.~t.~ $r_{ij}$ is then
+%which can be simplified to
+\begin{equation}
+\label{eq:fklGBderv2}
+\frac{\partial f_{ik}^{GB}}{\partial r_{ij}} = \frac{1}{2f_{ik}^{GB}} \left( R_{k} + \frac{r_{ik}^{2}}{4R_{i}} \right) \exp\left(-\frac{r_{ik}^{2}}{4R_{i}R_{k}}\right)\frac{\partial R_{i}}{\partial r_{ij}}.
+\end{equation}
+Similarly, the derivative of $f_{jl}^{GB}$  w.~r.~t.~ $r_{ij}$ is
+\begin{equation}
+\label{eq:fklGBderv3}
+\frac{\partial f_{jl}^{GB}}{\partial r_{ij}} = \frac{1}{2f_{jl}^{GB}} \left( R_{l} + \frac{r_{jl}^{2}}{4R_{j}} \right) \exp\left(-\frac{r_{jl}^{2}}{4R_{j}R_{l}}\right)\frac{\partial R_{j}}{\partial r_{ij}}.
+\end{equation}
+%Derivative of the self terms (from Equation (fGBself)) are given by
+%\begin{equation}
+%\frac{\partial f_{ii}^{GB}}{\partial r_{ij}} = -q_{i}^{2}\frac{1}{R_{i}^{2}}\frac{\partial R_{i}}{\partial r_{ij}} 
+%\end{equation}
+
+\section{Hessian}
+Second derivative of $G_{np}$ is given by
+\begin{equation}
+\label{eq:GnpHess1}
+\frac{\partial^{2} G^{np}}{\partial r_{ij}^{2}} = 24{\pi}{\sigma}\left[ ({\rho}_{i} + {\rho}_{s})^{2}{\rho_{i}}^{6}
+\left(\frac{7}{R_{i}^{8}}\left(\frac{\partial R_{i}}{\partial r_{ij}}\right)^{2} - \frac{1}{R_{i}^{7}}\frac{\partial^{2}R_{i}}{\partial r_{ij}^{2}}\right)+ ({\rho}_{j} + {\rho}_{s})^{2}{\rho_{j}}^{6} \left(\frac{7}{R_{j}^{8}}\left(\frac{\partial R_{j}}{\partial r_{ij}}\right)^{2} - \frac{1}{R_{j}^{7}} \frac{\partial^{2}R_{j}}{\partial r_{ij}^{2}}\right) \right]. 
+\end{equation}
+Second derivative of $E_{GB}$ is given by
+\begin{equation}
+\frac{\partial^{2} E_{GB}}{\partial r_{ij}^{2}} = \left[ q_{i}q_{j}\left(\frac{1}{{f_{ij}^{GB}}^{2}}\frac{\partial^{2}f_{ij}^{GB}}{\partial r_{ij}^{2}} - \frac{2}{{f_{ij}^{GB}}^{3}}\left(\frac{\partial f_{ij}^{GB}}{\partial r_{ij}}\right)^{2} \right) + \displaystyle\sum_{k}\displaystyle\sum_{l}q_{k}q_{l} \left( \frac{1}{{f_{kl}^{GB}}^{2}}\frac{\partial^{2}f_{kl}^{GB}}{\partial r_{ij}^{2}} - \frac{2}{{f_{kl}^{GB}}^{3}}\left(\frac{\partial f_{kl}^{GB}}{\partial r_{ij}}\right)^{2}\right) \right].
+\end{equation}
+Second derivative of the Born Radius $R_{i}$ (see Equation (\ref{eq:GnpHess1})) is given by
+\begin{eqnarray}
+\frac{\partial^{2}R_{i}}{\partial r_{ij}^{2}} & = & 2(1 - \tanh({\alpha}{\Psi} - {\beta}{\Psi}^{2} + {\gamma}{\Psi}^{3}))^{2}(\frac{\partial {\Psi}}{\partial r_{ij}})^{2}({\alpha} - 2{\beta}{\Psi} + 3{\gamma}{\Psi}^{2})^{2}\frac{R_{i}^{3}}{\rho^{2}} \\ \nonumber
+& & - 2R_{i}^{2} \tanh({\alpha}{\Psi} - {\beta}{\Psi}^{2} + {\gamma}{\Psi}^{3})(1 -{\tanh({\alpha}{\Psi} - {\beta}{\Psi}^{2} + {\gamma}{\Psi}^{3})}^{2})\\ \nonumber 
+& &\left(\frac{\partial {\Psi}_{i}}{\partial r_{ij}}\right)^{2}({\alpha} - 2{\beta}{\Psi} + 3{\gamma}{\Psi}^{2})^{2}\frac{1}{\rho} \\ \nonumber
+& & R_{i}^{2}(1 - \tanh({\alpha}{\Psi} - {\beta}{\Psi}^{2} + {\gamma}{\Psi}^{3})^{2})({\alpha}\frac{\partial^{2}{\Psi}_{i}}{\partial r_{ij}^{2}} - 2{\beta}(\frac{\partial {\Psi}_{i}}{\partial r_{ij}})^{2} - 2{\beta}{\Psi}_{i}\frac{\partial^{2}{\Psi}_{i}}{\partial r_{ij}^{2}})\frac{1}{{\rho}_{i}} \\ \nonumber
+& & +R_{i}^{2}(1 - \tanh({\alpha}{\Psi} - {\beta}{\Psi}^{2} + {\gamma}{\Psi}^{3})^{2})( 6{\gamma}{\Psi}_{i}(\frac{\partial {\Psi}_{i}}{\partial r_{ij}})^{2} + 3{\gamma}{\Psi}_{i}^{2}\frac{\partial^{2}{\Psi}_{i}}{\partial r_{ij}^{2}})\frac{1}{{\rho}_{i}}.
+\end{eqnarray}
+Second derivative of $f_{ij}^{GB}$ is given by
+\begin{eqnarray}
+\label{eq:fGB2ndDerv1}
+\frac{\partial^{2}f_{ij}^{GB}}{\partial r_{ij}^{2}} & = & -\frac{1}{4}\frac{1}{f_{ij}^{GB}}4\left(f_{ij}^{GB}\right)^{2}\left(\frac{\partial f_{ij}^{GB}}{\partial r_{ij}}\right)^{2} \\ \nonumber
+& & + \frac{1}{2f_{ij}^{GB}}\left[2 + \frac{\partial^{2} R_{i}}{\partial r_{ij}^2}R_{j}\exp(-\frac{r_{ij}^2}{4R_{i}R_{j}}) + 2\frac{\partial R_{i}}{\partial r_{ij}}\frac{\partial R_{j}}{\partial r_{ij}}\exp(-\frac{r_{ij}^2}{4R_{i}R_{j}}) \right] \\ \nonumber
+& & + \frac{1}{2f_{ij}^{GB}}\left[ 2 \frac{\partial R_{i}}{\partial r_{ij}}R_{j}\left(- \frac{r_{ij}}{R_{i}R_{j}} + \frac{r_{ij}^{2}}{4R_{i}^{2}R_{j}}\frac{\partial R_{i}}{\partial r_{ij}} + \frac{r_{ij}^{2}}{4R_{i}R_{j}^{2}}\frac{\partial R_{j}}{\partial r_{ij}} \right)\exp(-\frac{r_{ij}^2}{4R_{i}R_{j}})\right] \\ \nonumber
+& & + \frac{1}{2f_{ij}^{GB}}\left[R_{i}\frac{\partial^{2} R_{j}}{\partial r_{ij}^2}\exp(-\frac{r_{ij}^2}{4R_{i}R_{j}})\right] \\ \nonumber
+& & + \frac{1}{2f_{ij}^{GB}}\left[ 2R_{j}\frac{\partial R_{i}}{\partial r_{ij}}\left(-\frac{r_{ij}}{2R_{i}R_{j}} + \frac{r_{ij}^2}{4R_{i}^{2}R_{j}}\frac{\partial R_{i}}{\partial r_{ij}} + \frac{r_{ij}^2}{4R_{i}R_{j}^{2}}\frac{\partial R_{j}}{\partial r_{ij}}  \right)\exp(-\frac{r_{ij}^2}{4R_{i}R_{j}}) \right] \\ \nonumber
+& & + \frac{1}{2f_{ij}^{GB}}\left[R_{i}R_{j}\left(-\frac{1}{2R_{i}R_{j}} + \frac{r_{ij}}{4R_{i}^{2}R_{j}}\frac{\partial R_{i}}{\partial r_{ij}} + \frac{r_{ij}}{4R_{i}R_{j}^{2}}\frac{\partial R_{j}}{\partial r_{ij}}-\frac{r_{ij}^{2}}{2R_{i}^{2}R_{j}^{2}}\frac{\partial R_{i}}{\partial r_{ij}}\frac{\partial R_{j}}{\partial r_{ij}} \right)\exp(-\frac{r_{ij}^2}{4R_{i}R_{j}}) \right] \\ \nonumber
+& & + \frac{1}{2f_{ij}^{GB}}\left[R_{i}R_{j}\left(\frac{r_{ij}^{2}}{4R_{i}^{2}R_{j}}\frac{\partial^{2}R_{i}}{\partial r_{ij}^2} + \frac{r_{ij}^{2}}{4R_{i}R_{j}^{2}}\frac{\partial^{2}R_{j}}{\partial r_{ij}^2} - \frac{r_{ij}^{2}}{2R_{i}R_{j}^{3}}(\frac{\partial R_{j}}{\partial r_{ij}})^{2}\right)\exp(-\frac{r_{ij}^2}{4R_{i}R_{j}}) \right] \\ \nonumber
+& & + \frac{1}{2f_{ij}^{GB}}\left[ R_{i}R_{j}\left(-\frac{r_{ij}}{2R_{i}R_{j}} + \frac{r_{ij}^{2}}{4R_{i}^{2}R_{j}}\frac{\partial R_{i}}{\partial r_{ij}} + \frac{r_{ij}^{2}}{4R_{i}R_{j}^{2}}\frac{\partial R_{j}}{\partial r_{ij}} \right)\exp(-\frac{r_{ij}^2}{4R_{i}R_{j}}) \right].
+\end{eqnarray}
+Similarly, we can find, 
+\begin{eqnarray}
+\label{eq:fGBil2ndderv1}
+\frac{\partial^{2} f_{il}^{GB}}{\partial r_{ij}^{2}} & = & 
+\frac{1}{f_{il}^{GB}}\exp(-\frac{r_{il}^2}{4R_{i}R_{l}})(R_{l} + \frac{r_{il}^{2}}{4R_{i}})\left[ \frac{\partial^{2} R_{i}}{\partial r_{ij}} - \frac{\partial R_{i}}{\partial r_{ij}}\left(\frac{1}{f_{il}^{GB}}\right) \frac{\partial f_{il}^{GB}}{\partial r_{ij}}\right] \\ \nonumber
+& & + \frac{1}{f_{il}^{GB}}\exp(-\frac{r_{il}^2}{4R_{i}R_{j}})\left(\frac{\partial R_{i}}{\partial r_{ij}}\right)^{2}
+\left[(R_{l} + \left(-\frac{r_{il}^{2}}{4R_{i}}\right))\frac{-r_{il}^{2}}{4R_{i}^{2}R_{l}} - \frac{r_{il}^{2}}{4R_{i}} \right]
+\end{eqnarray}
+and
+\begin{eqnarray}
+\label{eq:fGBjl2ndderv1}
+\frac{\partial^{2} f_{jl}^{GB}}{\partial r_{ij}^{2}} & = & 
+\frac{1}{f_{jl}^{GB}}\exp(-\frac{r_{jl}^2}{4R_{j}R_{l}})(R_{l} + \frac{r_{jl}^{2}}{4R_{j}})\left[ \frac{\partial^{2} R_{j}}{\partial r_{ij}} - \frac{\partial R_{j}}{\partial r_{ij}}\left(\frac{1}{f_{jl}^{GB}}\right) \frac{\partial f_{jl}^{GB}}{\partial r_{ij}}\right] \\ \nonumber
+& & + \frac{1}{f_{jl}^{GB}}\exp(-\frac{r_{jl}^2}{4R_{j}R_{j}})\left(\frac{\partial R_{j}}{\partial r_{ij}}\right)^{2}
+\left[(R_{l} + \left(-\frac{r_{jl}^{2}}{4R_{j}}\right))\frac{-r_{jl}^{2}}{4R_{j}^{2}R_{l}} - \frac{r_{jl}^{2}}{4R_{j}} \right]
+\end{eqnarray}
+Note that
+\begin{equation}
+\frac{\partial^{2}{\Psi}_{i}}{\partial r_{ij}^{2}} = \frac{\partial^{2}I_{i}}{\partial r_{ij}^{2}}{\tilde{\rho}_{i}}.
+\end{equation}
+where
+\begin{eqnarray}
+\label{eq:BurialTerm2ndDerv}
+\frac{\partial^{2}I_{i}}{\partial r_{ij}^{2}} & = & \left[ \frac{1}{L_{ij}^{3}}\left(\frac{\partial L_{ij}}{\partial r_{ij}}\right)^{2}
+- \frac{1}{U_{ij}^{3}}\left(\frac{\partial U_{ij}}{\partial r_{ij}}\right)^{2} + \left(\frac{1}{4L_{ij}^{3}}\frac{\partial L_{ij}}{\partial r_{ij}} - \frac{1}{4U_{ij}^{3}}\frac{\partial U_{ij}}{\partial r_{ij}} \right)\right] \\ \nonumber
+& & +  \left[ \frac{1}{8}\left(\frac{2}{L_{ij}^{3}} \frac{\partial L_{ij}}{\partial r_{ij}} - \frac{2}{U_{ij}^{3}} \frac{\partial U_{ij}}{\partial r_{ij}} \right) - \frac{r_{ij}}{4}\left(\frac{3}{U_{ij}^{4}}\left(\frac{\partial U_{ij}}{\partial r_{ij}} \right)^{2}    - \frac{3}{L_{ij}^{4}}\left(\frac{\partial L_{ij}}{\partial r_{ij}} \right)^{2} \right)\right] \\ \nonumber
+& & + \left[ \frac{1}{2r_{ij}^{3}}\log(\frac{L_{ij}}{U_{ij}}) - \frac{1}{2} \frac{U_{ij}}{r_{ij}^{2}L_{ij}} \left( \frac{1}{U_{ij}}\frac{\partial L_{ij}}{\partial r_{ij}} - \frac{L_{ij}}{U_{ij}^{2}}\frac{\partial U_{ij}}{\partial r_{ij}} \right)
++\frac{1}{4}\frac{U_{ij}}{r_{ij}L_{ij}}\left(\frac{2L_{ij}}{U_{ij}^{3}}\left(\frac{\partial U_{ij}}{\partial r_{ij}}\right)^{2} - 2\frac{\frac{\partial L_{ij}}{\partial r_{ij}}\frac{\partial U_{ij}}{\partial r_{ij}}}{U_{ij}^{2}} \right) \right] \\ \nonumber
+& & - \left[ \frac{1}{4}\frac{U_{ij}}{r_{ij}L_{ij}^2}\frac{\partial L_{ij}}{\partial r_{ij}}\left( \frac{1}{U_{ij}}\frac{\partial L_{ij}}{\partial r_{ij}} - \frac{L_{ij}}{U_{ij}^{2}}\frac{\partial U_{ij}}{\partial r_{ij}} \right) +  \frac{1}{4}\frac{1}{r_{ij}L_{ij}}\frac{\partial U_{ij}}{\partial r_{ij}}\left(\frac{1}{U_{ij}}\frac{\partial L_{ij}}{\partial r_{ij}} - \frac{L_{ij}}{U_{ij}^{2}}\frac{\partial U_{ij}}{\partial r_{ij}} \right) \right] \\ \nonumber
+& & + \frac{S_{j}^{2}{{\tilde{\rho}_{i}}}^{2}}{4r_{ij}}\left[\frac{1}{r_{ij}^2}\left(\frac{1}{L_{ij}^2} - \frac{1}{U_{ij}^2} \right) - \frac{2}{r_{ij}^{2}U_{ij}^{3}}\frac{\partial U_{ij}}{\partial r_{ij}} - \frac{3}{U_{ij}^{4}}\left( \frac{\partial U_{ij}}{\partial r_{ij}}\right)^{2} \right] \\ \nonumber
+%+1/4 (((((&DifferentialD;)^2)/(&DifferentialD;rij^2) Lij(rij))/(Uij(rij))-(2 ((&DifferentialD;)/(&DifferentialD;rij) Lij(rij)) ((&DifferentialD;)/(&DifferentialD;rij) Uij(rij)))/((Uij(rij))^2)+(2 Lij(rij) ((&DifferentialD;)/(&DifferentialD;rij) Uij(rij))^2)/((Uij(rij))^3)-(Lij(rij) (((&DifferentialD;)^2)/(&DifferentialD;rij^2) Uij(rij)))/((Uij(rij))^2)) Uij(rij))/(rij Lij(rij))
+%(1/2)*((diff(Lij(rij), rij))/Uij(rij)-Lij(rij)*(diff(Uij(rij), rij))/Uij(rij)^2)*Uij(rij)/(rij^2*Lij(rij)) \\ \nonumber
+%(diff(Lij(rij), rij))^2/Lij(rij)^3-(1/2)*(diff(Lij(rij), rij, rij))/Lij(rij)^2
+%-(diff(Uij(rij), rij))^2/Uij(rij)^3+(1/2)*(diff(Uij(rij), rij, rij))/Uij(rij)^2
+\end{eqnarray}
+\end{document}

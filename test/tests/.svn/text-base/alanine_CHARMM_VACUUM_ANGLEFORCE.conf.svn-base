@@ -1,0 +1,44 @@
+#
+# Optimized LennardJones and Coulomb by combination
+#
+firststep 0
+numsteps 0
+outputfreq 1
+
+#set random type so works on Windows
+randomtype 1
+
+# Constraints
+angularMomentum 0
+comMotion 0
+exclude scaled1-4
+shake true
+
+seed 1234
+
+# Inputs
+posfile 		data/alan_const.pdb
+psffile 		data/alan.psf
+parfile 		data/par_all27_prot_lipid.inp
+temperature 	310
+
+# Outputs
+dcdfile 		output/alanine_CHARMM_VACUUM_ANGLEFORCE.dcd
+XYZForceFile	output/alanine_CHARMM_VACUUM_ANGLEFORCE.forces
+finXYZPosFile   output/alanine_CHARMM_VACUUM_ANGLEFORCE.pos
+finXYZVelFile   output/alanine_CHARMM_VACUUM_ANGLEFORCE.vel
+allenergiesfile output/alanine_CHARMM_VACUUM_ANGLEFORCE.energy
+
+boundaryConditions vacuum
+
+cellManager Cubic
+cellsize 5
+
+Integrator {
+	level 0 Leapfrog {
+		timestep 1
+		temperature 310
+		gamma 80
+		force Angle 
+	}
+}

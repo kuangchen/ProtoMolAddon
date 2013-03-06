@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 41
+/svnroot/protomol/!svn/ver/1917/trunk/mdl
+END
+RunMDL
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svnroot/protomol/!svn/ver/1841/trunk/mdl/RunMDL
+END
+compiler.py
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svnroot/protomol/!svn/ver/1760/trunk/mdl/compiler.py
+END
+MDL.py
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svnroot/protomol/!svn/ver/1841/trunk/mdl/MDL.py
+END
+RunMDL.bat
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svnroot/protomol/!svn/ver/1528/trunk/mdl/RunMDL.bat
+END
+SConstruct
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svnroot/protomol/!svn/ver/1888/trunk/mdl/SConstruct
+END
+configfuncs.py
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svnroot/protomol/!svn/ver/1889/trunk/mdl/configfuncs.py
+END
+config.py
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svnroot/protomol/!svn/ver/1762/trunk/mdl/config.py
+END
+README
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svnroot/protomol/!svn/ver/1482/trunk/mdl/README
+END

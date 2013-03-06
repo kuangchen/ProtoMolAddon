@@ -1,0 +1,41 @@
+firststep 0
+numsteps 10
+
+seed 1234
+
+outputfreq 10
+restartfreq 1000      
+
+posfile bpti.pdb
+psffile bpti.psf
+parfile bpti.par
+temperature 0
+
+#allenergiesfile bpti.out.energy
+
+boundaryConditions periodic
+cellBasisVector1     63.0 0.0 0.0
+cellBasisVector2     0.0 50.0 0.0
+cellBasisVector3     0.0 0.0 50.0
+cellOrigin           0.0 0.0 0.0
+
+cellManager Cubic
+cellsize 10
+
+Integrator {
+  level 0 Leapfrog {
+        timestep 1
+    force Improper 
+    force Dihedral 
+    force Bond 
+    force Angle 
+    force LennardJones 
+	-switchingFunction C2 
+	-algorithm NonbondedCutoff
+	-switchon 0.1
+        -cutoff 10.0
+    force time Coulomb 
+          -algorithm FullEwald -correction -real -reciprocal
+          -accuracy 1e-18
+  }
+}

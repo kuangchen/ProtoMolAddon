@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svnroot/protomol/!svn/ver/1499/trunk/GUI/JPmolConfig/src/jpmolconfig
+END
+configJPanel.java
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svnroot/protomol/!svn/ver/1499/trunk/GUI/JPmolConfig/src/jpmolconfig/configJPanel.java
+END
+nonBondedSwitches.java
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svnroot/protomol/!svn/ver/1496/trunk/GUI/JPmolConfig/src/jpmolconfig/nonBondedSwitches.java
+END
+configJPanel.form
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svnroot/protomol/!svn/ver/1498/trunk/GUI/JPmolConfig/src/jpmolconfig/configJPanel.form
+END
+nonBondedSwitches.form
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svnroot/protomol/!svn/ver/1496/trunk/GUI/JPmolConfig/src/jpmolconfig/nonBondedSwitches.form
+END
+JPmolConfig.java
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svnroot/protomol/!svn/ver/1496/trunk/GUI/JPmolConfig/src/jpmolconfig/JPmolConfig.java
+END
+RestrictedFilter.java
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svnroot/protomol/!svn/ver/1496/trunk/GUI/JPmolConfig/src/jpmolconfig/RestrictedFilter.java
+END

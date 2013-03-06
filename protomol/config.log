@@ -1,0 +1,176 @@
+file /home/kuangchen/Documents/Lab/Project/protomol_new/protomol/trunk/protomol/SConstruct,line 13:
+	Configure(confdir = .sconf_temp)
+scons: Configure: Checking for -rdynamic...
+.sconf_temp/conftest_0.c <-
+  |int main(int argc, char *argv[]) {return 0;}
+gcc -o .sconf_temp/conftest_0.o -c -ggdb -Wall .sconf_temp/conftest_0.c
+gcc -o .sconf_temp/conftest_0 -rdynamic .sconf_temp/conftest_0.o
+scons: Configure: yes
+
+scons: Configure: Checking for C library pthread... 
+scons: Configure: ".sconf_temp/conftest_1.c" is up to date.
+scons: Configure: The original builder output was:
+  |.sconf_temp/conftest_1.c <-
+  |  |
+  |  |
+  |  |
+  |  |int
+  |  |main() {
+  |  |  
+  |  |return 0;
+  |  |}
+  |  |
+  |
+gcc -o .sconf_temp/conftest_1.o -c -std=c99 -ggdb -Wall -Werror -DDEBUG .sconf_temp/conftest_1.c
+scons: Configure: ".sconf_temp/conftest_1" is up to date.
+scons: Configure: The original builder output was:
+  |gcc -o .sconf_temp/conftest_1 -rdynamic .sconf_temp/conftest_1.o -lpthread
+  |
+scons: Configure: yes
+
+scons: Configure: Checking for Intel MKL... 
+scons: Configure: ".sconf_temp/conftest_2.cpp" is up to date.
+scons: Configure: The original builder output was:
+  |.sconf_temp/conftest_2.cpp <-
+  |  |#include "mkl.h"
+  |  |      int main()
+  |  |      {
+  |  |        char ta = 'N', tb = 'N';
+  |  |        int M = 1, N = 1, K = 1, lda = 1, ldb = 1, ldc = 1;
+  |  |        double alpha = 1.0, beta = 1.0, *A = 0, *B = 0, *C = 0;
+  |  |        dgemm(&ta, &tb, &M, &N, &K, &alpha, A, &lda, B, &ldb, &beta, C, &ldc);
+  |  |        return 0;
+  |  |      }
+  |
+g++ -o .sconf_temp/conftest_2.o -c -std=gnu++98 -ggdb -Wall -Werror -DDEBUG -D_REENTRANT .sconf_temp/conftest_2.cpp
+.sconf_temp/conftest_2.cpp:1:17: fatal error: mkl.h: No such file or directory
+compilation terminated.
+scons: Configure: no
+
+scons: Configure: Checking for LAPACK...
+
+scons: Configure: (cached) Checking for C library g2c... 
+scons: Configure: ".sconf_temp/conftest_3.c" is up to date.
+scons: Configure: The original builder output was:
+  |.sconf_temp/conftest_3.c <-
+  |  |
+  |  |
+  |  |
+  |  |int
+  |  |main() {
+  |  |  
+  |  |return 0;
+  |  |}
+  |  |
+  |
+gcc -o .sconf_temp/conftest_3.o -c -std=c99 -ggdb -Wall -Werror -DDEBUG -D_REENTRANT .sconf_temp/conftest_3.c
+gcc -o .sconf_temp/conftest_3 -rdynamic -pthread .sconf_temp/conftest_3.o -lpthread -lg2c
+/usr/bin/ld: cannot find -lg2c
+collect2: ld returned 1 exit status
+scons: Configure: no
+
+scons: Configure: Checking for C library gfortran... 
+scons: Configure: ".sconf_temp/conftest_4.c" is up to date.
+scons: Configure: The original builder output was:
+  |.sconf_temp/conftest_4.c <-
+  |  |
+  |  |
+  |  |
+  |  |int
+  |  |main() {
+  |  |  
+  |  |return 0;
+  |  |}
+  |  |
+  |
+gcc -o .sconf_temp/conftest_4.o -c -std=c99 -ggdb -Wall -Werror -DDEBUG -D_REENTRANT .sconf_temp/conftest_4.c
+gcc -o .sconf_temp/conftest_4 -rdynamic -pthread .sconf_temp/conftest_4.o -lpthread -lgfortran
+/usr/bin/ld: cannot find -lgfortran
+collect2: ld returned 1 exit status
+scons: Configure: no
+
+scons: Configure: Checking for C library blas-3... 
+scons: Configure: ".sconf_temp/conftest_5.c" is up to date.
+scons: Configure: The original builder output was:
+  |.sconf_temp/conftest_5.c <-
+  |  |
+  |  |
+  |  |
+  |  |int
+  |  |main() {
+  |  |  
+  |  |return 0;
+  |  |}
+  |  |
+  |
+gcc -o .sconf_temp/conftest_5.o -c -std=c99 -ggdb -Wall -Werror -DDEBUG -D_REENTRANT .sconf_temp/conftest_5.c
+gcc -o .sconf_temp/conftest_5 -rdynamic -pthread .sconf_temp/conftest_5.o -lpthread -lblas-3
+/usr/bin/ld: cannot find -lblas-3
+collect2: ld returned 1 exit status
+scons: Configure: no
+
+scons: Configure: Checking for C library blas... 
+scons: Configure: ".sconf_temp/conftest_6.c" is up to date.
+scons: Configure: The original builder output was:
+  |.sconf_temp/conftest_6.c <-
+  |  |
+  |  |
+  |  |
+  |  |int
+  |  |main() {
+  |  |  
+  |  |return 0;
+  |  |}
+  |  |
+  |
+gcc -o .sconf_temp/conftest_6.o -c -std=c99 -ggdb -Wall -Werror -DDEBUG -D_REENTRANT .sconf_temp/conftest_6.c
+gcc -o .sconf_temp/conftest_6 -rdynamic -pthread .sconf_temp/conftest_6.o -lpthread -lblas
+scons: Configure: yes
+
+scons: Configure: Checking for C library lapack-3... 
+scons: Configure: ".sconf_temp/conftest_7.c" is up to date.
+scons: Configure: The original builder output was:
+  |.sconf_temp/conftest_7.c <-
+  |  |
+  |  |
+  |  |
+  |  |int
+  |  |main() {
+  |  |  
+  |  |return 0;
+  |  |}
+  |  |
+  |
+gcc -o .sconf_temp/conftest_7.o -c -std=c99 -ggdb -Wall -Werror -DDEBUG -D_REENTRANT .sconf_temp/conftest_7.c
+gcc -o .sconf_temp/conftest_7 -rdynamic -pthread .sconf_temp/conftest_7.o -lblas -lpthread -llapack-3
+/usr/bin/ld: cannot find -llapack-3
+collect2: ld returned 1 exit status
+scons: Configure: no
+
+scons: Configure: Checking for C library lapack... 
+scons: Configure: ".sconf_temp/conftest_8.c" is up to date.
+scons: Configure: The original builder output was:
+  |.sconf_temp/conftest_8.c <-
+  |  |
+  |  |
+  |  |
+  |  |int
+  |  |main() {
+  |  |  
+  |  |return 0;
+  |  |}
+  |  |
+  |
+scons: Configure: ".sconf_temp/conftest_8.o" is up to date.
+scons: Configure: The original builder output was:
+  |gcc -o .sconf_temp/conftest_8.o -c -std=c99 -ggdb -Wall -Werror -DDEBUG -D_REENTRANT .sconf_temp/conftest_8.c
+  |
+scons: Configure: ".sconf_temp/conftest_8" is up to date.
+scons: Configure: The original builder output was:
+  |gcc -o .sconf_temp/conftest_8 -rdynamic -pthread .sconf_temp/conftest_8.o -lblas -lpthread -llapack
+  |
+scons: Configure: (cached) yes
+
+scons: Configure: yes
+
+

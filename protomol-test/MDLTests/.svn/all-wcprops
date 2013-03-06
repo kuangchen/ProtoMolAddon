@@ -1,0 +1,191 @@
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svnroot/protomol/!svn/ver/1503/trunk/protomol-test/MDLTests
+END
+NMLTest
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svnroot/protomol/!svn/ver/1172/trunk/protomol-test/MDLTests/NMLTest
+END
+NMMTest
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svnroot/protomol/!svn/ver/1172/trunk/protomol-test/MDLTests/NMMTest
+END
+ShakeTest
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svnroot/protomol/!svn/ver/1172/trunk/protomol-test/MDLTests/ShakeTest
+END
+DihedralForceTest
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svnroot/protomol/!svn/ver/1172/trunk/protomol-test/MDLTests/DihedralForceTest
+END
+LJForceCutoffTest
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svnroot/protomol/!svn/ver/1172/trunk/protomol-test/MDLTests/LJForceCutoffTest
+END
+CnTest
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svnroot/protomol/!svn/ver/1172/trunk/protomol-test/MDLTests/CnTest
+END
+BondForceTest
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svnroot/protomol/!svn/ver/1172/trunk/protomol-test/MDLTests/BondForceTest
+END
+C1Test
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svnroot/protomol/!svn/ver/1172/trunk/protomol-test/MDLTests/C1Test
+END
+C2Test
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svnroot/protomol/!svn/ver/1172/trunk/protomol-test/MDLTests/C2Test
+END
+PDBTest
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svnroot/protomol/!svn/ver/1172/trunk/protomol-test/MDLTests/PDBTest
+END
+UniversalTest
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svnroot/protomol/!svn/ver/1172/trunk/protomol-test/MDLTests/UniversalTest
+END
+CoulombForceSFTest
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svnroot/protomol/!svn/ver/1172/trunk/protomol-test/MDLTests/CoulombForceSFTest
+END
+ImproperForceTest
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svnroot/protomol/!svn/ver/1172/trunk/protomol-test/MDLTests/ImproperForceTest
+END
+SCPISMForceTest
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svnroot/protomol/!svn/ver/1172/trunk/protomol-test/MDLTests/SCPISMForceTest
+END
+CGMinimizerTest
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svnroot/protomol/!svn/ver/1172/trunk/protomol-test/MDLTests/CGMinimizerTest
+END
+LeapfrogTruncatedShadowTest
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svnroot/protomol/!svn/ver/1172/trunk/protomol-test/MDLTests/LeapfrogTruncatedShadowTest
+END
+BornForceTest
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svnroot/protomol/!svn/ver/1172/trunk/protomol-test/MDLTests/BornForceTest
+END
+trevor
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svnroot/protomol/!svn/ver/1172/trunk/protomol-test/MDLTests/trevor
+END
+CoulombForceCutoffTest
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svnroot/protomol/!svn/ver/1172/trunk/protomol-test/MDLTests/CoulombForceCutoffTest
+END
+XYZTest
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svnroot/protomol/!svn/ver/1172/trunk/protomol-test/MDLTests/XYZTest
+END
+VelacTest
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svnroot/protomol/!svn/ver/1172/trunk/protomol-test/MDLTests/VelacTest
+END
+RattleTest
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svnroot/protomol/!svn/ver/1172/trunk/protomol-test/MDLTests/RattleTest
+END
+DielecForceSFTest
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svnroot/protomol/!svn/ver/1172/trunk/protomol-test/MDLTests/DielecForceSFTest
+END
+LeapfrogTest
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svnroot/protomol/!svn/ver/1172/trunk/protomol-test/MDLTests/LeapfrogTest
+END
+EnergiesTest
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svnroot/protomol/!svn/ver/1172/trunk/protomol-test/MDLTests/EnergiesTest
+END
+LangevinTest
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svnroot/protomol/!svn/ver/1172/trunk/protomol-test/MDLTests/LangevinTest
+END
+AngleForceTest
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svnroot/protomol/!svn/ver/1172/trunk/protomol-test/MDLTests/AngleForceTest
+END
+MDLCheck
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svnroot/protomol/!svn/ver/1172/trunk/protomol-test/MDLTests/MDLCheck
+END
+AngularMomentumTest
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svnroot/protomol/!svn/ver/1172/trunk/protomol-test/MDLTests/AngularMomentumTest
+END
+LJForceSFTest
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svnroot/protomol/!svn/ver/1172/trunk/protomol-test/MDLTests/LJForceSFTest
+END
+COMTest
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svnroot/protomol/!svn/ver/1172/trunk/protomol-test/MDLTests/COMTest
+END

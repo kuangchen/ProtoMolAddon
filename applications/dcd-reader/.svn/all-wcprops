@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svnroot/protomol/!svn/ver/1500/trunk/applications/dcd-reader
+END
+SConstruct
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svnroot/protomol/!svn/ver/1500/trunk/applications/dcd-reader/SConstruct
+END
+modules.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svnroot/protomol/!svn/ver/1348/trunk/applications/dcd-reader/modules.cpp
+END
+dcd-reader.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svnroot/protomol/!svn/ver/1349/trunk/applications/dcd-reader/dcd-reader.cpp
+END

@@ -1,0 +1,23 @@
+ATOM      1 CAY  ALA P   1     7.19202 2.46440 -9.9325     1     0      PEPT     
+ATOM      2 HY1  ALA P   1     6.52223 3.14571 -9.2869     1     0      PEPT     
+ATOM      3 HY2  ALA P   1     7.34205 1.42635 -9.5522     1     0      PEPT     
+ATOM      4 HY3  ALA P   1     6.59692 2.34597 -10.877     1     0      PEPT     
+ATOM      5 CY   ALA P   1     8.44662 3.20758 -10.354     1     0      PEPT     
+ATOM      6 OY   ALA P   1     8.70238 3.48152 -11.525     1     0      PEPT     
+ATOM      7 N    ALA P   1     9.30247 3.54775 -9.3944     1     0      PEPT     
+ATOM      8 HN   ALA P   1     9.13566 3.24740 -8.4630     1     0      PEPT     
+ATOM      9 CA   ALA P   1     10.4588 4.33974 -9.5359     1     0      PEPT     
+ATOM     10 HA   ALA P   1     10.3691 5.01465 -10.315     1     0      PEPT     
+ATOM     11 CB   ALA P   1     10.8717 5.06829 -8.2604     1     0      PEPT     
+ATOM     12 HB1  ALA P   1     11.0569 4.38665 -7.3678     1     0      PEPT     
+ATOM     13 HB2  ALA P   1     11.8102 5.48948 -8.5600     1     0      PEPT     
+ATOM     14 HB3  ALA P   1     10.1473 5.91881 -7.9845     1     0      PEPT     
+ATOM     15 C    ALA P   1     11.5864 3.40087 -10.027     1     0      PEPT     
+ATOM     16 O    ALA P   1     12.5819 3.19608 -9.3507     1     0      PEPT     
+ATOM     17 NT   ALA P   1     11.4895 2.93308 -11.281     1     0      PEPT     
+ATOM     18 HNT  ALA P   1     10.5938 2.97591 -11.726     1     0      PEPT     
+ATOM     19 CAT  ALA P   1     12.4559 2.12240 -11.911     1     0      PEPT     
+ATOM     20 HT1  ALA P   1     12.1841 1.99159 -13.004     1     0      PEPT     
+ATOM     21 HT2  ALA P   1     13.3775 2.74747 -11.952     1     0      PEPT     
+ATOM     22 HT3  ALA P   1     12.7587 1.17480 -11.404     1     0      PEPT     
+END

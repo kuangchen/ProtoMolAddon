@@ -1,0 +1,4 @@
+#Mon Feb 04 19:24:40 EST 2008
+$label=Web Start
+$target.debug=jws-debug
+$target.run=jws-run

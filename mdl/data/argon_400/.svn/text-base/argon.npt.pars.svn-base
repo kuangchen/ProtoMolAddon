@@ -1,0 +1,67 @@
+firststep 0
+numsteps 2000
+
+# seed 1234
+
+posfile argon.pdb
+velfile argon.vel.pdb
+psffile argon.psf
+parfile argon.par
+# temperature 300.0 
+
+usecharmm28parfile yes
+
+outputfreq 1
+allenergiesfile argon.out.energies.npt
+
+boundaryConditions Periodic
+cellbasisvector1 55.3316 0 0
+cellbasisvector2 0 55.3316 0
+cellbasisvector3 0 0 55.3316 
+cellorigin 0 0 0
+
+cellManager Cubic
+cellsize 100
+
+
+Integrator {
+
+  level 0 NPTVerlet{
+
+        timestep 1
+
+        # temperature 300  #  Kelvin
+        temperature 143  #  Kelvin
+
+        pressure 40      #  40 bar
+
+        #  Units: (fs)^-1
+        omegaTo 0.00244
+
+        #  Units: (fs)^-1
+        omegaTv 0.00244
+
+        #  Units: (fs)
+        tauP 1022.72
+
+    # force Improper,
+    #       Dihedral,
+    #       Bond,
+    #       Angle 
+
+    force LennardJones
+            -algorithm NonbondedSimpleFull
+    #       -algorithm NonbondedCutoff
+    #       -switchingFunction C2
+    #       -switchon 0.1
+    #       -cutoff 6.5
+
+    # force Coulomb
+    #       -algorithm NonbondedCutoff
+    #       -switchingFunction C1
+    #       -cutoff 6.5
+
+  }
+
+}
+

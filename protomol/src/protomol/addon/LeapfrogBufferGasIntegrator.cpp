@@ -1,3 +1,4 @@
+#include <protomol/integrator/leapfrog/LeapfrogBufferGasIntegrator.h>
 #include <protomol/base/Report.h>
 #include <protomol/type/ScalarStructure.h>
 #include <protomol/type/Vector3DBlock.h>
@@ -10,14 +11,12 @@
 #include <algorithm>
 #include <cmath>
 #include <string>
-
 #include <protomol/addon/BufferGas.h>
-#include <protomol/addon/LeapfrogBufferGasIntegrator.h>
 
 using std::string;
 using std::sort;
 
-using namespace ProtoMolAddon;
+using namespace std;
 using namespace ProtoMol::Report;
 using namespace ProtoMol;
 

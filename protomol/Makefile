@@ -189,6 +189,30 @@ src/protomol/ProtoMolApp.cpp.s:
 	$(MAKE) -f CMakeFiles/Library.dir/build.make CMakeFiles/Library.dir/src/protomol/ProtoMolApp.cpp.s
 .PHONY : src/protomol/ProtoMolApp.cpp.s
 
+src/protomol/addon/BufferGas.o: src/protomol/addon/BufferGas.cpp.o
+.PHONY : src/protomol/addon/BufferGas.o
+
+# target to build an object file
+src/protomol/addon/BufferGas.cpp.o:
+	$(MAKE) -f CMakeFiles/Library.dir/build.make CMakeFiles/Library.dir/src/protomol/addon/BufferGas.cpp.o
+.PHONY : src/protomol/addon/BufferGas.cpp.o
+
+src/protomol/addon/BufferGas.i: src/protomol/addon/BufferGas.cpp.i
+.PHONY : src/protomol/addon/BufferGas.i
+
+# target to preprocess a source file
+src/protomol/addon/BufferGas.cpp.i:
+	$(MAKE) -f CMakeFiles/Library.dir/build.make CMakeFiles/Library.dir/src/protomol/addon/BufferGas.cpp.i
+.PHONY : src/protomol/addon/BufferGas.cpp.i
+
+src/protomol/addon/BufferGas.s: src/protomol/addon/BufferGas.cpp.s
+.PHONY : src/protomol/addon/BufferGas.s
+
+# target to generate assembly for a file
+src/protomol/addon/BufferGas.cpp.s:
+	$(MAKE) -f CMakeFiles/Library.dir/build.make CMakeFiles/Library.dir/src/protomol/addon/BufferGas.cpp.s
+.PHONY : src/protomol/addon/BufferGas.cpp.s
+
 src/protomol/base/Exception.o: src/protomol/base/Exception.cpp.o
 .PHONY : src/protomol/base/Exception.o
 
@@ -2036,30 +2060,6 @@ src/protomol/integrator/hessian/HessianInt.s: src/protomol/integrator/hessian/He
 src/protomol/integrator/hessian/HessianInt.cpp.s:
 	$(MAKE) -f CMakeFiles/Library.dir/build.make CMakeFiles/Library.dir/src/protomol/integrator/hessian/HessianInt.cpp.s
 .PHONY : src/protomol/integrator/hessian/HessianInt.cpp.s
-
-src/protomol/integrator/leapfrog/BufferGas.o: src/protomol/integrator/leapfrog/BufferGas.cpp.o
-.PHONY : src/protomol/integrator/leapfrog/BufferGas.o
-
-# target to build an object file
-src/protomol/integrator/leapfrog/BufferGas.cpp.o:
-	$(MAKE) -f CMakeFiles/Library.dir/build.make CMakeFiles/Library.dir/src/protomol/integrator/leapfrog/BufferGas.cpp.o
-.PHONY : src/protomol/integrator/leapfrog/BufferGas.cpp.o
-
-src/protomol/integrator/leapfrog/BufferGas.i: src/protomol/integrator/leapfrog/BufferGas.cpp.i
-.PHONY : src/protomol/integrator/leapfrog/BufferGas.i
-
-# target to preprocess a source file
-src/protomol/integrator/leapfrog/BufferGas.cpp.i:
-	$(MAKE) -f CMakeFiles/Library.dir/build.make CMakeFiles/Library.dir/src/protomol/integrator/leapfrog/BufferGas.cpp.i
-.PHONY : src/protomol/integrator/leapfrog/BufferGas.cpp.i
-
-src/protomol/integrator/leapfrog/BufferGas.s: src/protomol/integrator/leapfrog/BufferGas.cpp.s
-.PHONY : src/protomol/integrator/leapfrog/BufferGas.s
-
-# target to generate assembly for a file
-src/protomol/integrator/leapfrog/BufferGas.cpp.s:
-	$(MAKE) -f CMakeFiles/Library.dir/build.make CMakeFiles/Library.dir/src/protomol/integrator/leapfrog/BufferGas.cpp.s
-.PHONY : src/protomol/integrator/leapfrog/BufferGas.cpp.s
 
 src/protomol/integrator/leapfrog/DMDLeapfrogIntegrator.o: src/protomol/integrator/leapfrog/DMDLeapfrogIntegrator.cpp.o
 .PHONY : src/protomol/integrator/leapfrog/DMDLeapfrogIntegrator.o
@@ -5318,6 +5318,9 @@ help:
 	@echo "... src/protomol/ProtoMolApp.o"
 	@echo "... src/protomol/ProtoMolApp.i"
 	@echo "... src/protomol/ProtoMolApp.s"
+	@echo "... src/protomol/addon/BufferGas.o"
+	@echo "... src/protomol/addon/BufferGas.i"
+	@echo "... src/protomol/addon/BufferGas.s"
 	@echo "... src/protomol/base/Exception.o"
 	@echo "... src/protomol/base/Exception.i"
 	@echo "... src/protomol/base/Exception.s"
@@ -5549,9 +5552,6 @@ help:
 	@echo "... src/protomol/integrator/hessian/HessianInt.o"
 	@echo "... src/protomol/integrator/hessian/HessianInt.i"
 	@echo "... src/protomol/integrator/hessian/HessianInt.s"
-	@echo "... src/protomol/integrator/leapfrog/BufferGas.o"
-	@echo "... src/protomol/integrator/leapfrog/BufferGas.i"
-	@echo "... src/protomol/integrator/leapfrog/BufferGas.s"
 	@echo "... src/protomol/integrator/leapfrog/DMDLeapfrogIntegrator.o"
 	@echo "... src/protomol/integrator/leapfrog/DMDLeapfrogIntegrator.i"
 	@echo "... src/protomol/integrator/leapfrog/DMDLeapfrogIntegrator.s"

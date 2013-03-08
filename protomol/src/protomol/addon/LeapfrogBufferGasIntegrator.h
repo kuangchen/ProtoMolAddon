@@ -12,9 +12,8 @@ using namespace ProtoMolAddon::Collision;
 using std::vector;
 using std::pair;
 using LuaState::LuaState;
-using namespace ProtoMol;
 
-namespace ProtoMolAddon {
+namespace ProtoMol {
   class ScalarStructure;
   class ForceGroup;
 

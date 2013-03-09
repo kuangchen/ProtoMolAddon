@@ -213,6 +213,150 @@ src/protomol/addon/BufferGas.cpp.s:
 	$(MAKE) -f CMakeFiles/Library.dir/build.make CMakeFiles/Library.dir/src/protomol/addon/BufferGas.cpp.s
 .PHONY : src/protomol/addon/BufferGas.cpp.s
 
+src/protomol/addon/LeapfrogBufferGasIntegrator.o: src/protomol/addon/LeapfrogBufferGasIntegrator.cpp.o
+.PHONY : src/protomol/addon/LeapfrogBufferGasIntegrator.o
+
+# target to build an object file
+src/protomol/addon/LeapfrogBufferGasIntegrator.cpp.o:
+	$(MAKE) -f CMakeFiles/Library.dir/build.make CMakeFiles/Library.dir/src/protomol/addon/LeapfrogBufferGasIntegrator.cpp.o
+.PHONY : src/protomol/addon/LeapfrogBufferGasIntegrator.cpp.o
+
+src/protomol/addon/LeapfrogBufferGasIntegrator.i: src/protomol/addon/LeapfrogBufferGasIntegrator.cpp.i
+.PHONY : src/protomol/addon/LeapfrogBufferGasIntegrator.i
+
+# target to preprocess a source file
+src/protomol/addon/LeapfrogBufferGasIntegrator.cpp.i:
+	$(MAKE) -f CMakeFiles/Library.dir/build.make CMakeFiles/Library.dir/src/protomol/addon/LeapfrogBufferGasIntegrator.cpp.i
+.PHONY : src/protomol/addon/LeapfrogBufferGasIntegrator.cpp.i
+
+src/protomol/addon/LeapfrogBufferGasIntegrator.s: src/protomol/addon/LeapfrogBufferGasIntegrator.cpp.s
+.PHONY : src/protomol/addon/LeapfrogBufferGasIntegrator.s
+
+# target to generate assembly for a file
+src/protomol/addon/LeapfrogBufferGasIntegrator.cpp.s:
+	$(MAKE) -f CMakeFiles/Library.dir/build.make CMakeFiles/Library.dir/src/protomol/addon/LeapfrogBufferGasIntegrator.cpp.s
+.PHONY : src/protomol/addon/LeapfrogBufferGasIntegrator.cpp.s
+
+src/protomol/addon/LinearPaulTrap.o: src/protomol/addon/LinearPaulTrap.cpp.o
+.PHONY : src/protomol/addon/LinearPaulTrap.o
+
+# target to build an object file
+src/protomol/addon/LinearPaulTrap.cpp.o:
+	$(MAKE) -f CMakeFiles/Library.dir/build.make CMakeFiles/Library.dir/src/protomol/addon/LinearPaulTrap.cpp.o
+.PHONY : src/protomol/addon/LinearPaulTrap.cpp.o
+
+src/protomol/addon/LinearPaulTrap.i: src/protomol/addon/LinearPaulTrap.cpp.i
+.PHONY : src/protomol/addon/LinearPaulTrap.i
+
+# target to preprocess a source file
+src/protomol/addon/LinearPaulTrap.cpp.i:
+	$(MAKE) -f CMakeFiles/Library.dir/build.make CMakeFiles/Library.dir/src/protomol/addon/LinearPaulTrap.cpp.i
+.PHONY : src/protomol/addon/LinearPaulTrap.cpp.i
+
+src/protomol/addon/LinearPaulTrap.s: src/protomol/addon/LinearPaulTrap.cpp.s
+.PHONY : src/protomol/addon/LinearPaulTrap.s
+
+# target to generate assembly for a file
+src/protomol/addon/LinearPaulTrap.cpp.s:
+	$(MAKE) -f CMakeFiles/Library.dir/build.make CMakeFiles/Library.dir/src/protomol/addon/LinearPaulTrap.cpp.s
+.PHONY : src/protomol/addon/LinearPaulTrap.cpp.s
+
+src/protomol/addon/LuaState.o: src/protomol/addon/LuaState.cpp.o
+.PHONY : src/protomol/addon/LuaState.o
+
+# target to build an object file
+src/protomol/addon/LuaState.cpp.o:
+	$(MAKE) -f CMakeFiles/Library.dir/build.make CMakeFiles/Library.dir/src/protomol/addon/LuaState.cpp.o
+.PHONY : src/protomol/addon/LuaState.cpp.o
+
+src/protomol/addon/LuaState.i: src/protomol/addon/LuaState.cpp.i
+.PHONY : src/protomol/addon/LuaState.i
+
+# target to preprocess a source file
+src/protomol/addon/LuaState.cpp.i:
+	$(MAKE) -f CMakeFiles/Library.dir/build.make CMakeFiles/Library.dir/src/protomol/addon/LuaState.cpp.i
+.PHONY : src/protomol/addon/LuaState.cpp.i
+
+src/protomol/addon/LuaState.s: src/protomol/addon/LuaState.cpp.s
+.PHONY : src/protomol/addon/LuaState.s
+
+# target to generate assembly for a file
+src/protomol/addon/LuaState.cpp.s:
+	$(MAKE) -f CMakeFiles/Library.dir/build.make CMakeFiles/Library.dir/src/protomol/addon/LuaState.cpp.s
+.PHONY : src/protomol/addon/LuaState.cpp.s
+
+src/protomol/addon/Mathieu.o: src/protomol/addon/Mathieu.cpp.o
+.PHONY : src/protomol/addon/Mathieu.o
+
+# target to build an object file
+src/protomol/addon/Mathieu.cpp.o:
+	$(MAKE) -f CMakeFiles/Library.dir/build.make CMakeFiles/Library.dir/src/protomol/addon/Mathieu.cpp.o
+.PHONY : src/protomol/addon/Mathieu.cpp.o
+
+src/protomol/addon/Mathieu.i: src/protomol/addon/Mathieu.cpp.i
+.PHONY : src/protomol/addon/Mathieu.i
+
+# target to preprocess a source file
+src/protomol/addon/Mathieu.cpp.i:
+	$(MAKE) -f CMakeFiles/Library.dir/build.make CMakeFiles/Library.dir/src/protomol/addon/Mathieu.cpp.i
+.PHONY : src/protomol/addon/Mathieu.cpp.i
+
+src/protomol/addon/Mathieu.s: src/protomol/addon/Mathieu.cpp.s
+.PHONY : src/protomol/addon/Mathieu.s
+
+# target to generate assembly for a file
+src/protomol/addon/Mathieu.cpp.s:
+	$(MAKE) -f CMakeFiles/Library.dir/build.make CMakeFiles/Library.dir/src/protomol/addon/Mathieu.cpp.s
+.PHONY : src/protomol/addon/Mathieu.cpp.s
+
+src/protomol/addon/OutputIonSnapshot.o: src/protomol/addon/OutputIonSnapshot.cpp.o
+.PHONY : src/protomol/addon/OutputIonSnapshot.o
+
+# target to build an object file
+src/protomol/addon/OutputIonSnapshot.cpp.o:
+	$(MAKE) -f CMakeFiles/Library.dir/build.make CMakeFiles/Library.dir/src/protomol/addon/OutputIonSnapshot.cpp.o
+.PHONY : src/protomol/addon/OutputIonSnapshot.cpp.o
+
+src/protomol/addon/OutputIonSnapshot.i: src/protomol/addon/OutputIonSnapshot.cpp.i
+.PHONY : src/protomol/addon/OutputIonSnapshot.i
+
+# target to preprocess a source file
+src/protomol/addon/OutputIonSnapshot.cpp.i:
+	$(MAKE) -f CMakeFiles/Library.dir/build.make CMakeFiles/Library.dir/src/protomol/addon/OutputIonSnapshot.cpp.i
+.PHONY : src/protomol/addon/OutputIonSnapshot.cpp.i
+
+src/protomol/addon/OutputIonSnapshot.s: src/protomol/addon/OutputIonSnapshot.cpp.s
+.PHONY : src/protomol/addon/OutputIonSnapshot.s
+
+# target to generate assembly for a file
+src/protomol/addon/OutputIonSnapshot.cpp.s:
+	$(MAKE) -f CMakeFiles/Library.dir/build.make CMakeFiles/Library.dir/src/protomol/addon/OutputIonSnapshot.cpp.s
+.PHONY : src/protomol/addon/OutputIonSnapshot.cpp.s
+
+src/protomol/addon/Snapshot.o: src/protomol/addon/Snapshot.cpp.o
+.PHONY : src/protomol/addon/Snapshot.o
+
+# target to build an object file
+src/protomol/addon/Snapshot.cpp.o:
+	$(MAKE) -f CMakeFiles/Library.dir/build.make CMakeFiles/Library.dir/src/protomol/addon/Snapshot.cpp.o
+.PHONY : src/protomol/addon/Snapshot.cpp.o
+
+src/protomol/addon/Snapshot.i: src/protomol/addon/Snapshot.cpp.i
+.PHONY : src/protomol/addon/Snapshot.i
+
+# target to preprocess a source file
+src/protomol/addon/Snapshot.cpp.i:
+	$(MAKE) -f CMakeFiles/Library.dir/build.make CMakeFiles/Library.dir/src/protomol/addon/Snapshot.cpp.i
+.PHONY : src/protomol/addon/Snapshot.cpp.i
+
+src/protomol/addon/Snapshot.s: src/protomol/addon/Snapshot.cpp.s
+.PHONY : src/protomol/addon/Snapshot.s
+
+# target to generate assembly for a file
+src/protomol/addon/Snapshot.cpp.s:
+	$(MAKE) -f CMakeFiles/Library.dir/build.make CMakeFiles/Library.dir/src/protomol/addon/Snapshot.cpp.s
+.PHONY : src/protomol/addon/Snapshot.cpp.s
+
 src/protomol/base/Exception.o: src/protomol/base/Exception.cpp.o
 .PHONY : src/protomol/base/Exception.o
 
@@ -2109,30 +2253,6 @@ src/protomol/integrator/leapfrog/GPU.cpp.s:
 	$(MAKE) -f CMakeFiles/Library.dir/build.make CMakeFiles/Library.dir/src/protomol/integrator/leapfrog/GPU.cpp.s
 .PHONY : src/protomol/integrator/leapfrog/GPU.cpp.s
 
-src/protomol/integrator/leapfrog/LeapfrogBufferGasIntegrator.o: src/protomol/integrator/leapfrog/LeapfrogBufferGasIntegrator.cpp.o
-.PHONY : src/protomol/integrator/leapfrog/LeapfrogBufferGasIntegrator.o
-
-# target to build an object file
-src/protomol/integrator/leapfrog/LeapfrogBufferGasIntegrator.cpp.o:
-	$(MAKE) -f CMakeFiles/Library.dir/build.make CMakeFiles/Library.dir/src/protomol/integrator/leapfrog/LeapfrogBufferGasIntegrator.cpp.o
-.PHONY : src/protomol/integrator/leapfrog/LeapfrogBufferGasIntegrator.cpp.o
-
-src/protomol/integrator/leapfrog/LeapfrogBufferGasIntegrator.i: src/protomol/integrator/leapfrog/LeapfrogBufferGasIntegrator.cpp.i
-.PHONY : src/protomol/integrator/leapfrog/LeapfrogBufferGasIntegrator.i
-
-# target to preprocess a source file
-src/protomol/integrator/leapfrog/LeapfrogBufferGasIntegrator.cpp.i:
-	$(MAKE) -f CMakeFiles/Library.dir/build.make CMakeFiles/Library.dir/src/protomol/integrator/leapfrog/LeapfrogBufferGasIntegrator.cpp.i
-.PHONY : src/protomol/integrator/leapfrog/LeapfrogBufferGasIntegrator.cpp.i
-
-src/protomol/integrator/leapfrog/LeapfrogBufferGasIntegrator.s: src/protomol/integrator/leapfrog/LeapfrogBufferGasIntegrator.cpp.s
-.PHONY : src/protomol/integrator/leapfrog/LeapfrogBufferGasIntegrator.s
-
-# target to generate assembly for a file
-src/protomol/integrator/leapfrog/LeapfrogBufferGasIntegrator.cpp.s:
-	$(MAKE) -f CMakeFiles/Library.dir/build.make CMakeFiles/Library.dir/src/protomol/integrator/leapfrog/LeapfrogBufferGasIntegrator.cpp.s
-.PHONY : src/protomol/integrator/leapfrog/LeapfrogBufferGasIntegrator.cpp.s
-
 src/protomol/integrator/leapfrog/LeapfrogDataAcquisition.o: src/protomol/integrator/leapfrog/LeapfrogDataAcquisition.cpp.o
 .PHONY : src/protomol/integrator/leapfrog/LeapfrogDataAcquisition.o
 
@@ -3885,78 +4005,6 @@ src/protomol/output/GUIServer.cpp.s:
 	$(MAKE) -f CMakeFiles/Library.dir/build.make CMakeFiles/Library.dir/src/protomol/output/GUIServer.cpp.s
 .PHONY : src/protomol/output/GUIServer.cpp.s
 
-src/protomol/output/LinearPaulTrap.o: src/protomol/output/LinearPaulTrap.cpp.o
-.PHONY : src/protomol/output/LinearPaulTrap.o
-
-# target to build an object file
-src/protomol/output/LinearPaulTrap.cpp.o:
-	$(MAKE) -f CMakeFiles/Library.dir/build.make CMakeFiles/Library.dir/src/protomol/output/LinearPaulTrap.cpp.o
-.PHONY : src/protomol/output/LinearPaulTrap.cpp.o
-
-src/protomol/output/LinearPaulTrap.i: src/protomol/output/LinearPaulTrap.cpp.i
-.PHONY : src/protomol/output/LinearPaulTrap.i
-
-# target to preprocess a source file
-src/protomol/output/LinearPaulTrap.cpp.i:
-	$(MAKE) -f CMakeFiles/Library.dir/build.make CMakeFiles/Library.dir/src/protomol/output/LinearPaulTrap.cpp.i
-.PHONY : src/protomol/output/LinearPaulTrap.cpp.i
-
-src/protomol/output/LinearPaulTrap.s: src/protomol/output/LinearPaulTrap.cpp.s
-.PHONY : src/protomol/output/LinearPaulTrap.s
-
-# target to generate assembly for a file
-src/protomol/output/LinearPaulTrap.cpp.s:
-	$(MAKE) -f CMakeFiles/Library.dir/build.make CMakeFiles/Library.dir/src/protomol/output/LinearPaulTrap.cpp.s
-.PHONY : src/protomol/output/LinearPaulTrap.cpp.s
-
-src/protomol/output/LuaState.o: src/protomol/output/LuaState.cpp.o
-.PHONY : src/protomol/output/LuaState.o
-
-# target to build an object file
-src/protomol/output/LuaState.cpp.o:
-	$(MAKE) -f CMakeFiles/Library.dir/build.make CMakeFiles/Library.dir/src/protomol/output/LuaState.cpp.o
-.PHONY : src/protomol/output/LuaState.cpp.o
-
-src/protomol/output/LuaState.i: src/protomol/output/LuaState.cpp.i
-.PHONY : src/protomol/output/LuaState.i
-
-# target to preprocess a source file
-src/protomol/output/LuaState.cpp.i:
-	$(MAKE) -f CMakeFiles/Library.dir/build.make CMakeFiles/Library.dir/src/protomol/output/LuaState.cpp.i
-.PHONY : src/protomol/output/LuaState.cpp.i
-
-src/protomol/output/LuaState.s: src/protomol/output/LuaState.cpp.s
-.PHONY : src/protomol/output/LuaState.s
-
-# target to generate assembly for a file
-src/protomol/output/LuaState.cpp.s:
-	$(MAKE) -f CMakeFiles/Library.dir/build.make CMakeFiles/Library.dir/src/protomol/output/LuaState.cpp.s
-.PHONY : src/protomol/output/LuaState.cpp.s
-
-src/protomol/output/Mathieu.o: src/protomol/output/Mathieu.cpp.o
-.PHONY : src/protomol/output/Mathieu.o
-
-# target to build an object file
-src/protomol/output/Mathieu.cpp.o:
-	$(MAKE) -f CMakeFiles/Library.dir/build.make CMakeFiles/Library.dir/src/protomol/output/Mathieu.cpp.o
-.PHONY : src/protomol/output/Mathieu.cpp.o
-
-src/protomol/output/Mathieu.i: src/protomol/output/Mathieu.cpp.i
-.PHONY : src/protomol/output/Mathieu.i
-
-# target to preprocess a source file
-src/protomol/output/Mathieu.cpp.i:
-	$(MAKE) -f CMakeFiles/Library.dir/build.make CMakeFiles/Library.dir/src/protomol/output/Mathieu.cpp.i
-.PHONY : src/protomol/output/Mathieu.cpp.i
-
-src/protomol/output/Mathieu.s: src/protomol/output/Mathieu.cpp.s
-.PHONY : src/protomol/output/Mathieu.s
-
-# target to generate assembly for a file
-src/protomol/output/Mathieu.cpp.s:
-	$(MAKE) -f CMakeFiles/Library.dir/build.make CMakeFiles/Library.dir/src/protomol/output/Mathieu.cpp.s
-.PHONY : src/protomol/output/Mathieu.cpp.s
-
 src/protomol/output/Output.o: src/protomol/output/Output.cpp.o
 .PHONY : src/protomol/output/Output.o
 
@@ -4245,54 +4293,6 @@ src/protomol/output/OutputFinalXYZVel.cpp.s:
 	$(MAKE) -f CMakeFiles/Library.dir/build.make CMakeFiles/Library.dir/src/protomol/output/OutputFinalXYZVel.cpp.s
 .PHONY : src/protomol/output/OutputFinalXYZVel.cpp.s
 
-src/protomol/output/OutputIonSnapshot.o: src/protomol/output/OutputIonSnapshot.cpp.o
-.PHONY : src/protomol/output/OutputIonSnapshot.o
-
-# target to build an object file
-src/protomol/output/OutputIonSnapshot.cpp.o:
-	$(MAKE) -f CMakeFiles/Library.dir/build.make CMakeFiles/Library.dir/src/protomol/output/OutputIonSnapshot.cpp.o
-.PHONY : src/protomol/output/OutputIonSnapshot.cpp.o
-
-src/protomol/output/OutputIonSnapshot.i: src/protomol/output/OutputIonSnapshot.cpp.i
-.PHONY : src/protomol/output/OutputIonSnapshot.i
-
-# target to preprocess a source file
-src/protomol/output/OutputIonSnapshot.cpp.i:
-	$(MAKE) -f CMakeFiles/Library.dir/build.make CMakeFiles/Library.dir/src/protomol/output/OutputIonSnapshot.cpp.i
-.PHONY : src/protomol/output/OutputIonSnapshot.cpp.i
-
-src/protomol/output/OutputIonSnapshot.s: src/protomol/output/OutputIonSnapshot.cpp.s
-.PHONY : src/protomol/output/OutputIonSnapshot.s
-
-# target to generate assembly for a file
-src/protomol/output/OutputIonSnapshot.cpp.s:
-	$(MAKE) -f CMakeFiles/Library.dir/build.make CMakeFiles/Library.dir/src/protomol/output/OutputIonSnapshot.cpp.s
-.PHONY : src/protomol/output/OutputIonSnapshot.cpp.s
-
-src/protomol/output/OutputIonTemperatureLS.o: src/protomol/output/OutputIonTemperatureLS.cpp.o
-.PHONY : src/protomol/output/OutputIonTemperatureLS.o
-
-# target to build an object file
-src/protomol/output/OutputIonTemperatureLS.cpp.o:
-	$(MAKE) -f CMakeFiles/Library.dir/build.make CMakeFiles/Library.dir/src/protomol/output/OutputIonTemperatureLS.cpp.o
-.PHONY : src/protomol/output/OutputIonTemperatureLS.cpp.o
-
-src/protomol/output/OutputIonTemperatureLS.i: src/protomol/output/OutputIonTemperatureLS.cpp.i
-.PHONY : src/protomol/output/OutputIonTemperatureLS.i
-
-# target to preprocess a source file
-src/protomol/output/OutputIonTemperatureLS.cpp.i:
-	$(MAKE) -f CMakeFiles/Library.dir/build.make CMakeFiles/Library.dir/src/protomol/output/OutputIonTemperatureLS.cpp.i
-.PHONY : src/protomol/output/OutputIonTemperatureLS.cpp.i
-
-src/protomol/output/OutputIonTemperatureLS.s: src/protomol/output/OutputIonTemperatureLS.cpp.s
-.PHONY : src/protomol/output/OutputIonTemperatureLS.s
-
-# target to generate assembly for a file
-src/protomol/output/OutputIonTemperatureLS.cpp.s:
-	$(MAKE) -f CMakeFiles/Library.dir/build.make CMakeFiles/Library.dir/src/protomol/output/OutputIonTemperatureLS.cpp.s
-.PHONY : src/protomol/output/OutputIonTemperatureLS.cpp.s
-
 src/protomol/output/OutputScreen.o: src/protomol/output/OutputScreen.cpp.o
 .PHONY : src/protomol/output/OutputScreen.o
 
@@ -4316,78 +4316,6 @@ src/protomol/output/OutputScreen.s: src/protomol/output/OutputScreen.cpp.s
 src/protomol/output/OutputScreen.cpp.s:
 	$(MAKE) -f CMakeFiles/Library.dir/build.make CMakeFiles/Library.dir/src/protomol/output/OutputScreen.cpp.s
 .PHONY : src/protomol/output/OutputScreen.cpp.s
-
-src/protomol/output/OutputVelPos.o: src/protomol/output/OutputVelPos.cpp.o
-.PHONY : src/protomol/output/OutputVelPos.o
-
-# target to build an object file
-src/protomol/output/OutputVelPos.cpp.o:
-	$(MAKE) -f CMakeFiles/Library.dir/build.make CMakeFiles/Library.dir/src/protomol/output/OutputVelPos.cpp.o
-.PHONY : src/protomol/output/OutputVelPos.cpp.o
-
-src/protomol/output/OutputVelPos.i: src/protomol/output/OutputVelPos.cpp.i
-.PHONY : src/protomol/output/OutputVelPos.i
-
-# target to preprocess a source file
-src/protomol/output/OutputVelPos.cpp.i:
-	$(MAKE) -f CMakeFiles/Library.dir/build.make CMakeFiles/Library.dir/src/protomol/output/OutputVelPos.cpp.i
-.PHONY : src/protomol/output/OutputVelPos.cpp.i
-
-src/protomol/output/OutputVelPos.s: src/protomol/output/OutputVelPos.cpp.s
-.PHONY : src/protomol/output/OutputVelPos.s
-
-# target to generate assembly for a file
-src/protomol/output/OutputVelPos.cpp.s:
-	$(MAKE) -f CMakeFiles/Library.dir/build.make CMakeFiles/Library.dir/src/protomol/output/OutputVelPos.cpp.s
-.PHONY : src/protomol/output/OutputVelPos.cpp.s
-
-src/protomol/output/OutputVelPosKE.o: src/protomol/output/OutputVelPosKE.cpp.o
-.PHONY : src/protomol/output/OutputVelPosKE.o
-
-# target to build an object file
-src/protomol/output/OutputVelPosKE.cpp.o:
-	$(MAKE) -f CMakeFiles/Library.dir/build.make CMakeFiles/Library.dir/src/protomol/output/OutputVelPosKE.cpp.o
-.PHONY : src/protomol/output/OutputVelPosKE.cpp.o
-
-src/protomol/output/OutputVelPosKE.i: src/protomol/output/OutputVelPosKE.cpp.i
-.PHONY : src/protomol/output/OutputVelPosKE.i
-
-# target to preprocess a source file
-src/protomol/output/OutputVelPosKE.cpp.i:
-	$(MAKE) -f CMakeFiles/Library.dir/build.make CMakeFiles/Library.dir/src/protomol/output/OutputVelPosKE.cpp.i
-.PHONY : src/protomol/output/OutputVelPosKE.cpp.i
-
-src/protomol/output/OutputVelPosKE.s: src/protomol/output/OutputVelPosKE.cpp.s
-.PHONY : src/protomol/output/OutputVelPosKE.s
-
-# target to generate assembly for a file
-src/protomol/output/OutputVelPosKE.cpp.s:
-	$(MAKE) -f CMakeFiles/Library.dir/build.make CMakeFiles/Library.dir/src/protomol/output/OutputVelPosKE.cpp.s
-.PHONY : src/protomol/output/OutputVelPosKE.cpp.s
-
-src/protomol/output/OutputVelPosLS.o: src/protomol/output/OutputVelPosLS.cpp.o
-.PHONY : src/protomol/output/OutputVelPosLS.o
-
-# target to build an object file
-src/protomol/output/OutputVelPosLS.cpp.o:
-	$(MAKE) -f CMakeFiles/Library.dir/build.make CMakeFiles/Library.dir/src/protomol/output/OutputVelPosLS.cpp.o
-.PHONY : src/protomol/output/OutputVelPosLS.cpp.o
-
-src/protomol/output/OutputVelPosLS.i: src/protomol/output/OutputVelPosLS.cpp.i
-.PHONY : src/protomol/output/OutputVelPosLS.i
-
-# target to preprocess a source file
-src/protomol/output/OutputVelPosLS.cpp.i:
-	$(MAKE) -f CMakeFiles/Library.dir/build.make CMakeFiles/Library.dir/src/protomol/output/OutputVelPosLS.cpp.i
-.PHONY : src/protomol/output/OutputVelPosLS.cpp.i
-
-src/protomol/output/OutputVelPosLS.s: src/protomol/output/OutputVelPosLS.cpp.s
-.PHONY : src/protomol/output/OutputVelPosLS.s
-
-# target to generate assembly for a file
-src/protomol/output/OutputVelPosLS.cpp.s:
-	$(MAKE) -f CMakeFiles/Library.dir/build.make CMakeFiles/Library.dir/src/protomol/output/OutputVelPosLS.cpp.s
-.PHONY : src/protomol/output/OutputVelPosLS.cpp.s
 
 src/protomol/output/OutputXTCTrajectory.o: src/protomol/output/OutputXTCTrajectory.cpp.o
 .PHONY : src/protomol/output/OutputXTCTrajectory.o
@@ -4484,78 +4412,6 @@ src/protomol/output/OutputXYZTrajectoryVel.s: src/protomol/output/OutputXYZTraje
 src/protomol/output/OutputXYZTrajectoryVel.cpp.s:
 	$(MAKE) -f CMakeFiles/Library.dir/build.make CMakeFiles/Library.dir/src/protomol/output/OutputXYZTrajectoryVel.cpp.s
 .PHONY : src/protomol/output/OutputXYZTrajectoryVel.cpp.s
-
-src/protomol/output/Snapshot.o: src/protomol/output/Snapshot.cpp.o
-.PHONY : src/protomol/output/Snapshot.o
-
-# target to build an object file
-src/protomol/output/Snapshot.cpp.o:
-	$(MAKE) -f CMakeFiles/Library.dir/build.make CMakeFiles/Library.dir/src/protomol/output/Snapshot.cpp.o
-.PHONY : src/protomol/output/Snapshot.cpp.o
-
-src/protomol/output/Snapshot.i: src/protomol/output/Snapshot.cpp.i
-.PHONY : src/protomol/output/Snapshot.i
-
-# target to preprocess a source file
-src/protomol/output/Snapshot.cpp.i:
-	$(MAKE) -f CMakeFiles/Library.dir/build.make CMakeFiles/Library.dir/src/protomol/output/Snapshot.cpp.i
-.PHONY : src/protomol/output/Snapshot.cpp.i
-
-src/protomol/output/Snapshot.s: src/protomol/output/Snapshot.cpp.s
-.PHONY : src/protomol/output/Snapshot.s
-
-# target to generate assembly for a file
-src/protomol/output/Snapshot.cpp.s:
-	$(MAKE) -f CMakeFiles/Library.dir/build.make CMakeFiles/Library.dir/src/protomol/output/Snapshot.cpp.s
-.PHONY : src/protomol/output/Snapshot.cpp.s
-
-src/protomol/output/lqt.o: src/protomol/output/lqt.cpp.o
-.PHONY : src/protomol/output/lqt.o
-
-# target to build an object file
-src/protomol/output/lqt.cpp.o:
-	$(MAKE) -f CMakeFiles/Library.dir/build.make CMakeFiles/Library.dir/src/protomol/output/lqt.cpp.o
-.PHONY : src/protomol/output/lqt.cpp.o
-
-src/protomol/output/lqt.i: src/protomol/output/lqt.cpp.i
-.PHONY : src/protomol/output/lqt.i
-
-# target to preprocess a source file
-src/protomol/output/lqt.cpp.i:
-	$(MAKE) -f CMakeFiles/Library.dir/build.make CMakeFiles/Library.dir/src/protomol/output/lqt.cpp.i
-.PHONY : src/protomol/output/lqt.cpp.i
-
-src/protomol/output/lqt.s: src/protomol/output/lqt.cpp.s
-.PHONY : src/protomol/output/lqt.s
-
-# target to generate assembly for a file
-src/protomol/output/lqt.cpp.s:
-	$(MAKE) -f CMakeFiles/Library.dir/build.make CMakeFiles/Library.dir/src/protomol/output/lqt.cpp.s
-.PHONY : src/protomol/output/lqt.cpp.s
-
-src/protomol/output/lqt_with_ec.o: src/protomol/output/lqt_with_ec.cpp.o
-.PHONY : src/protomol/output/lqt_with_ec.o
-
-# target to build an object file
-src/protomol/output/lqt_with_ec.cpp.o:
-	$(MAKE) -f CMakeFiles/Library.dir/build.make CMakeFiles/Library.dir/src/protomol/output/lqt_with_ec.cpp.o
-.PHONY : src/protomol/output/lqt_with_ec.cpp.o
-
-src/protomol/output/lqt_with_ec.i: src/protomol/output/lqt_with_ec.cpp.i
-.PHONY : src/protomol/output/lqt_with_ec.i
-
-# target to preprocess a source file
-src/protomol/output/lqt_with_ec.cpp.i:
-	$(MAKE) -f CMakeFiles/Library.dir/build.make CMakeFiles/Library.dir/src/protomol/output/lqt_with_ec.cpp.i
-.PHONY : src/protomol/output/lqt_with_ec.cpp.i
-
-src/protomol/output/lqt_with_ec.s: src/protomol/output/lqt_with_ec.cpp.s
-.PHONY : src/protomol/output/lqt_with_ec.s
-
-# target to generate assembly for a file
-src/protomol/output/lqt_with_ec.cpp.s:
-	$(MAKE) -f CMakeFiles/Library.dir/build.make CMakeFiles/Library.dir/src/protomol/output/lqt_with_ec.cpp.s
-.PHONY : src/protomol/output/lqt_with_ec.cpp.s
 
 src/protomol/parallel/FFTComplex.o: src/protomol/parallel/FFTComplex.cpp.o
 .PHONY : src/protomol/parallel/FFTComplex.o
@@ -5321,6 +5177,24 @@ help:
 	@echo "... src/protomol/addon/BufferGas.o"
 	@echo "... src/protomol/addon/BufferGas.i"
 	@echo "... src/protomol/addon/BufferGas.s"
+	@echo "... src/protomol/addon/LeapfrogBufferGasIntegrator.o"
+	@echo "... src/protomol/addon/LeapfrogBufferGasIntegrator.i"
+	@echo "... src/protomol/addon/LeapfrogBufferGasIntegrator.s"
+	@echo "... src/protomol/addon/LinearPaulTrap.o"
+	@echo "... src/protomol/addon/LinearPaulTrap.i"
+	@echo "... src/protomol/addon/LinearPaulTrap.s"
+	@echo "... src/protomol/addon/LuaState.o"
+	@echo "... src/protomol/addon/LuaState.i"
+	@echo "... src/protomol/addon/LuaState.s"
+	@echo "... src/protomol/addon/Mathieu.o"
+	@echo "... src/protomol/addon/Mathieu.i"
+	@echo "... src/protomol/addon/Mathieu.s"
+	@echo "... src/protomol/addon/OutputIonSnapshot.o"
+	@echo "... src/protomol/addon/OutputIonSnapshot.i"
+	@echo "... src/protomol/addon/OutputIonSnapshot.s"
+	@echo "... src/protomol/addon/Snapshot.o"
+	@echo "... src/protomol/addon/Snapshot.i"
+	@echo "... src/protomol/addon/Snapshot.s"
 	@echo "... src/protomol/base/Exception.o"
 	@echo "... src/protomol/base/Exception.i"
 	@echo "... src/protomol/base/Exception.s"
@@ -5558,9 +5432,6 @@ help:
 	@echo "... src/protomol/integrator/leapfrog/GPU.o"
 	@echo "... src/protomol/integrator/leapfrog/GPU.i"
 	@echo "... src/protomol/integrator/leapfrog/GPU.s"
-	@echo "... src/protomol/integrator/leapfrog/LeapfrogBufferGasIntegrator.o"
-	@echo "... src/protomol/integrator/leapfrog/LeapfrogBufferGasIntegrator.i"
-	@echo "... src/protomol/integrator/leapfrog/LeapfrogBufferGasIntegrator.s"
 	@echo "... src/protomol/integrator/leapfrog/LeapfrogDataAcquisition.o"
 	@echo "... src/protomol/integrator/leapfrog/LeapfrogDataAcquisition.i"
 	@echo "... src/protomol/integrator/leapfrog/LeapfrogDataAcquisition.s"
@@ -5780,15 +5651,6 @@ help:
 	@echo "... src/protomol/output/GUIServer.o"
 	@echo "... src/protomol/output/GUIServer.i"
 	@echo "... src/protomol/output/GUIServer.s"
-	@echo "... src/protomol/output/LinearPaulTrap.o"
-	@echo "... src/protomol/output/LinearPaulTrap.i"
-	@echo "... src/protomol/output/LinearPaulTrap.s"
-	@echo "... src/protomol/output/LuaState.o"
-	@echo "... src/protomol/output/LuaState.i"
-	@echo "... src/protomol/output/LuaState.s"
-	@echo "... src/protomol/output/Mathieu.o"
-	@echo "... src/protomol/output/Mathieu.i"
-	@echo "... src/protomol/output/Mathieu.s"
 	@echo "... src/protomol/output/Output.o"
 	@echo "... src/protomol/output/Output.i"
 	@echo "... src/protomol/output/Output.s"
@@ -5825,24 +5687,9 @@ help:
 	@echo "... src/protomol/output/OutputFinalXYZVel.o"
 	@echo "... src/protomol/output/OutputFinalXYZVel.i"
 	@echo "... src/protomol/output/OutputFinalXYZVel.s"
-	@echo "... src/protomol/output/OutputIonSnapshot.o"
-	@echo "... src/protomol/output/OutputIonSnapshot.i"
-	@echo "... src/protomol/output/OutputIonSnapshot.s"
-	@echo "... src/protomol/output/OutputIonTemperatureLS.o"
-	@echo "... src/protomol/output/OutputIonTemperatureLS.i"
-	@echo "... src/protomol/output/OutputIonTemperatureLS.s"
 	@echo "... src/protomol/output/OutputScreen.o"
 	@echo "... src/protomol/output/OutputScreen.i"
 	@echo "... src/protomol/output/OutputScreen.s"
-	@echo "... src/protomol/output/OutputVelPos.o"
-	@echo "... src/protomol/output/OutputVelPos.i"
-	@echo "... src/protomol/output/OutputVelPos.s"
-	@echo "... src/protomol/output/OutputVelPosKE.o"
-	@echo "... src/protomol/output/OutputVelPosKE.i"
-	@echo "... src/protomol/output/OutputVelPosKE.s"
-	@echo "... src/protomol/output/OutputVelPosLS.o"
-	@echo "... src/protomol/output/OutputVelPosLS.i"
-	@echo "... src/protomol/output/OutputVelPosLS.s"
 	@echo "... src/protomol/output/OutputXTCTrajectory.o"
 	@echo "... src/protomol/output/OutputXTCTrajectory.i"
 	@echo "... src/protomol/output/OutputXTCTrajectory.s"
@@ -5855,15 +5702,6 @@ help:
 	@echo "... src/protomol/output/OutputXYZTrajectoryVel.o"
 	@echo "... src/protomol/output/OutputXYZTrajectoryVel.i"
 	@echo "... src/protomol/output/OutputXYZTrajectoryVel.s"
-	@echo "... src/protomol/output/Snapshot.o"
-	@echo "... src/protomol/output/Snapshot.i"
-	@echo "... src/protomol/output/Snapshot.s"
-	@echo "... src/protomol/output/lqt.o"
-	@echo "... src/protomol/output/lqt.i"
-	@echo "... src/protomol/output/lqt.s"
-	@echo "... src/protomol/output/lqt_with_ec.o"
-	@echo "... src/protomol/output/lqt_with_ec.i"
-	@echo "... src/protomol/output/lqt_with_ec.s"
 	@echo "... src/protomol/parallel/FFTComplex.o"
 	@echo "... src/protomol/parallel/FFTComplex.i"
 	@echo "... src/protomol/parallel/FFTComplex.s"

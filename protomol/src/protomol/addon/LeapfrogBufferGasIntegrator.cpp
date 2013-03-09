@@ -1,4 +1,3 @@
-#include <protomol/integrator/leapfrog/LeapfrogBufferGasIntegrator.h>
 #include <protomol/base/Report.h>
 #include <protomol/type/ScalarStructure.h>
 #include <protomol/type/Vector3DBlock.h>
@@ -11,14 +10,14 @@
 #include <algorithm>
 #include <cmath>
 #include <string>
+#include <vector>
+#include <protomol/addon/LeapfrogBufferGasIntegrator.h>
 #include <protomol/addon/BufferGas.h>
-
-using std::string;
-using std::sort;
 
 using namespace std;
 using namespace ProtoMol::Report;
 using namespace ProtoMol;
+using namespace ProtoMolAddon;
 
 //____ LeapfrogBufferGasIntegrator
 
@@ -157,10 +156,12 @@ void LeapfrogBufferGasIntegrator::run(int numTimesteps) {
   Real end = (app->currentStep + numTimesteps) * stepSize;
   Real next = 0;
 
-  while (!gas.isCollisionFinished()) {
+
+  while (!gas.isCollisionFinished() && next<end) {
     runGeneral(current, next);
     gas.collide(app);
     current = next;
+    next = gas.getNextCollisionEventTime();
   }
 
   runGeneral(current, end);

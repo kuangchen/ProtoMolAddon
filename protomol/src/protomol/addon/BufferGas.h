@@ -1,7 +1,7 @@
 #ifndef __BUFFER_GAS_H_
 #define __BUFFER_GAS_H_
 
-#include <protomol/output/LuaState.h>
+#include <protomol/addon/LuaState.h>
 #include <protomol/type/Vector3D.h>
 #include <gsl/gsl_rng.h>
 #include <gsl/gsl_randist.h>
@@ -10,8 +10,8 @@
 #include <protomol/ProtoMolApp.h>
 
 using namespace ProtoMol;
-using std::string;
-using LuaState::LuaState;
+using namespace std;
+using namespace ProtoMolAddon::Lua;
 
 namespace ProtoMolAddon {
 
@@ -42,7 +42,7 @@ namespace ProtoMolAddon {
 
     public:
       BufferGas();
-      BufferGas(LuaState::LuaState& L);
+      BufferGas(LuaState& L);
       ~BufferGas();
 
       
@@ -52,7 +52,7 @@ namespace ProtoMolAddon {
       bool isCollisionFinished() const;
       void collide(ProtoMolApp *app);
       void scheduleCollision(double start, double end, int numAtom);
-      
+      double getNextCollisionEventTime() const;
       
     };
 

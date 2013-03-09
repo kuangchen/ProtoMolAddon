@@ -6,11 +6,10 @@
 #include <protomol/force/bonded/AngleSystemForce.h>
 #include <protomol/force/bonded/ImproperSystemForce.h>
 #include <protomol/force/bonded/HarmDihedralSystemForce.h>
-#include <protomol/force/LQTForce.h>
-#include <protomol/force/LQTWithECForce.h>
-#include <protomol/force/LaserCoolingForce.h>
-#include <protomol/force/StrayField.h>
 
+#include <protomol/addon/LQTForce.h>
+#include <protomol/addon/LaserCoolingForce.h>
+#include <protomol/addon/StrayFieldForce.h>
 
 #include <protomol/ProtoMolApp.h>
 #include <protomol/base/StringUtilities.h>
@@ -20,6 +19,7 @@
 
 using namespace std;
 using namespace ProtoMol;
+using namespace ProtoMolAddon;
 
 void BondedForcesModule::init(ProtoMolApp *app) {}
 
@@ -37,7 +37,7 @@ void BondedForcesModule::registerForces(ProtoMolApp *app) {
     f.registerExemplar(new ImproperSystemForce<PeriodicBoundaryConditions>());
     f.registerExemplar(new HarmDihedralSystemForce<PeriodicBoundaryConditions>());
     f.registerExemplar(new LQTForce<PeriodicBoundaryConditions>());
-    f.registerExemplar(new LQTWithECForce<PeriodicBoundaryConditions>());
+
     f.registerExemplar(new LaserCoolingForce<PeriodicBoundaryConditions>());
     f.registerExemplar(new StrayFieldForce<PeriodicBoundaryConditions>());
 
@@ -49,7 +49,6 @@ void BondedForcesModule::registerForces(ProtoMolApp *app) {
     f.registerExemplar(new ImproperSystemForce<VacuumBoundaryConditions>());
     f.registerExemplar(new HarmDihedralSystemForce<VacuumBoundaryConditions>());
     f.registerExemplar(new LQTForce<PeriodicBoundaryConditions>());
-    f.registerExemplar(new LQTWithECForce<PeriodicBoundaryConditions>());
     f.registerExemplar(new LaserCoolingForce<VacuumBoundaryConditions>());
     f.registerExemplar(new StrayFieldForce<VacuumBoundaryConditions>());
   }

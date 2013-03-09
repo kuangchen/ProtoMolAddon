@@ -4,6 +4,7 @@
 
 using namespace ProtoMol::Constant;
 using namespace ProtoMolAddon::Collision;
+using namespace ProtoMolAddon::Lua;
 
 BufferGas::BufferGas() :
   _mass(0),
@@ -23,7 +24,7 @@ BufferGas::~BufferGas() {
 }
 
         
-BufferGas::BufferGas (LuaState::LuaState& L) {
+BufferGas::BufferGas (LuaState& L) {
   gsl_rng_env_setup();  
   _T = gsl_rng_default;
   _r = gsl_rng_alloc(_T);
@@ -118,4 +119,7 @@ bool BufferGas::isCollisionFinished() const {
   return _nextEvent==_schedule.size();
 }
 
-
+double BufferGas::getNextCollisionEventTime() const {
+  return isCollisionFinished() ? 0 : _schedule[_nextEvent].time;
+    
+}

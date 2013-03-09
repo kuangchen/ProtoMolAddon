@@ -18,10 +18,7 @@
 #include <protomol/output/OutputFAHFile.h>
 #include <protomol/output/OutputScreen.h>
 #include <protomol/output/OutputXTCTrajectory.h>
-#include <protomol/output/OutputVelPosKE.h>
-#include <protomol/output/OutputVelPosLS.h>
-#include <protomol/output/OutputIonTemperatureLS.h>
-#include <protomol/output/OutputIonSnapshot.h>
+#include <protomol/addon/OutputIonSnapshot.h>
 
 using namespace std;
 using namespace ProtoMol;
@@ -44,8 +41,5 @@ void OutputModule::init(ProtoMolApp *app) {
 #endif
   f.registerExemplar(new OutputFAHFile());
   f.registerExemplar(new OutputXTCTrajectory());
-  f.registerExemplar(new OutputVelPosLS()); 
-  f.registerExemplar(new OutputVelPosKE()); 
-  f.registerExemplar(new OutputIonTemperatureLS()); 
   f.registerExemplar(new OutputIonSnapshot()); 
 }

@@ -2,21 +2,19 @@
 #ifndef LEAPFROGBUFFERGASINTEGRATOR_H
 #define LEAPFROGBUFFERGASINTEGRATOR_H
 
-#include <protomol/addon/BufferGas.h>
-#include <protomol/output/LuaState.h>
 #include <protomol/integrator/STSIntegrator.h>
+#include <protomol/addon/BufferGas.h>
+#include <protomol/addon/LuaState.h>
 #include <string>
 #include <vector>
                 
 using namespace ProtoMolAddon::Collision;
+using namespace ProtoMolAddon::Lua;
+using ProtoMol::STSIntegrator;
+using namespace std;
 using std::vector;
-using std::pair;
-using LuaState::LuaState;
 
-namespace ProtoMol {
-  class ScalarStructure;
-  class ForceGroup;
-
+namespace ProtoMolAddon {
   //____ LeapfrogBufferGasIntegrator
   class LeapfrogBufferGasIntegrator : public STSIntegrator {
     //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -60,12 +58,12 @@ namespace ProtoMol {
     // My data members
     //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
   private:
-    std::string filename; 
-    LuaState::LuaState L;
+    string filename; 
+    LuaState L;
     BufferGas gas;
 
   public:
-    static const std::string keyword;
+    static const string keyword;
     void runGeneral(Real t1, Real t2);
   };
 }

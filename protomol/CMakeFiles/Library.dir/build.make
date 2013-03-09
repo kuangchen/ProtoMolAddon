@@ -1268,55 +1268,9 @@ CMakeFiles/Library.dir/src/protomol/output/OutputCache.cpp.o.provides: CMakeFile
 
 CMakeFiles/Library.dir/src/protomol/output/OutputCache.cpp.o.provides.build: CMakeFiles/Library.dir/src/protomol/output/OutputCache.cpp.o
 
-CMakeFiles/Library.dir/src/protomol/output/lqt_with_ec.cpp.o: CMakeFiles/Library.dir/flags.make
-CMakeFiles/Library.dir/src/protomol/output/lqt_with_ec.cpp.o: src/protomol/output/lqt_with_ec.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/CMakeFiles" $(CMAKE_PROGRESS_54)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/Library.dir/src/protomol/output/lqt_with_ec.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/Library.dir/src/protomol/output/lqt_with_ec.cpp.o -c "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/src/protomol/output/lqt_with_ec.cpp"
-
-CMakeFiles/Library.dir/src/protomol/output/lqt_with_ec.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Library.dir/src/protomol/output/lqt_with_ec.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/src/protomol/output/lqt_with_ec.cpp" > CMakeFiles/Library.dir/src/protomol/output/lqt_with_ec.cpp.i
-
-CMakeFiles/Library.dir/src/protomol/output/lqt_with_ec.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Library.dir/src/protomol/output/lqt_with_ec.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/src/protomol/output/lqt_with_ec.cpp" -o CMakeFiles/Library.dir/src/protomol/output/lqt_with_ec.cpp.s
-
-CMakeFiles/Library.dir/src/protomol/output/lqt_with_ec.cpp.o.requires:
-.PHONY : CMakeFiles/Library.dir/src/protomol/output/lqt_with_ec.cpp.o.requires
-
-CMakeFiles/Library.dir/src/protomol/output/lqt_with_ec.cpp.o.provides: CMakeFiles/Library.dir/src/protomol/output/lqt_with_ec.cpp.o.requires
-	$(MAKE) -f CMakeFiles/Library.dir/build.make CMakeFiles/Library.dir/src/protomol/output/lqt_with_ec.cpp.o.provides.build
-.PHONY : CMakeFiles/Library.dir/src/protomol/output/lqt_with_ec.cpp.o.provides
-
-CMakeFiles/Library.dir/src/protomol/output/lqt_with_ec.cpp.o.provides.build: CMakeFiles/Library.dir/src/protomol/output/lqt_with_ec.cpp.o
-
-CMakeFiles/Library.dir/src/protomol/output/OutputVelPos.cpp.o: CMakeFiles/Library.dir/flags.make
-CMakeFiles/Library.dir/src/protomol/output/OutputVelPos.cpp.o: src/protomol/output/OutputVelPos.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/CMakeFiles" $(CMAKE_PROGRESS_55)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/Library.dir/src/protomol/output/OutputVelPos.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/Library.dir/src/protomol/output/OutputVelPos.cpp.o -c "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/src/protomol/output/OutputVelPos.cpp"
-
-CMakeFiles/Library.dir/src/protomol/output/OutputVelPos.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Library.dir/src/protomol/output/OutputVelPos.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/src/protomol/output/OutputVelPos.cpp" > CMakeFiles/Library.dir/src/protomol/output/OutputVelPos.cpp.i
-
-CMakeFiles/Library.dir/src/protomol/output/OutputVelPos.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Library.dir/src/protomol/output/OutputVelPos.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/src/protomol/output/OutputVelPos.cpp" -o CMakeFiles/Library.dir/src/protomol/output/OutputVelPos.cpp.s
-
-CMakeFiles/Library.dir/src/protomol/output/OutputVelPos.cpp.o.requires:
-.PHONY : CMakeFiles/Library.dir/src/protomol/output/OutputVelPos.cpp.o.requires
-
-CMakeFiles/Library.dir/src/protomol/output/OutputVelPos.cpp.o.provides: CMakeFiles/Library.dir/src/protomol/output/OutputVelPos.cpp.o.requires
-	$(MAKE) -f CMakeFiles/Library.dir/build.make CMakeFiles/Library.dir/src/protomol/output/OutputVelPos.cpp.o.provides.build
-.PHONY : CMakeFiles/Library.dir/src/protomol/output/OutputVelPos.cpp.o.provides
-
-CMakeFiles/Library.dir/src/protomol/output/OutputVelPos.cpp.o.provides.build: CMakeFiles/Library.dir/src/protomol/output/OutputVelPos.cpp.o
-
 CMakeFiles/Library.dir/src/protomol/output/OutputCheckpoint.cpp.o: CMakeFiles/Library.dir/flags.make
 CMakeFiles/Library.dir/src/protomol/output/OutputCheckpoint.cpp.o: src/protomol/output/OutputCheckpoint.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/CMakeFiles" $(CMAKE_PROGRESS_56)
+	$(CMAKE_COMMAND) -E cmake_progress_report "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/CMakeFiles" $(CMAKE_PROGRESS_54)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/Library.dir/src/protomol/output/OutputCheckpoint.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/Library.dir/src/protomol/output/OutputCheckpoint.cpp.o -c "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/src/protomol/output/OutputCheckpoint.cpp"
 
@@ -1337,55 +1291,9 @@ CMakeFiles/Library.dir/src/protomol/output/OutputCheckpoint.cpp.o.provides: CMak
 
 CMakeFiles/Library.dir/src/protomol/output/OutputCheckpoint.cpp.o.provides.build: CMakeFiles/Library.dir/src/protomol/output/OutputCheckpoint.cpp.o
 
-CMakeFiles/Library.dir/src/protomol/output/LuaState.cpp.o: CMakeFiles/Library.dir/flags.make
-CMakeFiles/Library.dir/src/protomol/output/LuaState.cpp.o: src/protomol/output/LuaState.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/CMakeFiles" $(CMAKE_PROGRESS_57)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/Library.dir/src/protomol/output/LuaState.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/Library.dir/src/protomol/output/LuaState.cpp.o -c "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/src/protomol/output/LuaState.cpp"
-
-CMakeFiles/Library.dir/src/protomol/output/LuaState.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Library.dir/src/protomol/output/LuaState.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/src/protomol/output/LuaState.cpp" > CMakeFiles/Library.dir/src/protomol/output/LuaState.cpp.i
-
-CMakeFiles/Library.dir/src/protomol/output/LuaState.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Library.dir/src/protomol/output/LuaState.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/src/protomol/output/LuaState.cpp" -o CMakeFiles/Library.dir/src/protomol/output/LuaState.cpp.s
-
-CMakeFiles/Library.dir/src/protomol/output/LuaState.cpp.o.requires:
-.PHONY : CMakeFiles/Library.dir/src/protomol/output/LuaState.cpp.o.requires
-
-CMakeFiles/Library.dir/src/protomol/output/LuaState.cpp.o.provides: CMakeFiles/Library.dir/src/protomol/output/LuaState.cpp.o.requires
-	$(MAKE) -f CMakeFiles/Library.dir/build.make CMakeFiles/Library.dir/src/protomol/output/LuaState.cpp.o.provides.build
-.PHONY : CMakeFiles/Library.dir/src/protomol/output/LuaState.cpp.o.provides
-
-CMakeFiles/Library.dir/src/protomol/output/LuaState.cpp.o.provides.build: CMakeFiles/Library.dir/src/protomol/output/LuaState.cpp.o
-
-CMakeFiles/Library.dir/src/protomol/output/Snapshot.cpp.o: CMakeFiles/Library.dir/flags.make
-CMakeFiles/Library.dir/src/protomol/output/Snapshot.cpp.o: src/protomol/output/Snapshot.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/CMakeFiles" $(CMAKE_PROGRESS_58)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/Library.dir/src/protomol/output/Snapshot.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/Library.dir/src/protomol/output/Snapshot.cpp.o -c "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/src/protomol/output/Snapshot.cpp"
-
-CMakeFiles/Library.dir/src/protomol/output/Snapshot.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Library.dir/src/protomol/output/Snapshot.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/src/protomol/output/Snapshot.cpp" > CMakeFiles/Library.dir/src/protomol/output/Snapshot.cpp.i
-
-CMakeFiles/Library.dir/src/protomol/output/Snapshot.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Library.dir/src/protomol/output/Snapshot.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/src/protomol/output/Snapshot.cpp" -o CMakeFiles/Library.dir/src/protomol/output/Snapshot.cpp.s
-
-CMakeFiles/Library.dir/src/protomol/output/Snapshot.cpp.o.requires:
-.PHONY : CMakeFiles/Library.dir/src/protomol/output/Snapshot.cpp.o.requires
-
-CMakeFiles/Library.dir/src/protomol/output/Snapshot.cpp.o.provides: CMakeFiles/Library.dir/src/protomol/output/Snapshot.cpp.o.requires
-	$(MAKE) -f CMakeFiles/Library.dir/build.make CMakeFiles/Library.dir/src/protomol/output/Snapshot.cpp.o.provides.build
-.PHONY : CMakeFiles/Library.dir/src/protomol/output/Snapshot.cpp.o.provides
-
-CMakeFiles/Library.dir/src/protomol/output/Snapshot.cpp.o.provides.build: CMakeFiles/Library.dir/src/protomol/output/Snapshot.cpp.o
-
 CMakeFiles/Library.dir/src/protomol/output/OutputXYZTrajectoryVel.cpp.o: CMakeFiles/Library.dir/flags.make
 CMakeFiles/Library.dir/src/protomol/output/OutputXYZTrajectoryVel.cpp.o: src/protomol/output/OutputXYZTrajectoryVel.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/CMakeFiles" $(CMAKE_PROGRESS_59)
+	$(CMAKE_COMMAND) -E cmake_progress_report "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/CMakeFiles" $(CMAKE_PROGRESS_55)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/Library.dir/src/protomol/output/OutputXYZTrajectoryVel.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/Library.dir/src/protomol/output/OutputXYZTrajectoryVel.cpp.o -c "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/src/protomol/output/OutputXYZTrajectoryVel.cpp"
 
@@ -1406,32 +1314,9 @@ CMakeFiles/Library.dir/src/protomol/output/OutputXYZTrajectoryVel.cpp.o.provides
 
 CMakeFiles/Library.dir/src/protomol/output/OutputXYZTrajectoryVel.cpp.o.provides.build: CMakeFiles/Library.dir/src/protomol/output/OutputXYZTrajectoryVel.cpp.o
 
-CMakeFiles/Library.dir/src/protomol/output/OutputVelPosLS.cpp.o: CMakeFiles/Library.dir/flags.make
-CMakeFiles/Library.dir/src/protomol/output/OutputVelPosLS.cpp.o: src/protomol/output/OutputVelPosLS.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/CMakeFiles" $(CMAKE_PROGRESS_60)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/Library.dir/src/protomol/output/OutputVelPosLS.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/Library.dir/src/protomol/output/OutputVelPosLS.cpp.o -c "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/src/protomol/output/OutputVelPosLS.cpp"
-
-CMakeFiles/Library.dir/src/protomol/output/OutputVelPosLS.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Library.dir/src/protomol/output/OutputVelPosLS.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/src/protomol/output/OutputVelPosLS.cpp" > CMakeFiles/Library.dir/src/protomol/output/OutputVelPosLS.cpp.i
-
-CMakeFiles/Library.dir/src/protomol/output/OutputVelPosLS.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Library.dir/src/protomol/output/OutputVelPosLS.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/src/protomol/output/OutputVelPosLS.cpp" -o CMakeFiles/Library.dir/src/protomol/output/OutputVelPosLS.cpp.s
-
-CMakeFiles/Library.dir/src/protomol/output/OutputVelPosLS.cpp.o.requires:
-.PHONY : CMakeFiles/Library.dir/src/protomol/output/OutputVelPosLS.cpp.o.requires
-
-CMakeFiles/Library.dir/src/protomol/output/OutputVelPosLS.cpp.o.provides: CMakeFiles/Library.dir/src/protomol/output/OutputVelPosLS.cpp.o.requires
-	$(MAKE) -f CMakeFiles/Library.dir/build.make CMakeFiles/Library.dir/src/protomol/output/OutputVelPosLS.cpp.o.provides.build
-.PHONY : CMakeFiles/Library.dir/src/protomol/output/OutputVelPosLS.cpp.o.provides
-
-CMakeFiles/Library.dir/src/protomol/output/OutputVelPosLS.cpp.o.provides.build: CMakeFiles/Library.dir/src/protomol/output/OutputVelPosLS.cpp.o
-
 CMakeFiles/Library.dir/src/protomol/output/Output.cpp.o: CMakeFiles/Library.dir/flags.make
 CMakeFiles/Library.dir/src/protomol/output/Output.cpp.o: src/protomol/output/Output.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/CMakeFiles" $(CMAKE_PROGRESS_61)
+	$(CMAKE_COMMAND) -E cmake_progress_report "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/CMakeFiles" $(CMAKE_PROGRESS_56)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/Library.dir/src/protomol/output/Output.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/Library.dir/src/protomol/output/Output.cpp.o -c "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/src/protomol/output/Output.cpp"
 
@@ -1452,32 +1337,9 @@ CMakeFiles/Library.dir/src/protomol/output/Output.cpp.o.provides: CMakeFiles/Lib
 
 CMakeFiles/Library.dir/src/protomol/output/Output.cpp.o.provides.build: CMakeFiles/Library.dir/src/protomol/output/Output.cpp.o
 
-CMakeFiles/Library.dir/src/protomol/output/OutputVelPosKE.cpp.o: CMakeFiles/Library.dir/flags.make
-CMakeFiles/Library.dir/src/protomol/output/OutputVelPosKE.cpp.o: src/protomol/output/OutputVelPosKE.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/CMakeFiles" $(CMAKE_PROGRESS_62)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/Library.dir/src/protomol/output/OutputVelPosKE.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/Library.dir/src/protomol/output/OutputVelPosKE.cpp.o -c "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/src/protomol/output/OutputVelPosKE.cpp"
-
-CMakeFiles/Library.dir/src/protomol/output/OutputVelPosKE.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Library.dir/src/protomol/output/OutputVelPosKE.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/src/protomol/output/OutputVelPosKE.cpp" > CMakeFiles/Library.dir/src/protomol/output/OutputVelPosKE.cpp.i
-
-CMakeFiles/Library.dir/src/protomol/output/OutputVelPosKE.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Library.dir/src/protomol/output/OutputVelPosKE.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/src/protomol/output/OutputVelPosKE.cpp" -o CMakeFiles/Library.dir/src/protomol/output/OutputVelPosKE.cpp.s
-
-CMakeFiles/Library.dir/src/protomol/output/OutputVelPosKE.cpp.o.requires:
-.PHONY : CMakeFiles/Library.dir/src/protomol/output/OutputVelPosKE.cpp.o.requires
-
-CMakeFiles/Library.dir/src/protomol/output/OutputVelPosKE.cpp.o.provides: CMakeFiles/Library.dir/src/protomol/output/OutputVelPosKE.cpp.o.requires
-	$(MAKE) -f CMakeFiles/Library.dir/build.make CMakeFiles/Library.dir/src/protomol/output/OutputVelPosKE.cpp.o.provides.build
-.PHONY : CMakeFiles/Library.dir/src/protomol/output/OutputVelPosKE.cpp.o.provides
-
-CMakeFiles/Library.dir/src/protomol/output/OutputVelPosKE.cpp.o.provides.build: CMakeFiles/Library.dir/src/protomol/output/OutputVelPosKE.cpp.o
-
 CMakeFiles/Library.dir/src/protomol/output/OutputFinalXYZVel.cpp.o: CMakeFiles/Library.dir/flags.make
 CMakeFiles/Library.dir/src/protomol/output/OutputFinalXYZVel.cpp.o: src/protomol/output/OutputFinalXYZVel.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/CMakeFiles" $(CMAKE_PROGRESS_63)
+	$(CMAKE_COMMAND) -E cmake_progress_report "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/CMakeFiles" $(CMAKE_PROGRESS_57)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/Library.dir/src/protomol/output/OutputFinalXYZVel.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/Library.dir/src/protomol/output/OutputFinalXYZVel.cpp.o -c "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/src/protomol/output/OutputFinalXYZVel.cpp"
 
@@ -1500,7 +1362,7 @@ CMakeFiles/Library.dir/src/protomol/output/OutputFinalXYZVel.cpp.o.provides.buil
 
 CMakeFiles/Library.dir/src/protomol/output/OutputEnergies.cpp.o: CMakeFiles/Library.dir/flags.make
 CMakeFiles/Library.dir/src/protomol/output/OutputEnergies.cpp.o: src/protomol/output/OutputEnergies.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/CMakeFiles" $(CMAKE_PROGRESS_64)
+	$(CMAKE_COMMAND) -E cmake_progress_report "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/CMakeFiles" $(CMAKE_PROGRESS_58)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/Library.dir/src/protomol/output/OutputEnergies.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/Library.dir/src/protomol/output/OutputEnergies.cpp.o -c "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/src/protomol/output/OutputEnergies.cpp"
 
@@ -1523,7 +1385,7 @@ CMakeFiles/Library.dir/src/protomol/output/OutputEnergies.cpp.o.provides.build: 
 
 CMakeFiles/Library.dir/src/protomol/output/OutputFinalPDBPos.cpp.o: CMakeFiles/Library.dir/flags.make
 CMakeFiles/Library.dir/src/protomol/output/OutputFinalPDBPos.cpp.o: src/protomol/output/OutputFinalPDBPos.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/CMakeFiles" $(CMAKE_PROGRESS_65)
+	$(CMAKE_COMMAND) -E cmake_progress_report "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/CMakeFiles" $(CMAKE_PROGRESS_59)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/Library.dir/src/protomol/output/OutputFinalPDBPos.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/Library.dir/src/protomol/output/OutputFinalPDBPos.cpp.o -c "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/src/protomol/output/OutputFinalPDBPos.cpp"
 
@@ -1546,7 +1408,7 @@ CMakeFiles/Library.dir/src/protomol/output/OutputFinalPDBPos.cpp.o.provides.buil
 
 CMakeFiles/Library.dir/src/protomol/output/OutputXYZTrajectoryPos.cpp.o: CMakeFiles/Library.dir/flags.make
 CMakeFiles/Library.dir/src/protomol/output/OutputXYZTrajectoryPos.cpp.o: src/protomol/output/OutputXYZTrajectoryPos.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/CMakeFiles" $(CMAKE_PROGRESS_66)
+	$(CMAKE_COMMAND) -E cmake_progress_report "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/CMakeFiles" $(CMAKE_PROGRESS_60)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/Library.dir/src/protomol/output/OutputXYZTrajectoryPos.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/Library.dir/src/protomol/output/OutputXYZTrajectoryPos.cpp.o -c "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/src/protomol/output/OutputXYZTrajectoryPos.cpp"
 
@@ -1569,7 +1431,7 @@ CMakeFiles/Library.dir/src/protomol/output/OutputXYZTrajectoryPos.cpp.o.provides
 
 CMakeFiles/Library.dir/src/protomol/output/OutputFinalXYZPos.cpp.o: CMakeFiles/Library.dir/flags.make
 CMakeFiles/Library.dir/src/protomol/output/OutputFinalXYZPos.cpp.o: src/protomol/output/OutputFinalXYZPos.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/CMakeFiles" $(CMAKE_PROGRESS_67)
+	$(CMAKE_COMMAND) -E cmake_progress_report "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/CMakeFiles" $(CMAKE_PROGRESS_61)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/Library.dir/src/protomol/output/OutputFinalXYZPos.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/Library.dir/src/protomol/output/OutputFinalXYZPos.cpp.o -c "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/src/protomol/output/OutputFinalXYZPos.cpp"
 
@@ -1592,7 +1454,7 @@ CMakeFiles/Library.dir/src/protomol/output/OutputFinalXYZPos.cpp.o.provides.buil
 
 CMakeFiles/Library.dir/src/protomol/output/OutputXYZTrajectoryForce.cpp.o: CMakeFiles/Library.dir/flags.make
 CMakeFiles/Library.dir/src/protomol/output/OutputXYZTrajectoryForce.cpp.o: src/protomol/output/OutputXYZTrajectoryForce.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/CMakeFiles" $(CMAKE_PROGRESS_68)
+	$(CMAKE_COMMAND) -E cmake_progress_report "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/CMakeFiles" $(CMAKE_PROGRESS_62)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/Library.dir/src/protomol/output/OutputXYZTrajectoryForce.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/Library.dir/src/protomol/output/OutputXYZTrajectoryForce.cpp.o -c "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/src/protomol/output/OutputXYZTrajectoryForce.cpp"
 
@@ -1613,32 +1475,9 @@ CMakeFiles/Library.dir/src/protomol/output/OutputXYZTrajectoryForce.cpp.o.provid
 
 CMakeFiles/Library.dir/src/protomol/output/OutputXYZTrajectoryForce.cpp.o.provides.build: CMakeFiles/Library.dir/src/protomol/output/OutputXYZTrajectoryForce.cpp.o
 
-CMakeFiles/Library.dir/src/protomol/output/LinearPaulTrap.cpp.o: CMakeFiles/Library.dir/flags.make
-CMakeFiles/Library.dir/src/protomol/output/LinearPaulTrap.cpp.o: src/protomol/output/LinearPaulTrap.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/CMakeFiles" $(CMAKE_PROGRESS_69)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/Library.dir/src/protomol/output/LinearPaulTrap.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/Library.dir/src/protomol/output/LinearPaulTrap.cpp.o -c "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/src/protomol/output/LinearPaulTrap.cpp"
-
-CMakeFiles/Library.dir/src/protomol/output/LinearPaulTrap.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Library.dir/src/protomol/output/LinearPaulTrap.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/src/protomol/output/LinearPaulTrap.cpp" > CMakeFiles/Library.dir/src/protomol/output/LinearPaulTrap.cpp.i
-
-CMakeFiles/Library.dir/src/protomol/output/LinearPaulTrap.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Library.dir/src/protomol/output/LinearPaulTrap.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/src/protomol/output/LinearPaulTrap.cpp" -o CMakeFiles/Library.dir/src/protomol/output/LinearPaulTrap.cpp.s
-
-CMakeFiles/Library.dir/src/protomol/output/LinearPaulTrap.cpp.o.requires:
-.PHONY : CMakeFiles/Library.dir/src/protomol/output/LinearPaulTrap.cpp.o.requires
-
-CMakeFiles/Library.dir/src/protomol/output/LinearPaulTrap.cpp.o.provides: CMakeFiles/Library.dir/src/protomol/output/LinearPaulTrap.cpp.o.requires
-	$(MAKE) -f CMakeFiles/Library.dir/build.make CMakeFiles/Library.dir/src/protomol/output/LinearPaulTrap.cpp.o.provides.build
-.PHONY : CMakeFiles/Library.dir/src/protomol/output/LinearPaulTrap.cpp.o.provides
-
-CMakeFiles/Library.dir/src/protomol/output/LinearPaulTrap.cpp.o.provides.build: CMakeFiles/Library.dir/src/protomol/output/LinearPaulTrap.cpp.o
-
 CMakeFiles/Library.dir/src/protomol/output/OutputCollection.cpp.o: CMakeFiles/Library.dir/flags.make
 CMakeFiles/Library.dir/src/protomol/output/OutputCollection.cpp.o: src/protomol/output/OutputCollection.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/CMakeFiles" $(CMAKE_PROGRESS_70)
+	$(CMAKE_COMMAND) -E cmake_progress_report "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/CMakeFiles" $(CMAKE_PROGRESS_63)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/Library.dir/src/protomol/output/OutputCollection.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/Library.dir/src/protomol/output/OutputCollection.cpp.o -c "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/src/protomol/output/OutputCollection.cpp"
 
@@ -1659,32 +1498,9 @@ CMakeFiles/Library.dir/src/protomol/output/OutputCollection.cpp.o.provides: CMak
 
 CMakeFiles/Library.dir/src/protomol/output/OutputCollection.cpp.o.provides.build: CMakeFiles/Library.dir/src/protomol/output/OutputCollection.cpp.o
 
-CMakeFiles/Library.dir/src/protomol/output/Mathieu.cpp.o: CMakeFiles/Library.dir/flags.make
-CMakeFiles/Library.dir/src/protomol/output/Mathieu.cpp.o: src/protomol/output/Mathieu.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/CMakeFiles" $(CMAKE_PROGRESS_71)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/Library.dir/src/protomol/output/Mathieu.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/Library.dir/src/protomol/output/Mathieu.cpp.o -c "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/src/protomol/output/Mathieu.cpp"
-
-CMakeFiles/Library.dir/src/protomol/output/Mathieu.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Library.dir/src/protomol/output/Mathieu.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/src/protomol/output/Mathieu.cpp" > CMakeFiles/Library.dir/src/protomol/output/Mathieu.cpp.i
-
-CMakeFiles/Library.dir/src/protomol/output/Mathieu.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Library.dir/src/protomol/output/Mathieu.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/src/protomol/output/Mathieu.cpp" -o CMakeFiles/Library.dir/src/protomol/output/Mathieu.cpp.s
-
-CMakeFiles/Library.dir/src/protomol/output/Mathieu.cpp.o.requires:
-.PHONY : CMakeFiles/Library.dir/src/protomol/output/Mathieu.cpp.o.requires
-
-CMakeFiles/Library.dir/src/protomol/output/Mathieu.cpp.o.provides: CMakeFiles/Library.dir/src/protomol/output/Mathieu.cpp.o.requires
-	$(MAKE) -f CMakeFiles/Library.dir/build.make CMakeFiles/Library.dir/src/protomol/output/Mathieu.cpp.o.provides.build
-.PHONY : CMakeFiles/Library.dir/src/protomol/output/Mathieu.cpp.o.provides
-
-CMakeFiles/Library.dir/src/protomol/output/Mathieu.cpp.o.provides.build: CMakeFiles/Library.dir/src/protomol/output/Mathieu.cpp.o
-
 CMakeFiles/Library.dir/src/protomol/output/OutputDCDTrajectory.cpp.o: CMakeFiles/Library.dir/flags.make
 CMakeFiles/Library.dir/src/protomol/output/OutputDCDTrajectory.cpp.o: src/protomol/output/OutputDCDTrajectory.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/CMakeFiles" $(CMAKE_PROGRESS_72)
+	$(CMAKE_COMMAND) -E cmake_progress_report "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/CMakeFiles" $(CMAKE_PROGRESS_64)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/Library.dir/src/protomol/output/OutputDCDTrajectory.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/Library.dir/src/protomol/output/OutputDCDTrajectory.cpp.o -c "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/src/protomol/output/OutputDCDTrajectory.cpp"
 
@@ -1707,7 +1523,7 @@ CMakeFiles/Library.dir/src/protomol/output/OutputDCDTrajectory.cpp.o.provides.bu
 
 CMakeFiles/Library.dir/src/protomol/output/OutputFAHFile.cpp.o: CMakeFiles/Library.dir/flags.make
 CMakeFiles/Library.dir/src/protomol/output/OutputFAHFile.cpp.o: src/protomol/output/OutputFAHFile.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/CMakeFiles" $(CMAKE_PROGRESS_73)
+	$(CMAKE_COMMAND) -E cmake_progress_report "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/CMakeFiles" $(CMAKE_PROGRESS_65)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/Library.dir/src/protomol/output/OutputFAHFile.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/Library.dir/src/protomol/output/OutputFAHFile.cpp.o -c "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/src/protomol/output/OutputFAHFile.cpp"
 
@@ -1728,32 +1544,9 @@ CMakeFiles/Library.dir/src/protomol/output/OutputFAHFile.cpp.o.provides: CMakeFi
 
 CMakeFiles/Library.dir/src/protomol/output/OutputFAHFile.cpp.o.provides.build: CMakeFiles/Library.dir/src/protomol/output/OutputFAHFile.cpp.o
 
-CMakeFiles/Library.dir/src/protomol/output/lqt.cpp.o: CMakeFiles/Library.dir/flags.make
-CMakeFiles/Library.dir/src/protomol/output/lqt.cpp.o: src/protomol/output/lqt.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/CMakeFiles" $(CMAKE_PROGRESS_74)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/Library.dir/src/protomol/output/lqt.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/Library.dir/src/protomol/output/lqt.cpp.o -c "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/src/protomol/output/lqt.cpp"
-
-CMakeFiles/Library.dir/src/protomol/output/lqt.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Library.dir/src/protomol/output/lqt.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/src/protomol/output/lqt.cpp" > CMakeFiles/Library.dir/src/protomol/output/lqt.cpp.i
-
-CMakeFiles/Library.dir/src/protomol/output/lqt.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Library.dir/src/protomol/output/lqt.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/src/protomol/output/lqt.cpp" -o CMakeFiles/Library.dir/src/protomol/output/lqt.cpp.s
-
-CMakeFiles/Library.dir/src/protomol/output/lqt.cpp.o.requires:
-.PHONY : CMakeFiles/Library.dir/src/protomol/output/lqt.cpp.o.requires
-
-CMakeFiles/Library.dir/src/protomol/output/lqt.cpp.o.provides: CMakeFiles/Library.dir/src/protomol/output/lqt.cpp.o.requires
-	$(MAKE) -f CMakeFiles/Library.dir/build.make CMakeFiles/Library.dir/src/protomol/output/lqt.cpp.o.provides.build
-.PHONY : CMakeFiles/Library.dir/src/protomol/output/lqt.cpp.o.provides
-
-CMakeFiles/Library.dir/src/protomol/output/lqt.cpp.o.provides.build: CMakeFiles/Library.dir/src/protomol/output/lqt.cpp.o
-
 CMakeFiles/Library.dir/src/protomol/output/OutputFAHGUI.cpp.o: CMakeFiles/Library.dir/flags.make
 CMakeFiles/Library.dir/src/protomol/output/OutputFAHGUI.cpp.o: src/protomol/output/OutputFAHGUI.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/CMakeFiles" $(CMAKE_PROGRESS_75)
+	$(CMAKE_COMMAND) -E cmake_progress_report "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/CMakeFiles" $(CMAKE_PROGRESS_66)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/Library.dir/src/protomol/output/OutputFAHGUI.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/Library.dir/src/protomol/output/OutputFAHGUI.cpp.o -c "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/src/protomol/output/OutputFAHGUI.cpp"
 
@@ -1776,7 +1569,7 @@ CMakeFiles/Library.dir/src/protomol/output/OutputFAHGUI.cpp.o.provides.build: CM
 
 CMakeFiles/Library.dir/src/protomol/output/OutputXTCTrajectory.cpp.o: CMakeFiles/Library.dir/flags.make
 CMakeFiles/Library.dir/src/protomol/output/OutputXTCTrajectory.cpp.o: src/protomol/output/OutputXTCTrajectory.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/CMakeFiles" $(CMAKE_PROGRESS_76)
+	$(CMAKE_COMMAND) -E cmake_progress_report "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/CMakeFiles" $(CMAKE_PROGRESS_67)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/Library.dir/src/protomol/output/OutputXTCTrajectory.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/Library.dir/src/protomol/output/OutputXTCTrajectory.cpp.o -c "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/src/protomol/output/OutputXTCTrajectory.cpp"
 
@@ -1797,32 +1590,9 @@ CMakeFiles/Library.dir/src/protomol/output/OutputXTCTrajectory.cpp.o.provides: C
 
 CMakeFiles/Library.dir/src/protomol/output/OutputXTCTrajectory.cpp.o.provides.build: CMakeFiles/Library.dir/src/protomol/output/OutputXTCTrajectory.cpp.o
 
-CMakeFiles/Library.dir/src/protomol/output/OutputIonTemperatureLS.cpp.o: CMakeFiles/Library.dir/flags.make
-CMakeFiles/Library.dir/src/protomol/output/OutputIonTemperatureLS.cpp.o: src/protomol/output/OutputIonTemperatureLS.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/CMakeFiles" $(CMAKE_PROGRESS_77)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/Library.dir/src/protomol/output/OutputIonTemperatureLS.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/Library.dir/src/protomol/output/OutputIonTemperatureLS.cpp.o -c "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/src/protomol/output/OutputIonTemperatureLS.cpp"
-
-CMakeFiles/Library.dir/src/protomol/output/OutputIonTemperatureLS.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Library.dir/src/protomol/output/OutputIonTemperatureLS.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/src/protomol/output/OutputIonTemperatureLS.cpp" > CMakeFiles/Library.dir/src/protomol/output/OutputIonTemperatureLS.cpp.i
-
-CMakeFiles/Library.dir/src/protomol/output/OutputIonTemperatureLS.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Library.dir/src/protomol/output/OutputIonTemperatureLS.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/src/protomol/output/OutputIonTemperatureLS.cpp" -o CMakeFiles/Library.dir/src/protomol/output/OutputIonTemperatureLS.cpp.s
-
-CMakeFiles/Library.dir/src/protomol/output/OutputIonTemperatureLS.cpp.o.requires:
-.PHONY : CMakeFiles/Library.dir/src/protomol/output/OutputIonTemperatureLS.cpp.o.requires
-
-CMakeFiles/Library.dir/src/protomol/output/OutputIonTemperatureLS.cpp.o.provides: CMakeFiles/Library.dir/src/protomol/output/OutputIonTemperatureLS.cpp.o.requires
-	$(MAKE) -f CMakeFiles/Library.dir/build.make CMakeFiles/Library.dir/src/protomol/output/OutputIonTemperatureLS.cpp.o.provides.build
-.PHONY : CMakeFiles/Library.dir/src/protomol/output/OutputIonTemperatureLS.cpp.o.provides
-
-CMakeFiles/Library.dir/src/protomol/output/OutputIonTemperatureLS.cpp.o.provides.build: CMakeFiles/Library.dir/src/protomol/output/OutputIonTemperatureLS.cpp.o
-
 CMakeFiles/Library.dir/src/protomol/output/GUIServer.cpp.o: CMakeFiles/Library.dir/flags.make
 CMakeFiles/Library.dir/src/protomol/output/GUIServer.cpp.o: src/protomol/output/GUIServer.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/CMakeFiles" $(CMAKE_PROGRESS_78)
+	$(CMAKE_COMMAND) -E cmake_progress_report "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/CMakeFiles" $(CMAKE_PROGRESS_68)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/Library.dir/src/protomol/output/GUIServer.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/Library.dir/src/protomol/output/GUIServer.cpp.o -c "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/src/protomol/output/GUIServer.cpp"
 
@@ -1845,7 +1615,7 @@ CMakeFiles/Library.dir/src/protomol/output/GUIServer.cpp.o.provides.build: CMake
 
 CMakeFiles/Library.dir/src/protomol/output/OutputScreen.cpp.o: CMakeFiles/Library.dir/flags.make
 CMakeFiles/Library.dir/src/protomol/output/OutputScreen.cpp.o: src/protomol/output/OutputScreen.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/CMakeFiles" $(CMAKE_PROGRESS_79)
+	$(CMAKE_COMMAND) -E cmake_progress_report "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/CMakeFiles" $(CMAKE_PROGRESS_69)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/Library.dir/src/protomol/output/OutputScreen.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/Library.dir/src/protomol/output/OutputScreen.cpp.o -c "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/src/protomol/output/OutputScreen.cpp"
 
@@ -1868,7 +1638,7 @@ CMakeFiles/Library.dir/src/protomol/output/OutputScreen.cpp.o.provides.build: CM
 
 CMakeFiles/Library.dir/src/protomol/output/OutputDCDTrajectoryVel.cpp.o: CMakeFiles/Library.dir/flags.make
 CMakeFiles/Library.dir/src/protomol/output/OutputDCDTrajectoryVel.cpp.o: src/protomol/output/OutputDCDTrajectoryVel.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/CMakeFiles" $(CMAKE_PROGRESS_80)
+	$(CMAKE_COMMAND) -E cmake_progress_report "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/CMakeFiles" $(CMAKE_PROGRESS_70)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/Library.dir/src/protomol/output/OutputDCDTrajectoryVel.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/Library.dir/src/protomol/output/OutputDCDTrajectoryVel.cpp.o -c "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/src/protomol/output/OutputDCDTrajectoryVel.cpp"
 
@@ -1889,32 +1659,9 @@ CMakeFiles/Library.dir/src/protomol/output/OutputDCDTrajectoryVel.cpp.o.provides
 
 CMakeFiles/Library.dir/src/protomol/output/OutputDCDTrajectoryVel.cpp.o.provides.build: CMakeFiles/Library.dir/src/protomol/output/OutputDCDTrajectoryVel.cpp.o
 
-CMakeFiles/Library.dir/src/protomol/output/OutputIonSnapshot.cpp.o: CMakeFiles/Library.dir/flags.make
-CMakeFiles/Library.dir/src/protomol/output/OutputIonSnapshot.cpp.o: src/protomol/output/OutputIonSnapshot.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/CMakeFiles" $(CMAKE_PROGRESS_81)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/Library.dir/src/protomol/output/OutputIonSnapshot.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/Library.dir/src/protomol/output/OutputIonSnapshot.cpp.o -c "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/src/protomol/output/OutputIonSnapshot.cpp"
-
-CMakeFiles/Library.dir/src/protomol/output/OutputIonSnapshot.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Library.dir/src/protomol/output/OutputIonSnapshot.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/src/protomol/output/OutputIonSnapshot.cpp" > CMakeFiles/Library.dir/src/protomol/output/OutputIonSnapshot.cpp.i
-
-CMakeFiles/Library.dir/src/protomol/output/OutputIonSnapshot.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Library.dir/src/protomol/output/OutputIonSnapshot.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/src/protomol/output/OutputIonSnapshot.cpp" -o CMakeFiles/Library.dir/src/protomol/output/OutputIonSnapshot.cpp.s
-
-CMakeFiles/Library.dir/src/protomol/output/OutputIonSnapshot.cpp.o.requires:
-.PHONY : CMakeFiles/Library.dir/src/protomol/output/OutputIonSnapshot.cpp.o.requires
-
-CMakeFiles/Library.dir/src/protomol/output/OutputIonSnapshot.cpp.o.provides: CMakeFiles/Library.dir/src/protomol/output/OutputIonSnapshot.cpp.o.requires
-	$(MAKE) -f CMakeFiles/Library.dir/build.make CMakeFiles/Library.dir/src/protomol/output/OutputIonSnapshot.cpp.o.provides.build
-.PHONY : CMakeFiles/Library.dir/src/protomol/output/OutputIonSnapshot.cpp.o.provides
-
-CMakeFiles/Library.dir/src/protomol/output/OutputIonSnapshot.cpp.o.provides.build: CMakeFiles/Library.dir/src/protomol/output/OutputIonSnapshot.cpp.o
-
 CMakeFiles/Library.dir/src/protomol/parallel/Parallel.cpp.o: CMakeFiles/Library.dir/flags.make
 CMakeFiles/Library.dir/src/protomol/parallel/Parallel.cpp.o: src/protomol/parallel/Parallel.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/CMakeFiles" $(CMAKE_PROGRESS_82)
+	$(CMAKE_COMMAND) -E cmake_progress_report "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/CMakeFiles" $(CMAKE_PROGRESS_71)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/Library.dir/src/protomol/parallel/Parallel.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/Library.dir/src/protomol/parallel/Parallel.cpp.o -c "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/src/protomol/parallel/Parallel.cpp"
 
@@ -1937,7 +1684,7 @@ CMakeFiles/Library.dir/src/protomol/parallel/Parallel.cpp.o.provides.build: CMak
 
 CMakeFiles/Library.dir/src/protomol/parallel/ParallelType.cpp.o: CMakeFiles/Library.dir/flags.make
 CMakeFiles/Library.dir/src/protomol/parallel/ParallelType.cpp.o: src/protomol/parallel/ParallelType.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/CMakeFiles" $(CMAKE_PROGRESS_83)
+	$(CMAKE_COMMAND) -E cmake_progress_report "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/CMakeFiles" $(CMAKE_PROGRESS_72)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/Library.dir/src/protomol/parallel/ParallelType.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/Library.dir/src/protomol/parallel/ParallelType.cpp.o -c "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/src/protomol/parallel/ParallelType.cpp"
 
@@ -1960,7 +1707,7 @@ CMakeFiles/Library.dir/src/protomol/parallel/ParallelType.cpp.o.provides.build: 
 
 CMakeFiles/Library.dir/src/protomol/parallel/FFTComplex.cpp.o: CMakeFiles/Library.dir/flags.make
 CMakeFiles/Library.dir/src/protomol/parallel/FFTComplex.cpp.o: src/protomol/parallel/FFTComplex.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/CMakeFiles" $(CMAKE_PROGRESS_84)
+	$(CMAKE_COMMAND) -E cmake_progress_report "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/CMakeFiles" $(CMAKE_PROGRESS_73)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/Library.dir/src/protomol/parallel/FFTComplex.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/Library.dir/src/protomol/parallel/FFTComplex.cpp.o -c "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/src/protomol/parallel/FFTComplex.cpp"
 
@@ -1983,7 +1730,7 @@ CMakeFiles/Library.dir/src/protomol/parallel/FFTComplex.cpp.o.provides.build: CM
 
 CMakeFiles/Library.dir/src/protomol/switch/C1SwitchingFunction.cpp.o: CMakeFiles/Library.dir/flags.make
 CMakeFiles/Library.dir/src/protomol/switch/C1SwitchingFunction.cpp.o: src/protomol/switch/C1SwitchingFunction.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/CMakeFiles" $(CMAKE_PROGRESS_85)
+	$(CMAKE_COMMAND) -E cmake_progress_report "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/CMakeFiles" $(CMAKE_PROGRESS_74)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/Library.dir/src/protomol/switch/C1SwitchingFunction.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/Library.dir/src/protomol/switch/C1SwitchingFunction.cpp.o -c "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/src/protomol/switch/C1SwitchingFunction.cpp"
 
@@ -2006,7 +1753,7 @@ CMakeFiles/Library.dir/src/protomol/switch/C1SwitchingFunction.cpp.o.provides.bu
 
 CMakeFiles/Library.dir/src/protomol/switch/CmpCnCnSwitchingFunction.cpp.o: CMakeFiles/Library.dir/flags.make
 CMakeFiles/Library.dir/src/protomol/switch/CmpCnCnSwitchingFunction.cpp.o: src/protomol/switch/CmpCnCnSwitchingFunction.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/CMakeFiles" $(CMAKE_PROGRESS_86)
+	$(CMAKE_COMMAND) -E cmake_progress_report "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/CMakeFiles" $(CMAKE_PROGRESS_75)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/Library.dir/src/protomol/switch/CmpCnCnSwitchingFunction.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/Library.dir/src/protomol/switch/CmpCnCnSwitchingFunction.cpp.o -c "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/src/protomol/switch/CmpCnCnSwitchingFunction.cpp"
 
@@ -2029,7 +1776,7 @@ CMakeFiles/Library.dir/src/protomol/switch/CmpCnCnSwitchingFunction.cpp.o.provid
 
 CMakeFiles/Library.dir/src/protomol/switch/CnSwitchingFunction.cpp.o: CMakeFiles/Library.dir/flags.make
 CMakeFiles/Library.dir/src/protomol/switch/CnSwitchingFunction.cpp.o: src/protomol/switch/CnSwitchingFunction.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/CMakeFiles" $(CMAKE_PROGRESS_87)
+	$(CMAKE_COMMAND) -E cmake_progress_report "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/CMakeFiles" $(CMAKE_PROGRESS_76)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/Library.dir/src/protomol/switch/CnSwitchingFunction.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/Library.dir/src/protomol/switch/CnSwitchingFunction.cpp.o -c "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/src/protomol/switch/CnSwitchingFunction.cpp"
 
@@ -2052,7 +1799,7 @@ CMakeFiles/Library.dir/src/protomol/switch/CnSwitchingFunction.cpp.o.provides.bu
 
 CMakeFiles/Library.dir/src/protomol/switch/C2SwitchingFunction.cpp.o: CMakeFiles/Library.dir/flags.make
 CMakeFiles/Library.dir/src/protomol/switch/C2SwitchingFunction.cpp.o: src/protomol/switch/C2SwitchingFunction.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/CMakeFiles" $(CMAKE_PROGRESS_88)
+	$(CMAKE_COMMAND) -E cmake_progress_report "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/CMakeFiles" $(CMAKE_PROGRESS_77)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/Library.dir/src/protomol/switch/C2SwitchingFunction.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/Library.dir/src/protomol/switch/C2SwitchingFunction.cpp.o -c "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/src/protomol/switch/C2SwitchingFunction.cpp"
 
@@ -2075,7 +1822,7 @@ CMakeFiles/Library.dir/src/protomol/switch/C2SwitchingFunction.cpp.o.provides.bu
 
 CMakeFiles/Library.dir/src/protomol/topology/ExclusionType.cpp.o: CMakeFiles/Library.dir/flags.make
 CMakeFiles/Library.dir/src/protomol/topology/ExclusionType.cpp.o: src/protomol/topology/ExclusionType.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/CMakeFiles" $(CMAKE_PROGRESS_89)
+	$(CMAKE_COMMAND) -E cmake_progress_report "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/CMakeFiles" $(CMAKE_PROGRESS_78)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/Library.dir/src/protomol/topology/ExclusionType.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/Library.dir/src/protomol/topology/ExclusionType.cpp.o -c "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/src/protomol/topology/ExclusionType.cpp"
 
@@ -2098,7 +1845,7 @@ CMakeFiles/Library.dir/src/protomol/topology/ExclusionType.cpp.o.provides.build:
 
 CMakeFiles/Library.dir/src/protomol/topology/AngleInfo.cpp.o: CMakeFiles/Library.dir/flags.make
 CMakeFiles/Library.dir/src/protomol/topology/AngleInfo.cpp.o: src/protomol/topology/AngleInfo.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/CMakeFiles" $(CMAKE_PROGRESS_90)
+	$(CMAKE_COMMAND) -E cmake_progress_report "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/CMakeFiles" $(CMAKE_PROGRESS_79)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/Library.dir/src/protomol/topology/AngleInfo.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/Library.dir/src/protomol/topology/AngleInfo.cpp.o -c "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/src/protomol/topology/AngleInfo.cpp"
 
@@ -2121,7 +1868,7 @@ CMakeFiles/Library.dir/src/protomol/topology/AngleInfo.cpp.o.provides.build: CMa
 
 CMakeFiles/Library.dir/src/protomol/topology/GenericTopology.cpp.o: CMakeFiles/Library.dir/flags.make
 CMakeFiles/Library.dir/src/protomol/topology/GenericTopology.cpp.o: src/protomol/topology/GenericTopology.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/CMakeFiles" $(CMAKE_PROGRESS_91)
+	$(CMAKE_COMMAND) -E cmake_progress_report "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/CMakeFiles" $(CMAKE_PROGRESS_80)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/Library.dir/src/protomol/topology/GenericTopology.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/Library.dir/src/protomol/topology/GenericTopology.cpp.o -c "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/src/protomol/topology/GenericTopology.cpp"
 
@@ -2144,7 +1891,7 @@ CMakeFiles/Library.dir/src/protomol/topology/GenericTopology.cpp.o.provides.buil
 
 CMakeFiles/Library.dir/src/protomol/topology/CoulombSCPISMParameterTable.cpp.o: CMakeFiles/Library.dir/flags.make
 CMakeFiles/Library.dir/src/protomol/topology/CoulombSCPISMParameterTable.cpp.o: src/protomol/topology/CoulombSCPISMParameterTable.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/CMakeFiles" $(CMAKE_PROGRESS_92)
+	$(CMAKE_COMMAND) -E cmake_progress_report "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/CMakeFiles" $(CMAKE_PROGRESS_81)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/Library.dir/src/protomol/topology/CoulombSCPISMParameterTable.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/Library.dir/src/protomol/topology/CoulombSCPISMParameterTable.cpp.o -c "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/src/protomol/topology/CoulombSCPISMParameterTable.cpp"
 
@@ -2167,7 +1914,7 @@ CMakeFiles/Library.dir/src/protomol/topology/CoulombSCPISMParameterTable.cpp.o.p
 
 CMakeFiles/Library.dir/src/protomol/topology/PeriodicBoundaryConditions.cpp.o: CMakeFiles/Library.dir/flags.make
 CMakeFiles/Library.dir/src/protomol/topology/PeriodicBoundaryConditions.cpp.o: src/protomol/topology/PeriodicBoundaryConditions.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/CMakeFiles" $(CMAKE_PROGRESS_93)
+	$(CMAKE_COMMAND) -E cmake_progress_report "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/CMakeFiles" $(CMAKE_PROGRESS_82)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/Library.dir/src/protomol/topology/PeriodicBoundaryConditions.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/Library.dir/src/protomol/topology/PeriodicBoundaryConditions.cpp.o -c "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/src/protomol/topology/PeriodicBoundaryConditions.cpp"
 
@@ -2190,7 +1937,7 @@ CMakeFiles/Library.dir/src/protomol/topology/PeriodicBoundaryConditions.cpp.o.pr
 
 CMakeFiles/Library.dir/src/protomol/topology/LennardJonesParameterTable.cpp.o: CMakeFiles/Library.dir/flags.make
 CMakeFiles/Library.dir/src/protomol/topology/LennardJonesParameterTable.cpp.o: src/protomol/topology/LennardJonesParameterTable.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/CMakeFiles" $(CMAKE_PROGRESS_94)
+	$(CMAKE_COMMAND) -E cmake_progress_report "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/CMakeFiles" $(CMAKE_PROGRESS_83)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/Library.dir/src/protomol/topology/LennardJonesParameterTable.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/Library.dir/src/protomol/topology/LennardJonesParameterTable.cpp.o -c "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/src/protomol/topology/LennardJonesParameterTable.cpp"
 
@@ -2213,7 +1960,7 @@ CMakeFiles/Library.dir/src/protomol/topology/LennardJonesParameterTable.cpp.o.pr
 
 CMakeFiles/Library.dir/src/protomol/topology/BuildTopologyFromTpr.cpp.o: CMakeFiles/Library.dir/flags.make
 CMakeFiles/Library.dir/src/protomol/topology/BuildTopologyFromTpr.cpp.o: src/protomol/topology/BuildTopologyFromTpr.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/CMakeFiles" $(CMAKE_PROGRESS_95)
+	$(CMAKE_COMMAND) -E cmake_progress_report "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/CMakeFiles" $(CMAKE_PROGRESS_84)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/Library.dir/src/protomol/topology/BuildTopologyFromTpr.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/Library.dir/src/protomol/topology/BuildTopologyFromTpr.cpp.o -c "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/src/protomol/topology/BuildTopologyFromTpr.cpp"
 
@@ -2236,7 +1983,7 @@ CMakeFiles/Library.dir/src/protomol/topology/BuildTopologyFromTpr.cpp.o.provides
 
 CMakeFiles/Library.dir/src/protomol/topology/TopologyUtilities.cpp.o: CMakeFiles/Library.dir/flags.make
 CMakeFiles/Library.dir/src/protomol/topology/TopologyUtilities.cpp.o: src/protomol/topology/TopologyUtilities.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/CMakeFiles" $(CMAKE_PROGRESS_96)
+	$(CMAKE_COMMAND) -E cmake_progress_report "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/CMakeFiles" $(CMAKE_PROGRESS_85)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/Library.dir/src/protomol/topology/TopologyUtilities.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/Library.dir/src/protomol/topology/TopologyUtilities.cpp.o -c "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/src/protomol/topology/TopologyUtilities.cpp"
 
@@ -2259,7 +2006,7 @@ CMakeFiles/Library.dir/src/protomol/topology/TopologyUtilities.cpp.o.provides.bu
 
 CMakeFiles/Library.dir/src/protomol/topology/VacuumBoundaryConditions.cpp.o: CMakeFiles/Library.dir/flags.make
 CMakeFiles/Library.dir/src/protomol/topology/VacuumBoundaryConditions.cpp.o: src/protomol/topology/VacuumBoundaryConditions.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/CMakeFiles" $(CMAKE_PROGRESS_97)
+	$(CMAKE_COMMAND) -E cmake_progress_report "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/CMakeFiles" $(CMAKE_PROGRESS_86)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/Library.dir/src/protomol/topology/VacuumBoundaryConditions.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/Library.dir/src/protomol/topology/VacuumBoundaryConditions.cpp.o -c "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/src/protomol/topology/VacuumBoundaryConditions.cpp"
 
@@ -2282,7 +2029,7 @@ CMakeFiles/Library.dir/src/protomol/topology/VacuumBoundaryConditions.cpp.o.prov
 
 CMakeFiles/Library.dir/src/protomol/topology/ExclusionTable.cpp.o: CMakeFiles/Library.dir/flags.make
 CMakeFiles/Library.dir/src/protomol/topology/ExclusionTable.cpp.o: src/protomol/topology/ExclusionTable.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/CMakeFiles" $(CMAKE_PROGRESS_98)
+	$(CMAKE_COMMAND) -E cmake_progress_report "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/CMakeFiles" $(CMAKE_PROGRESS_87)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/Library.dir/src/protomol/topology/ExclusionTable.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/Library.dir/src/protomol/topology/ExclusionTable.cpp.o -c "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/src/protomol/topology/ExclusionTable.cpp"
 
@@ -2305,7 +2052,7 @@ CMakeFiles/Library.dir/src/protomol/topology/ExclusionTable.cpp.o.provides.build
 
 CMakeFiles/Library.dir/src/protomol/topology/BuildTopology.cpp.o: CMakeFiles/Library.dir/flags.make
 CMakeFiles/Library.dir/src/protomol/topology/BuildTopology.cpp.o: src/protomol/topology/BuildTopology.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/CMakeFiles" $(CMAKE_PROGRESS_99)
+	$(CMAKE_COMMAND) -E cmake_progress_report "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/CMakeFiles" $(CMAKE_PROGRESS_88)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/Library.dir/src/protomol/topology/BuildTopology.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/Library.dir/src/protomol/topology/BuildTopology.cpp.o -c "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/src/protomol/topology/BuildTopology.cpp"
 
@@ -2328,7 +2075,7 @@ CMakeFiles/Library.dir/src/protomol/topology/BuildTopology.cpp.o.provides.build:
 
 CMakeFiles/Library.dir/src/protomol/topology/CubicCellManager.cpp.o: CMakeFiles/Library.dir/flags.make
 CMakeFiles/Library.dir/src/protomol/topology/CubicCellManager.cpp.o: src/protomol/topology/CubicCellManager.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/CMakeFiles" $(CMAKE_PROGRESS_100)
+	$(CMAKE_COMMAND) -E cmake_progress_report "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/CMakeFiles" $(CMAKE_PROGRESS_89)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/Library.dir/src/protomol/topology/CubicCellManager.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/Library.dir/src/protomol/topology/CubicCellManager.cpp.o -c "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/src/protomol/topology/CubicCellManager.cpp"
 
@@ -2351,7 +2098,7 @@ CMakeFiles/Library.dir/src/protomol/topology/CubicCellManager.cpp.o.provides.bui
 
 CMakeFiles/Library.dir/src/protomol/topology/ArrayCellListStructure.cpp.o: CMakeFiles/Library.dir/flags.make
 CMakeFiles/Library.dir/src/protomol/topology/ArrayCellListStructure.cpp.o: src/protomol/topology/ArrayCellListStructure.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/CMakeFiles" $(CMAKE_PROGRESS_101)
+	$(CMAKE_COMMAND) -E cmake_progress_report "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/CMakeFiles" $(CMAKE_PROGRESS_90)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/Library.dir/src/protomol/topology/ArrayCellListStructure.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/Library.dir/src/protomol/topology/ArrayCellListStructure.cpp.o -c "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/src/protomol/topology/ArrayCellListStructure.cpp"
 
@@ -2374,7 +2121,7 @@ CMakeFiles/Library.dir/src/protomol/topology/ArrayCellListStructure.cpp.o.provid
 
 CMakeFiles/Library.dir/src/protomol/type/PAR.cpp.o: CMakeFiles/Library.dir/flags.make
 CMakeFiles/Library.dir/src/protomol/type/PAR.cpp.o: src/protomol/type/PAR.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/CMakeFiles" $(CMAKE_PROGRESS_102)
+	$(CMAKE_COMMAND) -E cmake_progress_report "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/CMakeFiles" $(CMAKE_PROGRESS_91)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/Library.dir/src/protomol/type/PAR.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/Library.dir/src/protomol/type/PAR.cpp.o -c "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/src/protomol/type/PAR.cpp"
 
@@ -2397,7 +2144,7 @@ CMakeFiles/Library.dir/src/protomol/type/PAR.cpp.o.provides.build: CMakeFiles/Li
 
 CMakeFiles/Library.dir/src/protomol/type/Matrix3By3.cpp.o: CMakeFiles/Library.dir/flags.make
 CMakeFiles/Library.dir/src/protomol/type/Matrix3By3.cpp.o: src/protomol/type/Matrix3By3.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/CMakeFiles" $(CMAKE_PROGRESS_103)
+	$(CMAKE_COMMAND) -E cmake_progress_report "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/CMakeFiles" $(CMAKE_PROGRESS_92)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/Library.dir/src/protomol/type/Matrix3By3.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/Library.dir/src/protomol/type/Matrix3By3.cpp.o -c "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/src/protomol/type/Matrix3By3.cpp"
 
@@ -2420,7 +2167,7 @@ CMakeFiles/Library.dir/src/protomol/type/Matrix3By3.cpp.o.provides.build: CMakeF
 
 CMakeFiles/Library.dir/src/protomol/type/PSF.cpp.o: CMakeFiles/Library.dir/flags.make
 CMakeFiles/Library.dir/src/protomol/type/PSF.cpp.o: src/protomol/type/PSF.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/CMakeFiles" $(CMAKE_PROGRESS_104)
+	$(CMAKE_COMMAND) -E cmake_progress_report "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/CMakeFiles" $(CMAKE_PROGRESS_93)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/Library.dir/src/protomol/type/PSF.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/Library.dir/src/protomol/type/PSF.cpp.o -c "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/src/protomol/type/PSF.cpp"
 
@@ -2443,7 +2190,7 @@ CMakeFiles/Library.dir/src/protomol/type/PSF.cpp.o.provides.build: CMakeFiles/Li
 
 CMakeFiles/Library.dir/src/protomol/type/String.cpp.o: CMakeFiles/Library.dir/flags.make
 CMakeFiles/Library.dir/src/protomol/type/String.cpp.o: src/protomol/type/String.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/CMakeFiles" $(CMAKE_PROGRESS_105)
+	$(CMAKE_COMMAND) -E cmake_progress_report "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/CMakeFiles" $(CMAKE_PROGRESS_94)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/Library.dir/src/protomol/type/String.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/Library.dir/src/protomol/type/String.cpp.o -c "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/src/protomol/type/String.cpp"
 
@@ -2466,7 +2213,7 @@ CMakeFiles/Library.dir/src/protomol/type/String.cpp.o.provides.build: CMakeFiles
 
 CMakeFiles/Library.dir/src/protomol/type/EigenvectorInfo.cpp.o: CMakeFiles/Library.dir/flags.make
 CMakeFiles/Library.dir/src/protomol/type/EigenvectorInfo.cpp.o: src/protomol/type/EigenvectorInfo.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/CMakeFiles" $(CMAKE_PROGRESS_106)
+	$(CMAKE_COMMAND) -E cmake_progress_report "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/CMakeFiles" $(CMAKE_PROGRESS_95)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/Library.dir/src/protomol/type/EigenvectorInfo.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/Library.dir/src/protomol/type/EigenvectorInfo.cpp.o -c "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/src/protomol/type/EigenvectorInfo.cpp"
 
@@ -2489,7 +2236,7 @@ CMakeFiles/Library.dir/src/protomol/type/EigenvectorInfo.cpp.o.provides.build: C
 
 CMakeFiles/Library.dir/src/protomol/type/ScalarStructure.cpp.o: CMakeFiles/Library.dir/flags.make
 CMakeFiles/Library.dir/src/protomol/type/ScalarStructure.cpp.o: src/protomol/type/ScalarStructure.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/CMakeFiles" $(CMAKE_PROGRESS_107)
+	$(CMAKE_COMMAND) -E cmake_progress_report "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/CMakeFiles" $(CMAKE_PROGRESS_96)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/Library.dir/src/protomol/type/ScalarStructure.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/Library.dir/src/protomol/type/ScalarStructure.cpp.o -c "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/src/protomol/type/ScalarStructure.cpp"
 
@@ -2512,7 +2259,7 @@ CMakeFiles/Library.dir/src/protomol/type/ScalarStructure.cpp.o.provides.build: C
 
 CMakeFiles/Library.dir/src/protomol/type/Vector3DBlock.cpp.o: CMakeFiles/Library.dir/flags.make
 CMakeFiles/Library.dir/src/protomol/type/Vector3DBlock.cpp.o: src/protomol/type/Vector3DBlock.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/CMakeFiles" $(CMAKE_PROGRESS_108)
+	$(CMAKE_COMMAND) -E cmake_progress_report "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/CMakeFiles" $(CMAKE_PROGRESS_97)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/Library.dir/src/protomol/type/Vector3DBlock.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/Library.dir/src/protomol/type/Vector3DBlock.cpp.o -c "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/src/protomol/type/Vector3DBlock.cpp"
 
@@ -2535,7 +2282,7 @@ CMakeFiles/Library.dir/src/protomol/type/Vector3DBlock.cpp.o.provides.build: CMa
 
 CMakeFiles/Library.dir/src/protomol/type/GromacsParameters.cpp.o: CMakeFiles/Library.dir/flags.make
 CMakeFiles/Library.dir/src/protomol/type/GromacsParameters.cpp.o: src/protomol/type/GromacsParameters.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/CMakeFiles" $(CMAKE_PROGRESS_109)
+	$(CMAKE_COMMAND) -E cmake_progress_report "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/CMakeFiles" $(CMAKE_PROGRESS_98)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/Library.dir/src/protomol/type/GromacsParameters.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/Library.dir/src/protomol/type/GromacsParameters.cpp.o -c "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/src/protomol/type/GromacsParameters.cpp"
 
@@ -2558,7 +2305,7 @@ CMakeFiles/Library.dir/src/protomol/type/GromacsParameters.cpp.o.provides.build:
 
 CMakeFiles/Library.dir/src/protomol/type/GromacsTopology.cpp.o: CMakeFiles/Library.dir/flags.make
 CMakeFiles/Library.dir/src/protomol/type/GromacsTopology.cpp.o: src/protomol/type/GromacsTopology.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/CMakeFiles" $(CMAKE_PROGRESS_110)
+	$(CMAKE_COMMAND) -E cmake_progress_report "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/CMakeFiles" $(CMAKE_PROGRESS_99)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/Library.dir/src/protomol/type/GromacsTopology.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/Library.dir/src/protomol/type/GromacsTopology.cpp.o -c "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/src/protomol/type/GromacsTopology.cpp"
 
@@ -2581,7 +2328,7 @@ CMakeFiles/Library.dir/src/protomol/type/GromacsTopology.cpp.o.provides.build: C
 
 CMakeFiles/Library.dir/src/protomol/type/PDB.cpp.o: CMakeFiles/Library.dir/flags.make
 CMakeFiles/Library.dir/src/protomol/type/PDB.cpp.o: src/protomol/type/PDB.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/CMakeFiles" $(CMAKE_PROGRESS_111)
+	$(CMAKE_COMMAND) -E cmake_progress_report "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/CMakeFiles" $(CMAKE_PROGRESS_100)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/Library.dir/src/protomol/type/PDB.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/Library.dir/src/protomol/type/PDB.cpp.o -c "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/src/protomol/type/PDB.cpp"
 
@@ -2604,7 +2351,7 @@ CMakeFiles/Library.dir/src/protomol/type/PDB.cpp.o.provides.build: CMakeFiles/Li
 
 CMakeFiles/Library.dir/src/protomol/type/BlockMatrix.cpp.o: CMakeFiles/Library.dir/flags.make
 CMakeFiles/Library.dir/src/protomol/type/BlockMatrix.cpp.o: src/protomol/type/BlockMatrix.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/CMakeFiles" $(CMAKE_PROGRESS_112)
+	$(CMAKE_COMMAND) -E cmake_progress_report "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/CMakeFiles" $(CMAKE_PROGRESS_101)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/Library.dir/src/protomol/type/BlockMatrix.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/Library.dir/src/protomol/type/BlockMatrix.cpp.o -c "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/src/protomol/type/BlockMatrix.cpp"
 
@@ -2627,7 +2374,7 @@ CMakeFiles/Library.dir/src/protomol/type/BlockMatrix.cpp.o.provides.build: CMake
 
 CMakeFiles/Library.dir/src/protomol/debug/Backtrace.cpp.o: CMakeFiles/Library.dir/flags.make
 CMakeFiles/Library.dir/src/protomol/debug/Backtrace.cpp.o: src/protomol/debug/Backtrace.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/CMakeFiles" $(CMAKE_PROGRESS_113)
+	$(CMAKE_COMMAND) -E cmake_progress_report "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/CMakeFiles" $(CMAKE_PROGRESS_102)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/Library.dir/src/protomol/debug/Backtrace.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/Library.dir/src/protomol/debug/Backtrace.cpp.o -c "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/src/protomol/debug/Backtrace.cpp"
 
@@ -2650,7 +2397,7 @@ CMakeFiles/Library.dir/src/protomol/debug/Backtrace.cpp.o.provides.build: CMakeF
 
 CMakeFiles/Library.dir/src/protomol/debug/Pipe.cpp.o: CMakeFiles/Library.dir/flags.make
 CMakeFiles/Library.dir/src/protomol/debug/Pipe.cpp.o: src/protomol/debug/Pipe.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/CMakeFiles" $(CMAKE_PROGRESS_114)
+	$(CMAKE_COMMAND) -E cmake_progress_report "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/CMakeFiles" $(CMAKE_PROGRESS_103)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/Library.dir/src/protomol/debug/Pipe.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/Library.dir/src/protomol/debug/Pipe.cpp.o -c "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/src/protomol/debug/Pipe.cpp"
 
@@ -2673,7 +2420,7 @@ CMakeFiles/Library.dir/src/protomol/debug/Pipe.cpp.o.provides.build: CMakeFiles/
 
 CMakeFiles/Library.dir/src/protomol/debug/Debugger.cpp.o: CMakeFiles/Library.dir/flags.make
 CMakeFiles/Library.dir/src/protomol/debug/Debugger.cpp.o: src/protomol/debug/Debugger.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/CMakeFiles" $(CMAKE_PROGRESS_115)
+	$(CMAKE_COMMAND) -E cmake_progress_report "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/CMakeFiles" $(CMAKE_PROGRESS_104)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/Library.dir/src/protomol/debug/Debugger.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/Library.dir/src/protomol/debug/Debugger.cpp.o -c "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/src/protomol/debug/Debugger.cpp"
 
@@ -2696,7 +2443,7 @@ CMakeFiles/Library.dir/src/protomol/debug/Debugger.cpp.o.provides.build: CMakeFi
 
 CMakeFiles/Library.dir/src/protomol/debug/Process.cpp.o: CMakeFiles/Library.dir/flags.make
 CMakeFiles/Library.dir/src/protomol/debug/Process.cpp.o: src/protomol/debug/Process.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/CMakeFiles" $(CMAKE_PROGRESS_116)
+	$(CMAKE_COMMAND) -E cmake_progress_report "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/CMakeFiles" $(CMAKE_PROGRESS_105)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/Library.dir/src/protomol/debug/Process.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/Library.dir/src/protomol/debug/Process.cpp.o -c "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/src/protomol/debug/Process.cpp"
 
@@ -2719,7 +2466,7 @@ CMakeFiles/Library.dir/src/protomol/debug/Process.cpp.o.provides.build: CMakeFil
 
 CMakeFiles/Library.dir/src/protomol/force/Force.cpp.o: CMakeFiles/Library.dir/flags.make
 CMakeFiles/Library.dir/src/protomol/force/Force.cpp.o: src/protomol/force/Force.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/CMakeFiles" $(CMAKE_PROGRESS_117)
+	$(CMAKE_COMMAND) -E cmake_progress_report "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/CMakeFiles" $(CMAKE_PROGRESS_106)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/Library.dir/src/protomol/force/Force.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/Library.dir/src/protomol/force/Force.cpp.o -c "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/src/protomol/force/Force.cpp"
 
@@ -2742,7 +2489,7 @@ CMakeFiles/Library.dir/src/protomol/force/Force.cpp.o.provides.build: CMakeFiles
 
 CMakeFiles/Library.dir/src/protomol/force/MollyForce.cpp.o: CMakeFiles/Library.dir/flags.make
 CMakeFiles/Library.dir/src/protomol/force/MollyForce.cpp.o: src/protomol/force/MollyForce.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/CMakeFiles" $(CMAKE_PROGRESS_118)
+	$(CMAKE_COMMAND) -E cmake_progress_report "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/CMakeFiles" $(CMAKE_PROGRESS_107)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/Library.dir/src/protomol/force/MollyForce.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/Library.dir/src/protomol/force/MollyForce.cpp.o -c "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/src/protomol/force/MollyForce.cpp"
 
@@ -2765,7 +2512,7 @@ CMakeFiles/Library.dir/src/protomol/force/MollyForce.cpp.o.provides.build: CMake
 
 CMakeFiles/Library.dir/src/protomol/force/ForceGroup.cpp.o: CMakeFiles/Library.dir/flags.make
 CMakeFiles/Library.dir/src/protomol/force/ForceGroup.cpp.o: src/protomol/force/ForceGroup.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/CMakeFiles" $(CMAKE_PROGRESS_119)
+	$(CMAKE_COMMAND) -E cmake_progress_report "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/CMakeFiles" $(CMAKE_PROGRESS_108)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/Library.dir/src/protomol/force/ForceGroup.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/Library.dir/src/protomol/force/ForceGroup.cpp.o -c "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/src/protomol/force/ForceGroup.cpp"
 
@@ -2788,7 +2535,7 @@ CMakeFiles/Library.dir/src/protomol/force/ForceGroup.cpp.o.provides.build: CMake
 
 CMakeFiles/Library.dir/src/protomol/force/CompareForce.cpp.o: CMakeFiles/Library.dir/flags.make
 CMakeFiles/Library.dir/src/protomol/force/CompareForce.cpp.o: src/protomol/force/CompareForce.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/CMakeFiles" $(CMAKE_PROGRESS_120)
+	$(CMAKE_COMMAND) -E cmake_progress_report "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/CMakeFiles" $(CMAKE_PROGRESS_109)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/Library.dir/src/protomol/force/CompareForce.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/Library.dir/src/protomol/force/CompareForce.cpp.o -c "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/src/protomol/force/CompareForce.cpp"
 
@@ -2811,7 +2558,7 @@ CMakeFiles/Library.dir/src/protomol/force/CompareForce.cpp.o.provides.build: CMa
 
 CMakeFiles/Library.dir/src/protomol/force/MetaForce.cpp.o: CMakeFiles/Library.dir/flags.make
 CMakeFiles/Library.dir/src/protomol/force/MetaForce.cpp.o: src/protomol/force/MetaForce.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/CMakeFiles" $(CMAKE_PROGRESS_121)
+	$(CMAKE_COMMAND) -E cmake_progress_report "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/CMakeFiles" $(CMAKE_PROGRESS_110)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/Library.dir/src/protomol/force/MetaForce.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/Library.dir/src/protomol/force/MetaForce.cpp.o -c "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/src/protomol/force/MetaForce.cpp"
 
@@ -2834,7 +2581,7 @@ CMakeFiles/Library.dir/src/protomol/force/MetaForce.cpp.o.provides.build: CMakeF
 
 CMakeFiles/Library.dir/src/protomol/force/TimeForce.cpp.o: CMakeFiles/Library.dir/flags.make
 CMakeFiles/Library.dir/src/protomol/force/TimeForce.cpp.o: src/protomol/force/TimeForce.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/CMakeFiles" $(CMAKE_PROGRESS_122)
+	$(CMAKE_COMMAND) -E cmake_progress_report "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/CMakeFiles" $(CMAKE_PROGRESS_111)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/Library.dir/src/protomol/force/TimeForce.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/Library.dir/src/protomol/force/TimeForce.cpp.o -c "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/src/protomol/force/TimeForce.cpp"
 
@@ -2857,7 +2604,7 @@ CMakeFiles/Library.dir/src/protomol/force/TimeForce.cpp.o.provides.build: CMakeF
 
 CMakeFiles/Library.dir/src/protomol/force/LennardJonesForce.cpp.o: CMakeFiles/Library.dir/flags.make
 CMakeFiles/Library.dir/src/protomol/force/LennardJonesForce.cpp.o: src/protomol/force/LennardJonesForce.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/CMakeFiles" $(CMAKE_PROGRESS_123)
+	$(CMAKE_COMMAND) -E cmake_progress_report "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/CMakeFiles" $(CMAKE_PROGRESS_112)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/Library.dir/src/protomol/force/LennardJonesForce.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/Library.dir/src/protomol/force/LennardJonesForce.cpp.o -c "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/src/protomol/force/LennardJonesForce.cpp"
 
@@ -2880,7 +2627,7 @@ CMakeFiles/Library.dir/src/protomol/force/LennardJonesForce.cpp.o.provides.build
 
 CMakeFiles/Library.dir/src/protomol/force/CoulombForce.cpp.o: CMakeFiles/Library.dir/flags.make
 CMakeFiles/Library.dir/src/protomol/force/CoulombForce.cpp.o: src/protomol/force/CoulombForce.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/CMakeFiles" $(CMAKE_PROGRESS_124)
+	$(CMAKE_COMMAND) -E cmake_progress_report "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/CMakeFiles" $(CMAKE_PROGRESS_113)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/Library.dir/src/protomol/force/CoulombForce.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/Library.dir/src/protomol/force/CoulombForce.cpp.o -c "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/src/protomol/force/CoulombForce.cpp"
 
@@ -2903,7 +2650,7 @@ CMakeFiles/Library.dir/src/protomol/force/CoulombForce.cpp.o.provides.build: CMa
 
 CMakeFiles/Library.dir/src/protomol/force/born/BornSelfForce.cpp.o: CMakeFiles/Library.dir/flags.make
 CMakeFiles/Library.dir/src/protomol/force/born/BornSelfForce.cpp.o: src/protomol/force/born/BornSelfForce.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/CMakeFiles" $(CMAKE_PROGRESS_125)
+	$(CMAKE_COMMAND) -E cmake_progress_report "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/CMakeFiles" $(CMAKE_PROGRESS_114)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/Library.dir/src/protomol/force/born/BornSelfForce.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/Library.dir/src/protomol/force/born/BornSelfForce.cpp.o -c "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/src/protomol/force/born/BornSelfForce.cpp"
 
@@ -2926,7 +2673,7 @@ CMakeFiles/Library.dir/src/protomol/force/born/BornSelfForce.cpp.o.provides.buil
 
 CMakeFiles/Library.dir/src/protomol/force/born/BornRadii.cpp.o: CMakeFiles/Library.dir/flags.make
 CMakeFiles/Library.dir/src/protomol/force/born/BornRadii.cpp.o: src/protomol/force/born/BornRadii.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/CMakeFiles" $(CMAKE_PROGRESS_126)
+	$(CMAKE_COMMAND) -E cmake_progress_report "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/CMakeFiles" $(CMAKE_PROGRESS_115)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/Library.dir/src/protomol/force/born/BornRadii.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/Library.dir/src/protomol/force/born/BornRadii.cpp.o -c "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/src/protomol/force/born/BornRadii.cpp"
 
@@ -2949,7 +2696,7 @@ CMakeFiles/Library.dir/src/protomol/force/born/BornRadii.cpp.o.provides.build: C
 
 CMakeFiles/Library.dir/src/protomol/force/coulomb/CoulombSCPISMForce.cpp.o: CMakeFiles/Library.dir/flags.make
 CMakeFiles/Library.dir/src/protomol/force/coulomb/CoulombSCPISMForce.cpp.o: src/protomol/force/coulomb/CoulombSCPISMForce.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/CMakeFiles" $(CMAKE_PROGRESS_127)
+	$(CMAKE_COMMAND) -E cmake_progress_report "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/CMakeFiles" $(CMAKE_PROGRESS_116)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/Library.dir/src/protomol/force/coulomb/CoulombSCPISMForce.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/Library.dir/src/protomol/force/coulomb/CoulombSCPISMForce.cpp.o -c "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/src/protomol/force/coulomb/CoulombSCPISMForce.cpp"
 
@@ -2972,7 +2719,7 @@ CMakeFiles/Library.dir/src/protomol/force/coulomb/CoulombSCPISMForce.cpp.o.provi
 
 CMakeFiles/Library.dir/src/protomol/force/coulomb/CoulombForceDiElec.cpp.o: CMakeFiles/Library.dir/flags.make
 CMakeFiles/Library.dir/src/protomol/force/coulomb/CoulombForceDiElec.cpp.o: src/protomol/force/coulomb/CoulombForceDiElec.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/CMakeFiles" $(CMAKE_PROGRESS_128)
+	$(CMAKE_COMMAND) -E cmake_progress_report "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/CMakeFiles" $(CMAKE_PROGRESS_117)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/Library.dir/src/protomol/force/coulomb/CoulombForceDiElec.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/Library.dir/src/protomol/force/coulomb/CoulombForceDiElec.cpp.o -c "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/src/protomol/force/coulomb/CoulombForceDiElec.cpp"
 
@@ -2995,7 +2742,7 @@ CMakeFiles/Library.dir/src/protomol/force/coulomb/CoulombForceDiElec.cpp.o.provi
 
 CMakeFiles/Library.dir/src/protomol/force/extended/ExtendedForce.cpp.o: CMakeFiles/Library.dir/flags.make
 CMakeFiles/Library.dir/src/protomol/force/extended/ExtendedForce.cpp.o: src/protomol/force/extended/ExtendedForce.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/CMakeFiles" $(CMAKE_PROGRESS_129)
+	$(CMAKE_COMMAND) -E cmake_progress_report "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/CMakeFiles" $(CMAKE_PROGRESS_118)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/Library.dir/src/protomol/force/extended/ExtendedForce.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/Library.dir/src/protomol/force/extended/ExtendedForce.cpp.o -c "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/src/protomol/force/extended/ExtendedForce.cpp"
 
@@ -3018,7 +2765,7 @@ CMakeFiles/Library.dir/src/protomol/force/extended/ExtendedForce.cpp.o.provides.
 
 CMakeFiles/Library.dir/src/protomol/force/extended/ExtendedCompareForce.cpp.o: CMakeFiles/Library.dir/flags.make
 CMakeFiles/Library.dir/src/protomol/force/extended/ExtendedCompareForce.cpp.o: src/protomol/force/extended/ExtendedCompareForce.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/CMakeFiles" $(CMAKE_PROGRESS_130)
+	$(CMAKE_COMMAND) -E cmake_progress_report "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/CMakeFiles" $(CMAKE_PROGRESS_119)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/Library.dir/src/protomol/force/extended/ExtendedCompareForce.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/Library.dir/src/protomol/force/extended/ExtendedCompareForce.cpp.o -c "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/src/protomol/force/extended/ExtendedCompareForce.cpp"
 
@@ -3041,7 +2788,7 @@ CMakeFiles/Library.dir/src/protomol/force/extended/ExtendedCompareForce.cpp.o.pr
 
 CMakeFiles/Library.dir/src/protomol/force/extended/ExtendedTimeForce.cpp.o: CMakeFiles/Library.dir/flags.make
 CMakeFiles/Library.dir/src/protomol/force/extended/ExtendedTimeForce.cpp.o: src/protomol/force/extended/ExtendedTimeForce.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/CMakeFiles" $(CMAKE_PROGRESS_131)
+	$(CMAKE_COMMAND) -E cmake_progress_report "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/CMakeFiles" $(CMAKE_PROGRESS_120)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/Library.dir/src/protomol/force/extended/ExtendedTimeForce.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/Library.dir/src/protomol/force/extended/ExtendedTimeForce.cpp.o -c "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/src/protomol/force/extended/ExtendedTimeForce.cpp"
 
@@ -3064,7 +2811,7 @@ CMakeFiles/Library.dir/src/protomol/force/extended/ExtendedTimeForce.cpp.o.provi
 
 CMakeFiles/Library.dir/src/protomol/force/GB/GBACEForce.cpp.o: CMakeFiles/Library.dir/flags.make
 CMakeFiles/Library.dir/src/protomol/force/GB/GBACEForce.cpp.o: src/protomol/force/GB/GBACEForce.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/CMakeFiles" $(CMAKE_PROGRESS_132)
+	$(CMAKE_COMMAND) -E cmake_progress_report "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/CMakeFiles" $(CMAKE_PROGRESS_121)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/Library.dir/src/protomol/force/GB/GBACEForce.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/Library.dir/src/protomol/force/GB/GBACEForce.cpp.o -c "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/src/protomol/force/GB/GBACEForce.cpp"
 
@@ -3087,7 +2834,7 @@ CMakeFiles/Library.dir/src/protomol/force/GB/GBACEForce.cpp.o.provides.build: CM
 
 CMakeFiles/Library.dir/src/protomol/force/GB/GBBornRadii.cpp.o: CMakeFiles/Library.dir/flags.make
 CMakeFiles/Library.dir/src/protomol/force/GB/GBBornRadii.cpp.o: src/protomol/force/GB/GBBornRadii.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/CMakeFiles" $(CMAKE_PROGRESS_133)
+	$(CMAKE_COMMAND) -E cmake_progress_report "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/CMakeFiles" $(CMAKE_PROGRESS_122)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/Library.dir/src/protomol/force/GB/GBBornRadii.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/Library.dir/src/protomol/force/GB/GBBornRadii.cpp.o -c "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/src/protomol/force/GB/GBBornRadii.cpp"
 
@@ -3110,7 +2857,7 @@ CMakeFiles/Library.dir/src/protomol/force/GB/GBBornRadii.cpp.o.provides.build: C
 
 CMakeFiles/Library.dir/src/protomol/force/GB/GBBornBurialTerm.cpp.o: CMakeFiles/Library.dir/flags.make
 CMakeFiles/Library.dir/src/protomol/force/GB/GBBornBurialTerm.cpp.o: src/protomol/force/GB/GBBornBurialTerm.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/CMakeFiles" $(CMAKE_PROGRESS_134)
+	$(CMAKE_COMMAND) -E cmake_progress_report "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/CMakeFiles" $(CMAKE_PROGRESS_123)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/Library.dir/src/protomol/force/GB/GBBornBurialTerm.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/Library.dir/src/protomol/force/GB/GBBornBurialTerm.cpp.o -c "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/src/protomol/force/GB/GBBornBurialTerm.cpp"
 
@@ -3133,7 +2880,7 @@ CMakeFiles/Library.dir/src/protomol/force/GB/GBBornBurialTerm.cpp.o.provides.bui
 
 CMakeFiles/Library.dir/src/protomol/force/GB/GBForce.cpp.o: CMakeFiles/Library.dir/flags.make
 CMakeFiles/Library.dir/src/protomol/force/GB/GBForce.cpp.o: src/protomol/force/GB/GBForce.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/CMakeFiles" $(CMAKE_PROGRESS_135)
+	$(CMAKE_COMMAND) -E cmake_progress_report "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/CMakeFiles" $(CMAKE_PROGRESS_124)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/Library.dir/src/protomol/force/GB/GBForce.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/Library.dir/src/protomol/force/GB/GBForce.cpp.o -c "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/src/protomol/force/GB/GBForce.cpp"
 
@@ -3156,7 +2903,7 @@ CMakeFiles/Library.dir/src/protomol/force/GB/GBForce.cpp.o.provides.build: CMake
 
 CMakeFiles/Library.dir/src/protomol/force/hessian/ReducedHessBond.cpp.o: CMakeFiles/Library.dir/flags.make
 CMakeFiles/Library.dir/src/protomol/force/hessian/ReducedHessBond.cpp.o: src/protomol/force/hessian/ReducedHessBond.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/CMakeFiles" $(CMAKE_PROGRESS_136)
+	$(CMAKE_COMMAND) -E cmake_progress_report "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/CMakeFiles" $(CMAKE_PROGRESS_125)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/Library.dir/src/protomol/force/hessian/ReducedHessBond.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/Library.dir/src/protomol/force/hessian/ReducedHessBond.cpp.o -c "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/src/protomol/force/hessian/ReducedHessBond.cpp"
 
@@ -3179,7 +2926,7 @@ CMakeFiles/Library.dir/src/protomol/force/hessian/ReducedHessBond.cpp.o.provides
 
 CMakeFiles/Library.dir/src/protomol/force/hessian/ReducedHessBornSelf.cpp.o: CMakeFiles/Library.dir/flags.make
 CMakeFiles/Library.dir/src/protomol/force/hessian/ReducedHessBornSelf.cpp.o: src/protomol/force/hessian/ReducedHessBornSelf.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/CMakeFiles" $(CMAKE_PROGRESS_137)
+	$(CMAKE_COMMAND) -E cmake_progress_report "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/CMakeFiles" $(CMAKE_PROGRESS_126)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/Library.dir/src/protomol/force/hessian/ReducedHessBornSelf.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/Library.dir/src/protomol/force/hessian/ReducedHessBornSelf.cpp.o -c "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/src/protomol/force/hessian/ReducedHessBornSelf.cpp"
 
@@ -3202,7 +2949,7 @@ CMakeFiles/Library.dir/src/protomol/force/hessian/ReducedHessBornSelf.cpp.o.prov
 
 CMakeFiles/Library.dir/src/protomol/force/hessian/ReducedHessLennardJones.cpp.o: CMakeFiles/Library.dir/flags.make
 CMakeFiles/Library.dir/src/protomol/force/hessian/ReducedHessLennardJones.cpp.o: src/protomol/force/hessian/ReducedHessLennardJones.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/CMakeFiles" $(CMAKE_PROGRESS_138)
+	$(CMAKE_COMMAND) -E cmake_progress_report "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/CMakeFiles" $(CMAKE_PROGRESS_127)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/Library.dir/src/protomol/force/hessian/ReducedHessLennardJones.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/Library.dir/src/protomol/force/hessian/ReducedHessLennardJones.cpp.o -c "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/src/protomol/force/hessian/ReducedHessLennardJones.cpp"
 
@@ -3225,7 +2972,7 @@ CMakeFiles/Library.dir/src/protomol/force/hessian/ReducedHessLennardJones.cpp.o.
 
 CMakeFiles/Library.dir/src/protomol/force/hessian/ReducedHessAngle.cpp.o: CMakeFiles/Library.dir/flags.make
 CMakeFiles/Library.dir/src/protomol/force/hessian/ReducedHessAngle.cpp.o: src/protomol/force/hessian/ReducedHessAngle.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/CMakeFiles" $(CMAKE_PROGRESS_139)
+	$(CMAKE_COMMAND) -E cmake_progress_report "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/CMakeFiles" $(CMAKE_PROGRESS_128)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/Library.dir/src/protomol/force/hessian/ReducedHessAngle.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/Library.dir/src/protomol/force/hessian/ReducedHessAngle.cpp.o -c "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/src/protomol/force/hessian/ReducedHessAngle.cpp"
 
@@ -3248,7 +2995,7 @@ CMakeFiles/Library.dir/src/protomol/force/hessian/ReducedHessAngle.cpp.o.provide
 
 CMakeFiles/Library.dir/src/protomol/force/hessian/ReducedHessGB.cpp.o: CMakeFiles/Library.dir/flags.make
 CMakeFiles/Library.dir/src/protomol/force/hessian/ReducedHessGB.cpp.o: src/protomol/force/hessian/ReducedHessGB.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/CMakeFiles" $(CMAKE_PROGRESS_140)
+	$(CMAKE_COMMAND) -E cmake_progress_report "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/CMakeFiles" $(CMAKE_PROGRESS_129)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/Library.dir/src/protomol/force/hessian/ReducedHessGB.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/Library.dir/src/protomol/force/hessian/ReducedHessGB.cpp.o -c "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/src/protomol/force/hessian/ReducedHessGB.cpp"
 
@@ -3271,7 +3018,7 @@ CMakeFiles/Library.dir/src/protomol/force/hessian/ReducedHessGB.cpp.o.provides.b
 
 CMakeFiles/Library.dir/src/protomol/force/hessian/ReducedHessGBACE.cpp.o: CMakeFiles/Library.dir/flags.make
 CMakeFiles/Library.dir/src/protomol/force/hessian/ReducedHessGBACE.cpp.o: src/protomol/force/hessian/ReducedHessGBACE.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/CMakeFiles" $(CMAKE_PROGRESS_141)
+	$(CMAKE_COMMAND) -E cmake_progress_report "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/CMakeFiles" $(CMAKE_PROGRESS_130)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/Library.dir/src/protomol/force/hessian/ReducedHessGBACE.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/Library.dir/src/protomol/force/hessian/ReducedHessGBACE.cpp.o -c "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/src/protomol/force/hessian/ReducedHessGBACE.cpp"
 
@@ -3294,7 +3041,7 @@ CMakeFiles/Library.dir/src/protomol/force/hessian/ReducedHessGBACE.cpp.o.provide
 
 CMakeFiles/Library.dir/src/protomol/force/hessian/ReducedHessCoulomb.cpp.o: CMakeFiles/Library.dir/flags.make
 CMakeFiles/Library.dir/src/protomol/force/hessian/ReducedHessCoulomb.cpp.o: src/protomol/force/hessian/ReducedHessCoulomb.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/CMakeFiles" $(CMAKE_PROGRESS_142)
+	$(CMAKE_COMMAND) -E cmake_progress_report "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/CMakeFiles" $(CMAKE_PROGRESS_131)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/Library.dir/src/protomol/force/hessian/ReducedHessCoulomb.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/Library.dir/src/protomol/force/hessian/ReducedHessCoulomb.cpp.o -c "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/src/protomol/force/hessian/ReducedHessCoulomb.cpp"
 
@@ -3317,7 +3064,7 @@ CMakeFiles/Library.dir/src/protomol/force/hessian/ReducedHessCoulomb.cpp.o.provi
 
 CMakeFiles/Library.dir/src/protomol/force/hessian/ReducedHessCoulombSCPISM.cpp.o: CMakeFiles/Library.dir/flags.make
 CMakeFiles/Library.dir/src/protomol/force/hessian/ReducedHessCoulombSCPISM.cpp.o: src/protomol/force/hessian/ReducedHessCoulombSCPISM.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/CMakeFiles" $(CMAKE_PROGRESS_143)
+	$(CMAKE_COMMAND) -E cmake_progress_report "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/CMakeFiles" $(CMAKE_PROGRESS_132)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/Library.dir/src/protomol/force/hessian/ReducedHessCoulombSCPISM.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/Library.dir/src/protomol/force/hessian/ReducedHessCoulombSCPISM.cpp.o -c "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/src/protomol/force/hessian/ReducedHessCoulombSCPISM.cpp"
 
@@ -3340,7 +3087,7 @@ CMakeFiles/Library.dir/src/protomol/force/hessian/ReducedHessCoulombSCPISM.cpp.o
 
 CMakeFiles/Library.dir/src/protomol/force/hessian/HessDihedral.cpp.o: CMakeFiles/Library.dir/flags.make
 CMakeFiles/Library.dir/src/protomol/force/hessian/HessDihedral.cpp.o: src/protomol/force/hessian/HessDihedral.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/CMakeFiles" $(CMAKE_PROGRESS_144)
+	$(CMAKE_COMMAND) -E cmake_progress_report "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/CMakeFiles" $(CMAKE_PROGRESS_133)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/Library.dir/src/protomol/force/hessian/HessDihedral.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/Library.dir/src/protomol/force/hessian/HessDihedral.cpp.o -c "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/src/protomol/force/hessian/HessDihedral.cpp"
 
@@ -3363,7 +3110,7 @@ CMakeFiles/Library.dir/src/protomol/force/hessian/HessDihedral.cpp.o.provides.bu
 
 CMakeFiles/Library.dir/src/protomol/force/hessian/ReducedHessCoulombDiElec.cpp.o: CMakeFiles/Library.dir/flags.make
 CMakeFiles/Library.dir/src/protomol/force/hessian/ReducedHessCoulombDiElec.cpp.o: src/protomol/force/hessian/ReducedHessCoulombDiElec.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/CMakeFiles" $(CMAKE_PROGRESS_145)
+	$(CMAKE_COMMAND) -E cmake_progress_report "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/CMakeFiles" $(CMAKE_PROGRESS_134)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/Library.dir/src/protomol/force/hessian/ReducedHessCoulombDiElec.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/Library.dir/src/protomol/force/hessian/ReducedHessCoulombDiElec.cpp.o -c "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/src/protomol/force/hessian/ReducedHessCoulombDiElec.cpp"
 
@@ -3386,7 +3133,7 @@ CMakeFiles/Library.dir/src/protomol/force/hessian/ReducedHessCoulombDiElec.cpp.o
 
 CMakeFiles/Library.dir/src/protomol/force/nonbonded/NonbondedFullEwaldSystemForceBase.cpp.o: CMakeFiles/Library.dir/flags.make
 CMakeFiles/Library.dir/src/protomol/force/nonbonded/NonbondedFullEwaldSystemForceBase.cpp.o: src/protomol/force/nonbonded/NonbondedFullEwaldSystemForceBase.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/CMakeFiles" $(CMAKE_PROGRESS_146)
+	$(CMAKE_COMMAND) -E cmake_progress_report "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/CMakeFiles" $(CMAKE_PROGRESS_135)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/Library.dir/src/protomol/force/nonbonded/NonbondedFullEwaldSystemForceBase.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/Library.dir/src/protomol/force/nonbonded/NonbondedFullEwaldSystemForceBase.cpp.o -c "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/src/protomol/force/nonbonded/NonbondedFullEwaldSystemForceBase.cpp"
 
@@ -3409,7 +3156,7 @@ CMakeFiles/Library.dir/src/protomol/force/nonbonded/NonbondedFullEwaldSystemForc
 
 CMakeFiles/Library.dir/src/protomol/force/system/SystemForce.cpp.o: CMakeFiles/Library.dir/flags.make
 CMakeFiles/Library.dir/src/protomol/force/system/SystemForce.cpp.o: src/protomol/force/system/SystemForce.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/CMakeFiles" $(CMAKE_PROGRESS_147)
+	$(CMAKE_COMMAND) -E cmake_progress_report "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/CMakeFiles" $(CMAKE_PROGRESS_136)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/Library.dir/src/protomol/force/system/SystemForce.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/Library.dir/src/protomol/force/system/SystemForce.cpp.o -c "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/src/protomol/force/system/SystemForce.cpp"
 
@@ -3432,7 +3179,7 @@ CMakeFiles/Library.dir/src/protomol/force/system/SystemForce.cpp.o.provides.buil
 
 CMakeFiles/Library.dir/src/protomol/force/system/SystemCompareForce.cpp.o: CMakeFiles/Library.dir/flags.make
 CMakeFiles/Library.dir/src/protomol/force/system/SystemCompareForce.cpp.o: src/protomol/force/system/SystemCompareForce.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/CMakeFiles" $(CMAKE_PROGRESS_148)
+	$(CMAKE_COMMAND) -E cmake_progress_report "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/CMakeFiles" $(CMAKE_PROGRESS_137)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/Library.dir/src/protomol/force/system/SystemCompareForce.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/Library.dir/src/protomol/force/system/SystemCompareForce.cpp.o -c "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/src/protomol/force/system/SystemCompareForce.cpp"
 
@@ -3455,7 +3202,7 @@ CMakeFiles/Library.dir/src/protomol/force/system/SystemCompareForce.cpp.o.provid
 
 CMakeFiles/Library.dir/src/protomol/force/system/SystemTimeForce.cpp.o: CMakeFiles/Library.dir/flags.make
 CMakeFiles/Library.dir/src/protomol/force/system/SystemTimeForce.cpp.o: src/protomol/force/system/SystemTimeForce.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/CMakeFiles" $(CMAKE_PROGRESS_149)
+	$(CMAKE_COMMAND) -E cmake_progress_report "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/CMakeFiles" $(CMAKE_PROGRESS_138)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/Library.dir/src/protomol/force/system/SystemTimeForce.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/Library.dir/src/protomol/force/system/SystemTimeForce.cpp.o -c "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/src/protomol/force/system/SystemTimeForce.cpp"
 
@@ -3478,7 +3225,7 @@ CMakeFiles/Library.dir/src/protomol/force/system/SystemTimeForce.cpp.o.provides.
 
 CMakeFiles/Library.dir/src/protomol/integrator/STSIntegrator.cpp.o: CMakeFiles/Library.dir/flags.make
 CMakeFiles/Library.dir/src/protomol/integrator/STSIntegrator.cpp.o: src/protomol/integrator/STSIntegrator.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/CMakeFiles" $(CMAKE_PROGRESS_150)
+	$(CMAKE_COMMAND) -E cmake_progress_report "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/CMakeFiles" $(CMAKE_PROGRESS_139)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/Library.dir/src/protomol/integrator/STSIntegrator.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/Library.dir/src/protomol/integrator/STSIntegrator.cpp.o -c "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/src/protomol/integrator/STSIntegrator.cpp"
 
@@ -3501,7 +3248,7 @@ CMakeFiles/Library.dir/src/protomol/integrator/STSIntegrator.cpp.o.provides.buil
 
 CMakeFiles/Library.dir/src/protomol/integrator/IntegratorDefinition.cpp.o: CMakeFiles/Library.dir/flags.make
 CMakeFiles/Library.dir/src/protomol/integrator/IntegratorDefinition.cpp.o: src/protomol/integrator/IntegratorDefinition.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/CMakeFiles" $(CMAKE_PROGRESS_151)
+	$(CMAKE_COMMAND) -E cmake_progress_report "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/CMakeFiles" $(CMAKE_PROGRESS_140)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/Library.dir/src/protomol/integrator/IntegratorDefinition.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/Library.dir/src/protomol/integrator/IntegratorDefinition.cpp.o -c "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/src/protomol/integrator/IntegratorDefinition.cpp"
 
@@ -3524,7 +3271,7 @@ CMakeFiles/Library.dir/src/protomol/integrator/IntegratorDefinition.cpp.o.provid
 
 CMakeFiles/Library.dir/src/protomol/integrator/MTSIntegrator.cpp.o: CMakeFiles/Library.dir/flags.make
 CMakeFiles/Library.dir/src/protomol/integrator/MTSIntegrator.cpp.o: src/protomol/integrator/MTSIntegrator.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/CMakeFiles" $(CMAKE_PROGRESS_152)
+	$(CMAKE_COMMAND) -E cmake_progress_report "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/CMakeFiles" $(CMAKE_PROGRESS_141)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/Library.dir/src/protomol/integrator/MTSIntegrator.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/Library.dir/src/protomol/integrator/MTSIntegrator.cpp.o -c "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/src/protomol/integrator/MTSIntegrator.cpp"
 
@@ -3547,7 +3294,7 @@ CMakeFiles/Library.dir/src/protomol/integrator/MTSIntegrator.cpp.o.provides.buil
 
 CMakeFiles/Library.dir/src/protomol/integrator/Integrator.cpp.o: CMakeFiles/Library.dir/flags.make
 CMakeFiles/Library.dir/src/protomol/integrator/Integrator.cpp.o: src/protomol/integrator/Integrator.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/CMakeFiles" $(CMAKE_PROGRESS_153)
+	$(CMAKE_COMMAND) -E cmake_progress_report "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/CMakeFiles" $(CMAKE_PROGRESS_142)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/Library.dir/src/protomol/integrator/Integrator.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/Library.dir/src/protomol/integrator/Integrator.cpp.o -c "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/src/protomol/integrator/Integrator.cpp"
 
@@ -3570,7 +3317,7 @@ CMakeFiles/Library.dir/src/protomol/integrator/Integrator.cpp.o.provides.build: 
 
 CMakeFiles/Library.dir/src/protomol/integrator/StandardIntegrator.cpp.o: CMakeFiles/Library.dir/flags.make
 CMakeFiles/Library.dir/src/protomol/integrator/StandardIntegrator.cpp.o: src/protomol/integrator/StandardIntegrator.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/CMakeFiles" $(CMAKE_PROGRESS_154)
+	$(CMAKE_COMMAND) -E cmake_progress_report "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/CMakeFiles" $(CMAKE_PROGRESS_143)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/Library.dir/src/protomol/integrator/StandardIntegrator.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/Library.dir/src/protomol/integrator/StandardIntegrator.cpp.o -c "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/src/protomol/integrator/StandardIntegrator.cpp"
 
@@ -3593,7 +3340,7 @@ CMakeFiles/Library.dir/src/protomol/integrator/StandardIntegrator.cpp.o.provides
 
 CMakeFiles/Library.dir/src/protomol/integrator/base/LangevinLeapfrogIntegrator.cpp.o: CMakeFiles/Library.dir/flags.make
 CMakeFiles/Library.dir/src/protomol/integrator/base/LangevinLeapfrogIntegrator.cpp.o: src/protomol/integrator/base/LangevinLeapfrogIntegrator.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/CMakeFiles" $(CMAKE_PROGRESS_155)
+	$(CMAKE_COMMAND) -E cmake_progress_report "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/CMakeFiles" $(CMAKE_PROGRESS_144)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/Library.dir/src/protomol/integrator/base/LangevinLeapfrogIntegrator.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/Library.dir/src/protomol/integrator/base/LangevinLeapfrogIntegrator.cpp.o -c "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/src/protomol/integrator/base/LangevinLeapfrogIntegrator.cpp"
 
@@ -3616,7 +3363,7 @@ CMakeFiles/Library.dir/src/protomol/integrator/base/LangevinLeapfrogIntegrator.c
 
 CMakeFiles/Library.dir/src/protomol/integrator/base/LangevinImpulseIntegrator.cpp.o: CMakeFiles/Library.dir/flags.make
 CMakeFiles/Library.dir/src/protomol/integrator/base/LangevinImpulseIntegrator.cpp.o: src/protomol/integrator/base/LangevinImpulseIntegrator.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/CMakeFiles" $(CMAKE_PROGRESS_156)
+	$(CMAKE_COMMAND) -E cmake_progress_report "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/CMakeFiles" $(CMAKE_PROGRESS_145)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/Library.dir/src/protomol/integrator/base/LangevinImpulseIntegrator.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/Library.dir/src/protomol/integrator/base/LangevinImpulseIntegrator.cpp.o -c "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/src/protomol/integrator/base/LangevinImpulseIntegrator.cpp"
 
@@ -3639,7 +3386,7 @@ CMakeFiles/Library.dir/src/protomol/integrator/base/LangevinImpulseIntegrator.cp
 
 CMakeFiles/Library.dir/src/protomol/integrator/base/CGMinimizerIntegrator.cpp.o: CMakeFiles/Library.dir/flags.make
 CMakeFiles/Library.dir/src/protomol/integrator/base/CGMinimizerIntegrator.cpp.o: src/protomol/integrator/base/CGMinimizerIntegrator.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/CMakeFiles" $(CMAKE_PROGRESS_157)
+	$(CMAKE_COMMAND) -E cmake_progress_report "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/CMakeFiles" $(CMAKE_PROGRESS_146)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/Library.dir/src/protomol/integrator/base/CGMinimizerIntegrator.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/Library.dir/src/protomol/integrator/base/CGMinimizerIntegrator.cpp.o -c "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/src/protomol/integrator/base/CGMinimizerIntegrator.cpp"
 
@@ -3662,7 +3409,7 @@ CMakeFiles/Library.dir/src/protomol/integrator/base/CGMinimizerIntegrator.cpp.o.
 
 CMakeFiles/Library.dir/src/protomol/integrator/base/NumericalDifferentiation.cpp.o: CMakeFiles/Library.dir/flags.make
 CMakeFiles/Library.dir/src/protomol/integrator/base/NumericalDifferentiation.cpp.o: src/protomol/integrator/base/NumericalDifferentiation.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/CMakeFiles" $(CMAKE_PROGRESS_158)
+	$(CMAKE_COMMAND) -E cmake_progress_report "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/CMakeFiles" $(CMAKE_PROGRESS_147)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/Library.dir/src/protomol/integrator/base/NumericalDifferentiation.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/Library.dir/src/protomol/integrator/base/NumericalDifferentiation.cpp.o -c "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/src/protomol/integrator/base/NumericalDifferentiation.cpp"
 
@@ -3685,7 +3432,7 @@ CMakeFiles/Library.dir/src/protomol/integrator/base/NumericalDifferentiation.cpp
 
 CMakeFiles/Library.dir/src/protomol/integrator/base/NumericallyDifferentiatedHessian.cpp.o: CMakeFiles/Library.dir/flags.make
 CMakeFiles/Library.dir/src/protomol/integrator/base/NumericallyDifferentiatedHessian.cpp.o: src/protomol/integrator/base/NumericallyDifferentiatedHessian.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/CMakeFiles" $(CMAKE_PROGRESS_159)
+	$(CMAKE_COMMAND) -E cmake_progress_report "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/CMakeFiles" $(CMAKE_PROGRESS_148)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/Library.dir/src/protomol/integrator/base/NumericallyDifferentiatedHessian.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/Library.dir/src/protomol/integrator/base/NumericallyDifferentiatedHessian.cpp.o -c "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/src/protomol/integrator/base/NumericallyDifferentiatedHessian.cpp"
 
@@ -3708,7 +3455,7 @@ CMakeFiles/Library.dir/src/protomol/integrator/base/NumericallyDifferentiatedHes
 
 CMakeFiles/Library.dir/src/protomol/integrator/base/RMTIntegrator.cpp.o: CMakeFiles/Library.dir/flags.make
 CMakeFiles/Library.dir/src/protomol/integrator/base/RMTIntegrator.cpp.o: src/protomol/integrator/base/RMTIntegrator.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/CMakeFiles" $(CMAKE_PROGRESS_160)
+	$(CMAKE_COMMAND) -E cmake_progress_report "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/CMakeFiles" $(CMAKE_PROGRESS_149)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/Library.dir/src/protomol/integrator/base/RMTIntegrator.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/Library.dir/src/protomol/integrator/base/RMTIntegrator.cpp.o -c "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/src/protomol/integrator/base/RMTIntegrator.cpp"
 
@@ -3731,7 +3478,7 @@ CMakeFiles/Library.dir/src/protomol/integrator/base/RMTIntegrator.cpp.o.provides
 
 CMakeFiles/Library.dir/src/protomol/integrator/hessian/Hessian.cpp.o: CMakeFiles/Library.dir/flags.make
 CMakeFiles/Library.dir/src/protomol/integrator/hessian/Hessian.cpp.o: src/protomol/integrator/hessian/Hessian.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/CMakeFiles" $(CMAKE_PROGRESS_161)
+	$(CMAKE_COMMAND) -E cmake_progress_report "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/CMakeFiles" $(CMAKE_PROGRESS_150)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/Library.dir/src/protomol/integrator/hessian/Hessian.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/Library.dir/src/protomol/integrator/hessian/Hessian.cpp.o -c "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/src/protomol/integrator/hessian/Hessian.cpp"
 
@@ -3754,7 +3501,7 @@ CMakeFiles/Library.dir/src/protomol/integrator/hessian/Hessian.cpp.o.provides.bu
 
 CMakeFiles/Library.dir/src/protomol/integrator/hessian/BlockHessianDiagonalize.cpp.o: CMakeFiles/Library.dir/flags.make
 CMakeFiles/Library.dir/src/protomol/integrator/hessian/BlockHessianDiagonalize.cpp.o: src/protomol/integrator/hessian/BlockHessianDiagonalize.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/CMakeFiles" $(CMAKE_PROGRESS_162)
+	$(CMAKE_COMMAND) -E cmake_progress_report "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/CMakeFiles" $(CMAKE_PROGRESS_151)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/Library.dir/src/protomol/integrator/hessian/BlockHessianDiagonalize.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/Library.dir/src/protomol/integrator/hessian/BlockHessianDiagonalize.cpp.o -c "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/src/protomol/integrator/hessian/BlockHessianDiagonalize.cpp"
 
@@ -3777,7 +3524,7 @@ CMakeFiles/Library.dir/src/protomol/integrator/hessian/BlockHessianDiagonalize.c
 
 CMakeFiles/Library.dir/src/protomol/integrator/hessian/BlockHessian.cpp.o: CMakeFiles/Library.dir/flags.make
 CMakeFiles/Library.dir/src/protomol/integrator/hessian/BlockHessian.cpp.o: src/protomol/integrator/hessian/BlockHessian.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/CMakeFiles" $(CMAKE_PROGRESS_163)
+	$(CMAKE_COMMAND) -E cmake_progress_report "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/CMakeFiles" $(CMAKE_PROGRESS_152)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/Library.dir/src/protomol/integrator/hessian/BlockHessian.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/Library.dir/src/protomol/integrator/hessian/BlockHessian.cpp.o -c "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/src/protomol/integrator/hessian/BlockHessian.cpp"
 
@@ -3800,7 +3547,7 @@ CMakeFiles/Library.dir/src/protomol/integrator/hessian/BlockHessian.cpp.o.provid
 
 CMakeFiles/Library.dir/src/protomol/integrator/hessian/HessianInt.cpp.o: CMakeFiles/Library.dir/flags.make
 CMakeFiles/Library.dir/src/protomol/integrator/hessian/HessianInt.cpp.o: src/protomol/integrator/hessian/HessianInt.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/CMakeFiles" $(CMAKE_PROGRESS_164)
+	$(CMAKE_COMMAND) -E cmake_progress_report "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/CMakeFiles" $(CMAKE_PROGRESS_153)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/Library.dir/src/protomol/integrator/hessian/HessianInt.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/Library.dir/src/protomol/integrator/hessian/HessianInt.cpp.o -c "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/src/protomol/integrator/hessian/HessianInt.cpp"
 
@@ -3823,7 +3570,7 @@ CMakeFiles/Library.dir/src/protomol/integrator/hessian/HessianInt.cpp.o.provides
 
 CMakeFiles/Library.dir/src/protomol/integrator/leapfrog/DMDLeapfrogIntegrator.cpp.o: CMakeFiles/Library.dir/flags.make
 CMakeFiles/Library.dir/src/protomol/integrator/leapfrog/DMDLeapfrogIntegrator.cpp.o: src/protomol/integrator/leapfrog/DMDLeapfrogIntegrator.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/CMakeFiles" $(CMAKE_PROGRESS_165)
+	$(CMAKE_COMMAND) -E cmake_progress_report "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/CMakeFiles" $(CMAKE_PROGRESS_154)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/Library.dir/src/protomol/integrator/leapfrog/DMDLeapfrogIntegrator.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/Library.dir/src/protomol/integrator/leapfrog/DMDLeapfrogIntegrator.cpp.o -c "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/src/protomol/integrator/leapfrog/DMDLeapfrogIntegrator.cpp"
 
@@ -3844,32 +3591,9 @@ CMakeFiles/Library.dir/src/protomol/integrator/leapfrog/DMDLeapfrogIntegrator.cp
 
 CMakeFiles/Library.dir/src/protomol/integrator/leapfrog/DMDLeapfrogIntegrator.cpp.o.provides.build: CMakeFiles/Library.dir/src/protomol/integrator/leapfrog/DMDLeapfrogIntegrator.cpp.o
 
-CMakeFiles/Library.dir/src/protomol/integrator/leapfrog/LeapfrogBufferGasIntegrator.cpp.o: CMakeFiles/Library.dir/flags.make
-CMakeFiles/Library.dir/src/protomol/integrator/leapfrog/LeapfrogBufferGasIntegrator.cpp.o: src/protomol/integrator/leapfrog/LeapfrogBufferGasIntegrator.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/CMakeFiles" $(CMAKE_PROGRESS_166)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/Library.dir/src/protomol/integrator/leapfrog/LeapfrogBufferGasIntegrator.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/Library.dir/src/protomol/integrator/leapfrog/LeapfrogBufferGasIntegrator.cpp.o -c "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/src/protomol/integrator/leapfrog/LeapfrogBufferGasIntegrator.cpp"
-
-CMakeFiles/Library.dir/src/protomol/integrator/leapfrog/LeapfrogBufferGasIntegrator.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Library.dir/src/protomol/integrator/leapfrog/LeapfrogBufferGasIntegrator.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/src/protomol/integrator/leapfrog/LeapfrogBufferGasIntegrator.cpp" > CMakeFiles/Library.dir/src/protomol/integrator/leapfrog/LeapfrogBufferGasIntegrator.cpp.i
-
-CMakeFiles/Library.dir/src/protomol/integrator/leapfrog/LeapfrogBufferGasIntegrator.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Library.dir/src/protomol/integrator/leapfrog/LeapfrogBufferGasIntegrator.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/src/protomol/integrator/leapfrog/LeapfrogBufferGasIntegrator.cpp" -o CMakeFiles/Library.dir/src/protomol/integrator/leapfrog/LeapfrogBufferGasIntegrator.cpp.s
-
-CMakeFiles/Library.dir/src/protomol/integrator/leapfrog/LeapfrogBufferGasIntegrator.cpp.o.requires:
-.PHONY : CMakeFiles/Library.dir/src/protomol/integrator/leapfrog/LeapfrogBufferGasIntegrator.cpp.o.requires
-
-CMakeFiles/Library.dir/src/protomol/integrator/leapfrog/LeapfrogBufferGasIntegrator.cpp.o.provides: CMakeFiles/Library.dir/src/protomol/integrator/leapfrog/LeapfrogBufferGasIntegrator.cpp.o.requires
-	$(MAKE) -f CMakeFiles/Library.dir/build.make CMakeFiles/Library.dir/src/protomol/integrator/leapfrog/LeapfrogBufferGasIntegrator.cpp.o.provides.build
-.PHONY : CMakeFiles/Library.dir/src/protomol/integrator/leapfrog/LeapfrogBufferGasIntegrator.cpp.o.provides
-
-CMakeFiles/Library.dir/src/protomol/integrator/leapfrog/LeapfrogBufferGasIntegrator.cpp.o.provides.build: CMakeFiles/Library.dir/src/protomol/integrator/leapfrog/LeapfrogBufferGasIntegrator.cpp.o
-
 CMakeFiles/Library.dir/src/protomol/integrator/leapfrog/PLeapfrogIntegrator.cpp.o: CMakeFiles/Library.dir/flags.make
 CMakeFiles/Library.dir/src/protomol/integrator/leapfrog/PLeapfrogIntegrator.cpp.o: src/protomol/integrator/leapfrog/PLeapfrogIntegrator.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/CMakeFiles" $(CMAKE_PROGRESS_167)
+	$(CMAKE_COMMAND) -E cmake_progress_report "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/CMakeFiles" $(CMAKE_PROGRESS_155)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/Library.dir/src/protomol/integrator/leapfrog/PLeapfrogIntegrator.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/Library.dir/src/protomol/integrator/leapfrog/PLeapfrogIntegrator.cpp.o -c "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/src/protomol/integrator/leapfrog/PLeapfrogIntegrator.cpp"
 
@@ -3892,7 +3616,7 @@ CMakeFiles/Library.dir/src/protomol/integrator/leapfrog/PLeapfrogIntegrator.cpp.
 
 CMakeFiles/Library.dir/src/protomol/integrator/leapfrog/LeapfrogDataAcquisition.cpp.o: CMakeFiles/Library.dir/flags.make
 CMakeFiles/Library.dir/src/protomol/integrator/leapfrog/LeapfrogDataAcquisition.cpp.o: src/protomol/integrator/leapfrog/LeapfrogDataAcquisition.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/CMakeFiles" $(CMAKE_PROGRESS_168)
+	$(CMAKE_COMMAND) -E cmake_progress_report "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/CMakeFiles" $(CMAKE_PROGRESS_156)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/Library.dir/src/protomol/integrator/leapfrog/LeapfrogDataAcquisition.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/Library.dir/src/protomol/integrator/leapfrog/LeapfrogDataAcquisition.cpp.o -c "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/src/protomol/integrator/leapfrog/LeapfrogDataAcquisition.cpp"
 
@@ -3915,7 +3639,7 @@ CMakeFiles/Library.dir/src/protomol/integrator/leapfrog/LeapfrogDataAcquisition.
 
 CMakeFiles/Library.dir/src/protomol/integrator/leapfrog/LeapfrogTruncatedShadow.cpp.o: CMakeFiles/Library.dir/flags.make
 CMakeFiles/Library.dir/src/protomol/integrator/leapfrog/LeapfrogTruncatedShadow.cpp.o: src/protomol/integrator/leapfrog/LeapfrogTruncatedShadow.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/CMakeFiles" $(CMAKE_PROGRESS_169)
+	$(CMAKE_COMMAND) -E cmake_progress_report "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/CMakeFiles" $(CMAKE_PROGRESS_157)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/Library.dir/src/protomol/integrator/leapfrog/LeapfrogTruncatedShadow.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/Library.dir/src/protomol/integrator/leapfrog/LeapfrogTruncatedShadow.cpp.o -c "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/src/protomol/integrator/leapfrog/LeapfrogTruncatedShadow.cpp"
 
@@ -3938,7 +3662,7 @@ CMakeFiles/Library.dir/src/protomol/integrator/leapfrog/LeapfrogTruncatedShadow.
 
 CMakeFiles/Library.dir/src/protomol/integrator/leapfrog/GPU.cpp.o: CMakeFiles/Library.dir/flags.make
 CMakeFiles/Library.dir/src/protomol/integrator/leapfrog/GPU.cpp.o: src/protomol/integrator/leapfrog/GPU.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/CMakeFiles" $(CMAKE_PROGRESS_170)
+	$(CMAKE_COMMAND) -E cmake_progress_report "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/CMakeFiles" $(CMAKE_PROGRESS_158)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/Library.dir/src/protomol/integrator/leapfrog/GPU.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/Library.dir/src/protomol/integrator/leapfrog/GPU.cpp.o -c "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/src/protomol/integrator/leapfrog/GPU.cpp"
 
@@ -3961,7 +3685,7 @@ CMakeFiles/Library.dir/src/protomol/integrator/leapfrog/GPU.cpp.o.provides.build
 
 CMakeFiles/Library.dir/src/protomol/integrator/leapfrog/LeapfrogIntegrator.cpp.o: CMakeFiles/Library.dir/flags.make
 CMakeFiles/Library.dir/src/protomol/integrator/leapfrog/LeapfrogIntegrator.cpp.o: src/protomol/integrator/leapfrog/LeapfrogIntegrator.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/CMakeFiles" $(CMAKE_PROGRESS_171)
+	$(CMAKE_COMMAND) -E cmake_progress_report "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/CMakeFiles" $(CMAKE_PROGRESS_159)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/Library.dir/src/protomol/integrator/leapfrog/LeapfrogIntegrator.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/Library.dir/src/protomol/integrator/leapfrog/LeapfrogIntegrator.cpp.o -c "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/src/protomol/integrator/leapfrog/LeapfrogIntegrator.cpp"
 
@@ -3984,7 +3708,7 @@ CMakeFiles/Library.dir/src/protomol/integrator/leapfrog/LeapfrogIntegrator.cpp.o
 
 CMakeFiles/Library.dir/src/protomol/integrator/leapfrog/NoseNVTLeapfrogIntegrator.cpp.o: CMakeFiles/Library.dir/flags.make
 CMakeFiles/Library.dir/src/protomol/integrator/leapfrog/NoseNVTLeapfrogIntegrator.cpp.o: src/protomol/integrator/leapfrog/NoseNVTLeapfrogIntegrator.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/CMakeFiles" $(CMAKE_PROGRESS_172)
+	$(CMAKE_COMMAND) -E cmake_progress_report "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/CMakeFiles" $(CMAKE_PROGRESS_160)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/Library.dir/src/protomol/integrator/leapfrog/NoseNVTLeapfrogIntegrator.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/Library.dir/src/protomol/integrator/leapfrog/NoseNVTLeapfrogIntegrator.cpp.o -c "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/src/protomol/integrator/leapfrog/NoseNVTLeapfrogIntegrator.cpp"
 
@@ -4007,7 +3731,7 @@ CMakeFiles/Library.dir/src/protomol/integrator/leapfrog/NoseNVTLeapfrogIntegrato
 
 CMakeFiles/Library.dir/src/protomol/integrator/normal/NormalModeLangLf.cpp.o: CMakeFiles/Library.dir/flags.make
 CMakeFiles/Library.dir/src/protomol/integrator/normal/NormalModeLangLf.cpp.o: src/protomol/integrator/normal/NormalModeLangLf.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/CMakeFiles" $(CMAKE_PROGRESS_173)
+	$(CMAKE_COMMAND) -E cmake_progress_report "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/CMakeFiles" $(CMAKE_PROGRESS_161)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/Library.dir/src/protomol/integrator/normal/NormalModeLangLf.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/Library.dir/src/protomol/integrator/normal/NormalModeLangLf.cpp.o -c "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/src/protomol/integrator/normal/NormalModeLangLf.cpp"
 
@@ -4030,7 +3754,7 @@ CMakeFiles/Library.dir/src/protomol/integrator/normal/NormalModeLangLf.cpp.o.pro
 
 CMakeFiles/Library.dir/src/protomol/integrator/normal/NormalModeBrownian.cpp.o: CMakeFiles/Library.dir/flags.make
 CMakeFiles/Library.dir/src/protomol/integrator/normal/NormalModeBrownian.cpp.o: src/protomol/integrator/normal/NormalModeBrownian.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/CMakeFiles" $(CMAKE_PROGRESS_174)
+	$(CMAKE_COMMAND) -E cmake_progress_report "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/CMakeFiles" $(CMAKE_PROGRESS_162)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/Library.dir/src/protomol/integrator/normal/NormalModeBrownian.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/Library.dir/src/protomol/integrator/normal/NormalModeBrownian.cpp.o -c "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/src/protomol/integrator/normal/NormalModeBrownian.cpp"
 
@@ -4053,7 +3777,7 @@ CMakeFiles/Library.dir/src/protomol/integrator/normal/NormalModeBrownian.cpp.o.p
 
 CMakeFiles/Library.dir/src/protomol/integrator/normal/NormalModeDamping.cpp.o: CMakeFiles/Library.dir/flags.make
 CMakeFiles/Library.dir/src/protomol/integrator/normal/NormalModeDamping.cpp.o: src/protomol/integrator/normal/NormalModeDamping.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/CMakeFiles" $(CMAKE_PROGRESS_175)
+	$(CMAKE_COMMAND) -E cmake_progress_report "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/CMakeFiles" $(CMAKE_PROGRESS_163)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/Library.dir/src/protomol/integrator/normal/NormalModeDamping.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/Library.dir/src/protomol/integrator/normal/NormalModeDamping.cpp.o -c "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/src/protomol/integrator/normal/NormalModeDamping.cpp"
 
@@ -4076,7 +3800,7 @@ CMakeFiles/Library.dir/src/protomol/integrator/normal/NormalModeDamping.cpp.o.pr
 
 CMakeFiles/Library.dir/src/protomol/integrator/normal/NormalModeRelax.cpp.o: CMakeFiles/Library.dir/flags.make
 CMakeFiles/Library.dir/src/protomol/integrator/normal/NormalModeRelax.cpp.o: src/protomol/integrator/normal/NormalModeRelax.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/CMakeFiles" $(CMAKE_PROGRESS_176)
+	$(CMAKE_COMMAND) -E cmake_progress_report "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/CMakeFiles" $(CMAKE_PROGRESS_164)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/Library.dir/src/protomol/integrator/normal/NormalModeRelax.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/Library.dir/src/protomol/integrator/normal/NormalModeRelax.cpp.o -c "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/src/protomol/integrator/normal/NormalModeRelax.cpp"
 
@@ -4099,7 +3823,7 @@ CMakeFiles/Library.dir/src/protomol/integrator/normal/NormalModeRelax.cpp.o.prov
 
 CMakeFiles/Library.dir/src/protomol/integrator/normal/NormalModeMinimizer.cpp.o: CMakeFiles/Library.dir/flags.make
 CMakeFiles/Library.dir/src/protomol/integrator/normal/NormalModeMinimizer.cpp.o: src/protomol/integrator/normal/NormalModeMinimizer.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/CMakeFiles" $(CMAKE_PROGRESS_177)
+	$(CMAKE_COMMAND) -E cmake_progress_report "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/CMakeFiles" $(CMAKE_PROGRESS_165)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/Library.dir/src/protomol/integrator/normal/NormalModeMinimizer.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/Library.dir/src/protomol/integrator/normal/NormalModeMinimizer.cpp.o -c "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/src/protomol/integrator/normal/NormalModeMinimizer.cpp"
 
@@ -4122,7 +3846,7 @@ CMakeFiles/Library.dir/src/protomol/integrator/normal/NormalModeMinimizer.cpp.o.
 
 CMakeFiles/Library.dir/src/protomol/integrator/normal/NormalModeUtilities.cpp.o: CMakeFiles/Library.dir/flags.make
 CMakeFiles/Library.dir/src/protomol/integrator/normal/NormalModeUtilities.cpp.o: src/protomol/integrator/normal/NormalModeUtilities.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/CMakeFiles" $(CMAKE_PROGRESS_178)
+	$(CMAKE_COMMAND) -E cmake_progress_report "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/CMakeFiles" $(CMAKE_PROGRESS_166)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/Library.dir/src/protomol/integrator/normal/NormalModeUtilities.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/Library.dir/src/protomol/integrator/normal/NormalModeUtilities.cpp.o -c "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/src/protomol/integrator/normal/NormalModeUtilities.cpp"
 
@@ -4145,7 +3869,7 @@ CMakeFiles/Library.dir/src/protomol/integrator/normal/NormalModeUtilities.cpp.o.
 
 CMakeFiles/Library.dir/src/protomol/integrator/normal/NormalModeLangevin.cpp.o: CMakeFiles/Library.dir/flags.make
 CMakeFiles/Library.dir/src/protomol/integrator/normal/NormalModeLangevin.cpp.o: src/protomol/integrator/normal/NormalModeLangevin.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/CMakeFiles" $(CMAKE_PROGRESS_179)
+	$(CMAKE_COMMAND) -E cmake_progress_report "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/CMakeFiles" $(CMAKE_PROGRESS_167)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/Library.dir/src/protomol/integrator/normal/NormalModeLangevin.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/Library.dir/src/protomol/integrator/normal/NormalModeLangevin.cpp.o -c "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/src/protomol/integrator/normal/NormalModeLangevin.cpp"
 
@@ -4168,7 +3892,7 @@ CMakeFiles/Library.dir/src/protomol/integrator/normal/NormalModeLangevin.cpp.o.p
 
 CMakeFiles/Library.dir/src/protomol/integrator/normal/NormalModeMori.cpp.o: CMakeFiles/Library.dir/flags.make
 CMakeFiles/Library.dir/src/protomol/integrator/normal/NormalModeMori.cpp.o: src/protomol/integrator/normal/NormalModeMori.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/CMakeFiles" $(CMAKE_PROGRESS_180)
+	$(CMAKE_COMMAND) -E cmake_progress_report "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/CMakeFiles" $(CMAKE_PROGRESS_168)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/Library.dir/src/protomol/integrator/normal/NormalModeMori.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/Library.dir/src/protomol/integrator/normal/NormalModeMori.cpp.o -c "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/src/protomol/integrator/normal/NormalModeMori.cpp"
 
@@ -4191,7 +3915,7 @@ CMakeFiles/Library.dir/src/protomol/integrator/normal/NormalModeMori.cpp.o.provi
 
 CMakeFiles/Library.dir/src/protomol/integrator/normal/NormalModeDiagonalize.cpp.o: CMakeFiles/Library.dir/flags.make
 CMakeFiles/Library.dir/src/protomol/integrator/normal/NormalModeDiagonalize.cpp.o: src/protomol/integrator/normal/NormalModeDiagonalize.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/CMakeFiles" $(CMAKE_PROGRESS_181)
+	$(CMAKE_COMMAND) -E cmake_progress_report "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/CMakeFiles" $(CMAKE_PROGRESS_169)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/Library.dir/src/protomol/integrator/normal/NormalModeDiagonalize.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/Library.dir/src/protomol/integrator/normal/NormalModeDiagonalize.cpp.o -c "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/src/protomol/integrator/normal/NormalModeDiagonalize.cpp"
 
@@ -4214,7 +3938,7 @@ CMakeFiles/Library.dir/src/protomol/integrator/normal/NormalModeDiagonalize.cpp.
 
 CMakeFiles/Library.dir/src/protomol/integrator/normal/NormalModeQuadratic.cpp.o: CMakeFiles/Library.dir/flags.make
 CMakeFiles/Library.dir/src/protomol/integrator/normal/NormalModeQuadratic.cpp.o: src/protomol/integrator/normal/NormalModeQuadratic.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/CMakeFiles" $(CMAKE_PROGRESS_182)
+	$(CMAKE_COMMAND) -E cmake_progress_report "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/CMakeFiles" $(CMAKE_PROGRESS_170)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/Library.dir/src/protomol/integrator/normal/NormalModeQuadratic.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/Library.dir/src/protomol/integrator/normal/NormalModeQuadratic.cpp.o -c "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/src/protomol/integrator/normal/NormalModeQuadratic.cpp"
 
@@ -4237,7 +3961,7 @@ CMakeFiles/Library.dir/src/protomol/integrator/normal/NormalModeQuadratic.cpp.o.
 
 CMakeFiles/Library.dir/src/protomol/io/PDBWriter.cpp.o: CMakeFiles/Library.dir/flags.make
 CMakeFiles/Library.dir/src/protomol/io/PDBWriter.cpp.o: src/protomol/io/PDBWriter.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/CMakeFiles" $(CMAKE_PROGRESS_183)
+	$(CMAKE_COMMAND) -E cmake_progress_report "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/CMakeFiles" $(CMAKE_PROGRESS_171)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/Library.dir/src/protomol/io/PDBWriter.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/Library.dir/src/protomol/io/PDBWriter.cpp.o -c "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/src/protomol/io/PDBWriter.cpp"
 
@@ -4260,7 +3984,7 @@ CMakeFiles/Library.dir/src/protomol/io/PDBWriter.cpp.o.provides.build: CMakeFile
 
 CMakeFiles/Library.dir/src/protomol/io/PosVelReader.cpp.o: CMakeFiles/Library.dir/flags.make
 CMakeFiles/Library.dir/src/protomol/io/PosVelReader.cpp.o: src/protomol/io/PosVelReader.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/CMakeFiles" $(CMAKE_PROGRESS_184)
+	$(CMAKE_COMMAND) -E cmake_progress_report "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/CMakeFiles" $(CMAKE_PROGRESS_172)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/Library.dir/src/protomol/io/PosVelReader.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/Library.dir/src/protomol/io/PosVelReader.cpp.o -c "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/src/protomol/io/PosVelReader.cpp"
 
@@ -4283,7 +4007,7 @@ CMakeFiles/Library.dir/src/protomol/io/PosVelReader.cpp.o.provides.build: CMakeF
 
 CMakeFiles/Library.dir/src/protomol/io/XYZTrajectoryReader.cpp.o: CMakeFiles/Library.dir/flags.make
 CMakeFiles/Library.dir/src/protomol/io/XYZTrajectoryReader.cpp.o: src/protomol/io/XYZTrajectoryReader.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/CMakeFiles" $(CMAKE_PROGRESS_185)
+	$(CMAKE_COMMAND) -E cmake_progress_report "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/CMakeFiles" $(CMAKE_PROGRESS_173)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/Library.dir/src/protomol/io/XYZTrajectoryReader.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/Library.dir/src/protomol/io/XYZTrajectoryReader.cpp.o -c "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/src/protomol/io/XYZTrajectoryReader.cpp"
 
@@ -4306,7 +4030,7 @@ CMakeFiles/Library.dir/src/protomol/io/XYZTrajectoryReader.cpp.o.provides.build:
 
 CMakeFiles/Library.dir/src/protomol/io/XYZBinReader.cpp.o: CMakeFiles/Library.dir/flags.make
 CMakeFiles/Library.dir/src/protomol/io/XYZBinReader.cpp.o: src/protomol/io/XYZBinReader.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/CMakeFiles" $(CMAKE_PROGRESS_186)
+	$(CMAKE_COMMAND) -E cmake_progress_report "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/CMakeFiles" $(CMAKE_PROGRESS_174)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/Library.dir/src/protomol/io/XYZBinReader.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/Library.dir/src/protomol/io/XYZBinReader.cpp.o -c "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/src/protomol/io/XYZBinReader.cpp"
 
@@ -4329,7 +4053,7 @@ CMakeFiles/Library.dir/src/protomol/io/XYZBinReader.cpp.o.provides.build: CMakeF
 
 CMakeFiles/Library.dir/src/protomol/io/PSFReader.cpp.o: CMakeFiles/Library.dir/flags.make
 CMakeFiles/Library.dir/src/protomol/io/PSFReader.cpp.o: src/protomol/io/PSFReader.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/CMakeFiles" $(CMAKE_PROGRESS_187)
+	$(CMAKE_COMMAND) -E cmake_progress_report "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/CMakeFiles" $(CMAKE_PROGRESS_175)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/Library.dir/src/protomol/io/PSFReader.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/Library.dir/src/protomol/io/PSFReader.cpp.o -c "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/src/protomol/io/PSFReader.cpp"
 
@@ -4352,7 +4076,7 @@ CMakeFiles/Library.dir/src/protomol/io/PSFReader.cpp.o.provides.build: CMakeFile
 
 CMakeFiles/Library.dir/src/protomol/io/Reader.cpp.o: CMakeFiles/Library.dir/flags.make
 CMakeFiles/Library.dir/src/protomol/io/Reader.cpp.o: src/protomol/io/Reader.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/CMakeFiles" $(CMAKE_PROGRESS_188)
+	$(CMAKE_COMMAND) -E cmake_progress_report "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/CMakeFiles" $(CMAKE_PROGRESS_176)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/Library.dir/src/protomol/io/Reader.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/Library.dir/src/protomol/io/Reader.cpp.o -c "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/src/protomol/io/Reader.cpp"
 
@@ -4375,7 +4099,7 @@ CMakeFiles/Library.dir/src/protomol/io/Reader.cpp.o.provides.build: CMakeFiles/L
 
 CMakeFiles/Library.dir/src/protomol/io/EigenvectorTextReader.cpp.o: CMakeFiles/Library.dir/flags.make
 CMakeFiles/Library.dir/src/protomol/io/EigenvectorTextReader.cpp.o: src/protomol/io/EigenvectorTextReader.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/CMakeFiles" $(CMAKE_PROGRESS_189)
+	$(CMAKE_COMMAND) -E cmake_progress_report "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/CMakeFiles" $(CMAKE_PROGRESS_177)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/Library.dir/src/protomol/io/EigenvectorTextReader.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/Library.dir/src/protomol/io/EigenvectorTextReader.cpp.o -c "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/src/protomol/io/EigenvectorTextReader.cpp"
 
@@ -4398,7 +4122,7 @@ CMakeFiles/Library.dir/src/protomol/io/EigenvectorTextReader.cpp.o.provides.buil
 
 CMakeFiles/Library.dir/src/protomol/io/LuaConfigReader.cpp.o: CMakeFiles/Library.dir/flags.make
 CMakeFiles/Library.dir/src/protomol/io/LuaConfigReader.cpp.o: src/protomol/io/LuaConfigReader.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/CMakeFiles" $(CMAKE_PROGRESS_190)
+	$(CMAKE_COMMAND) -E cmake_progress_report "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/CMakeFiles" $(CMAKE_PROGRESS_178)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/Library.dir/src/protomol/io/LuaConfigReader.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/Library.dir/src/protomol/io/LuaConfigReader.cpp.o -c "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/src/protomol/io/LuaConfigReader.cpp"
 
@@ -4421,7 +4145,7 @@ CMakeFiles/Library.dir/src/protomol/io/LuaConfigReader.cpp.o.provides.build: CMa
 
 CMakeFiles/Library.dir/src/protomol/io/Writer.cpp.o: CMakeFiles/Library.dir/flags.make
 CMakeFiles/Library.dir/src/protomol/io/Writer.cpp.o: src/protomol/io/Writer.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/CMakeFiles" $(CMAKE_PROGRESS_191)
+	$(CMAKE_COMMAND) -E cmake_progress_report "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/CMakeFiles" $(CMAKE_PROGRESS_179)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/Library.dir/src/protomol/io/Writer.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/Library.dir/src/protomol/io/Writer.cpp.o -c "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/src/protomol/io/Writer.cpp"
 
@@ -4444,7 +4168,7 @@ CMakeFiles/Library.dir/src/protomol/io/Writer.cpp.o.provides.build: CMakeFiles/L
 
 CMakeFiles/Library.dir/src/protomol/io/PDBReader.cpp.o: CMakeFiles/Library.dir/flags.make
 CMakeFiles/Library.dir/src/protomol/io/PDBReader.cpp.o: src/protomol/io/PDBReader.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/CMakeFiles" $(CMAKE_PROGRESS_192)
+	$(CMAKE_COMMAND) -E cmake_progress_report "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/CMakeFiles" $(CMAKE_PROGRESS_180)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/Library.dir/src/protomol/io/PDBReader.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/Library.dir/src/protomol/io/PDBReader.cpp.o -c "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/src/protomol/io/PDBReader.cpp"
 
@@ -4467,7 +4191,7 @@ CMakeFiles/Library.dir/src/protomol/io/PDBReader.cpp.o.provides.build: CMakeFile
 
 CMakeFiles/Library.dir/src/protomol/io/CheckpointConfigReader.cpp.o: CMakeFiles/Library.dir/flags.make
 CMakeFiles/Library.dir/src/protomol/io/CheckpointConfigReader.cpp.o: src/protomol/io/CheckpointConfigReader.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/CMakeFiles" $(CMAKE_PROGRESS_193)
+	$(CMAKE_COMMAND) -E cmake_progress_report "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/CMakeFiles" $(CMAKE_PROGRESS_181)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/Library.dir/src/protomol/io/CheckpointConfigReader.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/Library.dir/src/protomol/io/CheckpointConfigReader.cpp.o -c "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/src/protomol/io/CheckpointConfigReader.cpp"
 
@@ -4490,7 +4214,7 @@ CMakeFiles/Library.dir/src/protomol/io/CheckpointConfigReader.cpp.o.provides.bui
 
 CMakeFiles/Library.dir/src/protomol/io/XYZReader.cpp.o: CMakeFiles/Library.dir/flags.make
 CMakeFiles/Library.dir/src/protomol/io/XYZReader.cpp.o: src/protomol/io/XYZReader.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/CMakeFiles" $(CMAKE_PROGRESS_194)
+	$(CMAKE_COMMAND) -E cmake_progress_report "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/CMakeFiles" $(CMAKE_PROGRESS_182)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/Library.dir/src/protomol/io/XYZReader.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/Library.dir/src/protomol/io/XYZReader.cpp.o -c "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/src/protomol/io/XYZReader.cpp"
 
@@ -4513,7 +4237,7 @@ CMakeFiles/Library.dir/src/protomol/io/XYZReader.cpp.o.provides.build: CMakeFile
 
 CMakeFiles/Library.dir/src/protomol/io/DCDTrajectoryWriter.cpp.o: CMakeFiles/Library.dir/flags.make
 CMakeFiles/Library.dir/src/protomol/io/DCDTrajectoryWriter.cpp.o: src/protomol/io/DCDTrajectoryWriter.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/CMakeFiles" $(CMAKE_PROGRESS_195)
+	$(CMAKE_COMMAND) -E cmake_progress_report "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/CMakeFiles" $(CMAKE_PROGRESS_183)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/Library.dir/src/protomol/io/DCDTrajectoryWriter.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/Library.dir/src/protomol/io/DCDTrajectoryWriter.cpp.o -c "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/src/protomol/io/DCDTrajectoryWriter.cpp"
 
@@ -4536,7 +4260,7 @@ CMakeFiles/Library.dir/src/protomol/io/DCDTrajectoryWriter.cpp.o.provides.build:
 
 CMakeFiles/Library.dir/src/protomol/io/SCPISMReader.cpp.o: CMakeFiles/Library.dir/flags.make
 CMakeFiles/Library.dir/src/protomol/io/SCPISMReader.cpp.o: src/protomol/io/SCPISMReader.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/CMakeFiles" $(CMAKE_PROGRESS_196)
+	$(CMAKE_COMMAND) -E cmake_progress_report "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/CMakeFiles" $(CMAKE_PROGRESS_184)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/Library.dir/src/protomol/io/SCPISMReader.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/Library.dir/src/protomol/io/SCPISMReader.cpp.o -c "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/src/protomol/io/SCPISMReader.cpp"
 
@@ -4559,7 +4283,7 @@ CMakeFiles/Library.dir/src/protomol/io/SCPISMReader.cpp.o.provides.build: CMakeF
 
 CMakeFiles/Library.dir/src/protomol/io/File.cpp.o: CMakeFiles/Library.dir/flags.make
 CMakeFiles/Library.dir/src/protomol/io/File.cpp.o: src/protomol/io/File.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/CMakeFiles" $(CMAKE_PROGRESS_197)
+	$(CMAKE_COMMAND) -E cmake_progress_report "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/CMakeFiles" $(CMAKE_PROGRESS_185)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/Library.dir/src/protomol/io/File.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/Library.dir/src/protomol/io/File.cpp.o -c "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/src/protomol/io/File.cpp"
 
@@ -4582,7 +4306,7 @@ CMakeFiles/Library.dir/src/protomol/io/File.cpp.o.provides.build: CMakeFiles/Lib
 
 CMakeFiles/Library.dir/src/protomol/io/PARReader.cpp.o: CMakeFiles/Library.dir/flags.make
 CMakeFiles/Library.dir/src/protomol/io/PARReader.cpp.o: src/protomol/io/PARReader.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/CMakeFiles" $(CMAKE_PROGRESS_198)
+	$(CMAKE_COMMAND) -E cmake_progress_report "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/CMakeFiles" $(CMAKE_PROGRESS_186)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/Library.dir/src/protomol/io/PARReader.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/Library.dir/src/protomol/io/PARReader.cpp.o -c "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/src/protomol/io/PARReader.cpp"
 
@@ -4605,7 +4329,7 @@ CMakeFiles/Library.dir/src/protomol/io/PARReader.cpp.o.provides.build: CMakeFile
 
 CMakeFiles/Library.dir/src/protomol/io/DCDTrajectoryReader.cpp.o: CMakeFiles/Library.dir/flags.make
 CMakeFiles/Library.dir/src/protomol/io/DCDTrajectoryReader.cpp.o: src/protomol/io/DCDTrajectoryReader.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/CMakeFiles" $(CMAKE_PROGRESS_199)
+	$(CMAKE_COMMAND) -E cmake_progress_report "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/CMakeFiles" $(CMAKE_PROGRESS_187)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/Library.dir/src/protomol/io/DCDTrajectoryReader.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/Library.dir/src/protomol/io/DCDTrajectoryReader.cpp.o -c "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/src/protomol/io/DCDTrajectoryReader.cpp"
 
@@ -4628,7 +4352,7 @@ CMakeFiles/Library.dir/src/protomol/io/DCDTrajectoryReader.cpp.o.provides.build:
 
 CMakeFiles/Library.dir/src/protomol/io/ConfigurationReader.cpp.o: CMakeFiles/Library.dir/flags.make
 CMakeFiles/Library.dir/src/protomol/io/ConfigurationReader.cpp.o: src/protomol/io/ConfigurationReader.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/CMakeFiles" $(CMAKE_PROGRESS_200)
+	$(CMAKE_COMMAND) -E cmake_progress_report "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/CMakeFiles" $(CMAKE_PROGRESS_188)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/Library.dir/src/protomol/io/ConfigurationReader.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/Library.dir/src/protomol/io/ConfigurationReader.cpp.o -c "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/src/protomol/io/ConfigurationReader.cpp"
 
@@ -4651,7 +4375,7 @@ CMakeFiles/Library.dir/src/protomol/io/ConfigurationReader.cpp.o.provides.build:
 
 CMakeFiles/Library.dir/src/protomol/io/XYZTrajectoryWriter.cpp.o: CMakeFiles/Library.dir/flags.make
 CMakeFiles/Library.dir/src/protomol/io/XYZTrajectoryWriter.cpp.o: src/protomol/io/XYZTrajectoryWriter.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/CMakeFiles" $(CMAKE_PROGRESS_201)
+	$(CMAKE_COMMAND) -E cmake_progress_report "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/CMakeFiles" $(CMAKE_PROGRESS_189)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/Library.dir/src/protomol/io/XYZTrajectoryWriter.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/Library.dir/src/protomol/io/XYZTrajectoryWriter.cpp.o -c "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/src/protomol/io/XYZTrajectoryWriter.cpp"
 
@@ -4674,7 +4398,7 @@ CMakeFiles/Library.dir/src/protomol/io/XYZTrajectoryWriter.cpp.o.provides.build:
 
 CMakeFiles/Library.dir/src/protomol/io/CheckpointConfigWriter.cpp.o: CMakeFiles/Library.dir/flags.make
 CMakeFiles/Library.dir/src/protomol/io/CheckpointConfigWriter.cpp.o: src/protomol/io/CheckpointConfigWriter.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/CMakeFiles" $(CMAKE_PROGRESS_202)
+	$(CMAKE_COMMAND) -E cmake_progress_report "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/CMakeFiles" $(CMAKE_PROGRESS_190)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/Library.dir/src/protomol/io/CheckpointConfigWriter.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/Library.dir/src/protomol/io/CheckpointConfigWriter.cpp.o -c "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/src/protomol/io/CheckpointConfigWriter.cpp"
 
@@ -4697,7 +4421,7 @@ CMakeFiles/Library.dir/src/protomol/io/CheckpointConfigWriter.cpp.o.provides.bui
 
 CMakeFiles/Library.dir/src/protomol/io/PosVelReaderType.cpp.o: CMakeFiles/Library.dir/flags.make
 CMakeFiles/Library.dir/src/protomol/io/PosVelReaderType.cpp.o: src/protomol/io/PosVelReaderType.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/CMakeFiles" $(CMAKE_PROGRESS_203)
+	$(CMAKE_COMMAND) -E cmake_progress_report "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/CMakeFiles" $(CMAKE_PROGRESS_191)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/Library.dir/src/protomol/io/PosVelReaderType.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/Library.dir/src/protomol/io/PosVelReaderType.cpp.o -c "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/src/protomol/io/PosVelReaderType.cpp"
 
@@ -4720,7 +4444,7 @@ CMakeFiles/Library.dir/src/protomol/io/PosVelReaderType.cpp.o.provides.build: CM
 
 CMakeFiles/Library.dir/src/protomol/io/XYZWriter.cpp.o: CMakeFiles/Library.dir/flags.make
 CMakeFiles/Library.dir/src/protomol/io/XYZWriter.cpp.o: src/protomol/io/XYZWriter.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/CMakeFiles" $(CMAKE_PROGRESS_204)
+	$(CMAKE_COMMAND) -E cmake_progress_report "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/CMakeFiles" $(CMAKE_PROGRESS_192)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/Library.dir/src/protomol/io/XYZWriter.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/Library.dir/src/protomol/io/XYZWriter.cpp.o -c "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/src/protomol/io/XYZWriter.cpp"
 
@@ -4743,7 +4467,7 @@ CMakeFiles/Library.dir/src/protomol/io/XYZWriter.cpp.o.provides.build: CMakeFile
 
 CMakeFiles/Library.dir/src/protomol/io/EigenvectorReader.cpp.o: CMakeFiles/Library.dir/flags.make
 CMakeFiles/Library.dir/src/protomol/io/EigenvectorReader.cpp.o: src/protomol/io/EigenvectorReader.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/CMakeFiles" $(CMAKE_PROGRESS_205)
+	$(CMAKE_COMMAND) -E cmake_progress_report "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/CMakeFiles" $(CMAKE_PROGRESS_193)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/Library.dir/src/protomol/io/EigenvectorReader.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/Library.dir/src/protomol/io/EigenvectorReader.cpp.o -c "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/src/protomol/io/EigenvectorReader.cpp"
 
@@ -4766,7 +4490,7 @@ CMakeFiles/Library.dir/src/protomol/io/EigenvectorReader.cpp.o.provides.build: C
 
 CMakeFiles/Library.dir/src/protomol/io/gromacs/GromacsTopologyReader.cpp.o: CMakeFiles/Library.dir/flags.make
 CMakeFiles/Library.dir/src/protomol/io/gromacs/GromacsTopologyReader.cpp.o: src/protomol/io/gromacs/GromacsTopologyReader.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/CMakeFiles" $(CMAKE_PROGRESS_206)
+	$(CMAKE_COMMAND) -E cmake_progress_report "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/CMakeFiles" $(CMAKE_PROGRESS_194)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/Library.dir/src/protomol/io/gromacs/GromacsTopologyReader.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/Library.dir/src/protomol/io/gromacs/GromacsTopologyReader.cpp.o -c "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/src/protomol/io/gromacs/GromacsTopologyReader.cpp"
 
@@ -4789,7 +4513,7 @@ CMakeFiles/Library.dir/src/protomol/io/gromacs/GromacsTopologyReader.cpp.o.provi
 
 CMakeFiles/Library.dir/src/protomol/io/gromacs/GromacsNonbondedParameterFileReader.cpp.o: CMakeFiles/Library.dir/flags.make
 CMakeFiles/Library.dir/src/protomol/io/gromacs/GromacsNonbondedParameterFileReader.cpp.o: src/protomol/io/gromacs/GromacsNonbondedParameterFileReader.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/CMakeFiles" $(CMAKE_PROGRESS_207)
+	$(CMAKE_COMMAND) -E cmake_progress_report "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/CMakeFiles" $(CMAKE_PROGRESS_195)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/Library.dir/src/protomol/io/gromacs/GromacsNonbondedParameterFileReader.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/Library.dir/src/protomol/io/gromacs/GromacsNonbondedParameterFileReader.cpp.o -c "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/src/protomol/io/gromacs/GromacsNonbondedParameterFileReader.cpp"
 
@@ -4812,7 +4536,7 @@ CMakeFiles/Library.dir/src/protomol/io/gromacs/GromacsNonbondedParameterFileRead
 
 CMakeFiles/Library.dir/src/protomol/io/gromacs/GromacsBondedParameterFileReader.cpp.o: CMakeFiles/Library.dir/flags.make
 CMakeFiles/Library.dir/src/protomol/io/gromacs/GromacsBondedParameterFileReader.cpp.o: src/protomol/io/gromacs/GromacsBondedParameterFileReader.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/CMakeFiles" $(CMAKE_PROGRESS_208)
+	$(CMAKE_COMMAND) -E cmake_progress_report "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/CMakeFiles" $(CMAKE_PROGRESS_196)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/Library.dir/src/protomol/io/gromacs/GromacsBondedParameterFileReader.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/Library.dir/src/protomol/io/gromacs/GromacsBondedParameterFileReader.cpp.o -c "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/src/protomol/io/gromacs/GromacsBondedParameterFileReader.cpp"
 
@@ -4835,7 +4559,7 @@ CMakeFiles/Library.dir/src/protomol/io/gromacs/GromacsBondedParameterFileReader.
 
 CMakeFiles/Library.dir/src/protomol/io/gromacs/PortGromacsParameters.cpp.o: CMakeFiles/Library.dir/flags.make
 CMakeFiles/Library.dir/src/protomol/io/gromacs/PortGromacsParameters.cpp.o: src/protomol/io/gromacs/PortGromacsParameters.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/CMakeFiles" $(CMAKE_PROGRESS_209)
+	$(CMAKE_COMMAND) -E cmake_progress_report "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/CMakeFiles" $(CMAKE_PROGRESS_197)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/Library.dir/src/protomol/io/gromacs/PortGromacsParameters.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/Library.dir/src/protomol/io/gromacs/PortGromacsParameters.cpp.o -c "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/src/protomol/io/gromacs/PortGromacsParameters.cpp"
 
@@ -4858,7 +4582,7 @@ CMakeFiles/Library.dir/src/protomol/io/gromacs/PortGromacsParameters.cpp.o.provi
 
 CMakeFiles/Library.dir/src/protomol/io/gromacs/GromacsGBParameterFileReader.cpp.o: CMakeFiles/Library.dir/flags.make
 CMakeFiles/Library.dir/src/protomol/io/gromacs/GromacsGBParameterFileReader.cpp.o: src/protomol/io/gromacs/GromacsGBParameterFileReader.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/CMakeFiles" $(CMAKE_PROGRESS_210)
+	$(CMAKE_COMMAND) -E cmake_progress_report "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/CMakeFiles" $(CMAKE_PROGRESS_198)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/Library.dir/src/protomol/io/gromacs/GromacsGBParameterFileReader.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/Library.dir/src/protomol/io/gromacs/GromacsGBParameterFileReader.cpp.o -c "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/src/protomol/io/gromacs/GromacsGBParameterFileReader.cpp"
 
@@ -4881,7 +4605,7 @@ CMakeFiles/Library.dir/src/protomol/io/gromacs/GromacsGBParameterFileReader.cpp.
 
 CMakeFiles/Library.dir/src/protomol/io/gromacs/GromacsParameterFileReader.cpp.o: CMakeFiles/Library.dir/flags.make
 CMakeFiles/Library.dir/src/protomol/io/gromacs/GromacsParameterFileReader.cpp.o: src/protomol/io/gromacs/GromacsParameterFileReader.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/CMakeFiles" $(CMAKE_PROGRESS_211)
+	$(CMAKE_COMMAND) -E cmake_progress_report "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/CMakeFiles" $(CMAKE_PROGRESS_199)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/Library.dir/src/protomol/io/gromacs/GromacsParameterFileReader.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/Library.dir/src/protomol/io/gromacs/GromacsParameterFileReader.cpp.o -c "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/src/protomol/io/gromacs/GromacsParameterFileReader.cpp"
 
@@ -4902,9 +4626,124 @@ CMakeFiles/Library.dir/src/protomol/io/gromacs/GromacsParameterFileReader.cpp.o.
 
 CMakeFiles/Library.dir/src/protomol/io/gromacs/GromacsParameterFileReader.cpp.o.provides.build: CMakeFiles/Library.dir/src/protomol/io/gromacs/GromacsParameterFileReader.cpp.o
 
+CMakeFiles/Library.dir/src/protomol/addon/LeapfrogBufferGasIntegrator.cpp.o: CMakeFiles/Library.dir/flags.make
+CMakeFiles/Library.dir/src/protomol/addon/LeapfrogBufferGasIntegrator.cpp.o: src/protomol/addon/LeapfrogBufferGasIntegrator.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/CMakeFiles" $(CMAKE_PROGRESS_200)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/Library.dir/src/protomol/addon/LeapfrogBufferGasIntegrator.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/Library.dir/src/protomol/addon/LeapfrogBufferGasIntegrator.cpp.o -c "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/src/protomol/addon/LeapfrogBufferGasIntegrator.cpp"
+
+CMakeFiles/Library.dir/src/protomol/addon/LeapfrogBufferGasIntegrator.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Library.dir/src/protomol/addon/LeapfrogBufferGasIntegrator.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/src/protomol/addon/LeapfrogBufferGasIntegrator.cpp" > CMakeFiles/Library.dir/src/protomol/addon/LeapfrogBufferGasIntegrator.cpp.i
+
+CMakeFiles/Library.dir/src/protomol/addon/LeapfrogBufferGasIntegrator.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Library.dir/src/protomol/addon/LeapfrogBufferGasIntegrator.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/src/protomol/addon/LeapfrogBufferGasIntegrator.cpp" -o CMakeFiles/Library.dir/src/protomol/addon/LeapfrogBufferGasIntegrator.cpp.s
+
+CMakeFiles/Library.dir/src/protomol/addon/LeapfrogBufferGasIntegrator.cpp.o.requires:
+.PHONY : CMakeFiles/Library.dir/src/protomol/addon/LeapfrogBufferGasIntegrator.cpp.o.requires
+
+CMakeFiles/Library.dir/src/protomol/addon/LeapfrogBufferGasIntegrator.cpp.o.provides: CMakeFiles/Library.dir/src/protomol/addon/LeapfrogBufferGasIntegrator.cpp.o.requires
+	$(MAKE) -f CMakeFiles/Library.dir/build.make CMakeFiles/Library.dir/src/protomol/addon/LeapfrogBufferGasIntegrator.cpp.o.provides.build
+.PHONY : CMakeFiles/Library.dir/src/protomol/addon/LeapfrogBufferGasIntegrator.cpp.o.provides
+
+CMakeFiles/Library.dir/src/protomol/addon/LeapfrogBufferGasIntegrator.cpp.o.provides.build: CMakeFiles/Library.dir/src/protomol/addon/LeapfrogBufferGasIntegrator.cpp.o
+
+CMakeFiles/Library.dir/src/protomol/addon/LuaState.cpp.o: CMakeFiles/Library.dir/flags.make
+CMakeFiles/Library.dir/src/protomol/addon/LuaState.cpp.o: src/protomol/addon/LuaState.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/CMakeFiles" $(CMAKE_PROGRESS_201)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/Library.dir/src/protomol/addon/LuaState.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/Library.dir/src/protomol/addon/LuaState.cpp.o -c "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/src/protomol/addon/LuaState.cpp"
+
+CMakeFiles/Library.dir/src/protomol/addon/LuaState.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Library.dir/src/protomol/addon/LuaState.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/src/protomol/addon/LuaState.cpp" > CMakeFiles/Library.dir/src/protomol/addon/LuaState.cpp.i
+
+CMakeFiles/Library.dir/src/protomol/addon/LuaState.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Library.dir/src/protomol/addon/LuaState.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/src/protomol/addon/LuaState.cpp" -o CMakeFiles/Library.dir/src/protomol/addon/LuaState.cpp.s
+
+CMakeFiles/Library.dir/src/protomol/addon/LuaState.cpp.o.requires:
+.PHONY : CMakeFiles/Library.dir/src/protomol/addon/LuaState.cpp.o.requires
+
+CMakeFiles/Library.dir/src/protomol/addon/LuaState.cpp.o.provides: CMakeFiles/Library.dir/src/protomol/addon/LuaState.cpp.o.requires
+	$(MAKE) -f CMakeFiles/Library.dir/build.make CMakeFiles/Library.dir/src/protomol/addon/LuaState.cpp.o.provides.build
+.PHONY : CMakeFiles/Library.dir/src/protomol/addon/LuaState.cpp.o.provides
+
+CMakeFiles/Library.dir/src/protomol/addon/LuaState.cpp.o.provides.build: CMakeFiles/Library.dir/src/protomol/addon/LuaState.cpp.o
+
+CMakeFiles/Library.dir/src/protomol/addon/Snapshot.cpp.o: CMakeFiles/Library.dir/flags.make
+CMakeFiles/Library.dir/src/protomol/addon/Snapshot.cpp.o: src/protomol/addon/Snapshot.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/CMakeFiles" $(CMAKE_PROGRESS_202)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/Library.dir/src/protomol/addon/Snapshot.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/Library.dir/src/protomol/addon/Snapshot.cpp.o -c "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/src/protomol/addon/Snapshot.cpp"
+
+CMakeFiles/Library.dir/src/protomol/addon/Snapshot.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Library.dir/src/protomol/addon/Snapshot.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/src/protomol/addon/Snapshot.cpp" > CMakeFiles/Library.dir/src/protomol/addon/Snapshot.cpp.i
+
+CMakeFiles/Library.dir/src/protomol/addon/Snapshot.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Library.dir/src/protomol/addon/Snapshot.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/src/protomol/addon/Snapshot.cpp" -o CMakeFiles/Library.dir/src/protomol/addon/Snapshot.cpp.s
+
+CMakeFiles/Library.dir/src/protomol/addon/Snapshot.cpp.o.requires:
+.PHONY : CMakeFiles/Library.dir/src/protomol/addon/Snapshot.cpp.o.requires
+
+CMakeFiles/Library.dir/src/protomol/addon/Snapshot.cpp.o.provides: CMakeFiles/Library.dir/src/protomol/addon/Snapshot.cpp.o.requires
+	$(MAKE) -f CMakeFiles/Library.dir/build.make CMakeFiles/Library.dir/src/protomol/addon/Snapshot.cpp.o.provides.build
+.PHONY : CMakeFiles/Library.dir/src/protomol/addon/Snapshot.cpp.o.provides
+
+CMakeFiles/Library.dir/src/protomol/addon/Snapshot.cpp.o.provides.build: CMakeFiles/Library.dir/src/protomol/addon/Snapshot.cpp.o
+
+CMakeFiles/Library.dir/src/protomol/addon/LinearPaulTrap.cpp.o: CMakeFiles/Library.dir/flags.make
+CMakeFiles/Library.dir/src/protomol/addon/LinearPaulTrap.cpp.o: src/protomol/addon/LinearPaulTrap.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/CMakeFiles" $(CMAKE_PROGRESS_203)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/Library.dir/src/protomol/addon/LinearPaulTrap.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/Library.dir/src/protomol/addon/LinearPaulTrap.cpp.o -c "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/src/protomol/addon/LinearPaulTrap.cpp"
+
+CMakeFiles/Library.dir/src/protomol/addon/LinearPaulTrap.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Library.dir/src/protomol/addon/LinearPaulTrap.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/src/protomol/addon/LinearPaulTrap.cpp" > CMakeFiles/Library.dir/src/protomol/addon/LinearPaulTrap.cpp.i
+
+CMakeFiles/Library.dir/src/protomol/addon/LinearPaulTrap.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Library.dir/src/protomol/addon/LinearPaulTrap.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/src/protomol/addon/LinearPaulTrap.cpp" -o CMakeFiles/Library.dir/src/protomol/addon/LinearPaulTrap.cpp.s
+
+CMakeFiles/Library.dir/src/protomol/addon/LinearPaulTrap.cpp.o.requires:
+.PHONY : CMakeFiles/Library.dir/src/protomol/addon/LinearPaulTrap.cpp.o.requires
+
+CMakeFiles/Library.dir/src/protomol/addon/LinearPaulTrap.cpp.o.provides: CMakeFiles/Library.dir/src/protomol/addon/LinearPaulTrap.cpp.o.requires
+	$(MAKE) -f CMakeFiles/Library.dir/build.make CMakeFiles/Library.dir/src/protomol/addon/LinearPaulTrap.cpp.o.provides.build
+.PHONY : CMakeFiles/Library.dir/src/protomol/addon/LinearPaulTrap.cpp.o.provides
+
+CMakeFiles/Library.dir/src/protomol/addon/LinearPaulTrap.cpp.o.provides.build: CMakeFiles/Library.dir/src/protomol/addon/LinearPaulTrap.cpp.o
+
+CMakeFiles/Library.dir/src/protomol/addon/Mathieu.cpp.o: CMakeFiles/Library.dir/flags.make
+CMakeFiles/Library.dir/src/protomol/addon/Mathieu.cpp.o: src/protomol/addon/Mathieu.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/CMakeFiles" $(CMAKE_PROGRESS_204)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/Library.dir/src/protomol/addon/Mathieu.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/Library.dir/src/protomol/addon/Mathieu.cpp.o -c "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/src/protomol/addon/Mathieu.cpp"
+
+CMakeFiles/Library.dir/src/protomol/addon/Mathieu.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Library.dir/src/protomol/addon/Mathieu.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/src/protomol/addon/Mathieu.cpp" > CMakeFiles/Library.dir/src/protomol/addon/Mathieu.cpp.i
+
+CMakeFiles/Library.dir/src/protomol/addon/Mathieu.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Library.dir/src/protomol/addon/Mathieu.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/src/protomol/addon/Mathieu.cpp" -o CMakeFiles/Library.dir/src/protomol/addon/Mathieu.cpp.s
+
+CMakeFiles/Library.dir/src/protomol/addon/Mathieu.cpp.o.requires:
+.PHONY : CMakeFiles/Library.dir/src/protomol/addon/Mathieu.cpp.o.requires
+
+CMakeFiles/Library.dir/src/protomol/addon/Mathieu.cpp.o.provides: CMakeFiles/Library.dir/src/protomol/addon/Mathieu.cpp.o.requires
+	$(MAKE) -f CMakeFiles/Library.dir/build.make CMakeFiles/Library.dir/src/protomol/addon/Mathieu.cpp.o.provides.build
+.PHONY : CMakeFiles/Library.dir/src/protomol/addon/Mathieu.cpp.o.provides
+
+CMakeFiles/Library.dir/src/protomol/addon/Mathieu.cpp.o.provides.build: CMakeFiles/Library.dir/src/protomol/addon/Mathieu.cpp.o
+
 CMakeFiles/Library.dir/src/protomol/addon/BufferGas.cpp.o: CMakeFiles/Library.dir/flags.make
 CMakeFiles/Library.dir/src/protomol/addon/BufferGas.cpp.o: src/protomol/addon/BufferGas.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/CMakeFiles" $(CMAKE_PROGRESS_212)
+	$(CMAKE_COMMAND) -E cmake_progress_report "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/CMakeFiles" $(CMAKE_PROGRESS_205)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/Library.dir/src/protomol/addon/BufferGas.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/Library.dir/src/protomol/addon/BufferGas.cpp.o -c "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/src/protomol/addon/BufferGas.cpp"
 
@@ -4924,6 +4763,29 @@ CMakeFiles/Library.dir/src/protomol/addon/BufferGas.cpp.o.provides: CMakeFiles/L
 .PHONY : CMakeFiles/Library.dir/src/protomol/addon/BufferGas.cpp.o.provides
 
 CMakeFiles/Library.dir/src/protomol/addon/BufferGas.cpp.o.provides.build: CMakeFiles/Library.dir/src/protomol/addon/BufferGas.cpp.o
+
+CMakeFiles/Library.dir/src/protomol/addon/OutputIonSnapshot.cpp.o: CMakeFiles/Library.dir/flags.make
+CMakeFiles/Library.dir/src/protomol/addon/OutputIonSnapshot.cpp.o: src/protomol/addon/OutputIonSnapshot.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/CMakeFiles" $(CMAKE_PROGRESS_206)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/Library.dir/src/protomol/addon/OutputIonSnapshot.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/Library.dir/src/protomol/addon/OutputIonSnapshot.cpp.o -c "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/src/protomol/addon/OutputIonSnapshot.cpp"
+
+CMakeFiles/Library.dir/src/protomol/addon/OutputIonSnapshot.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Library.dir/src/protomol/addon/OutputIonSnapshot.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/src/protomol/addon/OutputIonSnapshot.cpp" > CMakeFiles/Library.dir/src/protomol/addon/OutputIonSnapshot.cpp.i
+
+CMakeFiles/Library.dir/src/protomol/addon/OutputIonSnapshot.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Library.dir/src/protomol/addon/OutputIonSnapshot.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/src/protomol/addon/OutputIonSnapshot.cpp" -o CMakeFiles/Library.dir/src/protomol/addon/OutputIonSnapshot.cpp.s
+
+CMakeFiles/Library.dir/src/protomol/addon/OutputIonSnapshot.cpp.o.requires:
+.PHONY : CMakeFiles/Library.dir/src/protomol/addon/OutputIonSnapshot.cpp.o.requires
+
+CMakeFiles/Library.dir/src/protomol/addon/OutputIonSnapshot.cpp.o.provides: CMakeFiles/Library.dir/src/protomol/addon/OutputIonSnapshot.cpp.o.requires
+	$(MAKE) -f CMakeFiles/Library.dir/build.make CMakeFiles/Library.dir/src/protomol/addon/OutputIonSnapshot.cpp.o.provides.build
+.PHONY : CMakeFiles/Library.dir/src/protomol/addon/OutputIonSnapshot.cpp.o.provides
+
+CMakeFiles/Library.dir/src/protomol/addon/OutputIonSnapshot.cpp.o.provides.build: CMakeFiles/Library.dir/src/protomol/addon/OutputIonSnapshot.cpp.o
 
 # Object files for target Library
 Library_OBJECTS = \
@@ -4980,34 +4842,23 @@ Library_OBJECTS = \
 "CMakeFiles/Library.dir/src/protomol/module/NonbondedFullElectrostaticForceModule.cpp.o" \
 "CMakeFiles/Library.dir/src/protomol/module/HessianIntegratorModule.cpp.o" \
 "CMakeFiles/Library.dir/src/protomol/output/OutputCache.cpp.o" \
-"CMakeFiles/Library.dir/src/protomol/output/lqt_with_ec.cpp.o" \
-"CMakeFiles/Library.dir/src/protomol/output/OutputVelPos.cpp.o" \
 "CMakeFiles/Library.dir/src/protomol/output/OutputCheckpoint.cpp.o" \
-"CMakeFiles/Library.dir/src/protomol/output/LuaState.cpp.o" \
-"CMakeFiles/Library.dir/src/protomol/output/Snapshot.cpp.o" \
 "CMakeFiles/Library.dir/src/protomol/output/OutputXYZTrajectoryVel.cpp.o" \
-"CMakeFiles/Library.dir/src/protomol/output/OutputVelPosLS.cpp.o" \
 "CMakeFiles/Library.dir/src/protomol/output/Output.cpp.o" \
-"CMakeFiles/Library.dir/src/protomol/output/OutputVelPosKE.cpp.o" \
 "CMakeFiles/Library.dir/src/protomol/output/OutputFinalXYZVel.cpp.o" \
 "CMakeFiles/Library.dir/src/protomol/output/OutputEnergies.cpp.o" \
 "CMakeFiles/Library.dir/src/protomol/output/OutputFinalPDBPos.cpp.o" \
 "CMakeFiles/Library.dir/src/protomol/output/OutputXYZTrajectoryPos.cpp.o" \
 "CMakeFiles/Library.dir/src/protomol/output/OutputFinalXYZPos.cpp.o" \
 "CMakeFiles/Library.dir/src/protomol/output/OutputXYZTrajectoryForce.cpp.o" \
-"CMakeFiles/Library.dir/src/protomol/output/LinearPaulTrap.cpp.o" \
 "CMakeFiles/Library.dir/src/protomol/output/OutputCollection.cpp.o" \
-"CMakeFiles/Library.dir/src/protomol/output/Mathieu.cpp.o" \
 "CMakeFiles/Library.dir/src/protomol/output/OutputDCDTrajectory.cpp.o" \
 "CMakeFiles/Library.dir/src/protomol/output/OutputFAHFile.cpp.o" \
-"CMakeFiles/Library.dir/src/protomol/output/lqt.cpp.o" \
 "CMakeFiles/Library.dir/src/protomol/output/OutputFAHGUI.cpp.o" \
 "CMakeFiles/Library.dir/src/protomol/output/OutputXTCTrajectory.cpp.o" \
-"CMakeFiles/Library.dir/src/protomol/output/OutputIonTemperatureLS.cpp.o" \
 "CMakeFiles/Library.dir/src/protomol/output/GUIServer.cpp.o" \
 "CMakeFiles/Library.dir/src/protomol/output/OutputScreen.cpp.o" \
 "CMakeFiles/Library.dir/src/protomol/output/OutputDCDTrajectoryVel.cpp.o" \
-"CMakeFiles/Library.dir/src/protomol/output/OutputIonSnapshot.cpp.o" \
 "CMakeFiles/Library.dir/src/protomol/parallel/Parallel.cpp.o" \
 "CMakeFiles/Library.dir/src/protomol/parallel/ParallelType.cpp.o" \
 "CMakeFiles/Library.dir/src/protomol/parallel/FFTComplex.cpp.o" \
@@ -5092,7 +4943,6 @@ Library_OBJECTS = \
 "CMakeFiles/Library.dir/src/protomol/integrator/hessian/BlockHessian.cpp.o" \
 "CMakeFiles/Library.dir/src/protomol/integrator/hessian/HessianInt.cpp.o" \
 "CMakeFiles/Library.dir/src/protomol/integrator/leapfrog/DMDLeapfrogIntegrator.cpp.o" \
-"CMakeFiles/Library.dir/src/protomol/integrator/leapfrog/LeapfrogBufferGasIntegrator.cpp.o" \
 "CMakeFiles/Library.dir/src/protomol/integrator/leapfrog/PLeapfrogIntegrator.cpp.o" \
 "CMakeFiles/Library.dir/src/protomol/integrator/leapfrog/LeapfrogDataAcquisition.cpp.o" \
 "CMakeFiles/Library.dir/src/protomol/integrator/leapfrog/LeapfrogTruncatedShadow.cpp.o" \
@@ -5138,7 +4988,13 @@ Library_OBJECTS = \
 "CMakeFiles/Library.dir/src/protomol/io/gromacs/PortGromacsParameters.cpp.o" \
 "CMakeFiles/Library.dir/src/protomol/io/gromacs/GromacsGBParameterFileReader.cpp.o" \
 "CMakeFiles/Library.dir/src/protomol/io/gromacs/GromacsParameterFileReader.cpp.o" \
-"CMakeFiles/Library.dir/src/protomol/addon/BufferGas.cpp.o"
+"CMakeFiles/Library.dir/src/protomol/addon/LeapfrogBufferGasIntegrator.cpp.o" \
+"CMakeFiles/Library.dir/src/protomol/addon/LuaState.cpp.o" \
+"CMakeFiles/Library.dir/src/protomol/addon/Snapshot.cpp.o" \
+"CMakeFiles/Library.dir/src/protomol/addon/LinearPaulTrap.cpp.o" \
+"CMakeFiles/Library.dir/src/protomol/addon/Mathieu.cpp.o" \
+"CMakeFiles/Library.dir/src/protomol/addon/BufferGas.cpp.o" \
+"CMakeFiles/Library.dir/src/protomol/addon/OutputIonSnapshot.cpp.o"
 
 # External object files for target Library
 Library_EXTERNAL_OBJECTS =
@@ -5196,34 +5052,23 @@ libProtoMol.a: CMakeFiles/Library.dir/src/protomol/module/IOModule.cpp.o
 libProtoMol.a: CMakeFiles/Library.dir/src/protomol/module/NonbondedFullElectrostaticForceModule.cpp.o
 libProtoMol.a: CMakeFiles/Library.dir/src/protomol/module/HessianIntegratorModule.cpp.o
 libProtoMol.a: CMakeFiles/Library.dir/src/protomol/output/OutputCache.cpp.o
-libProtoMol.a: CMakeFiles/Library.dir/src/protomol/output/lqt_with_ec.cpp.o
-libProtoMol.a: CMakeFiles/Library.dir/src/protomol/output/OutputVelPos.cpp.o
 libProtoMol.a: CMakeFiles/Library.dir/src/protomol/output/OutputCheckpoint.cpp.o
-libProtoMol.a: CMakeFiles/Library.dir/src/protomol/output/LuaState.cpp.o
-libProtoMol.a: CMakeFiles/Library.dir/src/protomol/output/Snapshot.cpp.o
 libProtoMol.a: CMakeFiles/Library.dir/src/protomol/output/OutputXYZTrajectoryVel.cpp.o
-libProtoMol.a: CMakeFiles/Library.dir/src/protomol/output/OutputVelPosLS.cpp.o
 libProtoMol.a: CMakeFiles/Library.dir/src/protomol/output/Output.cpp.o
-libProtoMol.a: CMakeFiles/Library.dir/src/protomol/output/OutputVelPosKE.cpp.o
 libProtoMol.a: CMakeFiles/Library.dir/src/protomol/output/OutputFinalXYZVel.cpp.o
 libProtoMol.a: CMakeFiles/Library.dir/src/protomol/output/OutputEnergies.cpp.o
 libProtoMol.a: CMakeFiles/Library.dir/src/protomol/output/OutputFinalPDBPos.cpp.o
 libProtoMol.a: CMakeFiles/Library.dir/src/protomol/output/OutputXYZTrajectoryPos.cpp.o
 libProtoMol.a: CMakeFiles/Library.dir/src/protomol/output/OutputFinalXYZPos.cpp.o
 libProtoMol.a: CMakeFiles/Library.dir/src/protomol/output/OutputXYZTrajectoryForce.cpp.o
-libProtoMol.a: CMakeFiles/Library.dir/src/protomol/output/LinearPaulTrap.cpp.o
 libProtoMol.a: CMakeFiles/Library.dir/src/protomol/output/OutputCollection.cpp.o
-libProtoMol.a: CMakeFiles/Library.dir/src/protomol/output/Mathieu.cpp.o
 libProtoMol.a: CMakeFiles/Library.dir/src/protomol/output/OutputDCDTrajectory.cpp.o
 libProtoMol.a: CMakeFiles/Library.dir/src/protomol/output/OutputFAHFile.cpp.o
-libProtoMol.a: CMakeFiles/Library.dir/src/protomol/output/lqt.cpp.o
 libProtoMol.a: CMakeFiles/Library.dir/src/protomol/output/OutputFAHGUI.cpp.o
 libProtoMol.a: CMakeFiles/Library.dir/src/protomol/output/OutputXTCTrajectory.cpp.o
-libProtoMol.a: CMakeFiles/Library.dir/src/protomol/output/OutputIonTemperatureLS.cpp.o
 libProtoMol.a: CMakeFiles/Library.dir/src/protomol/output/GUIServer.cpp.o
 libProtoMol.a: CMakeFiles/Library.dir/src/protomol/output/OutputScreen.cpp.o
 libProtoMol.a: CMakeFiles/Library.dir/src/protomol/output/OutputDCDTrajectoryVel.cpp.o
-libProtoMol.a: CMakeFiles/Library.dir/src/protomol/output/OutputIonSnapshot.cpp.o
 libProtoMol.a: CMakeFiles/Library.dir/src/protomol/parallel/Parallel.cpp.o
 libProtoMol.a: CMakeFiles/Library.dir/src/protomol/parallel/ParallelType.cpp.o
 libProtoMol.a: CMakeFiles/Library.dir/src/protomol/parallel/FFTComplex.cpp.o
@@ -5308,7 +5153,6 @@ libProtoMol.a: CMakeFiles/Library.dir/src/protomol/integrator/hessian/BlockHessi
 libProtoMol.a: CMakeFiles/Library.dir/src/protomol/integrator/hessian/BlockHessian.cpp.o
 libProtoMol.a: CMakeFiles/Library.dir/src/protomol/integrator/hessian/HessianInt.cpp.o
 libProtoMol.a: CMakeFiles/Library.dir/src/protomol/integrator/leapfrog/DMDLeapfrogIntegrator.cpp.o
-libProtoMol.a: CMakeFiles/Library.dir/src/protomol/integrator/leapfrog/LeapfrogBufferGasIntegrator.cpp.o
 libProtoMol.a: CMakeFiles/Library.dir/src/protomol/integrator/leapfrog/PLeapfrogIntegrator.cpp.o
 libProtoMol.a: CMakeFiles/Library.dir/src/protomol/integrator/leapfrog/LeapfrogDataAcquisition.cpp.o
 libProtoMol.a: CMakeFiles/Library.dir/src/protomol/integrator/leapfrog/LeapfrogTruncatedShadow.cpp.o
@@ -5354,7 +5198,13 @@ libProtoMol.a: CMakeFiles/Library.dir/src/protomol/io/gromacs/GromacsBondedParam
 libProtoMol.a: CMakeFiles/Library.dir/src/protomol/io/gromacs/PortGromacsParameters.cpp.o
 libProtoMol.a: CMakeFiles/Library.dir/src/protomol/io/gromacs/GromacsGBParameterFileReader.cpp.o
 libProtoMol.a: CMakeFiles/Library.dir/src/protomol/io/gromacs/GromacsParameterFileReader.cpp.o
+libProtoMol.a: CMakeFiles/Library.dir/src/protomol/addon/LeapfrogBufferGasIntegrator.cpp.o
+libProtoMol.a: CMakeFiles/Library.dir/src/protomol/addon/LuaState.cpp.o
+libProtoMol.a: CMakeFiles/Library.dir/src/protomol/addon/Snapshot.cpp.o
+libProtoMol.a: CMakeFiles/Library.dir/src/protomol/addon/LinearPaulTrap.cpp.o
+libProtoMol.a: CMakeFiles/Library.dir/src/protomol/addon/Mathieu.cpp.o
 libProtoMol.a: CMakeFiles/Library.dir/src/protomol/addon/BufferGas.cpp.o
+libProtoMol.a: CMakeFiles/Library.dir/src/protomol/addon/OutputIonSnapshot.cpp.o
 libProtoMol.a: CMakeFiles/Library.dir/build.make
 libProtoMol.a: CMakeFiles/Library.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --red --bold "Linking CXX static library libProtoMol.a"
@@ -5418,34 +5268,23 @@ CMakeFiles/Library.dir/requires: CMakeFiles/Library.dir/src/protomol/module/IOMo
 CMakeFiles/Library.dir/requires: CMakeFiles/Library.dir/src/protomol/module/NonbondedFullElectrostaticForceModule.cpp.o.requires
 CMakeFiles/Library.dir/requires: CMakeFiles/Library.dir/src/protomol/module/HessianIntegratorModule.cpp.o.requires
 CMakeFiles/Library.dir/requires: CMakeFiles/Library.dir/src/protomol/output/OutputCache.cpp.o.requires
-CMakeFiles/Library.dir/requires: CMakeFiles/Library.dir/src/protomol/output/lqt_with_ec.cpp.o.requires
-CMakeFiles/Library.dir/requires: CMakeFiles/Library.dir/src/protomol/output/OutputVelPos.cpp.o.requires
 CMakeFiles/Library.dir/requires: CMakeFiles/Library.dir/src/protomol/output/OutputCheckpoint.cpp.o.requires
-CMakeFiles/Library.dir/requires: CMakeFiles/Library.dir/src/protomol/output/LuaState.cpp.o.requires
-CMakeFiles/Library.dir/requires: CMakeFiles/Library.dir/src/protomol/output/Snapshot.cpp.o.requires
 CMakeFiles/Library.dir/requires: CMakeFiles/Library.dir/src/protomol/output/OutputXYZTrajectoryVel.cpp.o.requires
-CMakeFiles/Library.dir/requires: CMakeFiles/Library.dir/src/protomol/output/OutputVelPosLS.cpp.o.requires
 CMakeFiles/Library.dir/requires: CMakeFiles/Library.dir/src/protomol/output/Output.cpp.o.requires
-CMakeFiles/Library.dir/requires: CMakeFiles/Library.dir/src/protomol/output/OutputVelPosKE.cpp.o.requires
 CMakeFiles/Library.dir/requires: CMakeFiles/Library.dir/src/protomol/output/OutputFinalXYZVel.cpp.o.requires
 CMakeFiles/Library.dir/requires: CMakeFiles/Library.dir/src/protomol/output/OutputEnergies.cpp.o.requires
 CMakeFiles/Library.dir/requires: CMakeFiles/Library.dir/src/protomol/output/OutputFinalPDBPos.cpp.o.requires
 CMakeFiles/Library.dir/requires: CMakeFiles/Library.dir/src/protomol/output/OutputXYZTrajectoryPos.cpp.o.requires
 CMakeFiles/Library.dir/requires: CMakeFiles/Library.dir/src/protomol/output/OutputFinalXYZPos.cpp.o.requires
 CMakeFiles/Library.dir/requires: CMakeFiles/Library.dir/src/protomol/output/OutputXYZTrajectoryForce.cpp.o.requires
-CMakeFiles/Library.dir/requires: CMakeFiles/Library.dir/src/protomol/output/LinearPaulTrap.cpp.o.requires
 CMakeFiles/Library.dir/requires: CMakeFiles/Library.dir/src/protomol/output/OutputCollection.cpp.o.requires
-CMakeFiles/Library.dir/requires: CMakeFiles/Library.dir/src/protomol/output/Mathieu.cpp.o.requires
 CMakeFiles/Library.dir/requires: CMakeFiles/Library.dir/src/protomol/output/OutputDCDTrajectory.cpp.o.requires
 CMakeFiles/Library.dir/requires: CMakeFiles/Library.dir/src/protomol/output/OutputFAHFile.cpp.o.requires
-CMakeFiles/Library.dir/requires: CMakeFiles/Library.dir/src/protomol/output/lqt.cpp.o.requires
 CMakeFiles/Library.dir/requires: CMakeFiles/Library.dir/src/protomol/output/OutputFAHGUI.cpp.o.requires
 CMakeFiles/Library.dir/requires: CMakeFiles/Library.dir/src/protomol/output/OutputXTCTrajectory.cpp.o.requires
-CMakeFiles/Library.dir/requires: CMakeFiles/Library.dir/src/protomol/output/OutputIonTemperatureLS.cpp.o.requires
 CMakeFiles/Library.dir/requires: CMakeFiles/Library.dir/src/protomol/output/GUIServer.cpp.o.requires
 CMakeFiles/Library.dir/requires: CMakeFiles/Library.dir/src/protomol/output/OutputScreen.cpp.o.requires
 CMakeFiles/Library.dir/requires: CMakeFiles/Library.dir/src/protomol/output/OutputDCDTrajectoryVel.cpp.o.requires
-CMakeFiles/Library.dir/requires: CMakeFiles/Library.dir/src/protomol/output/OutputIonSnapshot.cpp.o.requires
 CMakeFiles/Library.dir/requires: CMakeFiles/Library.dir/src/protomol/parallel/Parallel.cpp.o.requires
 CMakeFiles/Library.dir/requires: CMakeFiles/Library.dir/src/protomol/parallel/ParallelType.cpp.o.requires
 CMakeFiles/Library.dir/requires: CMakeFiles/Library.dir/src/protomol/parallel/FFTComplex.cpp.o.requires
@@ -5530,7 +5369,6 @@ CMakeFiles/Library.dir/requires: CMakeFiles/Library.dir/src/protomol/integrator/
 CMakeFiles/Library.dir/requires: CMakeFiles/Library.dir/src/protomol/integrator/hessian/BlockHessian.cpp.o.requires
 CMakeFiles/Library.dir/requires: CMakeFiles/Library.dir/src/protomol/integrator/hessian/HessianInt.cpp.o.requires
 CMakeFiles/Library.dir/requires: CMakeFiles/Library.dir/src/protomol/integrator/leapfrog/DMDLeapfrogIntegrator.cpp.o.requires
-CMakeFiles/Library.dir/requires: CMakeFiles/Library.dir/src/protomol/integrator/leapfrog/LeapfrogBufferGasIntegrator.cpp.o.requires
 CMakeFiles/Library.dir/requires: CMakeFiles/Library.dir/src/protomol/integrator/leapfrog/PLeapfrogIntegrator.cpp.o.requires
 CMakeFiles/Library.dir/requires: CMakeFiles/Library.dir/src/protomol/integrator/leapfrog/LeapfrogDataAcquisition.cpp.o.requires
 CMakeFiles/Library.dir/requires: CMakeFiles/Library.dir/src/protomol/integrator/leapfrog/LeapfrogTruncatedShadow.cpp.o.requires
@@ -5576,7 +5414,13 @@ CMakeFiles/Library.dir/requires: CMakeFiles/Library.dir/src/protomol/io/gromacs/
 CMakeFiles/Library.dir/requires: CMakeFiles/Library.dir/src/protomol/io/gromacs/PortGromacsParameters.cpp.o.requires
 CMakeFiles/Library.dir/requires: CMakeFiles/Library.dir/src/protomol/io/gromacs/GromacsGBParameterFileReader.cpp.o.requires
 CMakeFiles/Library.dir/requires: CMakeFiles/Library.dir/src/protomol/io/gromacs/GromacsParameterFileReader.cpp.o.requires
+CMakeFiles/Library.dir/requires: CMakeFiles/Library.dir/src/protomol/addon/LeapfrogBufferGasIntegrator.cpp.o.requires
+CMakeFiles/Library.dir/requires: CMakeFiles/Library.dir/src/protomol/addon/LuaState.cpp.o.requires
+CMakeFiles/Library.dir/requires: CMakeFiles/Library.dir/src/protomol/addon/Snapshot.cpp.o.requires
+CMakeFiles/Library.dir/requires: CMakeFiles/Library.dir/src/protomol/addon/LinearPaulTrap.cpp.o.requires
+CMakeFiles/Library.dir/requires: CMakeFiles/Library.dir/src/protomol/addon/Mathieu.cpp.o.requires
 CMakeFiles/Library.dir/requires: CMakeFiles/Library.dir/src/protomol/addon/BufferGas.cpp.o.requires
+CMakeFiles/Library.dir/requires: CMakeFiles/Library.dir/src/protomol/addon/OutputIonSnapshot.cpp.o.requires
 .PHONY : CMakeFiles/Library.dir/requires
 
 CMakeFiles/Library.dir/clean:

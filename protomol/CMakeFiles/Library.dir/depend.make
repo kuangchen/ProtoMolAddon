@@ -53,7 +53,6 @@ CMakeFiles/Library.dir/src/protomol/ProtoMolApp.cpp.o: src/protomol/module/MainM
 CMakeFiles/Library.dir/src/protomol/ProtoMolApp.cpp.o: src/protomol/os/cygwin.h
 CMakeFiles/Library.dir/src/protomol/ProtoMolApp.cpp.o: src/protomol/os/unix.h
 CMakeFiles/Library.dir/src/protomol/ProtoMolApp.cpp.o: src/protomol/os/win32.h
-CMakeFiles/Library.dir/src/protomol/ProtoMolApp.cpp.o: src/protomol/output/Output.h
 CMakeFiles/Library.dir/src/protomol/ProtoMolApp.cpp.o: src/protomol/output/OutputCache.h
 CMakeFiles/Library.dir/src/protomol/ProtoMolApp.cpp.o: src/protomol/output/OutputCollection.h
 CMakeFiles/Library.dir/src/protomol/ProtoMolApp.cpp.o: src/protomol/package.h
@@ -96,6 +95,7 @@ CMakeFiles/Library.dir/src/protomol/ProtoMolApp.cpp.o: src/protomol/type/Vector3
 CMakeFiles/Library.dir/src/protomol/addon/BufferGas.cpp.o: src/protomol/addon/BufferGas.cpp
 CMakeFiles/Library.dir/src/protomol/addon/BufferGas.cpp.o: src/protomol/ProtoMolApp.h
 CMakeFiles/Library.dir/src/protomol/addon/BufferGas.cpp.o: src/protomol/addon/BufferGas.h
+CMakeFiles/Library.dir/src/protomol/addon/BufferGas.cpp.o: src/protomol/addon/LuaState.h
 CMakeFiles/Library.dir/src/protomol/addon/BufferGas.cpp.o: src/protomol/base/Counter.h
 CMakeFiles/Library.dir/src/protomol/addon/BufferGas.cpp.o: src/protomol/base/Exception.h
 CMakeFiles/Library.dir/src/protomol/addon/BufferGas.cpp.o: src/protomol/base/Factory.h
@@ -135,7 +135,6 @@ CMakeFiles/Library.dir/src/protomol/addon/BufferGas.cpp.o: src/protomol/io/SCPIS
 CMakeFiles/Library.dir/src/protomol/addon/BufferGas.cpp.o: src/protomol/os/cygwin.h
 CMakeFiles/Library.dir/src/protomol/addon/BufferGas.cpp.o: src/protomol/os/unix.h
 CMakeFiles/Library.dir/src/protomol/addon/BufferGas.cpp.o: src/protomol/os/win32.h
-CMakeFiles/Library.dir/src/protomol/addon/BufferGas.cpp.o: src/protomol/output/Output.h
 CMakeFiles/Library.dir/src/protomol/addon/BufferGas.cpp.o: src/protomol/output/OutputCache.h
 CMakeFiles/Library.dir/src/protomol/addon/BufferGas.cpp.o: src/protomol/topology/Angle.h
 CMakeFiles/Library.dir/src/protomol/addon/BufferGas.cpp.o: src/protomol/topology/Atom.h
@@ -214,7 +213,6 @@ CMakeFiles/Library.dir/src/protomol/addon/LeapfrogBufferGasIntegrator.cpp.o: src
 CMakeFiles/Library.dir/src/protomol/addon/LeapfrogBufferGasIntegrator.cpp.o: src/protomol/os/cygwin.h
 CMakeFiles/Library.dir/src/protomol/addon/LeapfrogBufferGasIntegrator.cpp.o: src/protomol/os/unix.h
 CMakeFiles/Library.dir/src/protomol/addon/LeapfrogBufferGasIntegrator.cpp.o: src/protomol/os/win32.h
-CMakeFiles/Library.dir/src/protomol/addon/LeapfrogBufferGasIntegrator.cpp.o: src/protomol/output/Output.h
 CMakeFiles/Library.dir/src/protomol/addon/LeapfrogBufferGasIntegrator.cpp.o: src/protomol/output/OutputCache.h
 CMakeFiles/Library.dir/src/protomol/addon/LeapfrogBufferGasIntegrator.cpp.o: src/protomol/topology/Angle.h
 CMakeFiles/Library.dir/src/protomol/addon/LeapfrogBufferGasIntegrator.cpp.o: src/protomol/topology/AngleInfo.h
@@ -308,14 +306,12 @@ CMakeFiles/Library.dir/src/protomol/addon/OutputIonSnapshot.cpp.o: src/protomol/
 CMakeFiles/Library.dir/src/protomol/addon/OutputIonSnapshot.cpp.o: src/protomol/integrator/Integrator.h
 CMakeFiles/Library.dir/src/protomol/addon/OutputIonSnapshot.cpp.o: src/protomol/integrator/IntegratorDefinition.h
 CMakeFiles/Library.dir/src/protomol/addon/OutputIonSnapshot.cpp.o: src/protomol/io/File.h
-CMakeFiles/Library.dir/src/protomol/addon/OutputIonSnapshot.cpp.o: src/protomol/io/LuaConfigReader.h
 CMakeFiles/Library.dir/src/protomol/addon/OutputIonSnapshot.cpp.o: src/protomol/io/Reader.h
 CMakeFiles/Library.dir/src/protomol/addon/OutputIonSnapshot.cpp.o: src/protomol/io/SCPISMReader.h
 CMakeFiles/Library.dir/src/protomol/addon/OutputIonSnapshot.cpp.o: src/protomol/module/MainModule.h
 CMakeFiles/Library.dir/src/protomol/addon/OutputIonSnapshot.cpp.o: src/protomol/os/cygwin.h
 CMakeFiles/Library.dir/src/protomol/addon/OutputIonSnapshot.cpp.o: src/protomol/os/unix.h
 CMakeFiles/Library.dir/src/protomol/addon/OutputIonSnapshot.cpp.o: src/protomol/os/win32.h
-CMakeFiles/Library.dir/src/protomol/addon/OutputIonSnapshot.cpp.o: src/protomol/output/Output.h
 CMakeFiles/Library.dir/src/protomol/addon/OutputIonSnapshot.cpp.o: src/protomol/output/OutputCache.h
 CMakeFiles/Library.dir/src/protomol/addon/OutputIonSnapshot.cpp.o: src/protomol/topology/Angle.h
 CMakeFiles/Library.dir/src/protomol/addon/OutputIonSnapshot.cpp.o: src/protomol/topology/Atom.h
@@ -386,7 +382,6 @@ CMakeFiles/Library.dir/src/protomol/addon/Snapshot.cpp.o: src/protomol/io/SCPISM
 CMakeFiles/Library.dir/src/protomol/addon/Snapshot.cpp.o: src/protomol/os/cygwin.h
 CMakeFiles/Library.dir/src/protomol/addon/Snapshot.cpp.o: src/protomol/os/unix.h
 CMakeFiles/Library.dir/src/protomol/addon/Snapshot.cpp.o: src/protomol/os/win32.h
-CMakeFiles/Library.dir/src/protomol/addon/Snapshot.cpp.o: src/protomol/output/Output.h
 CMakeFiles/Library.dir/src/protomol/addon/Snapshot.cpp.o: src/protomol/output/OutputCache.h
 CMakeFiles/Library.dir/src/protomol/addon/Snapshot.cpp.o: src/protomol/topology/Angle.h
 CMakeFiles/Library.dir/src/protomol/addon/Snapshot.cpp.o: src/protomol/topology/Atom.h
@@ -530,7 +525,6 @@ CMakeFiles/Library.dir/src/protomol/base/ModuleManager.cpp.o: src/protomol/io/SC
 CMakeFiles/Library.dir/src/protomol/base/ModuleManager.cpp.o: src/protomol/os/cygwin.h
 CMakeFiles/Library.dir/src/protomol/base/ModuleManager.cpp.o: src/protomol/os/unix.h
 CMakeFiles/Library.dir/src/protomol/base/ModuleManager.cpp.o: src/protomol/os/win32.h
-CMakeFiles/Library.dir/src/protomol/base/ModuleManager.cpp.o: src/protomol/output/Output.h
 CMakeFiles/Library.dir/src/protomol/base/ModuleManager.cpp.o: src/protomol/output/OutputCache.h
 CMakeFiles/Library.dir/src/protomol/base/ModuleManager.cpp.o: src/protomol/topology/Angle.h
 CMakeFiles/Library.dir/src/protomol/base/ModuleManager.cpp.o: src/protomol/topology/Atom.h
@@ -672,7 +666,6 @@ CMakeFiles/Library.dir/src/protomol/config/CommandLine.cpp.o: src/protomol/modul
 CMakeFiles/Library.dir/src/protomol/config/CommandLine.cpp.o: src/protomol/os/cygwin.h
 CMakeFiles/Library.dir/src/protomol/config/CommandLine.cpp.o: src/protomol/os/unix.h
 CMakeFiles/Library.dir/src/protomol/config/CommandLine.cpp.o: src/protomol/os/win32.h
-CMakeFiles/Library.dir/src/protomol/config/CommandLine.cpp.o: src/protomol/output/Output.h
 CMakeFiles/Library.dir/src/protomol/config/CommandLine.cpp.o: src/protomol/output/OutputCache.h
 CMakeFiles/Library.dir/src/protomol/config/CommandLine.cpp.o: src/protomol/topology/Angle.h
 CMakeFiles/Library.dir/src/protomol/config/CommandLine.cpp.o: src/protomol/topology/Atom.h
@@ -971,8 +964,6 @@ CMakeFiles/Library.dir/src/protomol/factory/OutputFactory.cpp.o: src/protomol/ba
 CMakeFiles/Library.dir/src/protomol/factory/OutputFactory.cpp.o: src/protomol/base/Exception.h
 CMakeFiles/Library.dir/src/protomol/factory/OutputFactory.cpp.o: src/protomol/base/Factory.h
 CMakeFiles/Library.dir/src/protomol/factory/OutputFactory.cpp.o: src/protomol/base/FileLocation.h
-CMakeFiles/Library.dir/src/protomol/factory/OutputFactory.cpp.o: src/protomol/base/Makeable.h
-CMakeFiles/Library.dir/src/protomol/factory/OutputFactory.cpp.o: src/protomol/base/MakeableDefinition.h
 CMakeFiles/Library.dir/src/protomol/factory/OutputFactory.cpp.o: src/protomol/base/MathUtilities.h
 CMakeFiles/Library.dir/src/protomol/factory/OutputFactory.cpp.o: src/protomol/base/PMConstants.h
 CMakeFiles/Library.dir/src/protomol/factory/OutputFactory.cpp.o: src/protomol/base/Random.h
@@ -995,7 +986,6 @@ CMakeFiles/Library.dir/src/protomol/factory/OutputFactory.cpp.o: src/protomol/fa
 CMakeFiles/Library.dir/src/protomol/factory/OutputFactory.cpp.o: src/protomol/os/cygwin.h
 CMakeFiles/Library.dir/src/protomol/factory/OutputFactory.cpp.o: src/protomol/os/unix.h
 CMakeFiles/Library.dir/src/protomol/factory/OutputFactory.cpp.o: src/protomol/os/win32.h
-CMakeFiles/Library.dir/src/protomol/factory/OutputFactory.cpp.o: src/protomol/output/Output.h
 CMakeFiles/Library.dir/src/protomol/factory/OutputFactory.cpp.o: src/protomol/output/OutputCollection.h
 CMakeFiles/Library.dir/src/protomol/factory/OutputFactory.cpp.o: src/protomol/type/AbstractEnumType.h
 CMakeFiles/Library.dir/src/protomol/factory/OutputFactory.cpp.o: src/protomol/type/Real.h
@@ -1221,7 +1211,6 @@ CMakeFiles/Library.dir/src/protomol/force/ForceGroup.cpp.o: src/protomol/io/SCPI
 CMakeFiles/Library.dir/src/protomol/force/ForceGroup.cpp.o: src/protomol/os/cygwin.h
 CMakeFiles/Library.dir/src/protomol/force/ForceGroup.cpp.o: src/protomol/os/unix.h
 CMakeFiles/Library.dir/src/protomol/force/ForceGroup.cpp.o: src/protomol/os/win32.h
-CMakeFiles/Library.dir/src/protomol/force/ForceGroup.cpp.o: src/protomol/output/Output.h
 CMakeFiles/Library.dir/src/protomol/force/ForceGroup.cpp.o: src/protomol/output/OutputCache.h
 CMakeFiles/Library.dir/src/protomol/force/ForceGroup.cpp.o: src/protomol/parallel/Parallel.h
 CMakeFiles/Library.dir/src/protomol/force/ForceGroup.cpp.o: src/protomol/parallel/ParallelType.h
@@ -2356,7 +2345,6 @@ CMakeFiles/Library.dir/src/protomol/integrator/Integrator.cpp.o: src/protomol/mo
 CMakeFiles/Library.dir/src/protomol/integrator/Integrator.cpp.o: src/protomol/os/cygwin.h
 CMakeFiles/Library.dir/src/protomol/integrator/Integrator.cpp.o: src/protomol/os/unix.h
 CMakeFiles/Library.dir/src/protomol/integrator/Integrator.cpp.o: src/protomol/os/win32.h
-CMakeFiles/Library.dir/src/protomol/integrator/Integrator.cpp.o: src/protomol/output/Output.h
 CMakeFiles/Library.dir/src/protomol/integrator/Integrator.cpp.o: src/protomol/output/OutputCache.h
 CMakeFiles/Library.dir/src/protomol/integrator/Integrator.cpp.o: src/protomol/topology/Angle.h
 CMakeFiles/Library.dir/src/protomol/integrator/Integrator.cpp.o: src/protomol/topology/AngleInfo.h
@@ -2517,7 +2505,6 @@ CMakeFiles/Library.dir/src/protomol/integrator/STSIntegrator.cpp.o: src/protomol
 CMakeFiles/Library.dir/src/protomol/integrator/STSIntegrator.cpp.o: src/protomol/os/cygwin.h
 CMakeFiles/Library.dir/src/protomol/integrator/STSIntegrator.cpp.o: src/protomol/os/unix.h
 CMakeFiles/Library.dir/src/protomol/integrator/STSIntegrator.cpp.o: src/protomol/os/win32.h
-CMakeFiles/Library.dir/src/protomol/integrator/STSIntegrator.cpp.o: src/protomol/output/Output.h
 CMakeFiles/Library.dir/src/protomol/integrator/STSIntegrator.cpp.o: src/protomol/output/OutputCache.h
 CMakeFiles/Library.dir/src/protomol/integrator/STSIntegrator.cpp.o: src/protomol/topology/Angle.h
 CMakeFiles/Library.dir/src/protomol/integrator/STSIntegrator.cpp.o: src/protomol/topology/AngleInfo.h
@@ -2592,7 +2579,6 @@ CMakeFiles/Library.dir/src/protomol/integrator/StandardIntegrator.cpp.o: src/pro
 CMakeFiles/Library.dir/src/protomol/integrator/StandardIntegrator.cpp.o: src/protomol/os/cygwin.h
 CMakeFiles/Library.dir/src/protomol/integrator/StandardIntegrator.cpp.o: src/protomol/os/unix.h
 CMakeFiles/Library.dir/src/protomol/integrator/StandardIntegrator.cpp.o: src/protomol/os/win32.h
-CMakeFiles/Library.dir/src/protomol/integrator/StandardIntegrator.cpp.o: src/protomol/output/Output.h
 CMakeFiles/Library.dir/src/protomol/integrator/StandardIntegrator.cpp.o: src/protomol/output/OutputCache.h
 CMakeFiles/Library.dir/src/protomol/integrator/StandardIntegrator.cpp.o: src/protomol/parallel/Parallel.h
 CMakeFiles/Library.dir/src/protomol/integrator/StandardIntegrator.cpp.o: src/protomol/parallel/ParallelType.h
@@ -2671,7 +2657,6 @@ CMakeFiles/Library.dir/src/protomol/integrator/base/CGMinimizerIntegrator.cpp.o:
 CMakeFiles/Library.dir/src/protomol/integrator/base/CGMinimizerIntegrator.cpp.o: src/protomol/os/cygwin.h
 CMakeFiles/Library.dir/src/protomol/integrator/base/CGMinimizerIntegrator.cpp.o: src/protomol/os/unix.h
 CMakeFiles/Library.dir/src/protomol/integrator/base/CGMinimizerIntegrator.cpp.o: src/protomol/os/win32.h
-CMakeFiles/Library.dir/src/protomol/integrator/base/CGMinimizerIntegrator.cpp.o: src/protomol/output/Output.h
 CMakeFiles/Library.dir/src/protomol/integrator/base/CGMinimizerIntegrator.cpp.o: src/protomol/output/OutputCache.h
 CMakeFiles/Library.dir/src/protomol/integrator/base/CGMinimizerIntegrator.cpp.o: src/protomol/topology/Angle.h
 CMakeFiles/Library.dir/src/protomol/integrator/base/CGMinimizerIntegrator.cpp.o: src/protomol/topology/AngleInfo.h
@@ -2748,7 +2733,6 @@ CMakeFiles/Library.dir/src/protomol/integrator/base/LangevinImpulseIntegrator.cp
 CMakeFiles/Library.dir/src/protomol/integrator/base/LangevinImpulseIntegrator.cpp.o: src/protomol/os/cygwin.h
 CMakeFiles/Library.dir/src/protomol/integrator/base/LangevinImpulseIntegrator.cpp.o: src/protomol/os/unix.h
 CMakeFiles/Library.dir/src/protomol/integrator/base/LangevinImpulseIntegrator.cpp.o: src/protomol/os/win32.h
-CMakeFiles/Library.dir/src/protomol/integrator/base/LangevinImpulseIntegrator.cpp.o: src/protomol/output/Output.h
 CMakeFiles/Library.dir/src/protomol/integrator/base/LangevinImpulseIntegrator.cpp.o: src/protomol/output/OutputCache.h
 CMakeFiles/Library.dir/src/protomol/integrator/base/LangevinImpulseIntegrator.cpp.o: src/protomol/topology/Angle.h
 CMakeFiles/Library.dir/src/protomol/integrator/base/LangevinImpulseIntegrator.cpp.o: src/protomol/topology/AngleInfo.h
@@ -2825,7 +2809,6 @@ CMakeFiles/Library.dir/src/protomol/integrator/base/LangevinLeapfrogIntegrator.c
 CMakeFiles/Library.dir/src/protomol/integrator/base/LangevinLeapfrogIntegrator.cpp.o: src/protomol/os/cygwin.h
 CMakeFiles/Library.dir/src/protomol/integrator/base/LangevinLeapfrogIntegrator.cpp.o: src/protomol/os/unix.h
 CMakeFiles/Library.dir/src/protomol/integrator/base/LangevinLeapfrogIntegrator.cpp.o: src/protomol/os/win32.h
-CMakeFiles/Library.dir/src/protomol/integrator/base/LangevinLeapfrogIntegrator.cpp.o: src/protomol/output/Output.h
 CMakeFiles/Library.dir/src/protomol/integrator/base/LangevinLeapfrogIntegrator.cpp.o: src/protomol/output/OutputCache.h
 CMakeFiles/Library.dir/src/protomol/integrator/base/LangevinLeapfrogIntegrator.cpp.o: src/protomol/topology/Angle.h
 CMakeFiles/Library.dir/src/protomol/integrator/base/LangevinLeapfrogIntegrator.cpp.o: src/protomol/topology/AngleInfo.h
@@ -2903,7 +2886,6 @@ CMakeFiles/Library.dir/src/protomol/integrator/base/NumericalDifferentiation.cpp
 CMakeFiles/Library.dir/src/protomol/integrator/base/NumericalDifferentiation.cpp.o: src/protomol/os/cygwin.h
 CMakeFiles/Library.dir/src/protomol/integrator/base/NumericalDifferentiation.cpp.o: src/protomol/os/unix.h
 CMakeFiles/Library.dir/src/protomol/integrator/base/NumericalDifferentiation.cpp.o: src/protomol/os/win32.h
-CMakeFiles/Library.dir/src/protomol/integrator/base/NumericalDifferentiation.cpp.o: src/protomol/output/Output.h
 CMakeFiles/Library.dir/src/protomol/integrator/base/NumericalDifferentiation.cpp.o: src/protomol/output/OutputCache.h
 CMakeFiles/Library.dir/src/protomol/integrator/base/NumericalDifferentiation.cpp.o: src/protomol/topology/Angle.h
 CMakeFiles/Library.dir/src/protomol/integrator/base/NumericalDifferentiation.cpp.o: src/protomol/topology/AngleInfo.h
@@ -2981,7 +2963,6 @@ CMakeFiles/Library.dir/src/protomol/integrator/base/NumericallyDifferentiatedHes
 CMakeFiles/Library.dir/src/protomol/integrator/base/NumericallyDifferentiatedHessian.cpp.o: src/protomol/os/cygwin.h
 CMakeFiles/Library.dir/src/protomol/integrator/base/NumericallyDifferentiatedHessian.cpp.o: src/protomol/os/unix.h
 CMakeFiles/Library.dir/src/protomol/integrator/base/NumericallyDifferentiatedHessian.cpp.o: src/protomol/os/win32.h
-CMakeFiles/Library.dir/src/protomol/integrator/base/NumericallyDifferentiatedHessian.cpp.o: src/protomol/output/Output.h
 CMakeFiles/Library.dir/src/protomol/integrator/base/NumericallyDifferentiatedHessian.cpp.o: src/protomol/output/OutputCache.h
 CMakeFiles/Library.dir/src/protomol/integrator/base/NumericallyDifferentiatedHessian.cpp.o: src/protomol/topology/Angle.h
 CMakeFiles/Library.dir/src/protomol/integrator/base/NumericallyDifferentiatedHessian.cpp.o: src/protomol/topology/AngleInfo.h
@@ -3058,7 +3039,6 @@ CMakeFiles/Library.dir/src/protomol/integrator/base/RMTIntegrator.cpp.o: src/pro
 CMakeFiles/Library.dir/src/protomol/integrator/base/RMTIntegrator.cpp.o: src/protomol/os/cygwin.h
 CMakeFiles/Library.dir/src/protomol/integrator/base/RMTIntegrator.cpp.o: src/protomol/os/unix.h
 CMakeFiles/Library.dir/src/protomol/integrator/base/RMTIntegrator.cpp.o: src/protomol/os/win32.h
-CMakeFiles/Library.dir/src/protomol/integrator/base/RMTIntegrator.cpp.o: src/protomol/output/Output.h
 CMakeFiles/Library.dir/src/protomol/integrator/base/RMTIntegrator.cpp.o: src/protomol/output/OutputCache.h
 CMakeFiles/Library.dir/src/protomol/integrator/base/RMTIntegrator.cpp.o: src/protomol/topology/Angle.h
 CMakeFiles/Library.dir/src/protomol/integrator/base/RMTIntegrator.cpp.o: src/protomol/topology/AngleInfo.h
@@ -3224,7 +3204,6 @@ CMakeFiles/Library.dir/src/protomol/integrator/hessian/BlockHessianDiagonalize.c
 CMakeFiles/Library.dir/src/protomol/integrator/hessian/BlockHessianDiagonalize.cpp.o: src/protomol/os/cygwin.h
 CMakeFiles/Library.dir/src/protomol/integrator/hessian/BlockHessianDiagonalize.cpp.o: src/protomol/os/unix.h
 CMakeFiles/Library.dir/src/protomol/integrator/hessian/BlockHessianDiagonalize.cpp.o: src/protomol/os/win32.h
-CMakeFiles/Library.dir/src/protomol/integrator/hessian/BlockHessianDiagonalize.cpp.o: src/protomol/output/Output.h
 CMakeFiles/Library.dir/src/protomol/integrator/hessian/BlockHessianDiagonalize.cpp.o: src/protomol/output/OutputCache.h
 CMakeFiles/Library.dir/src/protomol/integrator/hessian/BlockHessianDiagonalize.cpp.o: src/protomol/topology/Angle.h
 CMakeFiles/Library.dir/src/protomol/integrator/hessian/BlockHessianDiagonalize.cpp.o: src/protomol/topology/Atom.h
@@ -3382,7 +3361,6 @@ CMakeFiles/Library.dir/src/protomol/integrator/hessian/HessianInt.cpp.o: src/pro
 CMakeFiles/Library.dir/src/protomol/integrator/hessian/HessianInt.cpp.o: src/protomol/os/cygwin.h
 CMakeFiles/Library.dir/src/protomol/integrator/hessian/HessianInt.cpp.o: src/protomol/os/unix.h
 CMakeFiles/Library.dir/src/protomol/integrator/hessian/HessianInt.cpp.o: src/protomol/os/win32.h
-CMakeFiles/Library.dir/src/protomol/integrator/hessian/HessianInt.cpp.o: src/protomol/output/Output.h
 CMakeFiles/Library.dir/src/protomol/integrator/hessian/HessianInt.cpp.o: src/protomol/output/OutputCache.h
 CMakeFiles/Library.dir/src/protomol/integrator/hessian/HessianInt.cpp.o: src/protomol/topology/Angle.h
 CMakeFiles/Library.dir/src/protomol/integrator/hessian/HessianInt.cpp.o: src/protomol/topology/AngleInfo.h
@@ -3461,7 +3439,6 @@ CMakeFiles/Library.dir/src/protomol/integrator/leapfrog/DMDLeapfrogIntegrator.cp
 CMakeFiles/Library.dir/src/protomol/integrator/leapfrog/DMDLeapfrogIntegrator.cpp.o: src/protomol/os/cygwin.h
 CMakeFiles/Library.dir/src/protomol/integrator/leapfrog/DMDLeapfrogIntegrator.cpp.o: src/protomol/os/unix.h
 CMakeFiles/Library.dir/src/protomol/integrator/leapfrog/DMDLeapfrogIntegrator.cpp.o: src/protomol/os/win32.h
-CMakeFiles/Library.dir/src/protomol/integrator/leapfrog/DMDLeapfrogIntegrator.cpp.o: src/protomol/output/Output.h
 CMakeFiles/Library.dir/src/protomol/integrator/leapfrog/DMDLeapfrogIntegrator.cpp.o: src/protomol/output/OutputCache.h
 CMakeFiles/Library.dir/src/protomol/integrator/leapfrog/DMDLeapfrogIntegrator.cpp.o: src/protomol/topology/Angle.h
 CMakeFiles/Library.dir/src/protomol/integrator/leapfrog/DMDLeapfrogIntegrator.cpp.o: src/protomol/topology/AngleInfo.h
@@ -3541,7 +3518,6 @@ CMakeFiles/Library.dir/src/protomol/integrator/leapfrog/GPU.cpp.o: src/protomol/
 CMakeFiles/Library.dir/src/protomol/integrator/leapfrog/GPU.cpp.o: src/protomol/os/cygwin.h
 CMakeFiles/Library.dir/src/protomol/integrator/leapfrog/GPU.cpp.o: src/protomol/os/unix.h
 CMakeFiles/Library.dir/src/protomol/integrator/leapfrog/GPU.cpp.o: src/protomol/os/win32.h
-CMakeFiles/Library.dir/src/protomol/integrator/leapfrog/GPU.cpp.o: src/protomol/output/Output.h
 CMakeFiles/Library.dir/src/protomol/integrator/leapfrog/GPU.cpp.o: src/protomol/output/OutputCache.h
 CMakeFiles/Library.dir/src/protomol/integrator/leapfrog/GPU.cpp.o: src/protomol/switch/CnSwitchingFunction.h
 CMakeFiles/Library.dir/src/protomol/integrator/leapfrog/GPU.cpp.o: src/protomol/topology/Angle.h
@@ -3624,7 +3600,6 @@ CMakeFiles/Library.dir/src/protomol/integrator/leapfrog/LeapfrogDataAcquisition.
 CMakeFiles/Library.dir/src/protomol/integrator/leapfrog/LeapfrogDataAcquisition.cpp.o: src/protomol/os/cygwin.h
 CMakeFiles/Library.dir/src/protomol/integrator/leapfrog/LeapfrogDataAcquisition.cpp.o: src/protomol/os/unix.h
 CMakeFiles/Library.dir/src/protomol/integrator/leapfrog/LeapfrogDataAcquisition.cpp.o: src/protomol/os/win32.h
-CMakeFiles/Library.dir/src/protomol/integrator/leapfrog/LeapfrogDataAcquisition.cpp.o: src/protomol/output/Output.h
 CMakeFiles/Library.dir/src/protomol/integrator/leapfrog/LeapfrogDataAcquisition.cpp.o: src/protomol/output/OutputCache.h
 CMakeFiles/Library.dir/src/protomol/integrator/leapfrog/LeapfrogDataAcquisition.cpp.o: src/protomol/topology/Angle.h
 CMakeFiles/Library.dir/src/protomol/integrator/leapfrog/LeapfrogDataAcquisition.cpp.o: src/protomol/topology/Atom.h
@@ -3699,7 +3674,6 @@ CMakeFiles/Library.dir/src/protomol/integrator/leapfrog/LeapfrogIntegrator.cpp.o
 CMakeFiles/Library.dir/src/protomol/integrator/leapfrog/LeapfrogIntegrator.cpp.o: src/protomol/os/cygwin.h
 CMakeFiles/Library.dir/src/protomol/integrator/leapfrog/LeapfrogIntegrator.cpp.o: src/protomol/os/unix.h
 CMakeFiles/Library.dir/src/protomol/integrator/leapfrog/LeapfrogIntegrator.cpp.o: src/protomol/os/win32.h
-CMakeFiles/Library.dir/src/protomol/integrator/leapfrog/LeapfrogIntegrator.cpp.o: src/protomol/output/Output.h
 CMakeFiles/Library.dir/src/protomol/integrator/leapfrog/LeapfrogIntegrator.cpp.o: src/protomol/output/OutputCache.h
 CMakeFiles/Library.dir/src/protomol/integrator/leapfrog/LeapfrogIntegrator.cpp.o: src/protomol/topology/Angle.h
 CMakeFiles/Library.dir/src/protomol/integrator/leapfrog/LeapfrogIntegrator.cpp.o: src/protomol/topology/AngleInfo.h
@@ -3786,7 +3760,6 @@ CMakeFiles/Library.dir/src/protomol/integrator/leapfrog/LeapfrogTruncatedShadow.
 CMakeFiles/Library.dir/src/protomol/integrator/leapfrog/LeapfrogTruncatedShadow.cpp.o: src/protomol/os/cygwin.h
 CMakeFiles/Library.dir/src/protomol/integrator/leapfrog/LeapfrogTruncatedShadow.cpp.o: src/protomol/os/unix.h
 CMakeFiles/Library.dir/src/protomol/integrator/leapfrog/LeapfrogTruncatedShadow.cpp.o: src/protomol/os/win32.h
-CMakeFiles/Library.dir/src/protomol/integrator/leapfrog/LeapfrogTruncatedShadow.cpp.o: src/protomol/output/Output.h
 CMakeFiles/Library.dir/src/protomol/integrator/leapfrog/LeapfrogTruncatedShadow.cpp.o: src/protomol/output/OutputCache.h
 CMakeFiles/Library.dir/src/protomol/integrator/leapfrog/LeapfrogTruncatedShadow.cpp.o: src/protomol/switch/C1SwitchingFunction.h
 CMakeFiles/Library.dir/src/protomol/integrator/leapfrog/LeapfrogTruncatedShadow.cpp.o: src/protomol/switch/C2SwitchingFunction.h
@@ -3868,7 +3841,6 @@ CMakeFiles/Library.dir/src/protomol/integrator/leapfrog/NoseNVTLeapfrogIntegrato
 CMakeFiles/Library.dir/src/protomol/integrator/leapfrog/NoseNVTLeapfrogIntegrator.cpp.o: src/protomol/os/cygwin.h
 CMakeFiles/Library.dir/src/protomol/integrator/leapfrog/NoseNVTLeapfrogIntegrator.cpp.o: src/protomol/os/unix.h
 CMakeFiles/Library.dir/src/protomol/integrator/leapfrog/NoseNVTLeapfrogIntegrator.cpp.o: src/protomol/os/win32.h
-CMakeFiles/Library.dir/src/protomol/integrator/leapfrog/NoseNVTLeapfrogIntegrator.cpp.o: src/protomol/output/Output.h
 CMakeFiles/Library.dir/src/protomol/integrator/leapfrog/NoseNVTLeapfrogIntegrator.cpp.o: src/protomol/output/OutputCache.h
 CMakeFiles/Library.dir/src/protomol/integrator/leapfrog/NoseNVTLeapfrogIntegrator.cpp.o: src/protomol/topology/Angle.h
 CMakeFiles/Library.dir/src/protomol/integrator/leapfrog/NoseNVTLeapfrogIntegrator.cpp.o: src/protomol/topology/AngleInfo.h
@@ -3945,7 +3917,6 @@ CMakeFiles/Library.dir/src/protomol/integrator/leapfrog/PLeapfrogIntegrator.cpp.
 CMakeFiles/Library.dir/src/protomol/integrator/leapfrog/PLeapfrogIntegrator.cpp.o: src/protomol/os/cygwin.h
 CMakeFiles/Library.dir/src/protomol/integrator/leapfrog/PLeapfrogIntegrator.cpp.o: src/protomol/os/unix.h
 CMakeFiles/Library.dir/src/protomol/integrator/leapfrog/PLeapfrogIntegrator.cpp.o: src/protomol/os/win32.h
-CMakeFiles/Library.dir/src/protomol/integrator/leapfrog/PLeapfrogIntegrator.cpp.o: src/protomol/output/Output.h
 CMakeFiles/Library.dir/src/protomol/integrator/leapfrog/PLeapfrogIntegrator.cpp.o: src/protomol/output/OutputCache.h
 CMakeFiles/Library.dir/src/protomol/integrator/leapfrog/PLeapfrogIntegrator.cpp.o: src/protomol/topology/Angle.h
 CMakeFiles/Library.dir/src/protomol/integrator/leapfrog/PLeapfrogIntegrator.cpp.o: src/protomol/topology/AngleInfo.h
@@ -4027,7 +3998,6 @@ CMakeFiles/Library.dir/src/protomol/integrator/normal/NormalModeBrownian.cpp.o: 
 CMakeFiles/Library.dir/src/protomol/integrator/normal/NormalModeBrownian.cpp.o: src/protomol/os/cygwin.h
 CMakeFiles/Library.dir/src/protomol/integrator/normal/NormalModeBrownian.cpp.o: src/protomol/os/unix.h
 CMakeFiles/Library.dir/src/protomol/integrator/normal/NormalModeBrownian.cpp.o: src/protomol/os/win32.h
-CMakeFiles/Library.dir/src/protomol/integrator/normal/NormalModeBrownian.cpp.o: src/protomol/output/Output.h
 CMakeFiles/Library.dir/src/protomol/integrator/normal/NormalModeBrownian.cpp.o: src/protomol/output/OutputCache.h
 CMakeFiles/Library.dir/src/protomol/integrator/normal/NormalModeBrownian.cpp.o: src/protomol/topology/Angle.h
 CMakeFiles/Library.dir/src/protomol/integrator/normal/NormalModeBrownian.cpp.o: src/protomol/topology/AngleInfo.h
@@ -4110,7 +4080,6 @@ CMakeFiles/Library.dir/src/protomol/integrator/normal/NormalModeDamping.cpp.o: s
 CMakeFiles/Library.dir/src/protomol/integrator/normal/NormalModeDamping.cpp.o: src/protomol/os/cygwin.h
 CMakeFiles/Library.dir/src/protomol/integrator/normal/NormalModeDamping.cpp.o: src/protomol/os/unix.h
 CMakeFiles/Library.dir/src/protomol/integrator/normal/NormalModeDamping.cpp.o: src/protomol/os/win32.h
-CMakeFiles/Library.dir/src/protomol/integrator/normal/NormalModeDamping.cpp.o: src/protomol/output/Output.h
 CMakeFiles/Library.dir/src/protomol/integrator/normal/NormalModeDamping.cpp.o: src/protomol/output/OutputCache.h
 CMakeFiles/Library.dir/src/protomol/integrator/normal/NormalModeDamping.cpp.o: src/protomol/topology/Angle.h
 CMakeFiles/Library.dir/src/protomol/integrator/normal/NormalModeDamping.cpp.o: src/protomol/topology/AngleInfo.h
@@ -4196,7 +4165,6 @@ CMakeFiles/Library.dir/src/protomol/integrator/normal/NormalModeDiagonalize.cpp.
 CMakeFiles/Library.dir/src/protomol/integrator/normal/NormalModeDiagonalize.cpp.o: src/protomol/os/cygwin.h
 CMakeFiles/Library.dir/src/protomol/integrator/normal/NormalModeDiagonalize.cpp.o: src/protomol/os/unix.h
 CMakeFiles/Library.dir/src/protomol/integrator/normal/NormalModeDiagonalize.cpp.o: src/protomol/os/win32.h
-CMakeFiles/Library.dir/src/protomol/integrator/normal/NormalModeDiagonalize.cpp.o: src/protomol/output/Output.h
 CMakeFiles/Library.dir/src/protomol/integrator/normal/NormalModeDiagonalize.cpp.o: src/protomol/output/OutputCache.h
 CMakeFiles/Library.dir/src/protomol/integrator/normal/NormalModeDiagonalize.cpp.o: src/protomol/topology/Angle.h
 CMakeFiles/Library.dir/src/protomol/integrator/normal/NormalModeDiagonalize.cpp.o: src/protomol/topology/AngleInfo.h
@@ -4277,7 +4245,6 @@ CMakeFiles/Library.dir/src/protomol/integrator/normal/NormalModeLangLf.cpp.o: sr
 CMakeFiles/Library.dir/src/protomol/integrator/normal/NormalModeLangLf.cpp.o: src/protomol/os/cygwin.h
 CMakeFiles/Library.dir/src/protomol/integrator/normal/NormalModeLangLf.cpp.o: src/protomol/os/unix.h
 CMakeFiles/Library.dir/src/protomol/integrator/normal/NormalModeLangLf.cpp.o: src/protomol/os/win32.h
-CMakeFiles/Library.dir/src/protomol/integrator/normal/NormalModeLangLf.cpp.o: src/protomol/output/Output.h
 CMakeFiles/Library.dir/src/protomol/integrator/normal/NormalModeLangLf.cpp.o: src/protomol/output/OutputCache.h
 CMakeFiles/Library.dir/src/protomol/integrator/normal/NormalModeLangLf.cpp.o: src/protomol/topology/Angle.h
 CMakeFiles/Library.dir/src/protomol/integrator/normal/NormalModeLangLf.cpp.o: src/protomol/topology/AngleInfo.h
@@ -4357,7 +4324,6 @@ CMakeFiles/Library.dir/src/protomol/integrator/normal/NormalModeLangevin.cpp.o: 
 CMakeFiles/Library.dir/src/protomol/integrator/normal/NormalModeLangevin.cpp.o: src/protomol/os/cygwin.h
 CMakeFiles/Library.dir/src/protomol/integrator/normal/NormalModeLangevin.cpp.o: src/protomol/os/unix.h
 CMakeFiles/Library.dir/src/protomol/integrator/normal/NormalModeLangevin.cpp.o: src/protomol/os/win32.h
-CMakeFiles/Library.dir/src/protomol/integrator/normal/NormalModeLangevin.cpp.o: src/protomol/output/Output.h
 CMakeFiles/Library.dir/src/protomol/integrator/normal/NormalModeLangevin.cpp.o: src/protomol/output/OutputCache.h
 CMakeFiles/Library.dir/src/protomol/integrator/normal/NormalModeLangevin.cpp.o: src/protomol/topology/Angle.h
 CMakeFiles/Library.dir/src/protomol/integrator/normal/NormalModeLangevin.cpp.o: src/protomol/topology/AngleInfo.h
@@ -4435,7 +4401,6 @@ CMakeFiles/Library.dir/src/protomol/integrator/normal/NormalModeMinimizer.cpp.o:
 CMakeFiles/Library.dir/src/protomol/integrator/normal/NormalModeMinimizer.cpp.o: src/protomol/os/cygwin.h
 CMakeFiles/Library.dir/src/protomol/integrator/normal/NormalModeMinimizer.cpp.o: src/protomol/os/unix.h
 CMakeFiles/Library.dir/src/protomol/integrator/normal/NormalModeMinimizer.cpp.o: src/protomol/os/win32.h
-CMakeFiles/Library.dir/src/protomol/integrator/normal/NormalModeMinimizer.cpp.o: src/protomol/output/Output.h
 CMakeFiles/Library.dir/src/protomol/integrator/normal/NormalModeMinimizer.cpp.o: src/protomol/output/OutputCache.h
 CMakeFiles/Library.dir/src/protomol/integrator/normal/NormalModeMinimizer.cpp.o: src/protomol/topology/Angle.h
 CMakeFiles/Library.dir/src/protomol/integrator/normal/NormalModeMinimizer.cpp.o: src/protomol/topology/AngleInfo.h
@@ -4515,7 +4480,6 @@ CMakeFiles/Library.dir/src/protomol/integrator/normal/NormalModeMori.cpp.o: src/
 CMakeFiles/Library.dir/src/protomol/integrator/normal/NormalModeMori.cpp.o: src/protomol/os/cygwin.h
 CMakeFiles/Library.dir/src/protomol/integrator/normal/NormalModeMori.cpp.o: src/protomol/os/unix.h
 CMakeFiles/Library.dir/src/protomol/integrator/normal/NormalModeMori.cpp.o: src/protomol/os/win32.h
-CMakeFiles/Library.dir/src/protomol/integrator/normal/NormalModeMori.cpp.o: src/protomol/output/Output.h
 CMakeFiles/Library.dir/src/protomol/integrator/normal/NormalModeMori.cpp.o: src/protomol/output/OutputCache.h
 CMakeFiles/Library.dir/src/protomol/integrator/normal/NormalModeMori.cpp.o: src/protomol/topology/Angle.h
 CMakeFiles/Library.dir/src/protomol/integrator/normal/NormalModeMori.cpp.o: src/protomol/topology/AngleInfo.h
@@ -4594,7 +4558,6 @@ CMakeFiles/Library.dir/src/protomol/integrator/normal/NormalModeQuadratic.cpp.o:
 CMakeFiles/Library.dir/src/protomol/integrator/normal/NormalModeQuadratic.cpp.o: src/protomol/os/cygwin.h
 CMakeFiles/Library.dir/src/protomol/integrator/normal/NormalModeQuadratic.cpp.o: src/protomol/os/unix.h
 CMakeFiles/Library.dir/src/protomol/integrator/normal/NormalModeQuadratic.cpp.o: src/protomol/os/win32.h
-CMakeFiles/Library.dir/src/protomol/integrator/normal/NormalModeQuadratic.cpp.o: src/protomol/output/Output.h
 CMakeFiles/Library.dir/src/protomol/integrator/normal/NormalModeQuadratic.cpp.o: src/protomol/output/OutputCache.h
 CMakeFiles/Library.dir/src/protomol/integrator/normal/NormalModeQuadratic.cpp.o: src/protomol/topology/Angle.h
 CMakeFiles/Library.dir/src/protomol/integrator/normal/NormalModeQuadratic.cpp.o: src/protomol/topology/AngleInfo.h
@@ -4672,7 +4635,6 @@ CMakeFiles/Library.dir/src/protomol/integrator/normal/NormalModeRelax.cpp.o: src
 CMakeFiles/Library.dir/src/protomol/integrator/normal/NormalModeRelax.cpp.o: src/protomol/os/cygwin.h
 CMakeFiles/Library.dir/src/protomol/integrator/normal/NormalModeRelax.cpp.o: src/protomol/os/unix.h
 CMakeFiles/Library.dir/src/protomol/integrator/normal/NormalModeRelax.cpp.o: src/protomol/os/win32.h
-CMakeFiles/Library.dir/src/protomol/integrator/normal/NormalModeRelax.cpp.o: src/protomol/output/Output.h
 CMakeFiles/Library.dir/src/protomol/integrator/normal/NormalModeRelax.cpp.o: src/protomol/output/OutputCache.h
 CMakeFiles/Library.dir/src/protomol/integrator/normal/NormalModeRelax.cpp.o: src/protomol/topology/Angle.h
 CMakeFiles/Library.dir/src/protomol/integrator/normal/NormalModeRelax.cpp.o: src/protomol/topology/AngleInfo.h
@@ -4747,7 +4709,6 @@ CMakeFiles/Library.dir/src/protomol/integrator/normal/NormalModeUtilities.cpp.o:
 CMakeFiles/Library.dir/src/protomol/integrator/normal/NormalModeUtilities.cpp.o: src/protomol/os/cygwin.h
 CMakeFiles/Library.dir/src/protomol/integrator/normal/NormalModeUtilities.cpp.o: src/protomol/os/unix.h
 CMakeFiles/Library.dir/src/protomol/integrator/normal/NormalModeUtilities.cpp.o: src/protomol/os/win32.h
-CMakeFiles/Library.dir/src/protomol/integrator/normal/NormalModeUtilities.cpp.o: src/protomol/output/Output.h
 CMakeFiles/Library.dir/src/protomol/integrator/normal/NormalModeUtilities.cpp.o: src/protomol/output/OutputCache.h
 CMakeFiles/Library.dir/src/protomol/integrator/normal/NormalModeUtilities.cpp.o: src/protomol/topology/Angle.h
 CMakeFiles/Library.dir/src/protomol/integrator/normal/NormalModeUtilities.cpp.o: src/protomol/topology/AngleInfo.h
@@ -5031,9 +4992,6 @@ CMakeFiles/Library.dir/src/protomol/io/File.cpp.o: src/protomol/type/Real.h
 CMakeFiles/Library.dir/src/protomol/io/File.cpp.o: src/protomol/type/SimpleTypes.h
 CMakeFiles/Library.dir/src/protomol/io/File.cpp.o: src/protomol/type/String.h
 CMakeFiles/Library.dir/src/protomol/io/File.cpp.o: src/protomol/type/Vector3D.h
-
-CMakeFiles/Library.dir/src/protomol/io/LuaConfigReader.cpp.o: src/protomol/io/LuaConfigReader.cpp
-CMakeFiles/Library.dir/src/protomol/io/LuaConfigReader.cpp.o: src/protomol/io/LuaConfigReader.h
 
 CMakeFiles/Library.dir/src/protomol/io/PARReader.cpp.o: src/protomol/io/PARReader.cpp
 CMakeFiles/Library.dir/src/protomol/io/PARReader.cpp.o: src/protomol/base/Counter.h
@@ -5618,7 +5576,6 @@ CMakeFiles/Library.dir/src/protomol/modifier/Modifier.cpp.o: src/protomol/modifi
 CMakeFiles/Library.dir/src/protomol/modifier/Modifier.cpp.o: src/protomol/os/cygwin.h
 CMakeFiles/Library.dir/src/protomol/modifier/Modifier.cpp.o: src/protomol/os/unix.h
 CMakeFiles/Library.dir/src/protomol/modifier/Modifier.cpp.o: src/protomol/os/win32.h
-CMakeFiles/Library.dir/src/protomol/modifier/Modifier.cpp.o: src/protomol/output/Output.h
 CMakeFiles/Library.dir/src/protomol/modifier/Modifier.cpp.o: src/protomol/output/OutputCache.h
 CMakeFiles/Library.dir/src/protomol/modifier/Modifier.cpp.o: src/protomol/topology/Angle.h
 CMakeFiles/Library.dir/src/protomol/modifier/Modifier.cpp.o: src/protomol/topology/Atom.h
@@ -5690,7 +5647,6 @@ CMakeFiles/Library.dir/src/protomol/modifier/ModifierMetaRattle.cpp.o: src/proto
 CMakeFiles/Library.dir/src/protomol/modifier/ModifierMetaRattle.cpp.o: src/protomol/os/cygwin.h
 CMakeFiles/Library.dir/src/protomol/modifier/ModifierMetaRattle.cpp.o: src/protomol/os/unix.h
 CMakeFiles/Library.dir/src/protomol/modifier/ModifierMetaRattle.cpp.o: src/protomol/os/win32.h
-CMakeFiles/Library.dir/src/protomol/modifier/ModifierMetaRattle.cpp.o: src/protomol/output/Output.h
 CMakeFiles/Library.dir/src/protomol/modifier/ModifierMetaRattle.cpp.o: src/protomol/output/OutputCache.h
 CMakeFiles/Library.dir/src/protomol/modifier/ModifierMetaRattle.cpp.o: src/protomol/topology/Angle.h
 CMakeFiles/Library.dir/src/protomol/modifier/ModifierMetaRattle.cpp.o: src/protomol/topology/AngleInfo.h
@@ -5774,7 +5730,6 @@ CMakeFiles/Library.dir/src/protomol/modifier/ModifierMetaRattleShake.cpp.o: src/
 CMakeFiles/Library.dir/src/protomol/modifier/ModifierMetaRattleShake.cpp.o: src/protomol/os/cygwin.h
 CMakeFiles/Library.dir/src/protomol/modifier/ModifierMetaRattleShake.cpp.o: src/protomol/os/unix.h
 CMakeFiles/Library.dir/src/protomol/modifier/ModifierMetaRattleShake.cpp.o: src/protomol/os/win32.h
-CMakeFiles/Library.dir/src/protomol/modifier/ModifierMetaRattleShake.cpp.o: src/protomol/output/Output.h
 CMakeFiles/Library.dir/src/protomol/modifier/ModifierMetaRattleShake.cpp.o: src/protomol/output/OutputCache.h
 CMakeFiles/Library.dir/src/protomol/modifier/ModifierMetaRattleShake.cpp.o: src/protomol/topology/Angle.h
 CMakeFiles/Library.dir/src/protomol/modifier/ModifierMetaRattleShake.cpp.o: src/protomol/topology/AngleInfo.h
@@ -5859,7 +5814,6 @@ CMakeFiles/Library.dir/src/protomol/modifier/ModifierMetaShake.cpp.o: src/protom
 CMakeFiles/Library.dir/src/protomol/modifier/ModifierMetaShake.cpp.o: src/protomol/os/cygwin.h
 CMakeFiles/Library.dir/src/protomol/modifier/ModifierMetaShake.cpp.o: src/protomol/os/unix.h
 CMakeFiles/Library.dir/src/protomol/modifier/ModifierMetaShake.cpp.o: src/protomol/os/win32.h
-CMakeFiles/Library.dir/src/protomol/modifier/ModifierMetaShake.cpp.o: src/protomol/output/Output.h
 CMakeFiles/Library.dir/src/protomol/modifier/ModifierMetaShake.cpp.o: src/protomol/output/OutputCache.h
 CMakeFiles/Library.dir/src/protomol/modifier/ModifierMetaShake.cpp.o: src/protomol/topology/Angle.h
 CMakeFiles/Library.dir/src/protomol/modifier/ModifierMetaShake.cpp.o: src/protomol/topology/AngleInfo.h
@@ -5945,7 +5899,6 @@ CMakeFiles/Library.dir/src/protomol/modifier/ModifierRattle.cpp.o: src/protomol/
 CMakeFiles/Library.dir/src/protomol/modifier/ModifierRattle.cpp.o: src/protomol/os/cygwin.h
 CMakeFiles/Library.dir/src/protomol/modifier/ModifierRattle.cpp.o: src/protomol/os/unix.h
 CMakeFiles/Library.dir/src/protomol/modifier/ModifierRattle.cpp.o: src/protomol/os/win32.h
-CMakeFiles/Library.dir/src/protomol/modifier/ModifierRattle.cpp.o: src/protomol/output/Output.h
 CMakeFiles/Library.dir/src/protomol/modifier/ModifierRattle.cpp.o: src/protomol/output/OutputCache.h
 CMakeFiles/Library.dir/src/protomol/modifier/ModifierRattle.cpp.o: src/protomol/topology/Angle.h
 CMakeFiles/Library.dir/src/protomol/modifier/ModifierRattle.cpp.o: src/protomol/topology/AngleInfo.h
@@ -6029,7 +5982,6 @@ CMakeFiles/Library.dir/src/protomol/modifier/ModifierShadow.cpp.o: src/protomol/
 CMakeFiles/Library.dir/src/protomol/modifier/ModifierShadow.cpp.o: src/protomol/os/cygwin.h
 CMakeFiles/Library.dir/src/protomol/modifier/ModifierShadow.cpp.o: src/protomol/os/unix.h
 CMakeFiles/Library.dir/src/protomol/modifier/ModifierShadow.cpp.o: src/protomol/os/win32.h
-CMakeFiles/Library.dir/src/protomol/modifier/ModifierShadow.cpp.o: src/protomol/output/Output.h
 CMakeFiles/Library.dir/src/protomol/modifier/ModifierShadow.cpp.o: src/protomol/output/OutputCache.h
 CMakeFiles/Library.dir/src/protomol/modifier/ModifierShadow.cpp.o: src/protomol/topology/Angle.h
 CMakeFiles/Library.dir/src/protomol/modifier/ModifierShadow.cpp.o: src/protomol/topology/AngleInfo.h
@@ -6115,7 +6067,6 @@ CMakeFiles/Library.dir/src/protomol/modifier/ModifierShake.cpp.o: src/protomol/m
 CMakeFiles/Library.dir/src/protomol/modifier/ModifierShake.cpp.o: src/protomol/os/cygwin.h
 CMakeFiles/Library.dir/src/protomol/modifier/ModifierShake.cpp.o: src/protomol/os/unix.h
 CMakeFiles/Library.dir/src/protomol/modifier/ModifierShake.cpp.o: src/protomol/os/win32.h
-CMakeFiles/Library.dir/src/protomol/modifier/ModifierShake.cpp.o: src/protomol/output/Output.h
 CMakeFiles/Library.dir/src/protomol/modifier/ModifierShake.cpp.o: src/protomol/output/OutputCache.h
 CMakeFiles/Library.dir/src/protomol/modifier/ModifierShake.cpp.o: src/protomol/topology/Angle.h
 CMakeFiles/Library.dir/src/protomol/modifier/ModifierShake.cpp.o: src/protomol/topology/AngleInfo.h
@@ -6217,7 +6168,6 @@ CMakeFiles/Library.dir/src/protomol/module/BondedForcesModule.cpp.o: src/protomo
 CMakeFiles/Library.dir/src/protomol/module/BondedForcesModule.cpp.o: src/protomol/os/cygwin.h
 CMakeFiles/Library.dir/src/protomol/module/BondedForcesModule.cpp.o: src/protomol/os/unix.h
 CMakeFiles/Library.dir/src/protomol/module/BondedForcesModule.cpp.o: src/protomol/os/win32.h
-CMakeFiles/Library.dir/src/protomol/module/BondedForcesModule.cpp.o: src/protomol/output/Output.h
 CMakeFiles/Library.dir/src/protomol/module/BondedForcesModule.cpp.o: src/protomol/output/OutputCache.h
 CMakeFiles/Library.dir/src/protomol/module/BondedForcesModule.cpp.o: src/protomol/parallel/Parallel.h
 CMakeFiles/Library.dir/src/protomol/module/BondedForcesModule.cpp.o: src/protomol/parallel/ParallelType.h
@@ -6303,7 +6253,6 @@ CMakeFiles/Library.dir/src/protomol/module/CheckpointModule.cpp.o: src/protomol/
 CMakeFiles/Library.dir/src/protomol/module/CheckpointModule.cpp.o: src/protomol/os/cygwin.h
 CMakeFiles/Library.dir/src/protomol/module/CheckpointModule.cpp.o: src/protomol/os/unix.h
 CMakeFiles/Library.dir/src/protomol/module/CheckpointModule.cpp.o: src/protomol/os/win32.h
-CMakeFiles/Library.dir/src/protomol/module/CheckpointModule.cpp.o: src/protomol/output/Output.h
 CMakeFiles/Library.dir/src/protomol/module/CheckpointModule.cpp.o: src/protomol/output/OutputCache.h
 CMakeFiles/Library.dir/src/protomol/module/CheckpointModule.cpp.o: src/protomol/output/OutputCheckpoint.h
 CMakeFiles/Library.dir/src/protomol/module/CheckpointModule.cpp.o: src/protomol/topology/Angle.h
@@ -6380,7 +6329,6 @@ CMakeFiles/Library.dir/src/protomol/module/CommandLineModule.cpp.o: src/protomol
 CMakeFiles/Library.dir/src/protomol/module/CommandLineModule.cpp.o: src/protomol/os/cygwin.h
 CMakeFiles/Library.dir/src/protomol/module/CommandLineModule.cpp.o: src/protomol/os/unix.h
 CMakeFiles/Library.dir/src/protomol/module/CommandLineModule.cpp.o: src/protomol/os/win32.h
-CMakeFiles/Library.dir/src/protomol/module/CommandLineModule.cpp.o: src/protomol/output/Output.h
 CMakeFiles/Library.dir/src/protomol/module/CommandLineModule.cpp.o: src/protomol/output/OutputCache.h
 CMakeFiles/Library.dir/src/protomol/module/CommandLineModule.cpp.o: src/protomol/topology/Angle.h
 CMakeFiles/Library.dir/src/protomol/module/CommandLineModule.cpp.o: src/protomol/topology/Atom.h
@@ -6457,7 +6405,6 @@ CMakeFiles/Library.dir/src/protomol/module/ConfigurationModule.cpp.o: src/protom
 CMakeFiles/Library.dir/src/protomol/module/ConfigurationModule.cpp.o: src/protomol/os/cygwin.h
 CMakeFiles/Library.dir/src/protomol/module/ConfigurationModule.cpp.o: src/protomol/os/unix.h
 CMakeFiles/Library.dir/src/protomol/module/ConfigurationModule.cpp.o: src/protomol/os/win32.h
-CMakeFiles/Library.dir/src/protomol/module/ConfigurationModule.cpp.o: src/protomol/output/Output.h
 CMakeFiles/Library.dir/src/protomol/module/ConfigurationModule.cpp.o: src/protomol/output/OutputCache.h
 CMakeFiles/Library.dir/src/protomol/module/ConfigurationModule.cpp.o: src/protomol/topology/Angle.h
 CMakeFiles/Library.dir/src/protomol/module/ConfigurationModule.cpp.o: src/protomol/topology/Atom.h
@@ -6537,7 +6484,6 @@ CMakeFiles/Library.dir/src/protomol/module/HessianIntegratorModule.cpp.o: src/pr
 CMakeFiles/Library.dir/src/protomol/module/HessianIntegratorModule.cpp.o: src/protomol/os/cygwin.h
 CMakeFiles/Library.dir/src/protomol/module/HessianIntegratorModule.cpp.o: src/protomol/os/unix.h
 CMakeFiles/Library.dir/src/protomol/module/HessianIntegratorModule.cpp.o: src/protomol/os/win32.h
-CMakeFiles/Library.dir/src/protomol/module/HessianIntegratorModule.cpp.o: src/protomol/output/Output.h
 CMakeFiles/Library.dir/src/protomol/module/HessianIntegratorModule.cpp.o: src/protomol/output/OutputCache.h
 CMakeFiles/Library.dir/src/protomol/module/HessianIntegratorModule.cpp.o: src/protomol/topology/Angle.h
 CMakeFiles/Library.dir/src/protomol/module/HessianIntegratorModule.cpp.o: src/protomol/topology/Atom.h
@@ -6619,7 +6565,6 @@ CMakeFiles/Library.dir/src/protomol/module/IOModule.cpp.o: src/protomol/module/M
 CMakeFiles/Library.dir/src/protomol/module/IOModule.cpp.o: src/protomol/os/cygwin.h
 CMakeFiles/Library.dir/src/protomol/module/IOModule.cpp.o: src/protomol/os/unix.h
 CMakeFiles/Library.dir/src/protomol/module/IOModule.cpp.o: src/protomol/os/win32.h
-CMakeFiles/Library.dir/src/protomol/module/IOModule.cpp.o: src/protomol/output/Output.h
 CMakeFiles/Library.dir/src/protomol/module/IOModule.cpp.o: src/protomol/output/OutputCache.h
 CMakeFiles/Library.dir/src/protomol/module/IOModule.cpp.o: src/protomol/topology/Angle.h
 CMakeFiles/Library.dir/src/protomol/module/IOModule.cpp.o: src/protomol/topology/Atom.h
@@ -6704,7 +6649,6 @@ CMakeFiles/Library.dir/src/protomol/module/IntegratorBaseModule.cpp.o: src/proto
 CMakeFiles/Library.dir/src/protomol/module/IntegratorBaseModule.cpp.o: src/protomol/os/cygwin.h
 CMakeFiles/Library.dir/src/protomol/module/IntegratorBaseModule.cpp.o: src/protomol/os/unix.h
 CMakeFiles/Library.dir/src/protomol/module/IntegratorBaseModule.cpp.o: src/protomol/os/win32.h
-CMakeFiles/Library.dir/src/protomol/module/IntegratorBaseModule.cpp.o: src/protomol/output/Output.h
 CMakeFiles/Library.dir/src/protomol/module/IntegratorBaseModule.cpp.o: src/protomol/output/OutputCache.h
 CMakeFiles/Library.dir/src/protomol/module/IntegratorBaseModule.cpp.o: src/protomol/topology/Angle.h
 CMakeFiles/Library.dir/src/protomol/module/IntegratorBaseModule.cpp.o: src/protomol/topology/Atom.h
@@ -6781,7 +6725,6 @@ CMakeFiles/Library.dir/src/protomol/module/IntegratorOpenMMModule.cpp.o: src/pro
 CMakeFiles/Library.dir/src/protomol/module/IntegratorOpenMMModule.cpp.o: src/protomol/os/cygwin.h
 CMakeFiles/Library.dir/src/protomol/module/IntegratorOpenMMModule.cpp.o: src/protomol/os/unix.h
 CMakeFiles/Library.dir/src/protomol/module/IntegratorOpenMMModule.cpp.o: src/protomol/os/win32.h
-CMakeFiles/Library.dir/src/protomol/module/IntegratorOpenMMModule.cpp.o: src/protomol/output/Output.h
 CMakeFiles/Library.dir/src/protomol/module/IntegratorOpenMMModule.cpp.o: src/protomol/output/OutputCache.h
 CMakeFiles/Library.dir/src/protomol/module/IntegratorOpenMMModule.cpp.o: src/protomol/topology/Angle.h
 CMakeFiles/Library.dir/src/protomol/module/IntegratorOpenMMModule.cpp.o: src/protomol/topology/Atom.h
@@ -6866,7 +6809,6 @@ CMakeFiles/Library.dir/src/protomol/module/LeapfrogModule.cpp.o: src/protomol/mo
 CMakeFiles/Library.dir/src/protomol/module/LeapfrogModule.cpp.o: src/protomol/os/cygwin.h
 CMakeFiles/Library.dir/src/protomol/module/LeapfrogModule.cpp.o: src/protomol/os/unix.h
 CMakeFiles/Library.dir/src/protomol/module/LeapfrogModule.cpp.o: src/protomol/os/win32.h
-CMakeFiles/Library.dir/src/protomol/module/LeapfrogModule.cpp.o: src/protomol/output/Output.h
 CMakeFiles/Library.dir/src/protomol/module/LeapfrogModule.cpp.o: src/protomol/output/OutputCache.h
 CMakeFiles/Library.dir/src/protomol/module/LeapfrogModule.cpp.o: src/protomol/topology/Angle.h
 CMakeFiles/Library.dir/src/protomol/module/LeapfrogModule.cpp.o: src/protomol/topology/Atom.h
@@ -6940,7 +6882,6 @@ CMakeFiles/Library.dir/src/protomol/module/MainModule.cpp.o: src/protomol/module
 CMakeFiles/Library.dir/src/protomol/module/MainModule.cpp.o: src/protomol/os/cygwin.h
 CMakeFiles/Library.dir/src/protomol/module/MainModule.cpp.o: src/protomol/os/unix.h
 CMakeFiles/Library.dir/src/protomol/module/MainModule.cpp.o: src/protomol/os/win32.h
-CMakeFiles/Library.dir/src/protomol/module/MainModule.cpp.o: src/protomol/output/Output.h
 CMakeFiles/Library.dir/src/protomol/module/MainModule.cpp.o: src/protomol/output/OutputCache.h
 CMakeFiles/Library.dir/src/protomol/module/MainModule.cpp.o: src/protomol/parallel/Parallel.h
 CMakeFiles/Library.dir/src/protomol/module/MainModule.cpp.o: src/protomol/parallel/ParallelType.h
@@ -7030,7 +6971,6 @@ CMakeFiles/Library.dir/src/protomol/module/ModifierModule.cpp.o: src/protomol/mo
 CMakeFiles/Library.dir/src/protomol/module/ModifierModule.cpp.o: src/protomol/os/cygwin.h
 CMakeFiles/Library.dir/src/protomol/module/ModifierModule.cpp.o: src/protomol/os/unix.h
 CMakeFiles/Library.dir/src/protomol/module/ModifierModule.cpp.o: src/protomol/os/win32.h
-CMakeFiles/Library.dir/src/protomol/module/ModifierModule.cpp.o: src/protomol/output/Output.h
 CMakeFiles/Library.dir/src/protomol/module/ModifierModule.cpp.o: src/protomol/output/OutputCache.h
 CMakeFiles/Library.dir/src/protomol/module/ModifierModule.cpp.o: src/protomol/topology/Angle.h
 CMakeFiles/Library.dir/src/protomol/module/ModifierModule.cpp.o: src/protomol/topology/AngleInfo.h
@@ -7127,7 +7067,6 @@ CMakeFiles/Library.dir/src/protomol/module/NonbondedCutoffForceModule.cpp.o: src
 CMakeFiles/Library.dir/src/protomol/module/NonbondedCutoffForceModule.cpp.o: src/protomol/os/cygwin.h
 CMakeFiles/Library.dir/src/protomol/module/NonbondedCutoffForceModule.cpp.o: src/protomol/os/unix.h
 CMakeFiles/Library.dir/src/protomol/module/NonbondedCutoffForceModule.cpp.o: src/protomol/os/win32.h
-CMakeFiles/Library.dir/src/protomol/module/NonbondedCutoffForceModule.cpp.o: src/protomol/output/Output.h
 CMakeFiles/Library.dir/src/protomol/module/NonbondedCutoffForceModule.cpp.o: src/protomol/output/OutputCache.h
 CMakeFiles/Library.dir/src/protomol/module/NonbondedCutoffForceModule.cpp.o: src/protomol/parallel/Parallel.h
 CMakeFiles/Library.dir/src/protomol/module/NonbondedCutoffForceModule.cpp.o: src/protomol/parallel/ParallelType.h
@@ -7233,7 +7172,6 @@ CMakeFiles/Library.dir/src/protomol/module/NonbondedFullElectrostaticForceModule
 CMakeFiles/Library.dir/src/protomol/module/NonbondedFullElectrostaticForceModule.cpp.o: src/protomol/os/cygwin.h
 CMakeFiles/Library.dir/src/protomol/module/NonbondedFullElectrostaticForceModule.cpp.o: src/protomol/os/unix.h
 CMakeFiles/Library.dir/src/protomol/module/NonbondedFullElectrostaticForceModule.cpp.o: src/protomol/os/win32.h
-CMakeFiles/Library.dir/src/protomol/module/NonbondedFullElectrostaticForceModule.cpp.o: src/protomol/output/Output.h
 CMakeFiles/Library.dir/src/protomol/module/NonbondedFullElectrostaticForceModule.cpp.o: src/protomol/output/OutputCache.h
 CMakeFiles/Library.dir/src/protomol/module/NonbondedFullElectrostaticForceModule.cpp.o: src/protomol/parallel/Parallel.h
 CMakeFiles/Library.dir/src/protomol/module/NonbondedFullElectrostaticForceModule.cpp.o: src/protomol/parallel/ParallelType.h
@@ -7334,7 +7272,6 @@ CMakeFiles/Library.dir/src/protomol/module/NonbondedFullForceModule.cpp.o: src/p
 CMakeFiles/Library.dir/src/protomol/module/NonbondedFullForceModule.cpp.o: src/protomol/os/cygwin.h
 CMakeFiles/Library.dir/src/protomol/module/NonbondedFullForceModule.cpp.o: src/protomol/os/unix.h
 CMakeFiles/Library.dir/src/protomol/module/NonbondedFullForceModule.cpp.o: src/protomol/os/win32.h
-CMakeFiles/Library.dir/src/protomol/module/NonbondedFullForceModule.cpp.o: src/protomol/output/Output.h
 CMakeFiles/Library.dir/src/protomol/module/NonbondedFullForceModule.cpp.o: src/protomol/output/OutputCache.h
 CMakeFiles/Library.dir/src/protomol/module/NonbondedFullForceModule.cpp.o: src/protomol/parallel/Parallel.h
 CMakeFiles/Library.dir/src/protomol/module/NonbondedFullForceModule.cpp.o: src/protomol/parallel/ParallelType.h
@@ -7441,7 +7378,6 @@ CMakeFiles/Library.dir/src/protomol/module/NonbondedIntermittentFullForceModule.
 CMakeFiles/Library.dir/src/protomol/module/NonbondedIntermittentFullForceModule.cpp.o: src/protomol/os/cygwin.h
 CMakeFiles/Library.dir/src/protomol/module/NonbondedIntermittentFullForceModule.cpp.o: src/protomol/os/unix.h
 CMakeFiles/Library.dir/src/protomol/module/NonbondedIntermittentFullForceModule.cpp.o: src/protomol/os/win32.h
-CMakeFiles/Library.dir/src/protomol/module/NonbondedIntermittentFullForceModule.cpp.o: src/protomol/output/Output.h
 CMakeFiles/Library.dir/src/protomol/module/NonbondedIntermittentFullForceModule.cpp.o: src/protomol/output/OutputCache.h
 CMakeFiles/Library.dir/src/protomol/module/NonbondedIntermittentFullForceModule.cpp.o: src/protomol/parallel/Parallel.h
 CMakeFiles/Library.dir/src/protomol/module/NonbondedIntermittentFullForceModule.cpp.o: src/protomol/parallel/ParallelType.h
@@ -7552,7 +7488,6 @@ CMakeFiles/Library.dir/src/protomol/module/NonbondedSimpleFullForceModule.cpp.o:
 CMakeFiles/Library.dir/src/protomol/module/NonbondedSimpleFullForceModule.cpp.o: src/protomol/os/cygwin.h
 CMakeFiles/Library.dir/src/protomol/module/NonbondedSimpleFullForceModule.cpp.o: src/protomol/os/unix.h
 CMakeFiles/Library.dir/src/protomol/module/NonbondedSimpleFullForceModule.cpp.o: src/protomol/os/win32.h
-CMakeFiles/Library.dir/src/protomol/module/NonbondedSimpleFullForceModule.cpp.o: src/protomol/output/Output.h
 CMakeFiles/Library.dir/src/protomol/module/NonbondedSimpleFullForceModule.cpp.o: src/protomol/output/OutputCache.h
 CMakeFiles/Library.dir/src/protomol/module/NonbondedSimpleFullForceModule.cpp.o: src/protomol/parallel/Parallel.h
 CMakeFiles/Library.dir/src/protomol/module/NonbondedSimpleFullForceModule.cpp.o: src/protomol/parallel/ParallelType.h
@@ -7674,7 +7609,6 @@ CMakeFiles/Library.dir/src/protomol/module/NormalModeModule.cpp.o: src/protomol/
 CMakeFiles/Library.dir/src/protomol/module/NormalModeModule.cpp.o: src/protomol/os/cygwin.h
 CMakeFiles/Library.dir/src/protomol/module/NormalModeModule.cpp.o: src/protomol/os/unix.h
 CMakeFiles/Library.dir/src/protomol/module/NormalModeModule.cpp.o: src/protomol/os/win32.h
-CMakeFiles/Library.dir/src/protomol/module/NormalModeModule.cpp.o: src/protomol/output/Output.h
 CMakeFiles/Library.dir/src/protomol/module/NormalModeModule.cpp.o: src/protomol/output/OutputCache.h
 CMakeFiles/Library.dir/src/protomol/module/NormalModeModule.cpp.o: src/protomol/topology/Angle.h
 CMakeFiles/Library.dir/src/protomol/module/NormalModeModule.cpp.o: src/protomol/topology/Atom.h
@@ -7760,7 +7694,6 @@ CMakeFiles/Library.dir/src/protomol/module/OutputModule.cpp.o: src/protomol/os/c
 CMakeFiles/Library.dir/src/protomol/module/OutputModule.cpp.o: src/protomol/os/unix.h
 CMakeFiles/Library.dir/src/protomol/module/OutputModule.cpp.o: src/protomol/os/win32.h
 CMakeFiles/Library.dir/src/protomol/module/OutputModule.cpp.o: src/protomol/output/GUIServer.h
-CMakeFiles/Library.dir/src/protomol/module/OutputModule.cpp.o: src/protomol/output/Output.h
 CMakeFiles/Library.dir/src/protomol/module/OutputModule.cpp.o: src/protomol/output/OutputCache.h
 CMakeFiles/Library.dir/src/protomol/module/OutputModule.cpp.o: src/protomol/output/OutputDCDTrajectory.h
 CMakeFiles/Library.dir/src/protomol/module/OutputModule.cpp.o: src/protomol/output/OutputDCDTrajectoryVel.h
@@ -7849,7 +7782,6 @@ CMakeFiles/Library.dir/src/protomol/module/TopologyModule.cpp.o: src/protomol/mo
 CMakeFiles/Library.dir/src/protomol/module/TopologyModule.cpp.o: src/protomol/os/cygwin.h
 CMakeFiles/Library.dir/src/protomol/module/TopologyModule.cpp.o: src/protomol/os/unix.h
 CMakeFiles/Library.dir/src/protomol/module/TopologyModule.cpp.o: src/protomol/os/win32.h
-CMakeFiles/Library.dir/src/protomol/module/TopologyModule.cpp.o: src/protomol/output/Output.h
 CMakeFiles/Library.dir/src/protomol/module/TopologyModule.cpp.o: src/protomol/output/OutputCache.h
 CMakeFiles/Library.dir/src/protomol/module/TopologyModule.cpp.o: src/protomol/topology/Angle.h
 CMakeFiles/Library.dir/src/protomol/module/TopologyModule.cpp.o: src/protomol/topology/AngleInfo.h
@@ -8025,7 +7957,6 @@ CMakeFiles/Library.dir/src/protomol/output/OutputCache.cpp.o: src/protomol/io/SC
 CMakeFiles/Library.dir/src/protomol/output/OutputCache.cpp.o: src/protomol/os/cygwin.h
 CMakeFiles/Library.dir/src/protomol/output/OutputCache.cpp.o: src/protomol/os/unix.h
 CMakeFiles/Library.dir/src/protomol/output/OutputCache.cpp.o: src/protomol/os/win32.h
-CMakeFiles/Library.dir/src/protomol/output/OutputCache.cpp.o: src/protomol/output/Output.h
 CMakeFiles/Library.dir/src/protomol/output/OutputCache.cpp.o: src/protomol/output/OutputCache.h
 CMakeFiles/Library.dir/src/protomol/output/OutputCache.cpp.o: src/protomol/topology/Angle.h
 CMakeFiles/Library.dir/src/protomol/output/OutputCache.cpp.o: src/protomol/topology/AngleInfo.h
@@ -8107,7 +8038,6 @@ CMakeFiles/Library.dir/src/protomol/output/OutputCheckpoint.cpp.o: src/protomol/
 CMakeFiles/Library.dir/src/protomol/output/OutputCheckpoint.cpp.o: src/protomol/os/cygwin.h
 CMakeFiles/Library.dir/src/protomol/output/OutputCheckpoint.cpp.o: src/protomol/os/unix.h
 CMakeFiles/Library.dir/src/protomol/output/OutputCheckpoint.cpp.o: src/protomol/os/win32.h
-CMakeFiles/Library.dir/src/protomol/output/OutputCheckpoint.cpp.o: src/protomol/output/Output.h
 CMakeFiles/Library.dir/src/protomol/output/OutputCheckpoint.cpp.o: src/protomol/output/OutputCache.h
 CMakeFiles/Library.dir/src/protomol/output/OutputCheckpoint.cpp.o: src/protomol/output/OutputCheckpoint.h
 CMakeFiles/Library.dir/src/protomol/output/OutputCheckpoint.cpp.o: src/protomol/topology/Angle.h
@@ -8183,7 +8113,6 @@ CMakeFiles/Library.dir/src/protomol/output/OutputCollection.cpp.o: src/protomol/
 CMakeFiles/Library.dir/src/protomol/output/OutputCollection.cpp.o: src/protomol/os/cygwin.h
 CMakeFiles/Library.dir/src/protomol/output/OutputCollection.cpp.o: src/protomol/os/unix.h
 CMakeFiles/Library.dir/src/protomol/output/OutputCollection.cpp.o: src/protomol/os/win32.h
-CMakeFiles/Library.dir/src/protomol/output/OutputCollection.cpp.o: src/protomol/output/Output.h
 CMakeFiles/Library.dir/src/protomol/output/OutputCollection.cpp.o: src/protomol/output/OutputCache.h
 CMakeFiles/Library.dir/src/protomol/output/OutputCollection.cpp.o: src/protomol/output/OutputCollection.h
 CMakeFiles/Library.dir/src/protomol/output/OutputCollection.cpp.o: src/protomol/topology/Angle.h
@@ -8264,7 +8193,6 @@ CMakeFiles/Library.dir/src/protomol/output/OutputDCDTrajectory.cpp.o: src/protom
 CMakeFiles/Library.dir/src/protomol/output/OutputDCDTrajectory.cpp.o: src/protomol/os/cygwin.h
 CMakeFiles/Library.dir/src/protomol/output/OutputDCDTrajectory.cpp.o: src/protomol/os/unix.h
 CMakeFiles/Library.dir/src/protomol/output/OutputDCDTrajectory.cpp.o: src/protomol/os/win32.h
-CMakeFiles/Library.dir/src/protomol/output/OutputDCDTrajectory.cpp.o: src/protomol/output/Output.h
 CMakeFiles/Library.dir/src/protomol/output/OutputDCDTrajectory.cpp.o: src/protomol/output/OutputCache.h
 CMakeFiles/Library.dir/src/protomol/output/OutputDCDTrajectory.cpp.o: src/protomol/output/OutputDCDTrajectory.h
 CMakeFiles/Library.dir/src/protomol/output/OutputDCDTrajectory.cpp.o: src/protomol/topology/Angle.h
@@ -8344,7 +8272,6 @@ CMakeFiles/Library.dir/src/protomol/output/OutputDCDTrajectoryVel.cpp.o: src/pro
 CMakeFiles/Library.dir/src/protomol/output/OutputDCDTrajectoryVel.cpp.o: src/protomol/os/cygwin.h
 CMakeFiles/Library.dir/src/protomol/output/OutputDCDTrajectoryVel.cpp.o: src/protomol/os/unix.h
 CMakeFiles/Library.dir/src/protomol/output/OutputDCDTrajectoryVel.cpp.o: src/protomol/os/win32.h
-CMakeFiles/Library.dir/src/protomol/output/OutputDCDTrajectoryVel.cpp.o: src/protomol/output/Output.h
 CMakeFiles/Library.dir/src/protomol/output/OutputDCDTrajectoryVel.cpp.o: src/protomol/output/OutputCache.h
 CMakeFiles/Library.dir/src/protomol/output/OutputDCDTrajectoryVel.cpp.o: src/protomol/output/OutputDCDTrajectoryVel.h
 CMakeFiles/Library.dir/src/protomol/output/OutputDCDTrajectoryVel.cpp.o: src/protomol/topology/Angle.h
@@ -8376,7 +8303,6 @@ CMakeFiles/Library.dir/src/protomol/output/OutputDCDTrajectoryVel.cpp.o: src/pro
 CMakeFiles/Library.dir/src/protomol/output/OutputDCDTrajectoryVel.cpp.o: src/protomol/type/Vector3DBlock.h
 CMakeFiles/Library.dir/src/protomol/output/OutputDCDTrajectoryVel.cpp.o: src/protomol/type/XYZ.h
 
-CMakeFiles/Library.dir/src/protomol/output/OutputEnergies.cpp.o: src/protomol/output/Output.h
 CMakeFiles/Library.dir/src/protomol/output/OutputEnergies.cpp.o: src/protomol/output/OutputEnergies.cpp
 CMakeFiles/Library.dir/src/protomol/output/OutputEnergies.cpp.o: src/protomol/output/OutputEnergies.h
 CMakeFiles/Library.dir/src/protomol/output/OutputEnergies.cpp.o: src/protomol/ProtoMolApp.h
@@ -8424,7 +8350,6 @@ CMakeFiles/Library.dir/src/protomol/output/OutputEnergies.cpp.o: src/protomol/mo
 CMakeFiles/Library.dir/src/protomol/output/OutputEnergies.cpp.o: src/protomol/os/cygwin.h
 CMakeFiles/Library.dir/src/protomol/output/OutputEnergies.cpp.o: src/protomol/os/unix.h
 CMakeFiles/Library.dir/src/protomol/output/OutputEnergies.cpp.o: src/protomol/os/win32.h
-CMakeFiles/Library.dir/src/protomol/output/OutputEnergies.cpp.o: src/protomol/output/Output.h
 CMakeFiles/Library.dir/src/protomol/output/OutputEnergies.cpp.o: src/protomol/output/OutputCache.h
 CMakeFiles/Library.dir/src/protomol/output/OutputEnergies.cpp.o: src/protomol/topology/Angle.h
 CMakeFiles/Library.dir/src/protomol/output/OutputEnergies.cpp.o: src/protomol/topology/AngleInfo.h
@@ -8503,7 +8428,6 @@ CMakeFiles/Library.dir/src/protomol/output/OutputFAHFile.cpp.o: src/protomol/mod
 CMakeFiles/Library.dir/src/protomol/output/OutputFAHFile.cpp.o: src/protomol/os/cygwin.h
 CMakeFiles/Library.dir/src/protomol/output/OutputFAHFile.cpp.o: src/protomol/os/unix.h
 CMakeFiles/Library.dir/src/protomol/output/OutputFAHFile.cpp.o: src/protomol/os/win32.h
-CMakeFiles/Library.dir/src/protomol/output/OutputFAHFile.cpp.o: src/protomol/output/Output.h
 CMakeFiles/Library.dir/src/protomol/output/OutputFAHFile.cpp.o: src/protomol/output/OutputCache.h
 CMakeFiles/Library.dir/src/protomol/output/OutputFAHFile.cpp.o: src/protomol/output/OutputFAHFile.h
 CMakeFiles/Library.dir/src/protomol/output/OutputFAHFile.cpp.o: src/protomol/topology/Angle.h
@@ -8581,7 +8505,6 @@ CMakeFiles/Library.dir/src/protomol/output/OutputFAHGUI.cpp.o: src/protomol/os/c
 CMakeFiles/Library.dir/src/protomol/output/OutputFAHGUI.cpp.o: src/protomol/os/unix.h
 CMakeFiles/Library.dir/src/protomol/output/OutputFAHGUI.cpp.o: src/protomol/os/win32.h
 CMakeFiles/Library.dir/src/protomol/output/OutputFAHGUI.cpp.o: src/protomol/output/GUIServer.h
-CMakeFiles/Library.dir/src/protomol/output/OutputFAHGUI.cpp.o: src/protomol/output/Output.h
 CMakeFiles/Library.dir/src/protomol/output/OutputFAHGUI.cpp.o: src/protomol/output/OutputCache.h
 CMakeFiles/Library.dir/src/protomol/output/OutputFAHGUI.cpp.o: src/protomol/output/OutputFAHGUI.h
 CMakeFiles/Library.dir/src/protomol/output/OutputFAHGUI.cpp.o: src/protomol/output/stdtypes.h
@@ -8663,7 +8586,6 @@ CMakeFiles/Library.dir/src/protomol/output/OutputFinalPDBPos.cpp.o: src/protomol
 CMakeFiles/Library.dir/src/protomol/output/OutputFinalPDBPos.cpp.o: src/protomol/os/cygwin.h
 CMakeFiles/Library.dir/src/protomol/output/OutputFinalPDBPos.cpp.o: src/protomol/os/unix.h
 CMakeFiles/Library.dir/src/protomol/output/OutputFinalPDBPos.cpp.o: src/protomol/os/win32.h
-CMakeFiles/Library.dir/src/protomol/output/OutputFinalPDBPos.cpp.o: src/protomol/output/Output.h
 CMakeFiles/Library.dir/src/protomol/output/OutputFinalPDBPos.cpp.o: src/protomol/output/OutputCache.h
 CMakeFiles/Library.dir/src/protomol/output/OutputFinalPDBPos.cpp.o: src/protomol/output/OutputFinalPDBPos.h
 CMakeFiles/Library.dir/src/protomol/output/OutputFinalPDBPos.cpp.o: src/protomol/topology/Angle.h
@@ -8740,7 +8662,6 @@ CMakeFiles/Library.dir/src/protomol/output/OutputFinalXYZPos.cpp.o: src/protomol
 CMakeFiles/Library.dir/src/protomol/output/OutputFinalXYZPos.cpp.o: src/protomol/os/cygwin.h
 CMakeFiles/Library.dir/src/protomol/output/OutputFinalXYZPos.cpp.o: src/protomol/os/unix.h
 CMakeFiles/Library.dir/src/protomol/output/OutputFinalXYZPos.cpp.o: src/protomol/os/win32.h
-CMakeFiles/Library.dir/src/protomol/output/OutputFinalXYZPos.cpp.o: src/protomol/output/Output.h
 CMakeFiles/Library.dir/src/protomol/output/OutputFinalXYZPos.cpp.o: src/protomol/output/OutputCache.h
 CMakeFiles/Library.dir/src/protomol/output/OutputFinalXYZPos.cpp.o: src/protomol/output/OutputFinalXYZPos.h
 CMakeFiles/Library.dir/src/protomol/output/OutputFinalXYZPos.cpp.o: src/protomol/topology/Angle.h
@@ -8814,7 +8735,6 @@ CMakeFiles/Library.dir/src/protomol/output/OutputFinalXYZVel.cpp.o: src/protomol
 CMakeFiles/Library.dir/src/protomol/output/OutputFinalXYZVel.cpp.o: src/protomol/os/cygwin.h
 CMakeFiles/Library.dir/src/protomol/output/OutputFinalXYZVel.cpp.o: src/protomol/os/unix.h
 CMakeFiles/Library.dir/src/protomol/output/OutputFinalXYZVel.cpp.o: src/protomol/os/win32.h
-CMakeFiles/Library.dir/src/protomol/output/OutputFinalXYZVel.cpp.o: src/protomol/output/Output.h
 CMakeFiles/Library.dir/src/protomol/output/OutputFinalXYZVel.cpp.o: src/protomol/output/OutputCache.h
 CMakeFiles/Library.dir/src/protomol/output/OutputFinalXYZVel.cpp.o: src/protomol/output/OutputFinalXYZVel.h
 CMakeFiles/Library.dir/src/protomol/output/OutputFinalXYZVel.cpp.o: src/protomol/topology/Angle.h
@@ -8890,7 +8810,6 @@ CMakeFiles/Library.dir/src/protomol/output/OutputScreen.cpp.o: src/protomol/modu
 CMakeFiles/Library.dir/src/protomol/output/OutputScreen.cpp.o: src/protomol/os/cygwin.h
 CMakeFiles/Library.dir/src/protomol/output/OutputScreen.cpp.o: src/protomol/os/unix.h
 CMakeFiles/Library.dir/src/protomol/output/OutputScreen.cpp.o: src/protomol/os/win32.h
-CMakeFiles/Library.dir/src/protomol/output/OutputScreen.cpp.o: src/protomol/output/Output.h
 CMakeFiles/Library.dir/src/protomol/output/OutputScreen.cpp.o: src/protomol/output/OutputCache.h
 CMakeFiles/Library.dir/src/protomol/output/OutputScreen.cpp.o: src/protomol/output/OutputScreen.h
 CMakeFiles/Library.dir/src/protomol/output/OutputScreen.cpp.o: src/protomol/topology/Angle.h
@@ -8924,7 +8843,6 @@ CMakeFiles/Library.dir/src/protomol/output/OutputScreen.cpp.o: src/protomol/type
 CMakeFiles/Library.dir/src/protomol/output/OutputScreen.cpp.o: src/protomol/type/Vector3D.h
 CMakeFiles/Library.dir/src/protomol/output/OutputScreen.cpp.o: src/protomol/type/Vector3DBlock.h
 
-CMakeFiles/Library.dir/src/protomol/output/OutputXTCTrajectory.cpp.o: src/protomol/output/Output.h
 CMakeFiles/Library.dir/src/protomol/output/OutputXTCTrajectory.cpp.o: src/protomol/output/OutputCache.h
 CMakeFiles/Library.dir/src/protomol/output/OutputXTCTrajectory.cpp.o: src/protomol/output/OutputXTCTrajectory.cpp
 CMakeFiles/Library.dir/src/protomol/output/OutputXTCTrajectory.cpp.o: src/protomol/output/OutputXTCTrajectory.h
@@ -8972,7 +8890,6 @@ CMakeFiles/Library.dir/src/protomol/output/OutputXTCTrajectory.cpp.o: src/protom
 CMakeFiles/Library.dir/src/protomol/output/OutputXTCTrajectory.cpp.o: src/protomol/os/cygwin.h
 CMakeFiles/Library.dir/src/protomol/output/OutputXTCTrajectory.cpp.o: src/protomol/os/unix.h
 CMakeFiles/Library.dir/src/protomol/output/OutputXTCTrajectory.cpp.o: src/protomol/os/win32.h
-CMakeFiles/Library.dir/src/protomol/output/OutputXTCTrajectory.cpp.o: src/protomol/output/Output.h
 CMakeFiles/Library.dir/src/protomol/output/OutputXTCTrajectory.cpp.o: src/protomol/output/OutputCache.h
 CMakeFiles/Library.dir/src/protomol/output/OutputXTCTrajectory.cpp.o: src/protomol/topology/Angle.h
 CMakeFiles/Library.dir/src/protomol/output/OutputXTCTrajectory.cpp.o: src/protomol/topology/Atom.h
@@ -9048,7 +8965,6 @@ CMakeFiles/Library.dir/src/protomol/output/OutputXYZTrajectoryForce.cpp.o: src/p
 CMakeFiles/Library.dir/src/protomol/output/OutputXYZTrajectoryForce.cpp.o: src/protomol/os/cygwin.h
 CMakeFiles/Library.dir/src/protomol/output/OutputXYZTrajectoryForce.cpp.o: src/protomol/os/unix.h
 CMakeFiles/Library.dir/src/protomol/output/OutputXYZTrajectoryForce.cpp.o: src/protomol/os/win32.h
-CMakeFiles/Library.dir/src/protomol/output/OutputXYZTrajectoryForce.cpp.o: src/protomol/output/Output.h
 CMakeFiles/Library.dir/src/protomol/output/OutputXYZTrajectoryForce.cpp.o: src/protomol/output/OutputCache.h
 CMakeFiles/Library.dir/src/protomol/output/OutputXYZTrajectoryForce.cpp.o: src/protomol/output/OutputXYZTrajectoryForce.h
 CMakeFiles/Library.dir/src/protomol/output/OutputXYZTrajectoryForce.cpp.o: src/protomol/topology/Angle.h
@@ -9126,7 +9042,6 @@ CMakeFiles/Library.dir/src/protomol/output/OutputXYZTrajectoryPos.cpp.o: src/pro
 CMakeFiles/Library.dir/src/protomol/output/OutputXYZTrajectoryPos.cpp.o: src/protomol/os/cygwin.h
 CMakeFiles/Library.dir/src/protomol/output/OutputXYZTrajectoryPos.cpp.o: src/protomol/os/unix.h
 CMakeFiles/Library.dir/src/protomol/output/OutputXYZTrajectoryPos.cpp.o: src/protomol/os/win32.h
-CMakeFiles/Library.dir/src/protomol/output/OutputXYZTrajectoryPos.cpp.o: src/protomol/output/Output.h
 CMakeFiles/Library.dir/src/protomol/output/OutputXYZTrajectoryPos.cpp.o: src/protomol/output/OutputCache.h
 CMakeFiles/Library.dir/src/protomol/output/OutputXYZTrajectoryPos.cpp.o: src/protomol/output/OutputXYZTrajectoryPos.h
 CMakeFiles/Library.dir/src/protomol/output/OutputXYZTrajectoryPos.cpp.o: src/protomol/topology/Angle.h
@@ -9204,7 +9119,6 @@ CMakeFiles/Library.dir/src/protomol/output/OutputXYZTrajectoryVel.cpp.o: src/pro
 CMakeFiles/Library.dir/src/protomol/output/OutputXYZTrajectoryVel.cpp.o: src/protomol/os/cygwin.h
 CMakeFiles/Library.dir/src/protomol/output/OutputXYZTrajectoryVel.cpp.o: src/protomol/os/unix.h
 CMakeFiles/Library.dir/src/protomol/output/OutputXYZTrajectoryVel.cpp.o: src/protomol/os/win32.h
-CMakeFiles/Library.dir/src/protomol/output/OutputXYZTrajectoryVel.cpp.o: src/protomol/output/Output.h
 CMakeFiles/Library.dir/src/protomol/output/OutputXYZTrajectoryVel.cpp.o: src/protomol/output/OutputCache.h
 CMakeFiles/Library.dir/src/protomol/output/OutputXYZTrajectoryVel.cpp.o: src/protomol/output/OutputXYZTrajectoryVel.h
 CMakeFiles/Library.dir/src/protomol/output/OutputXYZTrajectoryVel.cpp.o: src/protomol/topology/Angle.h

@@ -54,7 +54,6 @@ CMakeFiles/Library.dir/src/protomol/ProtoMolApp.cpp.o
  src/protomol/os/cygwin.h
  src/protomol/os/unix.h
  src/protomol/os/win32.h
- src/protomol/output/Output.h
  src/protomol/output/OutputCache.h
  src/protomol/output/OutputCollection.h
  src/protomol/package.h
@@ -97,6 +96,7 @@ CMakeFiles/Library.dir/src/protomol/addon/BufferGas.cpp.o
  /home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/src/protomol/addon/BufferGas.cpp
  src/protomol/ProtoMolApp.h
  src/protomol/addon/BufferGas.h
+ src/protomol/addon/LuaState.h
  src/protomol/base/Counter.h
  src/protomol/base/Exception.h
  src/protomol/base/Factory.h
@@ -136,7 +136,6 @@ CMakeFiles/Library.dir/src/protomol/addon/BufferGas.cpp.o
  src/protomol/os/cygwin.h
  src/protomol/os/unix.h
  src/protomol/os/win32.h
- src/protomol/output/Output.h
  src/protomol/output/OutputCache.h
  src/protomol/topology/Angle.h
  src/protomol/topology/Atom.h
@@ -215,7 +214,6 @@ CMakeFiles/Library.dir/src/protomol/addon/LeapfrogBufferGasIntegrator.cpp.o
  src/protomol/os/cygwin.h
  src/protomol/os/unix.h
  src/protomol/os/win32.h
- src/protomol/output/Output.h
  src/protomol/output/OutputCache.h
  src/protomol/topology/Angle.h
  src/protomol/topology/AngleInfo.h
@@ -309,14 +307,12 @@ CMakeFiles/Library.dir/src/protomol/addon/OutputIonSnapshot.cpp.o
  src/protomol/integrator/Integrator.h
  src/protomol/integrator/IntegratorDefinition.h
  src/protomol/io/File.h
- src/protomol/io/LuaConfigReader.h
  src/protomol/io/Reader.h
  src/protomol/io/SCPISMReader.h
  src/protomol/module/MainModule.h
  src/protomol/os/cygwin.h
  src/protomol/os/unix.h
  src/protomol/os/win32.h
- src/protomol/output/Output.h
  src/protomol/output/OutputCache.h
  src/protomol/topology/Angle.h
  src/protomol/topology/Atom.h
@@ -387,7 +383,6 @@ CMakeFiles/Library.dir/src/protomol/addon/Snapshot.cpp.o
  src/protomol/os/cygwin.h
  src/protomol/os/unix.h
  src/protomol/os/win32.h
- src/protomol/output/Output.h
  src/protomol/output/OutputCache.h
  src/protomol/topology/Angle.h
  src/protomol/topology/Atom.h
@@ -531,7 +526,6 @@ CMakeFiles/Library.dir/src/protomol/base/ModuleManager.cpp.o
  src/protomol/os/cygwin.h
  src/protomol/os/unix.h
  src/protomol/os/win32.h
- src/protomol/output/Output.h
  src/protomol/output/OutputCache.h
  src/protomol/topology/Angle.h
  src/protomol/topology/Atom.h
@@ -673,7 +667,6 @@ CMakeFiles/Library.dir/src/protomol/config/CommandLine.cpp.o
  src/protomol/os/cygwin.h
  src/protomol/os/unix.h
  src/protomol/os/win32.h
- src/protomol/output/Output.h
  src/protomol/output/OutputCache.h
  src/protomol/topology/Angle.h
  src/protomol/topology/Atom.h
@@ -972,8 +965,6 @@ CMakeFiles/Library.dir/src/protomol/factory/OutputFactory.cpp.o
  src/protomol/base/Exception.h
  src/protomol/base/Factory.h
  src/protomol/base/FileLocation.h
- src/protomol/base/Makeable.h
- src/protomol/base/MakeableDefinition.h
  src/protomol/base/MathUtilities.h
  src/protomol/base/PMConstants.h
  src/protomol/base/Random.h
@@ -996,7 +987,6 @@ CMakeFiles/Library.dir/src/protomol/factory/OutputFactory.cpp.o
  src/protomol/os/cygwin.h
  src/protomol/os/unix.h
  src/protomol/os/win32.h
- src/protomol/output/Output.h
  src/protomol/output/OutputCollection.h
  src/protomol/type/AbstractEnumType.h
  src/protomol/type/Real.h
@@ -1222,7 +1212,6 @@ CMakeFiles/Library.dir/src/protomol/force/ForceGroup.cpp.o
  src/protomol/os/cygwin.h
  src/protomol/os/unix.h
  src/protomol/os/win32.h
- src/protomol/output/Output.h
  src/protomol/output/OutputCache.h
  src/protomol/parallel/Parallel.h
  src/protomol/parallel/ParallelType.h
@@ -2357,7 +2346,6 @@ CMakeFiles/Library.dir/src/protomol/integrator/Integrator.cpp.o
  src/protomol/os/cygwin.h
  src/protomol/os/unix.h
  src/protomol/os/win32.h
- src/protomol/output/Output.h
  src/protomol/output/OutputCache.h
  src/protomol/topology/Angle.h
  src/protomol/topology/AngleInfo.h
@@ -2518,7 +2506,6 @@ CMakeFiles/Library.dir/src/protomol/integrator/STSIntegrator.cpp.o
  src/protomol/os/cygwin.h
  src/protomol/os/unix.h
  src/protomol/os/win32.h
- src/protomol/output/Output.h
  src/protomol/output/OutputCache.h
  src/protomol/topology/Angle.h
  src/protomol/topology/AngleInfo.h
@@ -2593,7 +2580,6 @@ CMakeFiles/Library.dir/src/protomol/integrator/StandardIntegrator.cpp.o
  src/protomol/os/cygwin.h
  src/protomol/os/unix.h
  src/protomol/os/win32.h
- src/protomol/output/Output.h
  src/protomol/output/OutputCache.h
  src/protomol/parallel/Parallel.h
  src/protomol/parallel/ParallelType.h
@@ -2672,7 +2658,6 @@ CMakeFiles/Library.dir/src/protomol/integrator/base/CGMinimizerIntegrator.cpp.o
  src/protomol/os/cygwin.h
  src/protomol/os/unix.h
  src/protomol/os/win32.h
- src/protomol/output/Output.h
  src/protomol/output/OutputCache.h
  src/protomol/topology/Angle.h
  src/protomol/topology/AngleInfo.h
@@ -2749,7 +2734,6 @@ CMakeFiles/Library.dir/src/protomol/integrator/base/LangevinImpulseIntegrator.cp
  src/protomol/os/cygwin.h
  src/protomol/os/unix.h
  src/protomol/os/win32.h
- src/protomol/output/Output.h
  src/protomol/output/OutputCache.h
  src/protomol/topology/Angle.h
  src/protomol/topology/AngleInfo.h
@@ -2826,7 +2810,6 @@ CMakeFiles/Library.dir/src/protomol/integrator/base/LangevinLeapfrogIntegrator.c
  src/protomol/os/cygwin.h
  src/protomol/os/unix.h
  src/protomol/os/win32.h
- src/protomol/output/Output.h
  src/protomol/output/OutputCache.h
  src/protomol/topology/Angle.h
  src/protomol/topology/AngleInfo.h
@@ -2904,7 +2887,6 @@ CMakeFiles/Library.dir/src/protomol/integrator/base/NumericalDifferentiation.cpp
  src/protomol/os/cygwin.h
  src/protomol/os/unix.h
  src/protomol/os/win32.h
- src/protomol/output/Output.h
  src/protomol/output/OutputCache.h
  src/protomol/topology/Angle.h
  src/protomol/topology/AngleInfo.h
@@ -2982,7 +2964,6 @@ CMakeFiles/Library.dir/src/protomol/integrator/base/NumericallyDifferentiatedHes
  src/protomol/os/cygwin.h
  src/protomol/os/unix.h
  src/protomol/os/win32.h
- src/protomol/output/Output.h
  src/protomol/output/OutputCache.h
  src/protomol/topology/Angle.h
  src/protomol/topology/AngleInfo.h
@@ -3059,7 +3040,6 @@ CMakeFiles/Library.dir/src/protomol/integrator/base/RMTIntegrator.cpp.o
  src/protomol/os/cygwin.h
  src/protomol/os/unix.h
  src/protomol/os/win32.h
- src/protomol/output/Output.h
  src/protomol/output/OutputCache.h
  src/protomol/topology/Angle.h
  src/protomol/topology/AngleInfo.h
@@ -3225,7 +3205,6 @@ CMakeFiles/Library.dir/src/protomol/integrator/hessian/BlockHessianDiagonalize.c
  src/protomol/os/cygwin.h
  src/protomol/os/unix.h
  src/protomol/os/win32.h
- src/protomol/output/Output.h
  src/protomol/output/OutputCache.h
  src/protomol/topology/Angle.h
  src/protomol/topology/Atom.h
@@ -3383,7 +3362,6 @@ CMakeFiles/Library.dir/src/protomol/integrator/hessian/HessianInt.cpp.o
  src/protomol/os/cygwin.h
  src/protomol/os/unix.h
  src/protomol/os/win32.h
- src/protomol/output/Output.h
  src/protomol/output/OutputCache.h
  src/protomol/topology/Angle.h
  src/protomol/topology/AngleInfo.h
@@ -3462,7 +3440,6 @@ CMakeFiles/Library.dir/src/protomol/integrator/leapfrog/DMDLeapfrogIntegrator.cp
  src/protomol/os/cygwin.h
  src/protomol/os/unix.h
  src/protomol/os/win32.h
- src/protomol/output/Output.h
  src/protomol/output/OutputCache.h
  src/protomol/topology/Angle.h
  src/protomol/topology/AngleInfo.h
@@ -3542,7 +3519,6 @@ CMakeFiles/Library.dir/src/protomol/integrator/leapfrog/GPU.cpp.o
  src/protomol/os/cygwin.h
  src/protomol/os/unix.h
  src/protomol/os/win32.h
- src/protomol/output/Output.h
  src/protomol/output/OutputCache.h
  src/protomol/switch/CnSwitchingFunction.h
  src/protomol/topology/Angle.h
@@ -3625,7 +3601,6 @@ CMakeFiles/Library.dir/src/protomol/integrator/leapfrog/LeapfrogDataAcquisition.
  src/protomol/os/cygwin.h
  src/protomol/os/unix.h
  src/protomol/os/win32.h
- src/protomol/output/Output.h
  src/protomol/output/OutputCache.h
  src/protomol/topology/Angle.h
  src/protomol/topology/Atom.h
@@ -3700,7 +3675,6 @@ CMakeFiles/Library.dir/src/protomol/integrator/leapfrog/LeapfrogIntegrator.cpp.o
  src/protomol/os/cygwin.h
  src/protomol/os/unix.h
  src/protomol/os/win32.h
- src/protomol/output/Output.h
  src/protomol/output/OutputCache.h
  src/protomol/topology/Angle.h
  src/protomol/topology/AngleInfo.h
@@ -3787,7 +3761,6 @@ CMakeFiles/Library.dir/src/protomol/integrator/leapfrog/LeapfrogTruncatedShadow.
  src/protomol/os/cygwin.h
  src/protomol/os/unix.h
  src/protomol/os/win32.h
- src/protomol/output/Output.h
  src/protomol/output/OutputCache.h
  src/protomol/switch/C1SwitchingFunction.h
  src/protomol/switch/C2SwitchingFunction.h
@@ -3869,7 +3842,6 @@ CMakeFiles/Library.dir/src/protomol/integrator/leapfrog/NoseNVTLeapfrogIntegrato
  src/protomol/os/cygwin.h
  src/protomol/os/unix.h
  src/protomol/os/win32.h
- src/protomol/output/Output.h
  src/protomol/output/OutputCache.h
  src/protomol/topology/Angle.h
  src/protomol/topology/AngleInfo.h
@@ -3946,7 +3918,6 @@ CMakeFiles/Library.dir/src/protomol/integrator/leapfrog/PLeapfrogIntegrator.cpp.
  src/protomol/os/cygwin.h
  src/protomol/os/unix.h
  src/protomol/os/win32.h
- src/protomol/output/Output.h
  src/protomol/output/OutputCache.h
  src/protomol/topology/Angle.h
  src/protomol/topology/AngleInfo.h
@@ -4028,7 +3999,6 @@ CMakeFiles/Library.dir/src/protomol/integrator/normal/NormalModeBrownian.cpp.o
  src/protomol/os/cygwin.h
  src/protomol/os/unix.h
  src/protomol/os/win32.h
- src/protomol/output/Output.h
  src/protomol/output/OutputCache.h
  src/protomol/topology/Angle.h
  src/protomol/topology/AngleInfo.h
@@ -4111,7 +4081,6 @@ CMakeFiles/Library.dir/src/protomol/integrator/normal/NormalModeDamping.cpp.o
  src/protomol/os/cygwin.h
  src/protomol/os/unix.h
  src/protomol/os/win32.h
- src/protomol/output/Output.h
  src/protomol/output/OutputCache.h
  src/protomol/topology/Angle.h
  src/protomol/topology/AngleInfo.h
@@ -4197,7 +4166,6 @@ CMakeFiles/Library.dir/src/protomol/integrator/normal/NormalModeDiagonalize.cpp.
  src/protomol/os/cygwin.h
  src/protomol/os/unix.h
  src/protomol/os/win32.h
- src/protomol/output/Output.h
  src/protomol/output/OutputCache.h
  src/protomol/topology/Angle.h
  src/protomol/topology/AngleInfo.h
@@ -4278,7 +4246,6 @@ CMakeFiles/Library.dir/src/protomol/integrator/normal/NormalModeLangLf.cpp.o
  src/protomol/os/cygwin.h
  src/protomol/os/unix.h
  src/protomol/os/win32.h
- src/protomol/output/Output.h
  src/protomol/output/OutputCache.h
  src/protomol/topology/Angle.h
  src/protomol/topology/AngleInfo.h
@@ -4358,7 +4325,6 @@ CMakeFiles/Library.dir/src/protomol/integrator/normal/NormalModeLangevin.cpp.o
  src/protomol/os/cygwin.h
  src/protomol/os/unix.h
  src/protomol/os/win32.h
- src/protomol/output/Output.h
  src/protomol/output/OutputCache.h
  src/protomol/topology/Angle.h
  src/protomol/topology/AngleInfo.h
@@ -4436,7 +4402,6 @@ CMakeFiles/Library.dir/src/protomol/integrator/normal/NormalModeMinimizer.cpp.o
  src/protomol/os/cygwin.h
  src/protomol/os/unix.h
  src/protomol/os/win32.h
- src/protomol/output/Output.h
  src/protomol/output/OutputCache.h
  src/protomol/topology/Angle.h
  src/protomol/topology/AngleInfo.h
@@ -4516,7 +4481,6 @@ CMakeFiles/Library.dir/src/protomol/integrator/normal/NormalModeMori.cpp.o
  src/protomol/os/cygwin.h
  src/protomol/os/unix.h
  src/protomol/os/win32.h
- src/protomol/output/Output.h
  src/protomol/output/OutputCache.h
  src/protomol/topology/Angle.h
  src/protomol/topology/AngleInfo.h
@@ -4595,7 +4559,6 @@ CMakeFiles/Library.dir/src/protomol/integrator/normal/NormalModeQuadratic.cpp.o
  src/protomol/os/cygwin.h
  src/protomol/os/unix.h
  src/protomol/os/win32.h
- src/protomol/output/Output.h
  src/protomol/output/OutputCache.h
  src/protomol/topology/Angle.h
  src/protomol/topology/AngleInfo.h
@@ -4673,7 +4636,6 @@ CMakeFiles/Library.dir/src/protomol/integrator/normal/NormalModeRelax.cpp.o
  src/protomol/os/cygwin.h
  src/protomol/os/unix.h
  src/protomol/os/win32.h
- src/protomol/output/Output.h
  src/protomol/output/OutputCache.h
  src/protomol/topology/Angle.h
  src/protomol/topology/AngleInfo.h
@@ -4748,7 +4710,6 @@ CMakeFiles/Library.dir/src/protomol/integrator/normal/NormalModeUtilities.cpp.o
  src/protomol/os/cygwin.h
  src/protomol/os/unix.h
  src/protomol/os/win32.h
- src/protomol/output/Output.h
  src/protomol/output/OutputCache.h
  src/protomol/topology/Angle.h
  src/protomol/topology/AngleInfo.h
@@ -5032,9 +4993,6 @@ CMakeFiles/Library.dir/src/protomol/io/File.cpp.o
  src/protomol/type/SimpleTypes.h
  src/protomol/type/String.h
  src/protomol/type/Vector3D.h
-CMakeFiles/Library.dir/src/protomol/io/LuaConfigReader.cpp.o
- /home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/src/protomol/io/LuaConfigReader.cpp
- /home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/src/protomol/io/LuaConfigReader.h
 CMakeFiles/Library.dir/src/protomol/io/PARReader.cpp.o
  /home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/src/protomol/io/PARReader.cpp
  src/protomol/base/Counter.h
@@ -5619,7 +5577,6 @@ CMakeFiles/Library.dir/src/protomol/modifier/Modifier.cpp.o
  src/protomol/os/cygwin.h
  src/protomol/os/unix.h
  src/protomol/os/win32.h
- src/protomol/output/Output.h
  src/protomol/output/OutputCache.h
  src/protomol/topology/Angle.h
  src/protomol/topology/Atom.h
@@ -5691,7 +5648,6 @@ CMakeFiles/Library.dir/src/protomol/modifier/ModifierMetaRattle.cpp.o
  src/protomol/os/cygwin.h
  src/protomol/os/unix.h
  src/protomol/os/win32.h
- src/protomol/output/Output.h
  src/protomol/output/OutputCache.h
  src/protomol/topology/Angle.h
  src/protomol/topology/AngleInfo.h
@@ -5775,7 +5731,6 @@ CMakeFiles/Library.dir/src/protomol/modifier/ModifierMetaRattleShake.cpp.o
  src/protomol/os/cygwin.h
  src/protomol/os/unix.h
  src/protomol/os/win32.h
- src/protomol/output/Output.h
  src/protomol/output/OutputCache.h
  src/protomol/topology/Angle.h
  src/protomol/topology/AngleInfo.h
@@ -5860,7 +5815,6 @@ CMakeFiles/Library.dir/src/protomol/modifier/ModifierMetaShake.cpp.o
  src/protomol/os/cygwin.h
  src/protomol/os/unix.h
  src/protomol/os/win32.h
- src/protomol/output/Output.h
  src/protomol/output/OutputCache.h
  src/protomol/topology/Angle.h
  src/protomol/topology/AngleInfo.h
@@ -5946,7 +5900,6 @@ CMakeFiles/Library.dir/src/protomol/modifier/ModifierRattle.cpp.o
  src/protomol/os/cygwin.h
  src/protomol/os/unix.h
  src/protomol/os/win32.h
- src/protomol/output/Output.h
  src/protomol/output/OutputCache.h
  src/protomol/topology/Angle.h
  src/protomol/topology/AngleInfo.h
@@ -6030,7 +5983,6 @@ CMakeFiles/Library.dir/src/protomol/modifier/ModifierShadow.cpp.o
  src/protomol/os/cygwin.h
  src/protomol/os/unix.h
  src/protomol/os/win32.h
- src/protomol/output/Output.h
  src/protomol/output/OutputCache.h
  src/protomol/topology/Angle.h
  src/protomol/topology/AngleInfo.h
@@ -6116,7 +6068,6 @@ CMakeFiles/Library.dir/src/protomol/modifier/ModifierShake.cpp.o
  src/protomol/os/cygwin.h
  src/protomol/os/unix.h
  src/protomol/os/win32.h
- src/protomol/output/Output.h
  src/protomol/output/OutputCache.h
  src/protomol/topology/Angle.h
  src/protomol/topology/AngleInfo.h
@@ -6218,7 +6169,6 @@ CMakeFiles/Library.dir/src/protomol/module/BondedForcesModule.cpp.o
  src/protomol/os/cygwin.h
  src/protomol/os/unix.h
  src/protomol/os/win32.h
- src/protomol/output/Output.h
  src/protomol/output/OutputCache.h
  src/protomol/parallel/Parallel.h
  src/protomol/parallel/ParallelType.h
@@ -6304,7 +6254,6 @@ CMakeFiles/Library.dir/src/protomol/module/CheckpointModule.cpp.o
  src/protomol/os/cygwin.h
  src/protomol/os/unix.h
  src/protomol/os/win32.h
- src/protomol/output/Output.h
  src/protomol/output/OutputCache.h
  src/protomol/output/OutputCheckpoint.h
  src/protomol/topology/Angle.h
@@ -6381,7 +6330,6 @@ CMakeFiles/Library.dir/src/protomol/module/CommandLineModule.cpp.o
  src/protomol/os/cygwin.h
  src/protomol/os/unix.h
  src/protomol/os/win32.h
- src/protomol/output/Output.h
  src/protomol/output/OutputCache.h
  src/protomol/topology/Angle.h
  src/protomol/topology/Atom.h
@@ -6458,7 +6406,6 @@ CMakeFiles/Library.dir/src/protomol/module/ConfigurationModule.cpp.o
  src/protomol/os/cygwin.h
  src/protomol/os/unix.h
  src/protomol/os/win32.h
- src/protomol/output/Output.h
  src/protomol/output/OutputCache.h
  src/protomol/topology/Angle.h
  src/protomol/topology/Atom.h
@@ -6538,7 +6485,6 @@ CMakeFiles/Library.dir/src/protomol/module/HessianIntegratorModule.cpp.o
  src/protomol/os/cygwin.h
  src/protomol/os/unix.h
  src/protomol/os/win32.h
- src/protomol/output/Output.h
  src/protomol/output/OutputCache.h
  src/protomol/topology/Angle.h
  src/protomol/topology/Atom.h
@@ -6620,7 +6566,6 @@ CMakeFiles/Library.dir/src/protomol/module/IOModule.cpp.o
  src/protomol/os/cygwin.h
  src/protomol/os/unix.h
  src/protomol/os/win32.h
- src/protomol/output/Output.h
  src/protomol/output/OutputCache.h
  src/protomol/topology/Angle.h
  src/protomol/topology/Atom.h
@@ -6705,7 +6650,6 @@ CMakeFiles/Library.dir/src/protomol/module/IntegratorBaseModule.cpp.o
  src/protomol/os/cygwin.h
  src/protomol/os/unix.h
  src/protomol/os/win32.h
- src/protomol/output/Output.h
  src/protomol/output/OutputCache.h
  src/protomol/topology/Angle.h
  src/protomol/topology/Atom.h
@@ -6782,7 +6726,6 @@ CMakeFiles/Library.dir/src/protomol/module/IntegratorOpenMMModule.cpp.o
  src/protomol/os/cygwin.h
  src/protomol/os/unix.h
  src/protomol/os/win32.h
- src/protomol/output/Output.h
  src/protomol/output/OutputCache.h
  src/protomol/topology/Angle.h
  src/protomol/topology/Atom.h
@@ -6867,7 +6810,6 @@ CMakeFiles/Library.dir/src/protomol/module/LeapfrogModule.cpp.o
  src/protomol/os/cygwin.h
  src/protomol/os/unix.h
  src/protomol/os/win32.h
- src/protomol/output/Output.h
  src/protomol/output/OutputCache.h
  src/protomol/topology/Angle.h
  src/protomol/topology/Atom.h
@@ -6941,7 +6883,6 @@ CMakeFiles/Library.dir/src/protomol/module/MainModule.cpp.o
  src/protomol/os/cygwin.h
  src/protomol/os/unix.h
  src/protomol/os/win32.h
- src/protomol/output/Output.h
  src/protomol/output/OutputCache.h
  src/protomol/parallel/Parallel.h
  src/protomol/parallel/ParallelType.h
@@ -7031,7 +6972,6 @@ CMakeFiles/Library.dir/src/protomol/module/ModifierModule.cpp.o
  src/protomol/os/cygwin.h
  src/protomol/os/unix.h
  src/protomol/os/win32.h
- src/protomol/output/Output.h
  src/protomol/output/OutputCache.h
  src/protomol/topology/Angle.h
  src/protomol/topology/AngleInfo.h
@@ -7128,7 +7068,6 @@ CMakeFiles/Library.dir/src/protomol/module/NonbondedCutoffForceModule.cpp.o
  src/protomol/os/cygwin.h
  src/protomol/os/unix.h
  src/protomol/os/win32.h
- src/protomol/output/Output.h
  src/protomol/output/OutputCache.h
  src/protomol/parallel/Parallel.h
  src/protomol/parallel/ParallelType.h
@@ -7234,7 +7173,6 @@ CMakeFiles/Library.dir/src/protomol/module/NonbondedFullElectrostaticForceModule
  src/protomol/os/cygwin.h
  src/protomol/os/unix.h
  src/protomol/os/win32.h
- src/protomol/output/Output.h
  src/protomol/output/OutputCache.h
  src/protomol/parallel/Parallel.h
  src/protomol/parallel/ParallelType.h
@@ -7335,7 +7273,6 @@ CMakeFiles/Library.dir/src/protomol/module/NonbondedFullForceModule.cpp.o
  src/protomol/os/cygwin.h
  src/protomol/os/unix.h
  src/protomol/os/win32.h
- src/protomol/output/Output.h
  src/protomol/output/OutputCache.h
  src/protomol/parallel/Parallel.h
  src/protomol/parallel/ParallelType.h
@@ -7442,7 +7379,6 @@ CMakeFiles/Library.dir/src/protomol/module/NonbondedIntermittentFullForceModule.
  src/protomol/os/cygwin.h
  src/protomol/os/unix.h
  src/protomol/os/win32.h
- src/protomol/output/Output.h
  src/protomol/output/OutputCache.h
  src/protomol/parallel/Parallel.h
  src/protomol/parallel/ParallelType.h
@@ -7553,7 +7489,6 @@ CMakeFiles/Library.dir/src/protomol/module/NonbondedSimpleFullForceModule.cpp.o
  src/protomol/os/cygwin.h
  src/protomol/os/unix.h
  src/protomol/os/win32.h
- src/protomol/output/Output.h
  src/protomol/output/OutputCache.h
  src/protomol/parallel/Parallel.h
  src/protomol/parallel/ParallelType.h
@@ -7675,7 +7610,6 @@ CMakeFiles/Library.dir/src/protomol/module/NormalModeModule.cpp.o
  src/protomol/os/cygwin.h
  src/protomol/os/unix.h
  src/protomol/os/win32.h
- src/protomol/output/Output.h
  src/protomol/output/OutputCache.h
  src/protomol/topology/Angle.h
  src/protomol/topology/Atom.h
@@ -7761,7 +7695,6 @@ CMakeFiles/Library.dir/src/protomol/module/OutputModule.cpp.o
  src/protomol/os/unix.h
  src/protomol/os/win32.h
  src/protomol/output/GUIServer.h
- src/protomol/output/Output.h
  src/protomol/output/OutputCache.h
  src/protomol/output/OutputDCDTrajectory.h
  src/protomol/output/OutputDCDTrajectoryVel.h
@@ -7850,7 +7783,6 @@ CMakeFiles/Library.dir/src/protomol/module/TopologyModule.cpp.o
  src/protomol/os/cygwin.h
  src/protomol/os/unix.h
  src/protomol/os/win32.h
- src/protomol/output/Output.h
  src/protomol/output/OutputCache.h
  src/protomol/topology/Angle.h
  src/protomol/topology/AngleInfo.h
@@ -8026,7 +7958,6 @@ CMakeFiles/Library.dir/src/protomol/output/OutputCache.cpp.o
  src/protomol/os/cygwin.h
  src/protomol/os/unix.h
  src/protomol/os/win32.h
- src/protomol/output/Output.h
  src/protomol/output/OutputCache.h
  src/protomol/topology/Angle.h
  src/protomol/topology/AngleInfo.h
@@ -8108,7 +8039,6 @@ CMakeFiles/Library.dir/src/protomol/output/OutputCheckpoint.cpp.o
  src/protomol/os/cygwin.h
  src/protomol/os/unix.h
  src/protomol/os/win32.h
- src/protomol/output/Output.h
  src/protomol/output/OutputCache.h
  src/protomol/output/OutputCheckpoint.h
  src/protomol/topology/Angle.h
@@ -8184,7 +8114,6 @@ CMakeFiles/Library.dir/src/protomol/output/OutputCollection.cpp.o
  src/protomol/os/cygwin.h
  src/protomol/os/unix.h
  src/protomol/os/win32.h
- src/protomol/output/Output.h
  src/protomol/output/OutputCache.h
  src/protomol/output/OutputCollection.h
  src/protomol/topology/Angle.h
@@ -8265,7 +8194,6 @@ CMakeFiles/Library.dir/src/protomol/output/OutputDCDTrajectory.cpp.o
  src/protomol/os/cygwin.h
  src/protomol/os/unix.h
  src/protomol/os/win32.h
- src/protomol/output/Output.h
  src/protomol/output/OutputCache.h
  src/protomol/output/OutputDCDTrajectory.h
  src/protomol/topology/Angle.h
@@ -8345,7 +8273,6 @@ CMakeFiles/Library.dir/src/protomol/output/OutputDCDTrajectoryVel.cpp.o
  src/protomol/os/cygwin.h
  src/protomol/os/unix.h
  src/protomol/os/win32.h
- src/protomol/output/Output.h
  src/protomol/output/OutputCache.h
  src/protomol/output/OutputDCDTrajectoryVel.h
  src/protomol/topology/Angle.h
@@ -8377,7 +8304,6 @@ CMakeFiles/Library.dir/src/protomol/output/OutputDCDTrajectoryVel.cpp.o
  src/protomol/type/Vector3DBlock.h
  src/protomol/type/XYZ.h
 CMakeFiles/Library.dir/src/protomol/output/OutputEnergies.cpp.o
- /home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/src/protomol/output/Output.h
  /home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/src/protomol/output/OutputEnergies.cpp
  /home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/src/protomol/output/OutputEnergies.h
  src/protomol/ProtoMolApp.h
@@ -8425,7 +8351,6 @@ CMakeFiles/Library.dir/src/protomol/output/OutputEnergies.cpp.o
  src/protomol/os/cygwin.h
  src/protomol/os/unix.h
  src/protomol/os/win32.h
- src/protomol/output/Output.h
  src/protomol/output/OutputCache.h
  src/protomol/topology/Angle.h
  src/protomol/topology/AngleInfo.h
@@ -8504,7 +8429,6 @@ CMakeFiles/Library.dir/src/protomol/output/OutputFAHFile.cpp.o
  src/protomol/os/cygwin.h
  src/protomol/os/unix.h
  src/protomol/os/win32.h
- src/protomol/output/Output.h
  src/protomol/output/OutputCache.h
  src/protomol/output/OutputFAHFile.h
  src/protomol/topology/Angle.h
@@ -8582,7 +8506,6 @@ CMakeFiles/Library.dir/src/protomol/output/OutputFAHGUI.cpp.o
  src/protomol/os/unix.h
  src/protomol/os/win32.h
  src/protomol/output/GUIServer.h
- src/protomol/output/Output.h
  src/protomol/output/OutputCache.h
  src/protomol/output/OutputFAHGUI.h
  src/protomol/output/stdtypes.h
@@ -8664,7 +8587,6 @@ CMakeFiles/Library.dir/src/protomol/output/OutputFinalPDBPos.cpp.o
  src/protomol/os/cygwin.h
  src/protomol/os/unix.h
  src/protomol/os/win32.h
- src/protomol/output/Output.h
  src/protomol/output/OutputCache.h
  src/protomol/output/OutputFinalPDBPos.h
  src/protomol/topology/Angle.h
@@ -8741,7 +8663,6 @@ CMakeFiles/Library.dir/src/protomol/output/OutputFinalXYZPos.cpp.o
  src/protomol/os/cygwin.h
  src/protomol/os/unix.h
  src/protomol/os/win32.h
- src/protomol/output/Output.h
  src/protomol/output/OutputCache.h
  src/protomol/output/OutputFinalXYZPos.h
  src/protomol/topology/Angle.h
@@ -8815,7 +8736,6 @@ CMakeFiles/Library.dir/src/protomol/output/OutputFinalXYZVel.cpp.o
  src/protomol/os/cygwin.h
  src/protomol/os/unix.h
  src/protomol/os/win32.h
- src/protomol/output/Output.h
  src/protomol/output/OutputCache.h
  src/protomol/output/OutputFinalXYZVel.h
  src/protomol/topology/Angle.h
@@ -8891,7 +8811,6 @@ CMakeFiles/Library.dir/src/protomol/output/OutputScreen.cpp.o
  src/protomol/os/cygwin.h
  src/protomol/os/unix.h
  src/protomol/os/win32.h
- src/protomol/output/Output.h
  src/protomol/output/OutputCache.h
  src/protomol/output/OutputScreen.h
  src/protomol/topology/Angle.h
@@ -8925,7 +8844,6 @@ CMakeFiles/Library.dir/src/protomol/output/OutputScreen.cpp.o
  src/protomol/type/Vector3D.h
  src/protomol/type/Vector3DBlock.h
 CMakeFiles/Library.dir/src/protomol/output/OutputXTCTrajectory.cpp.o
- /home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/src/protomol/output/Output.h
  /home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/src/protomol/output/OutputCache.h
  /home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/src/protomol/output/OutputXTCTrajectory.cpp
  /home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/protomol_new/trunk/protomol/src/protomol/output/OutputXTCTrajectory.h
@@ -8973,7 +8891,6 @@ CMakeFiles/Library.dir/src/protomol/output/OutputXTCTrajectory.cpp.o
  src/protomol/os/cygwin.h
  src/protomol/os/unix.h
  src/protomol/os/win32.h
- src/protomol/output/Output.h
  src/protomol/output/OutputCache.h
  src/protomol/topology/Angle.h
  src/protomol/topology/Atom.h
@@ -9049,7 +8966,6 @@ CMakeFiles/Library.dir/src/protomol/output/OutputXYZTrajectoryForce.cpp.o
  src/protomol/os/cygwin.h
  src/protomol/os/unix.h
  src/protomol/os/win32.h
- src/protomol/output/Output.h
  src/protomol/output/OutputCache.h
  src/protomol/output/OutputXYZTrajectoryForce.h
  src/protomol/topology/Angle.h
@@ -9127,7 +9043,6 @@ CMakeFiles/Library.dir/src/protomol/output/OutputXYZTrajectoryPos.cpp.o
  src/protomol/os/cygwin.h
  src/protomol/os/unix.h
  src/protomol/os/win32.h
- src/protomol/output/Output.h
  src/protomol/output/OutputCache.h
  src/protomol/output/OutputXYZTrajectoryPos.h
  src/protomol/topology/Angle.h
@@ -9205,7 +9120,6 @@ CMakeFiles/Library.dir/src/protomol/output/OutputXYZTrajectoryVel.cpp.o
  src/protomol/os/cygwin.h
  src/protomol/os/unix.h
  src/protomol/os/win32.h
- src/protomol/output/Output.h
  src/protomol/output/OutputCache.h
  src/protomol/output/OutputXYZTrajectoryVel.h
  src/protomol/topology/Angle.h

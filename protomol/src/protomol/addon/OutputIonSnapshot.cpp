@@ -6,14 +6,12 @@
 #include <protomol/module/MainModule.h>
 #include <protomol/base/StringUtilities.h>
 #include <protomol/base/PMConstants.h>
-#include <protomol/io/LuaConfigReader.h>
 #include <protomol/addon/OutputIonSnapshot.h>
 #include <string>
 
 extern int errno;
 using namespace ProtoMol;
 using namespace std;
-using namespace Util;
 
 const string OutputIonSnapshot::keyword("IonSnapshot");
 

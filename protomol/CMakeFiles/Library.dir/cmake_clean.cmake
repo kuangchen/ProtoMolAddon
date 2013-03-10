@@ -176,7 +176,6 @@ FILE(REMOVE_RECURSE
   "CMakeFiles/Library.dir/src/protomol/io/PSFReader.cpp.o"
   "CMakeFiles/Library.dir/src/protomol/io/Reader.cpp.o"
   "CMakeFiles/Library.dir/src/protomol/io/EigenvectorTextReader.cpp.o"
-  "CMakeFiles/Library.dir/src/protomol/io/LuaConfigReader.cpp.o"
   "CMakeFiles/Library.dir/src/protomol/io/Writer.cpp.o"
   "CMakeFiles/Library.dir/src/protomol/io/PDBReader.cpp.o"
   "CMakeFiles/Library.dir/src/protomol/io/CheckpointConfigReader.cpp.o"

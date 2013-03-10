@@ -2805,30 +2805,6 @@ src/protomol/io/File.cpp.s:
 	$(MAKE) -f CMakeFiles/Library.dir/build.make CMakeFiles/Library.dir/src/protomol/io/File.cpp.s
 .PHONY : src/protomol/io/File.cpp.s
 
-src/protomol/io/LuaConfigReader.o: src/protomol/io/LuaConfigReader.cpp.o
-.PHONY : src/protomol/io/LuaConfigReader.o
-
-# target to build an object file
-src/protomol/io/LuaConfigReader.cpp.o:
-	$(MAKE) -f CMakeFiles/Library.dir/build.make CMakeFiles/Library.dir/src/protomol/io/LuaConfigReader.cpp.o
-.PHONY : src/protomol/io/LuaConfigReader.cpp.o
-
-src/protomol/io/LuaConfigReader.i: src/protomol/io/LuaConfigReader.cpp.i
-.PHONY : src/protomol/io/LuaConfigReader.i
-
-# target to preprocess a source file
-src/protomol/io/LuaConfigReader.cpp.i:
-	$(MAKE) -f CMakeFiles/Library.dir/build.make CMakeFiles/Library.dir/src/protomol/io/LuaConfigReader.cpp.i
-.PHONY : src/protomol/io/LuaConfigReader.cpp.i
-
-src/protomol/io/LuaConfigReader.s: src/protomol/io/LuaConfigReader.cpp.s
-.PHONY : src/protomol/io/LuaConfigReader.s
-
-# target to generate assembly for a file
-src/protomol/io/LuaConfigReader.cpp.s:
-	$(MAKE) -f CMakeFiles/Library.dir/build.make CMakeFiles/Library.dir/src/protomol/io/LuaConfigReader.cpp.s
-.PHONY : src/protomol/io/LuaConfigReader.cpp.s
-
 src/protomol/io/PARReader.o: src/protomol/io/PARReader.cpp.o
 .PHONY : src/protomol/io/PARReader.o
 
@@ -5501,9 +5477,6 @@ help:
 	@echo "... src/protomol/io/File.o"
 	@echo "... src/protomol/io/File.i"
 	@echo "... src/protomol/io/File.s"
-	@echo "... src/protomol/io/LuaConfigReader.o"
-	@echo "... src/protomol/io/LuaConfigReader.i"
-	@echo "... src/protomol/io/LuaConfigReader.s"
 	@echo "... src/protomol/io/PARReader.o"
 	@echo "... src/protomol/io/PARReader.i"
 	@echo "... src/protomol/io/PARReader.s"

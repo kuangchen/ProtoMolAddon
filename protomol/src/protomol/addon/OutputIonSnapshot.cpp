@@ -58,6 +58,14 @@ void OutputIonSnapshot::doInitialize()
 
   int fps = static_cast<int>(1.0/h+0.5);
   
+  int modifiedNumFrame = 0;
+  if (numFrame<0) {
+    vector<double> w = trap.GetSecularFrequency();
+    vector<double>::iterator it = min_element(w.begin(), w.end());
+    modifiedNumFrame = 2 * static_cast<int>(fps / (*it));
+    numFrame = modifiedNumFrame;
+  }  
+
   ostringstream s;
   s.unsetf(ios::floatfield);
   s.precision(5);

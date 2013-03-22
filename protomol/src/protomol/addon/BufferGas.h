@@ -35,7 +35,7 @@ namespace ProtoMolAddon {
       double _vn;
 
       vector<Event> _schedule;
-      unsigned int _nextEvent;
+      int _nextEvent;
 
       const gsl_rng_type *_T;
       gsl_rng *_r;

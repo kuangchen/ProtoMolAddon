@@ -1,6 +1,7 @@
 #include <protomol/addon/BufferGas.h>
 #include <protomol/base/PMConstants.h>
 #include <cmath>
+#include <ctime>
 
 using namespace ProtoMol::Constant;
 using namespace ProtoMolAddon::Collision;
@@ -24,10 +25,16 @@ BufferGas::~BufferGas() {
 }
 
         
-BufferGas::BufferGas (LuaState& L) {
+BufferGas::BufferGas (LuaState& L) :
+  _nextEvent(0),
+  _schedule(0)
+{
   gsl_rng_env_setup();  
   _T = gsl_rng_default;
   _r = gsl_rng_alloc(_T);
+  long int seed = time(0);
+  gsl_rng_set(_r, seed);
+
   
   _mass = L.get<double>("neutral.mass") * SI::AMU;
   _freq = L.get<double>("neutral.collision_frequency");

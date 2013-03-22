@@ -16,9 +16,9 @@ HarmonicTrap::HarmonicTrap(const string &def) :
 {
   LuaState ls(def);
   
-  freq[0] = ls.get<double>("freq.x");
-  freq[1] = ls.get<double>("freq.y");
-  freq[2] = ls.get<double>("freq.z");
+  freq[0] = ls.get<double>("trap.freq.x");
+  freq[1] = ls.get<double>("trap.freq.y");
+  freq[2] = ls.get<double>("trap.freq.z");
 
 }
 

@@ -7,8 +7,10 @@
 #include <protomol/force/bonded/ImproperSystemForce.h>
 #include <protomol/force/bonded/HarmDihedralSystemForce.h>
 
+#include <protomol/addon/HarmonicTrapForce.h>
 #include <protomol/addon/LQTForce.h>
-#include <protomol/addon/LaserCoolingForce.h>
+//#include <protomol/addon/LaserCoolingForce.h>
+#include <protomol/addon/DampingForce.h>
 #include <protomol/addon/StrayFieldForce.h>
 
 #include <protomol/ProtoMolApp.h>
@@ -37,8 +39,9 @@ void BondedForcesModule::registerForces(ProtoMolApp *app) {
     f.registerExemplar(new ImproperSystemForce<PeriodicBoundaryConditions>());
     f.registerExemplar(new HarmDihedralSystemForce<PeriodicBoundaryConditions>());
     f.registerExemplar(new LQTForce<PeriodicBoundaryConditions>());
-
-    f.registerExemplar(new LaserCoolingForce<PeriodicBoundaryConditions>());
+    f.registerExemplar(new HarmonicTrapForce<PeriodicBoundaryConditions>());
+//f.registerExemplar(new LaserCoolingForce<PeriodicBoundaryConditions>());
+    f.registerExemplar(new DampingForce<PeriodicBoundaryConditions>());
     f.registerExemplar(new StrayFieldForce<PeriodicBoundaryConditions>());
 
   } else if (equalNocase(boundConds, VacuumBoundaryConditions::keyword)) {
@@ -48,8 +51,10 @@ void BondedForcesModule::registerForces(ProtoMolApp *app) {
     f.registerExemplar(new AngleSystemForce<VacuumBoundaryConditions>());
     f.registerExemplar(new ImproperSystemForce<VacuumBoundaryConditions>());
     f.registerExemplar(new HarmDihedralSystemForce<VacuumBoundaryConditions>());
-    f.registerExemplar(new LQTForce<PeriodicBoundaryConditions>());
-    f.registerExemplar(new LaserCoolingForce<VacuumBoundaryConditions>());
+    f.registerExemplar(new LQTForce<VacuumBoundaryConditions>());
+    f.registerExemplar(new HarmonicTrapForce<VacuumBoundaryConditions>());
+    f.registerExemplar(new DampingForce<VacuumBoundaryConditions>());
+//    f.registerExemplar(new LaserCoolingForce<VacuumBoundaryConditions>());
     f.registerExemplar(new StrayFieldForce<VacuumBoundaryConditions>());
   }
 }

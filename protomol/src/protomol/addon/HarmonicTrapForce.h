@@ -1,5 +1,5 @@
-#ifndef LQTFORCE_H
-#define LQTFORCE_H
+#ifndef _HARMONIC_TRAP_FORCE_H
+#define _HARMONIC_TRAP_FORCE_H
 
 #include <protomol/force/extended/ExtendedForce.h>
 #include <protomol/topology/GenericTopology.h>
@@ -7,35 +7,25 @@
 #include <protomol/type/ScalarStructure.h>
 #include <protomol/base/PMConstants.h>
 
-#include <protomol/addon/LinearPaulTrap.h>
-#include <protomol/addon/LuaState.h>
+#include <protomol/addon/HarmonicTrap.h>
 
 using namespace std;
-using namespace ProtoMolAddon::LinearPaulTrap;
-using namespace ProtoMolAddon::Lua;
+using namespace ProtoMol::Constant;
 
-namespace ProtoMolAddon {
+namespace ProtoMolAddon{
+
   template<class TBoundaryConditions>
-  class LQTForce: public ExtendedForce {
-  private:
-    string filename;
-    LuaState L;
-    Lqt trap;
-    
+  class HarmonicTrapForce: public ExtendedForce {
+  private: 
+    string def;
+    HarmonicTrap trap;
+
   public:
-    LQTForce(): 
-      filename(""),
-      L(),
-      trap()
+    HarmonicTrapForce() {}
+    HarmonicTrapForce(const string& def):
+      def(def),
+      trap(def)
     {}
-
-    LQTForce(const std::string& filename): 
-      filename(filename), 
-      L(filename),
-      trap(L)
-    {
-
-    }
     
     virtual void evaluate(const GenericTopology* topo,
 			  const Vector3DBlock* positions,
@@ -57,36 +47,37 @@ namespace ProtoMolAddon {
   private:
     virtual Force* doMake(const std::vector<Value> &values) const
     {
-      return new LQTForce(values[0]);
+      return new HarmonicTrapForce(values[0]);
     };
 
   };
   
   template <class TBoundaryConditions>
-  const std::string LQTForce<TBoundaryConditions>::keyword("LQT");  
+  const std::string HarmonicTrapForce<TBoundaryConditions>::keyword("HarmonicTrapForce");  
 
   template<class TBoundaryConditions>
-  inline void LQTForce<TBoundaryConditions>::evaluate(const GenericTopology* topo,
+  inline void HarmonicTrapForce<TBoundaryConditions>::evaluate(const GenericTopology* topo,
 						      const Vector3DBlock* positions,
 						      const Vector3DBlock *velocities,
 						      Vector3DBlock* forces,
 						      ScalarStructure* energies)
   {
-    double force_conversion = Constant::SI::KCAL * Constant::SI::AVOGADRO * 1e-10;
+    double force_conversion = SI::KCAL * SI::AVOGADRO * 1e-10;
     double position_conversion = 1e-10;
-    double time_conversion = 1.0 / ProtoMol::Constant::SI::TIME_FS;
 
     for(unsigned int i=0;i<topo->atoms.size();i++)
       {
 	Vector3D f;
-	trap.GetForce((*positions)[i] * position_conversion, topo->time * time_conversion, f);
+	Vector3D pos((*positions)[i]);
+	double mass = topo->atoms[0].scaledMass * SI::AMU;
+	trap.GetForce(pos * position_conversion, mass, f);
 	(*forces)[i] += f * force_conversion;
       }
   }
 
 
   template<class TBoundaryConditions>
-  inline void LQTForce<TBoundaryConditions>::parallelEvaluate(const GenericTopology* topo,
+  inline void HarmonicTrapForce<TBoundaryConditions>::parallelEvaluate(const GenericTopology* topo,
 							      const Vector3DBlock* positions,
 							      const Vector3DBlock *velocities,
 							      Vector3DBlock* forces,
@@ -96,9 +87,11 @@ namespace ProtoMolAddon {
   }
 
   template<class TBoundaryConditions>
-  inline void LQTForce<TBoundaryConditions>::getParameters(std::vector<Parameter>& parameters) const
+  inline void HarmonicTrapForce<TBoundaryConditions>::getParameters(std::vector<Parameter>& parameters) const
   {
-    parameters.push_back(Parameter("-lqt_filename", Value(filename)));
+    parameters.push_back(Parameter("-ht_def", Value(def)));
+			 
   }
 }
+
 #endif

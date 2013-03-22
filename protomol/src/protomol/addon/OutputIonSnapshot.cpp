@@ -70,17 +70,18 @@ void OutputIonSnapshot::doInitialize()
   s.unsetf(ios::floatfield);
   s.precision(5);
 
-  for (vector<double>::iterator iter=ssStart.begin(); iter!=ssStart.end(); iter++) {
-    int n = static_cast<int> (*iter/h + 0.5);
-    (*iter) = h*n;
+  for (int i=0; i<ssStart.size(); i++) {
+    int n = static_cast<int> (ssStart[i]/h + 0.5);
+    ssStart[i] = h*n;
 
     SnapshotConfig config;
-    config.start = *iter;
+    config.start = ssStart[i];
     config.fps = fps;
     config.numFrame = numFrame;
-    config.numAtom = numAtom;
+    config.numAtom = numAtom; 
+    config.numFrameperMM = static_cast<int> (fps/trap.GetFrequency());
 
-    s << scientific << outputDir << "/time_" << *iter << ".hd5";
+    s << scientific << outputDir << "/snapshot_" << i << ".hd5";
     ssList.push_back(Snapshot(s.str(), config));
     s.flush();
     s.str("");

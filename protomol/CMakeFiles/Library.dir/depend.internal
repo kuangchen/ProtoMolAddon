@@ -1198,6 +1198,9 @@ CMakeFiles/Library.dir/src/protomol/force/Force.cpp.o
  src/protomol/type/Vector3D.h
 CMakeFiles/Library.dir/src/protomol/force/ForceGroup.cpp.o
  /home/kuangchen/Documents/Lab/Project/protomol_github/ProtoMol/protomol/src/protomol/force/ForceGroup.cpp
+ /usr/include/mpich2/mpi.h
+ /usr/include/mpich2/mpicxx.h
+ /usr/include/mpich2/mpio.h
  src/protomol/ProtoMolApp.h
  src/protomol/base/Counter.h
  src/protomol/base/Exception.h
@@ -9271,6 +9274,9 @@ CMakeFiles/Library.dir/src/protomol/parallel/FFTComplex.cpp.o
  src/protomol/type/SimpleTypes.h
 CMakeFiles/Library.dir/src/protomol/parallel/Parallel.cpp.o
  /home/kuangchen/Documents/Lab/Project/protomol_github/ProtoMol/protomol/src/protomol/parallel/Parallel.cpp
+ /usr/include/mpich2/mpi.h
+ /usr/include/mpich2/mpicxx.h
+ /usr/include/mpich2/mpio.h
  src/protomol/base/MathUtilities.h
  src/protomol/base/PMConstants.h
  src/protomol/base/Proxy.h

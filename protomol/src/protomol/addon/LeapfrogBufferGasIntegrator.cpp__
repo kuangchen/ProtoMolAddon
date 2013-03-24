@@ -30,8 +30,8 @@ LeapfrogBufferGasIntegrator::LeapfrogBufferGasIntegrator(Real timestep,
 							 const string& filename, 
 							 ForceGroup *overloadedForces) :
   STSIntegrator(timestep, overloadedForces), 
-  bg_manager(),
-  ls(filename)
+  L(filename),
+  gas(L)
 {
 }
 
@@ -39,12 +39,21 @@ LeapfrogBufferGasIntegrator::~LeapfrogBufferGasIntegrator() {
 }
 
 
+bool compareFunction(pair<int, Real> p1, pair<int, Real> p2) {
+  return p1.second < p2.second;
+}
+
 void LeapfrogBufferGasIntegrator::initialize(ProtoMolApp *app) {
   STSIntegrator::initialize(app);
   initializeForces();
 
-  bg_manager.InitializeBufferGas(ls);
-  bg_manager.InitializeCollisionSchedule(ls, app);
+  Real step = getTimestep() / Constant::SI::TIME_FS;
+  int numAtom = app->topology->atoms.size();
+  Real start = (int)app->config[InputFirststep::keyword] * step;
+  Real end = app->lastStep * step;
+
+  
+  gas.ScheduleCollision(start, end, numAtom);
 }
 
 void LeapfrogBufferGasIntegrator::doHalfKickdoDrift() {
@@ -106,12 +115,12 @@ void LeapfrogBufferGasIntegrator::doKickdoDrift() {
 
 // Run simulations n steps and eta fraction step
 void LeapfrogBufferGasIntegrator::runGeneral(double t1, double t2) {
-  //std::cout << "Running from " << t1 << " to " << t2 << "\n";
+  std::cout << "Running from " << t1 << " to " << t2 << "\n";
 
   int n;
   Real eta;
 
-  Real stepsize = getTimestep() / Constant::SI::TIME_FS;
+  Real stepsize = getTimestep() / ProtoMol::Constant::SI::TIME_FS;
   n = static_cast<int> ((t2-t1)/stepsize + 0.5);
   eta = (t2-t1)/stepsize - n;
 
@@ -144,19 +153,17 @@ void LeapfrogBufferGasIntegrator::run(int numTimesteps) {
     return;
 
   preStepModify();
+  Real stepSize = getTimestep() / Constant::SI::TIME_FS;
+  Real current = app->currentStep * stepSize;
+  Real end = (app->currentStep + numTimesteps) * stepSize;
+  Real next = gas.getNextCollisionEventTime();
 
-  double stepSize = getTimestep() / Constant::SI::TIME_FS;
-  double current = app->currentStep * stepSize;
-  double end = (app->currentStep + numTimesteps) * stepSize;
 
-  double next_collision_time = 0;
-
-  while (!bg_manager.IsCollisionFinished() && 
-	 (next_collision_time = bg_manager.GetNextCollisionTime()) < end) {
-
-    runGeneral(current, next_collision_time);
-    bg_manager.Collide(app);
-    current = next_collision_time;
+  while (!gas.isCollisionFinished() && next < end) {
+    runGeneral(current, next);
+    gas.collide(app);
+    current = next;
+    next = gas.getNextCollisionEventTime();
   }
 
   runGeneral(current, end);

@@ -213,6 +213,54 @@ src/protomol/addon/BufferGas.cpp.s:
 	$(MAKE) -f CMakeFiles/Library.dir/build.make CMakeFiles/Library.dir/src/protomol/addon/BufferGas.cpp.s
 .PHONY : src/protomol/addon/BufferGas.cpp.s
 
+src/protomol/addon/BufferGasManager.o: src/protomol/addon/BufferGasManager.cpp.o
+.PHONY : src/protomol/addon/BufferGasManager.o
+
+# target to build an object file
+src/protomol/addon/BufferGasManager.cpp.o:
+	$(MAKE) -f CMakeFiles/Library.dir/build.make CMakeFiles/Library.dir/src/protomol/addon/BufferGasManager.cpp.o
+.PHONY : src/protomol/addon/BufferGasManager.cpp.o
+
+src/protomol/addon/BufferGasManager.i: src/protomol/addon/BufferGasManager.cpp.i
+.PHONY : src/protomol/addon/BufferGasManager.i
+
+# target to preprocess a source file
+src/protomol/addon/BufferGasManager.cpp.i:
+	$(MAKE) -f CMakeFiles/Library.dir/build.make CMakeFiles/Library.dir/src/protomol/addon/BufferGasManager.cpp.i
+.PHONY : src/protomol/addon/BufferGasManager.cpp.i
+
+src/protomol/addon/BufferGasManager.s: src/protomol/addon/BufferGasManager.cpp.s
+.PHONY : src/protomol/addon/BufferGasManager.s
+
+# target to generate assembly for a file
+src/protomol/addon/BufferGasManager.cpp.s:
+	$(MAKE) -f CMakeFiles/Library.dir/build.make CMakeFiles/Library.dir/src/protomol/addon/BufferGasManager.cpp.s
+.PHONY : src/protomol/addon/BufferGasManager.cpp.s
+
+src/protomol/addon/CollisionSchedule.o: src/protomol/addon/CollisionSchedule.cpp.o
+.PHONY : src/protomol/addon/CollisionSchedule.o
+
+# target to build an object file
+src/protomol/addon/CollisionSchedule.cpp.o:
+	$(MAKE) -f CMakeFiles/Library.dir/build.make CMakeFiles/Library.dir/src/protomol/addon/CollisionSchedule.cpp.o
+.PHONY : src/protomol/addon/CollisionSchedule.cpp.o
+
+src/protomol/addon/CollisionSchedule.i: src/protomol/addon/CollisionSchedule.cpp.i
+.PHONY : src/protomol/addon/CollisionSchedule.i
+
+# target to preprocess a source file
+src/protomol/addon/CollisionSchedule.cpp.i:
+	$(MAKE) -f CMakeFiles/Library.dir/build.make CMakeFiles/Library.dir/src/protomol/addon/CollisionSchedule.cpp.i
+.PHONY : src/protomol/addon/CollisionSchedule.cpp.i
+
+src/protomol/addon/CollisionSchedule.s: src/protomol/addon/CollisionSchedule.cpp.s
+.PHONY : src/protomol/addon/CollisionSchedule.s
+
+# target to generate assembly for a file
+src/protomol/addon/CollisionSchedule.cpp.s:
+	$(MAKE) -f CMakeFiles/Library.dir/build.make CMakeFiles/Library.dir/src/protomol/addon/CollisionSchedule.cpp.s
+.PHONY : src/protomol/addon/CollisionSchedule.cpp.s
+
 src/protomol/addon/Damping.o: src/protomol/addon/Damping.cpp.o
 .PHONY : src/protomol/addon/Damping.o
 
@@ -5201,6 +5249,12 @@ help:
 	@echo "... src/protomol/addon/BufferGas.o"
 	@echo "... src/protomol/addon/BufferGas.i"
 	@echo "... src/protomol/addon/BufferGas.s"
+	@echo "... src/protomol/addon/BufferGasManager.o"
+	@echo "... src/protomol/addon/BufferGasManager.i"
+	@echo "... src/protomol/addon/BufferGasManager.s"
+	@echo "... src/protomol/addon/CollisionSchedule.o"
+	@echo "... src/protomol/addon/CollisionSchedule.i"
+	@echo "... src/protomol/addon/CollisionSchedule.s"
 	@echo "... src/protomol/addon/Damping.o"
 	@echo "... src/protomol/addon/Damping.i"
 	@echo "... src/protomol/addon/Damping.s"

@@ -31,7 +31,7 @@ LeapfrogBufferGasIntegrator::LeapfrogBufferGasIntegrator(Real timestep,
 							 ForceGroup *overloadedForces) :
   STSIntegrator(timestep, overloadedForces), 
   bg_manager(),
-  ls(filename)
+  ls(filename),
 {
 }
 
@@ -44,7 +44,7 @@ void LeapfrogBufferGasIntegrator::initialize(ProtoMolApp *app) {
   initializeForces();
 
   bg_manager.InitializeBufferGas(ls);
-  bg_manager.InitializeCollisionSchedule(ls, app);
+  bg_manager.InitializeBufferGas(ls, app);
 }
 
 void LeapfrogBufferGasIntegrator::doHalfKickdoDrift() {

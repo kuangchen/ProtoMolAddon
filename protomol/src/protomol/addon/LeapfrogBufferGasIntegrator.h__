@@ -3,16 +3,16 @@
 #define LEAPFROGBUFFERGASINTEGRATOR_H
 
 #include <protomol/integrator/STSIntegrator.h>
-#include <protomol/addon/BufferGasManager.h>
+#include <protomol/addon/BufferGas.h>
 #include <protomol/addon/LuaState.h>
 #include <string>
 #include <vector>
                 
-using namespace ProtoMolAddon;
+using namespace ProtoMolAddon::Collision;
 using namespace ProtoMolAddon::Lua;
 using ProtoMol::STSIntegrator;
 using namespace std;
-
+using std::vector;
 
 namespace ProtoMolAddon {
   //____ LeapfrogBufferGasIntegrator
@@ -58,9 +58,9 @@ namespace ProtoMolAddon {
     // My data members
     //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
   private:
-    BufferGasManager bg_manager;
     string filename; 
-    LuaState ls;
+    LuaState L;
+    BufferGas gas;
 
   public:
     static const string keyword;

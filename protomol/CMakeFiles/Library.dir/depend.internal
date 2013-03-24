@@ -95,8 +95,21 @@ CMakeFiles/Library.dir/src/protomol/ProtoMolApp.cpp.o
  src/protomol/type/Vector3DBlock.h
 CMakeFiles/Library.dir/src/protomol/addon/BufferGas.cpp.o
  /home/kuangchen/Documents/Lab/Project/protomol_github/ProtoMol/protomol/src/protomol/addon/BufferGas.cpp
+ src/protomol/addon/BufferGas.h
+ src/protomol/base/MathUtilities.h
+ src/protomol/base/PMConstants.h
+ src/protomol/base/Random.h
+ src/protomol/base/Report.h
+ src/protomol/base/Singleton.h
+ src/protomol/type/Real.h
+ src/protomol/type/SimpleTypes.h
+ src/protomol/type/Vector3D.h
+CMakeFiles/Library.dir/src/protomol/addon/BufferGasManager.cpp.o
+ /home/kuangchen/Documents/Lab/Project/protomol_github/ProtoMol/protomol/src/protomol/addon/BufferGasManager.cpp
  src/protomol/ProtoMolApp.h
  src/protomol/addon/BufferGas.h
+ src/protomol/addon/BufferGasManager.h
+ src/protomol/addon/CollisionSchedule.h
  src/protomol/addon/LuaState.h
  src/protomol/base/Counter.h
  src/protomol/base/Exception.h
@@ -164,6 +177,9 @@ CMakeFiles/Library.dir/src/protomol/addon/BufferGas.cpp.o
  src/protomol/type/SimpleTypes.h
  src/protomol/type/Vector3D.h
  src/protomol/type/Vector3DBlock.h
+CMakeFiles/Library.dir/src/protomol/addon/CollisionSchedule.cpp.o
+ /home/kuangchen/Documents/Lab/Project/protomol_github/ProtoMol/protomol/src/protomol/addon/CollisionSchedule.cpp
+ src/protomol/addon/CollisionSchedule.h
 CMakeFiles/Library.dir/src/protomol/addon/Damping.cpp.o
  /home/kuangchen/Documents/Lab/Project/protomol_github/ProtoMol/protomol/src/protomol/addon/Damping.cpp
  src/protomol/addon/Damping.h
@@ -192,6 +208,8 @@ CMakeFiles/Library.dir/src/protomol/addon/LeapfrogBufferGasIntegrator.cpp.o
  /home/kuangchen/Documents/Lab/Project/protomol_github/ProtoMol/protomol/src/protomol/addon/LeapfrogBufferGasIntegrator.cpp
  src/protomol/ProtoMolApp.h
  src/protomol/addon/BufferGas.h
+ src/protomol/addon/BufferGasManager.h
+ src/protomol/addon/CollisionSchedule.h
  src/protomol/addon/LeapfrogBufferGasIntegrator.h
  src/protomol/addon/LuaState.h
  src/protomol/base/Counter.h
@@ -6839,6 +6857,8 @@ CMakeFiles/Library.dir/src/protomol/module/LeapfrogModule.cpp.o
  /home/kuangchen/Documents/Lab/Project/protomol_github/ProtoMol/protomol/src/protomol/module/LeapfrogModule.cpp
  src/protomol/ProtoMolApp.h
  src/protomol/addon/BufferGas.h
+ src/protomol/addon/BufferGasManager.h
+ src/protomol/addon/CollisionSchedule.h
  src/protomol/addon/LeapfrogBufferGasIntegrator.h
  src/protomol/addon/LuaState.h
  src/protomol/base/Counter.h

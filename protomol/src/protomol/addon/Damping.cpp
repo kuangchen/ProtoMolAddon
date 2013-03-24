@@ -18,8 +18,8 @@ Damping::Damping(const string &def) :
   LuaState ls(def);
   
   coeff = ls.get<double>("damping.coeff");
-  start = ls.get<double>("damping.start");
-  end = ls.get<double>("damping.end");
+  start = ls.get<double>("damping.t_start");
+  end = ls.get<double>("damping.t_end");
 }
 
 void Damping::GetForce(const Vector3D &vel, double time, Vector3D& force) {

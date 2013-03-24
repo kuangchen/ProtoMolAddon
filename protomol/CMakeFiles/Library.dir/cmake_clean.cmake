@@ -200,6 +200,8 @@ FILE(REMOVE_RECURSE
   "CMakeFiles/Library.dir/src/protomol/addon/LinearPaulTrap.cpp.o"
   "CMakeFiles/Library.dir/src/protomol/addon/OutputIonSnapshot.cpp.o"
   "CMakeFiles/Library.dir/src/protomol/addon/LuaState.cpp.o"
+  "CMakeFiles/Library.dir/src/protomol/addon/BufferGasManager.cpp.o"
+  "CMakeFiles/Library.dir/src/protomol/addon/CollisionSchedule.cpp.o"
   "CMakeFiles/Library.dir/src/protomol/addon/HarmonicTrap.cpp.o"
   "CMakeFiles/Library.dir/src/protomol/addon/BufferGas.cpp.o"
   "CMakeFiles/Library.dir/src/protomol/addon/Mathieu.cpp.o"

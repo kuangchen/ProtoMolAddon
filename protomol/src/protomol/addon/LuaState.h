@@ -12,15 +12,20 @@ extern "C" {
 #include <iostream>
 #include <vector>
 
-using std::cout;
-using std::string;
-using std::vector;
-
+using namespace std;
 
 namespace ProtoMolAddon {
 
   namespace Lua {
 
+    class LuaStateError {
+    private:
+      string msg;
+    public:
+      LuaStateError(const string& message);
+      string GetMessage() const;
+    };
+    
     class LuaState {
     private:
       lua_State *L;
@@ -54,7 +59,7 @@ namespace ProtoMolAddon {
 
 	    if (n == 0)  // This snippet push field onto the stack
 	      lua_getglobal(L, temp);
-
+	    
 	    else
 	      lua_getfield(L, -1, temp);
 
@@ -63,8 +68,10 @@ namespace ProtoMolAddon {
 	    memset(temp, 0, sizeof(temp));
 	    j = 0;
  
-	    if (lua_isnil(L, -1))
+	    if (lua_isnil(L, -1)) {
+	      throw LuaStateError( "Error reading field " + string(varname) );
 	      return T();
+	    }
 	  }
 
 	  else {
@@ -95,5 +102,8 @@ namespace ProtoMolAddon {
     template <> string LuaState::lua_get<string>();
     template <> vector<double> LuaState::lua_get<vector<double> > ();
   }
+
+  
+
 }
 #endif

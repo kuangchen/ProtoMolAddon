@@ -50,8 +50,8 @@ void BufferGasManager::InitializeCollisionSchedule(LuaState &ls, ProtoMolApp *ap
 }
 
 void BufferGasManager::Collide(ProtoMolApp *app) {
-  std::cout << next_collision->GetTime() << "\t" 
-	    << next_collision->GetAtomId() << "\n";
+  //std::cout << next_collision->GetTime() << "\t" 
+  //	    << next_collision->GetAtomId() << "\n";
   if (next_collision == collision_schedule.end() )
     return;
 

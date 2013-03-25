@@ -41,3 +41,11 @@ template <> vector<double> LuaState::lua_get<vector<double> > () {
 
   return value;
 }
+
+LuaStateError::LuaStateError(const string& message) : msg(message) {
+  std::cout << message << "\n";
+}
+
+string LuaStateError::GetMessage() const {
+  return msg;
+}

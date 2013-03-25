@@ -34,7 +34,7 @@ void BufferGas::Collide(double mi, Vector3D &pi, Vector3D &vi, gsl_rng *r) {
   Vector3D v_com, v_rel, v_rel_after;
   v_com = vi * b1 + vel * b2;
   v_rel = vi - vel;
-
+  
   double norm = v_rel.norm();
   gsl_ran_dir_3d(r, &v_rel_after[0], &v_rel_after[1], &v_rel_after[2]);
   v_rel_after *= norm;

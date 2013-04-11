@@ -30,7 +30,7 @@ template <> vector<double> LuaState::lua_get<vector<double> > () {
   if (lua_type(L, -1) != LUA_TTABLE)
       luaL_error(L, "Not an array!");
 
-  int len = lua_objlen(L, -1);
+  int len = lua_rawlen(L, -1);
   value.resize(len);
 
   for (int i = 1; i <= len; i++){

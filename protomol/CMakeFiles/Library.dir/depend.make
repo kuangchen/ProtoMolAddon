@@ -1215,9 +1215,6 @@ CMakeFiles/Library.dir/src/protomol/force/Force.cpp.o: src/protomol/type/SimpleT
 CMakeFiles/Library.dir/src/protomol/force/Force.cpp.o: src/protomol/type/Vector3D.h
 
 CMakeFiles/Library.dir/src/protomol/force/ForceGroup.cpp.o: src/protomol/force/ForceGroup.cpp
-CMakeFiles/Library.dir/src/protomol/force/ForceGroup.cpp.o: /usr/include/mpich2/mpi.h
-CMakeFiles/Library.dir/src/protomol/force/ForceGroup.cpp.o: /usr/include/mpich2/mpicxx.h
-CMakeFiles/Library.dir/src/protomol/force/ForceGroup.cpp.o: /usr/include/mpich2/mpio.h
 CMakeFiles/Library.dir/src/protomol/force/ForceGroup.cpp.o: src/protomol/ProtoMolApp.h
 CMakeFiles/Library.dir/src/protomol/force/ForceGroup.cpp.o: src/protomol/base/Counter.h
 CMakeFiles/Library.dir/src/protomol/force/ForceGroup.cpp.o: src/protomol/base/Exception.h
@@ -9293,9 +9290,6 @@ CMakeFiles/Library.dir/src/protomol/parallel/FFTComplex.cpp.o: src/protomol/type
 CMakeFiles/Library.dir/src/protomol/parallel/FFTComplex.cpp.o: src/protomol/type/SimpleTypes.h
 
 CMakeFiles/Library.dir/src/protomol/parallel/Parallel.cpp.o: src/protomol/parallel/Parallel.cpp
-CMakeFiles/Library.dir/src/protomol/parallel/Parallel.cpp.o: /usr/include/mpich2/mpi.h
-CMakeFiles/Library.dir/src/protomol/parallel/Parallel.cpp.o: /usr/include/mpich2/mpicxx.h
-CMakeFiles/Library.dir/src/protomol/parallel/Parallel.cpp.o: /usr/include/mpich2/mpio.h
 CMakeFiles/Library.dir/src/protomol/parallel/Parallel.cpp.o: src/protomol/base/MathUtilities.h
 CMakeFiles/Library.dir/src/protomol/parallel/Parallel.cpp.o: src/protomol/base/PMConstants.h
 CMakeFiles/Library.dir/src/protomol/parallel/Parallel.cpp.o: src/protomol/base/Proxy.h

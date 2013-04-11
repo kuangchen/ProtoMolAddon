@@ -1,11 +1,24 @@
 #ifndef OUTPUT_ION_SNAPSHOT_H
 #define OUTPUT_ION_SNAPSHOT_H
 
+#ifdef ARCHLINUX
+
+extern "C" {
+#include <lua.h>
+#include <lauxlib.h>
+#include <lualib.h>
+}
+
+#else
 extern "C" {
 #include <lua5.1/lua.h>
 #include <lua5.1/lauxlib.h>
 #include <lua5.1/lualib.h>
 }
+
+
+#endif
+
 
 #include <protomol/output/Output.h>
 #include <protomol/addon/LinearPaulTrap.h>

@@ -1,8 +1,20 @@
+#ifdef ARCHLINUX
+
+extern "C" {
+#include <lua.h>
+#include <lauxlib.h>
+#include <lualib.h>
+}
+
+#else
 extern "C" {
 #include <lua5.1/lua.h>
 #include <lua5.1/lauxlib.h>
 #include <lua5.1/lualib.h>
 }
+
+
+#endif
 
 #include <protomol/addon/LinearPaulTrap.h>
 #include <iostream>

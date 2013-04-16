@@ -22,7 +22,7 @@ extern "C" {
 
 #include <protomol/output/Output.h>
 #include <protomol/addon/LinearPaulTrap.h>
-#include <protomol/addon/LuaState.h>
+#include <protomol/addon/LuaConfigReader.h>
 #include <protomol/addon/Snapshot.h>
 #include <vector>
 #include <string>
@@ -48,7 +48,7 @@ namespace ProtoMol {
     
     Real h;
     Lqt trap;
-    LuaState L;
+    LuaConfigReader reader;
 
   public:
     OutputIonSnapshot(const string& filename);

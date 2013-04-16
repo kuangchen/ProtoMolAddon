@@ -1,10 +1,12 @@
 /*  -*- c++ -*-  */
-#ifndef LEAPFROGBUFFERGASINTEGRATOR_H
-#define LEAPFROGBUFFERGASINTEGRATOR_H
+#ifndef LEAPFROGBUFFERGASINTEGRATOR2_H
+#define LEAPFROGBUFFERGASINTEGRATOR2_H
 
 #include <protomol/integrator/STSIntegrator.h>
 #include <protomol/addon/BufferGasManager.h>
 #include <protomol/addon/LuaConfigReader.h>
+#include <protomol/addon/NeutralAtom.h>
+
 #include <string>
 #include <vector>
                 
@@ -15,19 +17,19 @@ using namespace std;
 
 
 namespace ProtoMolAddon {
-  //____ LeapfrogBufferGasIntegrator
-  class LeapfrogBufferGasIntegrator : public STSIntegrator {
+  //____ LeapfrogBufferGasIntegrator2
+  class LeapfrogBufferGasIntegrator2 : public STSIntegrator {
     //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     // Constructors, destructors, assignment
     //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
   public:
-    LeapfrogBufferGasIntegrator();
-    LeapfrogBufferGasIntegrator(Real timestep, const string& filename, ForceGroup *overloadedForces);
+    LeapfrogBufferGasIntegrator2();
+    LeapfrogBufferGasIntegrator2(Real timestep, const string& filename, ForceGroup *overloadedForces);
 
-    ~LeapfrogBufferGasIntegrator();
+    ~LeapfrogBufferGasIntegrator2();
 
     //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    // New methods of class LeapfrogBufferGasIntegrator
+    // New methods of class LeapfrogBufferGasIntegrator2
     //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
   protected:
     void doKickdoDrift();
@@ -58,13 +60,12 @@ namespace ProtoMolAddon {
     // My data members
     //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
   private:
-    BufferGasManager bg_manager;
     string filename; 
     LuaConfigReader reader;
+    NeutralAtom neutral_atom;
     double trap_radius;
   public:
     static const string keyword;
-    void runGeneral(Real t1, Real t2);
   };
 }
 

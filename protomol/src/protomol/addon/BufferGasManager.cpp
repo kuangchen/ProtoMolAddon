@@ -2,7 +2,6 @@
 #include <iostream>
 #include <ctime>
 
-
 using namespace ProtoMol;
 using namespace ProtoMolAddon;
 
@@ -24,16 +23,16 @@ BufferGasManager::~BufferGasManager() {
     gsl_rng_free(r);
 }
 
-void BufferGasManager::InitializeBufferGas(LuaState &ls) {
-  double mass = ls.get<double>("buffer_gas.mass");
-  double temp = ls.get<double>("buffer_gas.temp");
+void BufferGasManager::InitializeBufferGas(LuaConfigReader &reader) {
+  double mass = reader.GetValue<double>("buffer_gas.mass") * SI::AMU;
+  double temp = reader.GetValue<double>("buffer_gas.temp");
 
   buffer_gas.Set(mass, temp);
 }
 
-void BufferGasManager::InitializeCollisionSchedule(LuaState &ls, ProtoMolApp *app) {
-  double freq = ls.get<double>("collision.freq");
-  bool always_on = ls.get<bool>("collision.always_on");
+void BufferGasManager::InitializeCollisionSchedule(LuaConfigReader &reader, ProtoMolApp *app) {
+  double freq = reader.GetValue<double>("collision.freq");
+  bool always_on = reader.GetValue<bool>("collision.always_on");
 
   int atom_count = app->topology->atoms.size();
   double start, end;

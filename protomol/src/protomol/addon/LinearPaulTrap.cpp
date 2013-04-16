@@ -13,7 +13,6 @@ extern "C" {
 #include <lua5.1/lualib.h>
 }
 
-
 #endif
 
 #include <protomol/addon/LinearPaulTrap.h>
@@ -24,15 +23,21 @@ using namespace std;
   
 Lqt::Lqt() {}
 
-Lqt::Lqt(LuaState& L) {
-
-  m = L.get<double>("trap.m");
-  r0 = L.get<double>("trap.r0");
-  z0 = L.get<double>("trap.z0");
-  v_rf = L.get<double>("trap.v_rf");
-  v_ec = L.get<double>("trap.v_ec");
-  eta = L.get<double>("trap.eta");
-  omega = L.get<double>("trap.omega");
+Lqt::Lqt(LuaConfigReader& reader) {
+  try {
+    m = reader.GetValue<double>("trap.m");
+    r0 = reader.GetValue<double>("trap.r0");
+    z0 = reader.GetValue<double>("trap.z0");
+    v_rf = reader.GetValue<double>("trap.v_rf");
+    v_ec = reader.GetValue<double>("trap.v_ec");
+    eta = reader.GetValue<double>("trap.eta");
+    omega = reader.GetValue<double>("trap.omega");
+  }
+  
+  catch (LuaConfigReaderException &e) {
+    std::cout << e.what() << "\n";
+    throw(e);
+  }
 
   double freq_sq = omega * omega * 4 * M_PI * M_PI;
 
@@ -74,14 +79,14 @@ void Lqt::GetEnergy(const Vector3D& pos, const Vector3D& vel, double time, vecto
   }
 }
 
-void Lqt::GetForce(const Vector3D& pos, double time, Vector3D& force)
+Vector3D Lqt::GetForce(double charge, const Vector3D& pos, double time)
 {
-  double a_rf = 2 * 1.60217646e-19 / r0 / r0 * v_rf * cos(2*M_PI*omega*time);
-  double a_dc = eta * 1.60217646e-19 / z0 / z0 * 4 * v_ec;
+  double a_rf = 2 * 1.60217646e-19 / r0 / r0 * v_rf * cos(2*M_PI*omega*time) * charge;
+  double a_dc = eta * 1.60217646e-19 / z0 / z0 * 4 * v_ec * charge;
 
-  force[0] =   -a_rf * pos[0] + a_dc * pos[0];
-  force[1] =    a_rf * pos[1] + a_dc * pos[1];
-  force[2] = -2*a_dc * pos[2];
+  return Vector3D(-a_rf * pos[0] + a_dc * pos[0],
+		  a_rf * pos[1] + a_dc * pos[1],
+		  -2*a_dc * pos[2]);
 }
 
 vector<double> Lqt::GetSecularFrequency() {

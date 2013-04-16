@@ -7,7 +7,7 @@
 #include <protomol/type/ScalarStructure.h>
 #include <protomol/base/PMConstants.h>
 
-#include <protomol/addon/LuaState.h>
+#include <protomol/addon/LuaConfigReader.h>
 #include <vector>
 #include <string>
 
@@ -23,15 +23,15 @@ namespace ProtoMolAddon {
 
   public:
     StrayFieldForce(): 
-      sf_def_filename(""), 
-      L(),
+    sf_def_filename(""), 
+      reader(),
       field(0)
     {}
 
     StrayFieldForce(const string& filename): 
       sf_def_filename(filename),
-      L(filename),
-      field(L.get<vector<double> >("field"))
+      reader(filename),
+      field(reader.GetValue<vector<double> >("field"))
     {
 
     }
@@ -60,7 +60,7 @@ namespace ProtoMolAddon {
     };
 
     string sf_def_filename;
-    LuaState L;
+    LuaConfigReader reader;
     vector<double> field;
   };
   

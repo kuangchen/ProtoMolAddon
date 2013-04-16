@@ -6,36 +6,45 @@
 #include <protomol/topology/SemiGenericTopology.h>
 #include <protomol/type/ScalarStructure.h>
 #include <protomol/base/PMConstants.h>
+#include <protomol/addon/Constants.h>
 
 #include <protomol/addon/LinearPaulTrap.h>
-#include <protomol/addon/LuaState.h>
+#include <protomol/addon/LuaConfigReader.h>
 
-using namespace std;
+#include <vector>
+#include <string>
+
 using namespace ProtoMolAddon::LinearPaulTrap;
 using namespace ProtoMolAddon::Lua;
+using namespace ProtoMol::Constant;
+
 
 namespace ProtoMolAddon {
+
   template<class TBoundaryConditions>
   class LQTForce: public ExtendedForce {
   private:
     string filename;
-    LuaState L;
+    LuaConfigReader reader;
     Lqt trap;
     
+    static const double force_conv;
+    static const double position_conv;
+    static const double time_conv;
+    static const double charge_conv;
+
   public:
     LQTForce(): 
       filename(""),
-      L(),
+      reader(),
       trap()
     {}
 
     LQTForce(const std::string& filename): 
       filename(filename), 
-      L(filename),
-      trap(L)
-    {
-
-    }
+      reader(filename),
+      trap(reader)
+    {}
     
     virtual void evaluate(const GenericTopology* topo,
 			  const Vector3DBlock* positions,
@@ -55,8 +64,7 @@ namespace ProtoMolAddon {
     virtual std::string getIdNoAlias() const{return keyword;}
 
   private:
-    virtual Force* doMake(const std::vector<Value> &values) const
-    {
+    virtual Force* doMake(const std::vector<Value> &values) const {
       return new LQTForce(values[0]);
     };
 
@@ -72,16 +80,11 @@ namespace ProtoMolAddon {
 						      Vector3DBlock* forces,
 						      ScalarStructure* energies)
   {
-    double force_conversion = Constant::SI::KCAL * Constant::SI::AVOGADRO * 1e-10;
-    double position_conversion = 1e-10;
-    double time_conversion = 1.0 / ProtoMol::Constant::SI::TIME_FS;
 
-    for(unsigned int i=0;i<topo->atoms.size();i++)
-      {
-	Vector3D f;
-	trap.GetForce((*positions)[i] * position_conversion, topo->time * time_conversion, f);
-	(*forces)[i] += f * force_conversion;
-      }
+    for(unsigned int i=0;i<topo->atoms.size();i++) 
+      (*forces)[i] += trap.GetForce(topo->atoms[i].scaledCharge * charge_conv, 
+				    (*positions)[i] * position_conv, 
+				    topo->time * time_conv) * force_conv;
   }
 
 
@@ -100,5 +103,15 @@ namespace ProtoMolAddon {
   {
     parameters.push_back(Parameter("-lqt_filename", Value(filename)));
   }
+
+  template<class TBoundaryConditions> const double LQTForce<TBoundaryConditions>::force_conv = SI::KCAL * SI::AVOGADRO * 1e-10;
+  template<class TBoundaryConditions> const double LQTForce<TBoundaryConditions>::position_conv = 1e-10;
+  template<class TBoundaryConditions> const double LQTForce<TBoundaryConditions>::time_conv = 1.0 / SI::TIME_FS;
+  template<class TBoundaryConditions> const double LQTForce<TBoundaryConditions>::charge_conv = 1.0 / SQRTCOULOMBCONSTANT;
+
+  
 }
+
+
+
 #endif

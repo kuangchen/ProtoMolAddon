@@ -6,12 +6,14 @@
 #include <protomol/module/MainModule.h>
 #include <protomol/base/StringUtilities.h>
 #include <protomol/base/PMConstants.h>
+#include <protomol/addon/Constants.h>
 #include <protomol/addon/OutputIonSnapshot.h>
 #include <string>
 
 extern int errno;
 using namespace ProtoMol;
 using namespace std;
+using namespace ProtoMolAddon::Constant;
 
 const string OutputIonSnapshot::keyword("IonSnapshot");
 
@@ -25,18 +27,18 @@ OutputIonSnapshot::OutputIonSnapshot(const string& filename):
   outputDir(""),
   numAtom(0),
   nextSnapshot(0),
-  L(filename) {
+  reader(filename) {
 
-  trap = Lqt(L);
-  outputDir = L.get<string>("dir");  
+  trap = Lqt(reader);
+  outputDir = reader.GetValue<string>("dir");  
 
   int status = mkdir(outputDir.c_str(), S_IRWXU | S_IRWXG | S_IROTH | S_IXOTH);
   if (status)
     if (errno != EEXIST)
       throw (status);
 
-  numFrame = L.get<int>("ss.num_frame");
-  ssStart = L.get< vector<double> >("ss.start");
+  numFrame = reader.GetValue<int>("ss.num_frame");
+  ssStart = reader.GetValue< vector<double> >("ss.start");
 
 }
 
@@ -94,42 +96,51 @@ void OutputIonSnapshot::doInitialize()
 
 void OutputIonSnapshot::doRun(int step)
 {
-  Real now = app->topology->time /Constant::SI::TIME_FS;
-  Real conversion = 1e-10 * Constant::SI::TIME_FS / Constant::TIMEFACTOR;
-
+  Real now = app->topology->time * TIME_CONV;
   bool active = false;
-  for (vector<Snapshot>::iterator iter=ssList.begin(); iter!=ssList.end(); iter++) {
-    active |= iter->IsActive(now);
+
+  for (Snapshot &s : ssList) {
+    active |= s.IsActive(now);
     if (active) break;
   }
 
   if (active) {
-    Real *data = new double[numAtom * 14];
+    Real *data = new double[numAtom * 15];
 
     vector<double> totEnergy, secEnergy;
 
+    Vector3D vel, pos;
     for (int i=0; i<numAtom; i++) {
-      trap.GetEnergy(app->positions[i]*1e-10, app->velocities[i]*conversion, now, totEnergy, secEnergy);
+      vel = app->velocities[i] * VELOCITY_CONV;
+      pos = app->positions[i] * POSITION_CONV;
 
-      for (int j=0; j<3; j++) {
-	// Positions
-	data[i*14+j] = app->positions[i][j] * 1e-10;
+      trap.GetEnergy(pos, vel, now, totEnergy, secEnergy);
+      double *offset = data+i*15;
 
-	// Velocities
-	data[i*14+j+3] = app->velocities[i][j] * conversion;
+      std::copy(pos.c, pos.c+3, offset);
+      std::copy(vel.c, vel.c+3, offset+3);
+      std::copy(totEnergy.begin(), totEnergy.end(), offset+6);
+      std::copy(secEnergy.begin(), secEnergy.end(), offset+9);
+
+      // for (int j=0; j<3; j++) {
+      // 	// Positions
+      // 	data[i*15+j] = pos[j];
+
+      // 	// Velocities
+      // 	data[i*15+j+3] = vel[j];
       
-	// Total Energy and Secular Energy
-	data[i*14+j+6] = totEnergy[j];
-	data[i*14+j+9] = secEnergy[j];
-      
+      // 	// Total Energy and Secular Energy
+      // 	data[i*15+j+6] = totEnergy[j];
+      // 	data[i*15+j+9] = secEnergy[j];
+      // }      
 	// Average Total
-	data[i*14+12] = (data[i*14+6] + data[i*14+7]  + data[i*14+8])/3;
-	data[i*14+13] = (data[i*14+9] + data[i*14+10] + data[i*14+11])/3;
-      }
+      data[i*15+12] = (data[i*15+6] + data[i*15+7]  + data[i*15+8])/3;
+      data[i*15+13] = (data[i*15+9] + data[i*15+10] + data[i*15+11])/3;
+      data[i*15+14] = app->topology->atoms[i].scaledCharge / Constant::SQRTCOULOMBCONSTANT;
     }
     
-  for (vector<Snapshot>::iterator iter=ssList.begin(); iter!=ssList.end(); iter++) 
-    iter->AddFrame(now, data);
+    for (Snapshot &s : ssList) 
+	s.AddFrame(now, data);
 
     delete []data;
   }

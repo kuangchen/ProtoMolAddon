@@ -1,7 +1,7 @@
 #include <string>
 
 #include <protomol/addon/HarmonicTrap.h>
-#include <protomol/addon/LuaState.h>
+#include <protomol/addon/LuaConfigReader.h>
 
 using namespace std;
 using namespace ProtoMolAddon;
@@ -14,11 +14,11 @@ HarmonicTrap::HarmonicTrap() :
 HarmonicTrap::HarmonicTrap(const string &def) : 
   freq(3) 
 {
-  LuaState ls(def);
+  LuaConfigReader reader(def);
   
-  freq[0] = ls.get<double>("trap.freq.x");
-  freq[1] = ls.get<double>("trap.freq.y");
-  freq[2] = ls.get<double>("trap.freq.z");
+  freq[0] = reader.GetValue<double>("trap.freq.x");
+  freq[1] = reader.GetValue<double>("trap.freq.y");
+  freq[2] = reader.GetValue<double>("trap.freq.z");
 
 }
 

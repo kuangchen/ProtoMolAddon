@@ -11,47 +11,45 @@
 #include <cmath>
 #include <string>
 #include <vector>
-#include <protomol/addon/LeapfrogBufferGasIntegrator.h>
+#include <protomol/addon/LeapfrogBufferGasIntegrator2.h>
 #include <protomol/addon/BufferGas.h>
 #include <protomol/addon/Constants.h>
 
 using namespace std;
 using namespace ProtoMol::Report;
-using namespace ProtoMol;
 using namespace ProtoMol::Constant;
-using namespace ProtoMolAddon;
-using namespace ProtoMolAddon::Constant;
+using namespace ProtoMol;
+using ProtoMolAddon::Constant::POSITION_CONV;
 
-//____ LeapfrogBufferGasIntegrator
+//____ LeapfrogBufferGasIntegrator2
 
-const string LeapfrogBufferGasIntegrator::keyword("LeapfrogBufferGas");
+const string LeapfrogBufferGasIntegrator2::keyword("LeapfrogBufferGas2");
 
-LeapfrogBufferGasIntegrator::LeapfrogBufferGasIntegrator() :
+LeapfrogBufferGasIntegrator2::LeapfrogBufferGasIntegrator2() :
   STSIntegrator() {}
 
-LeapfrogBufferGasIntegrator::LeapfrogBufferGasIntegrator(Real timestep,
-							 const string& filename, 
-							 ForceGroup *overloadedForces) :
+LeapfrogBufferGasIntegrator2::LeapfrogBufferGasIntegrator2(Real timestep,
+							   const string& filename, 
+							   ForceGroup *overloadedForces) :
   STSIntegrator(timestep, overloadedForces), 
-  bg_manager(),
   reader(filename),
+  neutral_atom(reader),
   trap_radius(reader.GetValue<double>("trap.radius"))
 {
+  std::cout << neutral_atom;
+  neutral_atom.Test();
 }
 
-LeapfrogBufferGasIntegrator::~LeapfrogBufferGasIntegrator() {
+LeapfrogBufferGasIntegrator2::~LeapfrogBufferGasIntegrator2() {
 }
 
 
-void LeapfrogBufferGasIntegrator::initialize(ProtoMolApp *app) {
+void LeapfrogBufferGasIntegrator2::initialize(ProtoMolApp *app) {
   STSIntegrator::initialize(app);
   initializeForces();
-
-  bg_manager.InitializeBufferGas(reader);
-  bg_manager.InitializeCollisionSchedule(reader, app);
 }
 
-void LeapfrogBufferGasIntegrator::doHalfKickdoDrift() {
+void LeapfrogBufferGasIntegrator2::doHalfKickdoDrift() {
   if (anyPreDriftOrNextModify()) {
     doHalfKick();
     doDriftOrNextIntegrator();
@@ -76,7 +74,7 @@ void LeapfrogBufferGasIntegrator::doHalfKickdoDrift() {
   }
 }
 
-void LeapfrogBufferGasIntegrator::doKickdoDrift() {
+void LeapfrogBufferGasIntegrator2::doKickdoDrift() {
   if (anyPreDriftOrNextModify() || anyPreStepModify() ||
       anyPostStepModify()) {
     if (anyPreStepModify() || anyPostStepModify()) {
@@ -107,71 +105,31 @@ void LeapfrogBufferGasIntegrator::doKickdoDrift() {
   }
 }
 
-
-// Run simulations n steps and eta fraction step
-void LeapfrogBufferGasIntegrator::runGeneral(double t1, double t2) {
-  //std::cout << "Running from " << t1 << " to " << t2 << "\n";
-
-  int n;
-  Real eta;
-
-  Real stepsize = getTimestep() / SI::TIME_FS;
-  n = static_cast<int> ((t2-t1)/stepsize + 0.5);
-  eta = (t2-t1)/stepsize - n;
-
-  if (n>0) {
-    doHalfKickdoDrift();
-    RemoveEnergeticIon(app);
-    calculateForces();
-    for (int i=1; i<n; i++) {
-      doKickdoDrift();
-      RemoveEnergeticIon(app);
-      calculateForces();
-    }
-    doHalfKick();
-  }
-
-  if (fabs(eta) > EPSILON) {
-    double oldTimestep = getTimestep();
-    setTimestep(oldTimestep * eta);
-  
-    doHalfKickdoDrift ();
-    RemoveEnergeticIon(app);
-    calculateForces ();
-    doHalfKick();
-    calculateForces ();
-
-    setTimestep (oldTimestep);
-  }
-  return;
-}
-
-void LeapfrogBufferGasIntegrator::run(int numTimesteps) {
+void LeapfrogBufferGasIntegrator2::run(int numTimesteps) {
+  double dt = getTimestep() / SI::TIME_FS;
   if (numTimesteps < 1)
     return;
 
   preStepModify();
+  neutral_atom.CollideAll(app, dt);
+  RemoveEnergeticIon(app);
+  doHalfKickdoDrift();
+  calculateForces();
 
-  double stepSize = getTimestep() / SI::TIME_FS;
-  double current = app->currentStep * stepSize;
-  double end = (app->currentStep + numTimesteps) * stepSize;
+  for (int i = 1; i < numTimesteps; i++) {
+    neutral_atom.CollideAll(app, dt);
+    RemoveEnergeticIon(app);
+    doKickdoDrift();
+    calculateForces();
 
-  double next_collision_time = 0;
-
-  while (!bg_manager.IsCollisionFinished() && 
-	 (next_collision_time = bg_manager.GetNextCollisionTime()) < end) {
-
-    runGeneral(current, next_collision_time);
-    bg_manager.Collide(app);
-    current = next_collision_time;
   }
-
-  runGeneral(current, end);
+  doHalfKick();
   postStepModify();
 }
 
-STSIntegrator *LeapfrogBufferGasIntegrator::doMake(const vector<Value> &values, ForceGroup *fg) const {
-  return new LeapfrogBufferGasIntegrator(values[0], values[1], fg);
+
+STSIntegrator *LeapfrogBufferGasIntegrator2::doMake(const vector<Value> &values, ForceGroup *fg) const {
+  return new LeapfrogBufferGasIntegrator2(values[0], values[1], fg);
 }
 
 //  --------------------------------------------------------------------  //
@@ -180,7 +138,7 @@ STSIntegrator *LeapfrogBufferGasIntegrator::doMake(const vector<Value> &values, 
 //  Update beta: beta -= dt * ( q * F + 2 U )                             //
 //  --------------------------------------------------------------------  //
 
-void LeapfrogBufferGasIntegrator::updateBeta(Real dt) {
+void LeapfrogBufferGasIntegrator2::updateBeta(Real dt) {
   //  ----------------------------------------------------------------  //
   //  The shadow calculation is done in a postStep modifier.  If there  //
   //  aren't any, then obviously we don't need to do this calculation.  //
@@ -199,12 +157,12 @@ void LeapfrogBufferGasIntegrator::updateBeta(Real dt) {
   myBeta -= dt * (posDotF + 2. * myPotEnergy);
 }
 
-void LeapfrogBufferGasIntegrator::getParameters(vector<Parameter> &parameters) const {
+void LeapfrogBufferGasIntegrator2::getParameters(vector<Parameter> &parameters) const {
   STSIntegrator::getParameters(parameters);
   parameters.push_back(Parameter("filename", Value(filename, ConstraintValueType::NotEmpty())));
 }
 
-void LeapfrogBufferGasIntegrator::RemoveEnergeticIon(ProtoMolApp *app) {
+void LeapfrogBufferGasIntegrator2::RemoveEnergeticIon(ProtoMolApp *app) {
   for (int j=0;j<app->positions.size();j++) {
     Vector3D r = app->positions[j] * POSITION_CONV;
     

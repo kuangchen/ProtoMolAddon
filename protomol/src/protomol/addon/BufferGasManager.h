@@ -4,7 +4,7 @@
 #include <protomol/ProtoMolApp.h>
 #include <protomol/addon/BufferGas.h>
 #include <protomol/addon/CollisionSchedule.h>
-#include <protomol/addon/LuaState.h>
+#include <protomol/addon/LuaConfigReader.h>
 #include <protomol/base/PMConstants.h>
 
 using namespace ProtoMol::Constant;
@@ -28,8 +28,8 @@ namespace ProtoMolAddon {
     BufferGasManager();
     ~BufferGasManager();
     
-    void InitializeBufferGas(LuaState &ls);
-    void InitializeCollisionSchedule(LuaState &ls, ProtoMolApp *app);
+    void InitializeBufferGas(LuaConfigReader &reader);
+    void InitializeCollisionSchedule(LuaConfigReader &reader, ProtoMolApp *app);
     void Collide(ProtoMolApp *app);
     bool IsCollisionFinished() const;
     double GetNextCollisionTime() const ;

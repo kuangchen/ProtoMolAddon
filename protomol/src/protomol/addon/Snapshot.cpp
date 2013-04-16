@@ -51,7 +51,7 @@ void Snapshot::AddFrame(Real time, Real *data) {
 
   ostringstream stream;
   stream << "/frame_" << nextFrame;
-  hsize_t dims[2] = {config.numAtom, 14};
+  hsize_t dims[2] = {config.numAtom, 15};
   DataSpace dataspace(2, dims);
   DataSet dataset = file.createDataSet(stream.str(), 
 			       PredType::NATIVE_DOUBLE, 

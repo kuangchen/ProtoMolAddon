@@ -1,8 +1,9 @@
 project( ProtoMol )
 cmake_minimum_required( VERSION 2.6 )
 
-set( CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH} "${CMAKE_SOURCE_DIR}/cmake/Modules/")
-add_definitions (-fpermissive -Wall -g -O3 -DARCHLINUX)
+set(CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH} "${CMAKE_SOURCE_DIR}/cmake/Modules/")
+SET(CMAKE_CXX_FLAGS "-std=c++0x -O3")
+add_definitions (-fpermissive -Wall -g -O3 -DARCHLINUX )
 
 find_package(Lua51)
 if (LUA51_FOUND)

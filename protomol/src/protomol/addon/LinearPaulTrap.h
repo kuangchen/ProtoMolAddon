@@ -3,7 +3,7 @@
 
 #include <vector>
 #include <protomol/addon/Mathieu.h>
-#include <protomol/addon/LuaState.h>
+#include <protomol/addon/LuaConfigReader.h>
 #include <protomol/type/Vector3D.h>
 
 using namespace ProtoMolAddon::Lua;
@@ -31,12 +31,12 @@ namespace ProtoMolAddon {
       vector<MathieuFunction> mf;
 
     public:
-      Lqt(LuaState& L);
+      Lqt(LuaConfigReader& reader);
       Lqt();
       ~Lqt() {};
 
       double GetFrequency();
-      void GetForce(const Vector3D& pos, double time, Vector3D& force);
+      Vector3D GetForce(double charge, const Vector3D& pos, double time);
       void GetEnergy(const Vector3D& pos, const Vector3D& vel, double time, vector<double>& totEnergy, vector<double>& secEnergy);
       vector<double> GetSecularFrequency();
     };

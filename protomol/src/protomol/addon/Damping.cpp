@@ -1,5 +1,5 @@
 #include <protomol/addon/Damping.h>
-#include <protomol/addon/LuaState.h>
+#include <protomol/addon/LuaConfigReader.h>
 
 using namespace ProtoMolAddon;
 using namespace ProtoMolAddon::Lua;
@@ -15,11 +15,11 @@ Damping::Damping(const string &def) :
   start(0),
   end(0)
 {
-  LuaState ls(def);
+  LuaConfigReader reader(def);
   
-  coeff = ls.get<double>("damping.coeff");
-  start = ls.get<double>("damping.t_start");
-  end = ls.get<double>("damping.t_end");
+  coeff = reader.GetValue<double>("damping.coeff");
+  start = reader.GetValue<double>("damping.t_start");
+  end = reader.GetValue<double>("damping.t_end");
 }
 
 void Damping::GetForce(const Vector3D &vel, double time, Vector3D& force) {

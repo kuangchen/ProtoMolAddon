@@ -4767,9 +4767,32 @@ CMakeFiles/Library.dir/src/protomol/addon/Mathieu.cpp.o.provides: CMakeFiles/Lib
 
 CMakeFiles/Library.dir/src/protomol/addon/Mathieu.cpp.o.provides.build: CMakeFiles/Library.dir/src/protomol/addon/Mathieu.cpp.o
 
+CMakeFiles/Library.dir/src/protomol/addon/ProtoMolIon.cpp.o: CMakeFiles/Library.dir/flags.make
+CMakeFiles/Library.dir/src/protomol/addon/ProtoMolIon.cpp.o: src/protomol/addon/ProtoMolIon.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/ProtoMol/protomol/CMakeFiles" $(CMAKE_PROGRESS_206)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/Library.dir/src/protomol/addon/ProtoMolIon.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/Library.dir/src/protomol/addon/ProtoMolIon.cpp.o -c "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/ProtoMol/protomol/src/protomol/addon/ProtoMolIon.cpp"
+
+CMakeFiles/Library.dir/src/protomol/addon/ProtoMolIon.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Library.dir/src/protomol/addon/ProtoMolIon.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/ProtoMol/protomol/src/protomol/addon/ProtoMolIon.cpp" > CMakeFiles/Library.dir/src/protomol/addon/ProtoMolIon.cpp.i
+
+CMakeFiles/Library.dir/src/protomol/addon/ProtoMolIon.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Library.dir/src/protomol/addon/ProtoMolIon.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/ProtoMol/protomol/src/protomol/addon/ProtoMolIon.cpp" -o CMakeFiles/Library.dir/src/protomol/addon/ProtoMolIon.cpp.s
+
+CMakeFiles/Library.dir/src/protomol/addon/ProtoMolIon.cpp.o.requires:
+.PHONY : CMakeFiles/Library.dir/src/protomol/addon/ProtoMolIon.cpp.o.requires
+
+CMakeFiles/Library.dir/src/protomol/addon/ProtoMolIon.cpp.o.provides: CMakeFiles/Library.dir/src/protomol/addon/ProtoMolIon.cpp.o.requires
+	$(MAKE) -f CMakeFiles/Library.dir/build.make CMakeFiles/Library.dir/src/protomol/addon/ProtoMolIon.cpp.o.provides.build
+.PHONY : CMakeFiles/Library.dir/src/protomol/addon/ProtoMolIon.cpp.o.provides
+
+CMakeFiles/Library.dir/src/protomol/addon/ProtoMolIon.cpp.o.provides.build: CMakeFiles/Library.dir/src/protomol/addon/ProtoMolIon.cpp.o
+
 CMakeFiles/Library.dir/src/protomol/addon/HarmonicTrap.cpp.o: CMakeFiles/Library.dir/flags.make
 CMakeFiles/Library.dir/src/protomol/addon/HarmonicTrap.cpp.o: src/protomol/addon/HarmonicTrap.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/ProtoMol/protomol/CMakeFiles" $(CMAKE_PROGRESS_206)
+	$(CMAKE_COMMAND) -E cmake_progress_report "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/ProtoMol/protomol/CMakeFiles" $(CMAKE_PROGRESS_207)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/Library.dir/src/protomol/addon/HarmonicTrap.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/Library.dir/src/protomol/addon/HarmonicTrap.cpp.o -c "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/ProtoMol/protomol/src/protomol/addon/HarmonicTrap.cpp"
 
@@ -4792,7 +4815,7 @@ CMakeFiles/Library.dir/src/protomol/addon/HarmonicTrap.cpp.o.provides.build: CMa
 
 CMakeFiles/Library.dir/src/protomol/addon/Util.cpp.o: CMakeFiles/Library.dir/flags.make
 CMakeFiles/Library.dir/src/protomol/addon/Util.cpp.o: src/protomol/addon/Util.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/ProtoMol/protomol/CMakeFiles" $(CMAKE_PROGRESS_207)
+	$(CMAKE_COMMAND) -E cmake_progress_report "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/ProtoMol/protomol/CMakeFiles" $(CMAKE_PROGRESS_208)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/Library.dir/src/protomol/addon/Util.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/Library.dir/src/protomol/addon/Util.cpp.o -c "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/ProtoMol/protomol/src/protomol/addon/Util.cpp"
 
@@ -4815,7 +4838,7 @@ CMakeFiles/Library.dir/src/protomol/addon/Util.cpp.o.provides.build: CMakeFiles/
 
 CMakeFiles/Library.dir/src/protomol/addon/LeapfrogBufferGasIntegrator.cpp.o: CMakeFiles/Library.dir/flags.make
 CMakeFiles/Library.dir/src/protomol/addon/LeapfrogBufferGasIntegrator.cpp.o: src/protomol/addon/LeapfrogBufferGasIntegrator.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/ProtoMol/protomol/CMakeFiles" $(CMAKE_PROGRESS_208)
+	$(CMAKE_COMMAND) -E cmake_progress_report "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/ProtoMol/protomol/CMakeFiles" $(CMAKE_PROGRESS_209)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/Library.dir/src/protomol/addon/LeapfrogBufferGasIntegrator.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/Library.dir/src/protomol/addon/LeapfrogBufferGasIntegrator.cpp.o -c "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/ProtoMol/protomol/src/protomol/addon/LeapfrogBufferGasIntegrator.cpp"
 
@@ -4838,7 +4861,7 @@ CMakeFiles/Library.dir/src/protomol/addon/LeapfrogBufferGasIntegrator.cpp.o.prov
 
 CMakeFiles/Library.dir/src/protomol/addon/LeapfrogBufferGasIntegrator2.cpp.o: CMakeFiles/Library.dir/flags.make
 CMakeFiles/Library.dir/src/protomol/addon/LeapfrogBufferGasIntegrator2.cpp.o: src/protomol/addon/LeapfrogBufferGasIntegrator2.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/ProtoMol/protomol/CMakeFiles" $(CMAKE_PROGRESS_209)
+	$(CMAKE_COMMAND) -E cmake_progress_report "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/ProtoMol/protomol/CMakeFiles" $(CMAKE_PROGRESS_210)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/Library.dir/src/protomol/addon/LeapfrogBufferGasIntegrator2.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/Library.dir/src/protomol/addon/LeapfrogBufferGasIntegrator2.cpp.o -c "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/ProtoMol/protomol/src/protomol/addon/LeapfrogBufferGasIntegrator2.cpp"
 
@@ -4861,7 +4884,7 @@ CMakeFiles/Library.dir/src/protomol/addon/LeapfrogBufferGasIntegrator2.cpp.o.pro
 
 CMakeFiles/Library.dir/src/protomol/addon/CollisionSchedule.cpp.o: CMakeFiles/Library.dir/flags.make
 CMakeFiles/Library.dir/src/protomol/addon/CollisionSchedule.cpp.o: src/protomol/addon/CollisionSchedule.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/ProtoMol/protomol/CMakeFiles" $(CMAKE_PROGRESS_210)
+	$(CMAKE_COMMAND) -E cmake_progress_report "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/ProtoMol/protomol/CMakeFiles" $(CMAKE_PROGRESS_211)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/Library.dir/src/protomol/addon/CollisionSchedule.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/Library.dir/src/protomol/addon/CollisionSchedule.cpp.o -c "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/ProtoMol/protomol/src/protomol/addon/CollisionSchedule.cpp"
 
@@ -4884,7 +4907,7 @@ CMakeFiles/Library.dir/src/protomol/addon/CollisionSchedule.cpp.o.provides.build
 
 CMakeFiles/Library.dir/src/protomol/addon/BufferGas.cpp.o: CMakeFiles/Library.dir/flags.make
 CMakeFiles/Library.dir/src/protomol/addon/BufferGas.cpp.o: src/protomol/addon/BufferGas.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/ProtoMol/protomol/CMakeFiles" $(CMAKE_PROGRESS_211)
+	$(CMAKE_COMMAND) -E cmake_progress_report "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/ProtoMol/protomol/CMakeFiles" $(CMAKE_PROGRESS_212)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/Library.dir/src/protomol/addon/BufferGas.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/Library.dir/src/protomol/addon/BufferGas.cpp.o -c "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/ProtoMol/protomol/src/protomol/addon/BufferGas.cpp"
 
@@ -4907,7 +4930,7 @@ CMakeFiles/Library.dir/src/protomol/addon/BufferGas.cpp.o.provides.build: CMakeF
 
 CMakeFiles/Library.dir/src/protomol/addon/OutputIonSnapshot.cpp.o: CMakeFiles/Library.dir/flags.make
 CMakeFiles/Library.dir/src/protomol/addon/OutputIonSnapshot.cpp.o: src/protomol/addon/OutputIonSnapshot.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/ProtoMol/protomol/CMakeFiles" $(CMAKE_PROGRESS_212)
+	$(CMAKE_COMMAND) -E cmake_progress_report "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/ProtoMol/protomol/CMakeFiles" $(CMAKE_PROGRESS_213)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/Library.dir/src/protomol/addon/OutputIonSnapshot.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/Library.dir/src/protomol/addon/OutputIonSnapshot.cpp.o -c "/home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/ProtoMol/protomol/src/protomol/addon/OutputIonSnapshot.cpp"
 
@@ -5135,6 +5158,7 @@ Library_OBJECTS = \
 "CMakeFiles/Library.dir/src/protomol/addon/LinearPaulTrap.cpp.o" \
 "CMakeFiles/Library.dir/src/protomol/addon/NeutralAtom.cpp.o" \
 "CMakeFiles/Library.dir/src/protomol/addon/Mathieu.cpp.o" \
+"CMakeFiles/Library.dir/src/protomol/addon/ProtoMolIon.cpp.o" \
 "CMakeFiles/Library.dir/src/protomol/addon/HarmonicTrap.cpp.o" \
 "CMakeFiles/Library.dir/src/protomol/addon/Util.cpp.o" \
 "CMakeFiles/Library.dir/src/protomol/addon/LeapfrogBufferGasIntegrator.cpp.o" \
@@ -5351,6 +5375,7 @@ libProtoMol.a: CMakeFiles/Library.dir/src/protomol/addon/Snapshot.cpp.o
 libProtoMol.a: CMakeFiles/Library.dir/src/protomol/addon/LinearPaulTrap.cpp.o
 libProtoMol.a: CMakeFiles/Library.dir/src/protomol/addon/NeutralAtom.cpp.o
 libProtoMol.a: CMakeFiles/Library.dir/src/protomol/addon/Mathieu.cpp.o
+libProtoMol.a: CMakeFiles/Library.dir/src/protomol/addon/ProtoMolIon.cpp.o
 libProtoMol.a: CMakeFiles/Library.dir/src/protomol/addon/HarmonicTrap.cpp.o
 libProtoMol.a: CMakeFiles/Library.dir/src/protomol/addon/Util.cpp.o
 libProtoMol.a: CMakeFiles/Library.dir/src/protomol/addon/LeapfrogBufferGasIntegrator.cpp.o
@@ -5573,6 +5598,7 @@ CMakeFiles/Library.dir/requires: CMakeFiles/Library.dir/src/protomol/addon/Snaps
 CMakeFiles/Library.dir/requires: CMakeFiles/Library.dir/src/protomol/addon/LinearPaulTrap.cpp.o.requires
 CMakeFiles/Library.dir/requires: CMakeFiles/Library.dir/src/protomol/addon/NeutralAtom.cpp.o.requires
 CMakeFiles/Library.dir/requires: CMakeFiles/Library.dir/src/protomol/addon/Mathieu.cpp.o.requires
+CMakeFiles/Library.dir/requires: CMakeFiles/Library.dir/src/protomol/addon/ProtoMolIon.cpp.o.requires
 CMakeFiles/Library.dir/requires: CMakeFiles/Library.dir/src/protomol/addon/HarmonicTrap.cpp.o.requires
 CMakeFiles/Library.dir/requires: CMakeFiles/Library.dir/src/protomol/addon/Util.cpp.o.requires
 CMakeFiles/Library.dir/requires: CMakeFiles/Library.dir/src/protomol/addon/LeapfrogBufferGasIntegrator.cpp.o.requires

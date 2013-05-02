@@ -17,7 +17,7 @@ namespace ProtoMolAddon {
       double cp = temp[0] / st;
 
       return Vector3D( cp*ct*v2[0] - sp*v2[1] + cp*st*v2[2],
-		       sp*st*v2[0] - cp*v2[1] + sp*st*v2[2],
+		       sp*ct*v2[0] + cp*v2[1] + sp*st*v2[2],
 		       -  st*v2[0] +        0 +    ct*v2[2]);
     }
   }

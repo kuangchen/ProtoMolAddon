@@ -99,6 +99,7 @@ namespace ProtoMolAddon {
     template <> float LuaConfigReader::GetValueLowLevel<float>(const char *varname);
     template <> string LuaConfigReader::GetValueLowLevel<string>(const char *varname);
     template <> vector<double> LuaConfigReader::GetValueLowLevel<vector<double> > (const char *varname);
+    template <> vector<string> LuaConfigReader::GetValueLowLevel<vector<string> > (const char *varname);
   }
 }
 

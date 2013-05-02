@@ -93,3 +93,29 @@ template <> vector<double> LuaConfigReader::GetValueLowLevel<vector<double> > (c
   return value;
 }
 
+template <> vector<string> LuaConfigReader::GetValueLowLevel<vector<string> > (const char *varname) {
+  if (!lua_istable(L, -1)) {
+    ostringstream s;
+    s << varname << " is not a table"; 
+    throw LuaConfigReaderException(s.str());
+  }
+
+  vector<string> value(0);
+
+  int len = lua_rawlen(L, -1);
+  for (int i = 1; i <= len; i++){
+    lua_rawgeti(L, -1, i);
+
+    if (!lua_isstring(L, -1)) {
+      ostringstream s;
+      s << varname << " is not a string"; 
+      throw LuaConfigReaderException(s.str());
+    }
+     
+    value.push_back(string(lua_tostring(L, -1)));
+    lua_pop(L, 1);
+  }
+
+  return value;
+}
+

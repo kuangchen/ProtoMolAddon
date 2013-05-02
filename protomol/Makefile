@@ -480,6 +480,30 @@ src/protomol/addon/OutputIonSnapshot.cpp.s:
 	$(MAKE) -f CMakeFiles/Library.dir/build.make CMakeFiles/Library.dir/src/protomol/addon/OutputIonSnapshot.cpp.s
 .PHONY : src/protomol/addon/OutputIonSnapshot.cpp.s
 
+src/protomol/addon/ProtoMolIon.o: src/protomol/addon/ProtoMolIon.cpp.o
+.PHONY : src/protomol/addon/ProtoMolIon.o
+
+# target to build an object file
+src/protomol/addon/ProtoMolIon.cpp.o:
+	$(MAKE) -f CMakeFiles/Library.dir/build.make CMakeFiles/Library.dir/src/protomol/addon/ProtoMolIon.cpp.o
+.PHONY : src/protomol/addon/ProtoMolIon.cpp.o
+
+src/protomol/addon/ProtoMolIon.i: src/protomol/addon/ProtoMolIon.cpp.i
+.PHONY : src/protomol/addon/ProtoMolIon.i
+
+# target to preprocess a source file
+src/protomol/addon/ProtoMolIon.cpp.i:
+	$(MAKE) -f CMakeFiles/Library.dir/build.make CMakeFiles/Library.dir/src/protomol/addon/ProtoMolIon.cpp.i
+.PHONY : src/protomol/addon/ProtoMolIon.cpp.i
+
+src/protomol/addon/ProtoMolIon.s: src/protomol/addon/ProtoMolIon.cpp.s
+.PHONY : src/protomol/addon/ProtoMolIon.s
+
+# target to generate assembly for a file
+src/protomol/addon/ProtoMolIon.cpp.s:
+	$(MAKE) -f CMakeFiles/Library.dir/build.make CMakeFiles/Library.dir/src/protomol/addon/ProtoMolIon.cpp.s
+.PHONY : src/protomol/addon/ProtoMolIon.cpp.s
+
 src/protomol/addon/Snapshot.o: src/protomol/addon/Snapshot.cpp.o
 .PHONY : src/protomol/addon/Snapshot.o
 
@@ -5357,6 +5381,9 @@ help:
 	@echo "... src/protomol/addon/OutputIonSnapshot.o"
 	@echo "... src/protomol/addon/OutputIonSnapshot.i"
 	@echo "... src/protomol/addon/OutputIonSnapshot.s"
+	@echo "... src/protomol/addon/ProtoMolIon.o"
+	@echo "... src/protomol/addon/ProtoMolIon.i"
+	@echo "... src/protomol/addon/ProtoMolIon.s"
 	@echo "... src/protomol/addon/Snapshot.o"
 	@echo "... src/protomol/addon/Snapshot.i"
 	@echo "... src/protomol/addon/Snapshot.s"

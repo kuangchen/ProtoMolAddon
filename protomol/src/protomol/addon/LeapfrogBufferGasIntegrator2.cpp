@@ -36,8 +36,9 @@ LeapfrogBufferGasIntegrator2::LeapfrogBufferGasIntegrator2(Real timestep,
   neutral_atom(reader),
   trap_radius(reader.GetValue<double>("trap.radius"))
 {
-  std::cout << neutral_atom;
-  neutral_atom.Test();
+  //std::cout << neutral_atom;
+  //neutral_atom.SampleVelocityTest("test.log");
+  //neutral_atom.ScatteringTest("test.log");
 }
 
 LeapfrogBufferGasIntegrator2::~LeapfrogBufferGasIntegrator2() {

@@ -4,7 +4,6 @@
 #include <protomol/type/Vector3DBlock.h>
 #include <protomol/ProtoMolApp.h>
 #include <protomol/addon/LuaConfigReader.h>
-#include <protomol/addon/ProtoMolIon.h>
 
 #include <utility>
 #include <iostream>
@@ -14,9 +13,7 @@ using namespace ProtoMol;
 using namespace ProtoMolAddon::Lua;
 using namespace std;
 
-
 namespace ProtoMolAddon {
-  class ProtoMolIon;
 
   class NeutralAtom {
   private:
@@ -49,11 +46,11 @@ namespace ProtoMolAddon {
     typedef map<double, pc_dist> pc_dist_lktb;
     pc_dist_lktb diff_cross_section_lktb;
 
-    
-    bool ShouldCollide(const ProtoMolIon &ion, double dt);
-    void Collide(ProtoMolIon &ion);
-    void SampleVelocity(const ProtoMolIon &ion);
-    double GetThermalAverageCollisionRate(const ProtoMolIon &ion);
+    void Collide(double m, Vector3D &v);
+    void SampleVelocity(const Vector3D &v);
+
+    double GetThermalAverageCollisionRate(double mi, double qi, const Vector3D &v);
+    double GetCollisionRate(double mi, double qi, const Vector3D &vi);
 
     void LoadFLktb();
     void LoadThetaCache(unsigned int count=100);

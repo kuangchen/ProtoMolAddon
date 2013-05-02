@@ -301,6 +301,7 @@ CMakeFiles/Library.dir/src/protomol/addon/LeapfrogBufferGasIntegrator2.cpp.o
  src/protomol/addon/LeapfrogBufferGasIntegrator2.h
  src/protomol/addon/LuaConfigReader.h
  src/protomol/addon/NeutralAtom.h
+ src/protomol/addon/ProtoMolIon.h
  src/protomol/base/Counter.h
  src/protomol/base/Exception.h
  src/protomol/base/Factory.h
@@ -405,6 +406,7 @@ CMakeFiles/Library.dir/src/protomol/addon/NeutralAtom.cpp.o
  src/protomol/addon/LuaConfigReader.h
  src/protomol/addon/NeutralAtom.h
  src/protomol/addon/NeutralAtomLookupTable.h
+ src/protomol/addon/ProtoMolIon.h
  src/protomol/addon/Util.h
  src/protomol/base/Counter.h
  src/protomol/base/Exception.h
@@ -550,6 +552,79 @@ CMakeFiles/Library.dir/src/protomol/addon/OutputIonSnapshot.cpp.o
  src/protomol/type/ScalarStructure.h
  src/protomol/type/SimpleTypes.h
  src/protomol/type/Vector.h
+ src/protomol/type/Vector3D.h
+ src/protomol/type/Vector3DBlock.h
+CMakeFiles/Library.dir/src/protomol/addon/ProtoMolIon.cpp.o
+ /home/kuang/Documents/Lab/Project/Ion Ion Heating/Code/ProtoMol/protomol/src/protomol/addon/ProtoMolIon.cpp
+ src/protomol/ProtoMolApp.h
+ src/protomol/addon/Constants.h
+ src/protomol/addon/LuaConfigReader.h
+ src/protomol/addon/NeutralAtom.h
+ src/protomol/addon/ProtoMolIon.h
+ src/protomol/base/Counter.h
+ src/protomol/base/Exception.h
+ src/protomol/base/Factory.h
+ src/protomol/base/FileLocation.h
+ src/protomol/base/Makeable.h
+ src/protomol/base/MakeableDefinition.h
+ src/protomol/base/MathUtilities.h
+ src/protomol/base/PMConstants.h
+ src/protomol/base/Proxy.h
+ src/protomol/base/Random.h
+ src/protomol/base/Report.h
+ src/protomol/base/Singleton.h
+ src/protomol/base/SmartPointer.h
+ src/protomol/base/StringUtilities.h
+ src/protomol/base/Zap.h
+ src/protomol/base/sstream_local.h
+ src/protomol/config.h
+ src/protomol/config/CommandLine.h
+ src/protomol/config/CommandLineOption.h
+ src/protomol/config/Configuration.h
+ src/protomol/config/ConstraintValueType.h
+ src/protomol/config/Parameter.h
+ src/protomol/config/Value.h
+ src/protomol/config/ValueType.h
+ src/protomol/debug/Backtrace.h
+ src/protomol/debug/Debugger.h
+ src/protomol/factory/ForceFactory.h
+ src/protomol/factory/IntegratorFactory.h
+ src/protomol/factory/OutputFactory.h
+ src/protomol/factory/TopologyFactory.h
+ src/protomol/force/Force.h
+ src/protomol/integrator/Integrator.h
+ src/protomol/integrator/IntegratorDefinition.h
+ src/protomol/io/File.h
+ src/protomol/io/Reader.h
+ src/protomol/io/SCPISMReader.h
+ src/protomol/os/cygwin.h
+ src/protomol/os/unix.h
+ src/protomol/os/win32.h
+ src/protomol/output/Output.h
+ src/protomol/output/OutputCache.h
+ src/protomol/topology/Angle.h
+ src/protomol/topology/Atom.h
+ src/protomol/topology/AtomType.h
+ src/protomol/topology/BankLennardJonesParameterTable.h
+ src/protomol/topology/Bond.h
+ src/protomol/topology/CoulombSCPISMParameterTable.h
+ src/protomol/topology/CoulombSCPISMParameters.h
+ src/protomol/topology/ExclusionTable.h
+ src/protomol/topology/ExclusionType.h
+ src/protomol/topology/GenericTopology.h
+ src/protomol/topology/LennardJonesParameterTable.h
+ src/protomol/topology/LennardJonesParameters.h
+ src/protomol/topology/Molecule.h
+ src/protomol/topology/RBTorsion.h
+ src/protomol/topology/Torsion.h
+ src/protomol/type/AbstractEnumType.h
+ src/protomol/type/EigenvectorInfo.h
+ src/protomol/type/PAR.h
+ src/protomol/type/PDB.h
+ src/protomol/type/PSF.h
+ src/protomol/type/Real.h
+ src/protomol/type/ScalarStructure.h
+ src/protomol/type/SimpleTypes.h
  src/protomol/type/Vector3D.h
  src/protomol/type/Vector3DBlock.h
 CMakeFiles/Library.dir/src/protomol/addon/Snapshot.cpp.o
@@ -7038,6 +7113,7 @@ CMakeFiles/Library.dir/src/protomol/module/LeapfrogModule.cpp.o
  src/protomol/addon/LeapfrogBufferGasIntegrator2.h
  src/protomol/addon/LuaConfigReader.h
  src/protomol/addon/NeutralAtom.h
+ src/protomol/addon/ProtoMolIon.h
  src/protomol/base/Counter.h
  src/protomol/base/Exception.h
  src/protomol/base/Factory.h

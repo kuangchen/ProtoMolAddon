@@ -204,6 +204,7 @@ FILE(REMOVE_RECURSE
   "CMakeFiles/Library.dir/src/protomol/addon/LinearPaulTrap.cpp.o"
   "CMakeFiles/Library.dir/src/protomol/addon/NeutralAtom.cpp.o"
   "CMakeFiles/Library.dir/src/protomol/addon/Mathieu.cpp.o"
+  "CMakeFiles/Library.dir/src/protomol/addon/ProtoMolIon.cpp.o"
   "CMakeFiles/Library.dir/src/protomol/addon/HarmonicTrap.cpp.o"
   "CMakeFiles/Library.dir/src/protomol/addon/Util.cpp.o"
   "CMakeFiles/Library.dir/src/protomol/addon/LeapfrogBufferGasIntegrator.cpp.o"

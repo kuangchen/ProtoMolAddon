@@ -3,7 +3,10 @@
 #include <protomol/base/PMConstants.h>
 #include <protomol/addon/Constants.h>
 #include <protomol/addon/Util.h>
+#include <protomol/addon/ProtoMolIon.h>
 #include <cmath>
+
+#include <fstream>
 
 using namespace ProtoMolAddon;
 using namespace ProtoMolAddon::Util;
@@ -13,193 +16,251 @@ using namespace ProtoMolAddon::Constant;
 NeutralAtom::NeutralAtom(double m, double pl, double t, double d, const Vector3D &pos, const Vector3D &vel) :
   mass(m), polarizability(pl), temperature(t), density(d), position(pos), velocity(vel),
   rd(),
-  uniform_dist(0, 1),
-  mag_dist(),
-  polar_angle_dist(),
-  azimuthal_angle_dist(0, 2*M_PI) {
+  collision_dice(0, 1),
+  phi_dice(0, 2*M_PI) {
 
-   if (mass>1e-50) 
-     sigma = sqrt(SI::BOLTZMANN*temperature/mass);
+  sigma = sqrt(SI::BOLTZMANN*temperature/mass);
  
-   LoadLookupTable();
-   LoadCache();
+   LoadThetaCache(10000);
+   LoadVnCache(10000);
 }
   
-
 NeutralAtom::NeutralAtom(LuaConfigReader &reader):
   mass(reader.GetValue<double>("neutral.mass") * SI::AMU),
   polarizability(reader.GetValue<double>("neutral.polarizability") * 1e-30),
   temperature(reader.GetValue<double>("neutral.temperature")),
   density(reader.GetValue<double>("neutral.density")),
   position(Vector3D()), 
-  velocity(Vector3D()) 
-{
-  if (mass>1e-50) 
-    sigma = sqrt(SI::BOLTZMANN*temperature/mass);
- 
-   LoadLookupTable();
-   LoadCache();
+  velocity(Vector3D()),
+  rd(),
+  collision_dice(0, 1),
+  phi_dice(0, 2*M_PI) {
 
+  sigma = sqrt(SI::BOLTZMANN*temperature/mass);
+ 
+  LoadFLktb();
+  LoadThetaCache();
+  LoadVnCache();
+  LoadCrossSection(reader);
+}
+
+bool NeutralAtom::ShouldCollide(const ProtoMolIon &ion, double dt) {
+  double rate = GetThermalAverageCollisionRate(ion);
+  double dice = collision_dice(rd);
+
+  return rate * dt > dice;
 }
   
 void NeutralAtom::CollideAll(ProtoMolApp *app, double dt) {
   for (unsigned int i=0; i<app->velocities.size(); i++) {
-    double q = app->topology->atoms[i].scaledCharge / SQRTCOULOMBCONSTANT * SI::ELECTRON_CHARGE;
-    double m = app->topology->atoms[i].scaledMass * SI::AMU;
-    Vector3D v = app->velocities[i] * VELOCITY_CONV;
-
-    double rate = GetAverageCollisionRate(m, q, v);
-    double dice = uniform_dist(rd);
-
-    if (rate * dt > dice) {
-      //      std::cout << "Collide " << i << "\n";
-
-      velocity = SampleVelocity(v);
-      velocity = Rotate(v, velocity);
-      Collide(m, v);
-      app->velocities[i] = v / VELOCITY_CONV;
+    ProtoMolIon ion(app, i);
+    if (ion.charge > 0 && ShouldCollide(ion, dt)) {
+      SampleVelocity(ion);
+      Collide(ion);
+      ion.UpdateProtoMol(app);
     }
-  }
+  }  
 }
 
-double NeutralAtom::GetCollisionRate(double m, double q, const Vector3D &v) {
-  double C4 = polarizability * q * q / (4*M_PI*EPSILON_0);
-  double prefactor = M_PI * pow(pow(C4/HBAR, 2)*sigma*2, 1.0/3) * (1+M_PI*M_PI/16) * density;
+double NeutralAtom::GetThermalAverageCollisionRate(const ProtoMolIon &ion) {
+  double C4 = polarizability * ion.charge * ion.charge / (4*M_PI*EPSILON_0);
+  double p = M_PI * pow(C4*C4*sigma*2/HBAR/HBAR,1.0/3)*(1+M_PI*M_PI/16)*density;
+  double v_norm_reduced = ion.velocity.norm() / sigma;
 
-  double v_norm = (v-velocity).norm() / sigma;  
-  return prefactor * pow(v_norm, 1.0/3);
-}
-
-double NeutralAtom::GetLangevinRate(double m, double q, const Vector3D &v) {
-  double C4 = polarizability * q * q / (4*M_PI*EPSILON_0);
-  double mu = m * mass / (m+mass);
-  return 2 * M_PI * sqrt(C4 / mu) * density;
-}
-
-double NeutralAtom::GetAverageCollisionRate(double m, double q, const Vector3D &v) {
-  double C4 = polarizability * q * q / (4*M_PI*EPSILON_0);
-  double prefactor = M_PI * pow(pow(C4/HBAR, 2)*sigma*2, 1.0/3) * (1+M_PI*M_PI/16) * density;
-
-  double v_norm = v.norm() / sigma;  
-  if (v_norm > 5) 
-    return prefactor * pow(v_norm, 1.0/3);
+  auto it = f_lktb.upper_bound(v_norm_reduced);
+  if (it==f_lktb.end())
+    return p * pow(v_norm_reduced, 1.0/3);
 
   else {
-    std::map<double,double>::iterator it1 = lookup_table1.upper_bound(v_norm);
-    std::map<double,double>::iterator it2 = it1;
-    --it1;    
-
-    // std::cout << "\nlower bound = " << it1->first;
-    // std::cout << "\nupper bound = " << it2->first;
-
-    double f = (v_norm - it1->first) / (it2->first - it1->first);
-
-    return (f * it2->second + (1-f) * it1->second) * prefactor;
+    auto it2 = it--;
+    double f = (v_norm_reduced - it->first) / (it2->first - it->first);
+    return (f * it2->second + (1-f) * it->second) * p;
   }
 }
 
-void NeutralAtom::LoadLookupTable() {
-  int i=0;
-  double vi, integral;
+void NeutralAtom::SampleVelocity(const ProtoMolIon &ion) {
+  Vector3D vi = ion.velocity;
+  double vi_norm = vi.norm();
+  
+  // Populate weight array with analytical expression for vn
+  vn_weight.resize(0);
+  for (double v: vn_center) 
+    vn_weight.push_back(v*exp(-v*v/2/sigma/sigma)*(pow((v+vi_norm),7.0/3)-pow(fabs(v-vi_norm),7.0/3)));
+  
+  // Sample vn
+  pc_dist vn_dice(begin(vn_edge), end(vn_edge), begin(vn_weight));
+  double vn = vn_dice(rd);
 
-  while (1) {
-    vi = table1[i][0];
-    integral= table1[i][1];
-    
-    if (vi<0 || integral<0) break;
-    std::cout << "Adding key = " << vi << "\t value = " << integral << "\n";
-    lookup_table1[vi] = integral;
-    i++;
-  }
+  // Populate weight array with analytical expression for theta
+  theta_weight.resize(0);
+  for (double t: theta_center) 
+    theta_weight.push_back(pow((vn*vn-2*vn*vi_norm*cos(t)+vi_norm*vi_norm), 1.0/6)*sin(t));
+  
+  // Sample theta
+  pc_dist theta_dice(begin(theta_edge), end(theta_edge), begin(theta_edge));
+  double theta = theta_dice(rd);
+
+  // Sample phi
+  double phi = phi_dice(rd);
+  
+  // Build and rotate velocity
+  Vector3D velocity1 = BuildVector(vn, theta, phi);
+  velocity = Rotate(vi, velocity1);
 }
 
-Vector3D NeutralAtom::SampleVelocity(const Vector3D &v) {
-  typedef std::piecewise_constant_distribution<double>::param_type param_type;
+void NeutralAtom::Collide(ProtoMolIon &ion) {
+  double mi = ion.mass;
+  Vector3D vi = ion.velocity;
 
-  double vi = v.norm() / sigma;
-
-  for (double r:r_cache_middle) 
-    w_r_cache.push_back(r*exp(-r*r/2)*(pow((r+vi),7.0/3)-pow(fabs(r-vi),7.0/3)));
-  
-  param_type pr(r_cache.begin(), r_cache.end(), w_r_cache.begin());
-  mag_dist.param(pr);
-  double r = mag_dist(rd);
-  w_r_cache.resize(0);
-
-  for (double theta:theta_cache_middle)
-    w_theta_cache.push_back(pow((r*r-2*r*vi*cos(theta)+vi*vi), 1.0/6));
-  
-  param_type pt(theta_cache.begin(), theta_cache.end(), w_theta_cache.begin());
-  polar_angle_dist.param(pt);
-  double theta = polar_angle_dist(rd);
-  w_theta_cache.resize(0);
-
-  double phi = azimuthal_angle_dist(rd);
-  
-  return BuildVector(r*sigma, theta, phi);
-}
-
-
-void NeutralAtom::Collide(double m, Vector3D &v) {
-  double b1 = mass / (mass + m);
+  double mu = mi * mass / (mi+mass);
+  double b1 = mi / (mass + mi);
   double b2 = 1-b1;
 
-  Vector3D v_com, v_rel, v_rel_after;
-  v_com = v * b1 + velocity * b2;
-  v_rel = v - velocity;
+  Vector3D v_com, v_rel, v_rel_after1, v_rel_after;
+  v_com = vi * b1 + velocity * b2;
+  v_rel = vi - velocity;
+  double energy_in_kelvin = 0.5 * mu * v_rel.normSquared() / SI::BOLTZMANN;
 
-  double r = v_rel.norm();
+  double v_rel_norm = v_rel.norm();
+  pc_dist &dist_use = SelectThetaDist(energy_in_kelvin);
 
-  double theta = M_PI;
+  double theta = dist_use(rd);
+  double phi = phi_dice(rd);
   
-  double phi = azimuthal_angle_dist(rd);
+  v_rel_after1 = BuildVector(v_rel_norm, theta, phi);
+  v_rel_after = Rotate(v_rel, v_rel_after1);
 
-  v_rel_after = BuildVector(r, theta, phi);
-  v_rel_after = Rotate(v_rel, v_rel_after);
-  //std::cout << "v_rel_before = " << v_rel << "\t" << "after = " << v_rel_after << "\n";
-  v = v_com + v_rel_after * b2;
+  vi = v_com + v_rel_after * b2;
+  velocity = v_com - v_rel_after * b1;
+  ion.velocity = vi;
 }
 
 
-void NeutralAtom::LoadCache() {
-  r_cache.resize(101);
-  theta_cache.resize(101);
+void NeutralAtom::LoadThetaCache(unsigned int count) {
+  double d = M_PI / count;
+  theta_edge.resize(0);
+  theta_center.resize(0);
 
-  r_cache_middle.resize(100);
-  theta_cache_middle.resize(100);
-
-  for (int i=0; i<100; i++) {
-    r_cache[i] = 0.1 * i; 
-    r_cache_middle[i] = r_cache[i] + 0.05;
-
-    theta_cache[i] = 0.01 * M_PI * i;
-    theta_cache_middle[i] = theta_cache[i] + 0.01 * M_PI * 0.5;
+  for (unsigned int i=0; i<count+1; i++) {
+    theta_edge.push_back(i*d);
+    theta_center.push_back((i+0.5) * d);
   }
-
-  r_cache[100] = 10;
-  theta_cache[100] = M_PI;
-
-  w_r_cache.resize(0);
-  w_theta_cache.resize(0);
-
+  theta_center.pop_back();
 }
 
-void NeutralAtom::Test() {
-  const int ave = 10000;
-  Vector3D v(-18, 100, -100);
 
-  double rate = 0;
+void NeutralAtom::LoadVnCache(unsigned int count) {
+  double d = 50.0 * sigma / count; 
+  vn_edge.resize(0);
+  vn_center.resize(0);
 
-  for (int i=0; i<ave; i++) {
-    if (i%100==0) std::cout << i/100 << "%" << "\n";
-    velocity = SampleVelocity(v);
-    velocity = Rotate(v, velocity);
-    rate += GetCollisionRate(173*SI::AMU, SI::ELECTRON_CHARGE, v);
+  for (unsigned int i=0; i<count+1; i++) {
+    vn_edge.push_back(i*d);
+    vn_center.push_back((i+0.5) * d);
   }
+  vn_center.pop_back();
+}
+
+// void NeutralAtom::ScatteringTest(const string &fname) {
+//   fstream f1((fname+".scattering").c_str(), fstream::out);
+//   if (!f1) throw "File open wrong";
   
-  rate /= ave;
-  std::cout << "Rate from Monte Carlo " << rate << "\n";
-  std::cout << "Rate from Langevin    " << GetLangevinRate(173*SI::AMU, SI::ELECTRON_CHARGE, v) << "\n";
-  std::cout << "Rate from Direct Calc " << GetAverageCollisionRate(173*SI::AMU, SI::ELECTRON_CHARGE, v) << "\n";
+//   Vector3D vi_orig(-1, 3, 2);
+//   Vector3D vi = vi_orig;
+//   const int count = 100000;
+//   double mi = 173*SI::AMU;
+//   double qi = SI::ELECTRON_CHARGE;
 
+//   for (int i=0; i<count; i++) {
+//     Collide(mi, vi);
+//   }
+  
+//   f1.close();
+// }
+
+
+// void NeutralAtom::SampleVelocityTest(const string &fname) {
+//   fstream f1((fname+".vel").c_str(), fstream::out);
+//   if (!f1) throw "File open wrong";
+
+//   fstream f2((fname+".summary").c_str(), fstream::out);
+//   if (!f2) throw "File open wrong";
+  
+  
+//   Vector3D vi(-1, 3, 2);
+//   const int count = 100000;
+//   double rate_mc=0, rate=0;
+//   double rate_integration=0;
+//   double mi = 173*SI::AMU;
+//   double qi = SI::ELECTRON_CHARGE;
+
+//   for (int i=0; i<count; i++) {
+//     SampleVelocity(vi);
+//     f1 << velocity << "\n";
+//     rate = GetCollisionRate(mi, qi, vi);
+//     rate_mc += rate;
+//   }
+  
+//   rate_mc /= count;
+//   rate_integration = GetThermalAverageCollisionRate(mi, qi, vi);
+//   f2 << "Rate Coeff from Monte Carlo = " << rate_mc << "\n";
+//   f2 << "Rate Coeff from Integration = " << rate_integration << "\n";
+//   f1.close();
+//   f2.close();
+// }
+
+void NeutralAtom::LoadCrossSection(LuaConfigReader &reader) {
+  typedef vector<string> string_list;
+
+  string field("cross_section.lookup_table");
+  string_list fname_list = reader.GetValue< string_list >(field.c_str());
+
+  for (const string& fname:fname_list) {
+    cout << "Loading diff x section " << fname << "\n";
+    double energy;
+
+    double t, t_prev, s, s_prev;
+    vector<double> t_array, w_array;
+
+    fstream f(fname.c_str());
+    if (!f) throw "File open wrong";
+   
+    f >> energy;
+    while (f >> t >> s) {
+      t_array.push_back(t);
+
+      if (t_array.size()>1) 
+    	w_array.push_back( (s+s_prev)/2 * sin((t+t_prev)/2) * (t-t_prev) );
+
+      t_prev = t;
+      s_prev = s;
+    }
+
+    diff_cross_section_lktb[energy] = pc_dist(begin(t_array), 
+					      end(t_array), 
+					      begin(w_array));
+    
+    f.close();
+  }
 }
+
+NeutralAtom::pc_dist &NeutralAtom::SelectThetaDist(double energy) {
+  auto it = diff_cross_section_lktb.upper_bound(energy);
+  if (it==diff_cross_section_lktb.end()) it--;
+  return it->second;
+}
+
+void NeutralAtom::LoadFLktb() {
+  for (const double *ff : f)
+    f_lktb[ff[0]] = ff[1];
+}
+
+// double NeutralAtom::GetCollisionRate(double mi, double qi, const Vector3D &vi) {
+//   double mu = mi * mass / (mi+mass);
+//   double C4 = polarizability * qi * qi / (4*M_PI*EPSILON_0);
+//   Vector3D v_rel = velocity - vi;
+
+//   double energy = 0.5 * mu * v_rel.normSquared();
+//   return v_rel.norm() * M_PI*pow(mu*pow(C4/HBAR,2)/energy, 1.0/3)*(1+pow(M_PI/4,2)) * density;
+// }
+

@@ -64,6 +64,7 @@ namespace ProtoMolAddon {
     LuaConfigReader reader;
     NeutralAtom neutral_atom;
     double trap_radius;
+    double trap_z0;
   public:
     static const string keyword;
   };

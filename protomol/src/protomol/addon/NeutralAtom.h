@@ -43,6 +43,9 @@ namespace ProtoMolAddon {
     std::uniform_real_distribution<double> phi_dice;
     std::uniform_real_distribution<double> collision_dice;
 
+    std::normal_distribution<double> vn_dice;
+    
+
     typedef map<double, double> scalar_lktb;
     scalar_lktb f_lktb;
 
@@ -51,9 +54,12 @@ namespace ProtoMolAddon {
 
     
     bool ShouldCollide(const ProtoMolIon &ion, double dt);
+    bool ShouldCollide2(const ProtoMolIon &ion, double dt);
     void Collide(ProtoMolIon &ion);
     void SampleVelocity(const ProtoMolIon &ion);
+    void SampleVelocity2(const ProtoMolIon &ion);
     double GetThermalAverageCollisionRate(const ProtoMolIon &ion);
+    double GetCollisionRate(const ProtoMolIon &ion);
 
     void LoadFLktb();
     void LoadThetaCache(unsigned int count=100);
@@ -66,6 +72,7 @@ namespace ProtoMolAddon {
 
     NeutralAtom(LuaConfigReader &reader);
     void CollideAll(ProtoMolApp *app, double dt);
+    void CollideAll2(ProtoMolApp *app, double dt);
     void SampleVelocityTest(const string &fname);
     void ScatteringTest(const string &fname);
     

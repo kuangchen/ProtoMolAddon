@@ -8,9 +8,11 @@
 #include <protomol/base/PMConstants.h>
 
 #include <protomol/addon/HarmonicTrap.h>
+#include <protomol/addon/Constants.h>
 
 using namespace std;
 using namespace ProtoMol::Constant;
+using namespace ProtoMolAddon::Constant;
 
 namespace ProtoMolAddon{
 
@@ -63,14 +65,12 @@ namespace ProtoMolAddon{
 						      ScalarStructure* energies)
   {
     double force_conversion = SI::KCAL * SI::AVOGADRO * 1e-10;
-    double position_conversion = 1e-10;
 
-    for(unsigned int i=0;i<topo->atoms.size();i++)
-      {
+    for(unsigned int i=0;i<topo->atoms.size();i++) {
 	Vector3D f;
 	Vector3D pos((*positions)[i]);
 	double mass = topo->atoms[0].scaledMass * SI::AMU;
-	trap.GetForce(pos * position_conversion, mass, f);
+	trap.GetForce(pos * POSITION_CONV, mass, f);
 	(*forces)[i] += f * force_conversion;
       }
   }

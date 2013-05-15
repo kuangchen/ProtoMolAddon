@@ -23,8 +23,6 @@ HarmonicTrap::HarmonicTrap(const string &def) :
 }
 
 void HarmonicTrap::GetForce(const Vector3D &pos, double mass, Vector3D& force) {
-
   for (int i=0; i<3; i++)
     force[i] = -mass * freq[i] * freq[i] * pos[i];
-
 }

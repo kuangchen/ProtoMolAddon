@@ -34,7 +34,8 @@ LeapfrogBufferGasIntegrator2::LeapfrogBufferGasIntegrator2(Real timestep,
   STSIntegrator(timestep, overloadedForces), 
   reader(filename),
   neutral_atom(reader),
-  trap_radius(reader.GetValue<double>("trap.radius"))
+  trap_radius(reader.GetValue<double>("trap.radius")),
+  trap_z0(reader.GetValue<double>("trap.z0"))
 {
   //std::cout << neutral_atom;
   //neutral_atom.SampleVelocityTest("test.log");
@@ -112,13 +113,13 @@ void LeapfrogBufferGasIntegrator2::run(int numTimesteps) {
     return;
 
   preStepModify();
-  neutral_atom.CollideAll(app, dt);
+  neutral_atom.CollideAll2(app, dt);
   RemoveEnergeticIon(app);
   doHalfKickdoDrift();
   calculateForces();
 
   for (int i = 1; i < numTimesteps; i++) {
-    neutral_atom.CollideAll(app, dt);
+    neutral_atom.CollideAll2(app, dt);
     RemoveEnergeticIon(app);
     doKickdoDrift();
     calculateForces();
@@ -167,7 +168,8 @@ void LeapfrogBufferGasIntegrator2::RemoveEnergeticIon(ProtoMolApp *app) {
   for (int j=0;j<app->positions.size();j++) {
     Vector3D r = app->positions[j] * POSITION_CONV;
     
-    if (r[0]*r[0]+r[1]*r[1] > trap_radius * trap_radius && app->topology->atoms[j].scaledCharge > 0) 
+    if ( (r[0]*r[0]+r[1]*r[1] > trap_radius * trap_radius || r[2]*r[2] > trap_z0 * trap_z0 ) 
+	 && app->topology->atoms[j].scaledCharge > 0)
       app->topology->atoms[j].scaledCharge = 0;
     
   }

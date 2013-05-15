@@ -21,8 +21,8 @@ NeutralAtom::NeutralAtom(double m, double pl, double t, double d, const Vector3D
 
   sigma = sqrt(SI::BOLTZMANN*temperature/mass);
  
-   LoadThetaCache(10000);
-   LoadVnCache(10000);
+  LoadThetaCache(10000);
+  LoadVnCache(10000);
 }
   
 NeutralAtom::NeutralAtom(LuaConfigReader &reader):
@@ -37,6 +37,7 @@ NeutralAtom::NeutralAtom(LuaConfigReader &reader):
   phi_dice(0, 2*M_PI) {
 
   sigma = sqrt(SI::BOLTZMANN*temperature/mass);
+  vn_dice = std::normal_distribution<double>(0, sigma);
  
   LoadFLktb();
   LoadThetaCache();
@@ -48,8 +49,16 @@ bool NeutralAtom::ShouldCollide(const ProtoMolIon &ion, double dt) {
   double rate = GetThermalAverageCollisionRate(ion);
   double dice = collision_dice(rd);
 
-  return rate * dt > dice;
+  return (1-exp(-rate*dt))>dice;
 }
+
+bool NeutralAtom::ShouldCollide2(const ProtoMolIon &ion, double dt) {
+  double rate = GetCollisionRate(ion);
+  double dice = collision_dice(rd);
+
+  return (1-exp(-rate*dt))>dice;
+}
+
   
 void NeutralAtom::CollideAll(ProtoMolApp *app, double dt) {
   for (unsigned int i=0; i<app->velocities.size(); i++) {
@@ -60,6 +69,26 @@ void NeutralAtom::CollideAll(ProtoMolApp *app, double dt) {
       ion.UpdateProtoMol(app);
     }
   }  
+}
+
+void NeutralAtom::CollideAll2(ProtoMolApp *app, double dt) {
+  for (unsigned int i=0; i<app->topology->atoms.size(); i++) {
+    ProtoMolIon ion(app, i);
+    SampleVelocity2(ion);
+    if (ion.charge > 0 && ShouldCollide2(ion, dt)) {
+      Collide(ion);
+      ion.UpdateProtoMol(app);
+    }
+  }  
+}
+
+double NeutralAtom::GetCollisionRate(const ProtoMolIon &ion) {
+  double C4 = polarizability * ion.charge * ion.charge / (4*M_PI*EPSILON_0);
+  double mu = ion.mass * mass / (ion.mass+mass);
+  Vector3D v_rel = velocity-ion.velocity;
+  double E = 0.5 * mu * v_rel.normSquared();
+  
+  return M_PI * pow(C4*C4*mu/HBAR/HBAR/E,1.0/3)*(1+M_PI*M_PI/16)* v_rel.norm() * density;
 }
 
 double NeutralAtom::GetThermalAverageCollisionRate(const ProtoMolIon &ion) {
@@ -88,7 +117,7 @@ void NeutralAtom::SampleVelocity(const ProtoMolIon &ion) {
     vn_weight.push_back(v*exp(-v*v/2/sigma/sigma)*(pow((v+vi_norm),7.0/3)-pow(fabs(v-vi_norm),7.0/3)));
   
   // Sample vn
-  pc_dist vn_dice(begin(vn_edge), end(vn_edge), begin(vn_weight));
+  pc_dist vn_dice(begin(vn_edge), end(vn_edge), begin(vn_weight)); 
   double vn = vn_dice(rd);
 
   // Populate weight array with analytical expression for theta
@@ -97,7 +126,7 @@ void NeutralAtom::SampleVelocity(const ProtoMolIon &ion) {
     theta_weight.push_back(pow((vn*vn-2*vn*vi_norm*cos(t)+vi_norm*vi_norm), 1.0/6)*sin(t));
   
   // Sample theta
-  pc_dist theta_dice(begin(theta_edge), end(theta_edge), begin(theta_edge));
+  pc_dist theta_dice(begin(theta_edge), end(theta_edge), begin(theta_weight));
   double theta = theta_dice(rd);
 
   // Sample phi
@@ -106,6 +135,10 @@ void NeutralAtom::SampleVelocity(const ProtoMolIon &ion) {
   // Build and rotate velocity
   Vector3D velocity1 = BuildVector(vn, theta, phi);
   velocity = Rotate(vi, velocity1);
+}
+
+void NeutralAtom::SampleVelocity2(const ProtoMolIon &ion) {
+  velocity = Vector3D(vn_dice(rd), vn_dice(rd), vn_dice(rd));
 }
 
 void NeutralAtom::Collide(ProtoMolIon &ion) {
@@ -131,8 +164,9 @@ void NeutralAtom::Collide(ProtoMolIon &ion) {
   v_rel_after = Rotate(v_rel, v_rel_after1);
 
   vi = v_com + v_rel_after * b2;
-  velocity = v_com - v_rel_after * b1;
+  //velocity = v_com - v_rel_after * b1;8
   ion.velocity = vi;
+  //std::cout << "after collision vi = " << vi << "\n";
 }
 
 
@@ -222,7 +256,7 @@ void NeutralAtom::LoadCrossSection(LuaConfigReader &reader) {
     double t, t_prev, s, s_prev;
     vector<double> t_array, w_array;
 
-    fstream f(fname.c_str());
+    ifstream f(fname.c_str());
     if (!f) throw "File open wrong";
    
     f >> energy;
@@ -247,6 +281,7 @@ void NeutralAtom::LoadCrossSection(LuaConfigReader &reader) {
 NeutralAtom::pc_dist &NeutralAtom::SelectThetaDist(double energy) {
   auto it = diff_cross_section_lktb.upper_bound(energy);
   if (it==diff_cross_section_lktb.end()) it--;
+  //  std::cout << "using E = " << it->first << "\n";
   return it->second;
 }
 

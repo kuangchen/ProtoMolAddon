@@ -13,8 +13,13 @@ namespace ProtoMolAddon {
 
       double ct = temp[2];
       double st = sqrt(temp[0] * temp[0] + temp[1] * temp[1]);
-      double sp = temp[1] / st;
-      double cp = temp[0] / st;
+
+      double sp = 1; 
+      double cp = 0;
+      if (fabs(st) > 1e-8) {
+	sp = temp[1] / st;
+	cp = temp[0] / st;
+      }
 
       return Vector3D( cp*ct*v2[0] - sp*v2[1] + cp*st*v2[2],
 		       sp*ct*v2[0] + cp*v2[1] + sp*st*v2[2],

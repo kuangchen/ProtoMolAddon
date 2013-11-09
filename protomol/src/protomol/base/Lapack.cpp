@@ -1,6 +1,7 @@
 #include "Lapack.h"
 #include <protomol/base/Exception.h>
 
+#include <string>
 #if defined(HAVE_LAPACK)
 #include <protomol/integrator/hessian/LapackProtomol.h>
 #elif defined(HAVE_SIMTK_LAPACK)
@@ -44,7 +45,7 @@ void ProtoMol::Lapack::dgemv(char *transA, int *m, int *n, double *alpha,
 #elif defined(HAVE_MKL_LAPACK)
   DGEMV(transA, m, n, alpha, A, lda, x, incx, beta, Y, incY);
 #else
-  THROW(__func__ " not supported");
+  THROW(std::string(__func__) + " not supported");
 #endif
 }
 
@@ -60,7 +61,7 @@ void ProtoMol::Lapack::dsyev(char *jobz, char *uplo, int *n, double *a,
 #elif defined(HAVE_MKL_LAPACK)
   DSYEV(jobz, uplo, n, a, lda, w, work, lwork, info);
 #else
-  THROW(__func__ " not supported");
+  THROW(std::string(__func__) + " not supported");
 #endif
 }
 
@@ -82,7 +83,7 @@ void ProtoMol::Lapack::dsyevr(char *jobz, char *range, char *uplo, int *n,
   DSYEVR(jobz, range, uplo, n, a, lda, vl, vu, il, iu, abstol, m, w, z, ldz,
          isuppz, work, lwork, iwork, liwork, info);
 #else
-  THROW(__func__ " not supported");
+  THROW(std::string(__func__) + " not supported");
 #endif
 }
 
@@ -96,7 +97,7 @@ double ProtoMol::Lapack::dlamch(char *cmach) {
 #elif defined(HAVE_MKL_LAPACK)
   return DLAMCH(cmach);
 #else
-  THROW(__func__ " not supported");
+  THROW(std::string(__func__) + " not supported");
 #endif
 }
 
@@ -112,7 +113,7 @@ void ProtoMol::Lapack::dgemm(char *transA, char *transB, int *m, int *n, int *k,
 #elif defined(HAVE_MKL_LAPACK)
   DGEMM(transA, transB, m, n, k, alpha, A, lda, B, ldb, beta, C, l);
 #else
-  THROW(__func__ " not supported");
+  THROW(std::string(__func__) + " not supported");
 #endif
 }
 
@@ -127,7 +128,7 @@ double ProtoMol::Lapack::ddot(int *n, double *x, int *incx, double *y,
 #elif defined(HAVE_MKL_LAPACK)
   return DDOT(n, x, incx, y, incy);
 #else
-  THROW(__func__ " not supported");
+  THROW(std::string(__func__) + " not supported");
 #endif
 }
 
@@ -141,7 +142,7 @@ double ProtoMol::Lapack::dnrm2(int *n, double *x, int *incx) {
 #elif defined(HAVE_MKL_LAPACK)
   return DNRM2(n, x, incx);
 #else
-  THROW(__func__ " not supported");
+  THROW(std::string(__func__) + " not supported");
 #endif
 }
 
@@ -154,7 +155,7 @@ void ProtoMol::Lapack::dpotri(char *transA, int *n, double *A, int *lda,
 #elif defined(HAVE_MKL_LAPACK)
   DPOTRI(transA, n, A, lda, info);
 #else
-  THROW(__func__ " not supported");
+  THROW(std::string(__func__) + " not supported");
 #endif
 }
 
@@ -167,7 +168,7 @@ void ProtoMol::Lapack::dpotrf(char *transA, int *n, double *A, int *lda,
 #elif defined(HAVE_MKL_LAPACK)
   DPOTRF(transA, n, A, lda, info);
 #else
-  THROW(__func__ " not supported");
+  THROW(std::string(__func__) + " not supported");
 #endif
 }
 
@@ -180,7 +181,7 @@ void ProtoMol::Lapack::dposv(char *transA, int *n, int *nrhs, double *a,
 #elif defined(HAVE_MKL_LAPACK)
   DPOSV(transA, n, nrhs, a, lda, b, ldb, info);
 #else
-  THROW(__func__ " not supported");
+  THROW(std::string(__func__) + " not supported");
 #endif
 }
 
@@ -194,7 +195,7 @@ void ProtoMol::Lapack::dtrmm(char *sideA, char *ulA, char *transA, char *diagA,
 #elif defined(HAVE_MKL_LAPACK)
   DTRMM(sideA, ulA, transA, diagA, m, n, alpha, A, lda, B, ldb);
 #else
-  THROW(__func__ " not supported");
+  THROW(std::string(__func__) + " not supported");
 #endif
 }
 
@@ -208,6 +209,6 @@ void ProtoMol::Lapack::dtrsm(char *sideA, char *ulA, char *transA, char *diagA,
 #elif defined(HAVE_MKL_LAPACK)
   DTRSM(sideA, ulA, transA, diagA, m, n, alpha, A, lda, B, ldb);
 #else
-  THROW(__func__ " not supported");
+  THROW(std::string(__func__) + " not supported");
 #endif
 }

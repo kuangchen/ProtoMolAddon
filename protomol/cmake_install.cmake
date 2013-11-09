@@ -1,4 +1,4 @@
-# Install script for directory: /home/kuangchen/Documents/Lab/Project/protomol_github/ProtoMol/protomol
+# Install script for directory: /home/kuangchen/Documents/Lab/Project/ProtoMol/protomol
 
 # Set the install prefix
 IF(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -39,7 +39,7 @@ IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspeci
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/ProtoMol"
          RPATH "")
   ENDIF()
-  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE EXECUTABLE FILES "/home/kuangchen/Documents/Lab/Project/protomol_github/ProtoMol/protomol/ProtoMol")
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE EXECUTABLE FILES "/home/kuangchen/Documents/Lab/Project/ProtoMol/protomol/ProtoMol")
   IF(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/ProtoMol" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/ProtoMol")
     IF(CMAKE_INSTALL_DO_STRIP)
@@ -54,7 +54,7 @@ ELSE(CMAKE_INSTALL_COMPONENT)
   SET(CMAKE_INSTALL_MANIFEST "install_manifest.txt")
 ENDIF(CMAKE_INSTALL_COMPONENT)
 
-FILE(WRITE "/home/kuangchen/Documents/Lab/Project/protomol_github/ProtoMol/protomol/${CMAKE_INSTALL_MANIFEST}" "")
+FILE(WRITE "/home/kuangchen/Documents/Lab/Project/ProtoMol/protomol/${CMAKE_INSTALL_MANIFEST}" "")
 FOREACH(file ${CMAKE_INSTALL_MANIFEST_FILES})
-  FILE(APPEND "/home/kuangchen/Documents/Lab/Project/protomol_github/ProtoMol/protomol/${CMAKE_INSTALL_MANIFEST}" "${file}\n")
+  FILE(APPEND "/home/kuangchen/Documents/Lab/Project/ProtoMol/protomol/${CMAKE_INSTALL_MANIFEST}" "${file}\n")
 ENDFOREACH(file)

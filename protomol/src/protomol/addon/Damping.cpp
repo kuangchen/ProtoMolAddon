@@ -24,5 +24,5 @@ Damping::Damping(const string &def) :
 
 void Damping::GetForce(const Vector3D &vel, double time, Vector3D& force) {
   double c = ((start<time) && (end>time)) ? coeff : 0;
-  force = - vel * c;
+  force = -vel * c;
 }

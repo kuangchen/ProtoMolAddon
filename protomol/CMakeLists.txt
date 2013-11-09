@@ -139,7 +139,7 @@ if( BUILD_OPENMP )
 endif( BUILD_OPENMP )
 
 # Parallel
-option( BUILD_PARALLEL "Build with MPI Support" On )
+option( BUILD_PARALLEL "Build with MPI Support" Off )
 if( BUILD_PARALLEL )
 	include( FindMPI )
 	if( MPI_FOUND )

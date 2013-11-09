@@ -53,7 +53,7 @@ namespace ProtoMolAddon{
   };
   
   template <class TBoundaryConditions>
-  const std::string DampingForce<TBoundaryConditions>::keyword("DampingForce");  
+  const std::string DampingForce<TBoundaryConditions>::keyword("Damping");  
 
   template<class TBoundaryConditions>
   inline void DampingForce<TBoundaryConditions>::evaluate(const GenericTopology* topo,

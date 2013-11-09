@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/kuangchen/Documents/Lab/Project/protomol_github/ProtoMol/protomol/src/protomol/module/BondedForcesModule.cpp
+/home/kuangchen/Documents/Lab/Project/ProtoMol/protomol/src/protomol/module/BondedForcesModule.cpp
 protomol/module/BondedForcesModule.h
 -
 protomol/force/bonded/RBDihedralSystemForce.h

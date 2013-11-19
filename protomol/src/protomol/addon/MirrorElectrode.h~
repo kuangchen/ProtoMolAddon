@@ -1,0 +1,29 @@
+#ifndef __MIRROR_ELECTRODE_H
+#define __MIRROR_ELECTRODE_H
+
+#include <protomol/addon/AbstractElectrode.h>
+#include <protomol/addon/RealElectrode.h>
+
+#include <bitset>
+#include <string>
+
+using namespace std;
+
+namespace ProtoMolAddon {
+
+  class MirrorElectrode : public AbstractElectrode {
+  private:
+    const RealElectrode* parent;
+    bitset<3> reflection;
+
+  public:
+    MirrorElectrode(const string& label, const RealElectrode* parent, const std::string& reflection);
+    ~MirrorElectrode() {};
+    double GetNNPotential(const Vector3D& pos, const std::vector<int>& offset) const;
+    double GetNNVoltage(double time, int offset) const;
+
+    void DumpInfo(ostream& os);
+  };
+}
+
+#endif

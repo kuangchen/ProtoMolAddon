@@ -24,7 +24,7 @@ namespace ProtoMolAddon{
     ToF tof;
 
   public:
-    ToFForce() { ToF::Test(); }
+    ToFForce() {}
     ToFForce(const string& def):
       def(def),
       tof(def)
@@ -70,8 +70,9 @@ namespace ProtoMolAddon{
 	Vector3D pos((*positions)[i]);
 	tof.GetForce(topo->atoms[i].scaledCharge * CHARGE_CONV * ELECTRON_CHARGE, 
 		     pos * POSITION_CONV, 
-		     topo->time * TIME_CONV, 
+		     topo->time * TIME_CONV - 1e-6, 
 		     f);
+
 	(*forces)[i] += f * FORCE_CONV;
       }
   }

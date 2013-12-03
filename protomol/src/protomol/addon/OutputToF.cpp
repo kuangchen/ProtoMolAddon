@@ -52,7 +52,6 @@ void OutputToF::doRun(int step) {
 
 void OutputToF::doFinalize(int step) {
   ofstream f(output_filename);
-std::copy(detector.hit_time.begin(), detector.hit_time.end(), ostream_iterator<double>(f, "\n"));
-  f.close();
+  f << detector;
 }
 

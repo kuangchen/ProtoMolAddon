@@ -31,11 +31,12 @@ ToF::ToF(const string &def): elct(12) {
       string volt_file = reader.GetValue<string>((oss.str() + ".volt").c_str());
       ifstream v(volt_file);
       v >> elct[i].Volt();
-
+    } catch (LuaConfigReaderException &e) {}
+    
+    try {
       string potl_file = reader.GetValue<string>((oss.str() + ".potl").c_str());
       ifstream p(potl_file);
       p >> elct[i].Potl();
-
     } catch (LuaConfigReaderException &e) {}
   }
 
@@ -67,15 +68,15 @@ namespace ProtoMolAddon {
 
 
 
-double ToF::GetTotalRealTimePotential(const Vector3D& pos, double t, const boost::array<int, 3>& offset) {
+double ToF::GetTotalRealTimePotential(const Vector3D& pos, double t, const boost::array<int, 3>& offset=boost::array<int, 3>()) {
   double total_potl = 0;
-  cout << "pos = " << pos << "\n";
+  //cout << "pos = " << pos << "\n";
   for (auto& el: elct) {
     double a = el.GetRealTimePotential(pos, t, offset);
-    cout << el.GetLabel() << "\t" << a << "\n";
+    //cout << el.GetLabel() << "\t" << a << "\n";
     total_potl += a;
   }
-  cout << "\n";
+
   return total_potl;
 }
 
@@ -85,9 +86,10 @@ double ToF::GetTotalRealTimeInterpolatedPotential(const Vector3D& pos, double t)
 
   for (auto& el: elct) {
     double a = el.GetRealTimeInterpolatedPotential(pos, t);
-    cout << el.GetLabel() << "\t" << a << "\n";
+    //cout << el.GetLabel() << "\t" << a << "\n";
     total_potl += a;
   }
+  //cout << "total = " << total_potl << "\n";
   return total_potl;
 }
 
@@ -95,13 +97,12 @@ void ToF::GetForce(double charge, const Vector3D &pos, double t, Vector3D& force
   Vector3D gradient;
 
   for (int i=0; i<3; i++) {
-    boost::array<int, 3> offset_plus = {0,0,0}, offset_minus = {0,0,0};
+    boost::array<int, 3> offset_plus = {0,0,0};
     offset_plus[i] = 1; 
-    offset_minus[i] = -1;
     double total_pot_plus = GetTotalRealTimePotential(pos, t, offset_plus);
-    double total_pot_minus = GetTotalRealTimePotential(pos, t, offset_minus);
+    double total_pot_minus = GetTotalRealTimePotential(pos, t);
     
-    gradient[i] = -(total_pot_plus - total_pot_minus)/elct[0].Potl().GetDx()[i];
+    gradient[i] = -(total_pot_plus - total_pot_minus)/(elct[0].Potl().GetDx()[i]);
   }
   force = gradient * charge;
 }  
@@ -114,14 +115,14 @@ void ToF::Test() {
 			 Vector3D(15e-3, 0, 0), Vector3D(20e-3, 0, 0), Vector3D(0, 3e-3, 0), 
 			 Vector3D(0, -5e-3, 0), Vector3D(0, 0, 5e-3), Vector3D(0, 0, 15e-3),
 			 Vector3D(0, 0, -8e-3), Vector3D(-4e-3, 0, 0), Vector3D(1e-3, 2e-3, 3e-3),
-			 Vector3D(3e-3, 3e-3, 3e-3) };
-  vector<Vector3D> pos(pos_raw, pos_raw+13);
+			 Vector3D(3e-3, 3e-3, 3e-3), Vector3D(1, 0, 0) };
+  vector<Vector3D> pos(pos_raw, pos_raw+14);
 
   double real_potl_raw[] = {0.287105, 0.286050, 0.274284, 0.228074, 
 			   0.167541, 0.342868, 0.206029, 0.270524, 
 			   0.125447, 0.284812, 0.290951, 0.312909, 
-			   0.318143};
-  vector<double> real_potl(real_potl_raw, real_potl_raw+13);
+			    0.318143, 0};
+  vector<double> real_potl(real_potl_raw, real_potl_raw+14);
 
   vector<double> sim_potl;
   transform(pos.begin(), pos.end(), back_inserter(sim_potl), 
@@ -129,6 +130,26 @@ void ToF::Test() {
                                                   
   cout << fixed << setprecision(4);
 
-  for (int i=0; i<13; i++)
+  for (int i=0; i<14; i++)
     cout << real_potl[i] << "\t" << sim_potl[i] << "\t" << fabs(sim_potl[i]/real_potl[i]-1) << "\n";
+  
+  Vector3D origin(0, 0, 1e-5);
+  Vector3D gradient;
+
+  for (int i=0; i<3; i++) {
+    boost::array<int, 3> offset_plus = {0,0,0};
+    boost::array<int, 3> offset_minus = {0,0,0};
+
+    offset_plus[i] = 1; 
+
+    double total_pot_plus = 0;
+    double total_pot_minus = 0;
+    for (auto &el: tof.elct) {
+      total_pot_plus += el.Potl().GetPotential(origin, offset_plus);
+      total_pot_minus += el.Potl().GetPotential(origin, offset_minus);
+    }
+    gradient[i] = -(total_pot_plus - total_pot_minus)/(tof.elct[0].Potl().GetDx()[i]);
+  }
+  cout << "origin = " << origin << "\n";
+  cout << "gradient = " << gradient << "\n";
 }

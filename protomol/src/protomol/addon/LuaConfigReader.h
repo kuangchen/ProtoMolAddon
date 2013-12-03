@@ -30,7 +30,7 @@ namespace ProtoMolAddon {
 
   namespace Lua {
 
-    class LuaConfigReaderException : public exception {
+    class LuaConfigReaderException : public std::exception {
     private:
       string msg;
 
@@ -56,7 +56,7 @@ namespace ProtoMolAddon {
       ~LuaConfigReader();
       
       template<typename T> T GetValue(const char *varname) {
-	char temp[64];
+	char temp[1000];
 	memset(temp, 0, sizeof(temp));
 	int i=0;
 	int j=0;
@@ -87,8 +87,9 @@ namespace ProtoMolAddon {
 	}
 
 	n==0 ? lua_getglobal(L, temp) : lua_getfield(L, -1, temp);
-
-	return GetValueLowLevel<T>(varname);
+	T r = GetValueLowLevel<T>(varname);
+	lua_pop(L, n+1);
+	return r;
       }
 
     };

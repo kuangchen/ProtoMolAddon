@@ -19,9 +19,9 @@ namespace ProtoMolAddon {
   public:
     MirrorElectrode(const string& label, const RealElectrode* parent, const std::string& reflection);
     ~MirrorElectrode() {};
-    double GetNNPotential(const Vector3D& pos, const array<int, 3>& offset) const;
+    double GetNNPotential(const Vector3D& pos, const boost::array<int, 3>& offset) const;
     double GetNNVoltage(double time, int offset) const;
-    void GetFraction(const Vector3D &pos, array<double, 3>& f);
+    void GetFraction(const Vector3D &pos, boost::array<double, 3>& f);
     const Vector3D& GetDx();
     void DumpInfo(ostream& os);
   };

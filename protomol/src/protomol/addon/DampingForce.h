@@ -63,7 +63,6 @@ namespace ProtoMolAddon{
 						      ScalarStructure* energies)
   {
     double force_conversion = SI::KCAL * SI::AVOGADRO * 1e-10;
-    double position_conversion = 1e-10;
     double time = topo->time/SI::TIME_FS;
     double velocity_conversion = 1e-10 * SI::TIME_FS / TIMEFACTOR;
     for(unsigned int i=0;i<topo->atoms.size();i++)

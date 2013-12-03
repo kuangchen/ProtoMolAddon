@@ -1,6 +1,6 @@
 #ifndef _ELECTRODE_H
 #define _ELECTRODE_H
-
+#define BOOST_DISABLE_ASSERTS
 #include <protomol/type/Vector3D.h>
 #include "boost/multi_array.hpp"
 #include <vector>
@@ -49,7 +49,9 @@ namespace ProtoMolAddon {
 	  n = v->size()-1;
 	else if (n<0)
 	  n = 0;
-
+	
+	//if (n>1000)
+	//  cout << "t = " << t << "\tn = " << n << "\tv = " << v->at(n) << "\n";
 	return v->at(n);
       }
 
@@ -62,7 +64,7 @@ namespace ProtoMolAddon {
 	else 
 	  v = new vector<double>(begin, end);
 
-	// 	
+	//cout << v->size() << "\t" << size << "\n";
 	assert(v->size() == size);
 	return (*this);
       }
@@ -136,7 +138,7 @@ namespace ProtoMolAddon {
 	boost::array<index, 3> n;
 	for (int i=0; i<3; i++) {
 	  int f = -2 * reflection[2-i] + 1;
-	  n[i] = static_cast<int>((pos[i]*f-x0[i])/dx[i]) + offset[i]*f;
+	  n[i] = static_cast<int>((pos[i]*f-x0[i])/dx[i]) + offset[i]*f + reflection[2-i];
 	  if (n[i] < 0 || n[i] > p->shape()[i]-1 ) return 0; 
 	}
 	return (*p)(n);
@@ -196,7 +198,7 @@ namespace ProtoMolAddon {
     Voltage& Volt(const Voltage& v) { volt = v; return volt; }
 
     double GetRealTimePotential(const Vector3D& pos, double t, const boost::array<int, 3>& offset) {
-
+      //      cout << label << "\n";
       return potl.GetPotential(pos, offset) * volt.GetVoltage(t);
     }
 

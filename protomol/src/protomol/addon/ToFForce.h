@@ -9,6 +9,7 @@
 
 #include <protomol/addon/ToF.h>
 #include <protomol/addon/Constants.h>
+#include <omp.h>
 
 using namespace std;
 using namespace ProtoMol::Constant;
@@ -24,7 +25,7 @@ namespace ProtoMolAddon{
     ToF tof;
 
   public:
-    ToFForce() {}
+    ToFForce() { ToF::Test(); }
     ToFForce(const string& def):
       def(def),
       tof(def)
@@ -65,6 +66,7 @@ namespace ProtoMolAddon{
 						      Vector3DBlock* forces,
 						      ScalarStructure* energies)
   {
+#pragma omp parallel for 
     for(unsigned int i=0;i<topo->atoms.size();i++) {
 	Vector3D f;
 	Vector3D pos((*positions)[i]);
@@ -72,7 +74,7 @@ namespace ProtoMolAddon{
 		     pos * POSITION_CONV, 
 		     topo->time * TIME_CONV - 1e-6, 
 		     f);
-
+	//	cout << scientific << "i = " << i << "\tf = " << f << "\n";
 	(*forces)[i] += f * FORCE_CONV;
       }
   }

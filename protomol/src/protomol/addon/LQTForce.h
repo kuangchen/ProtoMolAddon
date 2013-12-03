@@ -82,7 +82,7 @@ namespace ProtoMolAddon {
   {
 
     for(unsigned int i=0;i<topo->atoms.size();i++) 
-      (*forces)[i] += trap.GetForce(topo->atoms[i].scaledCharge * charge_conv, 
+      (*forces)[i] += trap.GetForce(topo->atoms[i].scaledCharge * charge_conv,  
 				    (*positions)[i] * position_conv, 
 				    topo->time * time_conv) * force_conv;
   }

@@ -67,7 +67,6 @@ template <> string LuaConfigReader::GetValueLowLevel<string>(const char *varname
     s << varname << " is not a string"; 
     throw LuaConfigReaderException(s.str());
   }
-
   return string(lua_tostring(L, -1));
 }
 

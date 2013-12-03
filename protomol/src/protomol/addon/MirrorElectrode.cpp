@@ -9,10 +9,10 @@ MirrorElectrode::MirrorElectrode(const string& label, const RealElectrode* paren
   reflection(reflection) {
 }
            
-double MirrorElectrode::GetNNPotential(const Vector3D& pos, const array<int, 3>& offset) const {
+double MirrorElectrode::GetNNPotential(const Vector3D& pos, const boost::array<int, 3>& offset) const {
   //cout << "label = " << label << "pos = " << pos << "\n";
   Vector3D parent_pos(pos);
-  std::array<int, 3> parent_offset(offset);
+  boost::array<int, 3> parent_offset(offset);
 
   for (int i=0; i<3; i++) 
     if (reflection[2-i]) {
@@ -35,6 +35,6 @@ const Vector3D& MirrorElectrode::GetDx() {
   return (*parent).GetDx();
 }
 
-void MirrorElectrode::GetFraction(const Vector3D &pos, array<double, 3>& f) {
+void MirrorElectrode::GetFraction(const Vector3D &pos, boost::array<double, 3>& f) {
   (*parent).GetFraction(pos, f);
 }

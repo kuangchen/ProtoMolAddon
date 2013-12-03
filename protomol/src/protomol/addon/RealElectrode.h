@@ -83,19 +83,21 @@ namespace ProtoMolAddon {
       return (*this);
     }
 
-    void GetFraction(const Vector3D &pos, array<double, 3>& f) {
-      array<int, 3> nn;
+    void GetFraction(const Vector3D &pos, boost::array<double, 3>& f) {
+      boost::array<int, 3> nn;
       for(int i=0; i<3; i++) {
 	nn[i] = static_cast<int>( (pos[i]-x0[i]) / dx[i] );
 	f[i] = (pos[i] - x0[i] - nn[i] * dx[i])/dx[i];
       }
     }
 
-    double GetNNPotential(const Vector3D& pos, const array<int, 3>& offset) const {
+    double GetNNPotential(const Vector3D& pos, const boost::array<int, 3>& offset) const {
       indices_type nn;
-      for (int i=0; i<3; i++) 
+      for (int i=0; i<3; i++) {
 	nn[i] = static_cast<int>( (pos[i]-x0[i]) / dx[i] ) + offset[i];
-      
+      	if (nn[i] > pot_data.shape()[i]-1 || nn[i] < 0) return 0;
+      }
+
       return pot_data(nn);
     }
 

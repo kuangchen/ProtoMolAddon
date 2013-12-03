@@ -15,6 +15,8 @@ namespace ProtoMolAddon {
   private:
     vector<bool> hit;
     vector<double> hit_time;
+    vector<Vector3D> hit_position;
+    vector<Vector3D> hit_velocity;
     double detector_pos;
 
   public:
@@ -23,6 +25,7 @@ namespace ProtoMolAddon {
     void Initialize(const ProtoMolApp* app);
     void Update(const ProtoMolApp* app);
     void Finalize();
+    friend ostream& operator<<(ostream& os, ToFDetector& tof);
     friend class OutputToF;
   };
 

@@ -476,19 +476,6 @@ CMakeFiles/Library.dir/src/protomol/addon/LuaConfigReader.cpp.o
 CMakeFiles/Library.dir/src/protomol/addon/Mathieu.cpp.o
  /home/kuang/Documents/Lab/Project/ProtoMol/protomol/src/protomol/addon/Mathieu.cpp
  src/protomol/addon/Mathieu.h
-CMakeFiles/Library.dir/src/protomol/addon/MirrorElectrode.cpp.o
- /home/kuang/Documents/Lab/Project/ProtoMol/protomol/src/protomol/addon/MirrorElectrode.cpp
- src/protomol/addon/AbstractElectrode.h
- src/protomol/addon/MirrorElectrode.h
- src/protomol/addon/RealElectrode.h
- src/protomol/base/MathUtilities.h
- src/protomol/base/PMConstants.h
- src/protomol/base/Random.h
- src/protomol/base/Report.h
- src/protomol/base/Singleton.h
- src/protomol/type/Real.h
- src/protomol/type/SimpleTypes.h
- src/protomol/type/Vector3D.h
 CMakeFiles/Library.dir/src/protomol/addon/NeutralAtom.cpp.o
  /home/kuang/Documents/Lab/Project/ProtoMol/protomol/src/protomol/addon/NeutralAtom.cpp
  src/protomol/ProtoMolApp.h
@@ -874,8 +861,6 @@ CMakeFiles/Library.dir/src/protomol/addon/ToF.cpp.o
  src/protomol/addon/AbstractElectrode.h
  src/protomol/addon/Electrode.h
  src/protomol/addon/LuaConfigReader.h
- src/protomol/addon/MirrorElectrode.h
- src/protomol/addon/RealElectrode.h
  src/protomol/addon/ToF.h
  src/protomol/base/MathUtilities.h
  src/protomol/base/PMConstants.h

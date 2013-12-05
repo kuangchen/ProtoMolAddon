@@ -453,30 +453,6 @@ src/protomol/addon/Mathieu.cpp.s:
 	$(MAKE) -f CMakeFiles/Library.dir/build.make CMakeFiles/Library.dir/src/protomol/addon/Mathieu.cpp.s
 .PHONY : src/protomol/addon/Mathieu.cpp.s
 
-src/protomol/addon/MirrorElectrode.o: src/protomol/addon/MirrorElectrode.cpp.o
-.PHONY : src/protomol/addon/MirrorElectrode.o
-
-# target to build an object file
-src/protomol/addon/MirrorElectrode.cpp.o:
-	$(MAKE) -f CMakeFiles/Library.dir/build.make CMakeFiles/Library.dir/src/protomol/addon/MirrorElectrode.cpp.o
-.PHONY : src/protomol/addon/MirrorElectrode.cpp.o
-
-src/protomol/addon/MirrorElectrode.i: src/protomol/addon/MirrorElectrode.cpp.i
-.PHONY : src/protomol/addon/MirrorElectrode.i
-
-# target to preprocess a source file
-src/protomol/addon/MirrorElectrode.cpp.i:
-	$(MAKE) -f CMakeFiles/Library.dir/build.make CMakeFiles/Library.dir/src/protomol/addon/MirrorElectrode.cpp.i
-.PHONY : src/protomol/addon/MirrorElectrode.cpp.i
-
-src/protomol/addon/MirrorElectrode.s: src/protomol/addon/MirrorElectrode.cpp.s
-.PHONY : src/protomol/addon/MirrorElectrode.s
-
-# target to generate assembly for a file
-src/protomol/addon/MirrorElectrode.cpp.s:
-	$(MAKE) -f CMakeFiles/Library.dir/build.make CMakeFiles/Library.dir/src/protomol/addon/MirrorElectrode.cpp.s
-.PHONY : src/protomol/addon/MirrorElectrode.cpp.s
-
 src/protomol/addon/NeutralAtom.o: src/protomol/addon/NeutralAtom.cpp.o
 .PHONY : src/protomol/addon/NeutralAtom.o
 
@@ -5495,9 +5471,6 @@ help:
 	@echo "... src/protomol/addon/Mathieu.o"
 	@echo "... src/protomol/addon/Mathieu.i"
 	@echo "... src/protomol/addon/Mathieu.s"
-	@echo "... src/protomol/addon/MirrorElectrode.o"
-	@echo "... src/protomol/addon/MirrorElectrode.i"
-	@echo "... src/protomol/addon/MirrorElectrode.s"
 	@echo "... src/protomol/addon/NeutralAtom.o"
 	@echo "... src/protomol/addon/NeutralAtom.i"
 	@echo "... src/protomol/addon/NeutralAtom.s"

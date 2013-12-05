@@ -4902,32 +4902,9 @@ CMakeFiles/Library.dir/src/protomol/addon/Util.cpp.o.provides: CMakeFiles/Librar
 
 CMakeFiles/Library.dir/src/protomol/addon/Util.cpp.o.provides.build: CMakeFiles/Library.dir/src/protomol/addon/Util.cpp.o
 
-CMakeFiles/Library.dir/src/protomol/addon/MirrorElectrode.cpp.o: CMakeFiles/Library.dir/flags.make
-CMakeFiles/Library.dir/src/protomol/addon/MirrorElectrode.cpp.o: src/protomol/addon/MirrorElectrode.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/kuang/Documents/Lab/Project/ProtoMol/protomol/CMakeFiles $(CMAKE_PROGRESS_212)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/Library.dir/src/protomol/addon/MirrorElectrode.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/Library.dir/src/protomol/addon/MirrorElectrode.cpp.o -c /home/kuang/Documents/Lab/Project/ProtoMol/protomol/src/protomol/addon/MirrorElectrode.cpp
-
-CMakeFiles/Library.dir/src/protomol/addon/MirrorElectrode.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Library.dir/src/protomol/addon/MirrorElectrode.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/kuang/Documents/Lab/Project/ProtoMol/protomol/src/protomol/addon/MirrorElectrode.cpp > CMakeFiles/Library.dir/src/protomol/addon/MirrorElectrode.cpp.i
-
-CMakeFiles/Library.dir/src/protomol/addon/MirrorElectrode.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Library.dir/src/protomol/addon/MirrorElectrode.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/kuang/Documents/Lab/Project/ProtoMol/protomol/src/protomol/addon/MirrorElectrode.cpp -o CMakeFiles/Library.dir/src/protomol/addon/MirrorElectrode.cpp.s
-
-CMakeFiles/Library.dir/src/protomol/addon/MirrorElectrode.cpp.o.requires:
-.PHONY : CMakeFiles/Library.dir/src/protomol/addon/MirrorElectrode.cpp.o.requires
-
-CMakeFiles/Library.dir/src/protomol/addon/MirrorElectrode.cpp.o.provides: CMakeFiles/Library.dir/src/protomol/addon/MirrorElectrode.cpp.o.requires
-	$(MAKE) -f CMakeFiles/Library.dir/build.make CMakeFiles/Library.dir/src/protomol/addon/MirrorElectrode.cpp.o.provides.build
-.PHONY : CMakeFiles/Library.dir/src/protomol/addon/MirrorElectrode.cpp.o.provides
-
-CMakeFiles/Library.dir/src/protomol/addon/MirrorElectrode.cpp.o.provides.build: CMakeFiles/Library.dir/src/protomol/addon/MirrorElectrode.cpp.o
-
 CMakeFiles/Library.dir/src/protomol/addon/BufferGas.cpp.o: CMakeFiles/Library.dir/flags.make
 CMakeFiles/Library.dir/src/protomol/addon/BufferGas.cpp.o: src/protomol/addon/BufferGas.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/kuang/Documents/Lab/Project/ProtoMol/protomol/CMakeFiles $(CMAKE_PROGRESS_213)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/kuang/Documents/Lab/Project/ProtoMol/protomol/CMakeFiles $(CMAKE_PROGRESS_212)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/Library.dir/src/protomol/addon/BufferGas.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/Library.dir/src/protomol/addon/BufferGas.cpp.o -c /home/kuang/Documents/Lab/Project/ProtoMol/protomol/src/protomol/addon/BufferGas.cpp
 
@@ -4950,7 +4927,7 @@ CMakeFiles/Library.dir/src/protomol/addon/BufferGas.cpp.o.provides.build: CMakeF
 
 CMakeFiles/Library.dir/src/protomol/addon/Damping.cpp.o: CMakeFiles/Library.dir/flags.make
 CMakeFiles/Library.dir/src/protomol/addon/Damping.cpp.o: src/protomol/addon/Damping.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/kuang/Documents/Lab/Project/ProtoMol/protomol/CMakeFiles $(CMAKE_PROGRESS_214)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/kuang/Documents/Lab/Project/ProtoMol/protomol/CMakeFiles $(CMAKE_PROGRESS_213)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/Library.dir/src/protomol/addon/Damping.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/Library.dir/src/protomol/addon/Damping.cpp.o -c /home/kuang/Documents/Lab/Project/ProtoMol/protomol/src/protomol/addon/Damping.cpp
 
@@ -4973,7 +4950,7 @@ CMakeFiles/Library.dir/src/protomol/addon/Damping.cpp.o.provides.build: CMakeFil
 
 CMakeFiles/Library.dir/src/protomol/addon/NeutralAtom.cpp.o: CMakeFiles/Library.dir/flags.make
 CMakeFiles/Library.dir/src/protomol/addon/NeutralAtom.cpp.o: src/protomol/addon/NeutralAtom.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/kuang/Documents/Lab/Project/ProtoMol/protomol/CMakeFiles $(CMAKE_PROGRESS_215)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/kuang/Documents/Lab/Project/ProtoMol/protomol/CMakeFiles $(CMAKE_PROGRESS_214)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/Library.dir/src/protomol/addon/NeutralAtom.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/Library.dir/src/protomol/addon/NeutralAtom.cpp.o -c /home/kuang/Documents/Lab/Project/ProtoMol/protomol/src/protomol/addon/NeutralAtom.cpp
 
@@ -4996,7 +4973,7 @@ CMakeFiles/Library.dir/src/protomol/addon/NeutralAtom.cpp.o.provides.build: CMak
 
 CMakeFiles/Library.dir/src/protomol/addon/ProtoMolIon.cpp.o: CMakeFiles/Library.dir/flags.make
 CMakeFiles/Library.dir/src/protomol/addon/ProtoMolIon.cpp.o: src/protomol/addon/ProtoMolIon.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/kuang/Documents/Lab/Project/ProtoMol/protomol/CMakeFiles $(CMAKE_PROGRESS_216)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/kuang/Documents/Lab/Project/ProtoMol/protomol/CMakeFiles $(CMAKE_PROGRESS_215)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/Library.dir/src/protomol/addon/ProtoMolIon.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/Library.dir/src/protomol/addon/ProtoMolIon.cpp.o -c /home/kuang/Documents/Lab/Project/ProtoMol/protomol/src/protomol/addon/ProtoMolIon.cpp
 
@@ -5019,7 +4996,7 @@ CMakeFiles/Library.dir/src/protomol/addon/ProtoMolIon.cpp.o.provides.build: CMak
 
 CMakeFiles/Library.dir/src/protomol/addon/OutputToF.cpp.o: CMakeFiles/Library.dir/flags.make
 CMakeFiles/Library.dir/src/protomol/addon/OutputToF.cpp.o: src/protomol/addon/OutputToF.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/kuang/Documents/Lab/Project/ProtoMol/protomol/CMakeFiles $(CMAKE_PROGRESS_217)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/kuang/Documents/Lab/Project/ProtoMol/protomol/CMakeFiles $(CMAKE_PROGRESS_216)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/Library.dir/src/protomol/addon/OutputToF.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/Library.dir/src/protomol/addon/OutputToF.cpp.o -c /home/kuang/Documents/Lab/Project/ProtoMol/protomol/src/protomol/addon/OutputToF.cpp
 
@@ -5042,7 +5019,7 @@ CMakeFiles/Library.dir/src/protomol/addon/OutputToF.cpp.o.provides.build: CMakeF
 
 CMakeFiles/Library.dir/src/protomol/addon/LuaConfigReader.cpp.o: CMakeFiles/Library.dir/flags.make
 CMakeFiles/Library.dir/src/protomol/addon/LuaConfigReader.cpp.o: src/protomol/addon/LuaConfigReader.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/kuang/Documents/Lab/Project/ProtoMol/protomol/CMakeFiles $(CMAKE_PROGRESS_218)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/kuang/Documents/Lab/Project/ProtoMol/protomol/CMakeFiles $(CMAKE_PROGRESS_217)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/Library.dir/src/protomol/addon/LuaConfigReader.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/Library.dir/src/protomol/addon/LuaConfigReader.cpp.o -c /home/kuang/Documents/Lab/Project/ProtoMol/protomol/src/protomol/addon/LuaConfigReader.cpp
 
@@ -5276,7 +5253,6 @@ Library_OBJECTS = \
 "CMakeFiles/Library.dir/src/protomol/addon/LinearPaulTrap.cpp.o" \
 "CMakeFiles/Library.dir/src/protomol/addon/ToF.cpp.o" \
 "CMakeFiles/Library.dir/src/protomol/addon/Util.cpp.o" \
-"CMakeFiles/Library.dir/src/protomol/addon/MirrorElectrode.cpp.o" \
 "CMakeFiles/Library.dir/src/protomol/addon/BufferGas.cpp.o" \
 "CMakeFiles/Library.dir/src/protomol/addon/Damping.cpp.o" \
 "CMakeFiles/Library.dir/src/protomol/addon/NeutralAtom.cpp.o" \
@@ -5498,7 +5474,6 @@ libProtoMol.a: CMakeFiles/Library.dir/src/protomol/addon/LeapfrogBufferGasIntegr
 libProtoMol.a: CMakeFiles/Library.dir/src/protomol/addon/LinearPaulTrap.cpp.o
 libProtoMol.a: CMakeFiles/Library.dir/src/protomol/addon/ToF.cpp.o
 libProtoMol.a: CMakeFiles/Library.dir/src/protomol/addon/Util.cpp.o
-libProtoMol.a: CMakeFiles/Library.dir/src/protomol/addon/MirrorElectrode.cpp.o
 libProtoMol.a: CMakeFiles/Library.dir/src/protomol/addon/BufferGas.cpp.o
 libProtoMol.a: CMakeFiles/Library.dir/src/protomol/addon/Damping.cpp.o
 libProtoMol.a: CMakeFiles/Library.dir/src/protomol/addon/NeutralAtom.cpp.o
@@ -5726,7 +5701,6 @@ CMakeFiles/Library.dir/requires: CMakeFiles/Library.dir/src/protomol/addon/Leapf
 CMakeFiles/Library.dir/requires: CMakeFiles/Library.dir/src/protomol/addon/LinearPaulTrap.cpp.o.requires
 CMakeFiles/Library.dir/requires: CMakeFiles/Library.dir/src/protomol/addon/ToF.cpp.o.requires
 CMakeFiles/Library.dir/requires: CMakeFiles/Library.dir/src/protomol/addon/Util.cpp.o.requires
-CMakeFiles/Library.dir/requires: CMakeFiles/Library.dir/src/protomol/addon/MirrorElectrode.cpp.o.requires
 CMakeFiles/Library.dir/requires: CMakeFiles/Library.dir/src/protomol/addon/BufferGas.cpp.o.requires
 CMakeFiles/Library.dir/requires: CMakeFiles/Library.dir/src/protomol/addon/Damping.cpp.o.requires
 CMakeFiles/Library.dir/requires: CMakeFiles/Library.dir/src/protomol/addon/NeutralAtom.cpp.o.requires

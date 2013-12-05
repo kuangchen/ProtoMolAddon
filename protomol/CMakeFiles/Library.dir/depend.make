@@ -476,19 +476,6 @@ CMakeFiles/Library.dir/src/protomol/addon/LuaConfigReader.cpp.o: src/protomol/ad
 CMakeFiles/Library.dir/src/protomol/addon/Mathieu.cpp.o: src/protomol/addon/Mathieu.cpp
 CMakeFiles/Library.dir/src/protomol/addon/Mathieu.cpp.o: src/protomol/addon/Mathieu.h
 
-CMakeFiles/Library.dir/src/protomol/addon/MirrorElectrode.cpp.o: src/protomol/addon/MirrorElectrode.cpp
-CMakeFiles/Library.dir/src/protomol/addon/MirrorElectrode.cpp.o: src/protomol/addon/AbstractElectrode.h
-CMakeFiles/Library.dir/src/protomol/addon/MirrorElectrode.cpp.o: src/protomol/addon/MirrorElectrode.h
-CMakeFiles/Library.dir/src/protomol/addon/MirrorElectrode.cpp.o: src/protomol/addon/RealElectrode.h
-CMakeFiles/Library.dir/src/protomol/addon/MirrorElectrode.cpp.o: src/protomol/base/MathUtilities.h
-CMakeFiles/Library.dir/src/protomol/addon/MirrorElectrode.cpp.o: src/protomol/base/PMConstants.h
-CMakeFiles/Library.dir/src/protomol/addon/MirrorElectrode.cpp.o: src/protomol/base/Random.h
-CMakeFiles/Library.dir/src/protomol/addon/MirrorElectrode.cpp.o: src/protomol/base/Report.h
-CMakeFiles/Library.dir/src/protomol/addon/MirrorElectrode.cpp.o: src/protomol/base/Singleton.h
-CMakeFiles/Library.dir/src/protomol/addon/MirrorElectrode.cpp.o: src/protomol/type/Real.h
-CMakeFiles/Library.dir/src/protomol/addon/MirrorElectrode.cpp.o: src/protomol/type/SimpleTypes.h
-CMakeFiles/Library.dir/src/protomol/addon/MirrorElectrode.cpp.o: src/protomol/type/Vector3D.h
-
 CMakeFiles/Library.dir/src/protomol/addon/NeutralAtom.cpp.o: src/protomol/addon/NeutralAtom.cpp
 CMakeFiles/Library.dir/src/protomol/addon/NeutralAtom.cpp.o: src/protomol/ProtoMolApp.h
 CMakeFiles/Library.dir/src/protomol/addon/NeutralAtom.cpp.o: src/protomol/addon/Constants.h
@@ -873,8 +860,6 @@ CMakeFiles/Library.dir/src/protomol/addon/ToF.cpp.o: src/protomol/addon/ToF.cpp
 CMakeFiles/Library.dir/src/protomol/addon/ToF.cpp.o: src/protomol/addon/AbstractElectrode.h
 CMakeFiles/Library.dir/src/protomol/addon/ToF.cpp.o: src/protomol/addon/Electrode.h
 CMakeFiles/Library.dir/src/protomol/addon/ToF.cpp.o: src/protomol/addon/LuaConfigReader.h
-CMakeFiles/Library.dir/src/protomol/addon/ToF.cpp.o: src/protomol/addon/MirrorElectrode.h
-CMakeFiles/Library.dir/src/protomol/addon/ToF.cpp.o: src/protomol/addon/RealElectrode.h
 CMakeFiles/Library.dir/src/protomol/addon/ToF.cpp.o: src/protomol/addon/ToF.h
 CMakeFiles/Library.dir/src/protomol/addon/ToF.cpp.o: src/protomol/base/MathUtilities.h
 CMakeFiles/Library.dir/src/protomol/addon/ToF.cpp.o: src/protomol/base/PMConstants.h

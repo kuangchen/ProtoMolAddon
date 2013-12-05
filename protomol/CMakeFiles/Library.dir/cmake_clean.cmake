@@ -210,7 +210,6 @@ FILE(REMOVE_RECURSE
   "CMakeFiles/Library.dir/src/protomol/addon/LinearPaulTrap.cpp.o"
   "CMakeFiles/Library.dir/src/protomol/addon/ToF.cpp.o"
   "CMakeFiles/Library.dir/src/protomol/addon/Util.cpp.o"
-  "CMakeFiles/Library.dir/src/protomol/addon/MirrorElectrode.cpp.o"
   "CMakeFiles/Library.dir/src/protomol/addon/BufferGas.cpp.o"
   "CMakeFiles/Library.dir/src/protomol/addon/Damping.cpp.o"
   "CMakeFiles/Library.dir/src/protomol/addon/NeutralAtom.cpp.o"

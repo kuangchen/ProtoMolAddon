@@ -26,4 +26,4 @@ void LeapfrogModule::init(ProtoMolApp *app) {
   app->integratorFactory.registerExemplar(new NoseNVTLeapfrogIntegrator());
   app->integratorFactory.registerExemplar(new LeapfrogDataAcquisition());
   app->integratorFactory.registerExemplar(new GPU());
-}
+}      

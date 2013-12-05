@@ -62,15 +62,14 @@ namespace ProtoMolAddon{
 						      Vector3DBlock* forces,
 						      ScalarStructure* energies)
   {
-    double force_conversion = SI::KCAL * SI::AVOGADRO * 1e-10;
     double time = topo->time/SI::TIME_FS;
-    double velocity_conversion = 1e-10 * SI::TIME_FS / TIMEFACTOR;
     for(unsigned int i=0;i<topo->atoms.size();i++)
       {
 	Vector3D f;
-	Vector3D vel((*velocities)[i]); 
-	d.GetForce(vel * velocity_conversion, time, f);
-	(*forces)[i] += f * force_conversion;
+	Vector3D v((*velocities)[i]);
+	Vector3D x((*positions)[i]); 
+	d.GetForce(x, v, time, f);
+	(*forces)[i] += f;
       }
   }
 

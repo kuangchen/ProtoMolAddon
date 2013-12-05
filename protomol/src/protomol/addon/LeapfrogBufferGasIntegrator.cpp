@@ -213,3 +213,4 @@ void LeapfrogBufferGasIntegrator::RemoveEnergeticIon(ProtoMolApp *app) {
     
   }
 }
+

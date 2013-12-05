@@ -4,14 +4,14 @@ SET(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 SET(CMAKE_DEPENDS_CHECK_CXX
-  "/home/kuangchen/Documents/Lab/Project/ProtoMol/protomol/src/protomol/main.cpp" "/home/kuangchen/Documents/Lab/Project/ProtoMol/protomol/CMakeFiles/Executable.dir/src/protomol/main.cpp.o"
-  "/home/kuangchen/Documents/Lab/Project/ProtoMol/protomol/src/protomol/modules.cpp" "/home/kuangchen/Documents/Lab/Project/ProtoMol/protomol/CMakeFiles/Executable.dir/src/protomol/modules.cpp.o"
+  "/home/kuang/Documents/Lab/Project/ProtoMol/protomol/src/protomol/main.cpp" "/home/kuang/Documents/Lab/Project/ProtoMol/protomol/CMakeFiles/Executable.dir/src/protomol/main.cpp.o"
+  "/home/kuang/Documents/Lab/Project/ProtoMol/protomol/src/protomol/modules.cpp" "/home/kuang/Documents/Lab/Project/ProtoMol/protomol/CMakeFiles/Executable.dir/src/protomol/modules.cpp.o"
   )
 SET(CMAKE_CXX_COMPILER_ID "GNU")
 
 # Targets to which this target links.
 SET(CMAKE_TARGET_LINKED_INFO_FILES
-  "/home/kuangchen/Documents/Lab/Project/ProtoMol/protomol/CMakeFiles/Library.dir/DependInfo.cmake"
+  "/home/kuang/Documents/Lab/Project/ProtoMol/protomol/CMakeFiles/Library.dir/DependInfo.cmake"
   )
 
 # The include file search paths:

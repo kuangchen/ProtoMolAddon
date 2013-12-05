@@ -39,10 +39,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/kuangchen/Documents/Lab/Project/ProtoMol/protomol
+CMAKE_SOURCE_DIR = /home/kuang/Documents/Lab/Project/ProtoMol/protomol
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/kuangchen/Documents/Lab/Project/ProtoMol/protomol
+CMAKE_BINARY_DIR = /home/kuang/Documents/Lab/Project/ProtoMol/protomol
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -110,9 +110,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/kuangchen/Documents/Lab/Project/ProtoMol/protomol/CMakeFiles /home/kuangchen/Documents/Lab/Project/ProtoMol/protomol/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/kuang/Documents/Lab/Project/ProtoMol/protomol/CMakeFiles /home/kuang/Documents/Lab/Project/ProtoMol/protomol/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/kuangchen/Documents/Lab/Project/ProtoMol/protomol/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/kuang/Documents/Lab/Project/ProtoMol/protomol/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -357,6 +357,30 @@ src/protomol/addon/LeapfrogBufferGasIntegrator2.cpp.s:
 	$(MAKE) -f CMakeFiles/Library.dir/build.make CMakeFiles/Library.dir/src/protomol/addon/LeapfrogBufferGasIntegrator2.cpp.s
 .PHONY : src/protomol/addon/LeapfrogBufferGasIntegrator2.cpp.s
 
+src/protomol/addon/LeapfrogDampedIntegrator.o: src/protomol/addon/LeapfrogDampedIntegrator.cpp.o
+.PHONY : src/protomol/addon/LeapfrogDampedIntegrator.o
+
+# target to build an object file
+src/protomol/addon/LeapfrogDampedIntegrator.cpp.o:
+	$(MAKE) -f CMakeFiles/Library.dir/build.make CMakeFiles/Library.dir/src/protomol/addon/LeapfrogDampedIntegrator.cpp.o
+.PHONY : src/protomol/addon/LeapfrogDampedIntegrator.cpp.o
+
+src/protomol/addon/LeapfrogDampedIntegrator.i: src/protomol/addon/LeapfrogDampedIntegrator.cpp.i
+.PHONY : src/protomol/addon/LeapfrogDampedIntegrator.i
+
+# target to preprocess a source file
+src/protomol/addon/LeapfrogDampedIntegrator.cpp.i:
+	$(MAKE) -f CMakeFiles/Library.dir/build.make CMakeFiles/Library.dir/src/protomol/addon/LeapfrogDampedIntegrator.cpp.i
+.PHONY : src/protomol/addon/LeapfrogDampedIntegrator.cpp.i
+
+src/protomol/addon/LeapfrogDampedIntegrator.s: src/protomol/addon/LeapfrogDampedIntegrator.cpp.s
+.PHONY : src/protomol/addon/LeapfrogDampedIntegrator.s
+
+# target to generate assembly for a file
+src/protomol/addon/LeapfrogDampedIntegrator.cpp.s:
+	$(MAKE) -f CMakeFiles/Library.dir/build.make CMakeFiles/Library.dir/src/protomol/addon/LeapfrogDampedIntegrator.cpp.s
+.PHONY : src/protomol/addon/LeapfrogDampedIntegrator.cpp.s
+
 src/protomol/addon/LinearPaulTrap.o: src/protomol/addon/LinearPaulTrap.cpp.o
 .PHONY : src/protomol/addon/LinearPaulTrap.o
 
@@ -429,6 +453,30 @@ src/protomol/addon/Mathieu.cpp.s:
 	$(MAKE) -f CMakeFiles/Library.dir/build.make CMakeFiles/Library.dir/src/protomol/addon/Mathieu.cpp.s
 .PHONY : src/protomol/addon/Mathieu.cpp.s
 
+src/protomol/addon/MirrorElectrode.o: src/protomol/addon/MirrorElectrode.cpp.o
+.PHONY : src/protomol/addon/MirrorElectrode.o
+
+# target to build an object file
+src/protomol/addon/MirrorElectrode.cpp.o:
+	$(MAKE) -f CMakeFiles/Library.dir/build.make CMakeFiles/Library.dir/src/protomol/addon/MirrorElectrode.cpp.o
+.PHONY : src/protomol/addon/MirrorElectrode.cpp.o
+
+src/protomol/addon/MirrorElectrode.i: src/protomol/addon/MirrorElectrode.cpp.i
+.PHONY : src/protomol/addon/MirrorElectrode.i
+
+# target to preprocess a source file
+src/protomol/addon/MirrorElectrode.cpp.i:
+	$(MAKE) -f CMakeFiles/Library.dir/build.make CMakeFiles/Library.dir/src/protomol/addon/MirrorElectrode.cpp.i
+.PHONY : src/protomol/addon/MirrorElectrode.cpp.i
+
+src/protomol/addon/MirrorElectrode.s: src/protomol/addon/MirrorElectrode.cpp.s
+.PHONY : src/protomol/addon/MirrorElectrode.s
+
+# target to generate assembly for a file
+src/protomol/addon/MirrorElectrode.cpp.s:
+	$(MAKE) -f CMakeFiles/Library.dir/build.make CMakeFiles/Library.dir/src/protomol/addon/MirrorElectrode.cpp.s
+.PHONY : src/protomol/addon/MirrorElectrode.cpp.s
+
 src/protomol/addon/NeutralAtom.o: src/protomol/addon/NeutralAtom.cpp.o
 .PHONY : src/protomol/addon/NeutralAtom.o
 
@@ -477,6 +525,30 @@ src/protomol/addon/OutputIonSnapshot.cpp.s:
 	$(MAKE) -f CMakeFiles/Library.dir/build.make CMakeFiles/Library.dir/src/protomol/addon/OutputIonSnapshot.cpp.s
 .PHONY : src/protomol/addon/OutputIonSnapshot.cpp.s
 
+src/protomol/addon/OutputToF.o: src/protomol/addon/OutputToF.cpp.o
+.PHONY : src/protomol/addon/OutputToF.o
+
+# target to build an object file
+src/protomol/addon/OutputToF.cpp.o:
+	$(MAKE) -f CMakeFiles/Library.dir/build.make CMakeFiles/Library.dir/src/protomol/addon/OutputToF.cpp.o
+.PHONY : src/protomol/addon/OutputToF.cpp.o
+
+src/protomol/addon/OutputToF.i: src/protomol/addon/OutputToF.cpp.i
+.PHONY : src/protomol/addon/OutputToF.i
+
+# target to preprocess a source file
+src/protomol/addon/OutputToF.cpp.i:
+	$(MAKE) -f CMakeFiles/Library.dir/build.make CMakeFiles/Library.dir/src/protomol/addon/OutputToF.cpp.i
+.PHONY : src/protomol/addon/OutputToF.cpp.i
+
+src/protomol/addon/OutputToF.s: src/protomol/addon/OutputToF.cpp.s
+.PHONY : src/protomol/addon/OutputToF.s
+
+# target to generate assembly for a file
+src/protomol/addon/OutputToF.cpp.s:
+	$(MAKE) -f CMakeFiles/Library.dir/build.make CMakeFiles/Library.dir/src/protomol/addon/OutputToF.cpp.s
+.PHONY : src/protomol/addon/OutputToF.cpp.s
+
 src/protomol/addon/ProtoMolIon.o: src/protomol/addon/ProtoMolIon.cpp.o
 .PHONY : src/protomol/addon/ProtoMolIon.o
 
@@ -524,6 +596,54 @@ src/protomol/addon/Snapshot.s: src/protomol/addon/Snapshot.cpp.s
 src/protomol/addon/Snapshot.cpp.s:
 	$(MAKE) -f CMakeFiles/Library.dir/build.make CMakeFiles/Library.dir/src/protomol/addon/Snapshot.cpp.s
 .PHONY : src/protomol/addon/Snapshot.cpp.s
+
+src/protomol/addon/ToF.o: src/protomol/addon/ToF.cpp.o
+.PHONY : src/protomol/addon/ToF.o
+
+# target to build an object file
+src/protomol/addon/ToF.cpp.o:
+	$(MAKE) -f CMakeFiles/Library.dir/build.make CMakeFiles/Library.dir/src/protomol/addon/ToF.cpp.o
+.PHONY : src/protomol/addon/ToF.cpp.o
+
+src/protomol/addon/ToF.i: src/protomol/addon/ToF.cpp.i
+.PHONY : src/protomol/addon/ToF.i
+
+# target to preprocess a source file
+src/protomol/addon/ToF.cpp.i:
+	$(MAKE) -f CMakeFiles/Library.dir/build.make CMakeFiles/Library.dir/src/protomol/addon/ToF.cpp.i
+.PHONY : src/protomol/addon/ToF.cpp.i
+
+src/protomol/addon/ToF.s: src/protomol/addon/ToF.cpp.s
+.PHONY : src/protomol/addon/ToF.s
+
+# target to generate assembly for a file
+src/protomol/addon/ToF.cpp.s:
+	$(MAKE) -f CMakeFiles/Library.dir/build.make CMakeFiles/Library.dir/src/protomol/addon/ToF.cpp.s
+.PHONY : src/protomol/addon/ToF.cpp.s
+
+src/protomol/addon/ToFDetector.o: src/protomol/addon/ToFDetector.cpp.o
+.PHONY : src/protomol/addon/ToFDetector.o
+
+# target to build an object file
+src/protomol/addon/ToFDetector.cpp.o:
+	$(MAKE) -f CMakeFiles/Library.dir/build.make CMakeFiles/Library.dir/src/protomol/addon/ToFDetector.cpp.o
+.PHONY : src/protomol/addon/ToFDetector.cpp.o
+
+src/protomol/addon/ToFDetector.i: src/protomol/addon/ToFDetector.cpp.i
+.PHONY : src/protomol/addon/ToFDetector.i
+
+# target to preprocess a source file
+src/protomol/addon/ToFDetector.cpp.i:
+	$(MAKE) -f CMakeFiles/Library.dir/build.make CMakeFiles/Library.dir/src/protomol/addon/ToFDetector.cpp.i
+.PHONY : src/protomol/addon/ToFDetector.cpp.i
+
+src/protomol/addon/ToFDetector.s: src/protomol/addon/ToFDetector.cpp.s
+.PHONY : src/protomol/addon/ToFDetector.s
+
+# target to generate assembly for a file
+src/protomol/addon/ToFDetector.cpp.s:
+	$(MAKE) -f CMakeFiles/Library.dir/build.make CMakeFiles/Library.dir/src/protomol/addon/ToFDetector.cpp.s
+.PHONY : src/protomol/addon/ToFDetector.cpp.s
 
 src/protomol/addon/Util.o: src/protomol/addon/Util.cpp.o
 .PHONY : src/protomol/addon/Util.o
@@ -5363,6 +5483,9 @@ help:
 	@echo "... src/protomol/addon/LeapfrogBufferGasIntegrator2.o"
 	@echo "... src/protomol/addon/LeapfrogBufferGasIntegrator2.i"
 	@echo "... src/protomol/addon/LeapfrogBufferGasIntegrator2.s"
+	@echo "... src/protomol/addon/LeapfrogDampedIntegrator.o"
+	@echo "... src/protomol/addon/LeapfrogDampedIntegrator.i"
+	@echo "... src/protomol/addon/LeapfrogDampedIntegrator.s"
 	@echo "... src/protomol/addon/LinearPaulTrap.o"
 	@echo "... src/protomol/addon/LinearPaulTrap.i"
 	@echo "... src/protomol/addon/LinearPaulTrap.s"
@@ -5372,18 +5495,30 @@ help:
 	@echo "... src/protomol/addon/Mathieu.o"
 	@echo "... src/protomol/addon/Mathieu.i"
 	@echo "... src/protomol/addon/Mathieu.s"
+	@echo "... src/protomol/addon/MirrorElectrode.o"
+	@echo "... src/protomol/addon/MirrorElectrode.i"
+	@echo "... src/protomol/addon/MirrorElectrode.s"
 	@echo "... src/protomol/addon/NeutralAtom.o"
 	@echo "... src/protomol/addon/NeutralAtom.i"
 	@echo "... src/protomol/addon/NeutralAtom.s"
 	@echo "... src/protomol/addon/OutputIonSnapshot.o"
 	@echo "... src/protomol/addon/OutputIonSnapshot.i"
 	@echo "... src/protomol/addon/OutputIonSnapshot.s"
+	@echo "... src/protomol/addon/OutputToF.o"
+	@echo "... src/protomol/addon/OutputToF.i"
+	@echo "... src/protomol/addon/OutputToF.s"
 	@echo "... src/protomol/addon/ProtoMolIon.o"
 	@echo "... src/protomol/addon/ProtoMolIon.i"
 	@echo "... src/protomol/addon/ProtoMolIon.s"
 	@echo "... src/protomol/addon/Snapshot.o"
 	@echo "... src/protomol/addon/Snapshot.i"
 	@echo "... src/protomol/addon/Snapshot.s"
+	@echo "... src/protomol/addon/ToF.o"
+	@echo "... src/protomol/addon/ToF.i"
+	@echo "... src/protomol/addon/ToF.s"
+	@echo "... src/protomol/addon/ToFDetector.o"
+	@echo "... src/protomol/addon/ToFDetector.i"
+	@echo "... src/protomol/addon/ToFDetector.s"
 	@echo "... src/protomol/addon/Util.o"
 	@echo "... src/protomol/addon/Util.i"
 	@echo "... src/protomol/addon/Util.s"

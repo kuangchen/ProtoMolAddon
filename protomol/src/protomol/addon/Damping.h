@@ -18,7 +18,7 @@ namespace ProtoMolAddon {
   public:
     Damping();
     Damping(const string &def);
-    void GetForce(const Vector3D &vel, double time, Vector3D& force);
+    void GetForce(const Vector3D& x, const Vector3D& v, double time, Vector3D& f);
   };
 };
 

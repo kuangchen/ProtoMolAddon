@@ -1,2 +1,2 @@
-/home/kuangchen/Documents/Lab/Project/ProtoMol/protomol/CMakeFiles/Executable.dir
-/home/kuangchen/Documents/Lab/Project/ProtoMol/protomol/CMakeFiles/Library.dir
+/home/kuang/Documents/Lab/Project/ProtoMol/protomol/CMakeFiles/Executable.dir
+/home/kuang/Documents/Lab/Project/ProtoMol/protomol/CMakeFiles/Library.dir

@@ -1,6 +1,4 @@
 #include <protomol/addon/ToF.h>
-#include <protomol/addon/RealElectrode.h>
-#include <protomol/addon/MirrorElectrode.h>
 #include <protomol/addon/LuaConfigReader.h>
 #include <string>
 #include <fstream>

@@ -18,6 +18,7 @@
 #include <protomol/module/TopologyModule.h>
 #include <protomol/topology/PeriodicBoundaryConditions.h>
 #include <protomol/topology/VacuumBoundaryConditions.h>
+#include <protomol/addon/ToFForce.h>
 
 using namespace std;
 using namespace ProtoMol;
@@ -43,6 +44,7 @@ void BondedForcesModule::registerForces(ProtoMolApp *app) {
 //f.registerExemplar(new LaserCoolingForce<PeriodicBoundaryConditions>());
     f.registerExemplar(new DampingForce<PeriodicBoundaryConditions>());
     f.registerExemplar(new StrayFieldForce<PeriodicBoundaryConditions>());
+    f.registerExemplar(new ToFForce<PeriodicBoundaryConditions>());
 
   } else if (equalNocase(boundConds, VacuumBoundaryConditions::keyword)) {
     f.registerExemplar(new RBDihedralSystemForce<VacuumBoundaryConditions>());
@@ -54,6 +56,7 @@ void BondedForcesModule::registerForces(ProtoMolApp *app) {
     f.registerExemplar(new LQTForce<VacuumBoundaryConditions>());
     f.registerExemplar(new HarmonicTrapForce<VacuumBoundaryConditions>());
     f.registerExemplar(new DampingForce<VacuumBoundaryConditions>());
+    f.registerExemplar(new ToFForce<VacuumBoundaryConditions>());
 //    f.registerExemplar(new LaserCoolingForce<VacuumBoundaryConditions>());
     f.registerExemplar(new StrayFieldForce<VacuumBoundaryConditions>());
   }

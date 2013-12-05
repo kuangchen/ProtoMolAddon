@@ -35,10 +35,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/kuangchen/Documents/Lab/Project/ProtoMol/protomol
+CMAKE_SOURCE_DIR = /home/kuang/Documents/Lab/Project/ProtoMol/protomol
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/kuangchen/Documents/Lab/Project/ProtoMol/protomol
+CMAKE_BINARY_DIR = /home/kuang/Documents/Lab/Project/ProtoMol/protomol
 
 # Include any dependencies generated for this target.
 include CMakeFiles/Executable.dir/depend.make
@@ -51,17 +51,17 @@ include CMakeFiles/Executable.dir/flags.make
 
 CMakeFiles/Executable.dir/src/protomol/main.cpp.o: CMakeFiles/Executable.dir/flags.make
 CMakeFiles/Executable.dir/src/protomol/main.cpp.o: src/protomol/main.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/kuangchen/Documents/Lab/Project/ProtoMol/protomol/CMakeFiles $(CMAKE_PROGRESS_1)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/kuang/Documents/Lab/Project/ProtoMol/protomol/CMakeFiles $(CMAKE_PROGRESS_1)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/Executable.dir/src/protomol/main.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/Executable.dir/src/protomol/main.cpp.o -c /home/kuangchen/Documents/Lab/Project/ProtoMol/protomol/src/protomol/main.cpp
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/Executable.dir/src/protomol/main.cpp.o -c /home/kuang/Documents/Lab/Project/ProtoMol/protomol/src/protomol/main.cpp
 
 CMakeFiles/Executable.dir/src/protomol/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Executable.dir/src/protomol/main.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/kuangchen/Documents/Lab/Project/ProtoMol/protomol/src/protomol/main.cpp > CMakeFiles/Executable.dir/src/protomol/main.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/kuang/Documents/Lab/Project/ProtoMol/protomol/src/protomol/main.cpp > CMakeFiles/Executable.dir/src/protomol/main.cpp.i
 
 CMakeFiles/Executable.dir/src/protomol/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Executable.dir/src/protomol/main.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/kuangchen/Documents/Lab/Project/ProtoMol/protomol/src/protomol/main.cpp -o CMakeFiles/Executable.dir/src/protomol/main.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/kuang/Documents/Lab/Project/ProtoMol/protomol/src/protomol/main.cpp -o CMakeFiles/Executable.dir/src/protomol/main.cpp.s
 
 CMakeFiles/Executable.dir/src/protomol/main.cpp.o.requires:
 .PHONY : CMakeFiles/Executable.dir/src/protomol/main.cpp.o.requires
@@ -74,17 +74,17 @@ CMakeFiles/Executable.dir/src/protomol/main.cpp.o.provides.build: CMakeFiles/Exe
 
 CMakeFiles/Executable.dir/src/protomol/modules.cpp.o: CMakeFiles/Executable.dir/flags.make
 CMakeFiles/Executable.dir/src/protomol/modules.cpp.o: src/protomol/modules.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/kuangchen/Documents/Lab/Project/ProtoMol/protomol/CMakeFiles $(CMAKE_PROGRESS_2)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/kuang/Documents/Lab/Project/ProtoMol/protomol/CMakeFiles $(CMAKE_PROGRESS_2)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/Executable.dir/src/protomol/modules.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/Executable.dir/src/protomol/modules.cpp.o -c /home/kuangchen/Documents/Lab/Project/ProtoMol/protomol/src/protomol/modules.cpp
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/Executable.dir/src/protomol/modules.cpp.o -c /home/kuang/Documents/Lab/Project/ProtoMol/protomol/src/protomol/modules.cpp
 
 CMakeFiles/Executable.dir/src/protomol/modules.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Executable.dir/src/protomol/modules.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/kuangchen/Documents/Lab/Project/ProtoMol/protomol/src/protomol/modules.cpp > CMakeFiles/Executable.dir/src/protomol/modules.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/kuang/Documents/Lab/Project/ProtoMol/protomol/src/protomol/modules.cpp > CMakeFiles/Executable.dir/src/protomol/modules.cpp.i
 
 CMakeFiles/Executable.dir/src/protomol/modules.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Executable.dir/src/protomol/modules.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/kuangchen/Documents/Lab/Project/ProtoMol/protomol/src/protomol/modules.cpp -o CMakeFiles/Executable.dir/src/protomol/modules.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/kuang/Documents/Lab/Project/ProtoMol/protomol/src/protomol/modules.cpp -o CMakeFiles/Executable.dir/src/protomol/modules.cpp.s
 
 CMakeFiles/Executable.dir/src/protomol/modules.cpp.o.requires:
 .PHONY : CMakeFiles/Executable.dir/src/protomol/modules.cpp.o.requires
@@ -137,6 +137,6 @@ CMakeFiles/Executable.dir/clean:
 .PHONY : CMakeFiles/Executable.dir/clean
 
 CMakeFiles/Executable.dir/depend:
-	cd /home/kuangchen/Documents/Lab/Project/ProtoMol/protomol && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/kuangchen/Documents/Lab/Project/ProtoMol/protomol /home/kuangchen/Documents/Lab/Project/ProtoMol/protomol /home/kuangchen/Documents/Lab/Project/ProtoMol/protomol /home/kuangchen/Documents/Lab/Project/ProtoMol/protomol /home/kuangchen/Documents/Lab/Project/ProtoMol/protomol/CMakeFiles/Executable.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/kuang/Documents/Lab/Project/ProtoMol/protomol && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/kuang/Documents/Lab/Project/ProtoMol/protomol /home/kuang/Documents/Lab/Project/ProtoMol/protomol /home/kuang/Documents/Lab/Project/ProtoMol/protomol /home/kuang/Documents/Lab/Project/ProtoMol/protomol /home/kuang/Documents/Lab/Project/ProtoMol/protomol/CMakeFiles/Executable.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/Executable.dir/depend
 

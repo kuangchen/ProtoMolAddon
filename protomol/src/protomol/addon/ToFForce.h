@@ -25,7 +25,7 @@ namespace ProtoMolAddon{
     ToF tof;
 
   public:
-    ToFForce() { ToF::Test(); }
+    ToFForce() {}
     ToFForce(const string& def):
       def(def),
       tof(def)

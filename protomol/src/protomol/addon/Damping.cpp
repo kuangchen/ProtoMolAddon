@@ -22,7 +22,7 @@ Damping::Damping(const string &def) :
   end = reader.GetValue<double>("damping.t_end");
 }
 
-void Damping::GetForce(const Vector3D &vel, double time, Vector3D& force) {
+void Damping::GetForce(const Vector3D& x, const Vector3D& v, double time, Vector3D& f) {
   double c = ((start<time) && (end>time)) ? coeff : 0;
-  force = -vel * c;
+  f = -(v+x*c)*2*c;
 }

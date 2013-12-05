@@ -1,6 +1,0 @@
-#include <protomol/addon/Ion.h>
-
-using namespace ProtoMolAddon;
-using namespace ProtoMolAddon::Util;
-using namespace ProtoMol::Constant;
-using namespace ProtoMolAddon::Constant;

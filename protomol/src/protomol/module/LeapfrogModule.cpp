@@ -7,7 +7,7 @@
 #include <protomol/integrator/leapfrog/NoseNVTLeapfrogIntegrator.h>
 #include <protomol/integrator/leapfrog/LeapfrogDataAcquisition.h>
 #include <protomol/integrator/leapfrog/GPU.h>
-
+#include <protomol/addon/LeapfrogDampedIntegrator.h>
 #include <protomol/addon/LeapfrogBufferGasIntegrator.h>
 #include <protomol/addon/LeapfrogBufferGasIntegrator2.h>
 
@@ -17,6 +17,7 @@ using namespace ProtoMolAddon;
 
 void LeapfrogModule::init(ProtoMolApp *app) {
   app->integratorFactory.registerExemplar(new LeapfrogIntegrator());
+  app->integratorFactory.registerExemplar(new LeapfrogDampedIntegrator());
   app->integratorFactory.registerExemplar(new LeapfrogBufferGasIntegrator());
   app->integratorFactory.registerExemplar(new LeapfrogBufferGasIntegrator2());
   app->integratorFactory.registerExemplar(new LeapfrogTruncatedShadow());

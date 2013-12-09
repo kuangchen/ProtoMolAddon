@@ -21,6 +21,8 @@ void ToFDetector::Initialize(const ProtoMolApp* app) {
   hit_time.resize(size);
   hit_position.resize(size);
   hit_velocity.resize(size);
+  for (int i=0; i<size; i++) 
+    atom_name.push_back(app->topology->atoms.name);
 }
 
 void ToFDetector::Update(const ProtoMolApp* app) {
@@ -41,7 +43,8 @@ namespace ProtoMolAddon {
 
   ostream& operator<< (ostream& os, ToFDetector& detector) {
     for (int i=0; i<detector.hit_time.size(); i++)
-      os << detector.hit_time[i] << "\t" 
+      os << detector.atom_name[i] << "\t" 
+	 << detector.hit_time[i] << "\t" 
 	 << detector.hit_position[i] * POSITION_CONV << "\t" 
 	 << detector.hit_velocity[i] * VELOCITY_CONV << "\n";
 

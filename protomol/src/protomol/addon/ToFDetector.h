@@ -6,7 +6,9 @@
 #include <protomol/topology/TopologyUtilities.h>
 #include <protomol/base/PMConstants.h>
 #include <protomol/ProtoMolApp.h>
+#include <string>
 
+using namespace std;
 using namespace ProtoMol;
 
 namespace ProtoMolAddon {
@@ -17,6 +19,7 @@ namespace ProtoMolAddon {
     vector<double> hit_time;
     vector<Vector3D> hit_position;
     vector<Vector3D> hit_velocity;
+    vector<string> atom_name;
     double detector_pos;
 
   public:

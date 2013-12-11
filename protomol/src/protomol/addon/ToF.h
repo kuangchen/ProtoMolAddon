@@ -6,7 +6,6 @@
 #include <vector>
 #include <string>
 #include <array>
-#include <protomol/addon/AbstractElectrode.h>
 #include <protomol/addon/Electrode.h>
 
 using namespace std;

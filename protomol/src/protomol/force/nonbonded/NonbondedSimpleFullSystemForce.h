@@ -116,7 +116,7 @@ namespace ProtoMol {
       
       myOneAtomPair.initialize(realTopo, positions, forces, energies);
       
-      #pragma omp parallel for schedule(dynamic, 3)
+#pragma omp parallel for schedule(dynamic, 1)
       for (int blocki = i0; blocki < i1; blocki += myBlockSize) {
         int blocki_max = blocki;
         if (blocki_max < j0) blocki_max = j0;

@@ -21,8 +21,7 @@ void ToFDetector::Initialize(const ProtoMolApp* app) {
   hit_time.resize(size);
   hit_position.resize(size);
   hit_velocity.resize(size);
-  for (int i=0; i<size; i++) 
-    atom_name.push_back(app->topology->atoms.name);
+  atom_name.resize(size);
 }
 
 void ToFDetector::Update(const ProtoMolApp* app) {
@@ -32,9 +31,10 @@ void ToFDetector::Update(const ProtoMolApp* app) {
       //sqrt(app->positions[i][1] * app->positions[i][1] + app->positions[i][2] * app->positions[i][2]) * POSITION_CONV < 0.8 * 0.0254) {
       {
 	hit[i] = true;
-	hit_time[i] = app->topology->time * TIME_CONV - 1e-6;
+	hit_time[i] = app->topology->time * TIME_CONV - 1e-6 + 0.5/1.8e6;
 	hit_position[i] = app->positions[i];
 	hit_velocity[i] = app->velocities[i];
+	atom_name[i] = app->topology->atoms[i].name;
       }
   }
 }

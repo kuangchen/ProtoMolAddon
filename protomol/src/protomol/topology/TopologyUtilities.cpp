@@ -163,7 +163,7 @@ namespace ProtoMol {
   Real kineticEnergy(const GenericTopology *topology,
                      const Vector3DBlock *velocities) {
     Real kineticEnergy = 0.0;
-    #pragma omp for
+    #pragma omp parallel for reduction(+:kineticEnergy)
     for (unsigned int i = 0; i < topology->atoms.size(); i++)
       kineticEnergy += topology->atoms[i].scaledMass *
                        ((*velocities)[i]).normSquared();

@@ -7,28 +7,52 @@
 #include <protomol/base/PMConstants.h>
 #include <protomol/ProtoMolApp.h>
 #include <string>
+#include <vector>
+#include <memory>
 
-using namespace std;
+using std::shared_ptr;
+using std::string;
+using std::vector;
+using std::ostream;
 using namespace ProtoMol;
 
 namespace ProtoMolAddon {
 
   class ToFDetector {
+  public:
+    class AtomRecord {
+    public:
+      const string &name;
+      const Vector3D &pos;
+      const Vector3D &vel;
+      double time;
+      bool hit;
+
+    private:
+      AtomRecord(const AtomRecord &r);
+      const AtomRecord& operator= (const AtomRecord &r);
+
+    public:
+      AtomRecord(const string &name, const Vector3D &pos, const Vector3D &vel, double time=0);
+
+      bool Hit() const { return hit; }
+      void SetHitTime(double t) { hit = true; time = t; }
+
+      friend ostream& operator<< (ostream &os, const AtomRecord &r);
+      friend class ToFDetector;
+    };
+
+
   private:
-    vector<bool> hit;
-    vector<double> hit_time;
-    vector<Vector3D> hit_position;
-    vector<Vector3D> hit_velocity;
-    vector<string> atom_name;
+    vector< shared_ptr<AtomRecord> > record_list;
     double detector_pos;
 
   public:
     ToFDetector(double detector_pos=0);
-    ~ToFDetector();
-    void Initialize(const ProtoMolApp* app);
-    void Update(const ProtoMolApp* app);
-    void Finalize();
-    friend ostream& operator<<(ostream& os, ToFDetector& tof);
+
+    void Initialize(const ProtoMolApp *app);
+    void UpdateRecord(const ProtoMolApp *app);
+    friend ostream& operator<< (ostream &os, const ToFDetector &detector);
     friend class OutputToF;
   };
 

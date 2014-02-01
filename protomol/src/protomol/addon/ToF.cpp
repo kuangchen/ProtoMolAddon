@@ -67,28 +67,30 @@ namespace ProtoMolAddon {
 
 
 double ToF::GetTotalRealTimePotential(const Vector3D& pos, double t, const boost::array<int, 3>& offset=boost::array<int, 3>()) {
-  double total_potl = 0;
-  //cout << "pos = " << pos << "\n";
-  for (auto& el: elct) {
-    double a = el.GetRealTimePotential(pos, t, offset);
-    //cout << el.GetLabel() << "\t" << a << "\n";
-    total_potl += a;
-  }
+  vector<double> potl;
+  transform(elct.begin(), elct.end(), potl.begin(), 
+	    [&pos, t, &offset](const Electrode& r) { return r.GetRealTimePotential(pos, t, offset); } );
 
-  return total_potl;
+  return accumulate(potl.begin(), potl.end(), 0.0);
+
+  // double total_potl = 0;
+  // //cout << "pos = " << pos << "\n";
+  // for (auto& el: elct) {
+  //   double a = el.GetRealTimePotential(pos, t, offset);
+  //   //cout << el.GetLabel() << "\t" << a << "\n";
+  //   total_potl += a;
+  // }
+
+  // return total_potl;
 }
 
 double ToF::GetTotalRealTimeInterpolatedPotential(const Vector3D& pos, double t) {
-  double total_potl = 0;
-  cout << "pos = " << pos << "\n";
+  vector<double> potl;
+  transform(elct.begin(), elct.end(), potl.begin(), 
+	    [&pos, t](const Electrode& r) { return r.GetRealTimeInterpolatedPotential(pos, t); } );
 
-  for (auto& el: elct) {
-    double a = el.GetRealTimeInterpolatedPotential(pos, t);
-    //cout << el.GetLabel() << "\t" << a << "\n";
-    total_potl += a;
-  }
-  //cout << "total = " << total_potl << "\n";
-  return total_potl;
+  return accumulate(potl.begin(), potl.end(), 0.0);
+
 }
 
 void ToF::GetForce(double charge, const Vector3D &pos, double t, Vector3D& force) {

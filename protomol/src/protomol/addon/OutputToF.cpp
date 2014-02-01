@@ -47,11 +47,15 @@ void OutputToF::doInitialize() {
 }
 
 void OutputToF::doRun(int step) {
-  detector.Update(app);
+  detector.UpdateRecord(app);
 }
 
 void OutputToF::doFinalize(int step) {
   ofstream f(output_filename);
+
+  if (!f)
+    std::cerr << "Fail to open file " << output_filename << std::endl;
+
   f << detector;
 }
 

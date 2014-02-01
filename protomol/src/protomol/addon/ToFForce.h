@@ -66,13 +66,12 @@ namespace ProtoMolAddon{
 						      Vector3DBlock* forces,
 						      ScalarStructure* energies)
   {
-#pragma omp parallel for 
     for(unsigned int i=0;i<topo->atoms.size();i++) {
 	Vector3D f;
 	Vector3D pos((*positions)[i]);
 	tof.GetForce(topo->atoms[i].scaledCharge * CHARGE_CONV * ELECTRON_CHARGE, 
 		     pos * POSITION_CONV, 
-		     topo->time * TIME_CONV - 1e-6 + 0.5/1.8e6, 
+		     topo->time * TIME_CONV, 
 		     f);
 	//	cout << scientific << "i = " << i << "\tf = " << f << "\n";
 	(*forces)[i] += f * FORCE_CONV;

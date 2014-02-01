@@ -7,47 +7,48 @@ using namespace ProtoMolAddon;
 using namespace ProtoMol;
 using namespace ProtoMolAddon::Constant;
 
+ToFDetector::AtomRecord::AtomRecord(const string &name, 
+				    const Vector3D &pos, 
+				    const Vector3D &vel, 
+				    double time) : 
+  name(name), pos(pos), vel(vel), time(time), hit(false) {
+}
+
+ostream& ProtoMolAddon::operator<< (ostream &os, const ToFDetector::AtomRecord &r) {
+  os << r.name << "\t" 
+     << r.time << "\t" 
+     << r.pos * POSITION_CONV << "\t" 
+     << r.vel * VELOCITY_CONV << std::endl;
+
+  return os;
+}
+
+
 ToFDetector::ToFDetector(double detector_pos):
-  detector_pos(detector_pos) {
+  record_list(), detector_pos(detector_pos) 
+{}
 
+
+void ToFDetector::Initialize(const ProtoMolApp *app) {
+  for (size_t i=0; i<app->positions.size(); i++) 
+    record_list.push_back(shared_ptr<AtomRecord>(new AtomRecord(app->topology->atoms[i].name,
+								app->positions[i],
+								app->velocities[i])));
 }
 
-ToFDetector::~ToFDetector() {}
 
-void ToFDetector::Initialize(const ProtoMolApp* app) {
-  int size = app->positions.size();
-
-  hit.resize(size, false);
-  hit_time.resize(size);
-  hit_position.resize(size);
-  hit_velocity.resize(size);
-  atom_name.resize(size);
-}
-
-void ToFDetector::Update(const ProtoMolApp* app) {
-  for (int i=0; i<app->positions.size(); i++) {
-    if (hit[i]) continue;
-    else if (app->positions[i][0] * POSITION_CONV > detector_pos)//  &&
-      //sqrt(app->positions[i][1] * app->positions[i][1] + app->positions[i][2] * app->positions[i][2]) * POSITION_CONV < 0.8 * 0.0254) {
-      {
-	hit[i] = true;
-	hit_time[i] = app->topology->time * TIME_CONV - 1e-6 + 0.5/1.8e6;
-	hit_position[i] = app->positions[i];
-	hit_velocity[i] = app->velocities[i];
-	atom_name[i] = app->topology->atoms[i].name;
-      }
+void ToFDetector::UpdateRecord(const ProtoMolApp *app) {
+  for (auto &r: record_list) {
+    if (r->Hit()) continue;
+    else if (r->pos[0] * POSITION_CONV > detector_pos)
+      r->SetHitTime(app->topology->time * TIME_CONV);
   }
 }
 
-namespace ProtoMolAddon {
 
-  ostream& operator<< (ostream& os, ToFDetector& detector) {
-    for (int i=0; i<detector.hit_time.size(); i++)
-      os << detector.atom_name[i] << "\t" 
-	 << detector.hit_time[i] << "\t" 
-	 << detector.hit_position[i] * POSITION_CONV << "\t" 
-	 << detector.hit_velocity[i] * VELOCITY_CONV << "\n";
+ostream& ProtoMolAddon::operator<< (ostream &os, const ToFDetector &detector) {
+  for (auto &r : detector.record_list) os << r;
 
-    return os;
-  }
+  return os;
 }
+

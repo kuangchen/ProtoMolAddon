@@ -67,40 +67,33 @@ namespace ProtoMolAddon {
 
 
 double ToF::GetTotalRealTimePotential(const Vector3D& pos, double t, const boost::array<int, 3>& offset=boost::array<int, 3>()) {
-  vector<double> potl;
-  transform(elct.begin(), elct.end(), potl.begin(), 
-	    [&pos, t, &offset](const Electrode& r) { return r.GetRealTimePotential(pos, t, offset); } );
+  double total_potl = 0;
+  for (auto& el: elct) {
+    double a = el.GetRealTimePotential(pos, t, offset);
+    total_potl += a;
+  }
 
-  return accumulate(potl.begin(), potl.end(), 0.0);
-
-  // double total_potl = 0;
-  // //cout << "pos = " << pos << "\n";
-  // for (auto& el: elct) {
-  //   double a = el.GetRealTimePotential(pos, t, offset);
-  //   //cout << el.GetLabel() << "\t" << a << "\n";
-  //   total_potl += a;
-  // }
-
-  // return total_potl;
+  return total_potl;
 }
 
 double ToF::GetTotalRealTimeInterpolatedPotential(const Vector3D& pos, double t) {
-  vector<double> potl;
-  transform(elct.begin(), elct.end(), potl.begin(), 
-	    [&pos, t](const Electrode& r) { return r.GetRealTimeInterpolatedPotential(pos, t); } );
+  double total_potl = 0;
+  for (auto &el: elct) {
+    double a = el.GetRealTimeInterpolatedPotential(pos, t);
+    total_potl += a;
+  }
 
-  return accumulate(potl.begin(), potl.end(), 0.0);
-
+  return total_potl;
 }
 
 void ToF::GetForce(double charge, const Vector3D &pos, double t, Vector3D& force) {
   Vector3D gradient;
+  double total_pot_minus = GetTotalRealTimePotential(pos, t);
 
   for (int i=0; i<3; i++) {
     boost::array<int, 3> offset_plus = {0,0,0};
     offset_plus[i] = 1; 
     double total_pot_plus = GetTotalRealTimePotential(pos, t, offset_plus);
-    double total_pot_minus = GetTotalRealTimePotential(pos, t);
     
     gradient[i] = -(total_pot_plus - total_pot_minus)/(elct[0].Potl().GetDx()[i]);
   }

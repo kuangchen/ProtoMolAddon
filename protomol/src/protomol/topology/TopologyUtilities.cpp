@@ -8,7 +8,6 @@
 #include <protomol/base/PMConstants.h>
 #include <protomol/base/StringUtilities.h>
 #include <protomol/type/ScalarStructure.h>
-#include <omp.h>
 #include <vector>
 #include <algorithm>
 #include <set>
@@ -163,7 +162,6 @@ namespace ProtoMol {
   Real kineticEnergy(const GenericTopology *topology,
                      const Vector3DBlock *velocities) {
     Real kineticEnergy = 0.0;
-    #pragma omp parallel for reduction(+:kineticEnergy)
     for (unsigned int i = 0; i < topology->atoms.size(); i++)
       kineticEnergy += topology->atoms[i].scaledMass *
                        ((*velocities)[i]).normSquared();
@@ -631,7 +629,6 @@ namespace ProtoMol {
     Vector3D sumMomentum(
       (*velocities)[atomList[0]] * topo->atoms[atomList[0]].scaledMass);
     Vector3D tempC(0.0, 0.0, 0.0);
-    #pragma omp for
     for (unsigned int i = 1; i < atomList.size(); i++) {
       Vector3D tempX(
         (*velocities)[atomList[i]] * topo->atoms[atomList[i]].scaledMass);
@@ -662,7 +659,6 @@ namespace ProtoMol {
     Vector3D center((*positions)[atomList[0]] * mass);
     Vector3D tempC(0.0, 0.0, 0.0);
 
-    #pragma omp for
     for (int i = 1; i < numAtoms; i++) {
       mass = topo->atoms[atomList[i]].scaledMass;
       sumMass += mass;

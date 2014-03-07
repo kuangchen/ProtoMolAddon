@@ -7,13 +7,14 @@
 #include <protomol/integrator/leapfrog/NoseNVTLeapfrogIntegrator.h>
 #include <protomol/integrator/leapfrog/LeapfrogDataAcquisition.h>
 #include <protomol/integrator/leapfrog/GPU.h>
-#include <protomol/addon/LeapfrogDampedIntegrator.h>
+#include <protomol/addon/damping/LeapfrogDampedIntegrator.h>
 #include <protomol/addon/LeapfrogBufferGasIntegrator.h>
 #include <protomol/addon/LeapfrogBufferGasIntegrator2.h>
 
 using namespace std;
 using namespace ProtoMol;
 using namespace ProtoMolAddon;
+using namespace ProtoMolAddon::Damping;
 
 void LeapfrogModule::init(ProtoMolApp *app) {
   app->integratorFactory.registerExemplar(new LeapfrogIntegrator());

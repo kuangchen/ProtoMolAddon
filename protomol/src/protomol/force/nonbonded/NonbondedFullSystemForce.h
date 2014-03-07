@@ -5,7 +5,6 @@
 #include <protomol/force/system/SystemForce.h>
 #include <protomol/parallel/Parallel.h>
 #include <protomol/type/SimpleTypes.h>
-#include <omp.h>
 
 namespace ProtoMol {
   //____ NonbondedFullSystemForce

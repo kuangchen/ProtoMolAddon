@@ -5,6 +5,8 @@ set(CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH} "${CMAKE_SOURCE_DIR}/cmake/Modules/")
 SET(CMAKE_CXX_FLAGS "-std=c++0x -O3")
 add_definitions (-fpermissive -Wall -g -O3 )
 
+find_package(Boost REQUIRED COMPONENTS program_options)
+
 find_package(Lua51)
 if (LUA51_FOUND)
   include_directories( ${LUA_INCLUDE_DIRS} )
@@ -387,13 +389,20 @@ set( LIBRARY_IO_SOURCES ${IO_SOURCES} ${GROMACS_IO_SOURCES} )
 file( GLOB ADDON_SOURCES "src/protomol/addon/*.cpp" )
 source_group( "src\\Addons" FILES ${ADDON_SOURCES} )
 
+file( GLOB ADDON_DAMPING_SOURCES "src/protomol/addon/damping/*.cpp" )
+source_group( "src\\Addons\\Damping" FILES ${ADDON_DAMPING_SOURCES} )
+
+file( GLOB ADDON_TOF_SOURCES "src/protomol/addon/tof/*.cpp" )
+source_group( "src\\Addons\\ToF" FILES ${ADDON_TOF_SOURCES} )
+
 
 # Combined sources
-set( LIBRARY_SOURCES ${LIBRARY_BASE_SOURCES} ${LIBRARY_FOURCE_SOURCES} ${LIBRARY_INTEGRATOR_SOURCES} ${LIBRARY_IO_SOURCES} ${ADDON_SOURCES} )
+set( LIBRARY_SOURCES ${LIBRARY_BASE_SOURCES} ${LIBRARY_FOURCE_SOURCES} ${LIBRARY_INTEGRATOR_SOURCES} ${LIBRARY_IO_SOURCES} ${ADDON_SOURCES} ${ADDON_TOF_SOURCES} ${ADDON_DAMPING_SOURCES})
 
 # Library Compilation
 add_library( Library STATIC ${LIBRARY_SOURCES} ${LIBRARY_HEADERS} )
 target_link_libraries( Library ${LIBS} )
+target_link_libraries( Library ${Boost_LIBRARIES})
 
 set_target_properties( Library PROPERTIES OUTPUT_NAME ProtoMol )
 

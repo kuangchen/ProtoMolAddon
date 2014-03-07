@@ -357,30 +357,6 @@ src/protomol/addon/LeapfrogBufferGasIntegrator2.cpp.s:
 	$(MAKE) -f CMakeFiles/Library.dir/build.make CMakeFiles/Library.dir/src/protomol/addon/LeapfrogBufferGasIntegrator2.cpp.s
 .PHONY : src/protomol/addon/LeapfrogBufferGasIntegrator2.cpp.s
 
-src/protomol/addon/LeapfrogDampedIntegrator.o: src/protomol/addon/LeapfrogDampedIntegrator.cpp.o
-.PHONY : src/protomol/addon/LeapfrogDampedIntegrator.o
-
-# target to build an object file
-src/protomol/addon/LeapfrogDampedIntegrator.cpp.o:
-	$(MAKE) -f CMakeFiles/Library.dir/build.make CMakeFiles/Library.dir/src/protomol/addon/LeapfrogDampedIntegrator.cpp.o
-.PHONY : src/protomol/addon/LeapfrogDampedIntegrator.cpp.o
-
-src/protomol/addon/LeapfrogDampedIntegrator.i: src/protomol/addon/LeapfrogDampedIntegrator.cpp.i
-.PHONY : src/protomol/addon/LeapfrogDampedIntegrator.i
-
-# target to preprocess a source file
-src/protomol/addon/LeapfrogDampedIntegrator.cpp.i:
-	$(MAKE) -f CMakeFiles/Library.dir/build.make CMakeFiles/Library.dir/src/protomol/addon/LeapfrogDampedIntegrator.cpp.i
-.PHONY : src/protomol/addon/LeapfrogDampedIntegrator.cpp.i
-
-src/protomol/addon/LeapfrogDampedIntegrator.s: src/protomol/addon/LeapfrogDampedIntegrator.cpp.s
-.PHONY : src/protomol/addon/LeapfrogDampedIntegrator.s
-
-# target to generate assembly for a file
-src/protomol/addon/LeapfrogDampedIntegrator.cpp.s:
-	$(MAKE) -f CMakeFiles/Library.dir/build.make CMakeFiles/Library.dir/src/protomol/addon/LeapfrogDampedIntegrator.cpp.s
-.PHONY : src/protomol/addon/LeapfrogDampedIntegrator.cpp.s
-
 src/protomol/addon/LinearPaulTrap.o: src/protomol/addon/LinearPaulTrap.cpp.o
 .PHONY : src/protomol/addon/LinearPaulTrap.o
 
@@ -501,30 +477,6 @@ src/protomol/addon/OutputIonSnapshot.cpp.s:
 	$(MAKE) -f CMakeFiles/Library.dir/build.make CMakeFiles/Library.dir/src/protomol/addon/OutputIonSnapshot.cpp.s
 .PHONY : src/protomol/addon/OutputIonSnapshot.cpp.s
 
-src/protomol/addon/OutputToF.o: src/protomol/addon/OutputToF.cpp.o
-.PHONY : src/protomol/addon/OutputToF.o
-
-# target to build an object file
-src/protomol/addon/OutputToF.cpp.o:
-	$(MAKE) -f CMakeFiles/Library.dir/build.make CMakeFiles/Library.dir/src/protomol/addon/OutputToF.cpp.o
-.PHONY : src/protomol/addon/OutputToF.cpp.o
-
-src/protomol/addon/OutputToF.i: src/protomol/addon/OutputToF.cpp.i
-.PHONY : src/protomol/addon/OutputToF.i
-
-# target to preprocess a source file
-src/protomol/addon/OutputToF.cpp.i:
-	$(MAKE) -f CMakeFiles/Library.dir/build.make CMakeFiles/Library.dir/src/protomol/addon/OutputToF.cpp.i
-.PHONY : src/protomol/addon/OutputToF.cpp.i
-
-src/protomol/addon/OutputToF.s: src/protomol/addon/OutputToF.cpp.s
-.PHONY : src/protomol/addon/OutputToF.s
-
-# target to generate assembly for a file
-src/protomol/addon/OutputToF.cpp.s:
-	$(MAKE) -f CMakeFiles/Library.dir/build.make CMakeFiles/Library.dir/src/protomol/addon/OutputToF.cpp.s
-.PHONY : src/protomol/addon/OutputToF.cpp.s
-
 src/protomol/addon/ProtoMolIon.o: src/protomol/addon/ProtoMolIon.cpp.o
 .PHONY : src/protomol/addon/ProtoMolIon.o
 
@@ -597,30 +549,6 @@ src/protomol/addon/ToF.cpp.s:
 	$(MAKE) -f CMakeFiles/Library.dir/build.make CMakeFiles/Library.dir/src/protomol/addon/ToF.cpp.s
 .PHONY : src/protomol/addon/ToF.cpp.s
 
-src/protomol/addon/ToFDetector.o: src/protomol/addon/ToFDetector.cpp.o
-.PHONY : src/protomol/addon/ToFDetector.o
-
-# target to build an object file
-src/protomol/addon/ToFDetector.cpp.o:
-	$(MAKE) -f CMakeFiles/Library.dir/build.make CMakeFiles/Library.dir/src/protomol/addon/ToFDetector.cpp.o
-.PHONY : src/protomol/addon/ToFDetector.cpp.o
-
-src/protomol/addon/ToFDetector.i: src/protomol/addon/ToFDetector.cpp.i
-.PHONY : src/protomol/addon/ToFDetector.i
-
-# target to preprocess a source file
-src/protomol/addon/ToFDetector.cpp.i:
-	$(MAKE) -f CMakeFiles/Library.dir/build.make CMakeFiles/Library.dir/src/protomol/addon/ToFDetector.cpp.i
-.PHONY : src/protomol/addon/ToFDetector.cpp.i
-
-src/protomol/addon/ToFDetector.s: src/protomol/addon/ToFDetector.cpp.s
-.PHONY : src/protomol/addon/ToFDetector.s
-
-# target to generate assembly for a file
-src/protomol/addon/ToFDetector.cpp.s:
-	$(MAKE) -f CMakeFiles/Library.dir/build.make CMakeFiles/Library.dir/src/protomol/addon/ToFDetector.cpp.s
-.PHONY : src/protomol/addon/ToFDetector.cpp.s
-
 src/protomol/addon/Util.o: src/protomol/addon/Util.cpp.o
 .PHONY : src/protomol/addon/Util.o
 
@@ -644,6 +572,126 @@ src/protomol/addon/Util.s: src/protomol/addon/Util.cpp.s
 src/protomol/addon/Util.cpp.s:
 	$(MAKE) -f CMakeFiles/Library.dir/build.make CMakeFiles/Library.dir/src/protomol/addon/Util.cpp.s
 .PHONY : src/protomol/addon/Util.cpp.s
+
+src/protomol/addon/damping/DampingSpec.o: src/protomol/addon/damping/DampingSpec.cpp.o
+.PHONY : src/protomol/addon/damping/DampingSpec.o
+
+# target to build an object file
+src/protomol/addon/damping/DampingSpec.cpp.o:
+	$(MAKE) -f CMakeFiles/Library.dir/build.make CMakeFiles/Library.dir/src/protomol/addon/damping/DampingSpec.cpp.o
+.PHONY : src/protomol/addon/damping/DampingSpec.cpp.o
+
+src/protomol/addon/damping/DampingSpec.i: src/protomol/addon/damping/DampingSpec.cpp.i
+.PHONY : src/protomol/addon/damping/DampingSpec.i
+
+# target to preprocess a source file
+src/protomol/addon/damping/DampingSpec.cpp.i:
+	$(MAKE) -f CMakeFiles/Library.dir/build.make CMakeFiles/Library.dir/src/protomol/addon/damping/DampingSpec.cpp.i
+.PHONY : src/protomol/addon/damping/DampingSpec.cpp.i
+
+src/protomol/addon/damping/DampingSpec.s: src/protomol/addon/damping/DampingSpec.cpp.s
+.PHONY : src/protomol/addon/damping/DampingSpec.s
+
+# target to generate assembly for a file
+src/protomol/addon/damping/DampingSpec.cpp.s:
+	$(MAKE) -f CMakeFiles/Library.dir/build.make CMakeFiles/Library.dir/src/protomol/addon/damping/DampingSpec.cpp.s
+.PHONY : src/protomol/addon/damping/DampingSpec.cpp.s
+
+src/protomol/addon/damping/LeapfrogDampedIntegrator.o: src/protomol/addon/damping/LeapfrogDampedIntegrator.cpp.o
+.PHONY : src/protomol/addon/damping/LeapfrogDampedIntegrator.o
+
+# target to build an object file
+src/protomol/addon/damping/LeapfrogDampedIntegrator.cpp.o:
+	$(MAKE) -f CMakeFiles/Library.dir/build.make CMakeFiles/Library.dir/src/protomol/addon/damping/LeapfrogDampedIntegrator.cpp.o
+.PHONY : src/protomol/addon/damping/LeapfrogDampedIntegrator.cpp.o
+
+src/protomol/addon/damping/LeapfrogDampedIntegrator.i: src/protomol/addon/damping/LeapfrogDampedIntegrator.cpp.i
+.PHONY : src/protomol/addon/damping/LeapfrogDampedIntegrator.i
+
+# target to preprocess a source file
+src/protomol/addon/damping/LeapfrogDampedIntegrator.cpp.i:
+	$(MAKE) -f CMakeFiles/Library.dir/build.make CMakeFiles/Library.dir/src/protomol/addon/damping/LeapfrogDampedIntegrator.cpp.i
+.PHONY : src/protomol/addon/damping/LeapfrogDampedIntegrator.cpp.i
+
+src/protomol/addon/damping/LeapfrogDampedIntegrator.s: src/protomol/addon/damping/LeapfrogDampedIntegrator.cpp.s
+.PHONY : src/protomol/addon/damping/LeapfrogDampedIntegrator.s
+
+# target to generate assembly for a file
+src/protomol/addon/damping/LeapfrogDampedIntegrator.cpp.s:
+	$(MAKE) -f CMakeFiles/Library.dir/build.make CMakeFiles/Library.dir/src/protomol/addon/damping/LeapfrogDampedIntegrator.cpp.s
+.PHONY : src/protomol/addon/damping/LeapfrogDampedIntegrator.cpp.s
+
+src/protomol/addon/tof/AtomRecord.o: src/protomol/addon/tof/AtomRecord.cpp.o
+.PHONY : src/protomol/addon/tof/AtomRecord.o
+
+# target to build an object file
+src/protomol/addon/tof/AtomRecord.cpp.o:
+	$(MAKE) -f CMakeFiles/Library.dir/build.make CMakeFiles/Library.dir/src/protomol/addon/tof/AtomRecord.cpp.o
+.PHONY : src/protomol/addon/tof/AtomRecord.cpp.o
+
+src/protomol/addon/tof/AtomRecord.i: src/protomol/addon/tof/AtomRecord.cpp.i
+.PHONY : src/protomol/addon/tof/AtomRecord.i
+
+# target to preprocess a source file
+src/protomol/addon/tof/AtomRecord.cpp.i:
+	$(MAKE) -f CMakeFiles/Library.dir/build.make CMakeFiles/Library.dir/src/protomol/addon/tof/AtomRecord.cpp.i
+.PHONY : src/protomol/addon/tof/AtomRecord.cpp.i
+
+src/protomol/addon/tof/AtomRecord.s: src/protomol/addon/tof/AtomRecord.cpp.s
+.PHONY : src/protomol/addon/tof/AtomRecord.s
+
+# target to generate assembly for a file
+src/protomol/addon/tof/AtomRecord.cpp.s:
+	$(MAKE) -f CMakeFiles/Library.dir/build.make CMakeFiles/Library.dir/src/protomol/addon/tof/AtomRecord.cpp.s
+.PHONY : src/protomol/addon/tof/AtomRecord.cpp.s
+
+src/protomol/addon/tof/CEMDetector.o: src/protomol/addon/tof/CEMDetector.cpp.o
+.PHONY : src/protomol/addon/tof/CEMDetector.o
+
+# target to build an object file
+src/protomol/addon/tof/CEMDetector.cpp.o:
+	$(MAKE) -f CMakeFiles/Library.dir/build.make CMakeFiles/Library.dir/src/protomol/addon/tof/CEMDetector.cpp.o
+.PHONY : src/protomol/addon/tof/CEMDetector.cpp.o
+
+src/protomol/addon/tof/CEMDetector.i: src/protomol/addon/tof/CEMDetector.cpp.i
+.PHONY : src/protomol/addon/tof/CEMDetector.i
+
+# target to preprocess a source file
+src/protomol/addon/tof/CEMDetector.cpp.i:
+	$(MAKE) -f CMakeFiles/Library.dir/build.make CMakeFiles/Library.dir/src/protomol/addon/tof/CEMDetector.cpp.i
+.PHONY : src/protomol/addon/tof/CEMDetector.cpp.i
+
+src/protomol/addon/tof/CEMDetector.s: src/protomol/addon/tof/CEMDetector.cpp.s
+.PHONY : src/protomol/addon/tof/CEMDetector.s
+
+# target to generate assembly for a file
+src/protomol/addon/tof/CEMDetector.cpp.s:
+	$(MAKE) -f CMakeFiles/Library.dir/build.make CMakeFiles/Library.dir/src/protomol/addon/tof/CEMDetector.cpp.s
+.PHONY : src/protomol/addon/tof/CEMDetector.cpp.s
+
+src/protomol/addon/tof/OutputCEMRecorder.o: src/protomol/addon/tof/OutputCEMRecorder.cpp.o
+.PHONY : src/protomol/addon/tof/OutputCEMRecorder.o
+
+# target to build an object file
+src/protomol/addon/tof/OutputCEMRecorder.cpp.o:
+	$(MAKE) -f CMakeFiles/Library.dir/build.make CMakeFiles/Library.dir/src/protomol/addon/tof/OutputCEMRecorder.cpp.o
+.PHONY : src/protomol/addon/tof/OutputCEMRecorder.cpp.o
+
+src/protomol/addon/tof/OutputCEMRecorder.i: src/protomol/addon/tof/OutputCEMRecorder.cpp.i
+.PHONY : src/protomol/addon/tof/OutputCEMRecorder.i
+
+# target to preprocess a source file
+src/protomol/addon/tof/OutputCEMRecorder.cpp.i:
+	$(MAKE) -f CMakeFiles/Library.dir/build.make CMakeFiles/Library.dir/src/protomol/addon/tof/OutputCEMRecorder.cpp.i
+.PHONY : src/protomol/addon/tof/OutputCEMRecorder.cpp.i
+
+src/protomol/addon/tof/OutputCEMRecorder.s: src/protomol/addon/tof/OutputCEMRecorder.cpp.s
+.PHONY : src/protomol/addon/tof/OutputCEMRecorder.s
+
+# target to generate assembly for a file
+src/protomol/addon/tof/OutputCEMRecorder.cpp.s:
+	$(MAKE) -f CMakeFiles/Library.dir/build.make CMakeFiles/Library.dir/src/protomol/addon/tof/OutputCEMRecorder.cpp.s
+.PHONY : src/protomol/addon/tof/OutputCEMRecorder.cpp.s
 
 src/protomol/base/Exception.o: src/protomol/base/Exception.cpp.o
 .PHONY : src/protomol/base/Exception.o
@@ -5459,9 +5507,6 @@ help:
 	@echo "... src/protomol/addon/LeapfrogBufferGasIntegrator2.o"
 	@echo "... src/protomol/addon/LeapfrogBufferGasIntegrator2.i"
 	@echo "... src/protomol/addon/LeapfrogBufferGasIntegrator2.s"
-	@echo "... src/protomol/addon/LeapfrogDampedIntegrator.o"
-	@echo "... src/protomol/addon/LeapfrogDampedIntegrator.i"
-	@echo "... src/protomol/addon/LeapfrogDampedIntegrator.s"
 	@echo "... src/protomol/addon/LinearPaulTrap.o"
 	@echo "... src/protomol/addon/LinearPaulTrap.i"
 	@echo "... src/protomol/addon/LinearPaulTrap.s"
@@ -5477,9 +5522,6 @@ help:
 	@echo "... src/protomol/addon/OutputIonSnapshot.o"
 	@echo "... src/protomol/addon/OutputIonSnapshot.i"
 	@echo "... src/protomol/addon/OutputIonSnapshot.s"
-	@echo "... src/protomol/addon/OutputToF.o"
-	@echo "... src/protomol/addon/OutputToF.i"
-	@echo "... src/protomol/addon/OutputToF.s"
 	@echo "... src/protomol/addon/ProtoMolIon.o"
 	@echo "... src/protomol/addon/ProtoMolIon.i"
 	@echo "... src/protomol/addon/ProtoMolIon.s"
@@ -5489,12 +5531,24 @@ help:
 	@echo "... src/protomol/addon/ToF.o"
 	@echo "... src/protomol/addon/ToF.i"
 	@echo "... src/protomol/addon/ToF.s"
-	@echo "... src/protomol/addon/ToFDetector.o"
-	@echo "... src/protomol/addon/ToFDetector.i"
-	@echo "... src/protomol/addon/ToFDetector.s"
 	@echo "... src/protomol/addon/Util.o"
 	@echo "... src/protomol/addon/Util.i"
 	@echo "... src/protomol/addon/Util.s"
+	@echo "... src/protomol/addon/damping/DampingSpec.o"
+	@echo "... src/protomol/addon/damping/DampingSpec.i"
+	@echo "... src/protomol/addon/damping/DampingSpec.s"
+	@echo "... src/protomol/addon/damping/LeapfrogDampedIntegrator.o"
+	@echo "... src/protomol/addon/damping/LeapfrogDampedIntegrator.i"
+	@echo "... src/protomol/addon/damping/LeapfrogDampedIntegrator.s"
+	@echo "... src/protomol/addon/tof/AtomRecord.o"
+	@echo "... src/protomol/addon/tof/AtomRecord.i"
+	@echo "... src/protomol/addon/tof/AtomRecord.s"
+	@echo "... src/protomol/addon/tof/CEMDetector.o"
+	@echo "... src/protomol/addon/tof/CEMDetector.i"
+	@echo "... src/protomol/addon/tof/CEMDetector.s"
+	@echo "... src/protomol/addon/tof/OutputCEMRecorder.o"
+	@echo "... src/protomol/addon/tof/OutputCEMRecorder.i"
+	@echo "... src/protomol/addon/tof/OutputCEMRecorder.s"
 	@echo "... src/protomol/base/Exception.o"
 	@echo "... src/protomol/base/Exception.i"
 	@echo "... src/protomol/base/Exception.s"

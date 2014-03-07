@@ -8,7 +8,6 @@
 #include <protomol/base/PMConstants.h>
 #include <protomol/ProtoMolApp.h>
 
-#include <omp.h>
 using namespace std;
 using namespace ProtoMol::Report;
 using namespace ProtoMol;
@@ -42,7 +41,6 @@ void LeapfrogIntegrator::doHalfKickdoDrift() {
     //  Do a half kick on beta.
     updateBeta(0.5 * h);
 
-    #pragma omp parallel for
     for (unsigned int i = 0; i < count; ++i) {
       app->velocities[i] += (*myForces)[i] * h * 0.5 /
                             app->topology->atoms[i].scaledMass;

@@ -19,10 +19,12 @@
 #include <protomol/output/OutputScreen.h>
 #include <protomol/output/OutputXTCTrajectory.h>
 #include <protomol/addon/OutputIonSnapshot.h>
-#include <protomol/addon/OutputToF.h>
+#include <protomol/addon/tof/OutputCEMRecorder.h>
+
 
 using namespace std;
 using namespace ProtoMol;
+using namespace ProtoMolAddon::ToF;
 
 void OutputModule::init(ProtoMolApp *app) {
   OutputFactory &f = app->outputFactory;
@@ -43,5 +45,6 @@ void OutputModule::init(ProtoMolApp *app) {
   f.registerExemplar(new OutputFAHFile());
   f.registerExemplar(new OutputXTCTrajectory());
   f.registerExemplar(new OutputIonSnapshot()); 
-  f.registerExemplar(new OutputToF()); 
+  f.registerExemplar(new OutputCEMRecorder()); 
+
 }

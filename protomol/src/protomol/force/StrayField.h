@@ -14,7 +14,6 @@ extern "C" {
 #include <protomol/type/ScalarStructure.h>
 #include <protomol/base/PMConstants.h>
 
-#include <omp.h>
 
 namespace ProtoMol{
   

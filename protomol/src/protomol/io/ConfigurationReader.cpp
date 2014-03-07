@@ -46,6 +46,7 @@ bool ConfigurationReader::read(Configuration &config) {
   string bad;
   bool res = true;
   while (all >> str)
+    
     if (!config.empty(str)) {
       if (!bad.empty()) {
         report << recoverable << "Ignoring:" << bad << endr;
@@ -61,12 +62,15 @@ bool ConfigurationReader::read(Configuration &config) {
           all.seekg(start);
           all.read(&(tmp[0]), len);
           report << recoverable << "Could not parse \'" <<
-          removeBeginEndBlanks(tmp) << "\' for keyword \'" << str
+	    removeBeginEndBlanks(tmp) << "\' for keyword \'" << str
                  << "\', expecting type " <<
-          config[str].getDefinitionTypeString() << "." << endr;
+	    config[str].getDefinitionTypeString() << "." << endr;
         }
       }
-    } else {
+    } 
+    
+    else {
+      cout << "Here";
       res = false;
       bad += " " + str;
     }

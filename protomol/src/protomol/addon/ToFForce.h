@@ -9,7 +9,6 @@
 
 #include <protomol/addon/ToF.h>
 #include <protomol/addon/Constants.h>
-#include <omp.h>
 
 using namespace std;
 using namespace ProtoMol::Constant;

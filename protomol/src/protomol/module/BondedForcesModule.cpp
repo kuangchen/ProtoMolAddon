@@ -7,7 +7,7 @@
 #include <protomol/force/bonded/ImproperSystemForce.h>
 #include <protomol/force/bonded/HarmDihedralSystemForce.h>
 
-#include <protomol/addon/HarmonicTrapForce.h>
+#include <protomol/addon/ion_trap/HarmonicTrapForce.h>
 #include <protomol/addon/LQTForce.h>
 //#include <protomol/addon/LaserCoolingForce.h>
 #include <protomol/addon/DampingForce.h>
@@ -23,6 +23,7 @@
 using namespace std;
 using namespace ProtoMol;
 using namespace ProtoMolAddon;
+using namespace ProtoMolAddon::IonTrap;
 
 void BondedForcesModule::init(ProtoMolApp *app) {}
 

@@ -621,6 +621,30 @@ src/protomol/addon/damping/LeapfrogDampedIntegrator.cpp.s:
 	$(MAKE) -f CMakeFiles/Library.dir/build.make CMakeFiles/Library.dir/src/protomol/addon/damping/LeapfrogDampedIntegrator.cpp.s
 .PHONY : src/protomol/addon/damping/LeapfrogDampedIntegrator.cpp.s
 
+src/protomol/addon/ion_trap/HarmonicTrap.o: src/protomol/addon/ion_trap/HarmonicTrap.cpp.o
+.PHONY : src/protomol/addon/ion_trap/HarmonicTrap.o
+
+# target to build an object file
+src/protomol/addon/ion_trap/HarmonicTrap.cpp.o:
+	$(MAKE) -f CMakeFiles/Library.dir/build.make CMakeFiles/Library.dir/src/protomol/addon/ion_trap/HarmonicTrap.cpp.o
+.PHONY : src/protomol/addon/ion_trap/HarmonicTrap.cpp.o
+
+src/protomol/addon/ion_trap/HarmonicTrap.i: src/protomol/addon/ion_trap/HarmonicTrap.cpp.i
+.PHONY : src/protomol/addon/ion_trap/HarmonicTrap.i
+
+# target to preprocess a source file
+src/protomol/addon/ion_trap/HarmonicTrap.cpp.i:
+	$(MAKE) -f CMakeFiles/Library.dir/build.make CMakeFiles/Library.dir/src/protomol/addon/ion_trap/HarmonicTrap.cpp.i
+.PHONY : src/protomol/addon/ion_trap/HarmonicTrap.cpp.i
+
+src/protomol/addon/ion_trap/HarmonicTrap.s: src/protomol/addon/ion_trap/HarmonicTrap.cpp.s
+.PHONY : src/protomol/addon/ion_trap/HarmonicTrap.s
+
+# target to generate assembly for a file
+src/protomol/addon/ion_trap/HarmonicTrap.cpp.s:
+	$(MAKE) -f CMakeFiles/Library.dir/build.make CMakeFiles/Library.dir/src/protomol/addon/ion_trap/HarmonicTrap.cpp.s
+.PHONY : src/protomol/addon/ion_trap/HarmonicTrap.cpp.s
+
 src/protomol/addon/tof/AtomRecord.o: src/protomol/addon/tof/AtomRecord.cpp.o
 .PHONY : src/protomol/addon/tof/AtomRecord.o
 
@@ -5540,6 +5564,9 @@ help:
 	@echo "... src/protomol/addon/damping/LeapfrogDampedIntegrator.o"
 	@echo "... src/protomol/addon/damping/LeapfrogDampedIntegrator.i"
 	@echo "... src/protomol/addon/damping/LeapfrogDampedIntegrator.s"
+	@echo "... src/protomol/addon/ion_trap/HarmonicTrap.o"
+	@echo "... src/protomol/addon/ion_trap/HarmonicTrap.i"
+	@echo "... src/protomol/addon/ion_trap/HarmonicTrap.s"
 	@echo "... src/protomol/addon/tof/AtomRecord.o"
 	@echo "... src/protomol/addon/tof/AtomRecord.i"
 	@echo "... src/protomol/addon/tof/AtomRecord.s"

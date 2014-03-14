@@ -7,6 +7,9 @@ using namespace ProtoMol::Constant;
 
 namespace ProtoMolAddon {
   namespace Constant {
+    const double force_conv = SI::KCAL * SI::AVOGADRO * 1e-10;
+    const double position_conv = 1.0 / SI::LENGTH_AA;
+
     const double FORCE_CONV = SI::KCAL * SI::AVOGADRO * 1e-10;
     const double POSITION_CONV = 1.0 / SI::LENGTH_AA;
     const double TIME_CONV = 1.0 / SI::TIME_FS;

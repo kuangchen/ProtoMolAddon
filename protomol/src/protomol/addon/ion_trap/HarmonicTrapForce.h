@@ -17,6 +17,7 @@ using namespace ProtoMol;
 using namespace std;
 using namespace ProtoMol::Constant;
 using namespace ProtoMolAddon;
+using ProtoMolAddon::IonTrap::HarmonicTrap;
 
 namespace ProtoMolAddon {
   namespace IonTrap {

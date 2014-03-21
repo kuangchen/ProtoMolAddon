@@ -285,30 +285,6 @@ src/protomol/addon/Damping.cpp.s:
 	$(MAKE) -f CMakeFiles/Library.dir/build.make CMakeFiles/Library.dir/src/protomol/addon/Damping.cpp.s
 .PHONY : src/protomol/addon/Damping.cpp.s
 
-src/protomol/addon/HarmonicTrap.o: src/protomol/addon/HarmonicTrap.cpp.o
-.PHONY : src/protomol/addon/HarmonicTrap.o
-
-# target to build an object file
-src/protomol/addon/HarmonicTrap.cpp.o:
-	$(MAKE) -f CMakeFiles/Library.dir/build.make CMakeFiles/Library.dir/src/protomol/addon/HarmonicTrap.cpp.o
-.PHONY : src/protomol/addon/HarmonicTrap.cpp.o
-
-src/protomol/addon/HarmonicTrap.i: src/protomol/addon/HarmonicTrap.cpp.i
-.PHONY : src/protomol/addon/HarmonicTrap.i
-
-# target to preprocess a source file
-src/protomol/addon/HarmonicTrap.cpp.i:
-	$(MAKE) -f CMakeFiles/Library.dir/build.make CMakeFiles/Library.dir/src/protomol/addon/HarmonicTrap.cpp.i
-.PHONY : src/protomol/addon/HarmonicTrap.cpp.i
-
-src/protomol/addon/HarmonicTrap.s: src/protomol/addon/HarmonicTrap.cpp.s
-.PHONY : src/protomol/addon/HarmonicTrap.s
-
-# target to generate assembly for a file
-src/protomol/addon/HarmonicTrap.cpp.s:
-	$(MAKE) -f CMakeFiles/Library.dir/build.make CMakeFiles/Library.dir/src/protomol/addon/HarmonicTrap.cpp.s
-.PHONY : src/protomol/addon/HarmonicTrap.cpp.s
-
 src/protomol/addon/LeapfrogBufferGasIntegrator.o: src/protomol/addon/LeapfrogBufferGasIntegrator.cpp.o
 .PHONY : src/protomol/addon/LeapfrogBufferGasIntegrator.o
 
@@ -453,30 +429,6 @@ src/protomol/addon/NeutralAtom.cpp.s:
 	$(MAKE) -f CMakeFiles/Library.dir/build.make CMakeFiles/Library.dir/src/protomol/addon/NeutralAtom.cpp.s
 .PHONY : src/protomol/addon/NeutralAtom.cpp.s
 
-src/protomol/addon/OutputIonSnapshot.o: src/protomol/addon/OutputIonSnapshot.cpp.o
-.PHONY : src/protomol/addon/OutputIonSnapshot.o
-
-# target to build an object file
-src/protomol/addon/OutputIonSnapshot.cpp.o:
-	$(MAKE) -f CMakeFiles/Library.dir/build.make CMakeFiles/Library.dir/src/protomol/addon/OutputIonSnapshot.cpp.o
-.PHONY : src/protomol/addon/OutputIonSnapshot.cpp.o
-
-src/protomol/addon/OutputIonSnapshot.i: src/protomol/addon/OutputIonSnapshot.cpp.i
-.PHONY : src/protomol/addon/OutputIonSnapshot.i
-
-# target to preprocess a source file
-src/protomol/addon/OutputIonSnapshot.cpp.i:
-	$(MAKE) -f CMakeFiles/Library.dir/build.make CMakeFiles/Library.dir/src/protomol/addon/OutputIonSnapshot.cpp.i
-.PHONY : src/protomol/addon/OutputIonSnapshot.cpp.i
-
-src/protomol/addon/OutputIonSnapshot.s: src/protomol/addon/OutputIonSnapshot.cpp.s
-.PHONY : src/protomol/addon/OutputIonSnapshot.s
-
-# target to generate assembly for a file
-src/protomol/addon/OutputIonSnapshot.cpp.s:
-	$(MAKE) -f CMakeFiles/Library.dir/build.make CMakeFiles/Library.dir/src/protomol/addon/OutputIonSnapshot.cpp.s
-.PHONY : src/protomol/addon/OutputIonSnapshot.cpp.s
-
 src/protomol/addon/ProtoMolIon.o: src/protomol/addon/ProtoMolIon.cpp.o
 .PHONY : src/protomol/addon/ProtoMolIon.o
 
@@ -500,30 +452,6 @@ src/protomol/addon/ProtoMolIon.s: src/protomol/addon/ProtoMolIon.cpp.s
 src/protomol/addon/ProtoMolIon.cpp.s:
 	$(MAKE) -f CMakeFiles/Library.dir/build.make CMakeFiles/Library.dir/src/protomol/addon/ProtoMolIon.cpp.s
 .PHONY : src/protomol/addon/ProtoMolIon.cpp.s
-
-src/protomol/addon/Snapshot.o: src/protomol/addon/Snapshot.cpp.o
-.PHONY : src/protomol/addon/Snapshot.o
-
-# target to build an object file
-src/protomol/addon/Snapshot.cpp.o:
-	$(MAKE) -f CMakeFiles/Library.dir/build.make CMakeFiles/Library.dir/src/protomol/addon/Snapshot.cpp.o
-.PHONY : src/protomol/addon/Snapshot.cpp.o
-
-src/protomol/addon/Snapshot.i: src/protomol/addon/Snapshot.cpp.i
-.PHONY : src/protomol/addon/Snapshot.i
-
-# target to preprocess a source file
-src/protomol/addon/Snapshot.cpp.i:
-	$(MAKE) -f CMakeFiles/Library.dir/build.make CMakeFiles/Library.dir/src/protomol/addon/Snapshot.cpp.i
-.PHONY : src/protomol/addon/Snapshot.cpp.i
-
-src/protomol/addon/Snapshot.s: src/protomol/addon/Snapshot.cpp.s
-.PHONY : src/protomol/addon/Snapshot.s
-
-# target to generate assembly for a file
-src/protomol/addon/Snapshot.cpp.s:
-	$(MAKE) -f CMakeFiles/Library.dir/build.make CMakeFiles/Library.dir/src/protomol/addon/Snapshot.cpp.s
-.PHONY : src/protomol/addon/Snapshot.cpp.s
 
 src/protomol/addon/ToF.o: src/protomol/addon/ToF.cpp.o
 .PHONY : src/protomol/addon/ToF.o
@@ -5522,9 +5450,6 @@ help:
 	@echo "... src/protomol/addon/Damping.o"
 	@echo "... src/protomol/addon/Damping.i"
 	@echo "... src/protomol/addon/Damping.s"
-	@echo "... src/protomol/addon/HarmonicTrap.o"
-	@echo "... src/protomol/addon/HarmonicTrap.i"
-	@echo "... src/protomol/addon/HarmonicTrap.s"
 	@echo "... src/protomol/addon/LeapfrogBufferGasIntegrator.o"
 	@echo "... src/protomol/addon/LeapfrogBufferGasIntegrator.i"
 	@echo "... src/protomol/addon/LeapfrogBufferGasIntegrator.s"
@@ -5543,15 +5468,9 @@ help:
 	@echo "... src/protomol/addon/NeutralAtom.o"
 	@echo "... src/protomol/addon/NeutralAtom.i"
 	@echo "... src/protomol/addon/NeutralAtom.s"
-	@echo "... src/protomol/addon/OutputIonSnapshot.o"
-	@echo "... src/protomol/addon/OutputIonSnapshot.i"
-	@echo "... src/protomol/addon/OutputIonSnapshot.s"
 	@echo "... src/protomol/addon/ProtoMolIon.o"
 	@echo "... src/protomol/addon/ProtoMolIon.i"
 	@echo "... src/protomol/addon/ProtoMolIon.s"
-	@echo "... src/protomol/addon/Snapshot.o"
-	@echo "... src/protomol/addon/Snapshot.i"
-	@echo "... src/protomol/addon/Snapshot.s"
 	@echo "... src/protomol/addon/ToF.o"
 	@echo "... src/protomol/addon/ToF.i"
 	@echo "... src/protomol/addon/ToF.s"

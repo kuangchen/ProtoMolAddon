@@ -7,6 +7,13 @@ using namespace ProtoMol::Constant;
 
 namespace ProtoMolAddon {
   namespace Constant {
+
+    namespace ToSI {
+      const double velocity = 1e-10 * SI::TIME_FS / TIMEFACTOR;
+      const double position = 1.0 / SI::LENGTH_AA;
+      const double time = 1.0 / SI::TIME_FS;
+    }
+    
     const double force_conv = SI::KCAL * SI::AVOGADRO * 1e-10;
     const double position_conv = 1.0 / SI::LENGTH_AA;
 

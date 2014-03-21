@@ -1,24 +1,32 @@
 #ifndef _TXTSTORAGE_H
 #define _TXTSTORAGE_H
 
-#include <iosfwd>
+#include <memory>
+#include <fstream>
 #include <protomol/addon/snapshot/GenericStorage.h>
 
+using std::shared_ptr;
 using std::ofstream;
+
+namespace ProtoMol {
+  class ProtoMolApp;
+}
 
 namespace ProtoMolAddon {
   namespace Snapshot {
 
     class TxtStorage : public GenericStorage {
+    private:
       static string fname_pattern;
+      static string separator;
 
     public:
-      TxtStorage(size_t n);
-      ~TxtStorage();
-      void Save(const ProtoMolApp *app);
+      TxtStorage(): GenericStorage(), pf(new ofstream(fname)) {}
+
+      void Save(const ProtoMol::ProtoMolApp *app);
 
     private:
-      ofstream f;
+      shared_ptr<ofstream> pf;
     };
 
   }

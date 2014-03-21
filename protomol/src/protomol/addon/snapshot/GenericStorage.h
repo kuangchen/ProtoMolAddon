@@ -3,23 +3,24 @@
 
 #include <string>
 
-using std::string;
-
 namespace ProtoMol {
-  class ProtoMolApp;
+  class ProtoMol;
 }
+
+using std::string;
 
 namespace ProtoMolAddon {
   namespace Snapshot {
     
     class GenericStorage {
+    private:
       static unsigned int counter;
       static string fname_pattern;
-
-      static void SetFilenamePattern(const string &pattern);
+      static void SetFilenamePattern(const string &pattern) { fname_pattern = pattern; }
       
     public:
-      GenericStorage(); 
+      GenericStorage();
+	
       virtual ~GenericStorage() = 0; 
       virtual void Save(const ProtoMol::ProtoMolApp *app) = 0;
 

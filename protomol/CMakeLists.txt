@@ -200,6 +200,8 @@ source_group( "include\\Topology" FILES ${TOPOLOGY_HEADERS} )
 file( GLOB TYPE_HEADERS "src/protomol/type/*.h" )
 source_group( "include\\Type" FILES ${TYPE_HEADERS} )
 
+
+ 
 set( LIBRARY_BASE_HEADERS ${HEADERS} ${BASE_HEADERS} ${CONFIG_HEADERS}
 	${FACTORY_HEADERS} ${MODIFIER_HEADERS} ${MODULE_HEADERS} ${OS_HEADERS}
 	${OUTPUT_HEADERS} ${PARALLEL_HEADERS} ${SWITCH_HEADERS} ${TOPOLOGY_HEADERS}
@@ -276,8 +278,15 @@ source_group( "include\\IO\\Gromacs" FILES ${GROMACS_IO_HEADERS} )
 
 set( LIBRARY_IO_HEADERS ${IO_HEADERS} ${GROMACS_IO_HEADERS} )
 
+
+# Library Addon Headers
+file( GLOB ADDON_SNAPSHOT_HEADERS "src/protomol/addon/snapshot/*.h")
+source_group( "include\\Addon" FILES ${ADDON_SNAPSHOT_HEADERS} )
+
+set ( LIBRARY_ADDON_HEADERS ${ADDON_SNAPSHOT_HEADERS} )
+
 # Combined Headers
-set( LIBRARY_HEADERS ${LIBRARY_BASE_HEADERS} ${LIBRARY_FOURCE_HEADERS} ${LIBRARY_INTEGRATOR_HEADERS} ${LIBRARY_IO_HEADERS} )
+set( LIBRARY_HEADERS ${LIBRARY_BASE_HEADERS} ${LIBRARY_FOURCE_HEADERS} ${LIBRARY_INTEGRATOR_HEADERS} ${LIBRARY_IO_HEADERS} ${LIBRARY_ADDON_HEADERS})
 
 # Library sources
 file( GLOB SOURCES "src/protomol/*.cpp" )
@@ -398,8 +407,8 @@ source_group( "src\\Addons\\ToF" FILES ${ADDON_TOF_SOURCES} )
 file( GLOB ADDON_IONTRAP_SOURCES "src/protomol/addon/ion_trap/*.cpp" )
 source_group( "src\\Addons\\ion_trap" FILES ${ADDON_IONTRAP_SOURCES} )
 
-file( GLOB ADDON_SNAPSHOT "src/protomol/addon/snapshot/*.cpp" )
-source_group( "src\\Addons\\snapshot" FILES ${ADDON_SNAPSHOT_SOURCES} )
+file( GLOB ADDON_SNAPSHOT_SOURCES "src/protomol/addon/snapshot/*.cpp" )
+source_group( "src\\Addons\\Snapshot" FILES ${ADDON_SNAPSHOT_SOURCES} )
 
 
 # Combined sources

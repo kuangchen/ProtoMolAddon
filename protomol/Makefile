@@ -573,6 +573,78 @@ src/protomol/addon/ion_trap/HarmonicTrap.cpp.s:
 	$(MAKE) -f CMakeFiles/Library.dir/build.make CMakeFiles/Library.dir/src/protomol/addon/ion_trap/HarmonicTrap.cpp.s
 .PHONY : src/protomol/addon/ion_trap/HarmonicTrap.cpp.s
 
+src/protomol/addon/snapshot/GenericStorage.o: src/protomol/addon/snapshot/GenericStorage.cpp.o
+.PHONY : src/protomol/addon/snapshot/GenericStorage.o
+
+# target to build an object file
+src/protomol/addon/snapshot/GenericStorage.cpp.o:
+	$(MAKE) -f CMakeFiles/Library.dir/build.make CMakeFiles/Library.dir/src/protomol/addon/snapshot/GenericStorage.cpp.o
+.PHONY : src/protomol/addon/snapshot/GenericStorage.cpp.o
+
+src/protomol/addon/snapshot/GenericStorage.i: src/protomol/addon/snapshot/GenericStorage.cpp.i
+.PHONY : src/protomol/addon/snapshot/GenericStorage.i
+
+# target to preprocess a source file
+src/protomol/addon/snapshot/GenericStorage.cpp.i:
+	$(MAKE) -f CMakeFiles/Library.dir/build.make CMakeFiles/Library.dir/src/protomol/addon/snapshot/GenericStorage.cpp.i
+.PHONY : src/protomol/addon/snapshot/GenericStorage.cpp.i
+
+src/protomol/addon/snapshot/GenericStorage.s: src/protomol/addon/snapshot/GenericStorage.cpp.s
+.PHONY : src/protomol/addon/snapshot/GenericStorage.s
+
+# target to generate assembly for a file
+src/protomol/addon/snapshot/GenericStorage.cpp.s:
+	$(MAKE) -f CMakeFiles/Library.dir/build.make CMakeFiles/Library.dir/src/protomol/addon/snapshot/GenericStorage.cpp.s
+.PHONY : src/protomol/addon/snapshot/GenericStorage.cpp.s
+
+src/protomol/addon/snapshot/OutputIonSnapshot.o: src/protomol/addon/snapshot/OutputIonSnapshot.cpp.o
+.PHONY : src/protomol/addon/snapshot/OutputIonSnapshot.o
+
+# target to build an object file
+src/protomol/addon/snapshot/OutputIonSnapshot.cpp.o:
+	$(MAKE) -f CMakeFiles/Library.dir/build.make CMakeFiles/Library.dir/src/protomol/addon/snapshot/OutputIonSnapshot.cpp.o
+.PHONY : src/protomol/addon/snapshot/OutputIonSnapshot.cpp.o
+
+src/protomol/addon/snapshot/OutputIonSnapshot.i: src/protomol/addon/snapshot/OutputIonSnapshot.cpp.i
+.PHONY : src/protomol/addon/snapshot/OutputIonSnapshot.i
+
+# target to preprocess a source file
+src/protomol/addon/snapshot/OutputIonSnapshot.cpp.i:
+	$(MAKE) -f CMakeFiles/Library.dir/build.make CMakeFiles/Library.dir/src/protomol/addon/snapshot/OutputIonSnapshot.cpp.i
+.PHONY : src/protomol/addon/snapshot/OutputIonSnapshot.cpp.i
+
+src/protomol/addon/snapshot/OutputIonSnapshot.s: src/protomol/addon/snapshot/OutputIonSnapshot.cpp.s
+.PHONY : src/protomol/addon/snapshot/OutputIonSnapshot.s
+
+# target to generate assembly for a file
+src/protomol/addon/snapshot/OutputIonSnapshot.cpp.s:
+	$(MAKE) -f CMakeFiles/Library.dir/build.make CMakeFiles/Library.dir/src/protomol/addon/snapshot/OutputIonSnapshot.cpp.s
+.PHONY : src/protomol/addon/snapshot/OutputIonSnapshot.cpp.s
+
+src/protomol/addon/snapshot/TxtStorage.o: src/protomol/addon/snapshot/TxtStorage.cpp.o
+.PHONY : src/protomol/addon/snapshot/TxtStorage.o
+
+# target to build an object file
+src/protomol/addon/snapshot/TxtStorage.cpp.o:
+	$(MAKE) -f CMakeFiles/Library.dir/build.make CMakeFiles/Library.dir/src/protomol/addon/snapshot/TxtStorage.cpp.o
+.PHONY : src/protomol/addon/snapshot/TxtStorage.cpp.o
+
+src/protomol/addon/snapshot/TxtStorage.i: src/protomol/addon/snapshot/TxtStorage.cpp.i
+.PHONY : src/protomol/addon/snapshot/TxtStorage.i
+
+# target to preprocess a source file
+src/protomol/addon/snapshot/TxtStorage.cpp.i:
+	$(MAKE) -f CMakeFiles/Library.dir/build.make CMakeFiles/Library.dir/src/protomol/addon/snapshot/TxtStorage.cpp.i
+.PHONY : src/protomol/addon/snapshot/TxtStorage.cpp.i
+
+src/protomol/addon/snapshot/TxtStorage.s: src/protomol/addon/snapshot/TxtStorage.cpp.s
+.PHONY : src/protomol/addon/snapshot/TxtStorage.s
+
+# target to generate assembly for a file
+src/protomol/addon/snapshot/TxtStorage.cpp.s:
+	$(MAKE) -f CMakeFiles/Library.dir/build.make CMakeFiles/Library.dir/src/protomol/addon/snapshot/TxtStorage.cpp.s
+.PHONY : src/protomol/addon/snapshot/TxtStorage.cpp.s
+
 src/protomol/addon/tof/AtomRecord.o: src/protomol/addon/tof/AtomRecord.cpp.o
 .PHONY : src/protomol/addon/tof/AtomRecord.o
 
@@ -5486,6 +5558,15 @@ help:
 	@echo "... src/protomol/addon/ion_trap/HarmonicTrap.o"
 	@echo "... src/protomol/addon/ion_trap/HarmonicTrap.i"
 	@echo "... src/protomol/addon/ion_trap/HarmonicTrap.s"
+	@echo "... src/protomol/addon/snapshot/GenericStorage.o"
+	@echo "... src/protomol/addon/snapshot/GenericStorage.i"
+	@echo "... src/protomol/addon/snapshot/GenericStorage.s"
+	@echo "... src/protomol/addon/snapshot/OutputIonSnapshot.o"
+	@echo "... src/protomol/addon/snapshot/OutputIonSnapshot.i"
+	@echo "... src/protomol/addon/snapshot/OutputIonSnapshot.s"
+	@echo "... src/protomol/addon/snapshot/TxtStorage.o"
+	@echo "... src/protomol/addon/snapshot/TxtStorage.i"
+	@echo "... src/protomol/addon/snapshot/TxtStorage.s"
 	@echo "... src/protomol/addon/tof/AtomRecord.o"
 	@echo "... src/protomol/addon/tof/AtomRecord.i"
 	@echo "... src/protomol/addon/tof/AtomRecord.s"

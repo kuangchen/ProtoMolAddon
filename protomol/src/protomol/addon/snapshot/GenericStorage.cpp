@@ -8,7 +8,7 @@ using ProtoMol::ProtoMolApp;
 using namespace ProtoMolAddon::Snapshot;
 
 unsigned int GenericStorage::counter(0);
-string GenericStorage::fname_pattern("");
+string GenericStorage::fname_pattern("snapshot_%d.txt");
 
 GenericStorage::GenericStorage() :
   id(counter++), fname((format(GenericStorage::fname_pattern) % id).str()) {}

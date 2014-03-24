@@ -22,7 +22,6 @@ namespace ProtoMolAddon {
 
     public:
       TxtStorage(): GenericStorage(), pf(new ofstream(fname)) {}
-
       void Save(const ProtoMol::ProtoMolApp *app);
 
     private:

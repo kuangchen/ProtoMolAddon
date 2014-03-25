@@ -4,28 +4,25 @@
 #include <string>
 
 namespace ProtoMol {
-  class ProtoMol;
+  class ProtoMolApp;
 }
 
 using std::string;
 
 namespace ProtoMolAddon {
   namespace Snapshot {
-    
+
     class GenericStorage {
-    private:
-      static unsigned int counter;
-      static string fname_pattern;
-      static void SetFilenamePattern(const string &pattern) { fname_pattern = pattern; }
-      
+    protected:
+      string fname;
+      size_t current_frame;
+
     public:
-      GenericStorage();
+      GenericStorage(const string &fname);
 	
       virtual ~GenericStorage() = 0; 
-      virtual void Save(const ProtoMol::ProtoMolApp *app) = 0;
+      virtual void SaveFrame(const ProtoMol::ProtoMolApp *app, double t) = 0;
 
-      unsigned int id;
-      string fname;
     };
 
   }

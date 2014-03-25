@@ -47,8 +47,8 @@ namespace ProtoMolAddon {
 	
 	for (pair<TimeQueue, Storage> &ts : time_storage) {
 	  if (ts.first.IsDue(now)) {
-	    ts.second.Save(app);
-	    ts.first.PopFront();
+	    double t = ts.first.PopFront();
+	    ts.second.SaveFrame(app, t);
 	  }
 	}
       }

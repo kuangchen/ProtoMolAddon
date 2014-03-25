@@ -4,6 +4,7 @@
 #include <protomol/output/Output.h>
 #include <protomol/addon/snapshot/SnapshotManager.h>
 #include <protomol/addon/snapshot/TxtStorage.h>
+#include <protomol/addon/snapshot/HDF5Storage.h>
 #include <protomol/addon/snapshot/EqualSpacingTimeQueue.h>
 #include <vector>
 #include <string>
@@ -19,8 +20,8 @@ namespace ProtoMolAddon {
     class OutputIonSnapshot : public Output {
     private:
       string fname;
-      SnapshotManager<EqualSpacingTimeQueue, TxtStorage> manager;
-
+      //SnapshotManager<EqualSpacingTimeQueue, TxtStorage> manager;
+      SnapshotManager<EqualSpacingTimeQueue, HDF5Storage> manager;
 
     public:
       OutputIonSnapshot(const string& filename);

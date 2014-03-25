@@ -15,7 +15,7 @@ namespace ProtoMolAddon {
       size_t current;
 
       EqualSpacingTimeQueue(double t0=0, double dt=0, size_t n=0);
-      void PopFront();
+      double PopFront();
       bool IsDue(double time);
 
       friend istream& operator>> (istream &is, EqualSpacingTimeQueue &spec); 

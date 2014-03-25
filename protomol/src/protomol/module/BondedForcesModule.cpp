@@ -11,7 +11,7 @@
 #include <protomol/addon/LQTForce.h>
 //#include <protomol/addon/LaserCoolingForce.h>
 #include <protomol/addon/DampingForce.h>
-#include <protomol/addon/StrayFieldForce.h>
+#include <protomol/addon/stray_field/StrayFieldForce.h>
 
 #include <protomol/ProtoMolApp.h>
 #include <protomol/base/StringUtilities.h>
@@ -24,6 +24,7 @@ using namespace std;
 using namespace ProtoMol;
 using namespace ProtoMolAddon;
 using namespace ProtoMolAddon::IonTrap;
+using namespace ProtoMolAddon::StrayField;
 
 void BondedForcesModule::init(ProtoMolApp *app) {}
 

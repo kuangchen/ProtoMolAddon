@@ -19,10 +19,11 @@ namespace ProtoMolAddon {
     private:
       static string fname_pattern;
       static string separator;
+      static size_t counter;
 
     public:
-      TxtStorage(): GenericStorage(), pf(new ofstream(fname)) {}
-      void Save(const ProtoMol::ProtoMolApp *app);
+      TxtStorage();
+      void SaveFrame(const ProtoMol::ProtoMolApp *app, double t);
 
     private:
       shared_ptr<ofstream> pf;

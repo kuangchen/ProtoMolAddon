@@ -16,7 +16,9 @@ EqualSpacingTimeQueue::EqualSpacingTimeQueue(double t0, double dt, size_t n):
 
 }
 
-void EqualSpacingTimeQueue::PopFront() { current++; }
+double EqualSpacingTimeQueue::PopFront() { 
+  return t0 + dt * current++;
+}
 
 bool EqualSpacingTimeQueue::IsDue(double now) {
   return ((current < n) && (now > t0 + current * dt));

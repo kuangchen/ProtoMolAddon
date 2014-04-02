@@ -8,9 +8,9 @@ extern "C" {
 
 #else
 extern "C" {
-#include <lua5.1/lua.h>
-#include <lua5.1/lauxlib.h>
-#include <lua5.1/lualib.h>
+#include <lua5.2/lua.h>
+#include <lua5.2/lauxlib.h>
+#include <lua5.2/lualib.h>
 }
 
 #endif

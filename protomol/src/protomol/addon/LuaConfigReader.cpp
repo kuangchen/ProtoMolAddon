@@ -80,7 +80,7 @@ template <> vector<double> LuaConfigReader::GetValueLowLevel<vector<double> > (c
   vector<double> value(0);
 
   //int len = lua_rawlen(L, -1);
-  int len = lua_objlen(L, -1);
+  int len = lua_rawlen(L, -1);
   for (int i = 1; i <= len; i++){
     lua_rawgeti(L, -1, i);
 
@@ -102,8 +102,8 @@ template <> vector<string> LuaConfigReader::GetValueLowLevel<vector<string> > (c
 
   vector<string> value(0);
 
-  //int len = lua_rawlen(L, -1);
-  int len = lua_objlen(L, -1);
+  int len = lua_rawlen(L, -1);
+  //int len = lua_objlen(L, -1);
   for (int i = 1; i <= len; i++){
     lua_rawgeti(L, -1, i);
 

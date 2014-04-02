@@ -24,7 +24,6 @@ namespace ProtoMolAddon {
       virtual void SaveFrame(const ProtoMol::ProtoMolApp *app, double t) = 0;
 
     };
-
   }
 }
 

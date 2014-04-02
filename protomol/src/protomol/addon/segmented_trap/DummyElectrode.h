@@ -3,14 +3,14 @@
 
 #include <protomol/type/Vector3D.h>
 
-extern "C" {
-#include <lua5.2/lua.h>
-#include <lua5.2/lualib.h>
-#include <lua5.2/lauxlib.h>
-}
+// extern "C" {
+// #include <lua5.2/lua.h>
+// #include <lua5.2/lualib.h>
+// #include <lua5.2/lauxlib.h>
+// }
 
-#include <luabind/luabind.hpp>
-#include <luabind/function.hpp>
+// #include <luabind/luabind.hpp>
+// #include <luabind/function.hpp>
 
 namespace ProtoMolAddon {
   namespace SegmentedTrap {

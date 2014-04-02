@@ -39,10 +39,6 @@ HDF5Storage::~HDF5Storage() {
 }
 
 void HDF5Storage::SaveFrame(const ProtoMol::ProtoMolApp *app, double t) {
-  
-  // struct AtomRecord {
-  // string name;
-  // double 
 
   try {
   

@@ -26,6 +26,7 @@ bool EqualSpacingTimeQueue::IsDue(double now) {
 
 namespace ProtoMolAddon {	
   namespace Snapshot {
+
     istream& operator>> (istream &is, EqualSpacingTimeQueue &spec) {
       is >> spec.t0 >> spec.dt >> spec.n;
       spec.current = 0;

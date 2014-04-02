@@ -573,6 +573,30 @@ src/protomol/addon/ion_trap/HarmonicTrap.cpp.s:
 	$(MAKE) -f CMakeFiles/Library.dir/build.make CMakeFiles/Library.dir/src/protomol/addon/ion_trap/HarmonicTrap.cpp.s
 .PHONY : src/protomol/addon/ion_trap/HarmonicTrap.cpp.s
 
+src/protomol/addon/segmented_trap/DummyElectrode.o: src/protomol/addon/segmented_trap/DummyElectrode.cpp.o
+.PHONY : src/protomol/addon/segmented_trap/DummyElectrode.o
+
+# target to build an object file
+src/protomol/addon/segmented_trap/DummyElectrode.cpp.o:
+	$(MAKE) -f CMakeFiles/Library.dir/build.make CMakeFiles/Library.dir/src/protomol/addon/segmented_trap/DummyElectrode.cpp.o
+.PHONY : src/protomol/addon/segmented_trap/DummyElectrode.cpp.o
+
+src/protomol/addon/segmented_trap/DummyElectrode.i: src/protomol/addon/segmented_trap/DummyElectrode.cpp.i
+.PHONY : src/protomol/addon/segmented_trap/DummyElectrode.i
+
+# target to preprocess a source file
+src/protomol/addon/segmented_trap/DummyElectrode.cpp.i:
+	$(MAKE) -f CMakeFiles/Library.dir/build.make CMakeFiles/Library.dir/src/protomol/addon/segmented_trap/DummyElectrode.cpp.i
+.PHONY : src/protomol/addon/segmented_trap/DummyElectrode.cpp.i
+
+src/protomol/addon/segmented_trap/DummyElectrode.s: src/protomol/addon/segmented_trap/DummyElectrode.cpp.s
+.PHONY : src/protomol/addon/segmented_trap/DummyElectrode.s
+
+# target to generate assembly for a file
+src/protomol/addon/segmented_trap/DummyElectrode.cpp.s:
+	$(MAKE) -f CMakeFiles/Library.dir/build.make CMakeFiles/Library.dir/src/protomol/addon/segmented_trap/DummyElectrode.cpp.s
+.PHONY : src/protomol/addon/segmented_trap/DummyElectrode.cpp.s
+
 src/protomol/addon/snapshot/EqualSpacingTimeQueue.o: src/protomol/addon/snapshot/EqualSpacingTimeQueue.cpp.o
 .PHONY : src/protomol/addon/snapshot/EqualSpacingTimeQueue.o
 
@@ -716,6 +740,174 @@ src/protomol/addon/stray_field/StrayField.s: src/protomol/addon/stray_field/Stra
 src/protomol/addon/stray_field/StrayField.cpp.s:
 	$(MAKE) -f CMakeFiles/Library.dir/build.make CMakeFiles/Library.dir/src/protomol/addon/stray_field/StrayField.cpp.s
 .PHONY : src/protomol/addon/stray_field/StrayField.cpp.s
+
+src/protomol/addon/sympathetic_cooling/BufferGas.o: src/protomol/addon/sympathetic_cooling/BufferGas.cpp.o
+.PHONY : src/protomol/addon/sympathetic_cooling/BufferGas.o
+
+# target to build an object file
+src/protomol/addon/sympathetic_cooling/BufferGas.cpp.o:
+	$(MAKE) -f CMakeFiles/Library.dir/build.make CMakeFiles/Library.dir/src/protomol/addon/sympathetic_cooling/BufferGas.cpp.o
+.PHONY : src/protomol/addon/sympathetic_cooling/BufferGas.cpp.o
+
+src/protomol/addon/sympathetic_cooling/BufferGas.i: src/protomol/addon/sympathetic_cooling/BufferGas.cpp.i
+.PHONY : src/protomol/addon/sympathetic_cooling/BufferGas.i
+
+# target to preprocess a source file
+src/protomol/addon/sympathetic_cooling/BufferGas.cpp.i:
+	$(MAKE) -f CMakeFiles/Library.dir/build.make CMakeFiles/Library.dir/src/protomol/addon/sympathetic_cooling/BufferGas.cpp.i
+.PHONY : src/protomol/addon/sympathetic_cooling/BufferGas.cpp.i
+
+src/protomol/addon/sympathetic_cooling/BufferGas.s: src/protomol/addon/sympathetic_cooling/BufferGas.cpp.s
+.PHONY : src/protomol/addon/sympathetic_cooling/BufferGas.s
+
+# target to generate assembly for a file
+src/protomol/addon/sympathetic_cooling/BufferGas.cpp.s:
+	$(MAKE) -f CMakeFiles/Library.dir/build.make CMakeFiles/Library.dir/src/protomol/addon/sympathetic_cooling/BufferGas.cpp.s
+.PHONY : src/protomol/addon/sympathetic_cooling/BufferGas.cpp.s
+
+src/protomol/addon/sympathetic_cooling/BufferGasManager.o: src/protomol/addon/sympathetic_cooling/BufferGasManager.cpp.o
+.PHONY : src/protomol/addon/sympathetic_cooling/BufferGasManager.o
+
+# target to build an object file
+src/protomol/addon/sympathetic_cooling/BufferGasManager.cpp.o:
+	$(MAKE) -f CMakeFiles/Library.dir/build.make CMakeFiles/Library.dir/src/protomol/addon/sympathetic_cooling/BufferGasManager.cpp.o
+.PHONY : src/protomol/addon/sympathetic_cooling/BufferGasManager.cpp.o
+
+src/protomol/addon/sympathetic_cooling/BufferGasManager.i: src/protomol/addon/sympathetic_cooling/BufferGasManager.cpp.i
+.PHONY : src/protomol/addon/sympathetic_cooling/BufferGasManager.i
+
+# target to preprocess a source file
+src/protomol/addon/sympathetic_cooling/BufferGasManager.cpp.i:
+	$(MAKE) -f CMakeFiles/Library.dir/build.make CMakeFiles/Library.dir/src/protomol/addon/sympathetic_cooling/BufferGasManager.cpp.i
+.PHONY : src/protomol/addon/sympathetic_cooling/BufferGasManager.cpp.i
+
+src/protomol/addon/sympathetic_cooling/BufferGasManager.s: src/protomol/addon/sympathetic_cooling/BufferGasManager.cpp.s
+.PHONY : src/protomol/addon/sympathetic_cooling/BufferGasManager.s
+
+# target to generate assembly for a file
+src/protomol/addon/sympathetic_cooling/BufferGasManager.cpp.s:
+	$(MAKE) -f CMakeFiles/Library.dir/build.make CMakeFiles/Library.dir/src/protomol/addon/sympathetic_cooling/BufferGasManager.cpp.s
+.PHONY : src/protomol/addon/sympathetic_cooling/BufferGasManager.cpp.s
+
+src/protomol/addon/sympathetic_cooling/CollisionSchedule.o: src/protomol/addon/sympathetic_cooling/CollisionSchedule.cpp.o
+.PHONY : src/protomol/addon/sympathetic_cooling/CollisionSchedule.o
+
+# target to build an object file
+src/protomol/addon/sympathetic_cooling/CollisionSchedule.cpp.o:
+	$(MAKE) -f CMakeFiles/Library.dir/build.make CMakeFiles/Library.dir/src/protomol/addon/sympathetic_cooling/CollisionSchedule.cpp.o
+.PHONY : src/protomol/addon/sympathetic_cooling/CollisionSchedule.cpp.o
+
+src/protomol/addon/sympathetic_cooling/CollisionSchedule.i: src/protomol/addon/sympathetic_cooling/CollisionSchedule.cpp.i
+.PHONY : src/protomol/addon/sympathetic_cooling/CollisionSchedule.i
+
+# target to preprocess a source file
+src/protomol/addon/sympathetic_cooling/CollisionSchedule.cpp.i:
+	$(MAKE) -f CMakeFiles/Library.dir/build.make CMakeFiles/Library.dir/src/protomol/addon/sympathetic_cooling/CollisionSchedule.cpp.i
+.PHONY : src/protomol/addon/sympathetic_cooling/CollisionSchedule.cpp.i
+
+src/protomol/addon/sympathetic_cooling/CollisionSchedule.s: src/protomol/addon/sympathetic_cooling/CollisionSchedule.cpp.s
+.PHONY : src/protomol/addon/sympathetic_cooling/CollisionSchedule.s
+
+# target to generate assembly for a file
+src/protomol/addon/sympathetic_cooling/CollisionSchedule.cpp.s:
+	$(MAKE) -f CMakeFiles/Library.dir/build.make CMakeFiles/Library.dir/src/protomol/addon/sympathetic_cooling/CollisionSchedule.cpp.s
+.PHONY : src/protomol/addon/sympathetic_cooling/CollisionSchedule.cpp.s
+
+src/protomol/addon/sympathetic_cooling/LeapfrogBufferGasIntegrator.o: src/protomol/addon/sympathetic_cooling/LeapfrogBufferGasIntegrator.cpp.o
+.PHONY : src/protomol/addon/sympathetic_cooling/LeapfrogBufferGasIntegrator.o
+
+# target to build an object file
+src/protomol/addon/sympathetic_cooling/LeapfrogBufferGasIntegrator.cpp.o:
+	$(MAKE) -f CMakeFiles/Library.dir/build.make CMakeFiles/Library.dir/src/protomol/addon/sympathetic_cooling/LeapfrogBufferGasIntegrator.cpp.o
+.PHONY : src/protomol/addon/sympathetic_cooling/LeapfrogBufferGasIntegrator.cpp.o
+
+src/protomol/addon/sympathetic_cooling/LeapfrogBufferGasIntegrator.i: src/protomol/addon/sympathetic_cooling/LeapfrogBufferGasIntegrator.cpp.i
+.PHONY : src/protomol/addon/sympathetic_cooling/LeapfrogBufferGasIntegrator.i
+
+# target to preprocess a source file
+src/protomol/addon/sympathetic_cooling/LeapfrogBufferGasIntegrator.cpp.i:
+	$(MAKE) -f CMakeFiles/Library.dir/build.make CMakeFiles/Library.dir/src/protomol/addon/sympathetic_cooling/LeapfrogBufferGasIntegrator.cpp.i
+.PHONY : src/protomol/addon/sympathetic_cooling/LeapfrogBufferGasIntegrator.cpp.i
+
+src/protomol/addon/sympathetic_cooling/LeapfrogBufferGasIntegrator.s: src/protomol/addon/sympathetic_cooling/LeapfrogBufferGasIntegrator.cpp.s
+.PHONY : src/protomol/addon/sympathetic_cooling/LeapfrogBufferGasIntegrator.s
+
+# target to generate assembly for a file
+src/protomol/addon/sympathetic_cooling/LeapfrogBufferGasIntegrator.cpp.s:
+	$(MAKE) -f CMakeFiles/Library.dir/build.make CMakeFiles/Library.dir/src/protomol/addon/sympathetic_cooling/LeapfrogBufferGasIntegrator.cpp.s
+.PHONY : src/protomol/addon/sympathetic_cooling/LeapfrogBufferGasIntegrator.cpp.s
+
+src/protomol/addon/sympathetic_cooling/LeapfrogBufferGasIntegrator2.o: src/protomol/addon/sympathetic_cooling/LeapfrogBufferGasIntegrator2.cpp.o
+.PHONY : src/protomol/addon/sympathetic_cooling/LeapfrogBufferGasIntegrator2.o
+
+# target to build an object file
+src/protomol/addon/sympathetic_cooling/LeapfrogBufferGasIntegrator2.cpp.o:
+	$(MAKE) -f CMakeFiles/Library.dir/build.make CMakeFiles/Library.dir/src/protomol/addon/sympathetic_cooling/LeapfrogBufferGasIntegrator2.cpp.o
+.PHONY : src/protomol/addon/sympathetic_cooling/LeapfrogBufferGasIntegrator2.cpp.o
+
+src/protomol/addon/sympathetic_cooling/LeapfrogBufferGasIntegrator2.i: src/protomol/addon/sympathetic_cooling/LeapfrogBufferGasIntegrator2.cpp.i
+.PHONY : src/protomol/addon/sympathetic_cooling/LeapfrogBufferGasIntegrator2.i
+
+# target to preprocess a source file
+src/protomol/addon/sympathetic_cooling/LeapfrogBufferGasIntegrator2.cpp.i:
+	$(MAKE) -f CMakeFiles/Library.dir/build.make CMakeFiles/Library.dir/src/protomol/addon/sympathetic_cooling/LeapfrogBufferGasIntegrator2.cpp.i
+.PHONY : src/protomol/addon/sympathetic_cooling/LeapfrogBufferGasIntegrator2.cpp.i
+
+src/protomol/addon/sympathetic_cooling/LeapfrogBufferGasIntegrator2.s: src/protomol/addon/sympathetic_cooling/LeapfrogBufferGasIntegrator2.cpp.s
+.PHONY : src/protomol/addon/sympathetic_cooling/LeapfrogBufferGasIntegrator2.s
+
+# target to generate assembly for a file
+src/protomol/addon/sympathetic_cooling/LeapfrogBufferGasIntegrator2.cpp.s:
+	$(MAKE) -f CMakeFiles/Library.dir/build.make CMakeFiles/Library.dir/src/protomol/addon/sympathetic_cooling/LeapfrogBufferGasIntegrator2.cpp.s
+.PHONY : src/protomol/addon/sympathetic_cooling/LeapfrogBufferGasIntegrator2.cpp.s
+
+src/protomol/addon/sympathetic_cooling/NeutralAtom.o: src/protomol/addon/sympathetic_cooling/NeutralAtom.cpp.o
+.PHONY : src/protomol/addon/sympathetic_cooling/NeutralAtom.o
+
+# target to build an object file
+src/protomol/addon/sympathetic_cooling/NeutralAtom.cpp.o:
+	$(MAKE) -f CMakeFiles/Library.dir/build.make CMakeFiles/Library.dir/src/protomol/addon/sympathetic_cooling/NeutralAtom.cpp.o
+.PHONY : src/protomol/addon/sympathetic_cooling/NeutralAtom.cpp.o
+
+src/protomol/addon/sympathetic_cooling/NeutralAtom.i: src/protomol/addon/sympathetic_cooling/NeutralAtom.cpp.i
+.PHONY : src/protomol/addon/sympathetic_cooling/NeutralAtom.i
+
+# target to preprocess a source file
+src/protomol/addon/sympathetic_cooling/NeutralAtom.cpp.i:
+	$(MAKE) -f CMakeFiles/Library.dir/build.make CMakeFiles/Library.dir/src/protomol/addon/sympathetic_cooling/NeutralAtom.cpp.i
+.PHONY : src/protomol/addon/sympathetic_cooling/NeutralAtom.cpp.i
+
+src/protomol/addon/sympathetic_cooling/NeutralAtom.s: src/protomol/addon/sympathetic_cooling/NeutralAtom.cpp.s
+.PHONY : src/protomol/addon/sympathetic_cooling/NeutralAtom.s
+
+# target to generate assembly for a file
+src/protomol/addon/sympathetic_cooling/NeutralAtom.cpp.s:
+	$(MAKE) -f CMakeFiles/Library.dir/build.make CMakeFiles/Library.dir/src/protomol/addon/sympathetic_cooling/NeutralAtom.cpp.s
+.PHONY : src/protomol/addon/sympathetic_cooling/NeutralAtom.cpp.s
+
+src/protomol/addon/sympathetic_cooling/ProtoMolIonProxy.o: src/protomol/addon/sympathetic_cooling/ProtoMolIonProxy.cpp.o
+.PHONY : src/protomol/addon/sympathetic_cooling/ProtoMolIonProxy.o
+
+# target to build an object file
+src/protomol/addon/sympathetic_cooling/ProtoMolIonProxy.cpp.o:
+	$(MAKE) -f CMakeFiles/Library.dir/build.make CMakeFiles/Library.dir/src/protomol/addon/sympathetic_cooling/ProtoMolIonProxy.cpp.o
+.PHONY : src/protomol/addon/sympathetic_cooling/ProtoMolIonProxy.cpp.o
+
+src/protomol/addon/sympathetic_cooling/ProtoMolIonProxy.i: src/protomol/addon/sympathetic_cooling/ProtoMolIonProxy.cpp.i
+.PHONY : src/protomol/addon/sympathetic_cooling/ProtoMolIonProxy.i
+
+# target to preprocess a source file
+src/protomol/addon/sympathetic_cooling/ProtoMolIonProxy.cpp.i:
+	$(MAKE) -f CMakeFiles/Library.dir/build.make CMakeFiles/Library.dir/src/protomol/addon/sympathetic_cooling/ProtoMolIonProxy.cpp.i
+.PHONY : src/protomol/addon/sympathetic_cooling/ProtoMolIonProxy.cpp.i
+
+src/protomol/addon/sympathetic_cooling/ProtoMolIonProxy.s: src/protomol/addon/sympathetic_cooling/ProtoMolIonProxy.cpp.s
+.PHONY : src/protomol/addon/sympathetic_cooling/ProtoMolIonProxy.s
+
+# target to generate assembly for a file
+src/protomol/addon/sympathetic_cooling/ProtoMolIonProxy.cpp.s:
+	$(MAKE) -f CMakeFiles/Library.dir/build.make CMakeFiles/Library.dir/src/protomol/addon/sympathetic_cooling/ProtoMolIonProxy.cpp.s
+.PHONY : src/protomol/addon/sympathetic_cooling/ProtoMolIonProxy.cpp.s
 
 src/protomol/addon/tof/AtomRecord.o: src/protomol/addon/tof/AtomRecord.cpp.o
 .PHONY : src/protomol/addon/tof/AtomRecord.o
@@ -5630,6 +5822,9 @@ help:
 	@echo "... src/protomol/addon/ion_trap/HarmonicTrap.o"
 	@echo "... src/protomol/addon/ion_trap/HarmonicTrap.i"
 	@echo "... src/protomol/addon/ion_trap/HarmonicTrap.s"
+	@echo "... src/protomol/addon/segmented_trap/DummyElectrode.o"
+	@echo "... src/protomol/addon/segmented_trap/DummyElectrode.i"
+	@echo "... src/protomol/addon/segmented_trap/DummyElectrode.s"
 	@echo "... src/protomol/addon/snapshot/EqualSpacingTimeQueue.o"
 	@echo "... src/protomol/addon/snapshot/EqualSpacingTimeQueue.i"
 	@echo "... src/protomol/addon/snapshot/EqualSpacingTimeQueue.s"
@@ -5648,6 +5843,27 @@ help:
 	@echo "... src/protomol/addon/stray_field/StrayField.o"
 	@echo "... src/protomol/addon/stray_field/StrayField.i"
 	@echo "... src/protomol/addon/stray_field/StrayField.s"
+	@echo "... src/protomol/addon/sympathetic_cooling/BufferGas.o"
+	@echo "... src/protomol/addon/sympathetic_cooling/BufferGas.i"
+	@echo "... src/protomol/addon/sympathetic_cooling/BufferGas.s"
+	@echo "... src/protomol/addon/sympathetic_cooling/BufferGasManager.o"
+	@echo "... src/protomol/addon/sympathetic_cooling/BufferGasManager.i"
+	@echo "... src/protomol/addon/sympathetic_cooling/BufferGasManager.s"
+	@echo "... src/protomol/addon/sympathetic_cooling/CollisionSchedule.o"
+	@echo "... src/protomol/addon/sympathetic_cooling/CollisionSchedule.i"
+	@echo "... src/protomol/addon/sympathetic_cooling/CollisionSchedule.s"
+	@echo "... src/protomol/addon/sympathetic_cooling/LeapfrogBufferGasIntegrator.o"
+	@echo "... src/protomol/addon/sympathetic_cooling/LeapfrogBufferGasIntegrator.i"
+	@echo "... src/protomol/addon/sympathetic_cooling/LeapfrogBufferGasIntegrator.s"
+	@echo "... src/protomol/addon/sympathetic_cooling/LeapfrogBufferGasIntegrator2.o"
+	@echo "... src/protomol/addon/sympathetic_cooling/LeapfrogBufferGasIntegrator2.i"
+	@echo "... src/protomol/addon/sympathetic_cooling/LeapfrogBufferGasIntegrator2.s"
+	@echo "... src/protomol/addon/sympathetic_cooling/NeutralAtom.o"
+	@echo "... src/protomol/addon/sympathetic_cooling/NeutralAtom.i"
+	@echo "... src/protomol/addon/sympathetic_cooling/NeutralAtom.s"
+	@echo "... src/protomol/addon/sympathetic_cooling/ProtoMolIonProxy.o"
+	@echo "... src/protomol/addon/sympathetic_cooling/ProtoMolIonProxy.i"
+	@echo "... src/protomol/addon/sympathetic_cooling/ProtoMolIonProxy.s"
 	@echo "... src/protomol/addon/tof/AtomRecord.o"
 	@echo "... src/protomol/addon/tof/AtomRecord.i"
 	@echo "... src/protomol/addon/tof/AtomRecord.s"

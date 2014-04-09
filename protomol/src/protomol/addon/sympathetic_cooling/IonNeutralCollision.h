@@ -14,41 +14,31 @@ namespace ProtoMolAddon {
     using namespace ProtoMol;
     using namespace std;
 
+    template <class CrossSection>
     class IonNeutralCollision {
     private:
-
-      class CrossSection {
-	
-      };
-
-      struct energy_hash {
-	vector<double> energy;
-
-	energy_hash(vector<double> &e) : energy(e) {
-	  if (energy.empty())
-	    throw runtime_error("Nonzero length expected for energy cross-section");
-
-	  sort(energy.begin(), energy.end());
-	}
-
-	size_t operator() (double e) {
-	  vector<double>::iterator iter = lower_bound(energy.begin(), 
-						      energy.end(), 
-						      e);
-	  // Move iter back one step if the energy is too high
-	  if (iter==energy.end())
-	    iter--;
-
-	  return hash<double>()(*iter);
-	}
-      };
-
-      unordered_map<double, CrossSection > cross_section;
+      CrossSection cs;
       
     public:
-      IonNeutralCollision();
-      Vector3D Rotate(const Vector3D &v) const;
+      IonNeutralCollision(const CrossSection::initializer &init);
+      Vector3D Rotate(double mu, const Vector3D &v) const;
+      double GetReactionRateConstant(const ProtoMolIonProxy &ion) const;
     };
+
+    template <class CrossSection>
+    IonNeutralCollision<CrossSection>::IonNeutralCollision(const CrossSection::initializer &init) :
+      cs(init) {
+
+    }
+
+    template <class CrossSection>
+    Vector3D IonNeutralCollision<CrossSection>::Rotate(double mu, const Vector3D &v_rel) const {
+      double energy = v_rel.normSquared() * 0.5 * mu ;
+      pair<double, double> solid_angle = CrossSection.ResampleSolidAngle(energy);
+      Vector3D v_rel_after = BuildVector(v_rel.norm(), solid_angle.first, solid_angle.second);
+      return Rotate(v_rel, Vector3D &v_rel);
+    }
+
 
   }
 }

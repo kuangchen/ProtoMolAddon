@@ -20,7 +20,6 @@ namespace ProtoMolAddon {
     class OutputIonSnapshot : public Output {
     private:
       string fname;
-      //SnapshotManager<EqualSpacingTimeQueue, TxtStorage> manager;
       SnapshotManager<EqualSpacingTimeQueue, HDF5Storage> manager;
 
     public:

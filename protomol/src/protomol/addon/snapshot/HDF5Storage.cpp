@@ -44,10 +44,14 @@ void HDF5Storage::SaveFrame(const ProtoMol::ProtoMolApp *app, double t) {
   
     size_t atom_count(app->positions.size());
     hsize_t dataset_dim[2] = { atom_count, 6 };
-  
+    
     // // Write the velocity and position
     DataSpace dataspace(2, dataset_dim);
-  
+
+    // unsigned szip_options_mask = H5_SZIP_NN_OPTION_MASK;
+    // unsigned szip_pixels_per_block = 16;
+    // plist.setSzip( szip_options_mask, szip_pixels_per_block );
+
     DataSet dataset = file.createDataSet((boost::format("frame_%d")% current_frame).str().c_str(), 
      					 PredType::NATIVE_DOUBLE, dataspace);
     
@@ -79,6 +83,7 @@ void HDF5Storage::SaveFrame(const ProtoMol::ProtoMolApp *app, double t) {
     dataset.close();
     attribute.close();
     delete data;
+
     GenericStorage::SaveFrame(app, t);
   }
 

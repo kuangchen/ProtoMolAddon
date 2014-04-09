@@ -114,13 +114,13 @@ void LeapfrogBufferGasIntegrator2::run(int numTimesteps) {
 
   preStepModify();
   neutral_atom.CollideAll2(app, dt);
-  RemoveEnergeticIon(app);
+  //RemoveEnergeticIon(app);
   doHalfKickdoDrift();
   calculateForces();
 
   for (int i = 1; i < numTimesteps; i++) {
     neutral_atom.CollideAll2(app, dt);
-    RemoveEnergeticIon(app);
+    //RemoveEnergeticIon(app);
     doKickdoDrift();
     calculateForces();
 

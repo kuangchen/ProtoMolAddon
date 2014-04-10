@@ -9,11 +9,12 @@ using boost::format;
 using ProtoMol::ProtoMolApp;
 using namespace ProtoMolAddon::Snapshot;
 
+GenericStorage::GenericStorage() {}
 
 GenericStorage::GenericStorage(const string &fname, size_t total_frame_count) : 
   fname(fname), 
-  current_frame(0),
-  total_frame_count(total_frame_count)
+  total_frame_count(total_frame_count),
+  save_time(0)
 {}
 
 void GenericStorage::Initialize(const ProtoMolApp *a) {
@@ -21,7 +22,7 @@ void GenericStorage::Initialize(const ProtoMolApp *a) {
 }
 
 void GenericStorage::SaveFrame(double t) {
-  current_frame++;
+  save_time.push_back(t);
 }
 
   

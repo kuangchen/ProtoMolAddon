@@ -7,7 +7,6 @@
 #include <protomol/type/Vector3D.h>
 #include <boost/format.hpp>
 
-
 using std::string;
 using boost::format;
 using std::copy;
@@ -20,14 +19,16 @@ using ProtoMol::Vector3D;
 size_t HDF5CompressedStorage::counter(0);
 string HDF5CompressedStorage::fname_pattern("snapshot_%d.hd5");
 
+HDF5CompressedStorage::HDF5CompressedStorage() : 
+  GenericStorage() {
+  
+}
 
 HDF5CompressedStorage::HDF5CompressedStorage(size_t total_frame_count, 				     
 					     unsigned int flags) 
 try : GenericStorage((format(fname_pattern) % (counter++)).str(), total_frame_count), 
 	file(fname.c_str(), flags)
-	{
-	  
-	}
+	{}
 catch (FileIException& e) {
   e.printError();
 }
@@ -35,24 +36,43 @@ catch (FileIException& e) {
 void HDF5CompressedStorage::Initialize(const ProtoMol::ProtoMolApp *app) {
   GenericStorage::Initialize(app);
 
-  atom_count = app->positions.size();
-  dataspace_dim[0] = total_frame_count;
-  dataspace_dim[1] = atom_count;
-  dataspace_dim[2] = 6;
-  dataspace = DataSpace(3, dataspace_dim);    
+  try {
+    atom_count = app->positions.size();
+    dataspace_dim[0] = total_frame_count;
+    dataspace_dim[1] = atom_count;
+    dataspace_dim[2] = 6;
+    dataspace = DataSpace(3, dataspace_dim);    
   
-  hsize_t chunk_dim[3]{total_frame_count/4, atom_count/2, 3};
-  plist.setChunk(3, chunk_dim);
-  plist.setDeflate(9);
-  dataset = file.createDataSet("data", PredType::NATIVE_DOUBLE, dataspace, plist);
-  
+    hsize_t chunk_dim[3]{total_frame_count/4, atom_count/2, 3};
+    plist.setChunk(3, chunk_dim);
+    plist.setDeflate(9);
+    dataset = file.createDataSet("data", PredType::NATIVE_DOUBLE, dataspace, plist);
+  }
+
+  catch (FileIException &e) {
+    e.printError();
+  }
+
 }
   
 HDF5CompressedStorage::~HDF5CompressedStorage() {
   try {
+    
+    // Record saved time, only if no frames has ever been recored
+    if (!save_time.empty()) {
+      hsize_t save_time_dim[1] {total_frame_count};
+      DataSpace save_time_dataspace(1, save_time_dim);
+      DataSet save_time_dataset = file.createDataSet("save time", 
+						     PredType::NATIVE_DOUBLE, 
+						     save_time_dataspace);
+
+      save_time_dataset.write(save_time.data(), PredType::NATIVE_DOUBLE);
+    }
+
     dataset.close();
     dataspace.close();
     file.close();
+
   } catch (FileIException &e) {
     e.printError();
   }
@@ -61,7 +81,7 @@ HDF5CompressedStorage::~HDF5CompressedStorage() {
 void HDF5CompressedStorage::SaveFrame(double t) {
   try {
     // Select the hyperspace 
-    hsize_t start[3] {current_frame, 0, 0};
+    hsize_t start[3] {save_time.size(), 0, 0};
     hsize_t count[3] {1, 1, 1};
     hsize_t stride[3] {1, atom_count, 6};
     hsize_t block[3] {1, atom_count, 6};
@@ -72,20 +92,19 @@ void HDF5CompressedStorage::SaveFrame(double t) {
     DataSpace mspace(1, mspace_dim);
     hsize_t startm[1]{0}, countm[1]{1}, stridem[1]{atom_count *6}, blockm[1]{atom_count*6};
     mspace.selectHyperslab(H5S_SELECT_SET, countm, startm, stridem, blockm );
-    double *data = new double[atom_count * 6];
+
+    double *buffer = new double[atom_count * 6];
     Vector3D vel, pos;
 
     for (size_t i=0; i<atom_count; i++) {
-      double *head = &(data[i * 6]);
+      double *head = &(buffer[i * 6]);
       vel = app->velocities[i] * ToSI::velocity;
       pos = app->positions[i] * ToSI::position;
       copy(pos.c, pos.c+3, head);
       copy(vel.c, vel.c+3, head+3);
     }
 
-    dataset.write(data, PredType::NATIVE_DOUBLE, mspace, dataspace);
-
-    dataspace.selectNone();
+    dataset.write(buffer, PredType::NATIVE_DOUBLE, mspace, dataspace);
     GenericStorage::SaveFrame(t);
   }
   

@@ -20,37 +20,34 @@ namespace ProtoMolAddon {
     template <class TimeQueue, class Storage> 
     class SnapshotManager {
     private:
-      typedef pair<TimeQueue, Storage> time_storage_pair;
-      
-    private:
-      vector<time_storage_pair> time_storage;
+      vector<TimeQueue> time_queue;
+      vector<Storage> storage;
 
     public:
-      SnapshotManager() {}
+      SnapshotManager() : time_queue(0), storage(0) {}
 
       SnapshotManager(const string &fname) {
-	
 	ifstream is(fname);
 	if (!is)
 	  throw runtime_error("Cannot open file " + fname);
 
-	TimeQueue tq;
-	while (is >> tq) 
-	  time_storage.push_back(time_storage_pair(tq, Storage(tq.Size())));
+	copy(istream_iterator<TimeQueue>(is), istream_iterator<TimeQueue>(), back_inserter(time_queue));
+
+	for (int i=0; i<time_queue.size(); i++)
+	  storage.push_back(Storage(time_queue[i].Size()));
       }
 
       void Initialize(const ProtoMolApp *app) {
-	for (pair<TimeQueue, Storage> &ts : time_storage) 
-	  ts.second.Initialize(app);
+	for (auto &s: storage)
+	  s.Initialize(app);
       }
       
       void Run(double now) {
-	for (pair<TimeQueue, Storage> &ts : time_storage) {
-	  if (ts.first.IsDue(now)) {
-	    double t = ts.first.PopFront();
-	    ts.second.SaveFrame(t);
+	for (int i=0; i<time_queue.size(); i++) 
+	  if (time_queue[i].IsDue(now)) {
+	    double t = time_queue[i].PopFront();
+	    storage[i].SaveFrame(t);
 	  }
-	}
       }
     
     };

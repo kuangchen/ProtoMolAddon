@@ -19,8 +19,8 @@ namespace ProtoMolAddon {
       static string fname_pattern;
 
     public:
-      HDF5CompressedStorage(size_t total_frame_count, 
-			    unsigned int flags=H5F_ACC_TRUNC); 
+      HDF5CompressedStorage();
+      HDF5CompressedStorage(size_t total_frame_count, unsigned int flags=H5F_ACC_TRUNC); 
 
       ~HDF5CompressedStorage(); 
 

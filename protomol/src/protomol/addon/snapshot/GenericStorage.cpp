@@ -10,9 +10,17 @@ using ProtoMol::ProtoMolApp;
 using namespace ProtoMolAddon::Snapshot;
 
 
-GenericStorage::GenericStorage(const string &fname) : fname(fname), current_frame(0) {}
+GenericStorage::GenericStorage(const string &fname, size_t total_frame_count) : 
+  fname(fname), 
+  current_frame(0),
+  total_frame_count(total_frame_count)
+{}
 
-void GenericStorage::SaveFrame(const ProtoMol::ProtoMolApp *app, double t) {
+void GenericStorage::Initialize(const ProtoMolApp *a) {
+  app = a;
+}
+
+void GenericStorage::SaveFrame(double t) {
   current_frame++;
 }
 

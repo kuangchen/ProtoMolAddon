@@ -11,15 +11,11 @@
 #include <string>
 
 using ProtoMol::ProtoMolApp;
-using std::istream_iterator;
-using std::copy;
-using std::transform;
-using std::vector;
-using std::string;
-using std::cout;
 
 namespace ProtoMolAddon {
   namespace Snapshot {
+
+    using namespace std;
     
     template <class TimeQueue, class Storage> 
     class SnapshotManager {
@@ -33,22 +29,26 @@ namespace ProtoMolAddon {
       SnapshotManager() {}
 
       SnapshotManager(const string &fname) {
+	
 	ifstream is(fname);
 	if (!is)
 	  throw runtime_error("Cannot open file " + fname);
 
 	TimeQueue tq;
 	while (is >> tq) 
-	  time_storage.push_back(time_storage_pair(tq, Storage()));
+	  time_storage.push_back(time_storage_pair(tq, Storage(tq.Size())));
       }
 
-      void Run(double now, const ProtoMolApp *app) {
-	assert(app!=NULL);
-	
+      void Initialize(const ProtoMolApp *app) {
+	for (pair<TimeQueue, Storage> &ts : time_storage) 
+	  ts.second.Initialize(app);
+      }
+      
+      void Run(double now) {
 	for (pair<TimeQueue, Storage> &ts : time_storage) {
 	  if (ts.first.IsDue(now)) {
 	    double t = ts.first.PopFront();
-	    ts.second.SaveFrame(app, t);
+	    ts.second.SaveFrame(t);
 	  }
 	}
       }

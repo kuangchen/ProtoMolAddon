@@ -20,6 +20,10 @@ double EqualSpacingTimeQueue::PopFront() {
   return t0 + dt * current++;
 }
 
+size_t EqualSpacingTimeQueue::Size() const {
+  return n;
+}
+
 bool EqualSpacingTimeQueue::IsDue(double now) {
   return ((current < n) && (now > t0 + current * dt));
 }

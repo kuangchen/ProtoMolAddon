@@ -7,21 +7,26 @@ namespace ProtoMol {
   class ProtoMolApp;
 }
 
-using std::string;
 
 namespace ProtoMolAddon {
   namespace Snapshot {
+
+    using std::string;
 
     class GenericStorage {
     protected:
       string fname;
       size_t current_frame;
+      size_t total_frame_count;
+      const ProtoMol::ProtoMolApp *app;
 
     public:
-      GenericStorage(const string &fname);
+      
+      GenericStorage(const string &fname, size_t total_frame_count);
 	
       virtual ~GenericStorage() = 0; 
-      virtual void SaveFrame(const ProtoMol::ProtoMolApp *app, double t) = 0;
+      void Initialize(const ProtoMol::ProtoMolApp *a);
+      virtual void SaveFrame(double t) = 0;
 
     };
   }

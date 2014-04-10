@@ -37,11 +37,12 @@ void OutputIonSnapshot::getParameters(std::vector<Parameter> &parameter) const
 
      
 void OutputIonSnapshot::doInitialize() {   
+  manager.Initialize(app);
 }
 
 void OutputIonSnapshot::doRun(int step) {
   double now = app->topology->time * TIME_CONV;
-  manager.Run(now, app);
+  manager.Run(now);
 }
 
 void OutputIonSnapshot::doFinalize(int step) {

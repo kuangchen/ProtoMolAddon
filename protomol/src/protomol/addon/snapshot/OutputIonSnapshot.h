@@ -3,15 +3,13 @@
 
 #include <protomol/output/Output.h>
 #include <protomol/addon/snapshot/SnapshotManager.h>
-#include <protomol/addon/snapshot/TxtStorage.h>
-#include <protomol/addon/snapshot/HDF5Storage.h>
+#include <protomol/addon/snapshot/HDF5CompressedStorage.h>
 #include <protomol/addon/snapshot/EqualSpacingTimeQueue.h>
 #include <vector>
 #include <string>
 
 using namespace std;
 using namespace ProtoMol;
-using ProtoMolAddon::Snapshot::TxtStorage;
 using ProtoMolAddon::Snapshot::SnapshotManager;
 
 namespace ProtoMolAddon {
@@ -20,7 +18,7 @@ namespace ProtoMolAddon {
     class OutputIonSnapshot : public Output {
     private:
       string fname;
-      SnapshotManager<EqualSpacingTimeQueue, HDF5Storage> manager;
+      SnapshotManager<EqualSpacingTimeQueue, HDF5CompressedStorage> manager;
 
     public:
       OutputIonSnapshot(const string& filename);

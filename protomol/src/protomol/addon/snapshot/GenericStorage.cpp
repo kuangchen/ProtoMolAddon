@@ -21,6 +21,9 @@ void GenericStorage::Initialize(const ProtoMolApp *a) {
   app = a;
 }
 
+void GenericStorage::Finalize() {
+}
+
 void GenericStorage::SaveFrame(double t) {
   save_time.push_back(t);
 }

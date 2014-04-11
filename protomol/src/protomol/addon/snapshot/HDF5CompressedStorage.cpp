@@ -54,10 +54,9 @@ void HDF5CompressedStorage::Initialize(const ProtoMol::ProtoMolApp *app) {
   }
 
 }
-  
-HDF5CompressedStorage::~HDF5CompressedStorage() {
+
+void HDF5CompressedStorage::Finalize() {
   try {
-    
     // Record saved time, only if no frames has ever been recored
     if (!save_time.empty()) {
       hsize_t save_time_dim[1] {total_frame_count};
@@ -67,10 +66,39 @@ HDF5CompressedStorage::~HDF5CompressedStorage() {
 						     save_time_dataspace);
 
       save_time_dataset.write(save_time.data(), PredType::NATIVE_DOUBLE);
+      save_time_dataset.close();
+      save_time_dataspace.close();
     }
+  }
+  catch (DataSetIException &e) {
+    e.printError();
+  }
+  catch (DataSpaceIException &e) {
+    e.printError();
+  }
 
-    dataset.close();
-    dataspace.close();
+  catch (FileIException &e) {
+    e.printError();
+  }
+
+
+}
+  
+HDF5CompressedStorage::~HDF5CompressedStorage() {
+  try {
+    // Record saved time, only if no frames has ever been recored
+    // if (!save_time.empty()) {
+    //   hsize_t save_time_dim[1] {total_frame_count};
+    //   DataSpace save_time_dataspace(1, save_time_dim);
+    //   DataSet save_time_dataset = file.createDataSet("save time", 
+    // 						     PredType::NATIVE_DOUBLE, 
+    // 						     save_time_dataspace);
+
+    //   save_time_dataset.write(save_time.data(), PredType::NATIVE_DOUBLE);
+    // }
+
+    // dataset.close();
+    // dataspace.close();
     file.close();
 
   } catch (FileIException &e) {

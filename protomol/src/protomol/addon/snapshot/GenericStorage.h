@@ -27,9 +27,11 @@ namespace ProtoMolAddon {
       GenericStorage(const string &fname, size_t total_frame_count);
 	
       virtual ~GenericStorage() = 0; 
-      void Initialize(const ProtoMol::ProtoMolApp *a);
-      virtual void SaveFrame(double t) = 0;
 
+      void Initialize(const ProtoMol::ProtoMolApp *a);
+      void Finalize();
+
+      virtual void SaveFrame(double t) = 0;
     };
   }
 }

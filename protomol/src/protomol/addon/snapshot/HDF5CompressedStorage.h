@@ -25,6 +25,7 @@ namespace ProtoMolAddon {
       ~HDF5CompressedStorage(); 
 
       void Initialize(const ProtoMol::ProtoMolApp *a);
+      void Finalize();
       void SaveFrame(double t);
       
     private:

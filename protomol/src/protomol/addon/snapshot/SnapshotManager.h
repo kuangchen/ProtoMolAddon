@@ -41,6 +41,12 @@ namespace ProtoMolAddon {
 	for (auto &s: storage)
 	  s.Initialize(app);
       }
+
+      void Finalize() {
+	for (auto &s: storage)
+	  s.Finalize();
+      }
+
       
       void Run(double now) {
 	for (int i=0; i<time_queue.size(); i++) 

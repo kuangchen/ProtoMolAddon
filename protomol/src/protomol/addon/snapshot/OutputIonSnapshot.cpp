@@ -46,5 +46,6 @@ void OutputIonSnapshot::doRun(int step) {
 }
 
 void OutputIonSnapshot::doFinalize(int step) {
+  manager.Finalize();
 }
 

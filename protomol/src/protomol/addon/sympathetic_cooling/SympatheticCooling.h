@@ -1,7 +1,7 @@
 #ifndef __SYMPATHETIC_COOLING_H
 #define __SYMPATHETIC_COOLING_H
 
-#include <protomol/addon/sympatetic_cooling/ProtoMolIonProxy.h>
+#include <protomol/addon/util/AtomProxy.h>
 #include <protomol/type/Vector3DBlock.h>
 #include <protomol/ProtoMolApp.h>
 #include <vector>
@@ -20,11 +20,10 @@ namespace ProtoMolAddon {
       Collision collision;
       random_device rd;
       uniform_real_distribution<double> dice;
-      vector< shared_ptr<ProtoMolIonProxy> > ion_proxy;
 
     public:
       SympatheticCooling(ProtoMolApp *app);
-      void Collide(double dt) const;
+      //void Collide(double dt) const;
     };
 
 
@@ -32,10 +31,8 @@ namespace ProtoMolAddon {
     SympatheticCooling<Atom, Collision>::SympatheticCooling(ProtoMolApp *app): 
       atom(), collision(),
       rd(), dice(0, 1),
-      ion_proxy(0)
     {
-      for (unsigned i=0; i<app->positions.size(); i++)
-	ion_proxy.push_back(shared_ptr<ProtoMolIonProxy>(new ProtoMolIonProxy(app, i)));
+
     }
 
 

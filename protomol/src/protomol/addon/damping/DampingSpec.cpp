@@ -94,9 +94,10 @@ void DampingSpec::Damp(ProtoMolApp *app, double now, double h) const  {
     if (it != entry_map.end()) {
       const DampingSpec::DampingSpecEntry &entry = it->second;
 
-      if (now > entry.t_start && now < entry.t_end) 
+      if (now > entry.t_start && now < entry.t_end)  {
 	app->velocities[i] = app->velocities[i] * exp(-entry.alpha * h);
-      
+	app->positions[i] = app->positions[i] * exp(-entry.alpha * h);
+      }
     }
   }
 }

@@ -24,6 +24,7 @@ using std::copy;
 using std::inserter;
 using namespace ProtoMolAddon::Damping;
 namespace pc = ProtoMol::Constant;
+using namespace ProtoMolAddon::Constant;
 
 //____ LeapfrogDampedIntegrator
 
@@ -122,7 +123,7 @@ void LeapfrogDampedIntegrator::run(int numTimesteps) {
     postStepModify();
     
     Real h = getTimestep() * pc::INV_TIMEFACTOR;
-    Real now = app->topology->time * ProtoMolAddon::Constant::TIME_CONV;
+    Real now = app->topology->time * ToSI::time;
     spec.Damp(app, now, h);
 }
 

@@ -6,6 +6,7 @@
 #include <H5DataSet.h>
 #include <protomol/type/Vector3D.h>
 #include <boost/format.hpp>
+#include <cstring>
 
 using std::string;
 using boost::format;
@@ -68,7 +69,34 @@ void HDF5CompressedStorage::Finalize() {
       save_time_dataset.write(save_time.data(), PredType::NATIVE_DOUBLE);
       save_time_dataset.close();
       save_time_dataspace.close();
+ 
+      vector<ProtoMol::Atom>::const_iterator longest = max_element(app->topology->atoms.begin(),
+								   app->topology->atoms.end(),
+								   [](const ProtoMol::Atom &lhs, 
+								      const ProtoMol::Atom &rhs) {
+								     return lhs.name.size() < rhs.name.size();
+								   });
+
+      // Save atom name here
+
+      vector<const char *> atom_name_list(atom_count);
+      for (size_t i=0; i<atom_count; i++) 
+	atom_name_list[i] = app->topology->atoms[i].name.c_str();
+
+      hsize_t atom_name_dim[1] { atom_count };
+      DataSpace atom_name_dataspace(1, atom_name_dim);
+      StrType strdatatype(PredType::C_S1, H5T_VARIABLE);
+      DataSet atom_name_dataset = file.createDataSet("atom name",
+						     strdatatype,
+						     atom_name_dataspace);
+
+
+      atom_name_dataset.write(atom_name_list.data(), strdatatype);
+      atom_name_dataset.close();
+      atom_name_dataspace.close();
+
     }
+    
   }
   catch (DataSetIException &e) {
     e.printError();
@@ -86,19 +114,6 @@ void HDF5CompressedStorage::Finalize() {
   
 HDF5CompressedStorage::~HDF5CompressedStorage() {
   try {
-    // Record saved time, only if no frames has ever been recored
-    // if (!save_time.empty()) {
-    //   hsize_t save_time_dim[1] {total_frame_count};
-    //   DataSpace save_time_dataspace(1, save_time_dim);
-    //   DataSet save_time_dataset = file.createDataSet("save time", 
-    // 						     PredType::NATIVE_DOUBLE, 
-    // 						     save_time_dataspace);
-
-    //   save_time_dataset.write(save_time.data(), PredType::NATIVE_DOUBLE);
-    // }
-
-    // dataset.close();
-    // dataspace.close();
     file.close();
 
   } catch (FileIException &e) {

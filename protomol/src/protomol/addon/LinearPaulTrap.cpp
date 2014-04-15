@@ -43,17 +43,18 @@ Lqt::Lqt(LuaConfigReader& reader) {
 
   double qq = -4 * v_rf / (r0 * r0 * freq_sq) / (m * 1.0364e-8);
   double aa = -4 * v_ec * eta / (z0 * z0 * freq_sq) / (m * 1.0364e-8) * 4;
+  cout << "qq = " << qq << "\n\n";
 
-  q.push_back(qq);
-  q.push_back(-qq);
-  q.push_back(0);
+  // q.push_back(qq);
+  // q.push_back(-qq);
+  // q.push_back(0);
 
-  a.push_back(aa);
-  a.push_back(aa);
-  a.push_back(-2*aa);
+  // a.push_back(aa);
+  // a.push_back(aa);
+  // a.push_back(-2*aa);
     
-  for (int i=0; i<3; i++)
-    mf.push_back(MathieuFunction(q[i], a[i], 15));
+  // for (int i=0; i<3; i++)
+  //   mf.push_back(MathieuFunction(q[i], a[i], 15));
 		   
 }
 

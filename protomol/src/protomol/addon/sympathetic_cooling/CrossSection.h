@@ -11,19 +11,19 @@ namespace ProtoMolAddon {
 
     using namespace std;
     
-    class CrossSection {
+    class DiscreteCrossSection {
     public:
       vector<double> theta;
       vector<double> sigma;
 
     private:
-      static random_device rd;
+      random_device rd;
       shared_ptr< piecewise_constant_distribution<double> > theta_dice;
       shared_ptr< uniform_real_distribution<double> > phi_dice;
 
     public:
-      CrossSection(const string &fname);
-      CrossSection();
+      DiscreteCrossSection(const string &fname);
+      DiscreteCrossSection();
       pair<double, double> ResampleSolidAngle() const;
     };
 

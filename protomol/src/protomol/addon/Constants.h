@@ -16,6 +16,8 @@ namespace ProtoMolAddon {
       const double mass = SI::AMU;
       const double charge = SI::ELECTRON_CHARGE / SQRTCOULOMBCONSTANT;
     }
+
+    const double epsilon_0 = 8.85e-12;
     
     const double force_conv = SI::KCAL * SI::AVOGADRO * 1e-10;
     const double position_conv = 1.0 / SI::LENGTH_AA;

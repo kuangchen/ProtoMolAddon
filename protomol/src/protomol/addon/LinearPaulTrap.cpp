@@ -83,7 +83,7 @@ void Lqt::GetEnergy(const Vector3D& pos, const Vector3D& vel, double time, vecto
 Vector3D Lqt::GetForce(double charge, const Vector3D& pos, double time)
 {
   double a_rf = 2 * 1.60217646e-19 / r0 / r0 * v_rf * cos(2*M_PI*omega*time) * charge;
-  double a_dc = eta * 1.60217646e-19 / z0 / z0 * 4 * v_ec * charge;
+  double a_dc = eta * 1.60217646e-19 / z0 / z0 * v_ec * charge;
 //  vector<double> w = GetSecularFrequency();
 //  cout << w[0] << "\t" << w[1] << "\t" << w[2] << "\n";
 

@@ -12,7 +12,7 @@ namespace ProtoMolAddon {
       const double velocity = 1e-10 * SI::TIME_FS / TIMEFACTOR;
       const double position = 1.0 / SI::LENGTH_AA;
       const double time = 1.0 / SI::TIME_FS;
-      const double force = SI::KCAL * SI::AVOGADRO * 1e-10;
+      const double force = 1.0 / (SI::KCAL * SI::AVOGADRO * 1e-10);
       const double mass = SI::AMU;
       const double charge = SI::ELECTRON_CHARGE / SQRTCOULOMBCONSTANT;
     }

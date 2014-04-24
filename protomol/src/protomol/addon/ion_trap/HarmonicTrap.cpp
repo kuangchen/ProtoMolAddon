@@ -1,35 +1,49 @@
 #include <protomol/addon/ion_trap/HarmonicTrap.h>
 #include <protomol/type/Vector3D.h>
+#include <stdexcept>
 #include <iostream>
+#include <boost/program_options.hpp>
+
 
 using std::istream;
 using std::ostream;
 using namespace ProtoMolAddon::IonTrap;
+namespace po = boost::program_options;
 
-HarmonicTrap::HarmonicTrap(double omega_x, double omega_y, double omega_z) {
-  freq[0] = omega_x;
-  freq[1] = omega_y;
-  freq[2] = omega_z;
+
+HarmonicTrap::HarmonicTrapSpec::HarmonicTrapSpec(const string &fname) {
+  std::ifstream is(fname.c_str());
+
+  if (!is)
+    throw runtime_error(string("Cannot open file ") + fname);
+
+  po::variables_map vm; 
+  po::options_description desc("HarmonicTrap Spec"); 
+  desc.add_options()
+    ("HarmonicTrap.omega_x", po::value<double>(&omega[0])->required(), "trap frequency x")
+    ("HarmonicTrap.omega_y", po::value<double>(&omega[1])->required(), "trap frequency y")
+    ("HarmonicTrap.omega_z", po::value<double>(&omega[2])->required(), "trap frequency z");
+
+  po::store(po::parse_config_file(is, desc, true), vm); 
+  po::notify(vm);
 }
 
-Vector3D HarmonicTrap::GetForce(const Vector3D &pos, double mass) const {
-  Vector3D force;
+HarmonicTrap::HarmonicTrap() {}
+
+HarmonicTrap::HarmonicTrap(const HarmonicTrap::HarmonicTrapSpec &spec) :
+  spec(spec) {
+}
+
+
+Vector3D HarmonicTrap::GetForce(const Util::ConstSIAtomProxy &atom, double now) const {
+  Vector3D f;
+  double m = atom.GetMass();
+  Vector3D p(atom.GetPosition());
+
   for (int i=0; i<3; i++)
-    force[i] = -mass * freq[i] * freq[i] * pos[i];
+    f[i] = spec.omega[i] * spec.omega[i] * p[i];
 
-  return force;
+  return f * (-m);
 }
 
-namespace ProtoMolAddon {
-  namespace IonTrap {
-    istream& operator>> (istream &is, HarmonicTrap &t) {
-      is >> t.freq[0] >> t.freq[1] >> t.freq[2];
-      return is;
-    }
 
-    ostream& operator<< (ostream &os, const HarmonicTrap &t) {
-      os << t.freq[0] << t.freq[1] << t.freq[2];
-      return os;
-    }
-  }
-}

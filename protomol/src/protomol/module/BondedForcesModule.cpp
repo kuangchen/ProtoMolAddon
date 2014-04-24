@@ -9,6 +9,7 @@
 
 #include <protomol/addon/ion_trap/HarmonicTrapForce.h>
 #include <protomol/addon/ion_trap/LQTForce.h>
+//#include <protomol/addon/LQTForce.h>
 //#include <protomol/addon/LaserCoolingForce.h>
 #include <protomol/addon/DampingForce.h>
 #include <protomol/addon/stray_field/StrayFieldForce.h>

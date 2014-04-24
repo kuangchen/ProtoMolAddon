@@ -5,35 +5,28 @@
 #include <protomol/topology/GenericTopology.h>
 #include <protomol/topology/SemiGenericTopology.h>
 #include <protomol/type/ScalarStructure.h>
-#include <protomol/base/PMConstants.h>
+#include <protomol/addon/util/SIAtomProxy.h>
 #include <protomol/addon/ion_trap/HarmonicTrap.h>
-#include <protomol/addon/Constants.h>
 #include <fstream>
 #include <string>
 
-using std::ifstream;
-using std::string;
 using namespace ProtoMol;
-using namespace std;
-using namespace ProtoMol::Constant;
-using namespace ProtoMolAddon;
-using ProtoMolAddon::IonTrap::HarmonicTrap;
 
 namespace ProtoMolAddon {
   namespace IonTrap {
-  
+    
+    using namespace ProtoMolAddon::Util;
+    
     template<class TBoundaryConditions>
     class HarmonicTrapForce: public ExtendedForce {
     private: 
-      string conf;
+      std::string fname;
       HarmonicTrap trap;
 
     public:
-      HarmonicTrapForce(): conf(""), trap() {}
-      HarmonicTrapForce(const string& conf): conf(conf) {
-	ifstream is(conf);
-	is >> trap;
-      }
+      HarmonicTrapForce(): fname(""), trap() {}
+
+      HarmonicTrapForce(const string& fname): fname(fname), trap(fname) {}
     
       virtual void evaluate(const GenericTopology* topo,
 			    const Vector3DBlock* positions,
@@ -70,9 +63,10 @@ namespace ProtoMolAddon {
 								 Vector3DBlock* forces,
 								 ScalarStructure* energies)
     {
-      for(unsigned int i=0;i<topo->atoms.size();i++) 
-	(*forces)[i] += trap.GetForce((*positions)[i] * Constant::position_conv, 
-				      topo->atoms[i].scaledMass * SI::AMU) * Constant::force_conv;
+      for(unsigned int i=0;i<topo->atoms.size();i++) {
+	ConstSIAtomProxy atom(topo, positions, velocities, i);
+	(*forces)[i] += trap.GetForce(atom, topo->time * ToSI::time) / ToSI::force;
+      }
     }
 
 
@@ -89,7 +83,7 @@ namespace ProtoMolAddon {
     template<class TBoundaryConditions>
     inline void HarmonicTrapForce<TBoundaryConditions>::getParameters(std::vector<Parameter>& parameters) const
     {
-      parameters.push_back(Parameter("-conf", Value(conf)));
+      parameters.push_back(Parameter("-ht_spec", Value(fname)));
 			 
     }
 

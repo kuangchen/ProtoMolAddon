@@ -2,8 +2,8 @@ project( ProtoMol )
 cmake_minimum_required( VERSION 2.6 )
 
 set(CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH} "${CMAKE_SOURCE_DIR}/cmake/Modules/")
-SET(CMAKE_CXX_FLAGS "-std=c++0x -O3")
-add_definitions (-fpermissive -Wall -g -O3 )
+SET(CMAKE_CXX_FLAGS "-std=c++0x -O2")
+add_definitions (-fpermissive -Wall -g -O2 )
 
 find_package(Boost REQUIRED COMPONENTS program_options)
 

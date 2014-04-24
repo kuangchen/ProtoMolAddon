@@ -1,25 +1,26 @@
 #ifndef _HARMONIC_TRAP_H_
 #define _HARMONIC_TRAP_H_
 
-#include <iosfwd>
 #include <string>
 #include <array>
 #include <protomol/type/Vector3D.h>
-#include <protomol/addon/util/SIAtomProxy.h>
-
-using ProtoMol::Vector3D;
-using namespace std;
 
 namespace ProtoMolAddon {
+  namespace Util {
+    class ConstSIAtomProxy;
+  }
+
   namespace IonTrap {
+    
+    using ProtoMol::Vector3D;
 
     class HarmonicTrap {
 
     private:
       struct HarmonicTrapSpec {
-	double omega[3];
+	std::array<double, 3> omega;
 	HarmonicTrapSpec() {}
-	HarmonicTrapSpec(const string &fname);
+	HarmonicTrapSpec(const std::string &fname);
       };
 
     private:

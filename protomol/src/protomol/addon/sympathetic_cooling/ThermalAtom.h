@@ -1,5 +1,5 @@
-#ifndef __THERMAL_ATOM_H
-#define __THERMAL_ATOM_H
+#ifndef _THERMAL_ATOM_H
+#define _THERMAL_ATOM_H
 
 #include <protomol/type/Vector3D.h>
 #include <string>
@@ -14,7 +14,7 @@ namespace ProtoMolAddon {
     using namespace std;
 
     class ThermalAtom {
-    private:
+    private:     
       double mass;
       Vector3D position;
       Vector3D velocity;

@@ -1,5 +1,7 @@
 #include <protomol/addon/ion_trap/HarmonicTrap.h>
+#include <protomol/addon/util/SIAtomProxy.h>
 #include <protomol/type/Vector3D.h>
+
 #include <stdexcept>
 #include <iostream>
 #include <boost/program_options.hpp>

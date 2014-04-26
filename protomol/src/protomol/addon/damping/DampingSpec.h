@@ -11,7 +11,10 @@ using std::ostream;
 using std::string;
 using std::istream;
 using std::map;
-using namespace ProtoMol;
+
+namespace ProtoMol {
+  class ProtoMolApp;
+}
 
 namespace ProtoMolAddon {
   namespace Damping {
@@ -34,7 +37,7 @@ namespace ProtoMolAddon {
    
     public:
       DampingSpec();
-      void Damp(ProtoMolApp *app, double now, double h) const;
+      void Damp(ProtoMol::ProtoMolApp *app, double now, double h) const;
 
       friend istream& operator>> (istream &is, DampingSpec &spec);
       friend ostream& operator<< (ostream &os, const DampingSpec &spec);

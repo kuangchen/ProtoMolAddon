@@ -5,39 +5,46 @@
 #include <string>
 #include <random>
 
-using namespace ProtoMol;
-using namespace std;
-
 namespace ProtoMolAddon {
   namespace SympatheticCooling {
-
-    using namespace std;
+    
+    using namespace ProtoMol;
 
     class ThermalAtom {
-    private:     
-      double mass;
+    public:
+      typedef struct ThermalAtomSpec {
+	std::string name;
+	double mass;
+	double density;
+	double temperature;
+	double polarizability;
+
+	ThermalAtomSpec();
+	ThermalAtomSpec(const std::string &fname);
+      } Spec;
+
+    private:
+      ThermalAtomSpec spec;
+      double C4;
       Vector3D position;
       Vector3D velocity;
-      double polarizability;
-      double density;
-      double temperature;
-      double C4;
-      random_device rd;
-      normal_distribution<double> dice;
-    
+      std::random_device rd;
+      std::normal_distribution<double> dice;
+      
     public:
-      typedef string initializer;
-
       ThermalAtom();
-      ThermalAtom(const initializer &fname);
-      void Resample();
+      ThermalAtom(const ThermalAtomSpec &spec);
 
+      void Resample();
+      
       inline Vector3D GetVelocity() const { return velocity; }
       inline Vector3D GetPosition() const { return position; }
-      inline double GetMass() const  { return mass; }
-      inline double GetDensity() const { return density; }
+
+      inline double GetMass() const  { return spec.mass; }
+      inline double GetDensity() const { return spec.density; }
       inline double GetC4() const { return C4; }
     };
+
   }
 }
 

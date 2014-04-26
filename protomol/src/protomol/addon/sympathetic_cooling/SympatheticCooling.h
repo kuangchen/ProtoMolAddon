@@ -25,7 +25,7 @@ namespace ProtoMolAddon {
 
     public:
       SympatheticCooling();
-      SympatheticCooling(const typename Atom::initializer &atom_init, 
+      SympatheticCooling(const typename Atom::Spec &atom_spec, 
 			 const typename Collision::initializer &collision_init);
       void Initialize(ProtoMolApp *app);
       void Run(double dt);
@@ -35,9 +35,9 @@ namespace ProtoMolAddon {
     SympatheticCooling<Atom, Collision>::SympatheticCooling() {}
 
     template <class Atom, class Collision>
-    SympatheticCooling<Atom, Collision>::SympatheticCooling(const typename Atom::initializer &atom_init,
+    SympatheticCooling<Atom, Collision>::SympatheticCooling(const typename Atom::Spec &atom_spec,
 							    const typename Collision::initializer &collision_init): 
-      atom(atom_init), collision(collision_init),
+      atom(atom_spec), collision(collision_init),
       ion_proxy_list(),
       rd(), dice(0, 1)
     {

@@ -86,7 +86,7 @@ namespace ProtoMolAddon {
   }
 }
 
-void DampingSpec::Damp(ProtoMolApp *app, double now, double h) const  {
+void DampingSpec::Damp(ProtoMol::ProtoMolApp *app, double now, double h) const  {
 
   for (unsigned int i=0; i<app->positions.size(); i++) {
     map<string, DampingSpec::DampingSpecEntry>::const_iterator it = entry_map.find(app->topology->atoms[i].name);
@@ -96,7 +96,6 @@ void DampingSpec::Damp(ProtoMolApp *app, double now, double h) const  {
 
       if (now > entry.t_start && now < entry.t_end)  {
 	app->velocities[i] = app->velocities[i] * exp(-entry.alpha * h);
-	//app->positions[i] = app->positions[i] * exp(-entry.alpha * h);
       }
     }
   }

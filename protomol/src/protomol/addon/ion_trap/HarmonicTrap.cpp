@@ -17,7 +17,7 @@ HarmonicTrap::HarmonicTrapSpec::HarmonicTrapSpec(const string &fname) {
   std::ifstream is(fname.c_str());
 
   if (!is)
-    throw runtime_error(string("Cannot open file ") + fname);
+    throw std::runtime_error(string("Cannot open file ") + fname);
 
   po::variables_map vm; 
   po::options_description desc("HarmonicTrap Spec"); 

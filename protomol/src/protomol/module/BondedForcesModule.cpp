@@ -9,9 +9,13 @@
 
 #include <protomol/addon/ion_trap/HarmonicTrapForce.h>
 #include <protomol/addon/ion_trap/LQTForce.h>
-//#include <protomol/addon/LQTForce.h>
+//#include <protomol/addon/damping/SimpleDampingForce.h>
 //#include <protomol/addon/LaserCoolingForce.h>
-#include <protomol/addon/DampingForce.h>
+//#include <protomol/addon/DampingForce.h>
+#include <protomol/addon/damping/GenericDampingForce.h>
+#include <protomol/addon/damping/SimpleDamping.h>
+#include <protomol/addon/damping/LaserCoolingDamping.h>
+
 #include <protomol/addon/stray_field/StrayFieldForce.h>
 
 #include <protomol/ProtoMolApp.h>
@@ -45,9 +49,11 @@ void BondedForcesModule::registerForces(ProtoMolApp *app) {
     f.registerExemplar(new LQTForce<PeriodicBoundaryConditions>());
     f.registerExemplar(new HarmonicTrapForce<PeriodicBoundaryConditions>());
 //f.registerExemplar(new LaserCoolingForce<PeriodicBoundaryConditions>());
-    f.registerExemplar(new DampingForce<PeriodicBoundaryConditions>());
+//f.registerExemplar(new Damping::SimpleDampingForce<PeriodicBoundaryConditions>());
     f.registerExemplar(new StrayFieldForce<PeriodicBoundaryConditions>());
     f.registerExemplar(new ToFForce<PeriodicBoundaryConditions>());
+    f.registerExemplar(new Damping::GenericDampingForce<PeriodicBoundaryConditions, Damping::SimpleDamping>());
+    f.registerExemplar(new Damping::GenericDampingForce<PeriodicBoundaryConditions, Damping::LaserCoolingDamping>());
 
   } else if (equalNocase(boundConds, VacuumBoundaryConditions::keyword)) {
     f.registerExemplar(new RBDihedralSystemForce<VacuumBoundaryConditions>());
@@ -58,8 +64,11 @@ void BondedForcesModule::registerForces(ProtoMolApp *app) {
     f.registerExemplar(new HarmDihedralSystemForce<VacuumBoundaryConditions>());
     f.registerExemplar(new LQTForce<VacuumBoundaryConditions>());
     f.registerExemplar(new HarmonicTrapForce<VacuumBoundaryConditions>());
-    f.registerExemplar(new DampingForce<VacuumBoundaryConditions>());
+//f.registerExemplar(new DampingForce<VacuumBoundaryConditions>());
     f.registerExemplar(new ToFForce<VacuumBoundaryConditions>());
+    f.registerExemplar(new Damping::GenericDampingForce<VacuumBoundaryConditions, Damping::SimpleDamping>());
+    f.registerExemplar(new Damping::GenericDampingForce<VacuumBoundaryConditions, Damping::LaserCoolingDamping>());
+
 //    f.registerExemplar(new LaserCoolingForce<VacuumBoundaryConditions>());
     f.registerExemplar(new StrayFieldForce<VacuumBoundaryConditions>());
   }

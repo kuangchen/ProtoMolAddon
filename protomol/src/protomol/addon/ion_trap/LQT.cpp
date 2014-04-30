@@ -1,39 +1,31 @@
 #include <fstream>
 #include <cmath>
-#include <boost/program_options.hpp>
+#include <boost/property_tree/ptree.hpp>
+#include <boost/property_tree/xml_parser.hpp>
 #include <protomol/addon/ion_trap/LQT.h>
 #include <protomol/addon/util/SIAtomProxy.h>
 
-namespace po = boost::program_options;
+namespace pt = boost::property_tree;
 using namespace ProtoMolAddon::IonTrap;
 
 LQT::LQTSpec::LQTSpec(const string &fname) {
-  std::ifstream is(fname.c_str());
+  pt::ptree tree;
+  pt::read_xml(fname, tree);
 
-  if (!is)
-    throw runtime_error(string("Cannot open file ") + fname);
-
-  po::variables_map vm; 
-  po::options_description desc("LQT Spec"); 
-  desc.add_options()
-    ("LQT.r0", po::value<double>(&r0)->required(), "trap radius")
-    ("LQT.z0", po::value<double>(&z0)->required(), "trap length")
-    ("LQT.omega", po::value<double>(&omega)->required(), "trap frequency")
-    ("LQT.v_rf", po::value<double>(&v_rf)->required(), "rf voltage (amplitude)")
-    ("LQT.v_ec", po::value<double>(&v_ec)->required(), "end-cap voltage")
-    ("LQT.kappa", po::value<double>(&kappa)->required(), "geometrical factor");
-
-  po::store(po::parse_config_file(is, desc, true), vm); 
-  po::notify(vm);
+  double r0 = tree.get<double>("LQTSpec.r0");
+  double z0 = tree.get<double>("LQTSpec.z0");
+  double v_rf = tree.get<double>("LQTSpec.v_rf");
+  double v_ec = tree.get<double>("LQTSpec.v_ec");
+  double kappa = tree.get<double>("LQTSpec.kappa");
+  double omega = tree.get<double>("LQTSpec.omega");
+  (*this) = LQTSpec(r0, z0, omega, v_rf, v_ec, kappa);
 }
-
 
 LQT::LQT(const LQT::LQTSpec &spec) :
   spec(spec), 
   cache_a(2 / spec.r0 / spec.r0 * spec.v_rf ),
   cache_b(1.0/ spec.z0 / spec.z0 * spec.v_ec * spec.kappa),
-  cache_c(2*M_PI*spec.omega)
-{
+  cache_c(2*M_PI*spec.omega) {
 }
 
 LQT::LQT() {}

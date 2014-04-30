@@ -17,6 +17,7 @@ namespace ProtoMolAddon {
       const double charge = SI::ELECTRON_CHARGE / SQRTCOULOMBCONSTANT;
     }
 
+    const double speed_of_light = 299792458;
     const double epsilon_0 = 8.85e-12;
     
     const double force_conv = SI::KCAL * SI::AVOGADRO * 1e-10;

@@ -3,45 +3,35 @@
 #include <protomol/addon/Constants.h>
 #include <stdexcept>
 #include <cmath>
-#include <boost/program_options.hpp>
 #include <fstream>
+#include <boost/property_tree/ptree.hpp>
+#include <boost/property_tree/xml_parser.hpp>
 
-namespace po = boost::program_options;
+namespace pt = boost::property_tree;
 
 using namespace ProtoMolAddon::Constant;
 using namespace ProtoMolAddon::SympatheticCooling;
 using namespace ProtoMol::Constant;
 
-ThermalAtom::ThermalAtomSpec::ThermalAtomSpec() {}
+ThermalAtom::Spec::Spec() {}
 
-ThermalAtom::ThermalAtomSpec::ThermalAtomSpec(const std::string &fname) {
-  std::ifstream is(fname.c_str());
-  
-  if (!is)
-    throw std::runtime_error(string("Cannot open file " + fname));
+ThermalAtom::Spec::Spec(const std::string &fname) {
+  pt::ptree tree;
+  pt::read_xml(fname, tree);
 
-  po::variables_map vm; 
-  po::options_description desc("ThermalAtom spec"); 
-  desc.add_options()
-    ("ThermalAtom.name", po::value<std::string>(&name)->required(), "atom name")
-    ("ThermalAtom.mass", po::value<double>(&mass)->required(), "atom mass [amu]")
-    ("ThermalAtom.density", po::value<double>(&density)->required(), "atom density [m^(-3)]")
-    ("ThermalAtom.temperature", po::value<double>(&temperature)->required(), "atom temperature [K]")
-    ("ThermalAtom.polarizability", po::value<double>(&polarizability)->required(), "atomic polarizability [cm^3]");
+  name = tree.get<std::string>("Atom.name");
+  mass = tree.get<double>("Atom.mass") * ToSI::mass;
+  density = tree.get<double>("Atom.density");
+  temperature = tree.get<double>("Atom.temperature");
+  polarizability = tree.get<double>("Atom.polarizability");
 
   if (mass<0 || density<0 || temperature<0) 
     throw std::runtime_error("invalid input for mass/density/temperature");
-
-  po::store(po::parse_config_file(is, desc, true), vm); 
-  po::notify(vm);
-
-  mass = mass * ToSI::mass;
 }
-
 
 ThermalAtom::ThermalAtom() {}
 
-ThermalAtom::ThermalAtom(const ThermalAtom::ThermalAtomSpec &spec) :
+ThermalAtom::ThermalAtom(const ThermalAtom::Spec &spec) :
   spec(spec),
   C4(spec.polarizability * ToSI::charge * ToSI::charge / (4*M_PI*epsilon_0)),
   position(0, 0, 0),

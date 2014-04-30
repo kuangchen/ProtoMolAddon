@@ -18,32 +18,35 @@ namespace ProtoMolAddon {
     private:
       struct Spec {
 	
-	struct Entry {
+	struct Beam {
+	  std::string label;
 	  std::string ion_name;
 	  double t_start;
 	  double t_end;
 	  Vector3D n;
-	  double k;
-	  double s;
-	  double delta;
-	  double gamma;
+	  double k;  // in cm^-1, w/o 2p
+	  double s;   
+	  double delta; // in Hz
+	  double gamma; // in Hz
 
-	  // Empty constructor
-	  Entry() {}
+	  Beam() {}
 
-	  // Trivial constructor
-	  Entry(std::string ion_name, double t_start, double t_end, 
-		const Vector3D &n, double k, double s, double delta, double gamma) :
-	    ion_name(ion_name), t_start(t_start), t_end(t_end), n(n), k(k),
-	    s(s), delta(delta), gamma(gamma) {}
+	  Beam(const std::string &label, const std::string &ion_name, double t_start, double t_end, 
+		const Vector3D &n_, double k, double s, double delta, double gamma) :
+	    label(label), ion_name(ion_name), t_start(t_start), t_end(t_end), n(n_), k(k),
+	    s(s), delta(delta), gamma(gamma) {
+	    
+	    n.normalize();
+	  }
 	  
 	  Vector3D GetForce(const Vector3D &vel) const {
-	    double d_eff = (delta - n * vel * k)/gamma;
+	    double d_eff = (delta - n * vel * k * 1e2)/gamma;
 	    double pop = s / ( 1 + s + 4 * d_eff * d_eff) / 2;
-	    return n * k * pop * Constant::HBAR;
+	    
+	    return n * (k * 1e2 * pop * Constant::HBAR * 2 * M_PI * gamma );
 	  }
 
-	  friend ostream& operator<< (ostream &os, Entry &entry) {
+	  friend ostream& operator<< (ostream &os, Beam &entry) {
 	    os << entry.ion_name << std::endl
 	       << entry.t_start << std::endl
 	       << entry.t_end << std::endl
@@ -55,10 +58,10 @@ namespace ProtoMolAddon {
 	    return os;	    
 	  }
 	  
-	  friend bool operator< (const Entry &e1, const Entry &e2) { return e1.ion_name < e2.ion_name; }
+	  friend bool operator< (const Beam &e1, const Beam &e2) { return e1.ion_name < e2.ion_name; }
 	};
 
-	std::vector<Entry> entry_list;
+	std::vector<Beam> beam_list;
 	
 	Spec() {}
 	Spec(const std::string &fname);
@@ -72,6 +75,7 @@ namespace ProtoMolAddon {
       Vector3D GetForce(const Util::ConstSIAtomProxy &atom, double now) const;
 
       static std::string GetName() { return "LaserCoolingDampingForce"; }
+      static std::string GetParameterName() { return "-laser-cooling-damping-spec"; }
     };
 
   }

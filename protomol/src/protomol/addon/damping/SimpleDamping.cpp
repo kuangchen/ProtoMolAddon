@@ -15,8 +15,9 @@ SimpleDamping::Spec::Spec(const std::string &fname)
   pt::read_xml(fname, tree);
  
   for (auto &v : tree.get_child("SimpleDampingSpec")) 
-    if (v.first == "Entry") 
-      entry_list.push_back(entry(v.second.get<std::string>("name"),
+    if (v.first == "entry") 
+      entry_list.push_back(entry(v.second.get<std::string>("label"),
+				 v.second.get<std::string>("ion_name"),
 				 v.second.get<double>("t_start"),
 				 v.second.get<double>("t_end"),
 				 v.second.get<double>("alpha")));
@@ -37,12 +38,13 @@ Vector3D SimpleDamping::GetForce(const Util::ConstSIAtomProxy &atom, double now)
   if (spec.entry_list.empty())
     return Vector3D();
 
-  std::vector<spec_entry>::const_iterator iter = std::lower_bound(spec.entry_list.begin(),
-								  spec.entry_list.end(),
-								  atom.GetName(),
-								  [](const spec_entry &e, const std::string &s) {
-								    return e.name < s;
-								  });
+  auto iter = std::lower_bound(spec.entry_list.begin(),
+			       spec.entry_list.end(),
+			       atom.GetName(),
+			       [](const spec_entry &e, const std::string &s) {
+				 return e.ion_name < s;
+			       });
+
   if (iter == spec.entry_list.end() )
     return Vector3D();
   

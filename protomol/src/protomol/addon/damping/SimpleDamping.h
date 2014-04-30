@@ -18,19 +18,20 @@ namespace ProtoMolAddon {
       struct Spec {
 
 	struct Entry {
-	  std::string name;
+	  std::string label;
+	  std::string ion_name;
 	  double t_start;
 	  double t_end;
 	  double alpha;
 
 	  Entry() {}
 
-	  Entry(const std::string &name, double t_start, double t_end, double alpha) : 
-	    name(name), t_start(t_start), t_end(t_end), alpha(alpha) {};
+	  Entry(const std::string &label, const std::string &ion_name, 
+		double t_start, double t_end, double alpha) : 
+	    label(label), ion_name(ion_name), t_start(t_start), t_end(t_end), alpha(alpha) {};
 
-	  friend bool operator< (const Entry &e1, const Entry &e2) { return e1.name < e2.name; }
+	  friend bool operator< (const Entry &e1, const Entry &e2) { return e1.ion_name < e2.ion_name; }
 	}; 
-
 
 	std::vector<Entry> entry_list;
 
@@ -46,6 +47,7 @@ namespace ProtoMolAddon {
       SimpleDamping(const Spec &spec);
       
       static std::string GetName() { return "SimpleDampingForce"; }
+      static std::string GetParameterName() { return "-simple-damping-spec"; }
       Vector3D GetForce(const Util::ConstSIAtomProxy &atom, double now) const;
     };
   }

@@ -12,19 +12,19 @@ namespace ProtoMolAddon {
 
     class ThermalAtom {
     public:
-      typedef struct ThermalAtomSpec {
+      typedef struct Spec {
 	std::string name;
 	double mass;
 	double density;
 	double temperature;
 	double polarizability;
 
-	ThermalAtomSpec();
-	ThermalAtomSpec(const std::string &fname);
+	Spec();
+	Spec(const std::string &fname);
       } Spec;
 
     private:
-      ThermalAtomSpec spec;
+      Spec spec;
       double C4;
       Vector3D position;
       Vector3D velocity;
@@ -33,7 +33,7 @@ namespace ProtoMolAddon {
       
     public:
       ThermalAtom();
-      ThermalAtom(const ThermalAtomSpec &spec);
+      ThermalAtom(const Spec &spec);
 
       void Resample();
       

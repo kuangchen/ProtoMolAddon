@@ -1,6 +1,0 @@
-#!/usr/bin/python
-import os
-import sys
-
-dir = os.path.dirname(sys.argv[0])
-os.system('python ProtoMolCheck Langevin xyz')

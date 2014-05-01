@@ -8,6 +8,7 @@
 #include <protomol/force/bonded/HarmDihedralSystemForce.h>
 
 #include <protomol/addon/ion_trap/HarmonicTrapForce.h>
+#include <protomol/addon/ion_trap/RadialQuenching.h>
 #include <protomol/addon/ion_trap/LQT.h>
 #include <protomol/addon/template/ForceTemplate.h>
 #include <protomol/addon/damping/SimpleDamping.h>
@@ -25,7 +26,6 @@
 using namespace std;
 using namespace ProtoMol;
 using namespace ProtoMolAddon;
-using namespace ProtoMolAddon::IonTrap;
 using namespace ProtoMolAddon::StrayField;
 
 
@@ -45,7 +45,8 @@ void BondedForcesModule::registerForces(ProtoMolApp *app) {
     f.registerExemplar(new ImproperSystemForce<PeriodicBoundaryConditions>());
     f.registerExemplar(new HarmDihedralSystemForce<PeriodicBoundaryConditions>());
     f.registerExemplar(new Template::GenericForce<PeriodicBoundaryConditions, IonTrap::LQT>());
-    f.registerExemplar(new HarmonicTrapForce<PeriodicBoundaryConditions>());
+    f.registerExemplar(new Template::GenericForce<PeriodicBoundaryConditions, IonTrap::RadialQuenching>());
+    f.registerExemplar(new IonTrap::HarmonicTrapForce<PeriodicBoundaryConditions>());
     f.registerExemplar(new StrayFieldForce<PeriodicBoundaryConditions>());
     f.registerExemplar(new ToFForce<PeriodicBoundaryConditions>());
     f.registerExemplar(new Template::GenericForce<PeriodicBoundaryConditions, Damping::SimpleDamping>());
@@ -59,7 +60,8 @@ void BondedForcesModule::registerForces(ProtoMolApp *app) {
     f.registerExemplar(new ImproperSystemForce<VacuumBoundaryConditions>());
     f.registerExemplar(new HarmDihedralSystemForce<VacuumBoundaryConditions>());
     f.registerExemplar(new Template::GenericForce<VacuumBoundaryConditions, IonTrap::LQT>());
-    f.registerExemplar(new HarmonicTrapForce<VacuumBoundaryConditions>());
+    f.registerExemplar(new Template::GenericForce<VacuumBoundaryConditions, IonTrap::RadialQuenching>());
+    f.registerExemplar(new IonTrap::HarmonicTrapForce<VacuumBoundaryConditions>());
     f.registerExemplar(new ToFForce<VacuumBoundaryConditions>());
     f.registerExemplar(new Template::GenericForce<VacuumBoundaryConditions, Damping::SimpleDamping>());
     f.registerExemplar(new Template::GenericForce<VacuumBoundaryConditions, Damping::LaserCoolingDamping>());

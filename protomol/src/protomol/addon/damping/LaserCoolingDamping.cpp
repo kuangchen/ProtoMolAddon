@@ -26,6 +26,8 @@ LaserCoolingDamping::Spec::Spec(const std::string &fname) {
       beam_list.push_back(b);
     }
 
+  // sort the beam based on ion_name
+  // to make searching fast
   std::sort(beam_list.begin(), beam_list.end());
 }
 
@@ -38,7 +40,7 @@ Vector3D LaserCoolingDamping::GetForce(const Util::ConstSIAtomProxy &atom, doubl
 
   if (spec.beam_list.empty())
     return Vector3D();
-
+  
   auto lb = std::lower_bound(spec.beam_list.cbegin(), 
    			     spec.beam_list.cend(), 
    			     atom.GetName(), 
@@ -48,12 +50,18 @@ Vector3D LaserCoolingDamping::GetForce(const Util::ConstSIAtomProxy &atom, doubl
    			     atom.GetName(),
    			     [](const std::string &s, const beam &e) { return s < e.ion_name; });
 
+  // return zero force, if no beam is associated with the atom
   if (lb-ub == 0) return Vector3D();
   else {
+    // otherwise add all the force associated with the atom
     Vector3D f;
-
+	
     std::for_each(lb, ub, 
 		  [&f, &now, &atom](const beam &e) {
+		    //cout << e.label << "\n";
+		    //for (double v=-10; v<10; v+=1) 
+		    //  cout << e.GetForce(Vector3D(0, 0, v)) << "\n";
+
 		    if (e.t_start < now && e.t_end > now) 
 		      f += e.GetForce(atom.GetVelocity());
 		  });

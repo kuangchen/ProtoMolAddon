@@ -8,7 +8,7 @@
 namespace pt = boost::property_tree;
 using namespace ProtoMolAddon::IonTrap;
 
-LQT::LQTSpec::LQTSpec(const string &fname) {
+LQT::LQTSpec::LQTSpec(const std::string &fname) {
   pt::ptree tree;
   pt::read_xml(fname, tree);
 

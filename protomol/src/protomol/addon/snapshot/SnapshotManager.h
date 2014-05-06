@@ -15,8 +15,6 @@ using ProtoMol::ProtoMolApp;
 namespace ProtoMolAddon {
   namespace Snapshot {
 
-    using namespace std;
-    
     template <class TimeQueue, class Storage> 
     class SnapshotManager {
     private:
@@ -29,9 +27,9 @@ namespace ProtoMolAddon {
       SnapshotManager(const string &fname) {
 	ifstream is(fname);
 	if (!is)
-	  throw runtime_error("Cannot open file " + fname);
+	  throw std::runtime_error("Cannot open file " + fname);
 
-	copy(istream_iterator<TimeQueue>(is), istream_iterator<TimeQueue>(), back_inserter(time_queue));
+	std::copy(istream_iterator<TimeQueue>(is), istream_iterator<TimeQueue>(), back_inserter(time_queue));
 
 	for (int i=0; i<time_queue.size(); i++)
 	  storage.push_back(Storage(time_queue[i].Size()));

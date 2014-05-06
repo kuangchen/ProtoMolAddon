@@ -2,23 +2,19 @@
 #include <protomol/ProtoMolApp.h>
 #include <iostream>
 #include <algorithm>
-#include <protomol/addon/Constants.h>
+#include <protomol/addon/util/SIAtomProxy.h>
 #include <H5DataSet.h>
 #include <protomol/type/Vector3D.h>
 #include <boost/format.hpp>
 #include <cstring>
 
-using std::string;
 using boost::format;
-using std::copy;
-using std::endl;
-using std::cerr;
-using namespace ProtoMolAddon::Constant;
+using namespace ProtoMolAddon;
 using namespace ProtoMolAddon::Snapshot;
 using ProtoMol::Vector3D;
 
 size_t HDF5CompressedStorage::counter(0);
-string HDF5CompressedStorage::fname_pattern("snapshot_%d.hd5");
+std::string HDF5CompressedStorage::fname_pattern("snapshot_%d.hd5");
 
 HDF5CompressedStorage::HDF5CompressedStorage() : 
   GenericStorage() {
@@ -42,7 +38,7 @@ void HDF5CompressedStorage::Initialize(const ProtoMol::ProtoMolApp *app) {
     dataspace_dim[0] = total_frame_count;
     dataspace_dim[1] = atom_count;
     dataspace_dim[2] = 6;
-    dataspace = DataSpace(3, dataspace_dim);    
+    dataspace = H5::DataSpace(3, dataspace_dim);    
   
     hsize_t chunk_dim[3]{total_frame_count/4, atom_count/2, 3};
     plist.setChunk(3, chunk_dim);
@@ -70,13 +66,6 @@ void HDF5CompressedStorage::Finalize() {
       save_time_dataset.close();
       save_time_dataspace.close();
  
-      vector<ProtoMol::Atom>::const_iterator longest = max_element(app->topology->atoms.begin(),
-								   app->topology->atoms.end(),
-								   [](const ProtoMol::Atom &lhs, 
-								      const ProtoMol::Atom &rhs) {
-								     return lhs.name.size() < rhs.name.size();
-								   });
-
       // Save atom name here
 
       vector<const char *> atom_name_list(atom_count);
@@ -94,9 +83,7 @@ void HDF5CompressedStorage::Finalize() {
       atom_name_dataset.write(atom_name_list.data(), strdatatype);
       atom_name_dataset.close();
       atom_name_dataspace.close();
-
     }
-    
   }
   catch (DataSetIException &e) {
     e.printError();
@@ -108,8 +95,6 @@ void HDF5CompressedStorage::Finalize() {
   catch (FileIException &e) {
     e.printError();
   }
-
-
 }
   
 HDF5CompressedStorage::~HDF5CompressedStorage() {
@@ -137,17 +122,23 @@ void HDF5CompressedStorage::SaveFrame(double t) {
     mspace.selectHyperslab(H5S_SELECT_SET, countm, startm, stridem, blockm );
 
     double *buffer = new double[atom_count * 6];
-    Vector3D vel, pos;
 
+    Vector3D vel, pos;
     for (size_t i=0; i<atom_count; i++) {
       double *head = &(buffer[i * 6]);
-      vel = app->velocities[i] * ToSI::velocity;
-      pos = app->positions[i] * ToSI::position;
-      copy(pos.c, pos.c+3, head);
-      copy(vel.c, vel.c+3, head+3);
+
+      Util::ConstSIAtomProxy atom(app, i);
+      
+      vel = atom.GetVelocity();
+      pos = atom.GetPosition();
+
+      std::copy(pos.c, pos.c+3, head);
+      std::copy(vel.c, vel.c+3, head+3);
     }
 
     dataset.write(buffer, PredType::NATIVE_DOUBLE, mspace, dataspace);
+
+    delete buffer;
     GenericStorage::SaveFrame(t);
   }
   

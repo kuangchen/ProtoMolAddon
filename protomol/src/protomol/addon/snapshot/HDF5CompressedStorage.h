@@ -5,8 +5,6 @@
 #include <H5Cpp.h>
 #include <H5File.h>
 
-using namespace H5;
-
 namespace ProtoMol {
   class ProtoMolApp;
 }
@@ -14,6 +12,8 @@ namespace ProtoMol {
 namespace ProtoMolAddon {
   namespace Snapshot {
     
+    using namespace H5;
+
     class HDF5CompressedStorage : public GenericStorage {
       static size_t counter;
       static string fname_pattern;
@@ -36,7 +36,6 @@ namespace ProtoMolAddon {
       DataSpace dataspace;
       DataSet dataset;
       DSetCreatPropList plist;
-
     };
   }
 }

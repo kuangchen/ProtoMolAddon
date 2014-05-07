@@ -3,7 +3,7 @@ cmake_minimum_required( VERSION 2.6 )
 
 set(CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH} "${CMAKE_SOURCE_DIR}/cmake/Modules/")
 SET(CMAKE_CXX_FLAGS "-std=c++0x -O2")
-add_definitions (-fpermissive -Wall -s -O2 )
+add_definitions (-fpermissive -Wall -s -O2 -g)
 
 find_package(Boost REQUIRED COMPONENTS program_options)
 

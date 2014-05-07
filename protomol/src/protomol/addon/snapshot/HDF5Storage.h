@@ -1,7 +1,6 @@
 #ifndef _HDF5_STORAGE_H
 #define _HDF5_STORAGE_H
 
-#include <vector>
 #include <string>
 #include <H5Cpp.h>
 #include <H5File.h>
@@ -20,8 +19,7 @@ namespace ProtoMolAddon {
     private:
       static size_t file_name_counter;
       static std::string file_name_pattern;
-      static std::string frame_name_pattern;
-
+      
     public:
       static void SetFileNamePattern(const std::string &pattern);
       static void SetFrameNamePattern(const std::string &pattern);
@@ -30,7 +28,6 @@ namespace ProtoMolAddon {
     private:
       TimeQueue tq;
       const ProtoMol::ProtoMolApp *app;
-      std::vector<double> save_time;
 
       H5File file;
 

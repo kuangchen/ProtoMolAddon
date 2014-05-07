@@ -21,7 +21,7 @@ namespace ProtoMolAddon {
       Snapshot<Storage> ss;
 
     public:
-      OutputSnapshot(const std::string& filename) :
+      OutputSnapshot(const std::string& fname) :
 	Output(1),
 	fname(fname),
 	ss(fname) {

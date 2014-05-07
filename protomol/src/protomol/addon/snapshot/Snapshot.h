@@ -3,6 +3,7 @@
 
 #include <boost/property_tree/ptree.hpp>
 #include <boost/property_tree/xml_parser.hpp>
+#include <boost/foreach.hpp>
 #include <protomol/addon/snapshot/TimeQueue.h>
 #include <protomol/ProtoMolApp.h>
 #include <fstream>
@@ -25,25 +26,18 @@ namespace ProtoMolAddon {
       Snapshot() : storage_list(0) {}
 
       Snapshot(const std::string &fname) {
-	std::ifstream is(fname);
-	if (!is)
-	  throw std::runtime_error("Cannot open file " + fname);
-
 	pt::ptree tree;
 	pt::read_xml(fname, tree);
 
-	std::string root = "SnapshotWith";
-	
-	for (auto &v: tree.get_child((root+Storage::GetName()).c_str())) {
-	  if (v.first == Storage::GetName() + "Spec") {
-	    Storage::SetFileNamePattern(v.second.get<std::string>("FileNamePattern"));
-	    Storage::SetFrameNamePattern(v.second.get<std::string>("FileNamePattern"));
-	  }
+	std::string root = "OutputSnapshotWith" + Storage::GetName();
 
-	  if (v.first == "TimeQueueSpec") 
-	    storage_list.push_back(Storage(v.second));
-	}
+	Storage::SetFileNamePattern(tree.get<std::string>(root+".FileNamePattern", "snapshot_%d.hd5"));
+	
+	for(auto &v: tree.get_child(root+".TimeQueue")) 
+	  if (v.first=="Entry")
+	    storage_list.push_back(Storage(v.second.get<TimeQueue>("")));
       }
+      
 
       void Initialize(const ProtoMolApp *app) {
 	for (auto &s: storage_list) s.Initialize(app);

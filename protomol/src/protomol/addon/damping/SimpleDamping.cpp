@@ -14,7 +14,7 @@ SimpleDamping::Spec::Spec(const std::string &fname)
   pt::ptree tree;
   pt::read_xml(fname, tree);
  
-  for (auto &v : tree.get_child("SimpleDampingSpec")) 
+  for (auto &v : tree.get_child("ConfigRoot.SimpleDampingSpec")) 
     if (v.first == "Entry") 
       entry_list.push_back(entry(v.second.get<std::string>("label"),
 				 v.second.get<std::string>("ion_name"),

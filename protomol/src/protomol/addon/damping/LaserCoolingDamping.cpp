@@ -11,7 +11,7 @@ LaserCoolingDamping::Spec::Spec(const std::string &fname) {
   pt::ptree tree;
   pt::read_xml(fname, tree);
  
-  for (auto &v : tree.get_child("LaserCoolingDampingSpec")) 
+  for (auto &v : tree.get_child("ConfigRoot.LaserCoolingDampingSpec")) 
     if (v.first == "beam") {
       Beam b(v.second.get<std::string>("label"),
 	     v.second.get<std::string>("ion_name"),

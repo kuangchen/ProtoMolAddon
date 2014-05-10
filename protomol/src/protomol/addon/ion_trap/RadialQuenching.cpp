@@ -11,9 +11,9 @@ RadialQuenching::Spec::Spec(const std::string &fname) {
   pt::ptree tree;
   pt::read_xml(fname, tree);
 
-  label = tree.get<std::string>("RadialQuenchingSpec.label");
-  r0 = tree.get<double>("RadialQuenchingSpec.r0");
-  v = tree.get<double>("RadialQuenchingSpec.v");
+  label = tree.get<std::string>("ConfigRoot.RadialQuenchingSpec.label");
+  r0 = tree.get<double>("ConfigRoot.RadialQuenchingSpec.r0");
+  v = tree.get<double>("ConfigRoot.RadialQuenchingSpec.v");
 }
 
 RadialQuenching::RadialQuenching(const RadialQuenching::Spec &spec) :

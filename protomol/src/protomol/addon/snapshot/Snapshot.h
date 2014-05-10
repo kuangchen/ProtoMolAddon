@@ -29,7 +29,7 @@ namespace ProtoMolAddon {
 	pt::ptree tree;
 	pt::read_xml(fname, tree);
 
-	std::string root = "OutputSnapshotWith" + Storage::GetName();
+	std::string root = "ConfigRoot.OutputSnapshotWith" + Storage::GetName();
 
 	Storage::SetFileNamePattern(tree.get<std::string>(root+".FileNamePattern", "snapshot_%d.hd5"));
 	

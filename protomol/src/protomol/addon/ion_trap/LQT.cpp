@@ -12,12 +12,12 @@ LQT::LQTSpec::LQTSpec(const std::string &fname) {
   pt::ptree tree;
   pt::read_xml(fname, tree);
 
-  double r0 = tree.get<double>("LQTSpec.r0");
-  double z0 = tree.get<double>("LQTSpec.z0");
-  double v_rf = tree.get<double>("LQTSpec.v_rf");
-  double v_ec = tree.get<double>("LQTSpec.v_ec");
-  double kappa = tree.get<double>("LQTSpec.kappa");
-  double omega = tree.get<double>("LQTSpec.omega");
+  double r0 = tree.get<double>("ConfigRoot.LQTSpec.r0");
+  double z0 = tree.get<double>("ConfigRoot.LQTSpec.z0");
+  double v_rf = tree.get<double>("ConfigRoot.LQTSpec.v_rf");
+  double v_ec = tree.get<double>("ConfigRoot.LQTSpec.v_ec");
+  double kappa = tree.get<double>("ConfigRoot.LQTSpec.kappa");
+  double omega = tree.get<double>("ConfigRoot.LQTSpec.omega");
   (*this) = LQTSpec(r0, z0, omega, v_rf, v_ec, kappa);
 }
 

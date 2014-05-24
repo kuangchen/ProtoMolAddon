@@ -35,7 +35,9 @@ void HDF5Storage::Initialize(const ProtoMol::ProtoMolApp *app_) {
   dataspace_dim[2] = 6;
   dataspace = H5::DataSpace(3, dataspace_dim);
 
-  hsize_t chunk_dim[3]{tq.Size()/4, atom_count/2, 3};
+  size_t d = atom_count == 1 ? atom_count : atom_count / 2;
+  
+  hsize_t chunk_dim[3]{tq.Size()/4, d, 3};
   plist.setChunk(3, chunk_dim);
   plist.setDeflate(9);
   dataset = file.createDataSet("data", PredType::NATIVE_DOUBLE, dataspace, plist);

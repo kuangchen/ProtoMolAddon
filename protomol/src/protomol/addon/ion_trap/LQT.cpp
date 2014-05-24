@@ -33,7 +33,7 @@ LQT::LQT() {}
 Vector3D LQT::GetForce(const Util::ConstSIAtomProxy &atom, double now) const {
   double a, b;
   double q = atom.GetCharge();
-
+  
   a = cache_a * q * cos(cache_c*now);
   b = cache_b * q;
 

@@ -37,6 +37,9 @@ namespace ProtoMolAddon {
 	    s(s), delta(delta), gamma(gamma) {
 	    
 	    n.normalize();
+	    
+	    std::cout << (*this);
+
 	  }
 	  
 	  Vector3D GetForce(const Vector3D &vel) const {
@@ -52,6 +55,7 @@ namespace ProtoMolAddon {
 	       << entry.t_end << std::endl
 	       << entry.n << std::endl
 	       << entry.s << std::endl
+	       << entry.k << std::endl
 	       << entry.delta << std::endl
 	       << entry.gamma << std::endl;
 

@@ -35,20 +35,26 @@ SimpleDamping::SimpleDamping(const SimpleDamping::Spec &spec) :
 Vector3D SimpleDamping::GetForce(const Util::ConstSIAtomProxy &atom, double now) const {
   typedef SimpleDamping::Spec::Entry spec_entry;
 
-  if (spec.entry_list.empty())
+  if (spec.entry_list.empty()) {
+    cout << "empty";
     return Vector3D();
+  }
+  return atom.GetVelocity() * spec.entry_list.begin()->alpha *(-1) ;
+  // if (spec.entry_list.empty())
+  //   return Vector3D();
 
-  auto iter = std::lower_bound(spec.entry_list.begin(),
-			       spec.entry_list.end(),
-			       atom.GetName(),
-			       [](const spec_entry &e, const std::string &s) {
-				 return e.ion_name < s;
-			       });
+  // auto iter = std::lower_bound(spec.entry_list.begin(),
+  // 			       spec.entry_list.end(),
+  // 			       atom.GetName(),
+  // 			       [](const spec_entry &e, const std::string &s) {
+  // 				 return e.ion_name < s;
+  // 			       });
 
-  if (iter == spec.entry_list.end() )
-    return Vector3D();
+  // if (iter == spec.entry_list.end() )
+  //   return Vector3D();
   
-  else 
-    return (iter->t_start > now || iter->t_end < now) ? Vector3D() : atom.GetVelocity() * (-iter->alpha);
-  
+  // else {
+
+  //   return (iter->t_start > now || iter->t_end < now) ? Vector3D() : atom.GetVelocity() * (-iter->alpha);
+  // }
 }

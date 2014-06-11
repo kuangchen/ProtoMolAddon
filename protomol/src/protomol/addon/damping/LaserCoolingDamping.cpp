@@ -53,15 +53,14 @@ Vector3D LaserCoolingDamping::GetForce(const Util::ConstSIAtomProxy &atom, doubl
   // return zero force, if no beam is associated with the atom
   if (lb-ub == 0) return Vector3D();
   else {
+
     // otherwise add all the force associated with the atom
     Vector3D f;
-	
     std::for_each(lb, ub, 
 		  [&f, &now, &atom](const beam &e) {
 		    //cout << e.label << "\n";
-		    //for (double v=-10; v<10; v+=1) 
-		    //  cout << e.GetForce(Vector3D(0, 0, v)) << "\n";
-
+		    //for (double v=-1; v<1; v+=0.1) 
+		    //  cout << v << "\t" << e.GetForce(Vector3D(0, 0, v))[2] << "\n";
 		    if (e.t_start < now && e.t_end > now) 
 		      f += e.GetForce(atom.GetVelocity());
 		  });

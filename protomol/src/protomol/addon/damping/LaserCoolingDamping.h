@@ -32,21 +32,18 @@ namespace ProtoMolAddon {
 	  Beam() {}
 
 	  Beam(const std::string &label, const std::string &ion_name, double t_start, double t_end, 
-		const Vector3D &n_, double k_, double s, double delta, double gamma) :
-	    label(label), ion_name(ion_name), t_start(t_start), t_end(t_end), n(n_), k(k_*1e2),
-	    s(s), delta(delta), gamma(gamma) {
+		const Vector3D &n_, double k_, double s_, double delta_, double gamma_) :
+	    label(label), ion_name(ion_name), t_start(t_start), t_end(t_end), n(n_), k(k_*1e2 * 2 * M_PI),
+	    s(s_), delta(delta_ * 2 * M_PI), gamma(gamma_ * 2 * M_PI) {
 	    
 	    n.normalize();
 	    
-	    std::cout << (*this);
-
 	  }
 	  
 	  Vector3D GetForce(const Vector3D &vel) const {
 	    double d_eff = (delta - n * vel * k)/gamma;
 	    double pop = s / ( 1 + s + 4 * d_eff * d_eff) / 2;
-	    
-	    return n * (k * Constant::HBAR * 2 * M_PI * pop * (gamma * 2 * M_PI));
+	    return n * (k * Constant::HBAR * pop * gamma );
 	  }
 
 	  friend ostream& operator<< (ostream &os, Beam &entry) {

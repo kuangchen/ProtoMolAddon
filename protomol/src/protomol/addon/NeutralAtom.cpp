@@ -5,7 +5,9 @@
 #include <protomol/addon/Util.h>
 #include <protomol/addon/ProtoMolIon.h>
 #include <cmath>
-
+#include <boost/property_tree/ptree.hpp>
+#include <boost/property_tree/xml_parser.hpp>
+#include <stdexcept>
 #include <fstream>
 
 using namespace ProtoMolAddon;

@@ -39,9 +39,10 @@ namespace ProtoMolAddon {
 
     class SIAtomProxy {
     private:
+      unsigned int id;
       const string *name;
       const double *mass;
-      const double *charge;
+      double *charge;
       Vector3DB *pos;
       Vector3DB *vel;
 
@@ -50,6 +51,7 @@ namespace ProtoMolAddon {
       SIAtomProxy(ProtoMolApp *app, unsigned int i);
       SIAtomProxy(GenericTopology *topo, Vector3DBlock *positions, Vector3DBlock *velocities, unsigned int i);
 
+      inline unsigned int GetID() const { return id; }
       inline Vector3D GetPosition() const { return *pos * ToSI::position; }
       inline Vector3D GetVelocity() const { return *vel * ToSI::velocity; }
 
@@ -58,7 +60,11 @@ namespace ProtoMolAddon {
       
       inline double GetMass() const { return *mass * ToSI::mass; }
       inline double GetCharge() const { return *charge * ToSI::charge; }
+      
+      inline void SetCharge(double c) { *charge = c / ToSI::charge; }
+
       inline string GetName() const { return *name; }
+      bool operator< (SIAtomProxy &other) { return this->id < other.id; }
     };
   }
 }

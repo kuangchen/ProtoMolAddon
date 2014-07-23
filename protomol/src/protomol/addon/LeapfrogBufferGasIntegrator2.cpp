@@ -37,9 +37,6 @@ LeapfrogBufferGasIntegrator2::LeapfrogBufferGasIntegrator2(Real timestep,
   trap_radius(reader.GetValue<double>("trap.radius")),
   trap_z0(reader.GetValue<double>("trap.z0"))
 {
-  //std::cout << neutral_atom;
-  //neutral_atom.SampleVelocityTest("test.log");
-  //neutral_atom.ScatteringTest("test.log");
 }
 
 LeapfrogBufferGasIntegrator2::~LeapfrogBufferGasIntegrator2() {
@@ -114,13 +111,11 @@ void LeapfrogBufferGasIntegrator2::run(int numTimesteps) {
 
   preStepModify();
   neutral_atom.CollideAll2(app, dt);
-  //RemoveEnergeticIon(app);
   doHalfKickdoDrift();
   calculateForces();
 
   for (int i = 1; i < numTimesteps; i++) {
     neutral_atom.CollideAll2(app, dt);
-    //RemoveEnergeticIon(app);
     doKickdoDrift();
     calculateForces();
 

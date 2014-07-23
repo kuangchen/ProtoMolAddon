@@ -1,11 +1,13 @@
 #include <protomol/addon/damping/LaserCoolingDamping.h>
 #include <boost/property_tree/ptree.hpp>
 #include <boost/property_tree/xml_parser.hpp>
+#include <boost/algorithm/string.hpp>
 #include <algorithm>
 #include <stdexcept>
 
-namespace pt = boost::property_tree;
 using namespace ProtoMolAddon::Damping;
+namespace pt = boost::property_tree;
+namespace algorithm = boost::algorithm;
 
 LaserCoolingDamping::Spec::Spec(const std::string &fname) {
   pt::ptree tree;
@@ -13,8 +15,11 @@ LaserCoolingDamping::Spec::Spec(const std::string &fname) {
  
   for (auto &v : tree.get_child("ConfigRoot.LaserCoolingDampingSpec")) 
     if (v.first == "beam") {
+      std::string ion_name(v.second.get<std::string>("ion_name"));
+      algorithm::trim(ion_name);
+
       Beam b(v.second.get<std::string>("label"),
-	     v.second.get<std::string>("ion_name"),
+	     ion_name,
 	     v.second.get<double>("t_start"),
 	     v.second.get<double>("t_end"),
 	     v.second.get<Vector3D>("n"),
@@ -58,9 +63,6 @@ Vector3D LaserCoolingDamping::GetForce(const Util::ConstSIAtomProxy &atom, doubl
     Vector3D f;
     std::for_each(lb, ub, 
 		  [&f, &now, &atom](const beam &e) {
-		    //cout << e.label << "\n";
-		    //for (double v=-1; v<1; v+=0.1) 
-		    //  cout << v << "\t" << e.GetForce(Vector3D(0, 0, v))[2] << "\n";
 		    if (e.t_start < now && e.t_end > now) 
 		      f += e.GetForce(atom.GetVelocity());
 		  });

@@ -13,7 +13,7 @@ using namespace ProtoMolAddon::IonTrap;
 namespace po = boost::program_options;
 
 
-HarmonicTrap::HarmonicTrapSpec::HarmonicTrapSpec(const string &fname) {
+HarmonicTrap::HarmonicTrapSpec::HarmonicTrapSpec(const std::string &fname) {
   std::ifstream is(fname.c_str());
 
   if (!is)

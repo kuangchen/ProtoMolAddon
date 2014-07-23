@@ -54,7 +54,8 @@ ToF::ToF(const string &def): elct(12) {
       int k = stoi(mirror_el2.substr(2, 3));
       elct[i].Potl(elct[k].Potl()).SetReflection(reflection);
     }
-  } 
+  }
+
 }
 
 namespace ProtoMolAddon {

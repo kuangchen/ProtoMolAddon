@@ -1,11 +1,11 @@
 #include <protomol/addon/snapshot/HDF5Storage.h>
 #include <protomol/ProtoMolApp.h>
-#include <iostream>
-#include <algorithm>
 #include <protomol/addon/util/SIAtomProxy.h>
 #include <H5DataSet.h>
 #include <protomol/type/Vector3D.h>
 #include <boost/format.hpp>
+#include <iostream>
+#include <algorithm>
 #include <cstring>
 
 using namespace ProtoMolAddon;
@@ -14,7 +14,7 @@ using ProtoMol::Vector3D;
 
 size_t HDF5Storage::file_name_counter(0);
 
-string HDF5Storage::file_name_pattern("snapshot_%d.hd5");
+std::string HDF5Storage::file_name_pattern("snapshot_%d.hd5");
 
 void HDF5Storage::SetFileNamePattern(const std::string &pattern) { file_name_pattern = pattern; }
 
@@ -33,7 +33,7 @@ void HDF5Storage::Initialize(const ProtoMol::ProtoMolApp *app_) {
   dataspace_dim[0] = tq.Size();
   dataspace_dim[1] = atom_count;
   dataspace_dim[2] = 6;
-  dataspace = H5::DataSpace(3, dataspace_dim);
+  dataspace = DataSpace(3, dataspace_dim);
 
   size_t d = atom_count == 1 ? atom_count : atom_count / 2;
   

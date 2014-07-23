@@ -19,6 +19,7 @@ namespace ProtoMolAddon {
   class ProtoMolIon;
 
   class NeutralAtom {
+
   private:
     double mass;
     double polarizability;

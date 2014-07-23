@@ -1,41 +1,46 @@
-#include <protomol/integrator/leapfrog/LeapfrogIntegrator.h>
 #include <protomol/base/Report.h>
 #include <protomol/type/ScalarStructure.h>
 #include <protomol/type/Vector3DBlock.h>
 #include <protomol/force/ForceGroup.h>
 #include <protomol/topology/GenericTopology.h>
 #include <protomol/topology/TopologyUtilities.h>
-#include <protomol/base/PMConstants.h>
 #include <protomol/ProtoMolApp.h>
+#include <protomol/module/MainModule.h>
+#include <protomol/addon/ionization/IonizationIntegrator.h>
+#include <protomol/addon/Constants.h>
+#include <iostream>
 
-using namespace std;
 using namespace ProtoMol::Report;
 using namespace ProtoMol;
+using namespace ProtoMolAddon::Ionization;
 
-//____ LeapfrogIntegrator
+//____ LeapfrogBufferGasIntegrator
 
-const string LeapfrogIntegrator::keyword("Leapfrog");
+const std::string IonizationIntegrator::keyword("Ionization");
 
-LeapfrogIntegrator::LeapfrogIntegrator() :
-  STSIntegrator() {}
+IonizationIntegrator::IonizationIntegrator() :
+  STSIntegrator(), im() {}
 
-LeapfrogIntegrator::LeapfrogIntegrator(Real timestep,
-                                       ForceGroup *overloadedForces) :
-  STSIntegrator(timestep, overloadedForces) {}
+IonizationIntegrator::IonizationIntegrator(Real timestep,
+					   const std::string& filename, 
+					   ForceGroup *overloadedForces) :
+  STSIntegrator(timestep, overloadedForces), im(filename)
+{
+}
 
-LeapfrogIntegrator::~LeapfrogIntegrator() {}
 
-void LeapfrogIntegrator::initialize(ProtoMolApp *app) {
+
+void IonizationIntegrator::initialize(ProtoMolApp *app) {
   STSIntegrator::initialize(app);
   initializeForces();
 }
 
-void LeapfrogIntegrator::doHalfKickdoDrift() {
+void IonizationIntegrator::doHalfKickdoDrift() {
   if (anyPreDriftOrNextModify()) {
     doHalfKick();
     doDriftOrNextIntegrator();
   } else {
-    Real h = getTimestep() * Constant::INV_TIMEFACTOR;
+    Real h = getTimestep() * ProtoMol::Constant::INV_TIMEFACTOR;
     const unsigned int count = app->positions.size();
 
     //  Do a half kick on beta.
@@ -55,7 +60,7 @@ void LeapfrogIntegrator::doHalfKickdoDrift() {
   }
 }
 
-void LeapfrogIntegrator::doKickdoDrift() {
+void IonizationIntegrator::doKickdoDrift() {
   if (anyPreDriftOrNextModify() || anyPreStepModify() ||
       anyPostStepModify()) {
     if (anyPreStepModify() || anyPostStepModify()) {
@@ -67,7 +72,7 @@ void LeapfrogIntegrator::doKickdoDrift() {
       doKick();
     doDriftOrNextIntegrator();
   } else {
-    Real h = getTimestep() * Constant::INV_TIMEFACTOR;
+    Real h = getTimestep() * ProtoMol::Constant::INV_TIMEFACTOR;
     const unsigned int count = app->positions.size();
 
     updateBeta(h);
@@ -79,34 +84,33 @@ void LeapfrogIntegrator::doKickdoDrift() {
     }
 
     app->positions += app->velocities*h;
-    
-    
+
     buildMolecularCenterOfMass(&app->positions, app->topology);
     buildMolecularMomentum(&app->velocities, app->topology);
     postDriftOrNextModify();
   }
 }
 
-void LeapfrogIntegrator::run(int numTimesteps) {
-
+void IonizationIntegrator::run(int numTimesteps) {
   if (numTimesteps < 1)
     return;
+
   preStepModify();
   doHalfKickdoDrift();
   calculateForces();
+
   for (int i = 1; i < numTimesteps; i++) {
     doKickdoDrift();
     calculateForces();
-    
+
   }
-    
   doHalfKick();
   postStepModify();
 }
 
-STSIntegrator *LeapfrogIntegrator::doMake(const vector<Value> &values,
-                                          ForceGroup *fg) const {
-  return new LeapfrogIntegrator(values[0], fg);
+
+STSIntegrator *IonizationIntegrator::doMake(const vector<Value> &values, ForceGroup *fg) const {
+  return new IonizationIntegrator(values[0], values[1], fg);
 }
 
 //  --------------------------------------------------------------------  //
@@ -115,7 +119,7 @@ STSIntegrator *LeapfrogIntegrator::doMake(const vector<Value> &values,
 //  Update beta: beta -= dt * ( q * F + 2 U )                             //
 //  --------------------------------------------------------------------  //
 
-void LeapfrogIntegrator::updateBeta(Real dt) {
+void IonizationIntegrator::updateBeta(Real dt) {
   //  ----------------------------------------------------------------  //
   //  The shadow calculation is done in a postStep modifier.  If there  //
   //  aren't any, then obviously we don't need to do this calculation.  //
@@ -132,5 +136,10 @@ void LeapfrogIntegrator::updateBeta(Real dt) {
     posDotF += app->positions[i].dot((*myForces)[i]);
 
   myBeta -= dt * (posDotF + 2. * myPotEnergy);
+}
+
+void IonizationIntegrator::getParameters(vector<Parameter> &parameters) const {
+  STSIntegrator::getParameters(parameters);
+  parameters.push_back(Parameter("filename", Value(filename, ConstraintValueType::NotEmpty())));
 }
 

@@ -30,9 +30,12 @@ namespace ProtoMolAddon {
 	pt::read_xml(fname, tree);
 
 	std::string root = "ConfigRoot.OutputSnapshotWith" + Storage::GetName();
-
-	Storage::SetFileNamePattern(tree.get<std::string>(root+".FileNamePattern", "snapshot_%d.hd5"));
+	boost::optional<std::string> pattern = tree.get_optional<std::string>(root+".FileNamePattern");
 	
+	if (pattern) 
+	  Storage::SetFileNamePattern(pattern.get());
+	
+
 	for(auto &v: tree.get_child(root+".TimeQueue")) 
 	  if (v.first=="Entry")
 	    storage_list.push_back(Storage(v.second.get<TimeQueue>("")));

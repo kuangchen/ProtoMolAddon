@@ -7,6 +7,7 @@ SIAtomProxy::SIAtomProxy() :
 }
 
 SIAtomProxy::SIAtomProxy(ProtoMolApp *app, unsigned int i) :
+  id(i),
   name(&(app->topology->atoms[i].name)),
   mass(&(app->topology->atoms[i].scaledMass)),  
   charge(&(app->topology->atoms[i].scaledCharge)),
@@ -19,6 +20,7 @@ SIAtomProxy::SIAtomProxy(GenericTopology *topo,
 			 Vector3DBlock *positions, 
 			 Vector3DBlock *velocities, 
 			 unsigned int i) :
+  id(i),
   name(&(topo->atoms[i].name)),
   mass(&(topo->atoms[i].scaledMass)),
   charge(&(topo->atoms[i].scaledCharge)),

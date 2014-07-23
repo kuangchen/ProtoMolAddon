@@ -22,9 +22,8 @@ namespace ProtoMolAddon {
       
     public:
       static void SetFileNamePattern(const std::string &pattern);
-      static void SetFrameNamePattern(const std::string &pattern);
       static std::string GetName() { return "HDF5Storage"; }
-      
+
     private:
       TimeQueue tq;
       const ProtoMol::ProtoMolApp *app;

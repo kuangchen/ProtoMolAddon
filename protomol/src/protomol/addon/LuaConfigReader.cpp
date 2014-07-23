@@ -15,7 +15,8 @@ LuaConfigReader::LuaConfigReader(const string &filename):
 LuaConfigReader::LuaConfigReader(): L(NULL) {}
 
 LuaConfigReader::~LuaConfigReader() {
-  if(L) lua_close(L);
+  //if(L) lua_close(L);
+  cout << "Lua Closed\n";
 }
 
 

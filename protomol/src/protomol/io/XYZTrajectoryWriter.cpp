@@ -147,11 +147,13 @@ bool XYZTrajectoryWriter::write() {
 
   // First, write the number of atoms
   file << count << endl;
-
+  
+  file << "dummy comment" << endl;
   // Write atoms
   file << setprecision(15);   // This should be some FLT_DIG or DBL_DIG ...
   for (unsigned int i = 0; i < count; ++i) {
-    file << (myNames ? (*myNames)[i] : (*myAtomTypes)[(*myAtoms)[i].type].name)
+    file << (myNames ? (*myNames)[i] : (*myAtoms)[i].name)
+//    file << (myNames ? (*myNames)[i] : (*myAtomTypes)[(*myAtoms)[i].type].name)
          << "\t";
     file.width(24);
     file << (*myCoords)[i].c[0];

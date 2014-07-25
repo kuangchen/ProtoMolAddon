@@ -2,6 +2,7 @@
 #define _SI_ATOM_PROXY
 
 #include <string>
+#include <protomol/base/PMConstants.h>
 #include <protomol/addon/Constants.h>
 #include <protomol/ProtoMolApp.h>
 #include <protomol/type/Vector3DBlock.h>
@@ -40,8 +41,8 @@ namespace ProtoMolAddon {
     class SIAtomProxy {
     private:
       unsigned int id;
-      const string *name;
-      const double *mass;
+      std::string *name;
+      double *mass;
       double *charge;
       Vector3DB *pos;
       Vector3DB *vel;
@@ -59,11 +60,15 @@ namespace ProtoMolAddon {
       inline void SetVelocity(const Vector3D &v) { (*vel) = v / ToSI::velocity; }
       
       inline double GetMass() const { return *mass * ToSI::mass; }
+      inline void SetMass(double m) const { *mass = m / ToSI::mass; }
+
       inline double GetCharge() const { return *charge * ToSI::charge; }
-      
+      inline int GetIntegralCharge() const { return int(GetCharge() / SI::ELECTRON_CHARGE+0.5); }
+      inline void SetIntegralCharge(int c) const { *charge = c * SI::ELECTRON_CHARGE / ToSI::charge; }
       inline void SetCharge(double c) { *charge = c / ToSI::charge; }
 
-      inline string GetName() const { return *name; }
+      inline void SetName(const std::string &n) { *name = n; }
+      inline std::string GetName() const { return *name; }
       bool operator< (SIAtomProxy &other) { return this->id < other.id; }
     };
   }

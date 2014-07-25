@@ -22,6 +22,8 @@
 #include <protomol/module/NonbondedSimpleFullForceModule.h>
 #include <protomol/module/NonbondedIntermittentFullForceModule.h>
 
+#include <protomol/addon/AddonModule.h>
+
 using namespace ProtoMol;
 
 void moduleInitFunction(ModuleManager *manager) {
@@ -48,5 +50,8 @@ void moduleInitFunction(ModuleManager *manager) {
   manager->add(new NonbondedSimpleFullForceModule());
   manager->add(new NonbondedFullElectrostaticForceModule());
   manager->add(new NonbondedIntermittentFullForceModule());
+
+  // Addon
+  manager->add(new ProtoMolAddon::AddonModule());
 }
 

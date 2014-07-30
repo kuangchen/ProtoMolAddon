@@ -11,6 +11,7 @@
 using namespace ProtoMol;
 
 void LeapfrogModule::init(ProtoMolApp *app) {
+  app->integratorFactory.registerExemplar(new LeapfrogIntegrator());
   app->integratorFactory.registerExemplar(new LeapfrogTruncatedShadow());
   app->integratorFactory.registerExemplar(new DMDLeapfrogIntegrator());
   app->integratorFactory.registerExemplar(new PLeapfrogIntegrator());

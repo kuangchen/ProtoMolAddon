@@ -5,6 +5,7 @@
 #include <protomol/addon/reaction/ReactionIntegrator.h>
 #include <protomol/addon/reaction/Replacement.h>
 #include <protomol/addon/reaction/Ionization.h>
+#include <protomol/addon/reaction/EscapeDetection.h>
 
 namespace ProtoMolAddon {
 
@@ -13,5 +14,6 @@ namespace ProtoMolAddon {
     app->integratorFactory.registerExemplar(new LeapfrogBufferGasIntegrator2());
     app->integratorFactory.registerExemplar(new Reaction::ReactionIntegrator<Reaction::Replacement>);
     app->integratorFactory.registerExemplar(new Reaction::ReactionIntegrator<Reaction::Ionization>);
+    app->integratorFactory.registerExemplar(new Reaction::ReactionIntegrator<Reaction::EscapeDetection>);
   }
 }

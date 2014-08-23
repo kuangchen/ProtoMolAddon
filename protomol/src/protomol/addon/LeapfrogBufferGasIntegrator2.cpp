@@ -11,9 +11,8 @@
 #include <cmath>
 #include <string>
 #include <vector>
-#include <protomol/addon/LeapfrogBufferGasIntegrator2.h>
-#include <protomol/addon/BufferGas.h>
 #include <protomol/addon/Constants.h>
+#include <protomol/addon/LeapfrogBufferGasIntegrator2.h>
 
 using namespace std;
 using namespace ProtoMol::Report;

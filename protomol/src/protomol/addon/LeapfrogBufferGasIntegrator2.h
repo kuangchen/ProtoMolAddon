@@ -3,7 +3,7 @@
 #define LEAPFROGBUFFERGASINTEGRATOR2_H
 
 #include <protomol/integrator/STSIntegrator.h>
-#include <protomol/addon/BufferGasManager.h>
+//#include <protomol/addon/BufferGasManager.h>
 #include <protomol/addon/LuaConfigReader.h>
 #include <protomol/addon/NeutralAtom.h>
 

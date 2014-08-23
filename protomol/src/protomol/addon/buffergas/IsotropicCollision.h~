@@ -1,0 +1,50 @@
+#ifndef __ISOTROPIC_COLLISION_H_
+#define __ISOTROPIC_COLLISION_H_
+
+#include <protomol/addon/buffergas/Collision.h>
+#include <protomol/type/Vector3D.h>
+#include <random>
+#include <string>
+
+namespace ProtoMolAddon {
+  namespace BufferGas {
+
+    class IsotropicCollision : public Collision {
+      struct NeutralAtom {
+	double m;
+	std::string name;
+	double alpha;
+	double T;
+	double rho;
+	std::string target;
+
+	std::random_device rd;
+	std::default_random_engine engine;	
+	std::normal_distribution<double> dist;
+	double sigma;
+	ProtoMol::Vector3D v;
+
+	NeutralAtom() {};
+	NeutralAtom(const std::string &fname);
+	void Resample();
+	
+      };
+
+    private:
+      NeutralAtom neutral;
+
+
+    protected:
+      void CollideEach(Util::SIAtomProxy &ap);
+
+    public:
+      IsotropicCollision();
+      IsotropicCollision(const std::string &fname);
+      
+    };
+
+  }
+}
+
+
+#endif

@@ -1,0 +1,46 @@
+#include <protomol/addon/buffergas/IsotropicCollision.h>
+#include <protomol/addon/util/SIAtomProxy.h>
+#include <boost/property_tree/ptree.hpp>
+#include <boost/property_tree/xml_parser.hpp>
+#include <protomol/base/PMConstants.h>
+#include <cmath>
+
+namespace pt = boost::property_tree;
+
+namespace ProtoMolAddon {
+  namespace BufferGas {
+
+    IsotropicCollision::NeutralAtom::NeutralAtom(const std::string &fname) : engine() {
+      pt::ptree tree;
+      pt::read_xml(fname, tree);
+      
+      m = tree.get<double>("ConfigRoot.BufferGas.m");
+      name = tree.get<std::string>("ConfigRoot.BufferGas.name");
+      alpha = tree.get<double>("ConfigRoot.BufferGas.alpha");
+      T = tree.get<double>("ConfigRoot.BufferGas.T");
+      m = tree.get<double>("ConfigRoot.BufferGas.rho");
+      target = tree.get<double>("ConfigRoot.BufferGas.target");
+
+      sigma = sqrt(ProtoMol::Constant::SI::BOLTZMANN * T / m / ProtoMolAddon::Constant::ToSI::mass);
+      dist.param(std::normal_distribution<double>::param_type(0, sigma));
+    }
+    
+    void IsotropicCollision::NeutralAtom::Resample() {
+      v = ProtoMol::Vector3D(dist(engine), dist(engine), dist(engine));
+    }
+
+
+    IsotropicCollision::IsotropicCollision() : Collision(), neutral() {}
+
+    IsotropicCollision::IsotropicCollision(const std::string &fname): 
+      Collision(), 
+      neutral(fname) {}
+
+    
+    void IsotropicCollision::CollideEach(Util::SIAtomProxy &ap) {
+      if (ap.GetName() != neutral.target)
+	return;
+
+    }
+  }
+}

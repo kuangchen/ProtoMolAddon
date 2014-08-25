@@ -12,7 +12,9 @@ namespace algorithm = boost::algorithm;
 namespace ProtoMolAddon {
   namespace BufferGas {
 
-    IsotropicCollision::NeutralAtom::NeutralAtom(const std::string &fname) : engine() {
+    IsotropicCollision::NeutralAtom::NeutralAtom(const std::string &fname) 
+      : rd(), engine(rd()) 
+    {
       pt::ptree tree;
       pt::read_xml(fname, tree);
       
@@ -33,7 +35,7 @@ namespace ProtoMolAddon {
       double mu = m * ap.GetMass() / (m + ap.GetMass());
       double C4 = alpha/2 * 4.35974434e-18 * pow(5.2917721092e-11, 4);
       double gamma = 2 * M_PI * rho * sqrt(C4/mu);
-      
+      //std::cout << "gamma = " << gamma << std::endl;
       time_to_next_collision.param(std::exponential_distribution<double>::param_type(gamma));
 
       return time_to_next_collision(engine);

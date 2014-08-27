@@ -1,27 +1,45 @@
 #ifndef _STRAY_FIELD_H
 #define _STRAY_FIELD_H
 
-#include <iosfwd>
+#include <protomol/addon/util/SIAtomProxy.h>
 #include <protomol/type/Vector3D.h>
-
-using std::istream;
-using ProtoMol::Vector3D;
+#include <iosfwd>
 
 namespace ProtoMolAddon {
+  namespace Util {
+    class ConstSIAtomProxy;
+  }
+
   namespace StrayField {
-    
+
+    using namespace ProtoMol;
+
     class StrayField {
+    public:
+      struct Spec {
+	Vector3D field;
+	Spec() {}
+	Spec(const std::string &fname);
+      };
+
     private:
-      Vector3D field;
+      Spec spec;
 
     public:
-      StrayField(const Vector3D &f = Vector3D());
-      Vector3D GetForce(double charge);
+      StrayField() {}
+      StrayField(const Spec &spec);
 
-      friend istream& operator>> (istream &is, StrayField &f);
+      static std::string GetName() { return "StrayFieldForce"; }
+      static std::string GetParameterName() { return "-stray-field-spec"; }
+      Vector3D GetForce(const Util::ConstSIAtomProxy &atom, double now) const;
+      friend std::ostream& operator<< (std::ostream &os, const StrayField &f);
     };
+
+    
   }
 }
+    
+ 
 
 #endif
 

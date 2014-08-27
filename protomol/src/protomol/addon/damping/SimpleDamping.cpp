@@ -17,14 +17,12 @@ SimpleDamping::Spec::Spec(const std::string &fname)
   pt::read_xml(fname, tree);
  
   for (auto &v : tree.get_child("ConfigRoot.SimpleDampingSpec")) 
-    if (v.first == "Entry") {
-
-      // Need to strip the whitespace in atom_name
-      std::string atom_name(v.second.get<std::string>("atom_name"));
-      algorithm::trim(atom_name);
+    if (v.first == "entry") {
+      std::string target_atom(v.second.get<std::string>("target_atom"));
+      algorithm::trim(target_atom);
 
       entry_list.push_back(entry(v.second.get<std::string>("label"),
-				 atom_name,
+				 target_atom,
 				 v.second.get<double>("t_start"),
 				 v.second.get<double>("t_end"),
 				 v.second.get<double>("alpha")));
@@ -52,7 +50,7 @@ Vector3D SimpleDamping::GetForce(const Util::ConstSIAtomProxy &atom, double now)
   			       spec.entry_list.end(),
   			       atom.GetName(),
   			       [](const spec_entry &e, const std::string &s) {
-  				 return e.atom_name < s;
+  				 return e.target_atom < s;
   			       });
 
   if (iter == spec.entry_list.end() ) 
@@ -67,11 +65,11 @@ namespace ProtoMolAddon {
   namespace Damping {
 
     std::ostream& operator<< (std::ostream &os, const SimpleDamping& d) {
-      std::string header("atom_name\tt_start\tt_end\talpha\tlabel\n");
+      std::string header("target_atom\tt_start\tt_end\talpha\tlabel\n");
       
       os << header;
       for (auto &e: d.spec.entry_list)
-	os << e.atom_name << "\t" 
+	os << e.target_atom << "\t" 
 	   << e.t_start << "\t" 
 	   << e.t_end << "\t" 
 	   << e.alpha << "\t" 

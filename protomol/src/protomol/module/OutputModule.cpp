@@ -18,14 +18,9 @@
 #include <protomol/output/OutputFAHFile.h>
 #include <protomol/output/OutputScreen.h>
 #include <protomol/output/OutputXTCTrajectory.h>
-#include <protomol/addon/tof/OutputCEMRecorder.h>
-
-#include <protomol/addon/snapshot/OutputSnapshot.h>
-#include <protomol/addon/snapshot/HDF5Storage.h>
 
 using namespace std;
 using namespace ProtoMol;
-using namespace ProtoMolAddon::ToF;
 
 void OutputModule::init(ProtoMolApp *app) {
   OutputFactory &f = app->outputFactory;
@@ -45,6 +40,4 @@ void OutputModule::init(ProtoMolApp *app) {
 #endif
   f.registerExemplar(new OutputFAHFile());
   f.registerExemplar(new OutputXTCTrajectory());
-  f.registerExemplar(new OutputCEMRecorder()); 
-  f.registerExemplar(new Snapshot::OutputSnapshot<Snapshot::HDF5Storage>()); 
 }

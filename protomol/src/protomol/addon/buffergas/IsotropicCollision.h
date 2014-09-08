@@ -18,12 +18,12 @@ namespace ProtoMolAddon {
 	double alpha;
 	double T;
 	double rho;
-	std::string target;
+	std::string target_atom_name;
 
 	std::random_device rd;
 	std::default_random_engine engine;
 	std::normal_distribution<double> vel_dist;
-	std::exponential_distribution<double> time_to_next_collision;
+	std::exponential_distribution<double> interval;
 	std::uniform_real_distribution<double> uniform_dist;
 	double sigma;
 	ProtoMol::Vector3D v;

@@ -20,7 +20,7 @@ namespace ProtoMolAddon {
     public:
       typedef int initializer;
 
-IsotropicScattering(const initializer &init = initializer());
+      IsotropicScattering(const initializer &init = initializer());
 
       Vector3D Rotate(double mu, const Vector3D &v) const;
       double GetReactionRateConstant(const ThermalAtom &atom, const SIAtomProxy &ion) const;

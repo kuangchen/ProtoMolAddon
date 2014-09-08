@@ -24,8 +24,8 @@ namespace ProtoMolAddon {
       alpha = tree.get<double>("ConfigRoot.BufferGas.alpha");
       T = tree.get<double>("ConfigRoot.BufferGas.T");
       rho = tree.get<double>("ConfigRoot.BufferGas.rho");
-      target = tree.get<std::string>("ConfigRoot.BufferGas.target");
-      algorithm::trim(target);
+      target_atom_name = tree.get<std::string>("ConfigRoot.BufferGas.target_atom_name");
+      algorithm::trim(target_atom_name);
       
       sigma = sqrt(ProtoMol::Constant::SI::BOLTZMANN * T / m);
       vel_dist.param(std::normal_distribution<double>::param_type(0, sigma));
@@ -35,10 +35,9 @@ namespace ProtoMolAddon {
       double mu = m * ap.GetMass() / (m + ap.GetMass());
       double C4 = alpha/2 * 4.35974434e-18 * pow(5.2917721092e-11, 4);
       double gamma = 2 * M_PI * rho * sqrt(C4/mu);
-      //std::cout << "gamma = " << gamma << std::endl;
-      time_to_next_collision.param(std::exponential_distribution<double>::param_type(gamma));
 
-      return time_to_next_collision(engine);
+      interval.param(std::exponential_distribution<double>::param_type(gamma));
+      return interval(engine);
     }
 
     IsotropicCollision::IsotropicCollision() : Collision(), neutral() {}
@@ -52,7 +51,7 @@ namespace ProtoMolAddon {
     }
 
     void IsotropicCollision::NeutralAtom::Collide(Util::SIAtomProxy &ap, double dt) {
-      if (ap.GetName() != target || GetTimeToNextCollision(ap) > dt) 
+      if (ap.GetName() != target_atom_name || GetTimeToNextCollision(ap) > dt) 
 	return;
 
       v = ProtoMol::Vector3D(vel_dist(engine), vel_dist(engine), vel_dist(engine));

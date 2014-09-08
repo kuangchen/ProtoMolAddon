@@ -26,6 +26,12 @@
 #include <protomol/topology/VacuumBoundaryConditions.h>
 #include <protomol/addon/template/ForceTemplate.h>
 
+#include <protomol/addon/tof/OutputCEMRecorder.h>
+
+#include <protomol/addon/snapshot/OutputSnapshot.h>
+#include <protomol/addon/snapshot/HDF5Storage.h>
+
+
 using namespace ProtoMol;
 
 namespace ProtoMolAddon {
@@ -37,7 +43,13 @@ namespace ProtoMolAddon {
     app->integratorFactory.registerExemplar(new Reaction::ReactionIntegrator<Reaction::EscapeDetection>);
 
     app->integratorFactory.registerExemplar(new BufferGas::LeapfrogBufferGasIntegrator<BufferGas::IsotropicCollision>);
+
+    OutputFactory &f = app->outputFactory;  
+    f.registerExemplar(new ToF::OutputCEMRecorder()); 
+    f.registerExemplar(new Snapshot::OutputSnapshot<Snapshot::HDF5Storage>()); 
   }
+
+
 
 
   void AddonModule::registerForces(ProtoMol::ProtoMolApp *app) {

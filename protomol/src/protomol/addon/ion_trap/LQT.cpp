@@ -16,29 +16,35 @@ LQT::LQTSpec::LQTSpec(const std::string &fname) {
   double z0 = tree.get<double>("ConfigRoot.LQTSpec.z0");
   double v_rf = tree.get<double>("ConfigRoot.LQTSpec.v_rf");
   double v_ec = tree.get<double>("ConfigRoot.LQTSpec.v_ec");
+  double v_dc = tree.get<double>("ConfigRoot.LQTSpec.v_dc");
   double kappa = tree.get<double>("ConfigRoot.LQTSpec.kappa");
   double omega = tree.get<double>("ConfigRoot.LQTSpec.omega");
-  (*this) = LQTSpec(r0, z0, omega, v_rf, v_ec, kappa);
+  (*this) = LQTSpec(r0, z0, omega, v_rf, v_dc, v_ec, kappa);
 }
 
 LQT::LQT(const LQT::LQTSpec &spec) :
   spec(spec), 
   cache_a(2 / spec.r0 / spec.r0 * spec.v_rf ),
   cache_b(1.0/ spec.z0 / spec.z0 * spec.v_ec * spec.kappa),
-  cache_c(2*M_PI*spec.omega) {
+  cache_c(2*M_PI*spec.omega),
+  cache_d(2 / spec.r0 / spec.r0 * spec.v_dc ) 
+{
 }
 
 LQT::LQT() {}
 
 Vector3D LQT::GetForce(const Util::ConstSIAtomProxy &atom, double now) const {
-  double a, b;
+  double a, b, c;
   double q = atom.GetCharge();
+
+
   //std::cout << "q = " << atom.GetCharge() << atom.GetName();
   a = cache_a * q * cos(cache_c*now);
   b = cache_b * q;
+  c = cache_d * q; 
 
   Vector3D p(atom.GetPosition());
-  return Vector3D((-a+b)*p[0], (a+b)*p[1], -2*b*p[2]);
+  return Vector3D((-a+b-c)*p[0], (a+b+c)*p[1], -2*b*p[2]);
 }
 
 // MathieuFunc::mathieu_param LQT::GetMathieuParam(const Util::ConstSIAtomProxy &atom) const {

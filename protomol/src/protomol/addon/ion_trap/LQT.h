@@ -21,12 +21,14 @@ namespace ProtoMolAddon {
 	double z0;
 	double omega;
 	double v_rf;
+	double v_dc;
+
 	double v_ec;
 	double kappa;
 
 	LQTSpec() {};
-	LQTSpec(double r0, double z0, double omega, double v_rf, double v_ec, double kappa):
-	  r0(r0), z0(z0), omega(omega), v_rf(v_rf), v_ec(v_ec), kappa(kappa) {
+	LQTSpec(double r0, double z0, double omega, double v_rf, double v_dc, double v_ec, double kappa):
+	  r0(r0), z0(z0), omega(omega), v_rf(v_rf), v_dc(v_dc), v_ec(v_ec), kappa(kappa) {
 	  
 	  if (r0<0 || z0<0 || omega<0 || v_rf<0 || v_ec<0 || kappa<0)
 	    throw std::runtime_error("Invalid input for LQT Spec");
@@ -40,6 +42,7 @@ namespace ProtoMolAddon {
 	     << "z0 = " << spec.z0 << std::endl
 	     << "omega = " << spec.omega << std::endl
 	     << "v_rf = " << spec.v_rf << std::endl
+	     << "v_dc = " << spec.v_dc << std::endl
 	     << "v_ec = " << spec.v_ec << std::endl
 	     << "kappa = " << spec.kappa << std::endl;
 	  return os;
@@ -49,7 +52,7 @@ namespace ProtoMolAddon {
 
     private:
       LQTSpec spec;
-      double cache_a, cache_b, cache_c;
+      double cache_a, cache_b, cache_c, cache_d;
       
       //MathieuFunc::mathieu_param GetMathieuParam(const Util::ConstSIAtomProxy &atom) const;
       

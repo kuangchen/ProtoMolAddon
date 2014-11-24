@@ -1,4 +1,4 @@
-#ifndef __GENERIC_COLLISION_H
+\#ifndef __GENERIC_COLLISION_H
 #define __GENERIC_COLLISION_H
 
 #include <protomol/type/Vector3D.h>

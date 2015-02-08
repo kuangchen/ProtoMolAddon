@@ -7,13 +7,14 @@
 
 #include <protomol/output/Output.h>
 #include <protomol/addon/snapshot/Snapshot.h>
+#include <protomol/addon/Constants.h>
 #include <string>
-
-using namespace ProtoMol;
 
 namespace ProtoMolAddon {
   namespace Snapshot {
 
+    using namespace ProtoMol;
+    
     template<class Storage>
     class OutputSnapshot : public Output {
     private:
@@ -41,7 +42,7 @@ namespace ProtoMolAddon {
       }
 
       void doRun(int step) {
-	ss.Run( app->topology->time * ToSI::time);
+	ss.Run( app->topology->time * Constant::ToSI::time);
       }
 
       void doFinalize(int step) {
@@ -54,9 +55,7 @@ namespace ProtoMolAddon {
       }
 
       std::string getIdNoAlias() const {return "SnapshotWith" + Storage::GetName();};
-    
     };
-
   }
 }
 

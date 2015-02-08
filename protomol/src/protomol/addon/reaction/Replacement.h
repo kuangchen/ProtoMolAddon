@@ -1,81 +1,66 @@
-#ifndef __REPLACEMENT_H_
-#define __REPLACEMENT_H_
+#ifndef _REPLACEMENT_H
+#define _REPLACEMENT_H
 
-#include <boost/property_tree/ptree.hpp>
-#include <boost/property_tree/xml_parser.hpp>
-#include <boost/algorithm/string.hpp>
 #include <random>
+#include <map>
 #include <string>
-#include <vector>
+#include <memory>
+#include <protomol/ProtoMolApp.h>
+#include <protomol/addon/util/SIAtomProxyArray.h>
 
 namespace ProtoMolAddon {
   namespace Util {
-    class SIAtomProxy;
+    class SIAtomProxyArray;
   }
-
+  
   namespace Reaction {
-    namespace pt = boost::property_tree;
-    namespace algorithm = boost::algorithm;
-
+    using namespace ProtoMol;
+    
     class Replacement {
     private:
-      struct Spec {
+      struct rule {
+	double rate;
+	std::string to_name;
+	double to_mass;
+	double to_energy;
 	
-	struct entry {
-	  double rate;
-	  std::string from_name;
-	  std::string to_name;
-	  double to_mass;
-	  double to_energy;
-
-	  entry(double rate, const std::string &from_name, const std::string &to_name, double to_mass, double to_energy): 
-	    rate(rate), from_name(from_name), to_name(to_name), to_mass(to_mass), to_energy(to_energy) {}
-	
-	  entry(const pt::ptree::value_type &v):
-	    rate(v.second.get<double>("rate")),
-	    from_name(v.second.get<std::string>("from_name")),
-	    to_name(v.second.get<std::string>("to_name")),
-	    to_mass(v.second.get<double>("to_mass")),
-	    to_energy(v.second.get<double>("to_energy")) 
-	    {
-	      
-	      algorithm::trim(from_name);
-	      algorithm::trim(to_name);
-	    }
-	};
-	public:
-	  std::vector<entry> entry_list;
+	rule(): rate(0), to_name(), to_mass(0), to_energy(0) {}
+	rule(double rate, const std::string& to_name,
+	     double to_mass, double to_energy):
+	  rate(rate),
+	  to_name(to_name),
+	  to_mass(to_mass),
+	  to_energy(to_energy)
+	{} 
 	  
-	public:
-	  Spec(): entry_list() {}
-	  Spec(const std::string &fname);
-	};
-      
+      };
 
+      struct Spec: public std::map<std::string, rule> {
+      public:
+	Spec();
+	Spec(const std::string &fname);
+      };
+	
     private:
-      typedef Spec::entry spec_entry;
-      typedef std::vector<Spec::entry>::const_iterator spec_entry_iterator;
+      Spec spec;
+      std::unique_ptr<Util::SIAtomProxyArray> ap_array_ptr;
 
       std::random_device rd;
       mutable std::default_random_engine engine;
       mutable std::uniform_real_distribution<> dist;
-      Spec spec;
-
-    private:
-      spec_entry_iterator find_entry(Util::SIAtomProxy &ap) const;
 
     public:
-      static const std::string keyword;
-      enum state { non_target, not_replaced, replaced };
-      
-      Replacement(): engine(rd()), dist(0, 1) {}
-      Replacement(const std::string &fname);
+      Replacement();
+      Replacement(const Spec& spec): spec(spec), engine(rd()), dist(0, 1) {}
 
-      state assign_init_state(Util::SIAtomProxy &ap) const;
-      void react(Util::SIAtomProxy &ap, state &s, double dt) const;
+      void Initialize(ProtoMolApp *app);
+      void Update(double now, double dt);
 
+      static const std::string GetName() { return "Replacement"; }
+      static const std::string GetParameterName() { return "-replacement-spec"; }
     };
   }
 }
+
 
 #endif

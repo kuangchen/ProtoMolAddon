@@ -2,7 +2,6 @@
 #define _HARMONIC_TRAP_H_
 
 #include <string>
-#include <array>
 #include <protomol/type/Vector3D.h>
 
 namespace ProtoMolAddon {
@@ -11,25 +10,24 @@ namespace ProtoMolAddon {
   }
 
   namespace IonTrap {
-    
-    using ProtoMol::Vector3D;
+    using namespace ProtoMol;
 
     class HarmonicTrap {
-
     private:
-      struct HarmonicTrapSpec {
-	std::array<double, 3> omega;
-	HarmonicTrapSpec() {}
-	HarmonicTrapSpec(const std::string &fname);
+      struct Spec {
+	Vector3D omega;
+	Spec() {}
+	Spec(const std::string &fname);
       };
 
     private:
-      HarmonicTrapSpec spec;
+      Spec spec;
 
     public:
-      HarmonicTrap();
-      HarmonicTrap(const HarmonicTrapSpec &spec);
+      HarmonicTrap(const Spec &spec = Spec());
 
+      static std::string GetName() { return "HarmonicTrapForce"; }
+      static std::string GetParameterName() { return "-ht-spec"; }
       Vector3D GetForce(const Util::ConstSIAtomProxy &atom, double now) const;
     };
     

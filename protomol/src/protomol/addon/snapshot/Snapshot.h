@@ -3,20 +3,18 @@
 
 #include <boost/property_tree/ptree.hpp>
 #include <boost/property_tree/xml_parser.hpp>
-#include <boost/foreach.hpp>
 #include <protomol/addon/snapshot/TimeQueue.h>
 #include <protomol/ProtoMolApp.h>
 #include <fstream>
 #include <vector>
 #include <string>
 
-using ProtoMol::ProtoMolApp;
-
-namespace pt = boost::property_tree;
-
 namespace ProtoMolAddon {
   namespace Snapshot {
 
+    namespace pt = boost::property_tree;
+    using namespace ProtoMol;
+    
     template <class Storage> 
     class Snapshot {
     private:
@@ -34,7 +32,6 @@ namespace ProtoMolAddon {
 	
 	if (pattern) 
 	  Storage::SetFileNamePattern(pattern.get());
-	
 
 	for(auto &v: tree.get_child(root+".TimeQueue")) 
 	  if (v.first=="Entry")

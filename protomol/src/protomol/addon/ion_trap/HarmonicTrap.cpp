@@ -1,51 +1,42 @@
 #include <protomol/addon/ion_trap/HarmonicTrap.h>
-#include <protomol/addon/util/SIAtomProxy.h>
+#include <protomol/addon/util/ConstSIAtomProxy.h>
 #include <protomol/type/Vector3D.h>
 
 #include <stdexcept>
 #include <iostream>
-#include <boost/program_options.hpp>
+#include <boost/property_tree/ptree.hpp>
+#include <boost/property_tree/xml_parser.hpp>
+#include <boost/algorithm/string.hpp>
 
 
-using std::istream;
-using std::ostream;
-using namespace ProtoMolAddon::IonTrap;
-namespace po = boost::program_options;
+namespace ProtoMolAddon {
+  namespace IonTrap {
+
+    namespace pt = boost::property_tree;
+    
+    HarmonicTrap::Spec::Spec(const std::string &fname) {
+      pt::ptree tree;
+      pt::read_xml(fname, tree);
+
+      omega = tree.get<Vector3D>("ConfigRoot.HarmonicTrap.omega");
+    }
+
+    HarmonicTrap::HarmonicTrap(const HarmonicTrap::Spec &spec) :
+      spec(spec) {
+    }
 
 
-HarmonicTrap::HarmonicTrapSpec::HarmonicTrapSpec(const std::string &fname) {
-  std::ifstream is(fname.c_str());
+    Vector3D HarmonicTrap::GetForce(const Util::ConstSIAtomProxy &atom, double now) const {
+      Vector3D f;
+      double m = atom.GetMass();
+      Vector3D p(atom.GetPosition());
 
-  if (!is)
-    throw std::runtime_error(string("Cannot open file ") + fname);
+      for (int i=0; i<3; i++)
+	f[i] = spec.omega[i] * spec.omega[i] * p[i];
 
-  po::variables_map vm; 
-  po::options_description desc("HarmonicTrap Spec"); 
-  desc.add_options()
-    ("HarmonicTrap.omega_x", po::value<double>(&omega[0])->required(), "trap frequency x")
-    ("HarmonicTrap.omega_y", po::value<double>(&omega[1])->required(), "trap frequency y")
-    ("HarmonicTrap.omega_z", po::value<double>(&omega[2])->required(), "trap frequency z");
+      return f * (-m);
+    }
 
-  po::store(po::parse_config_file(is, desc, true), vm); 
-  po::notify(vm);
+
+  }
 }
-
-HarmonicTrap::HarmonicTrap() {}
-
-HarmonicTrap::HarmonicTrap(const HarmonicTrap::HarmonicTrapSpec &spec) :
-  spec(spec) {
-}
-
-
-Vector3D HarmonicTrap::GetForce(const Util::ConstSIAtomProxy &atom, double now) const {
-  Vector3D f;
-  double m = atom.GetMass();
-  Vector3D p(atom.GetPosition());
-
-  for (int i=0; i<3; i++)
-    f[i] = spec.omega[i] * spec.omega[i] * p[i];
-
-  return f * (-m);
-}
-
-

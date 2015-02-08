@@ -3,10 +3,10 @@
 
 #include <protomol/base/PMConstants.h>
 
-using namespace ProtoMol::Constant;
-
 namespace ProtoMolAddon {
   namespace Constant {
+
+    using namespace ProtoMol::Constant;
 
     namespace ToSI {
       const double velocity = 1e-10 * SI::TIME_FS / TIMEFACTOR;

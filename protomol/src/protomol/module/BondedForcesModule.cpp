@@ -7,17 +7,14 @@
 #include <protomol/force/bonded/ImproperSystemForce.h>
 #include <protomol/force/bonded/HarmDihedralSystemForce.h>
 
-
 #include <protomol/ProtoMolApp.h>
 #include <protomol/base/StringUtilities.h>
 #include <protomol/module/TopologyModule.h>
 #include <protomol/topology/PeriodicBoundaryConditions.h>
 #include <protomol/topology/VacuumBoundaryConditions.h>
-#include <protomol/addon/ToFForce.h>
 
 using namespace std;
 using namespace ProtoMol;
-using namespace ProtoMolAddon;
 
 void BondedForcesModule::init(ProtoMolApp *app) {}
 
@@ -34,7 +31,6 @@ void BondedForcesModule::registerForces(ProtoMolApp *app) {
     f.registerExemplar(new AngleSystemForce<PeriodicBoundaryConditions>());
     f.registerExemplar(new ImproperSystemForce<PeriodicBoundaryConditions>());
     f.registerExemplar(new HarmDihedralSystemForce<PeriodicBoundaryConditions>());
-    f.registerExemplar(new ToFForce<PeriodicBoundaryConditions>());
 
   } else if (equalNocase(boundConds, VacuumBoundaryConditions::keyword)) {
     f.registerExemplar(new RBDihedralSystemForce<VacuumBoundaryConditions>());
@@ -43,6 +39,5 @@ void BondedForcesModule::registerForces(ProtoMolApp *app) {
     f.registerExemplar(new AngleSystemForce<VacuumBoundaryConditions>());
     f.registerExemplar(new ImproperSystemForce<VacuumBoundaryConditions>());
     f.registerExemplar(new HarmDihedralSystemForce<VacuumBoundaryConditions>());
-    f.registerExemplar(new ToFForce<VacuumBoundaryConditions>());
   }
 }

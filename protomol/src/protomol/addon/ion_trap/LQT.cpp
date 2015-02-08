@@ -3,7 +3,7 @@
 #include <boost/property_tree/ptree.hpp>
 #include <boost/property_tree/xml_parser.hpp>
 #include <protomol/addon/ion_trap/LQT.h>
-#include <protomol/addon/util/SIAtomProxy.h>
+#include <protomol/addon/util/ConstSIAtomProxy.h>
 
 namespace pt = boost::property_tree;
 using namespace ProtoMolAddon::IonTrap;
@@ -43,11 +43,11 @@ Vector3D LQT::GetForce(const Util::ConstSIAtomProxy &atom, double now) const {
   b = cache_b * q;
   c = cache_d * q; 
 
-  Vector3D p(atom.GetPosition());
+  const Vector3D &p = atom.GetPosition();
   return Vector3D((-a+b-c)*p[0], (a+b+c)*p[1], -2*b*p[2]);
 }
 
-// MathieuFunc::mathieu_param LQT::GetMathieuParam(const Util::ConstSIAtomProxy &atom) const {
+// MathieuFunc::mathieu_param LQT::GetMathieuParam(const Util::ConstConstSIAtomProxy &atom) const {
 //   double q, a;
 //   q = 4 * atom.GetCharge() * spec.v_rf / (atom.GetMass() * spec.r0 * spec.r0 * spec.omega * spec.omega * 4 * M_PI * M_PI);
 //   a = 4 * atom.GetCharge() * spec.v_ec / (atom.GetMass() * spec.z0 * spec.z0 * spec.omega * spec.omega * 4 * M_PI * M_PI);
@@ -55,7 +55,7 @@ Vector3D LQT::GetForce(const Util::ConstSIAtomProxy &atom, double now) const {
 //   return MathieuFunc::mathieu_param(q, a);
 // }
 
-// array<double, 3> LQT::GetSecularFrequency(const Util::ConstSIAtomProxy &atom) const {
+// array<double, 3> LQT::GetSecularFrequency(const Util::ConstConstSIAtomProxy &atom) const {
 //   array<double, 3> fsec;
   
 

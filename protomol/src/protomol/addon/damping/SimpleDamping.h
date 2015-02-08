@@ -1,19 +1,21 @@
 #ifndef _SIMPLE_DAMPING_H
 #define _SIMPLE_DAMPING_H
 
-#include <protomol/addon/util/SIAtomProxy.h>
+#include <protomol/addon/util/ConstSIAtomProxy.h>
 #include <protomol/type/Vector3D.h>
 #include <vector>
 #include <string>
 #include <iostream>
 
 namespace ProtoMolAddon {
+  namespace Util {
+    class ConstSIAtomProxy;
+  }
+  
   namespace Damping {
-
     using namespace ProtoMol;
     
     class SimpleDamping  {
-
     private:
       struct Spec {
 

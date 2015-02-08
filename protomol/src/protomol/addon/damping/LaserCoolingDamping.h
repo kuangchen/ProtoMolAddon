@@ -3,7 +3,7 @@
 
 #include <protomol/type/Vector3D.h>
 #include <protomol/addon/Constants.h>
-#include <protomol/addon/util/SIAtomProxy.h>
+#include <protomol/addon/util/ConstSIAtomProxy.h>
 #include <vector>
 #include <string>
 #include <iostream>
@@ -20,7 +20,7 @@ namespace ProtoMolAddon {
 	
 	struct Beam {
 	  std::string label;
-	  std::string ion_name;
+	  std::string target_atom_name;
 	  double t_start;
 	  double t_end;
 	  Vector3D n;
@@ -31,9 +31,9 @@ namespace ProtoMolAddon {
 
 	  Beam() {}
 
-	  Beam(const std::string &label, const std::string &ion_name, double t_start, double t_end, 
+	  Beam(const std::string &label_, const std::string &target_atom_name, double t_start, double t_end, 
 		const Vector3D &n_, double k_, double s_, double delta_, double gamma_) :
-	    label(label), ion_name(ion_name), t_start(t_start), t_end(t_end), n(n_), k(k_*1e2 * 2 * M_PI),
+	    label(label_), target_atom_name(target_atom_name), t_start(t_start), t_end(t_end), n(n_), k(k_*1e2 * 2 * M_PI),
 	    s(s_), delta(delta_ * 2 * M_PI), gamma(gamma_ * 2 * M_PI) {
 	    
 	    n.normalize();
@@ -47,7 +47,7 @@ namespace ProtoMolAddon {
 	  }
 
 	  friend ostream& operator<< (ostream &os, Beam &entry) {
-	    os << entry.ion_name << std::endl
+	    os << entry.target_atom_name << std::endl
 	       << entry.t_start << std::endl
 	       << entry.t_end << std::endl
 	       << entry.n << std::endl
@@ -59,7 +59,7 @@ namespace ProtoMolAddon {
 	    return os;	    
 	  }
 	  
-	  friend bool operator< (const Beam &e1, const Beam &e2) { return e1.ion_name < e2.ion_name; }
+	  friend bool operator< (const Beam &e1, const Beam &e2) { return e1.target_atom_name < e2.target_atom_name; }
 	};
 
 	std::vector<Beam> beam_list;

@@ -8,12 +8,12 @@
 #include <protomol/type/ScalarStructure.h>
 #include <protomol/base/PMConstants.h>
 #include <protomol/addon/Constants.h>
-#include <protomol/addon/util/SIAtomProxy.h>
-
+#include <protomol/addon/util/ConstSIAtomProxy.h>
 
 namespace ProtoMolAddon {
   namespace Template {
 
+    using namespace ProtoMol;
     using namespace ProtoMolAddon::Constant;
 
     template<class TBoundaryConditions, class F>
@@ -24,7 +24,7 @@ namespace ProtoMolAddon {
 
     public:
       GenericForce() {}
-      GenericForce(const string& fname):
+      GenericForce(const std::string& fname):
 	fname(fname),
 	f(fname)
 	{}
@@ -65,8 +65,8 @@ namespace ProtoMolAddon {
 									   ScalarStructure* energies)
     {
       for(unsigned int i=0;i<topo->atoms.size();i++) {
-	Util::ConstSIAtomProxy atom(topo, positions, velocities, i);
-	(*forces)[i] += f.GetForce(atom, topo->time * ToSI::time) / ToSI::force;
+	Util::ConstSIAtomProxy ap(topo, positions, velocities, i);
+	(*forces)[i] += f.GetForce(ap, topo->time * ToSI::time) / ToSI::force;
       }
     }
 

@@ -1,71 +1,57 @@
-#include <protomol/addon/Constants.h>
 #include <protomol/addon/reaction/Replacement.h>
+#include <protomol/type/Vector3D.h>
 #include <cmath>
 #include <algorithm>
-#include <protomol/type/Vector3D.h>
-#include <protomol/addon/util/SIAtomProxy.h>
-
+#include <boost/property_tree/xml_parser.hpp>
 
 namespace ProtoMolAddon {
   namespace Reaction {
 
     namespace pt = boost::property_tree;
-    namespace algorithm = boost::algorithm;
 
+    Replacement::Spec::Spec() {}
 
-    Replacement::Spec::Spec(const std::string &fname):
-      entry_list() {
-
+    Replacement::Spec::Spec(const std::string &fname) {
       pt::ptree tree;
       pt::read_xml(fname, tree);
-
+      
       for (auto &v: tree.get_child("ConfigRoot.ReplacementSpec"))
-	if (v.first=="entry") entry_list.push_back(spec_entry(v));
+	if (v.first=="entry") 
+	  (*this)[v.second.get<std::string>("from_name")]
+	    = Replacement::rule(v.second.get<double>("rate"),
+				v.second.get<std::string>("to_name"),
+				v.second.get<double>("to_mass"),
+				v.second.get<double>("to_energy"));
+
     }
 
-    const std::string Replacement::keyword("Replacement");
-
-    Replacement::Replacement(const std::string &fname) : 
-      engine(rd()), dist(0, 1), spec(fname)
-    {}
+    Replacement::Replacement() {}
     
-    Replacement::state Replacement::assign_init_state(Util::SIAtomProxy &ap) const {
-      return (find_entry(ap) == spec.entry_list.end()) ? 
-	state::non_target :
-	state::not_replaced;
+    void Replacement::Initialize(ProtoMolApp *app) {
+      ap_array_ptr.reset(new Util::SIAtomProxyArray(app));
     }
 
-    void Replacement::react(Util::SIAtomProxy &ap, Replacement::state &s, double dt) const {
-      // if replaced  a target, don't do anything
-      //if (s!=state::non_target && s!=state::escaped)
-      if (s==state::not_replaced) {
-	spec_entry_iterator it = find_entry(ap);
-	if (it != spec.entry_list.end()) 
-	    if (exp(-it->rate * dt) < dist(engine)) {
-	      std::cout << "atom " << ap.GetName() << " is replaced to " << it->to_name << std::endl;
+    void Replacement::Update(double now, double dt) {
 
-	      ProtoMol::Vector3D v;
-	      for (int j=0; j<3; j++) 
-		v[j] = dist(engine);
+      for (auto &ap: (*ap_array_ptr)) {
+	const string &name = ap.GetName();
+	
+	if (spec.count(name) > 0) {
+	  const rule &entry = spec[name];
 
-	      v.normalize();
+	  if (exp(-entry.rate * dt) < dist(engine)) {
+	    Vector3D v;
+	    for (int j=0; j<3; j++) v[j] = dist(engine);
 
-	      double mag = sqrt(it->to_energy * 2 / (it->to_mass * Constant::ToSI::mass));
-	      ap.SetVelocity(v * mag);
-	      ap.SetName(it->to_name);
-	      ap.SetMass(it->to_mass * Constant::ToSI::mass);
-	      s = state::replaced;
-	    }
+	    v.normalize();
+
+	    double mag = sqrt(entry.to_energy * 2 / (entry.to_mass * Constant::ToSI::mass));
+	    ap.SetVelocity(v * mag);	    
+	    ap.SetName(entry.to_name);
+	    ap.SetMass(entry.to_mass * Constant::ToSI::mass);
+	  }
+	}
       }
     }
-
-    Replacement::spec_entry_iterator Replacement::find_entry(Util::SIAtomProxy &ap) const { 
-      auto it = std::find_if(spec.entry_list.begin(),
-			     spec.entry_list.end(),
-			     [&ap](const spec_entry &e) { return e.from_name==ap.GetName(); });
-
-      return it;
-    }
-
   }
 }

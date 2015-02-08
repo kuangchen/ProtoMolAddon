@@ -1,7 +1,7 @@
 #ifndef _STRAY_FIELD_H
 #define _STRAY_FIELD_H
 
-#include <protomol/addon/util/SIAtomProxy.h>
+#include <protomol/addon/util/ConstSIAtomProxy.h>
 #include <protomol/type/Vector3D.h>
 #include <iosfwd>
 
@@ -18,6 +18,7 @@ namespace ProtoMolAddon {
     public:
       struct Spec {
 	Vector3D field;
+
 	Spec() {}
 	Spec(const std::string &fname);
       };
@@ -31,8 +32,8 @@ namespace ProtoMolAddon {
 
       static std::string GetName() { return "StrayFieldForce"; }
       static std::string GetParameterName() { return "-stray-field-spec"; }
+
       Vector3D GetForce(const Util::ConstSIAtomProxy &atom, double now) const;
-      friend std::ostream& operator<< (std::ostream &os, const StrayField &f);
     };
 
     

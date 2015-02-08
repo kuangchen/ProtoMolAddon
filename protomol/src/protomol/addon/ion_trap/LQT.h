@@ -54,13 +54,9 @@ namespace ProtoMolAddon {
       LQTSpec spec;
       double cache_a, cache_b, cache_c, cache_d;
       
-      //MathieuFunc::mathieu_param GetMathieuParam(const Util::ConstSIAtomProxy &atom) const;
-      
     public:
       LQT();
       LQT(const LQTSpec &spec);
-
-      //array<double, 3> GetSecularFrequency(const Util::ConstSIAtomProxy &atom) const;
 
       static std::string GetName() { return "LQTForce"; }
       static std::string GetParameterName() { return "-lqt-spec"; }

@@ -5,25 +5,7 @@ set(CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH} "${CMAKE_SOURCE_DIR}/cmake/Modules/")
 SET(CMAKE_CXX_FLAGS "-std=c++0x -O2")
 add_definitions (-fpermissive -Wall -s -O2 -g -DARCHLINUX)
 
-find_package(Boost REQUIRED COMPONENTS program_options)
-
-find_package(Lua52)
-if (LUA52_FOUND)
-  include_directories( ${LUA_INCLUDE_DIR} )
-  LIST( APPEND LIBS ${LUA_LIBRARY} )
-endif (LUA52_FOUND)
-              
-# find_package(Luabind)
-# if (LUABIND_FOUND)
-#   include_directories( ${LUABIND_INCLUDE_DIR} )
-#   LIST (APPEND LIBS ${LUABIND_LIBRARY})
-# endif (LUABIND_FOUND)
-     
-find_package(GSL)  
-if (GSL_FOUND)
-  include_directories( ${GSL_INCLUDE_DIRS} )
-  LIST( APPEND LIBS ${GSL_LIBRARIES} )
-endif (GSL_FOUND)
+find_package(Boost REQUIRED COMPONENTS)
 
 find_package(ZLIB)  
 if (ZLIB_FOUND)
@@ -37,8 +19,6 @@ if (HDF5_FOUND)
   include_directories( ${HDF5_INCLUDE_DIRS} )
   LIST( APPEND LIBS ${HDF5_LIBRARIES} )
 endif (HDF5_FOUND)
-
-
 
 option( BUILD_LAPACK "Build with Lapack" Off )
 if( BUILD_LAPACK )

@@ -20,10 +20,18 @@ namespace ProtoMolAddon {
       algorithm::trim(fname);
     }
 
+    CEM::CEM(const CEM &other):
+      spec(other.spec),
+      hit_entry_map(other.hit_entry_map),
+      ap_array_ptr(new Util::ConstSIAtomProxyArray(*other.ap_array_ptr))
+    { 
+    }
+    
     CEM::CEM(const CEM::Spec &spec) :
       spec(spec) {
     }
 
+    
     void CEM::Initialize(const ProtoMolApp *app) {
       ap_array_ptr.reset(new Util::ConstSIAtomProxyArray(app));
     }

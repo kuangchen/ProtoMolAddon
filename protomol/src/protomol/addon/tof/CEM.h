@@ -52,6 +52,7 @@ namespace ProtoMolAddon {
       
     public:
       CEM() {}
+      CEM(const CEM &other);
       CEM(const Spec &spec);
       
       void Initialize(const ProtoMolApp *app);

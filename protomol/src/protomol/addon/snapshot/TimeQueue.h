@@ -10,13 +10,14 @@ namespace ProtoMolAddon {
     class TimeQueue: public std::vector<double> {
     private:
       typedef std::vector<double>::const_iterator iter;
+
+    private:
       iter curr;
       
     public:
       TimeQueue() {}
       
       TimeQueue(size_t n, double t0, double dt) {
-
 	for (size_t i=0; i<n; i++) push_back(t0+dt*i);
 	curr = begin();
       }
@@ -33,8 +34,8 @@ namespace ProtoMolAddon {
 	is >> n >> t0 >> dt;
 	tq = TimeQueue(n, t0, dt);
 
-      return is;
-    }
+	return is;
+      }
 
     };
   }

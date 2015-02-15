@@ -10,7 +10,7 @@ namespace ProtoMolAddon {
       pt::ptree tree;
       pt::read_xml(fname, tree);
 
-      r0 = tree.get<double>("ConfigRoot.Evaporation.r0");
+      r0 = tree.get<double>("ConfigRoot.Evaporatxion.r0");
       z0 = tree.get<double>("ConfigRoot.Evaporation.z0");
     }
     

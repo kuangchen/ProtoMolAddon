@@ -26,6 +26,14 @@ namespace ProtoMolAddon {
     }
 
     Replacement::Replacement() {}
+
+    Replacement::Replacement(const Replacement& other):
+      spec(other.spec),
+      ap_array_ptr(new Util::SIAtomProxyArray(*other.ap_array_ptr)),
+      engine(rd()),
+      dist(0, 1)
+    {
+    }
     
     void Replacement::Initialize(ProtoMolApp *app) {
       ap_array_ptr.reset(new Util::SIAtomProxyArray(app));

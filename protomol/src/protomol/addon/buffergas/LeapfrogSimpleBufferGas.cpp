@@ -22,18 +22,34 @@ namespace ProtoMolAddon {
       m = tree.get<double>("ConfigRoot.BufferGas.m") * Constant::ToSI::mass;
       name = tree.get<std::string>("ConfigRoot.BufferGas.name");
       algorithm::trim(name);
+
       alpha = tree.get<double>("ConfigRoot.BufferGas.alpha");
       T = tree.get<double>("ConfigRoot.BufferGas.T");
       rho = tree.get<double>("ConfigRoot.BufferGas.rho");
       target_atom_name = tree.get<std::string>("ConfigRoot.BufferGas.target_atom_name");
       algorithm::trim(target_atom_name);
       
-      sigma = sqrt(ProtoMol::Constant::SI::BOLTZMANN * T / m);
+      double sigma = sqrt(ProtoMol::Constant::SI::BOLTZMANN * T / m);
       vel_dist.param(std::normal_distribution<double>::param_type(0, sigma));
     }
 
+    LeapfrogSimpleBufferGas::NeutralAtom::NeutralAtom(const NeutralAtom& other) :
+      m(other.m),
+      name(other.name),
+      alpha(other.alpha),
+      T(other.T),
+      rho(other.rho),
+      target_atom_name(other.target_atom_name),
+      rd(),
+      engine(rd()),
+      vel_dist(other.vel_dist),
+      interval(other.interval),
+      uniform_dist(other.uniform_dist)
+    {
+    }
+
     
-    double LeapfrogSimpleBufferGas::NeutralAtom::GetCollisionInterval(Util::SIAtomProxy &ap) {
+    double LeapfrogSimpleBufferGas::NeutralAtom::GetCollisionInterval(const Util::SIAtomProxy &ap) {
       double mu = m * ap.GetMass() / (m + ap.GetMass());
       double C4 = alpha/2 * 4.35974434e-18 * pow(5.2917721092e-11, 4);
       double gamma = 2 * M_PI * rho * sqrt(C4/mu);
@@ -47,6 +63,11 @@ namespace ProtoMolAddon {
     LeapfrogSimpleBufferGas::LeapfrogSimpleBufferGas(const std::string &fname): 
       neutral(fname) {}
 
+    LeapfrogSimpleBufferGas::LeapfrogSimpleBufferGas(const LeapfrogSimpleBufferGas &other):
+      neutral(other.neutral),
+      ap_array_ptr(new Util::SIAtomProxyArray(*other.ap_array_ptr))
+    {}
+    
     void LeapfrogSimpleBufferGas::Initialize(ProtoMolApp *app) {
       ap_array_ptr.reset(new Util::SIAtomProxyArray(app));
     }
@@ -59,14 +80,20 @@ namespace ProtoMolAddon {
     void LeapfrogSimpleBufferGas::NeutralAtom::Collide(Util::SIAtomProxy &ap, double dt) {
       if (ap == target_atom_name || GetCollisionInterval(ap) > dt) return;
 
-      Vector3D v(vel_dist(engine), vel_dist(engine), vel_dist(engine));
+      Vector3D v(vel_dist(engine),
+		 vel_dist(engine),
+		 vel_dist(engine));
+      
       const Vector3D vi = ap.GetVelocity();
       double mi = ap.GetMass();
       double v_rel_mag = (vi - v).norm();
       double m_total = m + mi;
 
       Vector3D v_com = (vi * mi + v * m) / m_total;
-      Vector3D v_rel(uniform_dist(engine), uniform_dist(engine), uniform_dist(engine));
+      Vector3D v_rel(uniform_dist(engine),
+		     uniform_dist(engine),
+		     uniform_dist(engine));
+      
       v_rel.normalize();
       v_rel *= v_rel_mag;
       

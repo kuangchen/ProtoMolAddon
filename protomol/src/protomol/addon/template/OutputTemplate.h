@@ -53,7 +53,7 @@ namespace ProtoMolAddon {
       }
 
     public:
-      static const std::string keyword;//(typename Recorder::GetName());
+      static const std::string keyword;
       
       virtual std::string getKeyword() const { return keyword; }
       virtual std::string getIdNoAlias() const { return keyword; }

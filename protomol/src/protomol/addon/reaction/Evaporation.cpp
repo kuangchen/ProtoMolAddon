@@ -13,6 +13,13 @@ namespace ProtoMolAddon {
       r0 = tree.get<double>("ConfigRoot.Evaporatxion.r0");
       z0 = tree.get<double>("ConfigRoot.Evaporation.z0");
     }
+
+    Evaporation::Evaporation(const Evaporation &other)
+      : spec(other.spec),
+	ap_array_ptr(new Util::SIAtomProxyArray(*other.ap_array_ptr))
+    {
+      
+    }
     
     void Evaporation::Initialize(ProtoMolApp *app) {
       ap_array_ptr.reset(new Util::SIAtomProxyArray(app));

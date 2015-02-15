@@ -30,7 +30,8 @@ namespace ProtoMolAddon {
     public:
       Evaporation() {}
       Evaporation(const Spec &spec) : spec(spec) {}
-
+      Evaporation(const Evaporation &other);
+      
     public:
       void Initialize(ProtoMolApp *app);
       void Update(double now, double dt);

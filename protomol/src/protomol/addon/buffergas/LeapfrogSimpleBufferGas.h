@@ -36,14 +36,13 @@ namespace ProtoMolAddon {
 	std::normal_distribution<double> vel_dist;
 	std::exponential_distribution<double> interval;
 	std::uniform_real_distribution<double> uniform_dist;
-	double sigma;
-	Vector3D v;
 
       private:
-	double GetCollisionInterval(Util::SIAtomProxy &ap);
+	double GetCollisionInterval(const Util::SIAtomProxy &ap);
 	
       public:
 	NeutralAtom() {};
+	NeutralAtom(const NeutralAtom &other);
 	NeutralAtom(const std::string &fname);
 	void Collide(Util::SIAtomProxy &ap, double dt);
       };
@@ -55,6 +54,7 @@ namespace ProtoMolAddon {
     public:
       LeapfrogSimpleBufferGas();
       LeapfrogSimpleBufferGas(const std::string &fname);
+      LeapfrogSimpleBufferGas(const LeapfrogSimpleBufferGas& other);
 
       static std::string GetName() { return "LeapFrogSimpleBufferGas"; }
       static std::string GetParameterName() { return "-simple-buffergas-spec"; }

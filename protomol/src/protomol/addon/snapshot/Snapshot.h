@@ -40,15 +40,18 @@ namespace ProtoMolAddon {
       
 
       void Initialize(const ProtoMolApp *app) {
-	for (auto &s: storage_list) s.Initialize(app);
+	for (auto &s: storage_list)
+	  s.Initialize(app);
       }
 
       void Finalize() {
-	for (auto &s: storage_list) s.Finalize();
+	for (auto &s: storage_list)
+	  s.Finalize();
       }
 
       void Run(double now) {
-	for (auto &s: storage_list) s.SaveFrame(now);
+	for (auto &s: storage_list)
+	  s.SaveFrame(now);
       }
 
     };

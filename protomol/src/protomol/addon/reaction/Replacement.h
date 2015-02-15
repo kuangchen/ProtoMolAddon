@@ -52,6 +52,7 @@ namespace ProtoMolAddon {
     public:
       Replacement();
       Replacement(const Spec& spec): spec(spec), engine(rd()), dist(0, 1) {}
+      Replacement(const Replacement &other);
 
       void Initialize(ProtoMolApp *app);
       void Update(double now, double dt);

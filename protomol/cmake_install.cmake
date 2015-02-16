@@ -1,4 +1,4 @@
-# Install script for directory: /home/kuang/Documents/Project/ProtoMolAddon/protomol
+# Install script for directory: /home/kuang/Documents/Project/ProtoMolTest/ProtoMolAddon/protomol
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -39,7 +39,7 @@ if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspeci
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/ProtoMol"
          RPATH "")
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE EXECUTABLE FILES "/home/kuang/Documents/Project/ProtoMolAddon/protomol/ProtoMol")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE EXECUTABLE FILES "/home/kuang/Documents/Project/ProtoMolTest/ProtoMolAddon/protomol/ProtoMol")
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/ProtoMol" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/ProtoMol")
     if(CMAKE_INSTALL_DO_STRIP)
@@ -54,7 +54,7 @@ else()
   set(CMAKE_INSTALL_MANIFEST "install_manifest.txt")
 endif()
 
-file(WRITE "/home/kuang/Documents/Project/ProtoMolAddon/protomol/${CMAKE_INSTALL_MANIFEST}" "")
+file(WRITE "/home/kuang/Documents/Project/ProtoMolTest/ProtoMolAddon/protomol/${CMAKE_INSTALL_MANIFEST}" "")
 foreach(file ${CMAKE_INSTALL_MANIFEST_FILES})
-  file(APPEND "/home/kuang/Documents/Project/ProtoMolAddon/protomol/${CMAKE_INSTALL_MANIFEST}" "${file}\n")
+  file(APPEND "/home/kuang/Documents/Project/ProtoMolTest/ProtoMolAddon/protomol/${CMAKE_INSTALL_MANIFEST}" "${file}\n")
 endforeach()

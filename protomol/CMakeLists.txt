@@ -7,12 +7,6 @@ add_definitions (-fpermissive -Wall -s -O2 -g -DARCHLINUX)
 
 find_package(Boost REQUIRED COMPONENTS)
 
-find_package(ZLIB)  
-if (ZLIB_FOUND)
-  include_directories( ${ZLIB_INCLUDE_DIRS} )
-  LIST( APPEND LIBS ${ZLIB_LIBRARIES} )
-endif (ZLIB_FOUND)
-
 set (HDF5_FIND_COMPONENTS CXX)
 find_package(HDF5 REQUIRED ${HDF5_FIND_COMPONENTS})  
 if (HDF5_FOUND)

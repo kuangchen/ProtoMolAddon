@@ -70,7 +70,7 @@ bool ConfigurationReader::read(Configuration &config) {
     } 
     
     else {
-      cout << "Here";
+      cout << str << "here";
       res = false;
       bad += " " + str;
     }

@@ -16,7 +16,8 @@ namespace ProtoMolAddon {
 
     Evaporation::Evaporation(const Evaporation &other)
       : spec(other.spec),
-	ap_array_ptr(new Util::SIAtomProxyArray(*other.ap_array_ptr))
+	ap_array_ptr(other.ap_array_ptr ?
+		     new Util::SIAtomProxyArray(*other.ap_array_ptr): NULL)
     {
       
     }

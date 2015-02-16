@@ -54,7 +54,7 @@ namespace ProtoMolAddon {
 	parameter.push_back(Parameter(getId(), Value(fname, ConstraintValueType::NotEmpty())));
       }
 
-      std::string getIdNoAlias() const {return "SnapshotWith" + Storage::GetName();};
+      std::string getIdNoAlias() const {return "Snapshot" + Storage::GetName();};
     };
   }
 }

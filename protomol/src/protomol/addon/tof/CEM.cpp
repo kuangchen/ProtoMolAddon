@@ -23,7 +23,8 @@ namespace ProtoMolAddon {
     CEM::CEM(const CEM &other):
       spec(other.spec),
       hit_entry_map(other.hit_entry_map),
-      ap_array_ptr(new Util::ConstSIAtomProxyArray(*other.ap_array_ptr))
+      const_ap_array_ptr(other.const_ap_array_ptr ?
+			 new Util::ConstSIAtomProxyArray(*other.const_ap_array_ptr): NULL)
     { 
     }
     
@@ -33,11 +34,11 @@ namespace ProtoMolAddon {
 
     
     void CEM::Initialize(const ProtoMolApp *app) {
-      ap_array_ptr.reset(new Util::ConstSIAtomProxyArray(app));
+      const_ap_array_ptr.reset(new Util::ConstSIAtomProxyArray(app));
     }
 
     void CEM::Update(double now) {
-      for (auto ap: *ap_array_ptr) {
+      for (auto ap: *const_ap_array_ptr) {
 	if (hit_entry_map.count(ap) == 0) {
 	  const Vector3D &pos = ap.GetPosition();
 	  if (pos[0] > spec.x_cem &&

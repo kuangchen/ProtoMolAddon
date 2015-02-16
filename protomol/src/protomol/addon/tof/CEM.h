@@ -48,7 +48,7 @@ namespace ProtoMolAddon {
     private:
       Spec spec;
       std::map<Util::ConstSIAtomProxy, HitEntry> hit_entry_map;
-      std::unique_ptr<Util::ConstSIAtomProxyArray> ap_array_ptr;
+      std::unique_ptr<Util::ConstSIAtomProxyArray> const_ap_array_ptr;
       
     public:
       CEM() {}

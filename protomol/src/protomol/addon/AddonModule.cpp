@@ -30,8 +30,11 @@
 #include <protomol/addon/reaction/Replacement.h>
 
 #include <protomol/addon/tof/CEM.h>
-#include <protomol/addon/snapshot/OutputSnapshot.h>
-//#include <protomol/addon/snapshot/HDF5Storage.h>
+#include <protomol/addon/snapshot/Snapshot.h>
+#include <protomol/addon/snapshot/SnapshotList.h>
+#include <protomol/addon/snapshot/DummyStorage.h>
+//#include <protomol/addon/snapshot/OutputSnapshot.h>
+#include <protomol/addon/snapshot/HDF5Storage.h>
 
 namespace ProtoMolAddon {
   using namespace ProtoMol;
@@ -45,6 +48,9 @@ namespace ProtoMolAddon {
 
     OutputFactory &f = app->outputFactory;
     f.registerExemplar(new Template::GenericOutput<ToF::CEM>());
+
+    f.registerExemplar(new Template::GenericOutput<Snapshot::SnapshotList<Snapshot::HDF5Storage> >());
+    f.registerExemplar(new Template::GenericOutput<Snapshot::SnapshotList<Snapshot::DummyStorage> >());
     //f.registerExemplar(new Template::GenericOutput<Snapshot::HDF5Storage>());
     
     //f.registerExemplar(new Snapshot::OutputSnapshot<Snapshot::HDF5Storage>()); 

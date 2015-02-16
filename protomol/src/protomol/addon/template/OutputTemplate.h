@@ -48,7 +48,7 @@ namespace ProtoMolAddon {
       void doFinalize(int step) { recorder.Finalize(); }
 
       void getParameters(std::vector<Parameter> &parameter) const {
-	parameter.push_back(Parameter(Recorder::GetParameterName(),
+	parameter.push_back(Parameter(getId(),
 				      Value(fname, ConstraintValueType::NotEmpty())));
       }
 

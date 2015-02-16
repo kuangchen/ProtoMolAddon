@@ -5,8 +5,9 @@ namespace ProtoMolAddon {
   namespace Util {
 
     ConstSIAtomProxyArray::ConstSIAtomProxyArray(const ProtoMolApp *app) {
-      for (unsigned int i=0; i<app->positions.size(); i++)
-	push_back(ConstSIAtomProxy(app, i));
+      if (app!=NULL)
+	for (unsigned int i=0; i<app->positions.size(); i++)
+	  push_back(ConstSIAtomProxy(app, i));
     }
 
   }

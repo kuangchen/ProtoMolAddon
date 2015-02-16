@@ -18,7 +18,6 @@ namespace ProtoMolAddon {
       ConstSIAtomProxyArray(const ProtoMolApp* app);
     };
 
-
   }
 }
 

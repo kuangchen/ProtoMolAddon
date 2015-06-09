@@ -3,7 +3,6 @@
 
 #include <boost/property_tree/ptree.hpp>
 #include <boost/property_tree/xml_parser.hpp>
-#include <protomol/addon/snapshot/TimeQueue.h>
 #include <protomol/ProtoMolApp.h>
 #include <protomol/addon/snapshot/Snapshot.h>
 #include <boost/algorithm/string.hpp>
